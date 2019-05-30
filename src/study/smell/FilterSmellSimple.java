@@ -13,21 +13,21 @@ import org.designroleminer.technique.ArchitecturalRoleTechnique;
 import org.designroleminer.technique.DesignRoleTechnique;
 import org.designroleminer.technique.TechniqueExecutor;
 
-public class FilterSmell {
+public class FilterSmellSimple {
 
 	public static void main(String[] args) {
 		TechniqueExecutor executor = new TechniqueExecutor(new DesignRoleTechnique());
 
 		System.out.println("Iniciando a coleta de métricas do projeto a ser analisado...");
-		ArrayList<String> projetosAnalisar = executor.lerProjetos("Analysis.txt");
+		ArrayList<String> projetosAnalisar = executor.lerProjetos("AnalysisSimple.txt");
 		ArrayList<ClassMetricResult> metricasProjetosAnalisar = executor.getMetricsFromProjects(projetosAnalisar);
 
 		System.out.println("Gerando DR.csv com a lista classes e design roles atribuídos...");
-		executor.execute(metricasProjetosAnalisar, System.getProperty("user.dir") + "\\DR.CSV");
+		executor.execute(metricasProjetosAnalisar, System.getProperty("user.dir") + "\\results\\simple\\DR.CSV");
 
 		System.out.println("Gerando AR.csv com a lista classes e design roles atribuídos...");
 		executor.setTechinique(new ArchitecturalRoleTechnique());
-		executor.execute(metricasProjetosAnalisar, System.getProperty("user.dir") + "\\AR.CSV");
+		executor.execute(metricasProjetosAnalisar, System.getProperty("user.dir") + "\\results\\\\simple\\AR.CSV");
 
 		System.out.println("Carregando valores limiares...");
 		List<LimiarTecnica> listaTecnicas = CarregaSalvaArquivo
@@ -36,6 +36,6 @@ public class FilterSmell {
 		System.out.println("Gerando SMELLS.csv com a lista de problemas de design encontrados...");
 		HashMap<String, DadosMetodoSmell> metodosSmell = null;
 		metodosSmell = FilterSmells.filtrar(metricasProjetosAnalisar, listaTecnicas, metodosSmell);
-		FilterSmells.gravarMetodosSmell(metodosSmell, "SMELLS.csv");
+		FilterSmells.gravarMetodosSmell(metodosSmell, "\\results\\simple\\SMELLS.csv");
 	}
 }
