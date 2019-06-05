@@ -22,11 +22,13 @@ public class MinerRefactorings {
 		try {
 			Repository repo = gitService.cloneIfNotExists("D:\\Projetos\\_Android\\sms-backup-plus",
 					"https://github.com/jberkel/sms-backup-plus.git");
+			
+			
 			final PersistenceMechanism pm = new CSVFile(System.getProperty("user.dir") + "\\refactoring-sms.csv");
 			pm.write(
 					"Commmit-name", "Refactring-name", "Refactoring-Type", "Code Element Left", "Code Element Right", "Class After", "Class Before", "Short Message", "Full Message");
 
-			miner.detectBetweenTags(repo, "1.5.2", "1.5.5", new RefactoringHandler() {
+			miner.detectBetweenCommits(repo, "9a3a27418362c157aa79f160302c41a2c0cc67c5", "12390bc25c2e4e6355ccd04e6b13dfdb689bdf2b", new RefactoringHandler() {
 				@Override
 				public void handle(RevCommit commitData, List<Refactoring> refactorings) {
 					//System.out.println("Refactorings at " + commitData.getId().getName());
