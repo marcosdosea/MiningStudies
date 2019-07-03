@@ -1,391 +1,391 @@
 Commmit-name,Refactring-name,Refactoring-Type,Code Element Left,Code Element Right,Class After,Class Before,Short Message,Full Message
-9347fdb78cff3e8aaa191d4827fdc5e17ec7d141,Inline Variable,INLINE_VARIABLE,prefs : SharedPreferences,0,[com.zegoggles.smssync.preferences.Preferences],[com.zegoggles.smssync.preferences.Preferences],Logging,"Logging
+9347fdb78cff3e8aaa191d4827fdc5e17ec7d141,Inline Variable,INLINE_VARIABLE,[com.zegoggles.smssync.preferences.Preferences],[com.zegoggles.smssync.preferences.Preferences],Logging,"Logging
 "
-9347fdb78cff3e8aaa191d4827fdc5e17ec7d141,Extract Variable,EXTRACT_VARIABLE,0,msg : String,[com.zegoggles.smssync.service.ServiceBase],[com.zegoggles.smssync.service.ServiceBase],Logging,"Logging
+9347fdb78cff3e8aaa191d4827fdc5e17ec7d141,Extract Variable,EXTRACT_VARIABLE,[com.zegoggles.smssync.service.ServiceBase],[com.zegoggles.smssync.service.ServiceBase],Logging,"Logging
 "
-828010e6ca8f1e600bab574ba707ee2ad811cc68,Change Return Type,CHANGE_RETURN_TYPE,void,EnumSet<DataType>,[com.zegoggles.smssync.service.SmsBackupService],[com.zegoggles.smssync.service.SmsBackupService],Pass in datatypes,"Pass in datatypes
+828010e6ca8f1e600bab574ba707ee2ad811cc68,Change Return Type,CHANGE_RETURN_TYPE,[com.zegoggles.smssync.service.SmsBackupService],[com.zegoggles.smssync.service.SmsBackupService],Pass in datatypes,"Pass in datatypes
 "
-828010e6ca8f1e600bab574ba707ee2ad811cc68,Rename Method,RENAME_METHOD,private checkBackupEnabled() : void,private getEnabledBackupTypes() : EnumSet<DataType>,[com.zegoggles.smssync.service.SmsBackupService],[com.zegoggles.smssync.service.SmsBackupService],Pass in datatypes,"Pass in datatypes
+828010e6ca8f1e600bab574ba707ee2ad811cc68,Rename Method,RENAME_METHOD,[com.zegoggles.smssync.service.SmsBackupService],[com.zegoggles.smssync.service.SmsBackupService],Pass in datatypes,"Pass in datatypes
 "
-828010e6ca8f1e600bab574ba707ee2ad811cc68,Extract Variable,EXTRACT_VARIABLE,0,dataTypes : EnumSet<DataType>,[com.zegoggles.smssync.service.SmsBackupService],[com.zegoggles.smssync.service.SmsBackupService],Pass in datatypes,"Pass in datatypes
+828010e6ca8f1e600bab574ba707ee2ad811cc68,Extract Variable,EXTRACT_VARIABLE,[com.zegoggles.smssync.service.SmsBackupService],[com.zegoggles.smssync.service.SmsBackupService],Pass in datatypes,"Pass in datatypes
 "
-37f077da70d0aebeb9191ca2f609d7e9fbca3a78,Inline Variable,INLINE_VARIABLE,smsFolder : BackupImapStore.BackupFolder,0,[com.zegoggles.smssync.service.RestoreTask],[com.zegoggles.smssync.service.RestoreTask],Check the ImapStore settings before backup / restore,"Check the ImapStore settings before backup / restore
+37f077da70d0aebeb9191ca2f609d7e9fbca3a78,Inline Variable,INLINE_VARIABLE,[com.zegoggles.smssync.service.RestoreTask],[com.zegoggles.smssync.service.RestoreTask],Check the ImapStore settings before backup / restore,"Check the ImapStore settings before backup / restore
 "
-8e14ad79888c53f0cd2b946c81888cf0badebf17,Extract Method,EXTRACT_OPERATION,public getFolder(type DataType) : BackupFolder,"private createAndOpenFolder(type DataType, label String) : BackupFolder",[com.zegoggles.smssync.mail.BackupImapStore],[com.zegoggles.smssync.mail.BackupImapStore],Make sure acquireLocks() / releaseLocks() are balanced,"Make sure acquireLocks() / releaseLocks() are balanced
+8e14ad79888c53f0cd2b946c81888cf0badebf17,Extract Method,EXTRACT_OPERATION,[com.zegoggles.smssync.mail.BackupImapStore],[com.zegoggles.smssync.mail.BackupImapStore],Make sure acquireLocks() / releaseLocks() are balanced,"Make sure acquireLocks() / releaseLocks() are balanced
 
  * Move some logic from task => service
  * Clean up checks
  * Move folder state into BackupImapStore
 "
-8e14ad79888c53f0cd2b946c81888cf0badebf17,Rename Parameter,RENAME_PARAMETER,imap : BackupImapStore,imapStore : BackupImapStore,[com.zegoggles.smssync.service.BackupConfig],[com.zegoggles.smssync.service.BackupConfig],Make sure acquireLocks() / releaseLocks() are balanced,"Make sure acquireLocks() / releaseLocks() are balanced
+8e14ad79888c53f0cd2b946c81888cf0badebf17,Rename Parameter,RENAME_PARAMETER,[com.zegoggles.smssync.service.BackupConfig],[com.zegoggles.smssync.service.BackupConfig],Make sure acquireLocks() / releaseLocks() are balanced,"Make sure acquireLocks() / releaseLocks() are balanced
 
  * Move some logic from task => service
  * Clean up checks
  * Move folder state into BackupImapStore
 "
-8e14ad79888c53f0cd2b946c81888cf0badebf17,Rename Attribute,RENAME_ATTRIBUTE,imap : BackupImapStore,imapStore : BackupImapStore,[com.zegoggles.smssync.service.BackupConfig],[com.zegoggles.smssync.service.BackupConfig],Make sure acquireLocks() / releaseLocks() are balanced,"Make sure acquireLocks() / releaseLocks() are balanced
+8e14ad79888c53f0cd2b946c81888cf0badebf17,Rename Attribute,RENAME_ATTRIBUTE,[com.zegoggles.smssync.service.BackupConfig],[com.zegoggles.smssync.service.BackupConfig],Make sure acquireLocks() / releaseLocks() are balanced,"Make sure acquireLocks() / releaseLocks() are balanced
 
  * Move some logic from task => service
  * Clean up checks
  * Move folder state into BackupImapStore
 "
-8e14ad79888c53f0cd2b946c81888cf0badebf17,Rename Method,RENAME_METHOD,"private backup(config BackupConfig, cursors BackupCursors, itemsToSync int) : BackupState","private backupCursors(cursors BackupCursors, store BackupImapStore, backupType BackupType, itemsToSync int) : BackupState",[com.zegoggles.smssync.service.BackupTask],[com.zegoggles.smssync.service.BackupTask],Make sure acquireLocks() / releaseLocks() are balanced,"Make sure acquireLocks() / releaseLocks() are balanced
+8e14ad79888c53f0cd2b946c81888cf0badebf17,Rename Method,RENAME_METHOD,[com.zegoggles.smssync.service.BackupTask],[com.zegoggles.smssync.service.BackupTask],Make sure acquireLocks() / releaseLocks() are balanced,"Make sure acquireLocks() / releaseLocks() are balanced
 
  * Move some logic from task => service
  * Clean up checks
  * Move folder state into BackupImapStore
 "
-8e14ad79888c53f0cd2b946c81888cf0badebf17,Extract Method,EXTRACT_OPERATION,protected doInBackground(params BackupConfig...) : BackupState,private acquireLocksAndBackup(config BackupConfig) : BackupState,[com.zegoggles.smssync.service.BackupTask],[com.zegoggles.smssync.service.BackupTask],Make sure acquireLocks() / releaseLocks() are balanced,"Make sure acquireLocks() / releaseLocks() are balanced
+8e14ad79888c53f0cd2b946c81888cf0badebf17,Extract Method,EXTRACT_OPERATION,[com.zegoggles.smssync.service.BackupTask],[com.zegoggles.smssync.service.BackupTask],Make sure acquireLocks() / releaseLocks() are balanced,"Make sure acquireLocks() / releaseLocks() are balanced
 
  * Move some logic from task => service
  * Clean up checks
  * Move folder state into BackupImapStore
 "
-8e14ad79888c53f0cd2b946c81888cf0badebf17,Extract Method,EXTRACT_OPERATION,protected doInBackground(params RestoreConfig...) : RestoreState,private restore(config RestoreConfig) : RestoreState,[com.zegoggles.smssync.service.RestoreTask],[com.zegoggles.smssync.service.RestoreTask],Make sure acquireLocks() / releaseLocks() are balanced,"Make sure acquireLocks() / releaseLocks() are balanced
+8e14ad79888c53f0cd2b946c81888cf0badebf17,Extract Method,EXTRACT_OPERATION,[com.zegoggles.smssync.service.RestoreTask],[com.zegoggles.smssync.service.RestoreTask],Make sure acquireLocks() / releaseLocks() are balanced,"Make sure acquireLocks() / releaseLocks() are balanced
 
  * Move some logic from task => service
  * Clean up checks
  * Move folder state into BackupImapStore
 "
-8e14ad79888c53f0cd2b946c81888cf0badebf17,Extract Method,EXTRACT_OPERATION,protected handleIntent(intent Intent) : void,"private backup(backupType BackupType, skip boolean) : void",[com.zegoggles.smssync.service.SmsBackupService],[com.zegoggles.smssync.service.SmsBackupService],Make sure acquireLocks() / releaseLocks() are balanced,"Make sure acquireLocks() / releaseLocks() are balanced
+8e14ad79888c53f0cd2b946c81888cf0badebf17,Extract Method,EXTRACT_OPERATION,[com.zegoggles.smssync.service.SmsBackupService],[com.zegoggles.smssync.service.SmsBackupService],Make sure acquireLocks() / releaseLocks() are balanced,"Make sure acquireLocks() / releaseLocks() are balanced
 
  * Move some logic from task => service
  * Clean up checks
  * Move folder state into BackupImapStore
 "
-8e14ad79888c53f0cd2b946c81888cf0badebf17,Move Method,MOVE_OPERATION,private closeFolders() : void,public closeFolders() : void,[com.zegoggles.smssync.mail.BackupImapStore],[com.zegoggles.smssync.service.BackupTask],Make sure acquireLocks() / releaseLocks() are balanced,"Make sure acquireLocks() / releaseLocks() are balanced
+8e14ad79888c53f0cd2b946c81888cf0badebf17,Move Method,MOVE_OPERATION,[com.zegoggles.smssync.mail.BackupImapStore],[com.zegoggles.smssync.service.BackupTask],Make sure acquireLocks() / releaseLocks() are balanced,"Make sure acquireLocks() / releaseLocks() are balanced
 
  * Move some logic from task => service
  * Clean up checks
  * Move folder state into BackupImapStore
 "
-6139034f985217b22d8557abdde937f57cb17524,Extract Method,EXTRACT_OPERATION,"public convertMessages(cursor Cursor, maxEntries int, dataType DataType) : ConversionResult","private getMessageMap(cursor Cursor) : Map<String,String>",[com.zegoggles.smssync.mail.MessageConverter],[com.zegoggles.smssync.mail.MessageConverter],Fix contact group selection,"Fix contact group selection
+6139034f985217b22d8557abdde937f57cb17524,Extract Method,EXTRACT_OPERATION,[com.zegoggles.smssync.mail.MessageConverter],[com.zegoggles.smssync.mail.MessageConverter],Fix contact group selection,"Fix contact group selection
 "
-c0b2bc56ff1efc3272138befe9552f868c63e73b,Change Parameter Type,CHANGE_PARAMETER_TYPE,types : EnumSet<DataType>,types : Iterable<DataType>,[com.zegoggles.smssync.service.BackupTask],[com.zegoggles.smssync.service.BackupTask],Use Iterable,"Use Iterable
+c0b2bc56ff1efc3272138befe9552f868c63e73b,Change Parameter Type,CHANGE_PARAMETER_TYPE,[com.zegoggles.smssync.service.BackupTask],[com.zegoggles.smssync.service.BackupTask],Use Iterable,"Use Iterable
 "
-480b539096699f2f1782f4dfc04eca6de92c501f,Change Parameter Type,CHANGE_PARAMETER_TYPE,view : View,view : TextView,[com.zegoggles.smssync.utils.AppLog],[com.zegoggles.smssync.utils.AppLog],Fix possible class cast exception,"Fix possible class cast exception
+480b539096699f2f1782f4dfc04eca6de92c501f,Change Parameter Type,CHANGE_PARAMETER_TYPE,[com.zegoggles.smssync.utils.AppLog],[com.zegoggles.smssync.utils.AppLog],Fix possible class cast exception,"Fix possible class cast exception
 "
-480b539096699f2f1782f4dfc04eca6de92c501f,Change Parameter Type,CHANGE_PARAMETER_TYPE,view : View,view : TextView,[com.zegoggles.smssync.utils.AppLog],[com.zegoggles.smssync.utils.AppLog],Fix possible class cast exception,"Fix possible class cast exception
+480b539096699f2f1782f4dfc04eca6de92c501f,Change Parameter Type,CHANGE_PARAMETER_TYPE,[com.zegoggles.smssync.utils.AppLog],[com.zegoggles.smssync.utils.AppLog],Fix possible class cast exception,"Fix possible class cast exception
 "
-8122d305bbb4d8554ccc219cdf02ae987c5a251b,Rename Parameter,RENAME_PARAMETER,context : Context,maxSyncedDate : long,[com.zegoggles.smssync.service.WhatsAppItemsFetcher],[com.zegoggles.smssync.service.WhatsAppItemsFetcher],"Bump whassup to 0.0.5, add most recent timestamp checking","Bump whassup to 0.0.5, add most recent timestamp checking
+8122d305bbb4d8554ccc219cdf02ae987c5a251b,Rename Parameter,RENAME_PARAMETER,[com.zegoggles.smssync.service.WhatsAppItemsFetcher],[com.zegoggles.smssync.service.WhatsAppItemsFetcher],"Bump whassup to 0.0.5, add most recent timestamp checking","Bump whassup to 0.0.5, add most recent timestamp checking
 "
-8122d305bbb4d8554ccc219cdf02ae987c5a251b,Change Parameter Type,CHANGE_PARAMETER_TYPE,context : Context,maxSyncedDate : long,[com.zegoggles.smssync.service.WhatsAppItemsFetcher],[com.zegoggles.smssync.service.WhatsAppItemsFetcher],"Bump whassup to 0.0.5, add most recent timestamp checking","Bump whassup to 0.0.5, add most recent timestamp checking
+8122d305bbb4d8554ccc219cdf02ae987c5a251b,Change Parameter Type,CHANGE_PARAMETER_TYPE,[com.zegoggles.smssync.service.WhatsAppItemsFetcher],[com.zegoggles.smssync.service.WhatsAppItemsFetcher],"Bump whassup to 0.0.5, add most recent timestamp checking","Bump whassup to 0.0.5, add most recent timestamp checking
 "
-a5baaa6a496ed74499c37239fcbab8b6959201e2,Change Return Type,CHANGE_RETURN_TYPE,void,boolean,[com.zegoggles.smssync.auth.TokenRefresher],[com.zegoggles.smssync.auth.TokenRefresher],Catch SecurityException,"Catch SecurityException
+a5baaa6a496ed74499c37239fcbab8b6959201e2,Change Return Type,CHANGE_RETURN_TYPE,[com.zegoggles.smssync.auth.TokenRefresher],[com.zegoggles.smssync.auth.TokenRefresher],Catch SecurityException,"Catch SecurityException
 "
-5bc864325cf6a91d1ea0b48c099587d6629c2130,Rename Attribute,RENAME_ATTRIBUTE,sWakeLock : PowerManager.WakeLock,mWakeLock : PowerManager.WakeLock,[com.zegoggles.smssync.service.ServiceBase],[com.zegoggles.smssync.service.ServiceBase],Null out lock references to avoid Android bug,"Null out lock references to avoid Android bug
+5bc864325cf6a91d1ea0b48c099587d6629c2130,Rename Attribute,RENAME_ATTRIBUTE,[com.zegoggles.smssync.service.ServiceBase],[com.zegoggles.smssync.service.ServiceBase],Null out lock references to avoid Android bug,"Null out lock references to avoid Android bug
 
 https://code.google.com/p/android/issues/detail?id=20318
 "
-5bc864325cf6a91d1ea0b48c099587d6629c2130,Rename Attribute,RENAME_ATTRIBUTE,sWifiLock : WifiManager.WifiLock,mWifiLock : WifiManager.WifiLock,[com.zegoggles.smssync.service.ServiceBase],[com.zegoggles.smssync.service.ServiceBase],Null out lock references to avoid Android bug,"Null out lock references to avoid Android bug
+5bc864325cf6a91d1ea0b48c099587d6629c2130,Rename Attribute,RENAME_ATTRIBUTE,[com.zegoggles.smssync.service.ServiceBase],[com.zegoggles.smssync.service.ServiceBase],Null out lock references to avoid Android bug,"Null out lock references to avoid Android bug
 
 https://code.google.com/p/android/issues/detail?id=20318
 "
-afdc2ba2399387517d12272a2994b8d9a9ab07dd,Extract Variable,EXTRACT_VARIABLE,0,bundle : Bundle,[com.zegoggles.smssync.auth.TokenRefresher],[com.zegoggles.smssync.auth.TokenRefresher],Added tests for TokenRefresher,"Added tests for TokenRefresher
+afdc2ba2399387517d12272a2994b8d9a9ab07dd,Extract Variable,EXTRACT_VARIABLE,[com.zegoggles.smssync.auth.TokenRefresher],[com.zegoggles.smssync.auth.TokenRefresher],Added tests for TokenRefresher,"Added tests for TokenRefresher
 "
-49e6059248453807dbc80c7f56c303fde38d4f13,Extract Variable,EXTRACT_VARIABLE,0,maxSynced : long,[com.zegoggles.smssync.service.BackupQueryBuilder],[com.zegoggles.smssync.service.BackupQueryBuilder],Fix MMS timestamp calculation,"Fix MMS timestamp calculation
+49e6059248453807dbc80c7f56c303fde38d4f13,Extract Variable,EXTRACT_VARIABLE,[com.zegoggles.smssync.service.BackupQueryBuilder],[com.zegoggles.smssync.service.BackupQueryBuilder],Fix MMS timestamp calculation,"Fix MMS timestamp calculation
 
 Closes #334
 "
-49e6059248453807dbc80c7f56c303fde38d4f13,Rename Variable,RENAME_VARIABLE,now : long,nowInSecs : long,[com.zegoggles.smssync.service.BackupQueryBuilderTest],[com.zegoggles.smssync.service.BackupQueryBuilderTest],Fix MMS timestamp calculation,"Fix MMS timestamp calculation
+49e6059248453807dbc80c7f56c303fde38d4f13,Rename Variable,RENAME_VARIABLE,[com.zegoggles.smssync.service.BackupQueryBuilderTest],[com.zegoggles.smssync.service.BackupQueryBuilderTest],Fix MMS timestamp calculation,"Fix MMS timestamp calculation
 
 Closes #334
 "
-f81a126da93b1bc9de605bc8beb5ada5fb8c4d10,Extract Method,EXTRACT_OPERATION,protected doInBackground(params RestoreConfig...) : RestoreState,"private handleAuthError(config RestoreConfig, currentRestoredItem int, e XOAuth2AuthenticationFailedException) : RestoreState",[com.zegoggles.smssync.service.RestoreTask],[com.zegoggles.smssync.service.RestoreTask],Added more tests for BackupTask,"Added more tests for BackupTask
+f81a126da93b1bc9de605bc8beb5ada5fb8c4d10,Extract Method,EXTRACT_OPERATION,[com.zegoggles.smssync.service.RestoreTask],[com.zegoggles.smssync.service.RestoreTask],Added more tests for BackupTask,"Added more tests for BackupTask
 "
-f81a126da93b1bc9de605bc8beb5ada5fb8c4d10,Rename Parameter,RENAME_PARAMETER,cursor : Cursor,n : int,[com.zegoggles.smssync.service.BackupTaskTest],[com.zegoggles.smssync.service.BackupTaskTest],Added more tests for BackupTask,"Added more tests for BackupTask
+f81a126da93b1bc9de605bc8beb5ada5fb8c4d10,Rename Parameter,RENAME_PARAMETER,[com.zegoggles.smssync.service.BackupTaskTest],[com.zegoggles.smssync.service.BackupTaskTest],Added more tests for BackupTask,"Added more tests for BackupTask
 "
-f81a126da93b1bc9de605bc8beb5ada5fb8c4d10,Change Parameter Type,CHANGE_PARAMETER_TYPE,cursor : Cursor,n : int,[com.zegoggles.smssync.service.BackupTaskTest],[com.zegoggles.smssync.service.BackupTaskTest],Added more tests for BackupTask,"Added more tests for BackupTask
+f81a126da93b1bc9de605bc8beb5ada5fb8c4d10,Change Parameter Type,CHANGE_PARAMETER_TYPE,[com.zegoggles.smssync.service.BackupTaskTest],[com.zegoggles.smssync.service.BackupTaskTest],Added more tests for BackupTask,"Added more tests for BackupTask
 "
-f81a126da93b1bc9de605bc8beb5ada5fb8c4d10,Extract Method,EXTRACT_OPERATION,public before() : void,private getBackupConfig(types EnumSet<DataType>) : BackupConfig,[com.zegoggles.smssync.service.BackupTaskTest],[com.zegoggles.smssync.service.BackupTaskTest],Added more tests for BackupTask,"Added more tests for BackupTask
+f81a126da93b1bc9de605bc8beb5ada5fb8c4d10,Extract Method,EXTRACT_OPERATION,[com.zegoggles.smssync.service.BackupTaskTest],[com.zegoggles.smssync.service.BackupTaskTest],Added more tests for BackupTask,"Added more tests for BackupTask
 "
-f81a126da93b1bc9de605bc8beb5ada5fb8c4d10,Move Method,MOVE_OPERATION,"public invalidateToken(ctx Context, token String) : void",public invalidateToken(token String) : void,[com.zegoggles.smssync.auth.TokenRefresher],[com.zegoggles.smssync.activity.auth.AccountManagerAuthActivity],Added more tests for BackupTask,"Added more tests for BackupTask
+f81a126da93b1bc9de605bc8beb5ada5fb8c4d10,Move Method,MOVE_OPERATION,[com.zegoggles.smssync.auth.TokenRefresher],[com.zegoggles.smssync.activity.auth.AccountManagerAuthActivity],Added more tests for BackupTask,"Added more tests for BackupTask
 "
-f81a126da93b1bc9de605bc8beb5ada5fb8c4d10,Move Method,MOVE_OPERATION,public refreshOAuth2Token(context Context) : boolean,public refreshOAuth2Token() : boolean,[com.zegoggles.smssync.auth.TokenRefresher],[com.zegoggles.smssync.activity.auth.AccountManagerAuthActivity],Added more tests for BackupTask,"Added more tests for BackupTask
+f81a126da93b1bc9de605bc8beb5ada5fb8c4d10,Move Method,MOVE_OPERATION,[com.zegoggles.smssync.auth.TokenRefresher],[com.zegoggles.smssync.activity.auth.AccountManagerAuthActivity],Added more tests for BackupTask,"Added more tests for BackupTask
 "
-947d80faa4a2b2f5652d39aec0e01a9e403641f5,Extract Class,EXTRACT_CLASS,com.zegoggles.smssync.service.BackupCursorsTest,com.zegoggles.smssync.service.BulkFetcherTest,[com.zegoggles.smssync.service.BulkFetcherTest],[com.zegoggles.smssync.service.BackupCursorsTest],Move bulk fetching code to BulkFetcher,"Move bulk fetching code to BulkFetcher
+947d80faa4a2b2f5652d39aec0e01a9e403641f5,Extract Class,EXTRACT_CLASS,[com.zegoggles.smssync.service.BulkFetcherTest],[com.zegoggles.smssync.service.BackupCursorsTest],Move bulk fetching code to BulkFetcher,"Move bulk fetching code to BulkFetcher
 "
-947d80faa4a2b2f5652d39aec0e01a9e403641f5,Move Method,MOVE_OPERATION,public shouldFetchAllItems() : void,public shouldFetchAllItems() : void,[com.zegoggles.smssync.service.BulkFetcherTest],[com.zegoggles.smssync.service.BackupCursorsTest],Move bulk fetching code to BulkFetcher,"Move bulk fetching code to BulkFetcher
+947d80faa4a2b2f5652d39aec0e01a9e403641f5,Move Method,MOVE_OPERATION,[com.zegoggles.smssync.service.BulkFetcherTest],[com.zegoggles.smssync.service.BackupCursorsTest],Move bulk fetching code to BulkFetcher,"Move bulk fetching code to BulkFetcher
 "
-947d80faa4a2b2f5652d39aec0e01a9e403641f5,Move Method,MOVE_OPERATION,public shouldFetchAllItemsEmptyList() : void,public shouldFetchAllItemsEmptyList() : void,[com.zegoggles.smssync.service.BulkFetcherTest],[com.zegoggles.smssync.service.BackupCursorsTest],Move bulk fetching code to BulkFetcher,"Move bulk fetching code to BulkFetcher
+947d80faa4a2b2f5652d39aec0e01a9e403641f5,Move Method,MOVE_OPERATION,[com.zegoggles.smssync.service.BulkFetcherTest],[com.zegoggles.smssync.service.BackupCursorsTest],Move bulk fetching code to BulkFetcher,"Move bulk fetching code to BulkFetcher
 "
-cea86460f9b9711fd041f58bf00fa12a9d0252b0,Change Attribute Type,CHANGE_ATTRIBUTE_TYPE,typesToBackup : List<DataType>,typesToBackup : EnumSet<DataType>,[com.zegoggles.smssync.service.BackupConfig],[com.zegoggles.smssync.service.BackupConfig],"Use enumset for current config, added more tests","Use enumset for current config, added more tests
+cea86460f9b9711fd041f58bf00fa12a9d0252b0,Change Attribute Type,CHANGE_ATTRIBUTE_TYPE,[com.zegoggles.smssync.service.BackupConfig],[com.zegoggles.smssync.service.BackupConfig],"Use enumset for current config, added more tests","Use enumset for current config, added more tests
 "
-cea86460f9b9711fd041f58bf00fa12a9d0252b0,Change Parameter Type,CHANGE_PARAMETER_TYPE,typesToBackup : List<DataType>,typesToBackup : EnumSet<DataType>,[com.zegoggles.smssync.service.BackupConfig],[com.zegoggles.smssync.service.BackupConfig],"Use enumset for current config, added more tests","Use enumset for current config, added more tests
+cea86460f9b9711fd041f58bf00fa12a9d0252b0,Change Parameter Type,CHANGE_PARAMETER_TYPE,[com.zegoggles.smssync.service.BackupConfig],[com.zegoggles.smssync.service.BackupConfig],"Use enumset for current config, added more tests","Use enumset for current config, added more tests
 "
-cea86460f9b9711fd041f58bf00fa12a9d0252b0,Rename Parameter,RENAME_PARAMETER,tries : int,currentTry : int,[com.zegoggles.smssync.service.BackupConfig],[com.zegoggles.smssync.service.BackupConfig],"Use enumset for current config, added more tests","Use enumset for current config, added more tests
+cea86460f9b9711fd041f58bf00fa12a9d0252b0,Rename Parameter,RENAME_PARAMETER,[com.zegoggles.smssync.service.BackupConfig],[com.zegoggles.smssync.service.BackupConfig],"Use enumset for current config, added more tests","Use enumset for current config, added more tests
 "
-cea86460f9b9711fd041f58bf00fa12a9d0252b0,Rename Attribute,RENAME_ATTRIBUTE,tries : int,currentTry : int,[com.zegoggles.smssync.service.BackupConfig],[com.zegoggles.smssync.service.BackupConfig],"Use enumset for current config, added more tests","Use enumset for current config, added more tests
+cea86460f9b9711fd041f58bf00fa12a9d0252b0,Rename Attribute,RENAME_ATTRIBUTE,[com.zegoggles.smssync.service.BackupConfig],[com.zegoggles.smssync.service.BackupConfig],"Use enumset for current config, added more tests","Use enumset for current config, added more tests
 "
-cea86460f9b9711fd041f58bf00fa12a9d0252b0,Change Parameter Type,CHANGE_PARAMETER_TYPE,types : List<DataType>,types : EnumSet<DataType>,[com.zegoggles.smssync.service.BackupCursors],[com.zegoggles.smssync.service.BackupCursors],"Use enumset for current config, added more tests","Use enumset for current config, added more tests
+cea86460f9b9711fd041f58bf00fa12a9d0252b0,Change Parameter Type,CHANGE_PARAMETER_TYPE,[com.zegoggles.smssync.service.BackupCursors],[com.zegoggles.smssync.service.BackupCursors],"Use enumset for current config, added more tests","Use enumset for current config, added more tests
 "
-0355091497614e63a0251d2418b46ff30e9fb66e,Extract Method,EXTRACT_OPERATION,protected doInBackground(params BackupConfig...) : BackupState,"private handleAuthError(config BackupConfig, e XOAuth2AuthenticationFailedException) : BackupState",[com.zegoggles.smssync.service.BackupTask],[com.zegoggles.smssync.service.BackupTask],Extract into method,"Extract into method
+0355091497614e63a0251d2418b46ff30e9fb66e,Extract Method,EXTRACT_OPERATION,[com.zegoggles.smssync.service.BackupTask],[com.zegoggles.smssync.service.BackupTask],Extract into method,"Extract into method
 "
-6453f6cd12659e70d9daa5d6c93a1c6d94203689,Rename Attribute,RENAME_ATTRIBUTE,messageList : List<Message>,messages : List<Message>,[com.zegoggles.smssync.mail.ConversionResult],[com.zegoggles.smssync.mail.ConversionResult],Adding backup cursors helper,"Adding backup cursors helper
+6453f6cd12659e70d9daa5d6c93a1c6d94203689,Rename Attribute,RENAME_ATTRIBUTE,[com.zegoggles.smssync.mail.ConversionResult],[com.zegoggles.smssync.mail.ConversionResult],Adding backup cursors helper,"Adding backup cursors helper
 "
-6453f6cd12659e70d9daa5d6c93a1c6d94203689,Merge Variable,MERGE_VARIABLE,smsItems : Cursor,cursors : BackupCursors,[com.zegoggles.smssync.service.BackupTask],[com.zegoggles.smssync.service.BackupTask],Adding backup cursors helper,"Adding backup cursors helper
+6453f6cd12659e70d9daa5d6c93a1c6d94203689,Merge Variable,MERGE_VARIABLE,[com.zegoggles.smssync.service.BackupTask],[com.zegoggles.smssync.service.BackupTask],Adding backup cursors helper,"Adding backup cursors helper
 "
-6453f6cd12659e70d9daa5d6c93a1c6d94203689,Merge Variable,MERGE_VARIABLE,smsCount : int,cursors : BackupCursors,[com.zegoggles.smssync.service.BackupTask],[com.zegoggles.smssync.service.BackupTask],Adding backup cursors helper,"Adding backup cursors helper
+6453f6cd12659e70d9daa5d6c93a1c6d94203689,Merge Variable,MERGE_VARIABLE,[com.zegoggles.smssync.service.BackupTask],[com.zegoggles.smssync.service.BackupTask],Adding backup cursors helper,"Adding backup cursors helper
 "
-6453f6cd12659e70d9daa5d6c93a1c6d94203689,Change Variable Type,CHANGE_VARIABLE_TYPE,dataType : DataType,cursor : BackupCursors.CursorAndType,[com.zegoggles.smssync.service.BackupTask],[com.zegoggles.smssync.service.BackupTask],Adding backup cursors helper,"Adding backup cursors helper
+6453f6cd12659e70d9daa5d6c93a1c6d94203689,Change Variable Type,CHANGE_VARIABLE_TYPE,[com.zegoggles.smssync.service.BackupTask],[com.zegoggles.smssync.service.BackupTask],Adding backup cursors helper,"Adding backup cursors helper
 "
-6453f6cd12659e70d9daa5d6c93a1c6d94203689,Rename Variable,RENAME_VARIABLE,dataType : DataType,cursor : BackupCursors.CursorAndType,[com.zegoggles.smssync.service.BackupTask],[com.zegoggles.smssync.service.BackupTask],Adding backup cursors helper,"Adding backup cursors helper
+6453f6cd12659e70d9daa5d6c93a1c6d94203689,Rename Variable,RENAME_VARIABLE,[com.zegoggles.smssync.service.BackupTask],[com.zegoggles.smssync.service.BackupTask],Adding backup cursors helper,"Adding backup cursors helper
 "
-59b8884ce7737549a2975c7e29b64e43fcf78d58,Extract And Move Method,EXTRACT_AND_MOVE_OPERATION,"private backup(config BackupConfig, smsItems Cursor, mmsItems Cursor, callLogItems Cursor, whatsAppItems Cursor, itemsToSync int) : BackupState",public getFolder(type DataType) : BackupImapStore.BackupFolder,[com.zegoggles.smssync.service.BackupTask],[com.zegoggles.smssync.service.BackupTask],Don't expose imapstore in config,"Don't expose imapstore in config
+59b8884ce7737549a2975c7e29b64e43fcf78d58,Extract And Move Method,EXTRACT_AND_MOVE_OPERATION,[com.zegoggles.smssync.service.BackupTask],[com.zegoggles.smssync.service.BackupTask],Don't expose imapstore in config,"Don't expose imapstore in config
 "
-e903d4957ddabfaed2f284c4a07ab60e4a4932e3,Change Parameter Type,CHANGE_PARAMETER_TYPE,params : Integer...,params : RestoreConfig...,[com.zegoggles.smssync.service.RestoreTask],[com.zegoggles.smssync.service.RestoreTask],Tests for restoring + retry on oauth token error,"Tests for restoring + retry on oauth token error
+e903d4957ddabfaed2f284c4a07ab60e4a4932e3,Change Parameter Type,CHANGE_PARAMETER_TYPE,[com.zegoggles.smssync.service.RestoreTask],[com.zegoggles.smssync.service.RestoreTask],Tests for restoring + retry on oauth token error,"Tests for restoring + retry on oauth token error
 "
-e903d4957ddabfaed2f284c4a07ab60e4a4932e3,Extract Class,EXTRACT_CLASS,com.zegoggles.smssync.service.RestoreTask,com.zegoggles.smssync.service.RestoreConfig,[com.zegoggles.smssync.service.RestoreConfig],[com.zegoggles.smssync.service.RestoreTask],Tests for restoring + retry on oauth token error,"Tests for restoring + retry on oauth token error
+e903d4957ddabfaed2f284c4a07ab60e4a4932e3,Extract Class,EXTRACT_CLASS,[com.zegoggles.smssync.service.RestoreConfig],[com.zegoggles.smssync.service.RestoreTask],Tests for restoring + retry on oauth token error,"Tests for restoring + retry on oauth token error
 "
-e903d4957ddabfaed2f284c4a07ab60e4a4932e3,Move Attribute,MOVE_ATTRIBUTE,imapStore : BackupImapStore,imapStore : BackupImapStore,[com.zegoggles.smssync.service.RestoreConfig],[com.zegoggles.smssync.service.RestoreTask],Tests for restoring + retry on oauth token error,"Tests for restoring + retry on oauth token error
+e903d4957ddabfaed2f284c4a07ab60e4a4932e3,Move Attribute,MOVE_ATTRIBUTE,[com.zegoggles.smssync.service.RestoreConfig],[com.zegoggles.smssync.service.RestoreTask],Tests for restoring + retry on oauth token error,"Tests for restoring + retry on oauth token error
 "
-e903d4957ddabfaed2f284c4a07ab60e4a4932e3,Move Attribute,MOVE_ATTRIBUTE,restoreSms : boolean,restoreSms : boolean,[com.zegoggles.smssync.service.RestoreConfig],[com.zegoggles.smssync.service.RestoreTask],Tests for restoring + retry on oauth token error,"Tests for restoring + retry on oauth token error
+e903d4957ddabfaed2f284c4a07ab60e4a4932e3,Move Attribute,MOVE_ATTRIBUTE,[com.zegoggles.smssync.service.RestoreConfig],[com.zegoggles.smssync.service.RestoreTask],Tests for restoring + retry on oauth token error,"Tests for restoring + retry on oauth token error
 "
-e903d4957ddabfaed2f284c4a07ab60e4a4932e3,Move Attribute,MOVE_ATTRIBUTE,restoreCallLog : boolean,restoreCallLog : boolean,[com.zegoggles.smssync.service.RestoreConfig],[com.zegoggles.smssync.service.RestoreTask],Tests for restoring + retry on oauth token error,"Tests for restoring + retry on oauth token error
+e903d4957ddabfaed2f284c4a07ab60e4a4932e3,Move Attribute,MOVE_ATTRIBUTE,[com.zegoggles.smssync.service.RestoreConfig],[com.zegoggles.smssync.service.RestoreTask],Tests for restoring + retry on oauth token error,"Tests for restoring + retry on oauth token error
 "
-e903d4957ddabfaed2f284c4a07ab60e4a4932e3,Move Attribute,MOVE_ATTRIBUTE,restoreOnlyStarred : boolean,restoreOnlyStarred : boolean,[com.zegoggles.smssync.service.RestoreConfig],[com.zegoggles.smssync.service.RestoreTask],Tests for restoring + retry on oauth token error,"Tests for restoring + retry on oauth token error
+e903d4957ddabfaed2f284c4a07ab60e4a4932e3,Move Attribute,MOVE_ATTRIBUTE,[com.zegoggles.smssync.service.RestoreConfig],[com.zegoggles.smssync.service.RestoreTask],Tests for restoring + retry on oauth token error,"Tests for restoring + retry on oauth token error
 "
-6286127f77546378fd2206347a2f9382a7bc3f61,Extract Method,EXTRACT_OPERATION,private shouldSchedule(context Context) : boolean,"private log(context Context, message String, appLog boolean) : void",[com.zegoggles.smssync.receiver.SmsBroadcastReceiver],[com.zegoggles.smssync.receiver.SmsBroadcastReceiver],Schedule intents with unique actions to let extras pass through,"Schedule intents with unique actions to let extras pass through
+6286127f77546378fd2206347a2f9382a7bc3f61,Extract Method,EXTRACT_OPERATION,[com.zegoggles.smssync.receiver.SmsBroadcastReceiver],[com.zegoggles.smssync.receiver.SmsBroadcastReceiver],Schedule intents with unique actions to let extras pass through,"Schedule intents with unique actions to let extras pass through
 "
-6286127f77546378fd2206347a2f9382a7bc3f61,Change Return Type,CHANGE_RETURN_TYPE,void,Intent,[com.zegoggles.smssync.service.AlarmsTest],[com.zegoggles.smssync.service.AlarmsTest],Schedule intents with unique actions to let extras pass through,"Schedule intents with unique actions to let extras pass through
+6286127f77546378fd2206347a2f9382a7bc3f61,Change Return Type,CHANGE_RETURN_TYPE,[com.zegoggles.smssync.service.AlarmsTest],[com.zegoggles.smssync.service.AlarmsTest],Schedule intents with unique actions to let extras pass through,"Schedule intents with unique actions to let extras pass through
 "
-1b9b0cf1ec8144dfb1e9e4da9aec1687836a2f86,Extract Method,EXTRACT_OPERATION,private shouldSchedule(context Context) : boolean,protected getPreferences(context Context) : Preferences,[com.zegoggles.smssync.receiver.SmsBroadcastReceiver],[com.zegoggles.smssync.receiver.SmsBroadcastReceiver],"tests for SmsBroadcastReceiver, schedule backup after bootup","tests for SmsBroadcastReceiver, schedule backup after bootup
+1b9b0cf1ec8144dfb1e9e4da9aec1687836a2f86,Extract Method,EXTRACT_OPERATION,[com.zegoggles.smssync.receiver.SmsBroadcastReceiver],[com.zegoggles.smssync.receiver.SmsBroadcastReceiver],"tests for SmsBroadcastReceiver, schedule backup after bootup","tests for SmsBroadcastReceiver, schedule backup after bootup
 "
-6d2cf785b671f2c880862b48914729268dde1dcf,Rename Parameter,RENAME_PARAMETER,ctx : Context,context : Context,[com.zegoggles.smssync.preferences.Preferences],[com.zegoggles.smssync.preferences.Preferences],De-staticize preferences,"De-staticize preferences
+6d2cf785b671f2c880862b48914729268dde1dcf,Rename Parameter,RENAME_PARAMETER,[com.zegoggles.smssync.preferences.Preferences],[com.zegoggles.smssync.preferences.Preferences],De-staticize preferences,"De-staticize preferences
 "
-6d2cf785b671f2c880862b48914729268dde1dcf,Rename Method,RENAME_METHOD,package prefs(ctx Context) : SharedPreferences,public Preferences(context Context),[com.zegoggles.smssync.preferences.Preferences],[com.zegoggles.smssync.preferences.Preferences],De-staticize preferences,"De-staticize preferences
+6d2cf785b671f2c880862b48914729268dde1dcf,Rename Method,RENAME_METHOD,[com.zegoggles.smssync.preferences.Preferences],[com.zegoggles.smssync.preferences.Preferences],De-staticize preferences,"De-staticize preferences
 "
-6d2cf785b671f2c880862b48914729268dde1dcf,Rename Method,RENAME_METHOD,public isAppLogDebug(context Context) : boolean,public isAppLogEnabled() : boolean,[com.zegoggles.smssync.preferences.Preferences],[com.zegoggles.smssync.preferences.Preferences],De-staticize preferences,"De-staticize preferences
+6d2cf785b671f2c880862b48914729268dde1dcf,Rename Method,RENAME_METHOD,[com.zegoggles.smssync.preferences.Preferences],[com.zegoggles.smssync.preferences.Preferences],De-staticize preferences,"De-staticize preferences
 "
-6d2cf785b671f2c880862b48914729268dde1dcf,Rename Method,RENAME_METHOD,public isAppLogEnabled(ctx Context) : boolean,public isAppLogDebug() : boolean,[com.zegoggles.smssync.preferences.Preferences],[com.zegoggles.smssync.preferences.Preferences],De-staticize preferences,"De-staticize preferences
+6d2cf785b671f2c880862b48914729268dde1dcf,Rename Method,RENAME_METHOD,[com.zegoggles.smssync.preferences.Preferences],[com.zegoggles.smssync.preferences.Preferences],De-staticize preferences,"De-staticize preferences
 "
-6d2cf785b671f2c880862b48914729268dde1dcf,Replace Variable With Attribute,REPLACE_VARIABLE_WITH_ATTRIBUTE,ctx : Context,context : Context,[com.zegoggles.smssync.preferences.Preferences],[com.zegoggles.smssync.preferences.Preferences],De-staticize preferences,"De-staticize preferences
+6d2cf785b671f2c880862b48914729268dde1dcf,Replace Variable With Attribute,REPLACE_VARIABLE_WITH_ATTRIBUTE,[com.zegoggles.smssync.preferences.Preferences],[com.zegoggles.smssync.preferences.Preferences],De-staticize preferences,"De-staticize preferences
 "
-6d2cf785b671f2c880862b48914729268dde1dcf,Replace Variable With Attribute,REPLACE_VARIABLE_WITH_ATTRIBUTE,ctx : Context,context : Context,[com.zegoggles.smssync.preferences.Preferences],[com.zegoggles.smssync.preferences.Preferences],De-staticize preferences,"De-staticize preferences
+6d2cf785b671f2c880862b48914729268dde1dcf,Replace Variable With Attribute,REPLACE_VARIABLE_WITH_ATTRIBUTE,[com.zegoggles.smssync.preferences.Preferences],[com.zegoggles.smssync.preferences.Preferences],De-staticize preferences,"De-staticize preferences
 "
-6d2cf785b671f2c880862b48914729268dde1dcf,Rename Parameter,RENAME_PARAMETER,ctx : Context,context : Context,[com.zegoggles.smssync.receiver.BackupBroadcastReceiver],[com.zegoggles.smssync.receiver.BackupBroadcastReceiver],De-staticize preferences,"De-staticize preferences
+6d2cf785b671f2c880862b48914729268dde1dcf,Rename Parameter,RENAME_PARAMETER,[com.zegoggles.smssync.receiver.BackupBroadcastReceiver],[com.zegoggles.smssync.receiver.BackupBroadcastReceiver],De-staticize preferences,"De-staticize preferences
 "
-6d2cf785b671f2c880862b48914729268dde1dcf,Rename Parameter,RENAME_PARAMETER,ctx : Context,context : Context,[com.zegoggles.smssync.receiver.BackupBroadcastReceiver],[com.zegoggles.smssync.receiver.BackupBroadcastReceiver],De-staticize preferences,"De-staticize preferences
+6d2cf785b671f2c880862b48914729268dde1dcf,Rename Parameter,RENAME_PARAMETER,[com.zegoggles.smssync.receiver.BackupBroadcastReceiver],[com.zegoggles.smssync.receiver.BackupBroadcastReceiver],De-staticize preferences,"De-staticize preferences
 "
-6d2cf785b671f2c880862b48914729268dde1dcf,Move Method,MOVE_OPERATION,public isValidImapFolder(imapFolder String) : boolean,public isValidImapFolder(imapFolder String) : boolean,[com.zegoggles.smssync.mail.BackupImapStore],[com.zegoggles.smssync.preferences.Preferences],De-staticize preferences,"De-staticize preferences
+6d2cf785b671f2c880862b48914729268dde1dcf,Move Method,MOVE_OPERATION,[com.zegoggles.smssync.mail.BackupImapStore],[com.zegoggles.smssync.preferences.Preferences],De-staticize preferences,"De-staticize preferences
 "
-5411a10c37e59d4f67aa2ad62ae488540ad0126d,Rename Parameter,RENAME_PARAMETER,ctx : Context,context : Context,[com.zegoggles.smssync.receiver.SmsBroadcastReceiver],[com.zegoggles.smssync.receiver.SmsBroadcastReceiver],Add some extra debugging,"Add some extra debugging
+5411a10c37e59d4f67aa2ad62ae488540ad0126d,Rename Parameter,RENAME_PARAMETER,[com.zegoggles.smssync.receiver.SmsBroadcastReceiver],[com.zegoggles.smssync.receiver.SmsBroadcastReceiver],Add some extra debugging,"Add some extra debugging
 "
-5411a10c37e59d4f67aa2ad62ae488540ad0126d,Rename Parameter,RENAME_PARAMETER,ctx : Context,context : Context,[com.zegoggles.smssync.receiver.SmsBroadcastReceiver],[com.zegoggles.smssync.receiver.SmsBroadcastReceiver],Add some extra debugging,"Add some extra debugging
+5411a10c37e59d4f67aa2ad62ae488540ad0126d,Rename Parameter,RENAME_PARAMETER,[com.zegoggles.smssync.receiver.SmsBroadcastReceiver],[com.zegoggles.smssync.receiver.SmsBroadcastReceiver],Add some extra debugging,"Add some extra debugging
 "
-5411a10c37e59d4f67aa2ad62ae488540ad0126d,Rename Parameter,RENAME_PARAMETER,ctx : Context,context : Context,[com.zegoggles.smssync.receiver.SmsBroadcastReceiver],[com.zegoggles.smssync.receiver.SmsBroadcastReceiver],Add some extra debugging,"Add some extra debugging
+5411a10c37e59d4f67aa2ad62ae488540ad0126d,Rename Parameter,RENAME_PARAMETER,[com.zegoggles.smssync.receiver.SmsBroadcastReceiver],[com.zegoggles.smssync.receiver.SmsBroadcastReceiver],Add some extra debugging,"Add some extra debugging
 "
-5411a10c37e59d4f67aa2ad62ae488540ad0126d,Extract Method,EXTRACT_OPERATION,private incomingSMS(ctx Context) : void,private shouldSchedule(context Context) : boolean,[com.zegoggles.smssync.receiver.SmsBroadcastReceiver],[com.zegoggles.smssync.receiver.SmsBroadcastReceiver],Add some extra debugging,"Add some extra debugging
+5411a10c37e59d4f67aa2ad62ae488540ad0126d,Extract Method,EXTRACT_OPERATION,[com.zegoggles.smssync.receiver.SmsBroadcastReceiver],[com.zegoggles.smssync.receiver.SmsBroadcastReceiver],Add some extra debugging,"Add some extra debugging
 "
-5411a10c37e59d4f67aa2ad62ae488540ad0126d,Extract Variable,EXTRACT_VARIABLE,0,schedule : boolean,[com.zegoggles.smssync.receiver.SmsBroadcastReceiver],[com.zegoggles.smssync.receiver.SmsBroadcastReceiver],Add some extra debugging,"Add some extra debugging
+5411a10c37e59d4f67aa2ad62ae488540ad0126d,Extract Variable,EXTRACT_VARIABLE,[com.zegoggles.smssync.receiver.SmsBroadcastReceiver],[com.zegoggles.smssync.receiver.SmsBroadcastReceiver],Add some extra debugging,"Add some extra debugging
 "
-5411a10c37e59d4f67aa2ad62ae488540ad0126d,Rename Parameter,RENAME_PARAMETER,ctx : Context,context : Context,[com.zegoggles.smssync.receiver.SmsBroadcastReceiver],[com.zegoggles.smssync.receiver.SmsBroadcastReceiver],Add some extra debugging,"Add some extra debugging
+5411a10c37e59d4f67aa2ad62ae488540ad0126d,Rename Parameter,RENAME_PARAMETER,[com.zegoggles.smssync.receiver.SmsBroadcastReceiver],[com.zegoggles.smssync.receiver.SmsBroadcastReceiver],Add some extra debugging,"Add some extra debugging
 "
-d682b669253e5d0283cfc2d93b528001c95d4536,Extract Method,EXTRACT_OPERATION,private updateAutoBackupEnabledSummary() : void,protected getEnabledBackupSummary() : String,[com.zegoggles.smssync.activity.MainActivity],[com.zegoggles.smssync.activity.MainActivity],"Convert preferences to enums, better messaging for summary","Convert preferences to enums, better messaging for summary
+d682b669253e5d0283cfc2d93b528001c95d4536,Extract Method,EXTRACT_OPERATION,[com.zegoggles.smssync.activity.MainActivity],[com.zegoggles.smssync.activity.MainActivity],"Convert preferences to enums, better messaging for summary","Convert preferences to enums, better messaging for summary
 "
-3b0fbb47593619175fa6e6586d462caca005ba46,Extract Variable,EXTRACT_VARIABLE,0,id : String,[com.zegoggles.smssync.calendar.CalendarAccessorPost40],[com.zegoggles.smssync.calendar.CalendarAccessorPost40],Make sure call log calendar is marked as synced,"Make sure call log calendar is marked as synced
+3b0fbb47593619175fa6e6586d462caca005ba46,Extract Variable,EXTRACT_VARIABLE,[com.zegoggles.smssync.calendar.CalendarAccessorPost40],[com.zegoggles.smssync.calendar.CalendarAccessorPost40],Make sure call log calendar is marked as synced,"Make sure call log calendar is marked as synced
 
 Closes #260
 "
-3b0fbb47593619175fa6e6586d462caca005ba46,Extract Variable,EXTRACT_VARIABLE,0,name : String,[com.zegoggles.smssync.calendar.CalendarAccessorPost40],[com.zegoggles.smssync.calendar.CalendarAccessorPost40],Make sure call log calendar is marked as synced,"Make sure call log calendar is marked as synced
+3b0fbb47593619175fa6e6586d462caca005ba46,Extract Variable,EXTRACT_VARIABLE,[com.zegoggles.smssync.calendar.CalendarAccessorPost40],[com.zegoggles.smssync.calendar.CalendarAccessorPost40],Make sure call log calendar is marked as synced,"Make sure call log calendar is marked as synced
 
 Closes #260
 "
-3b0fbb47593619175fa6e6586d462caca005ba46,Change Attribute Type,CHANGE_ATTRIBUTE_TYPE,calendarId : int,calendarId : long,[com.zegoggles.smssync.service.CalendarSyncer],[com.zegoggles.smssync.service.CalendarSyncer],Make sure call log calendar is marked as synced,"Make sure call log calendar is marked as synced
+3b0fbb47593619175fa6e6586d462caca005ba46,Change Attribute Type,CHANGE_ATTRIBUTE_TYPE,[com.zegoggles.smssync.service.CalendarSyncer],[com.zegoggles.smssync.service.CalendarSyncer],Make sure call log calendar is marked as synced,"Make sure call log calendar is marked as synced
 
 Closes #260
 "
-3b0fbb47593619175fa6e6586d462caca005ba46,Change Parameter Type,CHANGE_PARAMETER_TYPE,calendarId : int,calendarId : long,[com.zegoggles.smssync.service.CalendarSyncer],[com.zegoggles.smssync.service.CalendarSyncer],Make sure call log calendar is marked as synced,"Make sure call log calendar is marked as synced
+3b0fbb47593619175fa6e6586d462caca005ba46,Change Parameter Type,CHANGE_PARAMETER_TYPE,[com.zegoggles.smssync.service.CalendarSyncer],[com.zegoggles.smssync.service.CalendarSyncer],Make sure call log calendar is marked as synced,"Make sure call log calendar is marked as synced
 
 Closes #260
 "
-3b0fbb47593619175fa6e6586d462caca005ba46,Rename Parameter,RENAME_PARAMETER,calendars : CalendarAccessor,calendarAccessor : CalendarAccessor,[com.zegoggles.smssync.service.CalendarSyncer],[com.zegoggles.smssync.service.CalendarSyncer],Make sure call log calendar is marked as synced,"Make sure call log calendar is marked as synced
+3b0fbb47593619175fa6e6586d462caca005ba46,Rename Parameter,RENAME_PARAMETER,[com.zegoggles.smssync.service.CalendarSyncer],[com.zegoggles.smssync.service.CalendarSyncer],Make sure call log calendar is marked as synced,"Make sure call log calendar is marked as synced
 
 Closes #260
 "
-3b0fbb47593619175fa6e6586d462caca005ba46,Rename Attribute,RENAME_ATTRIBUTE,calendars : CalendarAccessor,calendarAccessor : CalendarAccessor,[com.zegoggles.smssync.service.CalendarSyncer],[com.zegoggles.smssync.service.CalendarSyncer],Make sure call log calendar is marked as synced,"Make sure call log calendar is marked as synced
+3b0fbb47593619175fa6e6586d462caca005ba46,Rename Attribute,RENAME_ATTRIBUTE,[com.zegoggles.smssync.service.CalendarSyncer],[com.zegoggles.smssync.service.CalendarSyncer],Make sure call log calendar is marked as synced,"Make sure call log calendar is marked as synced
 
 Closes #260
 "
-3b0fbb47593619175fa6e6586d462caca005ba46,Extract And Move Method,EXTRACT_AND_MOVE_OPERATION,public syncCalendar(result ConversionResult) : void,"public formatForCalendar(callType int, number String, duration int) : String",[com.zegoggles.smssync.service.CalendarSyncer],[com.zegoggles.smssync.service.CalendarSyncer],Make sure call log calendar is marked as synced,"Make sure call log calendar is marked as synced
+3b0fbb47593619175fa6e6586d462caca005ba46,Extract And Move Method,EXTRACT_AND_MOVE_OPERATION,[com.zegoggles.smssync.service.CalendarSyncer],[com.zegoggles.smssync.service.CalendarSyncer],Make sure call log calendar is marked as synced,"Make sure call log calendar is marked as synced
 
 Closes #260
 "
-3b0fbb47593619175fa6e6586d462caca005ba46,Extract And Move Method,EXTRACT_AND_MOVE_OPERATION,"public convertMessages(cursor Cursor, maxEntries int, dataType DataType) : ConversionResult","public add(message Message, map Map<String,String>) : void",[com.zegoggles.smssync.mail.MessageConverter],[com.zegoggles.smssync.mail.MessageConverter],Make sure call log calendar is marked as synced,"Make sure call log calendar is marked as synced
+3b0fbb47593619175fa6e6586d462caca005ba46,Extract And Move Method,EXTRACT_AND_MOVE_OPERATION,[com.zegoggles.smssync.mail.MessageConverter],[com.zegoggles.smssync.mail.MessageConverter],Make sure call log calendar is marked as synced,"Make sure call log calendar is marked as synced
 
 Closes #260
 "
-3b0fbb47593619175fa6e6586d462caca005ba46,Extract And Move Method,EXTRACT_AND_MOVE_OPERATION,"private backup(config BackupConfig, smsItems Cursor, mmsItems Cursor, callLogItems Cursor, whatsAppItems Cursor, itemsToSync int) : BackupState",public getMessages() : List<Message>,[com.zegoggles.smssync.service.BackupTask],[com.zegoggles.smssync.service.BackupTask],Make sure call log calendar is marked as synced,"Make sure call log calendar is marked as synced
+3b0fbb47593619175fa6e6586d462caca005ba46,Extract And Move Method,EXTRACT_AND_MOVE_OPERATION,[com.zegoggles.smssync.service.BackupTask],[com.zegoggles.smssync.service.BackupTask],Make sure call log calendar is marked as synced,"Make sure call log calendar is marked as synced
 
 Closes #260
 "
-3b0fbb47593619175fa6e6586d462caca005ba46,Extract And Move Method,EXTRACT_AND_MOVE_OPERATION,public syncCalendar(result ConversionResult) : void,"public getMapList() : List<Map<String,String>>",[com.zegoggles.smssync.service.CalendarSyncer],[com.zegoggles.smssync.service.CalendarSyncer],Make sure call log calendar is marked as synced,"Make sure call log calendar is marked as synced
+3b0fbb47593619175fa6e6586d462caca005ba46,Extract And Move Method,EXTRACT_AND_MOVE_OPERATION,[com.zegoggles.smssync.service.CalendarSyncer],[com.zegoggles.smssync.service.CalendarSyncer],Make sure call log calendar is marked as synced,"Make sure call log calendar is marked as synced
 
 Closes #260
 "
-817cc43ae66fbfb367359359601cd66193c0723e,Rename Class,RENAME_CLASS,com.zegoggles.smssync.utils.Utils,com.zegoggles.smssync.utils.ListPreferenceHelper,[com.zegoggles.smssync.utils.ListPreferenceHelper],[com.zegoggles.smssync.utils.Utils],Remove dependency for preference,"Remove dependency for preference
+817cc43ae66fbfb367359359601cd66193c0723e,Rename Class,RENAME_CLASS,[com.zegoggles.smssync.utils.ListPreferenceHelper],[com.zegoggles.smssync.utils.Utils],Remove dependency for preference,"Remove dependency for preference
 "
-817cc43ae66fbfb367359359601cd66193c0723e,Extract Variable,EXTRACT_VARIABLE,0,enabled : boolean,[com.zegoggles.smssync.utils.ListPreferenceHelper],[com.zegoggles.smssync.utils.ListPreferenceHelper],Remove dependency for preference,"Remove dependency for preference
+817cc43ae66fbfb367359359601cd66193c0723e,Extract Variable,EXTRACT_VARIABLE,[com.zegoggles.smssync.utils.ListPreferenceHelper],[com.zegoggles.smssync.utils.ListPreferenceHelper],Remove dependency for preference,"Remove dependency for preference
 "
-0ad7c0668a3da32d02c61e98715479b315a18a6e,Rename Method,RENAME_METHOD,"public cursorToMessages(cursor Cursor, maxEntries int, dataType DataType) : ConversionResult","public convertMessages(cursor Cursor, maxEntries int, dataType DataType) : ConversionResult",[com.zegoggles.smssync.mail.MessageConverter],[com.zegoggles.smssync.mail.MessageConverter],Rename,"Rename
+0ad7c0668a3da32d02c61e98715479b315a18a6e,Rename Method,RENAME_METHOD,[com.zegoggles.smssync.mail.MessageConverter],[com.zegoggles.smssync.mail.MessageConverter],Rename,"Rename
 "
-1dc96103538d3c5836d223820deb31ed1f11d523,Change Parameter Type,CHANGE_PARAMETER_TYPE,records : PersonRecord[],records : Iterable<PersonRecord>,[com.zegoggles.smssync.mail.MessageGenerator],[com.zegoggles.smssync.mail.MessageGenerator],Tests for message generator / personrecord,"Tests for message generator / personrecord
+1dc96103538d3c5836d223820deb31ed1f11d523,Change Parameter Type,CHANGE_PARAMETER_TYPE,[com.zegoggles.smssync.mail.MessageGenerator],[com.zegoggles.smssync.mail.MessageGenerator],Tests for message generator / personrecord,"Tests for message generator / personrecord
 "
-1dc96103538d3c5836d223820deb31ed1f11d523,Rename Attribute,RENAME_ATTRIBUTE,mResolver : ContentResolver,mMmsSupport : MmsSupport,[com.zegoggles.smssync.mail.MessageGenerator],[com.zegoggles.smssync.mail.MessageGenerator],Tests for message generator / personrecord,"Tests for message generator / personrecord
+1dc96103538d3c5836d223820deb31ed1f11d523,Rename Attribute,RENAME_ATTRIBUTE,[com.zegoggles.smssync.mail.MessageGenerator],[com.zegoggles.smssync.mail.MessageGenerator],Tests for message generator / personrecord,"Tests for message generator / personrecord
 "
-1dc96103538d3c5836d223820deb31ed1f11d523,Change Attribute Type,CHANGE_ATTRIBUTE_TYPE,mResolver : ContentResolver,mMmsSupport : MmsSupport,[com.zegoggles.smssync.mail.MessageGenerator],[com.zegoggles.smssync.mail.MessageGenerator],Tests for message generator / personrecord,"Tests for message generator / personrecord
+1dc96103538d3c5836d223820deb31ed1f11d523,Change Attribute Type,CHANGE_ATTRIBUTE_TYPE,[com.zegoggles.smssync.mail.MessageGenerator],[com.zegoggles.smssync.mail.MessageGenerator],Tests for message generator / personrecord,"Tests for message generator / personrecord
 "
-1dc96103538d3c5836d223820deb31ed1f11d523,Rename Variable,RENAME_VARIABLE,addresses : Cursor,cursor : Cursor,[com.zegoggles.smssync.mail.MmsSupport],[com.zegoggles.smssync.mail.MmsSupport],Tests for message generator / personrecord,"Tests for message generator / personrecord
+1dc96103538d3c5836d223820deb31ed1f11d523,Rename Variable,RENAME_VARIABLE,[com.zegoggles.smssync.mail.MmsSupport],[com.zegoggles.smssync.mail.MmsSupport],Tests for message generator / personrecord,"Tests for message generator / personrecord
 "
-1dc96103538d3c5836d223820deb31ed1f11d523,Change Attribute Type,CHANGE_ATTRIBUTE_TYPE,records : PersonRecord[],records : List<PersonRecord>,[com.zegoggles.smssync.mail.MmsSupport.MmsDetails],[com.zegoggles.smssync.mail.MmsSupport.MmsDetails],Tests for message generator / personrecord,"Tests for message generator / personrecord
+1dc96103538d3c5836d223820deb31ed1f11d523,Change Attribute Type,CHANGE_ATTRIBUTE_TYPE,[com.zegoggles.smssync.mail.MmsSupport.MmsDetails],[com.zegoggles.smssync.mail.MmsSupport.MmsDetails],Tests for message generator / personrecord,"Tests for message generator / personrecord
 "
-1dc96103538d3c5836d223820deb31ed1f11d523,Change Attribute Type,CHANGE_ATTRIBUTE_TYPE,addresses : Address[],addresses : List<Address>,[com.zegoggles.smssync.mail.MmsSupport.MmsDetails],[com.zegoggles.smssync.mail.MmsSupport.MmsDetails],Tests for message generator / personrecord,"Tests for message generator / personrecord
+1dc96103538d3c5836d223820deb31ed1f11d523,Change Attribute Type,CHANGE_ATTRIBUTE_TYPE,[com.zegoggles.smssync.mail.MmsSupport.MmsDetails],[com.zegoggles.smssync.mail.MmsSupport.MmsDetails],Tests for message generator / personrecord,"Tests for message generator / personrecord
 "
-1dc96103538d3c5836d223820deb31ed1f11d523,Rename Method,RENAME_METHOD,public testShouldGenerateSubjectWithNameForCallLog() : void,public testShouldGenerateMessageForCallLogMissed() : void,[com.zegoggles.smssync.mail.MessageGeneratorTest],[com.zegoggles.smssync.mail.MessageGeneratorTest],Tests for message generator / personrecord,"Tests for message generator / personrecord
+1dc96103538d3c5836d223820deb31ed1f11d523,Rename Method,RENAME_METHOD,[com.zegoggles.smssync.mail.MessageGeneratorTest],[com.zegoggles.smssync.mail.MessageGeneratorTest],Tests for message generator / personrecord,"Tests for message generator / personrecord
 "
-1dc96103538d3c5836d223820deb31ed1f11d523,Rename Variable,RENAME_VARIABLE,record : PersonRecord,personRecord : PersonRecord,[com.zegoggles.smssync.mail.MessageGeneratorTest],[com.zegoggles.smssync.mail.MessageGeneratorTest],Tests for message generator / personrecord,"Tests for message generator / personrecord
+1dc96103538d3c5836d223820deb31ed1f11d523,Rename Variable,RENAME_VARIABLE,[com.zegoggles.smssync.mail.MessageGeneratorTest],[com.zegoggles.smssync.mail.MessageGeneratorTest],Tests for message generator / personrecord,"Tests for message generator / personrecord
 "
-e47ec1e0da383e683d332da908179925e5278833,Rename Class,RENAME_CLASS,com.zegoggles.smssync.contacts.GroupContactIds,com.zegoggles.smssync.contacts.ContactGroupIds,[com.zegoggles.smssync.contacts.ContactGroupIds],[com.zegoggles.smssync.contacts.GroupContactIds],Simplify group selection logic,"Simplify group selection logic
+e47ec1e0da383e683d332da908179925e5278833,Rename Class,RENAME_CLASS,[com.zegoggles.smssync.contacts.ContactGroupIds],[com.zegoggles.smssync.contacts.GroupContactIds],Simplify group selection logic,"Simplify group selection logic
 "
-e47ec1e0da383e683d332da908179925e5278833,Rename Class,RENAME_CLASS,com.zegoggles.smssync.contacts.GroupContactIdsTest,com.zegoggles.smssync.contacts.ContactGroupdsTest,[com.zegoggles.smssync.contacts.ContactGroupdsTest],[com.zegoggles.smssync.contacts.GroupContactIdsTest],Simplify group selection logic,"Simplify group selection logic
+e47ec1e0da383e683d332da908179925e5278833,Rename Class,RENAME_CLASS,[com.zegoggles.smssync.contacts.ContactGroupdsTest],[com.zegoggles.smssync.contacts.GroupContactIdsTest],Simplify group selection logic,"Simplify group selection logic
 "
-e47ec1e0da383e683d332da908179925e5278833,Change Return Type,CHANGE_RETURN_TYPE,GroupContactIds,ContactGroupIds,[com.zegoggles.smssync.contacts.ContactAccessor],[com.zegoggles.smssync.contacts.ContactAccessor],Simplify group selection logic,"Simplify group selection logic
+e47ec1e0da383e683d332da908179925e5278833,Change Return Type,CHANGE_RETURN_TYPE,[com.zegoggles.smssync.contacts.ContactAccessor],[com.zegoggles.smssync.contacts.ContactAccessor],Simplify group selection logic,"Simplify group selection logic
 "
-e47ec1e0da383e683d332da908179925e5278833,Change Return Type,CHANGE_RETURN_TYPE,GroupContactIds,ContactGroupIds,[com.zegoggles.smssync.contacts.ContactAccessorPost20],[com.zegoggles.smssync.contacts.ContactAccessorPost20],Simplify group selection logic,"Simplify group selection logic
+e47ec1e0da383e683d332da908179925e5278833,Change Return Type,CHANGE_RETURN_TYPE,[com.zegoggles.smssync.contacts.ContactAccessorPost20],[com.zegoggles.smssync.contacts.ContactAccessorPost20],Simplify group selection logic,"Simplify group selection logic
 "
-e47ec1e0da383e683d332da908179925e5278833,Change Variable Type,CHANGE_VARIABLE_TYPE,contactIds : GroupContactIds,contactIds : ContactGroupIds,[com.zegoggles.smssync.contacts.ContactAccessorPost20],[com.zegoggles.smssync.contacts.ContactAccessorPost20],Simplify group selection logic,"Simplify group selection logic
+e47ec1e0da383e683d332da908179925e5278833,Change Variable Type,CHANGE_VARIABLE_TYPE,[com.zegoggles.smssync.contacts.ContactAccessorPost20],[com.zegoggles.smssync.contacts.ContactAccessorPost20],Simplify group selection logic,"Simplify group selection logic
 "
-e47ec1e0da383e683d332da908179925e5278833,Change Return Type,CHANGE_RETURN_TYPE,GroupContactIds,ContactGroupIds,[com.zegoggles.smssync.contacts.ContactAccessorPre20],[com.zegoggles.smssync.contacts.ContactAccessorPre20],Simplify group selection logic,"Simplify group selection logic
+e47ec1e0da383e683d332da908179925e5278833,Change Return Type,CHANGE_RETURN_TYPE,[com.zegoggles.smssync.contacts.ContactAccessorPre20],[com.zegoggles.smssync.contacts.ContactAccessorPre20],Simplify group selection logic,"Simplify group selection logic
 "
-e47ec1e0da383e683d332da908179925e5278833,Rename Parameter,RENAME_PARAMETER,allowedIds : GroupContactIds,contactsToBackup : ContactGroupIds,[com.zegoggles.smssync.mail.MessageGenerator],[com.zegoggles.smssync.mail.MessageGenerator],Simplify group selection logic,"Simplify group selection logic
+e47ec1e0da383e683d332da908179925e5278833,Rename Parameter,RENAME_PARAMETER,[com.zegoggles.smssync.mail.MessageGenerator],[com.zegoggles.smssync.mail.MessageGenerator],Simplify group selection logic,"Simplify group selection logic
 "
-e47ec1e0da383e683d332da908179925e5278833,Change Parameter Type,CHANGE_PARAMETER_TYPE,allowedIds : GroupContactIds,contactsToBackup : ContactGroupIds,[com.zegoggles.smssync.mail.MessageGenerator],[com.zegoggles.smssync.mail.MessageGenerator],Simplify group selection logic,"Simplify group selection logic
+e47ec1e0da383e683d332da908179925e5278833,Change Parameter Type,CHANGE_PARAMETER_TYPE,[com.zegoggles.smssync.mail.MessageGenerator],[com.zegoggles.smssync.mail.MessageGenerator],Simplify group selection logic,"Simplify group selection logic
 "
-e47ec1e0da383e683d332da908179925e5278833,Rename Attribute,RENAME_ATTRIBUTE,mAllowedContacts : GroupContactIds,mContactsToBackup : ContactGroupIds,[com.zegoggles.smssync.mail.MessageGenerator],[com.zegoggles.smssync.mail.MessageGenerator],Simplify group selection logic,"Simplify group selection logic
+e47ec1e0da383e683d332da908179925e5278833,Rename Attribute,RENAME_ATTRIBUTE,[com.zegoggles.smssync.mail.MessageGenerator],[com.zegoggles.smssync.mail.MessageGenerator],Simplify group selection logic,"Simplify group selection logic
 "
-e47ec1e0da383e683d332da908179925e5278833,Change Attribute Type,CHANGE_ATTRIBUTE_TYPE,mAllowedContacts : GroupContactIds,mContactsToBackup : ContactGroupIds,[com.zegoggles.smssync.mail.MessageGenerator],[com.zegoggles.smssync.mail.MessageGenerator],Simplify group selection logic,"Simplify group selection logic
+e47ec1e0da383e683d332da908179925e5278833,Change Attribute Type,CHANGE_ATTRIBUTE_TYPE,[com.zegoggles.smssync.mail.MessageGenerator],[com.zegoggles.smssync.mail.MessageGenerator],Simplify group selection logic,"Simplify group selection logic
 "
-e47ec1e0da383e683d332da908179925e5278833,Change Parameter Type,CHANGE_PARAMETER_TYPE,group : ContactGroup,group : ContactGroupIds,[com.zegoggles.smssync.service.BackupItemsFetcher],[com.zegoggles.smssync.service.BackupItemsFetcher],Simplify group selection logic,"Simplify group selection logic
+e47ec1e0da383e683d332da908179925e5278833,Change Parameter Type,CHANGE_PARAMETER_TYPE,[com.zegoggles.smssync.service.BackupItemsFetcher],[com.zegoggles.smssync.service.BackupItemsFetcher],Simplify group selection logic,"Simplify group selection logic
 "
-e47ec1e0da383e683d332da908179925e5278833,Rename Parameter,RENAME_PARAMETER,group : ContactGroup,groupIds : ContactGroupIds,[com.zegoggles.smssync.service.BackupQueryBuilder],[com.zegoggles.smssync.service.BackupQueryBuilder],Simplify group selection logic,"Simplify group selection logic
+e47ec1e0da383e683d332da908179925e5278833,Rename Parameter,RENAME_PARAMETER,[com.zegoggles.smssync.service.BackupQueryBuilder],[com.zegoggles.smssync.service.BackupQueryBuilder],Simplify group selection logic,"Simplify group selection logic
 "
-e47ec1e0da383e683d332da908179925e5278833,Change Parameter Type,CHANGE_PARAMETER_TYPE,group : ContactGroup,groupIds : ContactGroupIds,[com.zegoggles.smssync.service.BackupQueryBuilder],[com.zegoggles.smssync.service.BackupQueryBuilder],Simplify group selection logic,"Simplify group selection logic
+e47ec1e0da383e683d332da908179925e5278833,Change Parameter Type,CHANGE_PARAMETER_TYPE,[com.zegoggles.smssync.service.BackupQueryBuilder],[com.zegoggles.smssync.service.BackupQueryBuilder],Simplify group selection logic,"Simplify group selection logic
 "
-e47ec1e0da383e683d332da908179925e5278833,Rename Parameter,RENAME_PARAMETER,group : ContactGroup,groupIds : ContactGroupIds,[com.zegoggles.smssync.service.BackupQueryBuilder],[com.zegoggles.smssync.service.BackupQueryBuilder],Simplify group selection logic,"Simplify group selection logic
+e47ec1e0da383e683d332da908179925e5278833,Rename Parameter,RENAME_PARAMETER,[com.zegoggles.smssync.service.BackupQueryBuilder],[com.zegoggles.smssync.service.BackupQueryBuilder],Simplify group selection logic,"Simplify group selection logic
 "
-e47ec1e0da383e683d332da908179925e5278833,Change Parameter Type,CHANGE_PARAMETER_TYPE,group : ContactGroup,groupIds : ContactGroupIds,[com.zegoggles.smssync.service.BackupQueryBuilder],[com.zegoggles.smssync.service.BackupQueryBuilder],Simplify group selection logic,"Simplify group selection logic
+e47ec1e0da383e683d332da908179925e5278833,Change Parameter Type,CHANGE_PARAMETER_TYPE,[com.zegoggles.smssync.service.BackupQueryBuilder],[com.zegoggles.smssync.service.BackupQueryBuilder],Simplify group selection logic,"Simplify group selection logic
 "
-e47ec1e0da383e683d332da908179925e5278833,Change Parameter Type,CHANGE_PARAMETER_TYPE,group : ContactGroup,group : ContactGroupIds,[com.zegoggles.smssync.service.BackupQueryBuilder],[com.zegoggles.smssync.service.BackupQueryBuilder],Simplify group selection logic,"Simplify group selection logic
+e47ec1e0da383e683d332da908179925e5278833,Change Parameter Type,CHANGE_PARAMETER_TYPE,[com.zegoggles.smssync.service.BackupQueryBuilder],[com.zegoggles.smssync.service.BackupQueryBuilder],Simplify group selection logic,"Simplify group selection logic
 "
-e47ec1e0da383e683d332da908179925e5278833,Change Parameter Type,CHANGE_PARAMETER_TYPE,group : ContactGroup,group : ContactGroupIds,[com.zegoggles.smssync.service.BackupQueryBuilder],[com.zegoggles.smssync.service.BackupQueryBuilder],Simplify group selection logic,"Simplify group selection logic
+e47ec1e0da383e683d332da908179925e5278833,Change Parameter Type,CHANGE_PARAMETER_TYPE,[com.zegoggles.smssync.service.BackupQueryBuilder],[com.zegoggles.smssync.service.BackupQueryBuilder],Simplify group selection logic,"Simplify group selection logic
 "
-e47ec1e0da383e683d332da908179925e5278833,Change Variable Type,CHANGE_VARIABLE_TYPE,ids : GroupContactIds,ids : ContactGroupIds,[com.zegoggles.smssync.service.BackupQueryBuilderTest],[com.zegoggles.smssync.service.BackupQueryBuilderTest],Simplify group selection logic,"Simplify group selection logic
+e47ec1e0da383e683d332da908179925e5278833,Change Variable Type,CHANGE_VARIABLE_TYPE,[com.zegoggles.smssync.service.BackupQueryBuilderTest],[com.zegoggles.smssync.service.BackupQueryBuilderTest],Simplify group selection logic,"Simplify group selection logic
 "
-e47ec1e0da383e683d332da908179925e5278833,Change Variable Type,CHANGE_VARIABLE_TYPE,ids : GroupContactIds,ids : ContactGroupIds,[com.zegoggles.smssync.contacts.ContactGroupdsTest],[com.zegoggles.smssync.contacts.GroupContactIdsTest],Simplify group selection logic,"Simplify group selection logic
+e47ec1e0da383e683d332da908179925e5278833,Change Variable Type,CHANGE_VARIABLE_TYPE,[com.zegoggles.smssync.contacts.ContactGroupdsTest],[com.zegoggles.smssync.contacts.GroupContactIdsTest],Simplify group selection logic,"Simplify group selection logic
 "
-e47ec1e0da383e683d332da908179925e5278833,Change Variable Type,CHANGE_VARIABLE_TYPE,ids : GroupContactIds,ids : ContactGroupIds,[com.zegoggles.smssync.contacts.ContactGroupdsTest],[com.zegoggles.smssync.contacts.GroupContactIdsTest],Simplify group selection logic,"Simplify group selection logic
+e47ec1e0da383e683d332da908179925e5278833,Change Variable Type,CHANGE_VARIABLE_TYPE,[com.zegoggles.smssync.contacts.ContactGroupdsTest],[com.zegoggles.smssync.contacts.GroupContactIdsTest],Simplify group selection logic,"Simplify group selection logic
 "
-79f7a970e514aa86bd801a6733eab5f06a538f21,Rename Method,RENAME_METHOD,public showUpgradeMessage(ctx Context) : boolean,public shouldShowUpgradeMessage(ctx Context) : boolean,[com.zegoggles.smssync.preferences.Preferences],[com.zegoggles.smssync.preferences.Preferences],"A bunch more tests, adding more logging","A bunch more tests, adding more logging
+79f7a970e514aa86bd801a6733eab5f06a538f21,Rename Method,RENAME_METHOD,[com.zegoggles.smssync.preferences.Preferences],[com.zegoggles.smssync.preferences.Preferences],"A bunch more tests, adding more logging","A bunch more tests, adding more logging
 "
-79f7a970e514aa86bd801a6733eab5f06a538f21,Rename Method,RENAME_METHOD,public showAboutDialog(ctx Context) : boolean,public shouldShowAboutDialog(ctx Context) : boolean,[com.zegoggles.smssync.preferences.Preferences],[com.zegoggles.smssync.preferences.Preferences],"A bunch more tests, adding more logging","A bunch more tests, adding more logging
+79f7a970e514aa86bd801a6733eab5f06a538f21,Rename Method,RENAME_METHOD,[com.zegoggles.smssync.preferences.Preferences],[com.zegoggles.smssync.preferences.Preferences],"A bunch more tests, adding more logging","A bunch more tests, adding more logging
 "
-79f7a970e514aa86bd801a6733eab5f06a538f21,Extract Variable,EXTRACT_VARIABLE,0,autoSync : boolean,[com.zegoggles.smssync.receiver.SmsBroadcastReceiver],[com.zegoggles.smssync.receiver.SmsBroadcastReceiver],"A bunch more tests, adding more logging","A bunch more tests, adding more logging
+79f7a970e514aa86bd801a6733eab5f06a538f21,Extract Variable,EXTRACT_VARIABLE,[com.zegoggles.smssync.receiver.SmsBroadcastReceiver],[com.zegoggles.smssync.receiver.SmsBroadcastReceiver],"A bunch more tests, adding more logging","A bunch more tests, adding more logging
 "
-79f7a970e514aa86bd801a6733eab5f06a538f21,Extract Variable,EXTRACT_VARIABLE,0,loginInformationSet : boolean,[com.zegoggles.smssync.receiver.SmsBroadcastReceiver],[com.zegoggles.smssync.receiver.SmsBroadcastReceiver],"A bunch more tests, adding more logging","A bunch more tests, adding more logging
+79f7a970e514aa86bd801a6733eab5f06a538f21,Extract Variable,EXTRACT_VARIABLE,[com.zegoggles.smssync.receiver.SmsBroadcastReceiver],[com.zegoggles.smssync.receiver.SmsBroadcastReceiver],"A bunch more tests, adding more logging","A bunch more tests, adding more logging
 "
-79f7a970e514aa86bd801a6733eab5f06a538f21,Extract Variable,EXTRACT_VARIABLE,0,firstBackup : boolean,[com.zegoggles.smssync.receiver.SmsBroadcastReceiver],[com.zegoggles.smssync.receiver.SmsBroadcastReceiver],"A bunch more tests, adding more logging","A bunch more tests, adding more logging
+79f7a970e514aa86bd801a6733eab5f06a538f21,Extract Variable,EXTRACT_VARIABLE,[com.zegoggles.smssync.receiver.SmsBroadcastReceiver],[com.zegoggles.smssync.receiver.SmsBroadcastReceiver],"A bunch more tests, adding more logging","A bunch more tests, adding more logging
 "
-79f7a970e514aa86bd801a6733eab5f06a538f21,Rename Method,RENAME_METHOD,"public buildQueryForDataType(type DataType, max int, group ContactGroup) : Query",public buildMostRecentQueryForDataType(type DataType) : Query,[com.zegoggles.smssync.service.BackupQueryBuilder],[com.zegoggles.smssync.service.BackupQueryBuilder],"A bunch more tests, adding more logging","A bunch more tests, adding more logging
+79f7a970e514aa86bd801a6733eab5f06a538f21,Rename Method,RENAME_METHOD,[com.zegoggles.smssync.service.BackupQueryBuilder],[com.zegoggles.smssync.service.BackupQueryBuilder],"A bunch more tests, adding more logging","A bunch more tests, adding more logging
 "
-79f7a970e514aa86bd801a6733eab5f06a538f21,Rename Method,RENAME_METHOD,public buildMaxQueryForDataType(type DataType) : Query,"public buildQueryForDataType(type DataType, group ContactGroup, max int) : Query",[com.zegoggles.smssync.service.BackupQueryBuilder],[com.zegoggles.smssync.service.BackupQueryBuilder],"A bunch more tests, adding more logging","A bunch more tests, adding more logging
+79f7a970e514aa86bd801a6733eab5f06a538f21,Rename Method,RENAME_METHOD,[com.zegoggles.smssync.service.BackupQueryBuilder],[com.zegoggles.smssync.service.BackupQueryBuilder],"A bunch more tests, adding more logging","A bunch more tests, adding more logging
 "
-79f7a970e514aa86bd801a6733eab5f06a538f21,Extract Method,EXTRACT_OPERATION,protected doInBackground(params BackupConfig...) : BackupState,private skip() : BackupState,[com.zegoggles.smssync.service.BackupTask],[com.zegoggles.smssync.service.BackupTask],"A bunch more tests, adding more logging","A bunch more tests, adding more logging
+79f7a970e514aa86bd801a6733eab5f06a538f21,Extract Method,EXTRACT_OPERATION,[com.zegoggles.smssync.service.BackupTask],[com.zegoggles.smssync.service.BackupTask],"A bunch more tests, adding more logging","A bunch more tests, adding more logging
 "
-79f7a970e514aa86bd801a6733eab5f06a538f21,Rename Method,RENAME_METHOD,public shouldBuildMaxQueryForSMS() : void,public shouldBuildMostRecentQueryForSMS() : void,[com.zegoggles.smssync.service.BackupQueryBuilderTest],[com.zegoggles.smssync.service.BackupQueryBuilderTest],"A bunch more tests, adding more logging","A bunch more tests, adding more logging
+79f7a970e514aa86bd801a6733eab5f06a538f21,Rename Method,RENAME_METHOD,[com.zegoggles.smssync.service.BackupQueryBuilderTest],[com.zegoggles.smssync.service.BackupQueryBuilderTest],"A bunch more tests, adding more logging","A bunch more tests, adding more logging
 "
-79f7a970e514aa86bd801a6733eab5f06a538f21,Rename Method,RENAME_METHOD,public shouldBuildMaxQueryForMMS() : void,public shouldBuildMostRecentQueryForMMS() : void,[com.zegoggles.smssync.service.BackupQueryBuilderTest],[com.zegoggles.smssync.service.BackupQueryBuilderTest],"A bunch more tests, adding more logging","A bunch more tests, adding more logging
+79f7a970e514aa86bd801a6733eab5f06a538f21,Rename Method,RENAME_METHOD,[com.zegoggles.smssync.service.BackupQueryBuilderTest],[com.zegoggles.smssync.service.BackupQueryBuilderTest],"A bunch more tests, adding more logging","A bunch more tests, adding more logging
 "
-79f7a970e514aa86bd801a6733eab5f06a538f21,Rename Method,RENAME_METHOD,public shouldBuildMaxQueryForCallLog() : void,public shouldBuildMostRecentQueryForCallLog() : void,[com.zegoggles.smssync.service.BackupQueryBuilderTest],[com.zegoggles.smssync.service.BackupQueryBuilderTest],"A bunch more tests, adding more logging","A bunch more tests, adding more logging
+79f7a970e514aa86bd801a6733eab5f06a538f21,Rename Method,RENAME_METHOD,[com.zegoggles.smssync.service.BackupQueryBuilderTest],[com.zegoggles.smssync.service.BackupQueryBuilderTest],"A bunch more tests, adding more logging","A bunch more tests, adding more logging
 "
-79f7a970e514aa86bd801a6733eab5f06a538f21,Extract Method,EXTRACT_OPERATION,public shouldBackupItems() : void,"private mockFetch(type DataType, cursor Cursor) : void",[com.zegoggles.smssync.service.BackupTaskTest],[com.zegoggles.smssync.service.BackupTaskTest],"A bunch more tests, adding more logging","A bunch more tests, adding more logging
+79f7a970e514aa86bd801a6733eab5f06a538f21,Extract Method,EXTRACT_OPERATION,[com.zegoggles.smssync.service.BackupTaskTest],[com.zegoggles.smssync.service.BackupTaskTest],"A bunch more tests, adding more logging","A bunch more tests, adding more logging
 "
-6d3de292dfc637d1b9ffb1aee0e812dd32d20b28,Rename Parameter,RENAME_PARAMETER,context : Context,resolver : ContentResolver,[com.zegoggles.smssync.contacts.ContactAccessorPost20],[com.zegoggles.smssync.contacts.ContactAccessorPost20],Test the contact accessor,"Test the contact accessor
+6d3de292dfc637d1b9ffb1aee0e812dd32d20b28,Rename Parameter,RENAME_PARAMETER,[com.zegoggles.smssync.contacts.ContactAccessorPost20],[com.zegoggles.smssync.contacts.ContactAccessorPost20],Test the contact accessor,"Test the contact accessor
 "
-6d3de292dfc637d1b9ffb1aee0e812dd32d20b28,Change Parameter Type,CHANGE_PARAMETER_TYPE,context : Context,resolver : ContentResolver,[com.zegoggles.smssync.contacts.ContactAccessorPost20],[com.zegoggles.smssync.contacts.ContactAccessorPost20],Test the contact accessor,"Test the contact accessor
+6d3de292dfc637d1b9ffb1aee0e812dd32d20b28,Change Parameter Type,CHANGE_PARAMETER_TYPE,[com.zegoggles.smssync.contacts.ContactAccessorPost20],[com.zegoggles.smssync.contacts.ContactAccessorPost20],Test the contact accessor,"Test the contact accessor
 "
-6d3de292dfc637d1b9ffb1aee0e812dd32d20b28,Rename Parameter,RENAME_PARAMETER,context : Context,resolver : ContentResolver,[com.zegoggles.smssync.contacts.ContactAccessorPre20],[com.zegoggles.smssync.contacts.ContactAccessorPre20],Test the contact accessor,"Test the contact accessor
+6d3de292dfc637d1b9ffb1aee0e812dd32d20b28,Rename Parameter,RENAME_PARAMETER,[com.zegoggles.smssync.contacts.ContactAccessorPre20],[com.zegoggles.smssync.contacts.ContactAccessorPre20],Test the contact accessor,"Test the contact accessor
 "
-6d3de292dfc637d1b9ffb1aee0e812dd32d20b28,Change Parameter Type,CHANGE_PARAMETER_TYPE,context : Context,resolver : ContentResolver,[com.zegoggles.smssync.contacts.ContactAccessorPre20],[com.zegoggles.smssync.contacts.ContactAccessorPre20],Test the contact accessor,"Test the contact accessor
+6d3de292dfc637d1b9ffb1aee0e812dd32d20b28,Change Parameter Type,CHANGE_PARAMETER_TYPE,[com.zegoggles.smssync.contacts.ContactAccessorPre20],[com.zegoggles.smssync.contacts.ContactAccessorPre20],Test the contact accessor,"Test the contact accessor
 "
-6d3de292dfc637d1b9ffb1aee0e812dd32d20b28,Rename Parameter,RENAME_PARAMETER,ctx : Context,context : Context,[com.zegoggles.smssync.mail.MessageConverter],[com.zegoggles.smssync.mail.MessageConverter],Test the contact accessor,"Test the contact accessor
+6d3de292dfc637d1b9ffb1aee0e812dd32d20b28,Rename Parameter,RENAME_PARAMETER,[com.zegoggles.smssync.mail.MessageConverter],[com.zegoggles.smssync.mail.MessageConverter],Test the contact accessor,"Test the contact accessor
 "
-6d3de292dfc637d1b9ffb1aee0e812dd32d20b28,Rename Parameter,RENAME_PARAMETER,context : Context,resolver : ContentResolver,[com.zegoggles.smssync.contacts.ContactAccessor],[com.zegoggles.smssync.contacts.ContactAccessor],Test the contact accessor,"Test the contact accessor
+6d3de292dfc637d1b9ffb1aee0e812dd32d20b28,Rename Parameter,RENAME_PARAMETER,[com.zegoggles.smssync.contacts.ContactAccessor],[com.zegoggles.smssync.contacts.ContactAccessor],Test the contact accessor,"Test the contact accessor
 "
-6d3de292dfc637d1b9ffb1aee0e812dd32d20b28,Change Parameter Type,CHANGE_PARAMETER_TYPE,context : Context,resolver : ContentResolver,[com.zegoggles.smssync.contacts.ContactAccessor],[com.zegoggles.smssync.contacts.ContactAccessor],Test the contact accessor,"Test the contact accessor
+6d3de292dfc637d1b9ffb1aee0e812dd32d20b28,Change Parameter Type,CHANGE_PARAMETER_TYPE,[com.zegoggles.smssync.contacts.ContactAccessor],[com.zegoggles.smssync.contacts.ContactAccessor],Test the contact accessor,"Test the contact accessor
 "
-d02af2e6ab8a3ef9ea5e18c578c6862d299ab96f,Rename Method,RENAME_METHOD,public testShouldGenerateHeader() : void,public testShouldGenerateStandardHeaders() : void,[com.zegoggles.smssync.mail.HeaderGeneratorTest],[com.zegoggles.smssync.mail.HeaderGeneratorTest],More tests,"More tests
+d02af2e6ab8a3ef9ea5e18c578c6862d299ab96f,Rename Method,RENAME_METHOD,[com.zegoggles.smssync.mail.HeaderGeneratorTest],[com.zegoggles.smssync.mail.HeaderGeneratorTest],More tests,"More tests
 "
-7b01ea66ea455db5967ea2b5e1ac64a379864798,Extract And Move Method,EXTRACT_AND_MOVE_OPERATION,"public messageFromMapCallLog(msgMap Map<String,String>) : Message","public format(callType int, number String, duration int) : String",[com.zegoggles.smssync.mail.MessageGenerator],[com.zegoggles.smssync.mail.MessageGenerator],Extracted formatter,"Extracted formatter
+7b01ea66ea455db5967ea2b5e1ac64a379864798,Extract And Move Method,EXTRACT_AND_MOVE_OPERATION,[com.zegoggles.smssync.mail.MessageGenerator],[com.zegoggles.smssync.mail.MessageGenerator],Extracted formatter,"Extracted formatter
 "
-ecaba6edda278d71f60f449d716f5d5b6745a1b4,Change Variable Type,CHANGE_VARIABLE_TYPE,recipients : List<String>,details : MmsSupport.MmsDetails,[com.zegoggles.smssync.mail.MessageGenerator],[com.zegoggles.smssync.mail.MessageGenerator],"Added tests for service, moved MMS code","Added tests for service, moved MMS code
+ecaba6edda278d71f60f449d716f5d5b6745a1b4,Change Variable Type,CHANGE_VARIABLE_TYPE,[com.zegoggles.smssync.mail.MessageGenerator],[com.zegoggles.smssync.mail.MessageGenerator],"Added tests for service, moved MMS code","Added tests for service, moved MMS code
 "
-ecaba6edda278d71f60f449d716f5d5b6745a1b4,Rename Variable,RENAME_VARIABLE,msgRef : Uri,mmsUri : Uri,[com.zegoggles.smssync.mail.MessageGenerator],[com.zegoggles.smssync.mail.MessageGenerator],"Added tests for service, moved MMS code","Added tests for service, moved MMS code
+ecaba6edda278d71f60f449d716f5d5b6745a1b4,Rename Variable,RENAME_VARIABLE,[com.zegoggles.smssync.mail.MessageGenerator],[com.zegoggles.smssync.mail.MessageGenerator],"Added tests for service, moved MMS code","Added tests for service, moved MMS code
 "
-ecaba6edda278d71f60f449d716f5d5b6745a1b4,Rename Variable,RENAME_VARIABLE,recipients : List<String>,details : MmsSupport.MmsDetails,[com.zegoggles.smssync.mail.MessageGenerator],[com.zegoggles.smssync.mail.MessageGenerator],"Added tests for service, moved MMS code","Added tests for service, moved MMS code
+ecaba6edda278d71f60f449d716f5d5b6745a1b4,Rename Variable,RENAME_VARIABLE,[com.zegoggles.smssync.mail.MessageGenerator],[com.zegoggles.smssync.mail.MessageGenerator],"Added tests for service, moved MMS code","Added tests for service, moved MMS code
 "
-ecaba6edda278d71f60f449d716f5d5b6745a1b4,Replace Variable With Attribute,REPLACE_VARIABLE_WITH_ATTRIBUTE,ctx : Context,mContext : Context,[com.zegoggles.smssync.service.Alarms],[com.zegoggles.smssync.service.Alarms],"Added tests for service, moved MMS code","Added tests for service, moved MMS code
+ecaba6edda278d71f60f449d716f5d5b6745a1b4,Replace Variable With Attribute,REPLACE_VARIABLE_WITH_ATTRIBUTE,[com.zegoggles.smssync.service.Alarms],[com.zegoggles.smssync.service.Alarms],"Added tests for service, moved MMS code","Added tests for service, moved MMS code
 "
-ecaba6edda278d71f60f449d716f5d5b6745a1b4,Replace Variable With Attribute,REPLACE_VARIABLE_WITH_ATTRIBUTE,ctx : Context,mContext : Context,[com.zegoggles.smssync.service.Alarms],[com.zegoggles.smssync.service.Alarms],"Added tests for service, moved MMS code","Added tests for service, moved MMS code
+ecaba6edda278d71f60f449d716f5d5b6745a1b4,Replace Variable With Attribute,REPLACE_VARIABLE_WITH_ATTRIBUTE,[com.zegoggles.smssync.service.Alarms],[com.zegoggles.smssync.service.Alarms],"Added tests for service, moved MMS code","Added tests for service, moved MMS code
 "
-ecaba6edda278d71f60f449d716f5d5b6745a1b4,Replace Variable With Attribute,REPLACE_VARIABLE_WITH_ATTRIBUTE,ctx : Context,mContext : Context,[com.zegoggles.smssync.service.Alarms],[com.zegoggles.smssync.service.Alarms],"Added tests for service, moved MMS code","Added tests for service, moved MMS code
+ecaba6edda278d71f60f449d716f5d5b6745a1b4,Replace Variable With Attribute,REPLACE_VARIABLE_WITH_ATTRIBUTE,[com.zegoggles.smssync.service.Alarms],[com.zegoggles.smssync.service.Alarms],"Added tests for service, moved MMS code","Added tests for service, moved MMS code
 "
-ecaba6edda278d71f60f449d716f5d5b6745a1b4,Replace Variable With Attribute,REPLACE_VARIABLE_WITH_ATTRIBUTE,ctx : Context,mContext : Context,[com.zegoggles.smssync.service.Alarms],[com.zegoggles.smssync.service.Alarms],"Added tests for service, moved MMS code","Added tests for service, moved MMS code
+ecaba6edda278d71f60f449d716f5d5b6745a1b4,Replace Variable With Attribute,REPLACE_VARIABLE_WITH_ATTRIBUTE,[com.zegoggles.smssync.service.Alarms],[com.zegoggles.smssync.service.Alarms],"Added tests for service, moved MMS code","Added tests for service, moved MMS code
 "
-ecaba6edda278d71f60f449d716f5d5b6745a1b4,Extract Method,EXTRACT_OPERATION,protected handleIntent(intent Intent) : void,private moveToState(state BackupState) : void,[com.zegoggles.smssync.service.SmsBackupService],[com.zegoggles.smssync.service.SmsBackupService],"Added tests for service, moved MMS code","Added tests for service, moved MMS code
+ecaba6edda278d71f60f449d716f5d5b6745a1b4,Extract Method,EXTRACT_OPERATION,[com.zegoggles.smssync.service.SmsBackupService],[com.zegoggles.smssync.service.SmsBackupService],"Added tests for service, moved MMS code","Added tests for service, moved MMS code
 "
-ecaba6edda278d71f60f449d716f5d5b6745a1b4,Rename Method,RENAME_METHOD,"private verifyAlarm(context Context, scheduled long, expectedType String) : void","private verifyAlarmScheduled(scheduled long, expectedType String) : void",[com.zegoggles.smssync.service.AlarmsTest],[com.zegoggles.smssync.service.AlarmsTest],"Added tests for service, moved MMS code","Added tests for service, moved MMS code
+ecaba6edda278d71f60f449d716f5d5b6745a1b4,Rename Method,RENAME_METHOD,[com.zegoggles.smssync.service.AlarmsTest],[com.zegoggles.smssync.service.AlarmsTest],"Added tests for service, moved MMS code","Added tests for service, moved MMS code
 "
-aba252df2f47c3b9e5cc9c0a1d74b1becc00c87a,Rename Method,RENAME_METHOD,public testShouldGenerateSubjectWithNameForMessage() : void,public testShouldGenerateSubjectWithNameForSMS() : void,[com.zegoggles.smssync.mail.MessageGeneratorTest],[com.zegoggles.smssync.mail.MessageGeneratorTest],More robust parsing,"More robust parsing
+aba252df2f47c3b9e5cc9c0a1d74b1becc00c87a,Rename Method,RENAME_METHOD,[com.zegoggles.smssync.mail.MessageGeneratorTest],[com.zegoggles.smssync.mail.MessageGeneratorTest],More robust parsing,"More robust parsing
 "
-aba252df2f47c3b9e5cc9c0a1d74b1becc00c87a,Rename Method,RENAME_METHOD,public testShouldGenerateSubjectWithNameAndNumberForMessage() : void,public testShouldGenerateSubjectWithNameAndNumberForSMS() : void,[com.zegoggles.smssync.mail.MessageGeneratorTest],[com.zegoggles.smssync.mail.MessageGeneratorTest],More robust parsing,"More robust parsing
+aba252df2f47c3b9e5cc9c0a1d74b1becc00c87a,Rename Method,RENAME_METHOD,[com.zegoggles.smssync.mail.MessageGeneratorTest],[com.zegoggles.smssync.mail.MessageGeneratorTest],More robust parsing,"More robust parsing
 "
-80e87b3a96cce35b5b509a2d9e28dd94f0486361,Change Parameter Type,CHANGE_PARAMETER_TYPE,context : android.content.Context,context : Context,[com.zegoggles.smssync.auth.XOAuthConsumer],[com.zegoggles.smssync.auth.XOAuthConsumer],Adding tests for xoauth consumer / calendar accessor,"Adding tests for xoauth consumer / calendar accessor
+80e87b3a96cce35b5b509a2d9e28dd94f0486361,Change Parameter Type,CHANGE_PARAMETER_TYPE,[com.zegoggles.smssync.auth.XOAuthConsumer],[com.zegoggles.smssync.auth.XOAuthConsumer],Adding tests for xoauth consumer / calendar accessor,"Adding tests for xoauth consumer / calendar accessor
 "
-80e87b3a96cce35b5b509a2d9e28dd94f0486361,Rename Parameter,RENAME_PARAMETER,context : Context,resolver : ContentResolver,[com.zegoggles.smssync.calendar.CalendarAccessorPost40],[com.zegoggles.smssync.calendar.CalendarAccessorPost40],Adding tests for xoauth consumer / calendar accessor,"Adding tests for xoauth consumer / calendar accessor
+80e87b3a96cce35b5b509a2d9e28dd94f0486361,Rename Parameter,RENAME_PARAMETER,[com.zegoggles.smssync.calendar.CalendarAccessorPost40],[com.zegoggles.smssync.calendar.CalendarAccessorPost40],Adding tests for xoauth consumer / calendar accessor,"Adding tests for xoauth consumer / calendar accessor
 "
-80e87b3a96cce35b5b509a2d9e28dd94f0486361,Change Parameter Type,CHANGE_PARAMETER_TYPE,context : Context,resolver : ContentResolver,[com.zegoggles.smssync.calendar.CalendarAccessorPost40],[com.zegoggles.smssync.calendar.CalendarAccessorPost40],Adding tests for xoauth consumer / calendar accessor,"Adding tests for xoauth consumer / calendar accessor
+80e87b3a96cce35b5b509a2d9e28dd94f0486361,Change Parameter Type,CHANGE_PARAMETER_TYPE,[com.zegoggles.smssync.calendar.CalendarAccessorPost40],[com.zegoggles.smssync.calendar.CalendarAccessorPost40],Adding tests for xoauth consumer / calendar accessor,"Adding tests for xoauth consumer / calendar accessor
 "
-80e87b3a96cce35b5b509a2d9e28dd94f0486361,Rename Parameter,RENAME_PARAMETER,context : Context,resolver : ContentResolver,[com.zegoggles.smssync.calendar.CalendarAccessorPost40],[com.zegoggles.smssync.calendar.CalendarAccessorPost40],Adding tests for xoauth consumer / calendar accessor,"Adding tests for xoauth consumer / calendar accessor
+80e87b3a96cce35b5b509a2d9e28dd94f0486361,Rename Parameter,RENAME_PARAMETER,[com.zegoggles.smssync.calendar.CalendarAccessorPost40],[com.zegoggles.smssync.calendar.CalendarAccessorPost40],Adding tests for xoauth consumer / calendar accessor,"Adding tests for xoauth consumer / calendar accessor
 "
-80e87b3a96cce35b5b509a2d9e28dd94f0486361,Change Parameter Type,CHANGE_PARAMETER_TYPE,context : Context,resolver : ContentResolver,[com.zegoggles.smssync.calendar.CalendarAccessorPost40],[com.zegoggles.smssync.calendar.CalendarAccessorPost40],Adding tests for xoauth consumer / calendar accessor,"Adding tests for xoauth consumer / calendar accessor
+80e87b3a96cce35b5b509a2d9e28dd94f0486361,Change Parameter Type,CHANGE_PARAMETER_TYPE,[com.zegoggles.smssync.calendar.CalendarAccessorPost40],[com.zegoggles.smssync.calendar.CalendarAccessorPost40],Adding tests for xoauth consumer / calendar accessor,"Adding tests for xoauth consumer / calendar accessor
 "
-80e87b3a96cce35b5b509a2d9e28dd94f0486361,Rename Parameter,RENAME_PARAMETER,context : Context,resolver : ContentResolver,[com.zegoggles.smssync.calendar.CalendarAccessorPre40],[com.zegoggles.smssync.calendar.CalendarAccessorPre40],Adding tests for xoauth consumer / calendar accessor,"Adding tests for xoauth consumer / calendar accessor
+80e87b3a96cce35b5b509a2d9e28dd94f0486361,Rename Parameter,RENAME_PARAMETER,[com.zegoggles.smssync.calendar.CalendarAccessorPre40],[com.zegoggles.smssync.calendar.CalendarAccessorPre40],Adding tests for xoauth consumer / calendar accessor,"Adding tests for xoauth consumer / calendar accessor
 "
-80e87b3a96cce35b5b509a2d9e28dd94f0486361,Change Parameter Type,CHANGE_PARAMETER_TYPE,context : Context,resolver : ContentResolver,[com.zegoggles.smssync.calendar.CalendarAccessorPre40],[com.zegoggles.smssync.calendar.CalendarAccessorPre40],Adding tests for xoauth consumer / calendar accessor,"Adding tests for xoauth consumer / calendar accessor
+80e87b3a96cce35b5b509a2d9e28dd94f0486361,Change Parameter Type,CHANGE_PARAMETER_TYPE,[com.zegoggles.smssync.calendar.CalendarAccessorPre40],[com.zegoggles.smssync.calendar.CalendarAccessorPre40],Adding tests for xoauth consumer / calendar accessor,"Adding tests for xoauth consumer / calendar accessor
 "
-80e87b3a96cce35b5b509a2d9e28dd94f0486361,Rename Parameter,RENAME_PARAMETER,context : Context,resolver : ContentResolver,[com.zegoggles.smssync.calendar.CalendarAccessorPre40],[com.zegoggles.smssync.calendar.CalendarAccessorPre40],Adding tests for xoauth consumer / calendar accessor,"Adding tests for xoauth consumer / calendar accessor
+80e87b3a96cce35b5b509a2d9e28dd94f0486361,Rename Parameter,RENAME_PARAMETER,[com.zegoggles.smssync.calendar.CalendarAccessorPre40],[com.zegoggles.smssync.calendar.CalendarAccessorPre40],Adding tests for xoauth consumer / calendar accessor,"Adding tests for xoauth consumer / calendar accessor
 "
-80e87b3a96cce35b5b509a2d9e28dd94f0486361,Change Parameter Type,CHANGE_PARAMETER_TYPE,context : Context,resolver : ContentResolver,[com.zegoggles.smssync.calendar.CalendarAccessorPre40],[com.zegoggles.smssync.calendar.CalendarAccessorPre40],Adding tests for xoauth consumer / calendar accessor,"Adding tests for xoauth consumer / calendar accessor
+80e87b3a96cce35b5b509a2d9e28dd94f0486361,Change Parameter Type,CHANGE_PARAMETER_TYPE,[com.zegoggles.smssync.calendar.CalendarAccessorPre40],[com.zegoggles.smssync.calendar.CalendarAccessorPre40],Adding tests for xoauth consumer / calendar accessor,"Adding tests for xoauth consumer / calendar accessor
 "
-80e87b3a96cce35b5b509a2d9e28dd94f0486361,Rename Parameter,RENAME_PARAMETER,context : Context,resolver : ContentResolver,[com.zegoggles.smssync.calendar.CalendarAccessor],[com.zegoggles.smssync.calendar.CalendarAccessor],Adding tests for xoauth consumer / calendar accessor,"Adding tests for xoauth consumer / calendar accessor
+80e87b3a96cce35b5b509a2d9e28dd94f0486361,Rename Parameter,RENAME_PARAMETER,[com.zegoggles.smssync.calendar.CalendarAccessor],[com.zegoggles.smssync.calendar.CalendarAccessor],Adding tests for xoauth consumer / calendar accessor,"Adding tests for xoauth consumer / calendar accessor
 "
-80e87b3a96cce35b5b509a2d9e28dd94f0486361,Change Parameter Type,CHANGE_PARAMETER_TYPE,context : Context,resolver : ContentResolver,[com.zegoggles.smssync.calendar.CalendarAccessor],[com.zegoggles.smssync.calendar.CalendarAccessor],Adding tests for xoauth consumer / calendar accessor,"Adding tests for xoauth consumer / calendar accessor
+80e87b3a96cce35b5b509a2d9e28dd94f0486361,Change Parameter Type,CHANGE_PARAMETER_TYPE,[com.zegoggles.smssync.calendar.CalendarAccessor],[com.zegoggles.smssync.calendar.CalendarAccessor],Adding tests for xoauth consumer / calendar accessor,"Adding tests for xoauth consumer / calendar accessor
 "
-80e87b3a96cce35b5b509a2d9e28dd94f0486361,Rename Parameter,RENAME_PARAMETER,context : Context,resolver : ContentResolver,[com.zegoggles.smssync.calendar.CalendarAccessor],[com.zegoggles.smssync.calendar.CalendarAccessor],Adding tests for xoauth consumer / calendar accessor,"Adding tests for xoauth consumer / calendar accessor
+80e87b3a96cce35b5b509a2d9e28dd94f0486361,Rename Parameter,RENAME_PARAMETER,[com.zegoggles.smssync.calendar.CalendarAccessor],[com.zegoggles.smssync.calendar.CalendarAccessor],Adding tests for xoauth consumer / calendar accessor,"Adding tests for xoauth consumer / calendar accessor
 "
-80e87b3a96cce35b5b509a2d9e28dd94f0486361,Change Parameter Type,CHANGE_PARAMETER_TYPE,context : Context,resolver : ContentResolver,[com.zegoggles.smssync.calendar.CalendarAccessor],[com.zegoggles.smssync.calendar.CalendarAccessor],Adding tests for xoauth consumer / calendar accessor,"Adding tests for xoauth consumer / calendar accessor
+80e87b3a96cce35b5b509a2d9e28dd94f0486361,Change Parameter Type,CHANGE_PARAMETER_TYPE,[com.zegoggles.smssync.calendar.CalendarAccessor],[com.zegoggles.smssync.calendar.CalendarAccessor],Adding tests for xoauth consumer / calendar accessor,"Adding tests for xoauth consumer / calendar accessor
 "
-3e1035238d03ded0d221494a88be0fd797d45e6b,Rename Attribute,RENAME_ATTRIBUTE,mAllowedIds : GroupContactIds,mAllowedContacts : GroupContactIds,[com.zegoggles.smssync.mail.MessageGenerator],[com.zegoggles.smssync.mail.MessageGenerator],Test query builder,"Test query builder
+3e1035238d03ded0d221494a88be0fd797d45e6b,Rename Attribute,RENAME_ATTRIBUTE,[com.zegoggles.smssync.mail.MessageGenerator],[com.zegoggles.smssync.mail.MessageGenerator],Test query builder,"Test query builder
 "
-3e1035238d03ded0d221494a88be0fd797d45e6b,Extract And Move Method,EXTRACT_AND_MOVE_OPERATION,"private groupSelection(type DataType, group ContactGroup) : String",public isEveryBody() : boolean,[com.zegoggles.smssync.service.BackupQueryBuilder],[com.zegoggles.smssync.service.BackupQueryBuilder],Test query builder,"Test query builder
+3e1035238d03ded0d221494a88be0fd797d45e6b,Extract And Move Method,EXTRACT_AND_MOVE_OPERATION,[com.zegoggles.smssync.service.BackupQueryBuilder],[com.zegoggles.smssync.service.BackupQueryBuilder],Test query builder,"Test query builder
 "
-3e1035238d03ded0d221494a88be0fd797d45e6b,Extract And Move Method,EXTRACT_AND_MOVE_OPERATION,"public getGroupContactIds(context Context, group ContactGroup) : GroupContactIds","public add(id long, rawId long) : void",[com.zegoggles.smssync.contacts.ContactAccessorPost20],[com.zegoggles.smssync.contacts.ContactAccessorPost20],Test query builder,"Test query builder
+3e1035238d03ded0d221494a88be0fd797d45e6b,Extract And Move Method,EXTRACT_AND_MOVE_OPERATION,[com.zegoggles.smssync.contacts.ContactAccessorPost20],[com.zegoggles.smssync.contacts.ContactAccessorPost20],Test query builder,"Test query builder
 "
-b955f8cbe970f589338f553e22771bcec281984a,Rename Method,RENAME_METHOD,public getLongId() : long,public getContactId() : long,[com.zegoggles.smssync.mail.PersonRecord],[com.zegoggles.smssync.mail.PersonRecord],Input sanitization + tests,"Input sanitization + tests
+b955f8cbe970f589338f553e22771bcec281984a,Rename Method,RENAME_METHOD,[com.zegoggles.smssync.mail.PersonRecord],[com.zegoggles.smssync.mail.PersonRecord],Input sanitization + tests,"Input sanitization + tests
 "
-b955f8cbe970f589338f553e22771bcec281984a,Rename Method,RENAME_METHOD,public shouldReturnNumber() : void,public shouldReturnNumberForUnknown() : void,[com.zegoggles.smssync.mail.PersonRecordTest],[com.zegoggles.smssync.mail.PersonRecordTest],Input sanitization + tests,"Input sanitization + tests
+b955f8cbe970f589338f553e22771bcec281984a,Rename Method,RENAME_METHOD,[com.zegoggles.smssync.mail.PersonRecordTest],[com.zegoggles.smssync.mail.PersonRecordTest],Input sanitization + tests,"Input sanitization + tests
 "
-4e8bf27ea3931bf3f9d895696d822348b04d7a07,Rename Parameter,RENAME_PARAMETER,ctx : Context,context : Context,[com.zegoggles.smssync.activity.auth.AccountManagerAuthActivity],[com.zegoggles.smssync.activity.auth.AccountManagerAuthActivity],"Added test infrastructure, made code testable","Added test infrastructure, made code testable
+4e8bf27ea3931bf3f9d895696d822348b04d7a07,Rename Parameter,RENAME_PARAMETER,[com.zegoggles.smssync.activity.auth.AccountManagerAuthActivity],[com.zegoggles.smssync.activity.auth.AccountManagerAuthActivity],"Added test infrastructure, made code testable","Added test infrastructure, made code testable
 
 Actually test things
 
@@ -403,7 +403,7 @@ Tests for address style
 
 Adding tests to project
 "
-4e8bf27ea3931bf3f9d895696d822348b04d7a07,Replace Variable With Attribute,REPLACE_VARIABLE_WITH_ATTRIBUTE,ctx : Context,context : Context,[com.zegoggles.smssync.preferences.AuthPreferences],[com.zegoggles.smssync.preferences.AuthPreferences],"Added test infrastructure, made code testable","Added test infrastructure, made code testable
+4e8bf27ea3931bf3f9d895696d822348b04d7a07,Replace Variable With Attribute,REPLACE_VARIABLE_WITH_ATTRIBUTE,[com.zegoggles.smssync.preferences.AuthPreferences],[com.zegoggles.smssync.preferences.AuthPreferences],"Added test infrastructure, made code testable","Added test infrastructure, made code testable
 
 Actually test things
 
@@ -421,7 +421,7 @@ Tests for address style
 
 Adding tests to project
 "
-4e8bf27ea3931bf3f9d895696d822348b04d7a07,Replace Variable With Attribute,REPLACE_VARIABLE_WITH_ATTRIBUTE,ctx : Context,context : Context,[com.zegoggles.smssync.preferences.AuthPreferences],[com.zegoggles.smssync.preferences.AuthPreferences],"Added test infrastructure, made code testable","Added test infrastructure, made code testable
+4e8bf27ea3931bf3f9d895696d822348b04d7a07,Replace Variable With Attribute,REPLACE_VARIABLE_WITH_ATTRIBUTE,[com.zegoggles.smssync.preferences.AuthPreferences],[com.zegoggles.smssync.preferences.AuthPreferences],"Added test infrastructure, made code testable","Added test infrastructure, made code testable
 
 Actually test things
 
@@ -439,7 +439,7 @@ Tests for address style
 
 Adding tests to project
 "
-4e8bf27ea3931bf3f9d895696d822348b04d7a07,Replace Variable With Attribute,REPLACE_VARIABLE_WITH_ATTRIBUTE,ctx : Context,context : Context,[com.zegoggles.smssync.preferences.AuthPreferences],[com.zegoggles.smssync.preferences.AuthPreferences],"Added test infrastructure, made code testable","Added test infrastructure, made code testable
+4e8bf27ea3931bf3f9d895696d822348b04d7a07,Replace Variable With Attribute,REPLACE_VARIABLE_WITH_ATTRIBUTE,[com.zegoggles.smssync.preferences.AuthPreferences],[com.zegoggles.smssync.preferences.AuthPreferences],"Added test infrastructure, made code testable","Added test infrastructure, made code testable
 
 Actually test things
 
@@ -457,7 +457,7 @@ Tests for address style
 
 Adding tests to project
 "
-4e8bf27ea3931bf3f9d895696d822348b04d7a07,Replace Variable With Attribute,REPLACE_VARIABLE_WITH_ATTRIBUTE,ctx : Context,context : Context,[com.zegoggles.smssync.preferences.AuthPreferences],[com.zegoggles.smssync.preferences.AuthPreferences],"Added test infrastructure, made code testable","Added test infrastructure, made code testable
+4e8bf27ea3931bf3f9d895696d822348b04d7a07,Replace Variable With Attribute,REPLACE_VARIABLE_WITH_ATTRIBUTE,[com.zegoggles.smssync.preferences.AuthPreferences],[com.zegoggles.smssync.preferences.AuthPreferences],"Added test infrastructure, made code testable","Added test infrastructure, made code testable
 
 Actually test things
 
@@ -475,7 +475,7 @@ Tests for address style
 
 Adding tests to project
 "
-4e8bf27ea3931bf3f9d895696d822348b04d7a07,Replace Variable With Attribute,REPLACE_VARIABLE_WITH_ATTRIBUTE,ctx : Context,context : Context,[com.zegoggles.smssync.preferences.AuthPreferences],[com.zegoggles.smssync.preferences.AuthPreferences],"Added test infrastructure, made code testable","Added test infrastructure, made code testable
+4e8bf27ea3931bf3f9d895696d822348b04d7a07,Replace Variable With Attribute,REPLACE_VARIABLE_WITH_ATTRIBUTE,[com.zegoggles.smssync.preferences.AuthPreferences],[com.zegoggles.smssync.preferences.AuthPreferences],"Added test infrastructure, made code testable","Added test infrastructure, made code testable
 
 Actually test things
 
@@ -493,7 +493,7 @@ Tests for address style
 
 Adding tests to project
 "
-4e8bf27ea3931bf3f9d895696d822348b04d7a07,Replace Variable With Attribute,REPLACE_VARIABLE_WITH_ATTRIBUTE,ctx : Context,context : Context,[com.zegoggles.smssync.preferences.AuthPreferences],[com.zegoggles.smssync.preferences.AuthPreferences],"Added test infrastructure, made code testable","Added test infrastructure, made code testable
+4e8bf27ea3931bf3f9d895696d822348b04d7a07,Replace Variable With Attribute,REPLACE_VARIABLE_WITH_ATTRIBUTE,[com.zegoggles.smssync.preferences.AuthPreferences],[com.zegoggles.smssync.preferences.AuthPreferences],"Added test infrastructure, made code testable","Added test infrastructure, made code testable
 
 Actually test things
 
@@ -511,7 +511,7 @@ Tests for address style
 
 Adding tests to project
 "
-4e8bf27ea3931bf3f9d895696d822348b04d7a07,Replace Variable With Attribute,REPLACE_VARIABLE_WITH_ATTRIBUTE,ctx : Context,context : Context,[com.zegoggles.smssync.preferences.AuthPreferences],[com.zegoggles.smssync.preferences.AuthPreferences],"Added test infrastructure, made code testable","Added test infrastructure, made code testable
+4e8bf27ea3931bf3f9d895696d822348b04d7a07,Replace Variable With Attribute,REPLACE_VARIABLE_WITH_ATTRIBUTE,[com.zegoggles.smssync.preferences.AuthPreferences],[com.zegoggles.smssync.preferences.AuthPreferences],"Added test infrastructure, made code testable","Added test infrastructure, made code testable
 
 Actually test things
 
@@ -529,7 +529,7 @@ Tests for address style
 
 Adding tests to project
 "
-4e8bf27ea3931bf3f9d895696d822348b04d7a07,Replace Variable With Attribute,REPLACE_VARIABLE_WITH_ATTRIBUTE,ctx : Context,context : Context,[com.zegoggles.smssync.preferences.AuthPreferences],[com.zegoggles.smssync.preferences.AuthPreferences],"Added test infrastructure, made code testable","Added test infrastructure, made code testable
+4e8bf27ea3931bf3f9d895696d822348b04d7a07,Replace Variable With Attribute,REPLACE_VARIABLE_WITH_ATTRIBUTE,[com.zegoggles.smssync.preferences.AuthPreferences],[com.zegoggles.smssync.preferences.AuthPreferences],"Added test infrastructure, made code testable","Added test infrastructure, made code testable
 
 Actually test things
 
@@ -547,7 +547,7 @@ Tests for address style
 
 Adding tests to project
 "
-4e8bf27ea3931bf3f9d895696d822348b04d7a07,Replace Variable With Attribute,REPLACE_VARIABLE_WITH_ATTRIBUTE,ctx : Context,context : Context,[com.zegoggles.smssync.preferences.AuthPreferences],[com.zegoggles.smssync.preferences.AuthPreferences],"Added test infrastructure, made code testable","Added test infrastructure, made code testable
+4e8bf27ea3931bf3f9d895696d822348b04d7a07,Replace Variable With Attribute,REPLACE_VARIABLE_WITH_ATTRIBUTE,[com.zegoggles.smssync.preferences.AuthPreferences],[com.zegoggles.smssync.preferences.AuthPreferences],"Added test infrastructure, made code testable","Added test infrastructure, made code testable
 
 Actually test things
 
@@ -565,7 +565,7 @@ Tests for address style
 
 Adding tests to project
 "
-4e8bf27ea3931bf3f9d895696d822348b04d7a07,Replace Variable With Attribute,REPLACE_VARIABLE_WITH_ATTRIBUTE,ctx : Context,context : Context,[com.zegoggles.smssync.preferences.AuthPreferences],[com.zegoggles.smssync.preferences.AuthPreferences],"Added test infrastructure, made code testable","Added test infrastructure, made code testable
+4e8bf27ea3931bf3f9d895696d822348b04d7a07,Replace Variable With Attribute,REPLACE_VARIABLE_WITH_ATTRIBUTE,[com.zegoggles.smssync.preferences.AuthPreferences],[com.zegoggles.smssync.preferences.AuthPreferences],"Added test infrastructure, made code testable","Added test infrastructure, made code testable
 
 Actually test things
 
@@ -583,7 +583,7 @@ Tests for address style
 
 Adding tests to project
 "
-4e8bf27ea3931bf3f9d895696d822348b04d7a07,Replace Variable With Attribute,REPLACE_VARIABLE_WITH_ATTRIBUTE,ctx : Context,context : Context,[com.zegoggles.smssync.preferences.AuthPreferences],[com.zegoggles.smssync.preferences.AuthPreferences],"Added test infrastructure, made code testable","Added test infrastructure, made code testable
+4e8bf27ea3931bf3f9d895696d822348b04d7a07,Replace Variable With Attribute,REPLACE_VARIABLE_WITH_ATTRIBUTE,[com.zegoggles.smssync.preferences.AuthPreferences],[com.zegoggles.smssync.preferences.AuthPreferences],"Added test infrastructure, made code testable","Added test infrastructure, made code testable
 
 Actually test things
 
@@ -601,7 +601,7 @@ Tests for address style
 
 Adding tests to project
 "
-4e8bf27ea3931bf3f9d895696d822348b04d7a07,Rename Parameter,RENAME_PARAMETER,smsSync : Context,context : Context,[com.zegoggles.smssync.tasks.RequestTokenTask],[com.zegoggles.smssync.tasks.RequestTokenTask],"Added test infrastructure, made code testable","Added test infrastructure, made code testable
+4e8bf27ea3931bf3f9d895696d822348b04d7a07,Rename Parameter,RENAME_PARAMETER,[com.zegoggles.smssync.tasks.RequestTokenTask],[com.zegoggles.smssync.tasks.RequestTokenTask],"Added test infrastructure, made code testable","Added test infrastructure, made code testable
 
 Actually test things
 
@@ -619,7 +619,7 @@ Tests for address style
 
 Adding tests to project
 "
-4e8bf27ea3931bf3f9d895696d822348b04d7a07,Move Attribute,MOVE_ATTRIBUTE,UNKNOWN_NUMBER : String,UNKNOWN_NUMBER : String,[com.zegoggles.smssync.mail.PersonRecord],[com.zegoggles.smssync.mail.PersonLookup],"Added test infrastructure, made code testable","Added test infrastructure, made code testable
+4e8bf27ea3931bf3f9d895696d822348b04d7a07,Move Attribute,MOVE_ATTRIBUTE,[com.zegoggles.smssync.mail.PersonRecord],[com.zegoggles.smssync.mail.PersonLookup],"Added test infrastructure, made code testable","Added test infrastructure, made code testable
 
 Actually test things
 
@@ -637,7 +637,7 @@ Tests for address style
 
 Adding tests to project
 "
-4e8bf27ea3931bf3f9d895696d822348b04d7a07,Move Attribute,MOVE_ATTRIBUTE,UNKNOWN_EMAIL : String,UNKNOWN_EMAIL : String,[com.zegoggles.smssync.mail.PersonRecord],[com.zegoggles.smssync.mail.PersonLookup],"Added test infrastructure, made code testable","Added test infrastructure, made code testable
+4e8bf27ea3931bf3f9d895696d822348b04d7a07,Move Attribute,MOVE_ATTRIBUTE,[com.zegoggles.smssync.mail.PersonRecord],[com.zegoggles.smssync.mail.PersonLookup],"Added test infrastructure, made code testable","Added test infrastructure, made code testable
 
 Actually test things
 
@@ -655,7 +655,7 @@ Tests for address style
 
 Adding tests to project
 "
-4e8bf27ea3931bf3f9d895696d822348b04d7a07,Move Method,MOVE_OPERATION,private getUnknownEmail(number String) : String,private getUnknownEmail(number String) : String,[com.zegoggles.smssync.mail.PersonRecord],[com.zegoggles.smssync.mail.PersonLookup],"Added test infrastructure, made code testable","Added test infrastructure, made code testable
+4e8bf27ea3931bf3f9d895696d822348b04d7a07,Move Method,MOVE_OPERATION,[com.zegoggles.smssync.mail.PersonRecord],[com.zegoggles.smssync.mail.PersonLookup],"Added test infrastructure, made code testable","Added test infrastructure, made code testable
 
 Actually test things
 

@@ -7,13 +7,14 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="src" path="test"/>
 	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="lib/refactoringminer.jar"/>
-	<classpathentry kind="lib" path="lib/designroleminer.jar"/>
-	<classpathentry kind="lib" path="lib/systemsimilarity.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/RefactoringMiner"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/designroleminer"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/SystemSimilarity"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
