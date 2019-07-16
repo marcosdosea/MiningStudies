@@ -13,74 +13,75 @@ public class VEM2019Study {
 	private static TechniqueExecutor executor = new TechniqueExecutor(new DesignRoleTechnique());
 
 	public static void main(String[] args) {
+		final String PASTA_RESULTADO = "similarity\\";
 		System.out.println("Iniciando Cálculo Similaridade 1...");
 		ArrayList<String> listAndroid = new ArrayList<String>();
 		listAndroid.add("D:\\Projetos\\_Android\\bitcoin-wallet");
-		ArrayList<ClassMetricResult> bitcoin = executor.getMetricsFromProjects(listAndroid);
+		ArrayList<ClassMetricResult> bitcoin = executor.getMetricsFromProjects(listAndroid, PASTA_RESULTADO);
 
 		listAndroid = new ArrayList<String>();
 		listAndroid.add("D:\\Projetos\\_Android\\k-9");
-		ArrayList<ClassMetricResult> k9 = executor.getMetricsFromProjects(listAndroid);
+		ArrayList<ClassMetricResult> k9 = executor.getMetricsFromProjects(listAndroid, PASTA_RESULTADO);
 
 		listAndroid = new ArrayList<String>();
 		listAndroid.add("D:\\Projetos\\_Android\\ExoPlayer");
-		ArrayList<ClassMetricResult> exoplayer = executor.getMetricsFromProjects(listAndroid);
+		ArrayList<ClassMetricResult> exoplayer = executor.getMetricsFromProjects(listAndroid, PASTA_RESULTADO);
 
 		listAndroid = new ArrayList<String>();
 		listAndroid.add("D:\\Projetos\\_Android\\sms-backup-plus");
-		ArrayList<ClassMetricResult> sms = executor.getMetricsFromProjects(listAndroid);
+		ArrayList<ClassMetricResult> sms = executor.getMetricsFromProjects(listAndroid, PASTA_RESULTADO);
 
 		listAndroid = new ArrayList<String>();
 		listAndroid.add("D:\\Projetos\\_Android\\Talon-for-Twitter");
-		ArrayList<ClassMetricResult> talon = executor.getMetricsFromProjects(listAndroid);
+		ArrayList<ClassMetricResult> talon = executor.getMetricsFromProjects(listAndroid, PASTA_RESULTADO);
 
 		ArrayList<String> listEclipse = new ArrayList<String>();
 		listEclipse.add("D:\\Projetos\\_Eclipse\\Activiti-Designer");
-		ArrayList<ClassMetricResult> activiti = executor.getMetricsFromProjects(listEclipse);
+		ArrayList<ClassMetricResult> activiti = executor.getMetricsFromProjects(listEclipse, PASTA_RESULTADO);
 
 		listEclipse = new ArrayList<String>();
 		listEclipse.add("D:\\Projetos\\_Eclipse\\angularjs-eclipse");
-		ArrayList<ClassMetricResult> angularjs = executor.getMetricsFromProjects(listEclipse);
+		ArrayList<ClassMetricResult> angularjs = executor.getMetricsFromProjects(listEclipse, PASTA_RESULTADO);
 
 		listEclipse = new ArrayList<String>();
 		listEclipse.add("D:\\Projetos\\_Eclipse\\arduino-eclipse-plugin");
-		ArrayList<ClassMetricResult> arduino = executor.getMetricsFromProjects(listEclipse);
+		ArrayList<ClassMetricResult> arduino = executor.getMetricsFromProjects(listEclipse, PASTA_RESULTADO);
 
 		listEclipse = new ArrayList<String>();
 		listEclipse.add("D:\\Projetos\\_Eclipse\\droolsjbpm-tools");
-		ArrayList<ClassMetricResult> droolsjbpm = executor.getMetricsFromProjects(listEclipse);
+		ArrayList<ClassMetricResult> droolsjbpm = executor.getMetricsFromProjects(listEclipse, PASTA_RESULTADO);
 
 		listEclipse = new ArrayList<String>();
 		listEclipse.add("D:\\Projetos\\_Eclipse\\sonarlint-eclipse");
-		ArrayList<ClassMetricResult> sonarlint = executor.getMetricsFromProjects(listEclipse);
+		ArrayList<ClassMetricResult> sonarlint = executor.getMetricsFromProjects(listEclipse, PASTA_RESULTADO);
 
 		ArrayList<String> web = new ArrayList<String>();
 		web.add("D:\\Projetos\\_Web\\bigbluebutton");
-		ArrayList<ClassMetricResult> bigbluebutton = executor.getMetricsFromProjects(web);
+		ArrayList<ClassMetricResult> bigbluebutton = executor.getMetricsFromProjects(web, PASTA_RESULTADO);
 		compareSystems("Bigbluebutton", bigbluebutton, bitcoin, k9, exoplayer, sms, talon, activiti, angularjs, arduino,
 				droolsjbpm, sonarlint);
 
 		web = new ArrayList<String>();
 		web.add("D:\\Projetos\\_Web\\openmrs-core");
-		ArrayList<ClassMetricResult> openmrs = executor.getMetricsFromProjects(web);
+		ArrayList<ClassMetricResult> openmrs = executor.getMetricsFromProjects(web, PASTA_RESULTADO);
 		compareSystems("OpenMRS", openmrs, bitcoin, k9, exoplayer, sms, talon, activiti, angularjs, arduino, droolsjbpm,
 				sonarlint);
 
 		web = new ArrayList<String>();
 		web.add("D:\\Projetos\\_Web\\heritrix3");
-		ArrayList<ClassMetricResult> heritrix3 = executor.getMetricsFromProjects(web);
+		ArrayList<ClassMetricResult> heritrix3 = executor.getMetricsFromProjects(web, PASTA_RESULTADO);
 		compareSystems("heritrix3", heritrix3, bitcoin, k9, exoplayer, sms, talon, activiti, angularjs, arduino,
 				droolsjbpm, sonarlint);
 
 		web = new ArrayList<String>();
 		web.add("D:\\Projetos\\_Web\\qalingo-engine");
-		ArrayList<ClassMetricResult> qalingo = executor.getMetricsFromProjects(web);
+		ArrayList<ClassMetricResult> qalingo = executor.getMetricsFromProjects(web, PASTA_RESULTADO);
 		compareSystems("qalingo", qalingo, bitcoin, k9, exoplayer, sms, talon, activiti, angularjs, arduino, droolsjbpm,
 				sonarlint);
 
 		web = new ArrayList<String>();
 		web.add("D:\\Projetos\\_Web\\libreplan");
-		ArrayList<ClassMetricResult> libreplan = executor.getMetricsFromProjects(web);
+		ArrayList<ClassMetricResult> libreplan = executor.getMetricsFromProjects(web, PASTA_RESULTADO);
 		compareSystems("libreplan", libreplan, bitcoin, k9, exoplayer, sms, talon, activiti, angularjs, arduino,
 				droolsjbpm, sonarlint);
 		System.out.println("*********** WEB ************");

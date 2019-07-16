@@ -16,11 +16,12 @@ import org.designroleminer.technique.TechniqueExecutor;
 public class FilterSmellSimple {
 
 	public static void main(String[] args) {
+		final String PASTA_RESULTADO = "smell\\";
 		TechniqueExecutor executor = new TechniqueExecutor(new DesignRoleTechnique());
 
 		System.out.println("Iniciando a coleta de métricas do projeto a ser analisado...");
 		ArrayList<String> projetosAnalisar = executor.lerProjetos("AnalysisSimple.txt");
-		ArrayList<ClassMetricResult> metricasProjetosAnalisar = executor.getMetricsFromProjects(projetosAnalisar);
+		ArrayList<ClassMetricResult> metricasProjetosAnalisar = executor.getMetricsFromProjects(projetosAnalisar, PASTA_RESULTADO);
 
 		System.out.println("Gerando DR.csv com a lista classes e design roles atribuídos...");
 		executor.execute(metricasProjetosAnalisar, System.getProperty("user.dir") + "\\results\\simple\\DR.CSV");
