@@ -3,10 +3,10 @@ package study.threshold;
 import java.util.ArrayList;
 
 import org.designroleminer.ClassMetricResult;
-import org.designroleminer.technique.DesignRoleTechnique;
-import org.designroleminer.technique.DoseaDesignRoleTechnique;
-import org.designroleminer.technique.DoseaReferenceTechnique;
-import org.designroleminer.technique.TechniqueExecutor;
+import org.designroleminer.threshold.DesignRoleTechnique;
+import org.designroleminer.threshold.DoseaDesignRoleTechnique;
+import org.designroleminer.threshold.DoseaReferenceTechnique;
+import org.designroleminer.threshold.TechniqueExecutor;
 
 public class ThresholdReferenceStudy {
 

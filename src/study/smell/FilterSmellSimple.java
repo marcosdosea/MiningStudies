@@ -9,9 +9,9 @@ import org.designroleminer.smelldetector.CarregaSalvaArquivo;
 import org.designroleminer.smelldetector.FilterSmells;
 import org.designroleminer.smelldetector.model.DadosMetodoSmell;
 import org.designroleminer.smelldetector.model.LimiarTecnica;
-import org.designroleminer.technique.ArchitecturalRoleTechnique;
-import org.designroleminer.technique.DesignRoleTechnique;
-import org.designroleminer.technique.TechniqueExecutor;
+import org.designroleminer.threshold.ArchitecturalRoleTechnique;
+import org.designroleminer.threshold.DesignRoleTechnique;
+import org.designroleminer.threshold.TechniqueExecutor;
 
 public class FilterSmellSimple {
 

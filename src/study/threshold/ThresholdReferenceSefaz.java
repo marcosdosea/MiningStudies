@@ -3,11 +3,11 @@ package study.threshold;
 import java.util.ArrayList;
 
 import org.designroleminer.ClassMetricResult;
-import org.designroleminer.technique.AlvesTechnique;
-import org.designroleminer.technique.DesignRoleTechnique;
-import org.designroleminer.technique.DoseaOutlierTechnique;
-import org.designroleminer.technique.DoseaDesignRoleTechnique;
-import org.designroleminer.technique.TechniqueExecutor;
+import org.designroleminer.threshold.AlvesTechnique;
+import org.designroleminer.threshold.DesignRoleTechnique;
+import org.designroleminer.threshold.DoseaDesignRoleTechnique;
+import org.designroleminer.threshold.DoseaOutlierTechnique;
+import org.designroleminer.threshold.TechniqueExecutor;
 
 public class ThresholdReferenceSefaz {
 

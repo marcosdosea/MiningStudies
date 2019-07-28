@@ -3,8 +3,8 @@ package study.similarity;
 import java.util.ArrayList;
 
 import org.designroleminer.ClassMetricResult;
-import org.designroleminer.technique.DesignRoleTechnique;
-import org.designroleminer.technique.TechniqueExecutor;
+import org.designroleminer.threshold.DesignRoleTechnique;
+import org.designroleminer.threshold.TechniqueExecutor;
 import org.systemsimilarity.SimilarityManager;
 
 public class VEM2019Study {

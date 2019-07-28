@@ -3,11 +3,11 @@ package study.threshold;
 import java.util.ArrayList;
 
 import org.designroleminer.ClassMetricResult;
-import org.designroleminer.technique.AlvesTechnique;
-import org.designroleminer.technique.AnicheTechnique;
-import org.designroleminer.technique.DesignRoleTechnique;
-import org.designroleminer.technique.TechniqueExecutor;
-import org.designroleminer.technique.ValeTechnique;
+import org.designroleminer.threshold.AlvesTechnique;
+import org.designroleminer.threshold.AnicheTechnique;
+import org.designroleminer.threshold.DesignRoleTechnique;
+import org.designroleminer.threshold.TechniqueExecutor;
+import org.designroleminer.threshold.ValeTechnique;
 
 public class ThresholdStudy {
 	
