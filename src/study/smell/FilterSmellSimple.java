@@ -32,7 +32,7 @@ public class FilterSmellSimple {
 
 		System.out.println("Carregando valores limiares...");
 		List<LimiarTecnica> listaTecnicas = CarregaSalvaArquivo
-				.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\");
+				.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\2019\\");
 
 		System.out.println("Gerando SMELLS.csv com a lista de problemas de design encontrados...");
 		HashMap<String, DadosMetodoSmell> metodosSmell = null;

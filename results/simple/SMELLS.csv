@@ -1,124 +1,24 @@
 "Tecnicas;Design Role;Classe;Método;LOC;CC;Efferent;NOP;Problema de Design;Deveria ser REFATORADO por conta desse problema?; Se DISCORDAR, quais os motivos? "
- R ;SERVICE;com.zegoggles.smssync.service.SmsBackupService;handleErrorState;24;8;2;1;Muitos Desvios;(1) Discordo Fortemente;;
-" R, D ;SERVICE;com.zegoggles.smssync.service.SmsBackupService;backup;33;8;9;1;Metodo Longo;(1) Discordo Fortemente;;"
-" R, D ;UNDEFINED;com.zegoggles.smssync.utils.ListPreferenceHelper;initListPreference;29;8;0;3;Muitos Desvios;(1) Discordo Fortemente;;"
-" R, D ;TEST;com.zegoggles.smssync.service.AlarmManagerDriverTest;jobBuilder;31;1;0;0;Metodo Longo;(1) Discordo Fortemente;;"
-" A, R, D, X ;ACTIVITY;com.zegoggles.smssync.activity.MainActivity;onActivityResult;46;14;11;3;Muitos Desvios;(1) Discordo Fortemente;;"
-" R, D ;UNDEFINED;com.zegoggles.smssync.mail.MmsSupport;getMMSBodyParts;24;8;11;1;Alto Acoplamento Efferent;(1) Discordo Fortemente;;"
- D ;PREFERENCE;com.zegoggles.smssync.activity.StatusPreference;onRestore;11;3;7;0;Alto Acoplamento Efferent;(1) Discordo Fortemente;;
- D ;TEST;com.zegoggles.smssync.calendar.CalendarAccessorPost40Test;shouldAddEntry;17;1;7;0;Metodo Longo;(1) Discordo Fortemente;;
-" R, D ;UNDEFINED;com.zegoggles.smssync.mail.MessageConverter;messageToContentValues;39;8;13;1;Alto Acoplamento Efferent;(1) Discordo Fortemente;;"
-" R, D ;UNDEFINED;com.zegoggles.smssync.mail.MessageGenerator;MessageGenerator;13;1;12;10;Alto Acoplamento Efferent;(1) Discordo Fortemente;;"
-" R, D ;UNDEFINED;com.zegoggles.smssync.service.CalendarSyncer;syncCalendar;17;4;13;1;Alto Acoplamento Efferent;(1) Discordo Fortemente;;"
-" A, R, D, X ;UNDEFINED;com.zegoggles.smssync.service.BackupQueryBuilder;Query;3;2;4;5;Muitos Parametros;(1) Discordo Fortemente;;"
-" R, D ;SERVICE;com.zegoggles.smssync.service.SmsRestoreService;handleIntent;18;5;12;1;Alto Acoplamento Efferent;(1) Discordo Fortemente;;"
-" A, R, D, X ;UNDEFINED;com.zegoggles.smssync.service.BackupConfig;BackupConfig;12;5;8;7;Muitos Parametros;(1) Discordo Fortemente;;"
-" A, R, D, X ;ASYNCTASK;com.zegoggles.smssync.service.BackupTask;BackupTask;10;1;9;8;Muitos Parametros;(1) Discordo Fortemente;;"
-" A, R, D, X ;UNDEFINED;com.zegoggles.smssync.service.RestoreConfig;RestoreConfig;9;1;4;7;Muitos Parametros;(1) Discordo Fortemente;;"
- D ;FRAGMENT;com.zegoggles.smssync.activity.fragments.MainSettings;summarizeAutoBackupSettings;17;4;7;0;Alto Acoplamento Efferent;(1) Discordo Fortemente;;
-" R, D ;UNDEFINED;com.zegoggles.smssync.mail.MessageGenerator;messageFromMapCallLog;40;11;15;1;Muitos Desvios;(1) Discordo Fortemente;;"
-" A, R, D, X ;UNDEFINED;com.zegoggles.smssync.mail.HeaderGenerator;setHeaders;21;4;7;7;Muitos Parametros;(1) Discordo Fortemente;;"
-" A, R, X ;ASYNCTASK;com.zegoggles.smssync.service.RestoreTask;RestoreTask;7;1;6;4;Muitos Parametros;(1) Discordo Fortemente;;"
-" R, D ;UNDEFINED;com.zegoggles.smssync.mail.MmsSupport;getMMSBodyParts;24;8;11;1;Muitos Desvios;(1) Discordo Fortemente;;"
- D ;PERSISTENCE;com.zegoggles.smssync.mail.BackupImapStore;compare;5;5;4;2;Muitos Desvios;(1) Discordo Fortemente;;
- R ;ASYNCTASK;com.zegoggles.smssync.service.RestoreTask;importSms;19;11;10;1;Alto Acoplamento Efferent;(1) Discordo Fortemente;;
- R ;ACTIVITY;com.zegoggles.smssync.activity.donation.DonationActivity;onBillingSetupFinished;23;12;7;1;Muitos Desvios;(1) Discordo Fortemente;;
- D ;FRAGMENT;com.zegoggles.smssync.activity.fragments.AdvancedSettings;onRequestPermissionsResult;7;2;6;3;Muitos Parametros;(1) Discordo Fortemente;;
- D ;TEST;com.zegoggles.smssync.service.RestoreTaskTest;shouldRestoreItems;20;1;11;0;Metodo Longo;(1) Discordo Fortemente;;
- D ;TEST;com.zegoggles.smssync.mail.HeaderGeneratorTest;testShouldGenerateMMSHeaders;17;1;7;0;Metodo Longo;(1) Discordo Fortemente;;
-" R, D ;UNDEFINED;com.zegoggles.smssync.mail.PersonLookup;lookupPerson;27;8;10;1;Alto Acoplamento Efferent;(1) Discordo Fortemente;;"
- D ;FRAGMENT;com.zegoggles.smssync.activity.fragments.AdvancedSettings;updateMaxItems;7;3;3;3;Muitos Parametros;(1) Discordo Fortemente;;
-" A, R, D, X ;UNDEFINED;com.zegoggles.smssync.mail.MessageConverter;MessageConverter;15;3;15;5;Alto Acoplamento Efferent;(1) Discordo Fortemente;;"
-" A, R, X ;PREFERENCE;com.zegoggles.smssync.activity.StatusPreference;StatusPreference;14;1;6;4;Muitos Parametros;(1) Discordo Fortemente;;"
-" R, D ;UNDEFINED;com.zegoggles.smssync.compat.GooglePlayServices;isAvailable;33;6;7;1;Metodo Longo;(1) Discordo Fortemente;;"
-" R, D ;UNDEFINED;com.zegoggles.smssync.utils.ThreadHelper;getThreadId;30;11;12;2;Alto Acoplamento Efferent;(1) Discordo Fortemente;;"
-" R, D ;UNDEFINED;com.zegoggles.smssync.activity.Dialogs;shouldOverrideUrlLoading;4;1;10;2;Alto Acoplamento Efferent;(1) Discordo Fortemente;;"
-" R, X ;ASYNCTASK;com.zegoggles.smssync.service.BackupTask;fetchAndBackupItems;41;9;14;1;Alto Acoplamento Efferent;(1) Discordo Fortemente;;"
-" A, R, D, X ;UNDEFINED;com.zegoggles.smssync.service.CalendarSyncer;CalendarSyncer;6;1;5;4;Muitos Parametros;(1) Discordo Fortemente;;"
- R ;ASYNCTASK;com.zegoggles.smssync.service.BackupTask;fetchAndBackupItems;41;9;14;1;Metodo Longo;(1) Discordo Fortemente;;
- D ;SERVICE;com.zegoggles.smssync.service.SmsBackupService;notificationBuilder;3;1;4;3;Muitos Parametros;(1) Discordo Fortemente;;
-" R, D, X ;UNDEFINED;com.zegoggles.smssync.mail.MessageGenerator;messageFromMapMms;39;7;14;1;Alto Acoplamento Efferent;(1) Discordo Fortemente;;"
-" R, D ;UNDEFINED;com.zegoggles.smssync.mail.HeaderGenerator;createMessageId;21;5;11;3;Alto Acoplamento Efferent;(1) Discordo Fortemente;;"
-" A, R, D, X ;SERVICE;com.zegoggles.smssync.service.state.RestoreState;RestoreState;7;1;5;7;Muitos Parametros;(1) Discordo Fortemente;;"
- R ;BROADCASTRECEIVER;com.zegoggles.smssync.compat.SmsReceiver;storeMessage;33;6;11;2;Metodo Longo;(1) Discordo Fortemente;;
-" A, R, D, X ;UNDEFINED;com.zegoggles.smssync.mail.MessageGenerator;messageFromMapCallLog;40;11;15;1;Alto Acoplamento Efferent;(1) Discordo Fortemente;;"
-" R, D ;UNDEFINED;com.zegoggles.smssync.service.BackupJobs;schedule;18;9;6;3;Muitos Desvios;(1) Discordo Fortemente;;"
-" A, R, D, X ;UNDEFINED;com.zegoggles.smssync.preferences.Preferences;getDefaultType;10;3;7;4;Muitos Parametros;(1) Discordo Fortemente;;"
-" A, R, X ;[CALENDARACCESSOR];com.zegoggles.smssync.calendar.CalendarAccessorPost40;addEntry;30;5;12;5;Muitos Parametros;(1) Discordo Fortemente;;"
-" A, R, D, X ;TEST;com.zegoggles.smssync.service.CalendarSyncerTest;message;8;1;5;4;Muitos Parametros;(1) Discordo Fortemente;;"
-" R, D ;UNDEFINED;com.zegoggles.smssync.mail.MessageConverter;messageToContentValues;39;8;13;1;Metodo Longo;(1) Discordo Fortemente;;"
- D ;TEST;com.zegoggles.smssync.mail.HeaderGeneratorTest;testShouldGenerateSMSHeaders;23;1;7;0;Metodo Longo;(1) Discordo Fortemente;;
-" R, D ;UNDEFINED;com.zegoggles.smssync.utils.AppLog;AppLog;32;9;10;1;Alto Acoplamento Efferent;(1) Discordo Fortemente;;"
- R ;[CALENDARACCESSOR];com.zegoggles.smssync.calendar.CalendarAccessorPost40;addEntry;30;5;12;5;Alto Acoplamento Efferent;(1) Discordo Fortemente;;
- R ;PREFERENCE;com.zegoggles.smssync.activity.StatusPreference;stateChanged;29;8;5;1;Muitos Desvios;(1) Discordo Fortemente;;
- R ;[CALENDARACCESSOR];com.zegoggles.smssync.calendar.CalendarAccessorPre40;addEntry;21;3;10;5;Alto Acoplamento Efferent;(1) Discordo Fortemente;;
- D ;FRAGMENT;com.zegoggles.smssync.activity.fragments.MainSettings;summarizeAutoBackupSettings;17;4;7;0;Muitos Desvios;(1) Discordo Fortemente;;
-" A, R, D, X ;UNDEFINED;com.zegoggles.smssync.mail.PersonRecord;PersonRecord;6;1;3;4;Muitos Parametros;(1) Discordo Fortemente;;"
- D ;BROADCASTRECEIVER;com.zegoggles.smssync.receiver.SmsBroadcastReceiver;log;6;2;5;3;Muitos Parametros;(1) Discordo Fortemente;;
-" A, R, D, X ;UNDEFINED;com.zegoggles.smssync.mail.MessageConverter;MessageConverter;15;3;15;5;Muitos Parametros;(1) Discordo Fortemente;;"
- D ;FRAGMENT;com.zegoggles.smssync.activity.donation.DonationListFragment;getOptions;13;3;8;1;Alto Acoplamento Efferent;(1) Discordo Fortemente;;
-" A, R, X ;ENTITY;com.zegoggles.smssync.activity.donation.Sku;Sku;8;1;3;6;Muitos Parametros;(1) Discordo Fortemente;;"
- R ;ASYNCTASK;com.zegoggles.smssync.service.BackupTask;backupCursors;35;7;13;4;Metodo Longo;(1) Discordo Fortemente;;
- D ;FRAGMENT;com.zegoggles.smssync.activity.fragments.MainSettings;getConnectedSummary;12;4;4;1;Muitos Desvios;(1) Discordo Fortemente;;
-" R, D ;UNDEFINED;com.zegoggles.smssync.activity.PreferenceTitles;PreferenceTitles;28;10;9;2;Muitos Desvios;(1) Discordo Fortemente;;"
- D ;TEST;com.zegoggles.smssync.service.AlarmManagerDriverTest;assertAlarmScheduled;16;1;9;1;Alto Acoplamento Efferent;(1) Discordo Fortemente;;
-" A, R, X ;ASYNCTASK;com.zegoggles.smssync.service.BackupTask;BackupTask;17;2;15;1;Alto Acoplamento Efferent;(1) Discordo Fortemente;;"
- D ;TEST;com.zegoggles.smssync.service.BackupJobsTest;verifyJobScheduled;20;3;5;3;Muitos Parametros;(1) Discordo Fortemente;;
- R ;ASYNCTASK;com.zegoggles.smssync.service.RestoreTask;importSms;19;11;10;1;Muitos Desvios;(1) Discordo Fortemente;;
- R ;BROADCASTRECEIVER;com.zegoggles.smssync.compat.SmsReceiver;storeMessage;33;6;11;2;Alto Acoplamento Efferent;(1) Discordo Fortemente;;
- D ;FRAGMENT;com.zegoggles.smssync.activity.fragments.AdvancedSettings;onPreferenceChange;5;1;6;2;Alto Acoplamento Efferent;(1) Discordo Fortemente;;
-" A, R, D, X ;UNDEFINED;com.zegoggles.smssync.preferences.AuthPreferences;formatUri;3;1;2;5;Muitos Parametros;(1) Discordo Fortemente;;"
-" A, R, D, X ;UNDEFINED;com.zegoggles.smssync.mail.MmsSupport;MmsDetails;3;1;5;4;Muitos Parametros;(1) Discordo Fortemente;;"
- D ;TEST;com.zegoggles.smssync.service.BackupJobsTest;verifyJobScheduled;20;3;5;3;Metodo Longo;(1) Discordo Fortemente;;
-" R, D ;ACTIVITY;com.zegoggles.smssync.activity.auth.AccountManagerAuthActivity;onClick;3;1;10;2;Alto Acoplamento Efferent;(1) Discordo Fortemente;;"
-" R, D ;UNDEFINED;com.zegoggles.smssync.mail.MessageConverter;messageToContentValues;39;8;13;1;Muitos Desvios;(1) Discordo Fortemente;;"
-" R, D ;UNDEFINED;com.zegoggles.smssync.utils.AppLog;AppLog;32;9;10;1;Muitos Desvios;(1) Discordo Fortemente;;"
- R ;ASYNCTASK;com.zegoggles.smssync.service.BackupTask;backupCursors;35;7;13;4;Alto Acoplamento Efferent;(1) Discordo Fortemente;;
-" R, D ;UNDEFINED;com.zegoggles.smssync.utils.AppLog;rotate;26;10;10;1;Muitos Desvios;(1) Discordo Fortemente;;"
-" R, D ;TEST;com.zegoggles.smssync.service.RestoreTaskTest;shouldRestoreItems;20;1;11;0;Alto Acoplamento Efferent;(1) Discordo Fortemente;;"
- R ;ASYNCTASK;com.zegoggles.smssync.service.RestoreTask;importMessage;31;8;11;1;Muitos Desvios;(1) Discordo Fortemente;;
-" R, D ;UNDEFINED;com.zegoggles.smssync.utils.ThreadHelper;getThreadId;30;11;12;2;Muitos Desvios;(1) Discordo Fortemente;;"
- D ;PERSISTENCE;com.zegoggles.smssync.mail.BackupImapStore;buildSearchQuery;6;3;7;3;Alto Acoplamento Efferent;(1) Discordo Fortemente;;
- R ;ASYNCTASK;com.zegoggles.smssync.service.BackupTask;fetchAndBackupItems;41;9;14;1;Muitos Desvios;(1) Discordo Fortemente;;
- R ;ACTIVITY;com.zegoggles.smssync.activity.donation.DonationActivity;checkUserDonationStatus;37;1;0;2;Metodo Longo;(1) Discordo Fortemente;;
-" A, R, X ;[CALENDARACCESSOR];com.zegoggles.smssync.calendar.CalendarAccessorPre40;addEntry;21;3;10;5;Muitos Parametros;(1) Discordo Fortemente;;"
-" A, R, X ;ASYNCTASK;com.zegoggles.smssync.service.BackupTask;backupCursors;35;7;13;4;Muitos Parametros;(1) Discordo Fortemente;;"
- D ;PERSISTENCE;com.zegoggles.smssync.mail.BackupImapStore;search;3;7;5;0;Muitos Desvios;(1) Discordo Fortemente;;
-" A, R, X ;[TRUSTEDSOCKETFACTORY];com.zegoggles.smssync.mail.AllTrustedSocketFactory;createSocket;14;2;7;4;Muitos Parametros;(1) Discordo Fortemente;;"
-" A, R, D, X ;UNDEFINED;com.zegoggles.smssync.auth.OAuth2Token;OAuth2Token;7;1;3;5;Muitos Parametros;(1) Discordo Fortemente;;"
-" A, R, D, X ;SERVICE;com.zegoggles.smssync.service.state.BackupState;BackupState;6;1;6;6;Muitos Parametros;(1) Discordo Fortemente;;"
-" A, R, D, X ;UNDEFINED;com.zegoggles.smssync.auth.OAuth2Client;startElement;6;2;3;4;Muitos Parametros;(1) Discordo Fortemente;;"
-" R, D, X ;UNDEFINED;com.zegoggles.smssync.mail.MessageGenerator;messageFromMapSms;28;5;14;1;Alto Acoplamento Efferent;(1) Discordo Fortemente;;"
- R ;ASYNCTASK;com.zegoggles.smssync.service.RestoreTask;importMessage;31;8;11;1;Alto Acoplamento Efferent;(1) Discordo Fortemente;;
- D ;FRAGMENT;com.zegoggles.smssync.activity.donation.DonationListFragment;onClick;3;1;8;2;Alto Acoplamento Efferent;(1) Discordo Fortemente;;
-" R, D ;TEST;com.zegoggles.smssync.service.SmsBackupServiceTest;before;40;1;0;0;Metodo Longo;(1) Discordo Fortemente;;"
-" A, R, D, X ;UNDEFINED;com.zegoggles.smssync.mail.MessageGenerator;MessageGenerator;13;1;12;10;Muitos Parametros;(1) Discordo Fortemente;;"
-" R, D ;UNDEFINED;com.zegoggles.smssync.mail.PersonLookup;lookupPerson;27;8;10;1;Muitos Desvios;(1) Discordo Fortemente;;"
-" A, R, D, X ;UNDEFINED;com.zegoggles.smssync.utils.AppLog;onLayout;4;1;2;5;Muitos Parametros;(1) Discordo Fortemente;;"
- D ;FRAGMENT;com.zegoggles.smssync.activity.fragments.MainSettings;userDonationState;10;5;2;1;Muitos Desvios;(1) Discordo Fortemente;;
- R ;SERVICE;com.zegoggles.smssync.service.SmsBackupService;backup;33;8;9;1;Muitos Desvios;(1) Discordo Fortemente;;
- D ;TEST;com.zegoggles.smssync.service.SmsBackupServiceTest;checkPermission;3;1;2;3;Muitos Parametros;(1) Discordo Fortemente;;
- R ;ASYNCTASK;com.zegoggles.smssync.service.RestoreTask;restore;50;12;16;1;Metodo Longo;(1) Discordo Fortemente;;
- D ;TEST;com.zegoggles.smssync.service.CalendarSyncerTest;shouldSyncCalendar;15;1;9;0;Alto Acoplamento Efferent;(1) Discordo Fortemente;;
- D ;APPLICATION;com.zegoggles.smssync.App;rescheduleJobs;9;4;2;0;Muitos Desvios;(1) Discordo Fortemente;;
- D ;APPLICATION;com.zegoggles.smssync.App;enabled;3;1;8;0;Alto Acoplamento Efferent;(1) Discordo Fortemente;;
-" R, D ;ACTIVITY;com.zegoggles.smssync.activity.MainActivity;onActivityResult;46;14;11;3;Alto Acoplamento Efferent;(1) Discordo Fortemente;;"
-" A, R, D, X ;UNDEFINED;com.zegoggles.smssync.mail.Attachment;createPartFromUri;3;1;5;4;Muitos Parametros;(1) Discordo Fortemente;;"
- D ;PREFERENCE;com.zegoggles.smssync.activity.StatusPreference;onBackup;12;4;7;0;Alto Acoplamento Efferent;(1) Discordo Fortemente;;
-" R, D ;ACTIVITY;com.zegoggles.smssync.activity.MainActivity;onActivityResult;46;14;11;3;Metodo Longo;(1) Discordo Fortemente;;"
- R ;ACTIVITY;com.zegoggles.smssync.activity.donation.DonationActivity;onCreate;33;1;0;1;Metodo Longo;(1) Discordo Fortemente;;
-" R, D ;UNDEFINED;com.zegoggles.smssync.utils.AppLog;AppLog;32;9;10;1;Metodo Longo;(1) Discordo Fortemente;;"
-" R, D ;FRAGMENT;com.zegoggles.smssync.activity.fragments.AdvancedSettings;onResume;35;1;0;0;Metodo Longo;(1) Discordo Fortemente;;"
-" R, D ;UNDEFINED;com.zegoggles.smssync.utils.AppLog;rotate;26;10;10;1;Alto Acoplamento Efferent;(1) Discordo Fortemente;;"
-" R, D ;UNDEFINED;com.zegoggles.smssync.mail.MessageGenerator;messageFromMapMms;39;7;14;1;Metodo Longo;(1) Discordo Fortemente;;"
-" A, R, X ;ASYNCTASK;com.zegoggles.smssync.service.RestoreTask;restore;50;12;16;1;Alto Acoplamento Efferent;(1) Discordo Fortemente;;"
-" R, D ;UNDEFINED;com.zegoggles.smssync.mail.MessageGenerator;messageFromMapCallLog;40;11;15;1;Metodo Longo;(1) Discordo Fortemente;;"
- R ;ACTIVITY;com.zegoggles.smssync.activity.donation.DonationActivity;onPurchasesUpdated;30;12;4;2;Muitos Desvios;(1) Discordo Fortemente;;
- R ;ASYNCTASK;com.zegoggles.smssync.service.RestoreTask;importMessage;31;8;11;1;Metodo Longo;(1) Discordo Fortemente;;
- D ;SERVICE;com.zegoggles.smssync.service.ServiceBase;onStartCommand;4;1;2;3;Muitos Parametros;(1) Discordo Fortemente;;
- D ;SERVICE;com.zegoggles.smssync.service.SmsBackupService;backup;33;8;9;1;Alto Acoplamento Efferent;(1) Discordo Fortemente;;
- D ;SERVICE;com.zegoggles.smssync.service.SmsBackupService;getBackupConfig;3;1;4;3;Muitos Parametros;(1) Discordo Fortemente;;
-" A, R, D, X ;UNDEFINED;com.zegoggles.smssync.mail.MmsSupport;getDetails;25;6;16;2;Alto Acoplamento Efferent;(1) Discordo Fortemente;;"
- R ;ASYNCTASK;com.zegoggles.smssync.service.RestoreTask;restore;50;12;16;1;Muitos Desvios;(1) Discordo Fortemente;;
- D ;TEST;com.zegoggles.smssync.mail.MessageGeneratorTest;mockCalllogMessage;7;1;6;3;Muitos Parametros;(1) Discordo Fortemente;;
- D ;FRAGMENT;com.zegoggles.smssync.activity.fragments.AdvancedSettings;onRequestPermissionsResult;7;2;6;3;Alto Acoplamento Efferent;(1) Discordo Fortemente;;
+" A, X ;UNDEFINED;com.zegoggles.smssync.mail.Attachment;createPartFromUri;3;1;5;4;Muitos Parametros;(1) Discordo Fortemente;;"
+" A, R, V, X ;ASYNCTASK;com.zegoggles.smssync.service.BackupTask;fetchAndBackupItems;38;8;15;1;Alto Acoplamento Efferent;(1) Discordo Fortemente;;"
+" A, D, X ;ASYNCTASK;com.zegoggles.smssync.service.BackupTask;backupCursors;35;7;12;4;Muitos Parametros;(1) Discordo Fortemente;;"
+" A, R, D, V, X ;UNDEFINED;com.zegoggles.smssync.mail.HeaderGenerator;setHeaders;24;5;7;7;Muitos Parametros;(1) Discordo Fortemente;;"
+" A, R, D, V, X ;[CALENDARACCESSOR];com.zegoggles.smssync.calendar.CalendarAccessorPre40;addEntry;21;3;10;5;Muitos Parametros;(1) Discordo Fortemente;;"
+" A, X ;ACTIVITY;com.zegoggles.smssync.activity.auth.AuthActivity;onReceivedError;3;1;7;4;Muitos Parametros;(1) Discordo Fortemente;;"
+" A, R, D, V, X ;UNDEFINED;com.zegoggles.smssync.mail.MessageGenerator;messageFromMapCallLog;38;10;16;1;Alto Acoplamento Efferent;(1) Discordo Fortemente;;"
+" A, R, D, V, X ;ACTIVITY;com.zegoggles.smssync.activity.MainActivity;setPreferenceListeners;113;2;0;1;Metodo Longo;(1) Discordo Fortemente;;"
+" A, R, V, X ;ASYNCTASK;com.zegoggles.smssync.service.RestoreTask;restore;52;13;15;1;Alto Acoplamento Efferent;(1) Discordo Fortemente;;"
+ V ;ACTIVITY;com.zegoggles.smssync.activity.auth.AuthActivity;onCreate;50;1;0;1;Metodo Longo;(1) Discordo Fortemente;;
+" A, R, D, V, X ;ACTIVITY;com.zegoggles.smssync.activity.MainActivity;onCreateDialog;133;5;0;1;Metodo Longo;(1) Discordo Fortemente;;"
+" A, R, D, X ;UNDEFINED;com.zegoggles.smssync.mail.MessageGenerator;messageFromMapMms;39;7;14;1;Alto Acoplamento Efferent;(1) Discordo Fortemente;;"
+" A, R, D, V, X ;UNDEFINED;com.zegoggles.smssync.mail.MmsSupport;getDetails;25;6;16;2;Alto Acoplamento Efferent;(1) Discordo Fortemente;;"
+" A, V, X ;ASYNCTASK;com.zegoggles.smssync.service.RestoreTask;restore;52;13;15;1;Muitos Desvios;(1) Discordo Fortemente;;"
+" A, R, D, V, X ;UNDEFINED;com.zegoggles.smssync.utils.AppLog;onLayout;4;1;1;5;Muitos Parametros;(1) Discordo Fortemente;;"
+" A, R, D, V, X ;[CALENDARACCESSOR];com.zegoggles.smssync.calendar.CalendarAccessorPost40;addEntry;22;3;10;5;Muitos Parametros;(1) Discordo Fortemente;;"
+ A ;UNDEFINED;com.zegoggles.smssync.service.CalendarSyncer;syncCalendar;17;4;13;1;Alto Acoplamento Efferent;(1) Discordo Fortemente;;
+" A, X ;SERVICE;com.zegoggles.smssync.service.SmsBackupService;getBackupConfig;3;1;5;4;Muitos Parametros;(1) Discordo Fortemente;;"
+ A ;SERVICE;com.zegoggles.smssync.service.SmsRestoreService;handleIntent;14;3;13;1;Alto Acoplamento Efferent;(1) Discordo Fortemente;;
+" A, X ;COMMONSHTTPOAUTHCONSUMER;com.zegoggles.smssync.auth.XOAuthConsumer;startElement;3;1;11;4;Muitos Parametros;(1) Discordo Fortemente;;"
+" A, D, X ;TEST;com.zegoggles.smssync.service.CalendarSyncerTest;message;8;1;5;4;Muitos Parametros;(1) Discordo Fortemente;;"
+" A, R, D, X ;UNDEFINED;com.zegoggles.smssync.mail.MessageGenerator;messageFromMapSms;28;5;14;1;Alto Acoplamento Efferent;(1) Discordo Fortemente;;"
+ V ;ASYNCTASK;com.zegoggles.smssync.service.RestoreTask;restore;52;13;15;1;Metodo Longo;(1) Discordo Fortemente;;
