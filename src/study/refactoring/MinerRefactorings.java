@@ -3,7 +3,6 @@ package study.refactoring;
 import java.util.List;
 
 import org.eclipse.jgit.lib.Repository;
-import org.eclipse.jgit.revwalk.RevCommit;
 import org.refactoringminer.api.GitHistoryRefactoringMiner;
 import org.refactoringminer.api.GitService;
 import org.refactoringminer.api.Refactoring;
@@ -23,7 +22,6 @@ public class MinerRefactorings {
 		String commitInicial = "9a3a27418362c157aa79f160302c41a2c0cc67c5";
 		String commitFinal = "12390bc25c2e4e6355ccd04e6b13dfdb689bdf2b";
 
-
 		try {
 
 			Repository repo = gitService.cloneIfNotExists(pastaProjeto,
@@ -35,16 +33,19 @@ public class MinerRefactorings {
 
 			miner.detectBetweenCommits(repo, commitInicial, commitFinal, new RefactoringHandler() {
 				@Override
-				public void handle(RevCommit commitData, List<Refactoring> refactorings) {
+				public void handle(String idCommit, List<Refactoring> refactorings) {
 
 					// RefactoringData data;
 					// System.out.println("Refactorings at " + commitData.getId().getName());
 					for (Refactoring ref : refactorings) {
-						pm.write(commitData.getId().getName(), ref.getName(), ref.getRefactoringType(),
+						pm.write(idCommit, ref.getName(), ref.getRefactoringType(),
 								// ref.leftSide().size() > 0 ? ref.leftSide().get(0).getCodeElement() : 0 ,
 								// ref.rightSide().size() > 0 ? ref.rightSide().get(0).getCodeElement() : 0 ,
-								ref.getInvolvedClassesAfterRefactoring(), ref.getInvolvedClassesBeforeRefactoring(),
-								commitData.getShortMessage(), commitData.getFullMessage());
+								ref.getInvolvedClassesAfterRefactoring(),
+								ref.getInvolvedClassesBeforeRefactoring()/*
+																			 * , commitData.getShortMessage(),
+																			 * commitData.getFullMessage()
+																			 */);
 						// data = new RefactoringData();
 						// data.setCommit(commitData.getId().getName());
 						// data.setRefactoringName(ref.getName());

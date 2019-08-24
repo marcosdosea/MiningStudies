@@ -3,7 +3,6 @@ package study.refactoring;
 import java.util.List;
 
 import org.eclipse.jgit.lib.Repository;
-import org.eclipse.jgit.revwalk.RevCommit;
 import org.refactoringminer.api.GitHistoryRefactoringMiner;
 import org.refactoringminer.api.GitService;
 import org.refactoringminer.api.Refactoring;
@@ -23,8 +22,8 @@ public class Example {
 
 		miner.detectAll(repo, "master", new RefactoringHandler() {
 		  @Override
-		  public void handle(RevCommit commitData, List<Refactoring> refactorings) {
-		    System.out.println("Refactorings at " + commitData.getId().getName());
+		  public void handle(String idCommit, List<Refactoring> refactorings) {
+		    System.out.println("Refactorings at " + idCommit);
 		    for (Refactoring ref : refactorings) {
 		      System.out.println(ref.toString());
 		    }

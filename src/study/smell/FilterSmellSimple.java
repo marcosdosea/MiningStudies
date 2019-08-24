@@ -2,6 +2,7 @@ package study.smell;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 
 import org.designroleminer.ClassMetricResult;
@@ -12,6 +13,8 @@ import org.designroleminer.smelldetector.model.LimiarTecnica;
 import org.designroleminer.threshold.ArchitecturalRoleTechnique;
 import org.designroleminer.threshold.DesignRoleTechnique;
 import org.designroleminer.threshold.TechniqueExecutor;
+
+import com.github.mauricioaniche.ck.MethodData;
 
 public class FilterSmellSimple {
 
@@ -36,7 +39,8 @@ public class FilterSmellSimple {
 
 		System.out.println("Gerando SMELLS.csv com a lista de problemas de design encontrados...");
 		HashMap<String, DadosMetodoSmell> metodosSmell = null;
-		metodosSmell = FilterSmells.filtrar(metricasProjetosAnalisar, listaTecnicas, metodosSmell);
+		HashSet<MethodData> metodosSmelly = null;
+		metodosSmell = FilterSmells.filtrar(metricasProjetosAnalisar, listaTecnicas, metodosSmell, metodosSmelly);
 		FilterSmells.gravarMetodosSmell(metodosSmell, "\\results\\simple\\SMELLS.csv");
 	}
 }
