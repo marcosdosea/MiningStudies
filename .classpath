@@ -16,5 +16,6 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/RefactoringMiner"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/designroleminer"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/SystemSimilarity"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/SmellRafactored"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
