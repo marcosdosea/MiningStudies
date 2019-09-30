@@ -27,16 +27,16 @@ public class SmsBackupStudy {
 		String initialCommit = "9a3a27418362c157aa79f160302c41a2c0cc67c5";
 		String finalCommit = "12390bc25c2e4e6355ccd04e6b13dfdb689bdf2b";
 
-		List<LimiarTecnica> listaTecnicas = CarregaSalvaArquivo
+		List<LimiarTecnica> listThresholdsTechiniques = CarregaSalvaArquivo
 				.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\simple\\");
 
 		SmellRefactoredResult result = SmellRefactoredManager.getSmellRefactoredBetweenCommit(urlRepository,
-				localFolder, initialCommit, finalCommit, listaTecnicas);
+				localFolder, initialCommit, finalCommit, listThresholdsTechiniques);
 
 		logger.info("Número total de refatorações:" + result.getListRefactoring().size());
-		logger.info("Número total de refatorações em Métodos Não Smell:"
+		logger.info("Número total de refatorações em Métodos Não Smell: "
 				+ result.getListRefactoringsByMethodSmelly().size());
-		logger.info("Número total de refatorações em Métodos Smell:" + result.getListRefactoringsByMethod().size());
+		logger.info("Número total de refatorações em Métodos Smell: " + result.getListRefactoringsByMethod().size());
 
 		final PersistenceMechanism pmRef = new CSVFile(System.getProperty("user.dir") + "\\refactoring-sms.csv");
 		pmRef.write("Class", "Method", "Commit", "Smell", "Tecnicas", "Refactoring", "Full Message");
