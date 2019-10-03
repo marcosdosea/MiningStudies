@@ -24,18 +24,18 @@ public class FilterSmellSimple {
 				PASTA_RESULTADO);
 
 		System.out.println("Gerando DR.csv com a lista classes e design roles atribuídos...");
-		executor.execute(metricasProjetosAnalisar, System.getProperty("user.dir") + "\\results\\simple\\DR.CSV");
+		executor.execute(metricasProjetosAnalisar, System.getProperty("user.dir") + "\\results\\DR.CSV");
 
 		System.out.println("Gerando AR.csv com a lista classes e design roles atribuídos...");
 		executor.setTechinique(new ArchitecturalRoleTechnique());
-		executor.execute(metricasProjetosAnalisar, System.getProperty("user.dir") + "\\results\\\\simple\\AR.CSV");
+		executor.execute(metricasProjetosAnalisar, System.getProperty("user.dir") + "\\results\\AR.CSV");
 
 		System.out.println("Carregando valores limiares...");
 		List<LimiarTecnica> listaTecnicas = CarregaSalvaArquivo
-				.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\2019\\");
+				.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\web2019\\");
 
 		System.out.println("Gerando SMELLS.csv com a lista de problemas de design encontrados...");
-		FilterSmellResult result = FilterSmells.filtrar(metricasProjetosAnalisar, listaTecnicas);
-		FilterSmells.gravarMetodosSmell(result.getMetodosSmell(), "\\results\\simple\\SMELLS.csv");
+		FilterSmellResult result = FilterSmells.filtrar(metricasProjetosAnalisar, listaTecnicas, "HEAD");
+		FilterSmells.gravarMetodosSmell(result.getMetodosSmell(), "\\results\\SMELLS.csv");
 	}
 }
