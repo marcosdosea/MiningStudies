@@ -17,7 +17,7 @@ public class ThresholdReferenceStudy {
 		System.out.println("Iniciando a coleta de métricas do projeto referencia...");
 		ArrayList<String> projetosReferencia = gLimiares.lerProjetos("Reference.txt");
 		ArrayList<ClassMetricResult> metricasProjetosReferencia = gLimiares.getMetricsFromProjects(projetosReferencia,
-				PASTA_RESULTADO);
+				PASTA_RESULTADO, false);
 
 		System.out.println("Gerando Limiares por Dosea apontando para projetos Referencia...");
 		gLimiares.setTechinique(new DoseaReferenceTechnique());

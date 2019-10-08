@@ -17,8 +17,8 @@ public class SmsBackupStudy {
 
 		String localFolder = "D:\\Projetos\\_Android\\sms-backup-plus";
 		String urlRepository = "https://github.com/jberkel/sms-backup-plus.git";
-		String initialCommit = "9a3a27418362c157aa79f160302c41a2c0cc67c5";
-		String finalCommit = "12390bc25c2e4e6355ccd04e6b13dfdb689bdf2b";
+		String initialCommit = "9c75e5f60abe2d0272fdf965a21c54771aa247c9";
+		String finalCommit = "efdc59004cd254692aa749fab3b1c35aa6680a9d";
 
 		List<LimiarTecnica> listThresholdsTechiniques = CarregaSalvaArquivo
 				.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\simple\\");

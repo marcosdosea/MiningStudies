@@ -16,11 +16,11 @@ public class AndroidStudy {
 
 		ArrayList<String> listAndroid = new ArrayList<String>();
 		listAndroid.add("D:\\Projetos\\_Android\\bitcoin-wallet");
-		ArrayList<ClassMetricResult> bitcoin = executor.getMetricsFromProjects(listAndroid, PASTA_RESULTADO);
+		ArrayList<ClassMetricResult> bitcoin = executor.getMetricsFromProjects(listAndroid, PASTA_RESULTADO, true);
 
 		listAndroid = new ArrayList<String>();
 		listAndroid.add("D:\\Projetos\\_Android\\Talon-for-Twitter");
-		ArrayList<ClassMetricResult> k9 = executor.getMetricsFromProjects(listAndroid, PASTA_RESULTADO);
+		ArrayList<ClassMetricResult> k9 = executor.getMetricsFromProjects(listAndroid, PASTA_RESULTADO, true);
 		System.out.println("======>>>> Bitcoin x Talon : " + gSimilarity.calculate(bitcoin, k9));
 	}
 

@@ -4,14 +4,14 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import org.designroleminer.visitor.ClassVisitorMetric;
+import org.designroleminer.visitor.MethodVisitorMetric;
+import org.repodriller.RepoDriller;
 import org.repodriller.RepositoryMining;
 import org.repodriller.Study;
 import org.repodriller.filter.range.Commits;
 import org.repodriller.persistence.csv.CSVFile;
 import org.repodriller.scm.GitRepository;
-import org.designroleminer.visitor.ClassVisitorMetric;
-import org.designroleminer.visitor.MethodVisitorMetric;
-import org.repodriller.RepoDriller;
 
 public class ClassStudy implements Study {
 

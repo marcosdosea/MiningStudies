@@ -21,7 +21,7 @@ public class FilterSmellSimple {
 		System.out.println("Iniciando a coleta de métricas do projeto a ser analisado...");
 		ArrayList<String> projetosAnalisar = executor.lerProjetos("AnalysisSimple.txt");
 		ArrayList<ClassMetricResult> metricasProjetosAnalisar = executor.getMetricsFromProjects(projetosAnalisar,
-				PASTA_RESULTADO);
+				PASTA_RESULTADO, true);
 
 		System.out.println("Gerando DR.csv com a lista classes e design roles atribuídos...");
 		executor.execute(metricasProjetosAnalisar, System.getProperty("user.dir") + "\\results\\DR.CSV");
