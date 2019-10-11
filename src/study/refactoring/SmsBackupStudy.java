@@ -27,7 +27,7 @@ public class SmsBackupStudy {
 				localFolder, initialCommit, finalCommit, listThresholdsTechiniques);
 
 		SmellRefactoredManager.storeResult(result,
-				System.getProperty("user.dir") + "\\refactoring\\refactored-sms.csv");
+				System.getProperty("user.dir") + "\\refactoring\\refactored-sms.csv", false);
 	}
 
 }

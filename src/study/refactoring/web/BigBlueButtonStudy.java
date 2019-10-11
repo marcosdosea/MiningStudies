@@ -29,6 +29,6 @@ public class BigBlueButtonStudy {
 				localFolder, initialCommit, finalCommit, listThresholdsTechiniques);
 
 		SmellRefactoredManager.storeResult(result,
-				System.getProperty("user.dir") + "\\refactoring\\refactored-bigbluebutton.csv");
+				System.getProperty("user.dir") + "\\refactoring\\refactored-bigbluebutton.csv", false);
 	}
 }

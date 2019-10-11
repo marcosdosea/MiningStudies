@@ -29,7 +29,7 @@ public class LibreplanStudy {
 				localFolder, initialCommit, finalCommit, listThresholdsTechiniques);
 
 		SmellRefactoredManager.storeResult(result,
-				System.getProperty("user.dir") + "\\refactoring\\refactored-libreplan.csv");
+				System.getProperty("user.dir") + "\\refactoring\\refactored-libreplan.csv", false);
 
 	}
 

@@ -28,6 +28,6 @@ public class AetStudy {
 		SmellRefactoredResult result = SmellRefactoredManager.getSmellRefactoredBetweenCommit(urlRepository,
 				localFolder, initialCommit, finalCommit, listThresholdsTechiniques);
 		SmellRefactoredManager.storeResult(result,
-				System.getProperty("user.dir") + "\\refactoring\\refactored-aet.csv");
+				System.getProperty("user.dir") + "\\refactoring\\refactored-aet.csv", false);
 	}
 }
