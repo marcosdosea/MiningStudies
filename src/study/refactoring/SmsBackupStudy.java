@@ -26,8 +26,13 @@ public class SmsBackupStudy {
 		SmellRefactoredResult result = SmellRefactoredManager.getSmellRefactoredBetweenCommit(urlRepository,
 				localFolder, initialCommit, finalCommit, listThresholdsTechiniques);
 
+		// resultado sem gravar mensgens do commit
 		SmellRefactoredManager.storeResult(result,
 				System.getProperty("user.dir") + "\\refactoring\\refactored-sms.csv", false);
+		
+		// resultado + mensgens do commit
+		SmellRefactoredManager.storeResult(result,
+				System.getProperty("user.dir") + "\\refactoring\\refactored-sms-message.csv", true);
 	}
 
 }
