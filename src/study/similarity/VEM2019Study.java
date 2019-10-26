@@ -1,6 +1,7 @@
 package study.similarity;
 
 import java.util.ArrayList;
+import java.util.Collection;
 
 import org.designroleminer.ClassMetricResult;
 import org.designroleminer.threshold.DesignRoleTechnique;
@@ -15,73 +16,74 @@ public class VEM2019Study {
 	public static void main(String[] args) {
 		final String PASTA_RESULTADO = "similarity\\";
 		System.out.println("Iniciando Cálculo Similaridade 1...");
-		ArrayList<String> listAndroid = new ArrayList<String>();
+		Collection<String> listAndroid = new ArrayList<String>();
 		listAndroid.add("D:\\Projetos\\_Android\\bitcoin-wallet");
-		ArrayList<ClassMetricResult> bitcoin = executor.getMetricsFromProjects(listAndroid, PASTA_RESULTADO, true);
+		Collection<ClassMetricResult> bitcoin = executor.getMetricsFromProjects(listAndroid, PASTA_RESULTADO, true)
+				.all();
 
 		listAndroid = new ArrayList<String>();
 		listAndroid.add("D:\\Projetos\\_Android\\k-9");
-		ArrayList<ClassMetricResult> k9 = executor.getMetricsFromProjects(listAndroid, PASTA_RESULTADO, true);
+		Collection<ClassMetricResult> k9 = executor.getMetricsFromProjects(listAndroid, PASTA_RESULTADO, true).all();
 
 		listAndroid = new ArrayList<String>();
 		listAndroid.add("D:\\Projetos\\_Android\\ExoPlayer");
-		ArrayList<ClassMetricResult> exoplayer = executor.getMetricsFromProjects(listAndroid, PASTA_RESULTADO, true);
+		Collection<ClassMetricResult> exoplayer = executor.getMetricsFromProjects(listAndroid, PASTA_RESULTADO, true).all();
 
 		listAndroid = new ArrayList<String>();
 		listAndroid.add("D:\\Projetos\\_Android\\sms-backup-plus");
-		ArrayList<ClassMetricResult> sms = executor.getMetricsFromProjects(listAndroid, PASTA_RESULTADO, true);
+		Collection<ClassMetricResult> sms = executor.getMetricsFromProjects(listAndroid, PASTA_RESULTADO, true).all();
 
 		listAndroid = new ArrayList<String>();
 		listAndroid.add("D:\\Projetos\\_Android\\Talon-for-Twitter");
-		ArrayList<ClassMetricResult> talon = executor.getMetricsFromProjects(listAndroid, PASTA_RESULTADO, true);
+		Collection<ClassMetricResult> talon = executor.getMetricsFromProjects(listAndroid, PASTA_RESULTADO, true).all();
 
-		ArrayList<String> listEclipse = new ArrayList<String>();
+		Collection<String> listEclipse = new ArrayList<String>();
 		listEclipse.add("D:\\Projetos\\_Eclipse\\Activiti-Designer");
-		ArrayList<ClassMetricResult> activiti = executor.getMetricsFromProjects(listEclipse, PASTA_RESULTADO, true);
+		Collection<ClassMetricResult> activiti = executor.getMetricsFromProjects(listEclipse, PASTA_RESULTADO, true).all();
 
 		listEclipse = new ArrayList<String>();
 		listEclipse.add("D:\\Projetos\\_Eclipse\\angularjs-eclipse");
-		ArrayList<ClassMetricResult> angularjs = executor.getMetricsFromProjects(listEclipse, PASTA_RESULTADO, true);
+		Collection<ClassMetricResult> angularjs = executor.getMetricsFromProjects(listEclipse, PASTA_RESULTADO, true).all();
 
 		listEclipse = new ArrayList<String>();
 		listEclipse.add("D:\\Projetos\\_Eclipse\\arduino-eclipse-plugin");
-		ArrayList<ClassMetricResult> arduino = executor.getMetricsFromProjects(listEclipse, PASTA_RESULTADO, true);
+		Collection<ClassMetricResult> arduino = executor.getMetricsFromProjects(listEclipse, PASTA_RESULTADO, true).all();
 
 		listEclipse = new ArrayList<String>();
 		listEclipse.add("D:\\Projetos\\_Eclipse\\droolsjbpm-tools");
-		ArrayList<ClassMetricResult> droolsjbpm = executor.getMetricsFromProjects(listEclipse, PASTA_RESULTADO, true);
+		Collection<ClassMetricResult> droolsjbpm = executor.getMetricsFromProjects(listEclipse, PASTA_RESULTADO, true).all();
 
 		listEclipse = new ArrayList<String>();
 		listEclipse.add("D:\\Projetos\\_Eclipse\\sonarlint-eclipse");
-		ArrayList<ClassMetricResult> sonarlint = executor.getMetricsFromProjects(listEclipse, PASTA_RESULTADO, true);
+		Collection<ClassMetricResult> sonarlint = executor.getMetricsFromProjects(listEclipse, PASTA_RESULTADO, true).all();
 
-		ArrayList<String> web = new ArrayList<String>();
+		Collection<String> web = new ArrayList<String>();
 		web.add("D:\\Projetos\\_Web\\bigbluebutton");
-		ArrayList<ClassMetricResult> bigbluebutton = executor.getMetricsFromProjects(web, PASTA_RESULTADO, true);
+		Collection<ClassMetricResult> bigbluebutton = executor.getMetricsFromProjects(web, PASTA_RESULTADO, true).all();
 		compareSystems("Bigbluebutton", bigbluebutton, bitcoin, k9, exoplayer, sms, talon, activiti, angularjs, arduino,
 				droolsjbpm, sonarlint);
 
 		web = new ArrayList<String>();
 		web.add("D:\\Projetos\\_Web\\openmrs-core");
-		ArrayList<ClassMetricResult> openmrs = executor.getMetricsFromProjects(web, PASTA_RESULTADO, true);
+		Collection<ClassMetricResult> openmrs = executor.getMetricsFromProjects(web, PASTA_RESULTADO, true).all();
 		compareSystems("OpenMRS", openmrs, bitcoin, k9, exoplayer, sms, talon, activiti, angularjs, arduino, droolsjbpm,
 				sonarlint);
 
 		web = new ArrayList<String>();
 		web.add("D:\\Projetos\\_Web\\heritrix3");
-		ArrayList<ClassMetricResult> heritrix3 = executor.getMetricsFromProjects(web, PASTA_RESULTADO, true);
+		Collection<ClassMetricResult> heritrix3 = executor.getMetricsFromProjects(web, PASTA_RESULTADO, true).all();
 		compareSystems("heritrix3", heritrix3, bitcoin, k9, exoplayer, sms, talon, activiti, angularjs, arduino,
 				droolsjbpm, sonarlint);
 
 		web = new ArrayList<String>();
 		web.add("D:\\Projetos\\_Web\\qalingo-engine");
-		ArrayList<ClassMetricResult> qalingo = executor.getMetricsFromProjects(web, PASTA_RESULTADO, true);
+		Collection<ClassMetricResult> qalingo = executor.getMetricsFromProjects(web, PASTA_RESULTADO, true).all();
 		compareSystems("qalingo", qalingo, bitcoin, k9, exoplayer, sms, talon, activiti, angularjs, arduino, droolsjbpm,
 				sonarlint);
 
 		web = new ArrayList<String>();
 		web.add("D:\\Projetos\\_Web\\libreplan");
-		ArrayList<ClassMetricResult> libreplan = executor.getMetricsFromProjects(web, PASTA_RESULTADO, true);
+		Collection<ClassMetricResult> libreplan = executor.getMetricsFromProjects(web, PASTA_RESULTADO, true).all();
 		compareSystems("libreplan", libreplan, bitcoin, k9, exoplayer, sms, talon, activiti, angularjs, arduino,
 				droolsjbpm, sonarlint);
 		System.out.println("*********** WEB ************");
@@ -108,12 +110,12 @@ public class VEM2019Study {
 
 	}
 
-	private static void compareSystems(String nameWebSystem, ArrayList<ClassMetricResult> webSystem,
-			ArrayList<ClassMetricResult> bitcoin, ArrayList<ClassMetricResult> k9,
-			ArrayList<ClassMetricResult> exoplayer, ArrayList<ClassMetricResult> sms,
-			ArrayList<ClassMetricResult> talon, ArrayList<ClassMetricResult> activiti,
-			ArrayList<ClassMetricResult> angularjs, ArrayList<ClassMetricResult> arduino,
-			ArrayList<ClassMetricResult> droolsjbpm, ArrayList<ClassMetricResult> sonarlint) {
+	private static void compareSystems(String nameWebSystem, Collection<ClassMetricResult> webSystem,
+			Collection<ClassMetricResult> bitcoin, Collection<ClassMetricResult> k9,
+			Collection<ClassMetricResult> exoplayer, Collection<ClassMetricResult> sms,
+			Collection<ClassMetricResult> talon, Collection<ClassMetricResult> activiti,
+			Collection<ClassMetricResult> angularjs, Collection<ClassMetricResult> arduino,
+			Collection<ClassMetricResult> droolsjbpm, Collection<ClassMetricResult> sonarlint) {
 
 		System.out.println("*********** Android ************");
 		System.out.println("======>>>> " + nameWebSystem + " x Bitcoin : " + gSimilarity.calculate(webSystem, bitcoin));

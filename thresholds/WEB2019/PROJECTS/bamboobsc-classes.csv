@@ -44,6 +44,7 @@ CONTROLLER,com.netsteadfast.greenstep.action.SystemBpmnResourceGridQueryManageme
 SERVICE,com.netsteadfast.greenstep.bsc.service.impl.DegreeFeedbackProjectServiceImpl,10,3,19,25,0,10,28,21,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\service\impl\DegreeFeedbackProjectServiceImpl.java,class,true
 PERSISTENCE,com.netsteadfast.greenstep.dao.impl.SysMenuDAOImpl,2,2,6,1,0,2,7,6,D:\Projetos\_Web\bamboobsc\core-base\src\com\netsteadfast\greenstep\dao\impl\SysMenuDAOImpl.java,class,true
 SERVICE,com.netsteadfast.greenstep.bsc.service.impl.OrganizationServiceImpl,14,3,14,1,0,14,19,29,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\service\impl\OrganizationServiceImpl.java,class,true
+[FILTER],com.netsteadfast.greenstep.bsc.filter.BSCThreadLocalClearServletFilter,3,1,6,3,0,3,6,6,D:\Projetos\_Web\bamboobsc\gsbsc-web\src\com\netsteadfast\greenstep\bsc\filter\BSCThreadLocalClearServletFilter.java,class,false
 PERSISTENCE,com.netsteadfast.greenstep.dao.impl.SysBeanHelpExprDAOImpl,1,2,4,0,0,1,0,1,D:\Projetos\_Web\bamboobsc\core-base\src\com\netsteadfast\greenstep\dao\impl\SysBeanHelpExprDAOImpl.java,class,true
 SERVICE,com.netsteadfast.greenstep.bsc.service.impl.TsaServiceImpl,9,3,16,24,0,9,19,14,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\service\impl\TsaServiceImpl.java,class,true
 ENTITY,com.netsteadfast.greenstep.po.hbm.TbSysFormMethod,22,2,9,79,0,22,0,22,D:\Projetos\_Web\bamboobsc\core-persistence\src\com\netsteadfast\greenstep\po\hbm\TbSysFormMethod.java,class,true
@@ -83,7 +84,7 @@ SERVICE,com.netsteadfast.greenstep.service.impl.SysCalendarNoteServiceImpl,9,3,1
 BASECOMPOMENT,com.netsteadfast.greenstep.bsc.compoments.impl.LineChartCompoment,4,3,1,6,0,4,6,4,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\compoments\impl\LineChartCompoment.java,class,false
 CONTROLLER,com.netsteadfast.greenstep.qcharts.action.AnalyticsCatalogManagementAction,20,4,13,154,0,20,18,32,D:\Projetos\_Web\bamboobsc\qcharts-web\src\com\netsteadfast\greenstep\qcharts\action\AnalyticsCatalogManagementAction.java,class,true
 CONTROLLER,com.netsteadfast.greenstep.action.ApplicationSystemManagementGridQueryAction,22,6,19,185,0,22,23,38,D:\Projetos\_Web\bamboobsc\core-web\src\com\netsteadfast\greenstep\action\ApplicationSystemManagementGridQueryAction.java,class,true
-ENTITY,com.netsteadfast.greenstep.job.impl.SendMailHelperJobImpl,5,3,8,2,0,5,33,30,D:\Projetos\_Web\bamboobsc\core-base\src\com\netsteadfast\greenstep\job\impl\SendMailHelperJobImpl.java,class,false
+ENTITY,com.netsteadfast.greenstep.job.impl.SendMailHelperJobImpl,5,3,11,2,0,5,35,32,D:\Projetos\_Web\bamboobsc\core-base\src\com\netsteadfast\greenstep\job\impl\SendMailHelperJobImpl.java,class,false
 CONTROLLER,com.netsteadfast.greenstep.action.SystemProgramManagementAction,31,4,21,407,0,31,34,51,D:\Projetos\_Web\bamboobsc\core-web\src\com\netsteadfast\greenstep\action\SystemProgramManagementAction.java,class,true
 UNDEFINED,com.netsteadfast.greenstep.base.model.dynamichql.ObjectFactory,3,1,2,3,0,3,0,3,D:\Projetos\_Web\bamboobsc\core-lib\BASE\com\netsteadfast\greenstep\base\model\dynamichql\ObjectFactory.java,class,false
 CONTROLLER,com.netsteadfast.greenstep.bsc.action.KpisDashboardAction,28,5,26,336,0,28,39,47,D:\Projetos\_Web\bamboobsc\core-doc\BSC_PROG003D0006Q_OLD_20170611\KpisDashboardAction.java,class,true
@@ -205,7 +206,7 @@ SERVICE,com.netsteadfast.greenstep.bsc.service.impl.PdcaItemServiceImpl,6,3,12,9
 FORMAUTHENTICATIONFILTER,com.netsteadfast.greenstep.sys.GreenStepMobileFormAuthenticationFilter,14,2,17,89,0,14,51,42,D:\Projetos\_Web\bamboobsc\core-base\src\com\netsteadfast\greenstep\sys\GreenStepMobileFormAuthenticationFilter.java,class,false
 CONTROLLER,com.netsteadfast.greenstep.bsc.action.ScoreColorManagementAction,5,4,6,10,0,5,8,7,D:\Projetos\_Web\bamboobsc\gsbsc-web\src\com\netsteadfast\greenstep\bsc\action\ScoreColorManagementAction.java,class,true
 ENTITY,com.netsteadfast.greenstep.po.hbm.BbStrategyMap,12,2,8,54,0,12,0,12,D:\Projetos\_Web\bamboobsc\gsbsc-persistence\src\com\netsteadfast\greenstep\po\hbm\BbStrategyMap.java,class,true
-UNDEFINED,com.netsteadfast.greenstep.qcharts.utils.ManualJdbcTemplateFactory,6,1,12,1,0,6,25,13,D:\Projetos\_Web\bamboobsc\qcharts-standard\src\com\netsteadfast\greenstep\qcharts\utils\ManualJdbcTemplateFactory.java,class,false
+UNDEFINED,com.netsteadfast.greenstep.qcharts.utils.ManualJdbcTemplateFactory,6,1,12,1,0,6,26,13,D:\Projetos\_Web\bamboobsc\qcharts-standard\src\com\netsteadfast\greenstep\qcharts\utils\ManualJdbcTemplateFactory.java,class,false
 ACTION,com.netsteadfast.greenstep.base.model.InterceptorSimpleActionInfo,10,1,2,21,0,10,5,10,D:\Projetos\_Web\bamboobsc\core-lib\BASE\com\netsteadfast\greenstep\base\model\InterceptorSimpleActionInfo.java,class,false
 UNDEFINED,com.netsteadfast.greenstep.base.sys.UserAccountHttpSessionSupport,16,1,4,114,0,16,13,19,D:\Projetos\_Web\bamboobsc\core-lib\BASE\com\netsteadfast\greenstep\base\sys\UserAccountHttpSessionSupport.java,class,false
 UNDEFINED,com.netsteadfast.greenstep.util.LocaleLanguageUtils,4,1,0,4,0,4,13,9,D:\Projetos\_Web\bamboobsc\core-base\src\com\netsteadfast\greenstep\util\LocaleLanguageUtils.java,class,false
@@ -310,7 +311,7 @@ PERSISTENCE,com.netsteadfast.greenstep.dao.impl.RolePermissionDAOImpl,1,2,4,0,0,
 UNDEFINED,com.netsteadfast.greenstep.model.SystemFtpClientModel,0,1,0,0,0,0,0,0,D:\Projetos\_Web\bamboobsc\core-base\src\com\netsteadfast\greenstep\model\SystemFtpClientModel.java,class,false
 MODEL,com.netsteadfast.greenstep.vo.AggregationMethodVO,18,2,1,69,0,18,0,18,D:\Projetos\_Web\bamboobsc\gsbsc-persistence\src\com\netsteadfast\greenstep\vo\AggregationMethodVO.java,class,false
 PERSISTENCE,com.netsteadfast.greenstep.bsc.dao.impl.MeasureDataDAOImpl,4,2,5,6,0,4,4,4,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\dao\impl\MeasureDataDAOImpl.java,class,true
-VIEW,com.netsteadfast.greenstep.base.sys.WebSystemHttpSessionListenerForGeneralPackage,5,1,6,8,0,5,10,9,D:\Projetos\_Web\bamboobsc\core-lib\BASE\com\netsteadfast\greenstep\base\sys\WebSystemHttpSessionListenerForGeneralPackage.java,class,false
+VIEW,com.netsteadfast.greenstep.base.sys.WebSystemHttpSessionListenerForGeneralPackage,5,1,6,8,3,5,10,9,D:\Projetos\_Web\bamboobsc\core-lib\BASE\com\netsteadfast\greenstep\base\sys\WebSystemHttpSessionListenerForGeneralPackage.java,class,false
 ENTITY,com.netsteadfast.greenstep.bsc.vo.BscApiServiceResponse,20,1,0,170,0,20,0,20,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\vo\BscApiServiceResponse.java,class,false
 [GSTAG],org.gsweb.components.tag.InputfieldNoticeMsgLabelTag,13,1,4,56,0,13,9,15,D:\Projetos\_Web\bamboobsc\core-lib\src\org\gsweb\components\tag\InputfieldNoticeMsgLabelTag.java,class,false
 USERNAMEPASSWORDTOKEN,com.netsteadfast.greenstep.sys.GreenStepBaseUsernamePasswordToken,4,2,2,0,0,4,0,4,D:\Projetos\_Web\bamboobsc\core-base\src\com\netsteadfast\greenstep\sys\GreenStepBaseUsernamePasswordToken.java,class,false
@@ -335,6 +336,7 @@ ENTITY,com.netsteadfast.greenstep.bsc.vo.SwotDataVO,10,1,5,35,0,10,0,10,D:\Proje
 PERSISTENCE,com.netsteadfast.greenstep.bsc.dao.impl.PdcaOwnerDAOImpl,1,2,5,0,0,1,0,1,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\dao\impl\PdcaOwnerDAOImpl.java,class,true
 HIBERNATEJPADIALECT,com.netsteadfast.greenstep.base.sys.HibernateExtendedJpaDialect,1,2,5,0,0,1,16,4,D:\Projetos\_Web\bamboobsc\core-lib\BASE\com\netsteadfast\greenstep\base\sys\HibernateExtendedJpaDialect.java,class,false
 ENTITY,com.netsteadfast.greenstep.po.hbm.BbStrategyMapConns,18,2,6,135,0,18,0,18,D:\Projetos\_Web\bamboobsc\gsbsc-persistence\src\com\netsteadfast\greenstep\po\hbm\BbStrategyMapConns.java,class,true
+UNDEFINED,com.netsteadfast.greenstep.util.PdfOwnerUserBuilder,9,1,6,22,0,9,15,30,D:\Projetos\_Web\bamboobsc\core-base\src\com\netsteadfast\greenstep\util\PdfOwnerUserBuilder.java,class,false
 [GSTAG],org.gsweb.components.tag.LabelTag,15,1,4,77,0,15,12,19,D:\Projetos\_Web\bamboobsc\core-lib\src\org\gsweb\components\tag\LabelTag.java,class,false
 BASECOMPOMENT,com.netsteadfast.greenstep.bsc.compoments.impl.GridReportCompoment,4,3,1,6,0,4,6,4,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\compoments\impl\GridReportCompoment.java,class,false
 HTTPSERVLET,com.netsteadfast.greenstep.sys.WebMessagePublishServlet,3,2,6,1,0,3,5,5,D:\Projetos\_Web\bamboobsc\core-base\src\com\netsteadfast\greenstep\sys\WebMessagePublishServlet.java,class,false
@@ -355,6 +357,7 @@ BASECHAINCOMMANDSUPPORT,com.netsteadfast.greenstep.bsc.command.PerspectivesDashb
 SERVICE,com.netsteadfast.greenstep.bsc.service.impl.EmployeeServiceImpl,21,3,19,28,0,21,41,53,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\service\impl\EmployeeServiceImpl.java,class,true
 MODEL,com.netsteadfast.greenstep.vo.PdcaOrgaVO,6,2,1,9,0,6,0,6,D:\Projetos\_Web\bamboobsc\gsbsc-persistence\src\com\netsteadfast\greenstep\vo\PdcaOrgaVO.java,class,false
 PERSISTENCE,com.netsteadfast.greenstep.bsc.dao.impl.TsaMeasureFreqDAOImpl,1,2,5,0,0,1,0,1,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\dao\impl\TsaMeasureFreqDAOImpl.java,class,true
+[FILTER],com.netsteadfast.greenstep.qcharts.filter.QChartsThreadLocalClearServletFilter,3,1,6,3,0,3,6,6,D:\Projetos\_Web\bamboobsc\qcharts-web\src\com\netsteadfast\greenstep\qcharts\filter\QChartsThreadLocalClearServletFilter.java,class,false
 CONTROLLER,com.netsteadfast.greenstep.qcharts.action.AnalyticsProcessAction,33,5,25,328,0,33,58,77,D:\Projetos\_Web\bamboobsc\qcharts-web\src\com\netsteadfast\greenstep\qcharts\action\AnalyticsProcessAction.java,class,true
 BASECHAINCOMMANDSUPPORT,com.netsteadfast.greenstep.bsc.command.KpiReportPdfCommand,14,2,26,87,0,14,144,54,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\command\KpiReportPdfCommand.java,class,false
 PERSISTENCE,com.netsteadfast.greenstep.dao.impl.SysBpmnResourceDAOImpl,2,2,6,1,0,2,3,2,D:\Projetos\_Web\bamboobsc\core-base\src\com\netsteadfast\greenstep\dao\impl\SysBpmnResourceDAOImpl.java,class,true
@@ -376,6 +379,7 @@ ENTITY,com.netsteadfast.greenstep.po.hbm.BbDegreeFeedbackAssign,18,2,8,135,0,18,
 MODEL,com.netsteadfast.greenstep.vo.DegreeFeedbackItemVO,15,2,1,63,0,15,0,15,D:\Projetos\_Web\bamboobsc\gsbsc-persistence\src\com\netsteadfast\greenstep\vo\DegreeFeedbackItemVO.java,class,false
 PERSISTENCE,com.netsteadfast.greenstep.dao.impl.SysTemplateDAOImpl,1,2,4,0,0,1,0,1,D:\Projetos\_Web\bamboobsc\core-base\src\com\netsteadfast\greenstep\dao\impl\SysTemplateDAOImpl.java,class,true
 PERSISTENCE,com.netsteadfast.greenstep.bsc.dao.impl.ReportRoleViewDAOImpl,1,2,5,0,0,1,0,1,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\dao\impl\ReportRoleViewDAOImpl.java,class,true
+UNDEFINED,com.netsteadfast.greenstep.qcharts.support.QChartsThreadLocalClear,1,1,0,0,0,1,2,1,D:\Projetos\_Web\bamboobsc\qcharts-standard\src\com\netsteadfast\greenstep\qcharts\support\QChartsThreadLocalClear.java,class,false
 MODEL,com.netsteadfast.greenstep.vo.AccountVO,11,3,1,25,0,11,0,11,D:\Projetos\_Web\bamboobsc\core-persistence\src\com\netsteadfast\greenstep\vo\AccountVO.java,class,false
 ENTITY,com.netsteadfast.greenstep.po.hbm.BbKpiAttac,16,2,8,104,0,16,0,16,D:\Projetos\_Web\bamboobsc\gsbsc-persistence\src\com\netsteadfast\greenstep\po\hbm\BbKpiAttac.java,class,true
 CONTROLLER,com.netsteadfast.greenstep.action.RoleSaveOrUpdateAction,18,5,12,47,0,18,28,42,D:\Projetos\_Web\bamboobsc\core-web\src\com\netsteadfast\greenstep\action\RoleSaveOrUpdateAction.java,class,true
@@ -466,6 +470,7 @@ CONTROLLER,com.netsteadfast.greenstep.bsc.action.KpiReportContentQueryAction,41,
 PERSISTENCE,com.netsteadfast.greenstep.bsc.dao.impl.FormulaDAOImpl,2,2,6,1,0,2,4,2,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\dao\impl\FormulaDAOImpl.java,class,true
 ENTITY,com.netsteadfast.greenstep.base.model.ChainResultObj,4,1,0,2,0,4,0,4,D:\Projetos\_Web\bamboobsc\core-lib\BASE\com\netsteadfast\greenstep\base\model\ChainResultObj.java,class,false
 CONTROLLER,com.netsteadfast.greenstep.bsc.action.WeightContentQueryAction,10,5,11,33,0,10,19,16,D:\Projetos\_Web\bamboobsc\gsbsc-web\src\com\netsteadfast\greenstep\bsc\action\WeightContentQueryAction.java,class,true
+VIEW,com.netsteadfast.greenstep.sys.CoreWebSystemHttpSessionListener,1,2,2,0,0,1,1,1,D:\Projetos\_Web\bamboobsc\core-web\src\com\netsteadfast\greenstep\sys\CoreWebSystemHttpSessionListener.java,class,false
 ENTITY,com.netsteadfast.greenstep.po.hbm.BbKpiEmpl,14,2,8,77,0,14,0,14,D:\Projetos\_Web\bamboobsc\gsbsc-persistence\src\com\netsteadfast\greenstep\po\hbm\BbKpiEmpl.java,class,true
 ENTITY,com.netsteadfast.greenstep.po.hbm.TbSysCode,29,2,8,108,0,29,0,29,D:\Projetos\_Web\bamboobsc\core-lib\PO-HBM\com\netsteadfast\greenstep\po\hbm\TbSysCode.java,class,true
 CONTROLLER,com.netsteadfast.greenstep.qcharts.action.CommonLoadDataAction,30,5,23,277,0,30,37,49,D:\Projetos\_Web\bamboobsc\qcharts-web\src\com\netsteadfast\greenstep\qcharts\action\CommonLoadDataAction.java,class,true
@@ -482,6 +487,7 @@ PERSISTENCE,com.netsteadfast.greenstep.qcharts.dao.impl.OlapConfDAOImpl,1,2,5,0,
 ENTITY,com.netsteadfast.greenstep.po.hbm.BbWorkspaceTemplate,20,2,8,62,0,20,0,20,D:\Projetos\_Web\bamboobsc\gsbsc-persistence\src\com\netsteadfast\greenstep\po\hbm\BbWorkspaceTemplate.java,class,true
 CONTROLLER,com.netsteadfast.greenstep.action.SystemProgramMenuRoleEnableAndDisableSelectDataAction,13,5,10,60,0,13,17,21,D:\Projetos\_Web\bamboobsc\core-web\src\com\netsteadfast\greenstep\action\SystemProgramMenuRoleEnableAndDisableSelectDataAction.java,class,true
 PERSISTENCE,com.netsteadfast.greenstep.dao.impl.SysQfieldLogDAOImpl,1,2,5,0,0,1,0,1,D:\Projetos\_Web\bamboobsc\core-base\src\com\netsteadfast\greenstep\dao\impl\SysQfieldLogDAOImpl.java,class,true
+[FILTER],com.netsteadfast.greenstep.bsc.mobile.filter.BSCThreadLocalClearServletFilter,3,1,6,3,0,3,6,6,D:\Projetos\_Web\bamboobsc\gsbsc-mobile-web\src\com\netsteadfast\greenstep\bsc\mobile\filter\BSCThreadLocalClearServletFilter.java,class,false
 MODEL,com.netsteadfast.greenstep.vo.SysJreportParamVO,10,2,1,21,0,10,0,10,D:\Projetos\_Web\bamboobsc\core-persistence\src\com\netsteadfast\greenstep\vo\SysJreportParamVO.java,class,false
 PERSISTENCE,com.netsteadfast.greenstep.bsc.dao.impl.TsaDAOImpl,1,2,5,0,0,1,0,1,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\dao\impl\TsaDAOImpl.java,class,true
 SERVICE,com.netsteadfast.greenstep.service.impl.SysBpmnResourceRoleServiceImpl,8,3,16,16,0,8,14,10,D:\Projetos\_Web\bamboobsc\core-base\src\com\netsteadfast\greenstep\service\impl\SysBpmnResourceRoleServiceImpl.java,class,true
@@ -494,6 +500,7 @@ SERVICE,com.netsteadfast.greenstep.bsc.service.impl.PdcaKpisServiceImpl,6,3,12,9
 CONTROLLER,com.netsteadfast.greenstep.action.SystemContextBeanSaveOrUpdateAction,16,5,12,52,0,16,27,34,D:\Projetos\_Web\bamboobsc\core-web\src\com\netsteadfast\greenstep\action\SystemContextBeanSaveOrUpdateAction.java,class,true
 BASECHAINCOMMANDSUPPORT,com.netsteadfast.greenstep.bsc.command.LoadStrategyMapItemsForRecCommand,3,2,17,1,0,3,40,14,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\command\LoadStrategyMapItemsForRecCommand.java,class,false
 PERSISTENCE,com.netsteadfast.greenstep.dao.impl.SysJreportParamDAOImpl,1,2,4,0,0,1,0,1,D:\Projetos\_Web\bamboobsc\core-base\src\com\netsteadfast\greenstep\dao\impl\SysJreportParamDAOImpl.java,class,true
+UNDEFINED,com.netsteadfast.greenstep.bsc.support.BSCThreadLocalClear,1,1,0,0,0,1,5,1,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\support\BSCThreadLocalClear.java,class,false
 ENTITY,com.netsteadfast.greenstep.po.hbm.TbSysFtpTran,38,2,8,665,0,38,0,38,D:\Projetos\_Web\bamboobsc\core-persistence\src\com\netsteadfast\greenstep\po\hbm\TbSysFtpTran.java,class,true
 MODEL,com.netsteadfast.greenstep.vo.SysProgMultiNameVO,15,2,1,47,0,15,0,15,D:\Projetos\_Web\bamboobsc\core-persistence\src\com\netsteadfast\greenstep\vo\SysProgMultiNameVO.java,class,false
 UNDEFINED,com.netsteadfast.greenstep.bsc.util.BscMobileCardUtils,11,1,15,55,0,11,80,45,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\util\BscMobileCardUtils.java,class,false
@@ -539,13 +546,14 @@ PERSISTENCE,com.netsteadfast.greenstep.dao.impl.SysDAOImpl,1,2,4,0,0,1,0,1,D:\Pr
 CONTROLLER,com.netsteadfast.greenstep.action.SystemMessageNoticeManagementAction,27,4,22,297,0,27,39,43,D:\Projetos\_Web\bamboobsc\core-web\src\com\netsteadfast\greenstep\action\SystemMessageNoticeManagementAction.java,class,true
 ENTITY,com.netsteadfast.greenstep.po.hbm.BbStrategyMapNodes,20,2,6,170,0,20,0,20,D:\Projetos\_Web\bamboobsc\gsbsc-persistence\src\com\netsteadfast\greenstep\po\hbm\BbStrategyMapNodes.java,class,true
 ENTITY,com.netsteadfast.greenstep.bsc.vo.StrategyMapItemsVO,6,1,0,9,0,6,0,6,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\vo\StrategyMapItemsVO.java,class,false
+VIEW,com.netsteadfast.greenstep.bsc.mobile.sys.BSCWebSystemHttpSessionListenerForGeneralPackage,1,2,2,0,0,1,1,1,D:\Projetos\_Web\bamboobsc\gsbsc-mobile-web\src\com\netsteadfast\greenstep\bsc\mobile\sys\BSCWebSystemHttpSessionListenerForGeneralPackage.java,class,false
 UNDEFINED,com.netsteadfast.greenstep.bsc.model.BscMeasureVariable,0,1,0,0,0,0,0,0,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\model\BscMeasureVariable.java,class,false
 CONTROLLER,com.netsteadfast.greenstep.bsc.action.KpiReportContentQueryAction,44,5,28,768,0,44,94,162,D:\Projetos\_Web\bamboobsc\core-doc\BSC_PROG003D0009Q_OLD_20170611\KpiReportContentQueryAction.java,class,true
 SERVICE,com.netsteadfast.greenstep.service.logic.impl.SystemTemplateLogicServiceImpl,10,2,19,0,0,10,25,33,D:\Projetos\_Web\bamboobsc\core-base\src\com\netsteadfast\greenstep\service\logic\impl\SystemTemplateLogicServiceImpl.java,class,true
 PERSISTENCE,com.netsteadfast.greenstep.dao.impl.SysBeanHelpExprMapDAOImpl,1,2,4,0,0,1,0,1,D:\Projetos\_Web\bamboobsc\core-base\src\com\netsteadfast\greenstep\dao\impl\SysBeanHelpExprMapDAOImpl.java,class,true
 BASECHAINCOMMANDSUPPORT,com.netsteadfast.greenstep.bsc.command.KpiReportBodyCommand,5,2,22,6,0,5,82,34,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\command\KpiReportBodyCommand.java,class,false
 SERVICE,com.netsteadfast.greenstep.service.logic.impl.ApplicationSystemLogicServiceImpl,25,2,44,208,0,25,39,56,D:\Projetos\_Web\bamboobsc\core-base\src\com\netsteadfast\greenstep\service\logic\impl\ApplicationSystemLogicServiceImpl.java,class,true
-[FILTER],com.netsteadfast.greenstep.base.filter.CharsetFilter,4,1,6,4,0,4,9,12,D:\Projetos\_Web\bamboobsc\core-lib\BASE\com\netsteadfast\greenstep\base\filter\CharsetFilter.java,class,false
+[FILTER],com.netsteadfast.greenstep.base.filter.CharsetFilter,4,1,6,4,0,4,9,14,D:\Projetos\_Web\bamboobsc\core-lib\BASE\com\netsteadfast\greenstep\base\filter\CharsetFilter.java,class,false
 CONTROLLER,com.netsteadfast.greenstep.bsc.action.LoadWorkspaceAction,19,4,14,139,0,19,25,30,D:\Projetos\_Web\bamboobsc\gsbsc-web\src\com\netsteadfast\greenstep\bsc\action\LoadWorkspaceAction.java,class,true
 CHAINBASE,com.netsteadfast.greenstep.base.chain.SimpleChain,7,2,8,21,0,7,17,8,D:\Projetos\_Web\bamboobsc\core-lib\BASE\com\netsteadfast\greenstep\base\chain\SimpleChain.java,class,false
 ENTITY,com.netsteadfast.greenstep.model.TemplateResultObj,4,1,0,2,0,4,0,4,D:\Projetos\_Web\bamboobsc\core-base\src\com\netsteadfast\greenstep\model\TemplateResultObj.java,class,false
@@ -553,7 +561,7 @@ ENTITY,com.netsteadfast.greenstep.base.model.DynamicHqlQueryParamHandler,23,1,2,
 BASECHAINCOMMANDSUPPORT,com.netsteadfast.greenstep.bsc.command.ScoreCalculationCommand,6,2,8,15,0,6,37,21,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\command\ScoreCalculationCommand.java,class,false
 UNDEFINED,com.netsteadfast.greenstep.sys.SysEventLogSupport,1,1,2,0,0,1,14,8,D:\Projetos\_Web\bamboobsc\core-base\src\com\netsteadfast\greenstep\sys\SysEventLogSupport.java,class,false
 PERSISTENCE,com.netsteadfast.greenstep.base.dao.BaseDAO,60,1,25,1728,55,60,99,160,D:\Projetos\_Web\bamboobsc\core-doc\OLD_BASE_DAO_SERVICE\BaseDAO.java,class,false
-VIEW,com.netsteadfast.greenstep.base.sys.WebSystemHttpSessionListener,9,1,9,12,0,9,32,31,D:\Projetos\_Web\bamboobsc\core-lib\BASE\com\netsteadfast\greenstep\base\sys\WebSystemHttpSessionListener.java,class,false
+VIEW,com.netsteadfast.greenstep.base.sys.WebSystemHttpSessionListener,9,1,9,12,1,9,32,31,D:\Projetos\_Web\bamboobsc\core-lib\BASE\com\netsteadfast\greenstep\base\sys\WebSystemHttpSessionListener.java,class,false
 UNDEFINED,com.netsteadfast.greenstep.bsc.model.FormulaMode,2,1,3,0,0,2,12,16,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\model\FormulaMode.java,class,false
 ENTITY,com.netsteadfast.greenstep.po.hbm.QcDataQuery,18,2,8,47,0,18,0,18,D:\Projetos\_Web\bamboobsc\qcharts-persistence\src\com\netsteadfast\greenstep\po\hbm\QcDataQuery.java,class,true
 CONTROLLER,com.netsteadfast.greenstep.action.SystemExpressionSaveOrUpdateAction,24,5,16,116,0,24,43,60,D:\Projetos\_Web\bamboobsc\core-web\src\com\netsteadfast\greenstep\action\SystemExpressionSaveOrUpdateAction.java,class,true
@@ -574,7 +582,7 @@ UNDEFINED,com.netsteadfast.greenstep.sys.SysLoginLogSupport,1,1,2,0,0,1,11,4,D:\
 ENTITY,com.netsteadfast.greenstep.po.hbm.TbSysMultiName,18,2,8,47,0,18,0,18,D:\Projetos\_Web\bamboobsc\core-persistence\src\com\netsteadfast\greenstep\po\hbm\TbSysMultiName.java,class,true
 SERVICE,com.netsteadfast.greenstep.service.logic.impl.SystemProgramLogicServiceImpl,17,2,33,64,0,17,42,41,D:\Projetos\_Web\bamboobsc\core-base\src\com\netsteadfast\greenstep\service\logic\impl\SystemProgramLogicServiceImpl.java,class,true
 UNDEFINED,com.netsteadfast.greenstep.util.UploadSupportUtils,23,1,15,221,0,23,117,119,D:\Projetos\_Web\bamboobsc\core-base\src\com\netsteadfast\greenstep\util\UploadSupportUtils.java,class,false
-UNDEFINED,com.netsteadfast.greenstep.util.ScriptExpressionUtils,10,1,10,45,0,10,40,65,D:\Projetos\_Web\bamboobsc\core-lib\UTIL\com\netsteadfast\greenstep\util\ScriptExpressionUtils.java,class,false
+UNDEFINED,com.netsteadfast.greenstep.util.ScriptExpressionUtils,11,1,10,49,0,11,42,66,D:\Projetos\_Web\bamboobsc\core-lib\UTIL\com\netsteadfast\greenstep\util\ScriptExpressionUtils.java,class,false
 SERVICE,com.netsteadfast.greenstep.bsc.service.logic.impl.DegreeFeedbackLogicServiceImpl,31,5,33,333,0,31,83,110,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\service\logic\impl\DegreeFeedbackLogicServiceImpl.java,class,true
 ENTITY,com.netsteadfast.greenstep.model.SystemFtpClientData,8,1,0,20,0,8,0,8,D:\Projetos\_Web\bamboobsc\core-base\src\com\netsteadfast\greenstep\model\SystemFtpClientData.java,class,false
 CONTROLLER,com.netsteadfast.greenstep.bsc.action.KpiReportAction,19,4,18,141,0,19,19,29,D:\Projetos\_Web\bamboobsc\gsbsc-web\src\com\netsteadfast\greenstep\bsc\action\KpiReportAction.java,class,true
@@ -594,7 +602,7 @@ MODEL,com.netsteadfast.greenstep.vo.OlapConfVO,15,2,1,47,0,15,0,15,D:\Projetos\_
 UNDEFINED,com.netsteadfast.greenstep.util.ControllerAuthorityCheckUtils,1,1,4,0,0,1,6,23,D:\Projetos\_Web\bamboobsc\core-lib\UTIL\com\netsteadfast\greenstep\util\ControllerAuthorityCheckUtils.java,class,false
 CONTROLLER,com.netsteadfast.greenstep.bsc.action.KpisDashboardAction,45,5,29,890,0,45,94,138,D:\Projetos\_Web\bamboobsc\gsbsc-web\src\com\netsteadfast\greenstep\bsc\action\KpisDashboardAction.java,class,true
 UNDEFINED,com.netsteadfast.greenstep.aspect.AspectConstants,3,1,2,3,0,3,3,15,D:\Projetos\_Web\bamboobsc\core-base\src\com\netsteadfast\greenstep\aspect\AspectConstants.java,class,false
-ENTITY,com.netsteadfast.greenstep.job.impl.ClearTempDataJobImpl,2,3,6,1,0,2,13,10,D:\Projetos\_Web\bamboobsc\core-base\src\com\netsteadfast\greenstep\job\impl\ClearTempDataJobImpl.java,class,false
+ENTITY,com.netsteadfast.greenstep.job.impl.ClearTempDataJobImpl,2,3,9,1,0,2,14,12,D:\Projetos\_Web\bamboobsc\core-base\src\com\netsteadfast\greenstep\job\impl\ClearTempDataJobImpl.java,class,false
 CONTROLLER,com.netsteadfast.greenstep.qcharts.action.AnalyticsCatalogSaveOrUpdateAction,17,5,12,68,0,17,31,43,D:\Projetos\_Web\bamboobsc\qcharts-web\src\com\netsteadfast\greenstep\qcharts\action\AnalyticsCatalogSaveOrUpdateAction.java,class,true
 UNDEFINED,com.netsteadfast.greenstep.bsc.util.TimeSeriesAnalysisUtils,6,1,27,15,0,6,60,38,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\util\TimeSeriesAnalysisUtils.java,class,false
 MODEL,com.netsteadfast.greenstep.vo.PdcaMeasureFreqVO,26,2,1,245,0,26,0,26,D:\Projetos\_Web\bamboobsc\gsbsc-persistence\src\com\netsteadfast\greenstep\vo\PdcaMeasureFreqVO.java,class,false
@@ -631,6 +639,7 @@ PERSISTENCE,com.netsteadfast.greenstep.bsc.dao.impl.SwotDAOImpl,4,2,5,6,0,4,4,4,
 UNDEFINED,com.netsteadfast.greenstep.base.PleaseSelect,3,1,0,1,0,3,10,9,D:\Projetos\_Web\bamboobsc\core-lib\BASE\com\netsteadfast\greenstep\base\PleaseSelect.java,class,false
 ENTITY,com.netsteadfast.greenstep.base.model.CustomeOperational,8,1,0,10,0,8,0,8,D:\Projetos\_Web\bamboobsc\core-lib\BASE\com\netsteadfast\greenstep\base\model\CustomeOperational.java,class,false
 ENTITY,com.netsteadfast.greenstep.support.CleanTempUploadForContextInitAndDestroy,1,2,2,0,0,1,5,3,D:\Projetos\_Web\bamboobsc\core-base\src\com\netsteadfast\greenstep\support\CleanTempUploadForContextInitAndDestroy.java,class,false
+[FILTER],com.netsteadfast.greenstep.filter.CoreThreadLocalClearServletFilter,3,1,6,3,0,3,6,6,D:\Projetos\_Web\bamboobsc\core-web\src\com\netsteadfast\greenstep\filter\CoreThreadLocalClearServletFilter.java,class,false
 PERSISTENCE,com.netsteadfast.greenstep.dao.impl.SysFormDAOImpl,1,2,5,0,0,1,0,1,D:\Projetos\_Web\bamboobsc\core-base\src\com\netsteadfast\greenstep\dao\impl\SysFormDAOImpl.java,class,true
 UNDEFINED,com.netsteadfast.greenstep.util.TemplateUtils,8,1,12,26,0,8,35,25,D:\Projetos\_Web\bamboobsc\core-base\src\com\netsteadfast\greenstep\util\TemplateUtils.java,class,false
 PERSISTENCE,com.netsteadfast.greenstep.bsc.dao.impl.OrganizationDAOImpl,8,2,5,28,0,8,5,8,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\dao\impl\OrganizationDAOImpl.java,class,true
@@ -649,6 +658,7 @@ SERVICE,com.netsteadfast.greenstep.service.impl.SysExprJobServiceImpl,8,3,16,16,
 ENTITY,com.netsteadfast.greenstep.po.hbm.BbPdcaItemOwner,16,2,8,104,0,16,0,16,D:\Projetos\_Web\bamboobsc\gsbsc-persistence\src\com\netsteadfast\greenstep\po\hbm\BbPdcaItemOwner.java,class,true
 UNDEFINED,com.netsteadfast.greenstep.bsc.model.AggregationMethodVariable,0,1,0,0,0,0,0,0,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\model\AggregationMethodVariable.java,class,false
 SERVICE,com.netsteadfast.greenstep.bsc.service.logic.impl.ObjectiveLogicServiceImpl,13,3,25,26,0,13,38,37,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\service\logic\impl\ObjectiveLogicServiceImpl.java,class,true
+UNDEFINED,com.netsteadfast.greenstep.support.CoreThreadLocalClear,1,1,0,0,0,1,2,1,D:\Projetos\_Web\bamboobsc\core-base\src\com\netsteadfast\greenstep\support\CoreThreadLocalClear.java,class,false
 SERVICE,com.netsteadfast.greenstep.bsc.service.logic.impl.StrategyMapLogicServiceImpl,12,3,26,22,0,12,46,30,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\service\logic\impl\StrategyMapLogicServiceImpl.java,class,true
 ACTION,com.netsteadfast.greenstep.base.action.BaseAction,7,2,1,13,1,7,4,7,D:\Projetos\_Web\bamboobsc\core-lib\BASE\com\netsteadfast\greenstep\base\action\BaseAction.java,class,false
 MODEL,com.netsteadfast.greenstep.vo.SysMsgNoticeVO,20,2,1,140,0,20,0,20,D:\Projetos\_Web\bamboobsc\core-persistence\src\com\netsteadfast\greenstep\vo\SysMsgNoticeVO.java,class,false
@@ -708,7 +718,7 @@ CONTROLLER,com.netsteadfast.greenstep.action.SystemFormManagementGridQueryAction
 CONTROLLER,com.netsteadfast.greenstep.bsc.action.ObjectiveSaveOrUpdateAction,16,5,12,52,0,16,27,34,D:\Projetos\_Web\bamboobsc\gsbsc-web\src\com\netsteadfast\greenstep\bsc\action\ObjectiveSaveOrUpdateAction.java,class,true
 UNDEFINED,com.netsteadfast.greenstep.bsc.util.MeasureDataCalendarUtils,12,1,20,76,0,12,64,46,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\util\MeasureDataCalendarUtils.java,class,false
 EXCEPTION,com.netsteadfast.greenstep.sys.IncorrectCaptchaException,4,2,1,6,0,4,0,4,D:\Projetos\_Web\bamboobsc\core-base\src\com\netsteadfast\greenstep\sys\IncorrectCaptchaException.java,class,false
-ENTITY,com.netsteadfast.greenstep.job.BaseJob,4,2,1,6,3,4,6,4,D:\Projetos\_Web\bamboobsc\core-base\src\com\netsteadfast\greenstep\job\BaseJob.java,class,false
+ENTITY,com.netsteadfast.greenstep.job.BaseJob,5,2,3,10,3,5,15,9,D:\Projetos\_Web\bamboobsc\core-base\src\com\netsteadfast\greenstep\job\BaseJob.java,class,false
 SERVICE,com.netsteadfast.greenstep.service.impl.SysUploadServiceImpl,9,3,15,6,0,9,12,19,D:\Projetos\_Web\bamboobsc\core-base\src\com\netsteadfast\greenstep\service\impl\SysUploadServiceImpl.java,class,true
 SERVICE,com.netsteadfast.greenstep.bsc.service.impl.SwotReportMstServiceImpl,6,3,12,9,0,6,1,6,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\service\impl\SwotReportMstServiceImpl.java,class,true
 UNDEFINED,com.netsteadfast.greenstep.bsc.util.DegreeFeedbackScoreCalculateUtils,4,1,19,4,0,4,41,23,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\util\DegreeFeedbackScoreCalculateUtils.java,class,false
@@ -719,7 +729,7 @@ SERVICE,com.netsteadfast.greenstep.service.impl.SysMultiNameServiceImpl,8,3,16,1
 SERVICE,com.netsteadfast.greenstep.bsc.service.impl.DegreeFeedbackScoreServiceImpl,7,3,15,9,0,7,7,11,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\service\impl\DegreeFeedbackScoreServiceImpl.java,class,true
 SERVICE,com.netsteadfast.greenstep.bsc.service.impl.PerspectiveServiceImpl,11,3,16,25,0,11,25,20,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\service\impl\PerspectiveServiceImpl.java,class,true
 CONTROLLER,com.netsteadfast.greenstep.action.SystemMessageNoticeSaveOrUpdateAction,18,5,12,85,0,18,36,40,D:\Projetos\_Web\bamboobsc\core-web\src\com\netsteadfast\greenstep\action\SystemMessageNoticeSaveOrUpdateAction.java,class,true
-UNDEFINED,com.netsteadfast.greenstep.bsc.util.BscScoreColorUtils,5,1,3,4,0,5,11,18,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\util\BscScoreColorUtils.java,class,false
+UNDEFINED,com.netsteadfast.greenstep.bsc.util.BscScoreColorUtils,6,1,3,3,0,6,12,19,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\util\BscScoreColorUtils.java,class,false
 ENTITY,com.netsteadfast.greenstep.po.hbm.BbSwotReportDtl,24,2,6,252,0,24,0,24,D:\Projetos\_Web\bamboobsc\gsbsc-persistence\src\com\netsteadfast\greenstep\po\hbm\BbSwotReportDtl.java,class,true
 BASECHAINCOMMANDSUPPORT,com.netsteadfast.greenstep.bsc.command.OrganizationReportBodyCommand,3,2,9,1,0,3,17,9,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\command\OrganizationReportBodyCommand.java,class,false
 ACTION,com.netsteadfast.greenstep.qcharts.action.utils.NotBlankFieldCheckUtils,1,1,1,0,0,1,1,1,D:\Projetos\_Web\bamboobsc\qcharts-web\src\com\netsteadfast\greenstep\qcharts\action\utils\NotBlankFieldCheckUtils.java,class,false
@@ -735,6 +745,7 @@ ENTITY,com.netsteadfast.greenstep.bsc.model.BscSwotCode,0,1,0,0,0,0,0,0,D:\Proje
 SERVICE,com.netsteadfast.greenstep.bsc.service.impl.TsaMeasureFreqServiceImpl,6,3,12,9,0,6,1,6,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\service\impl\TsaMeasureFreqServiceImpl.java,class,true
 PERSISTENCE,com.netsteadfast.greenstep.dao.impl.SysMenuRoleDAOImpl,1,2,4,0,0,1,0,1,D:\Projetos\_Web\bamboobsc\core-base\src\com\netsteadfast\greenstep\dao\impl\SysMenuRoleDAOImpl.java,class,true
 CONTROLLER,com.netsteadfast.greenstep.bsc.action.DegreeFeedbackProjectManagementGridQueryAction,17,6,14,118,0,17,17,25,D:\Projetos\_Web\bamboobsc\gsbsc-web\src\com\netsteadfast\greenstep\bsc\action\DegreeFeedbackProjectManagementGridQueryAction.java,class,true
+VIEW,com.netsteadfast.greenstep.bsc.sys.BSCWebSystemHttpSessionListenerForGeneralPackage,1,2,2,0,0,1,1,1,D:\Projetos\_Web\bamboobsc\gsbsc-web\src\com\netsteadfast\greenstep\bsc\sys\BSCWebSystemHttpSessionListenerForGeneralPackage.java,class,false
 ENTITY,com.netsteadfast.greenstep.po.hbm.BbKpiOrga,14,2,8,77,0,14,0,14,D:\Projetos\_Web\bamboobsc\gsbsc-persistence\src\com\netsteadfast\greenstep\po\hbm\BbKpiOrga.java,class,true
 UNDEFINED,com.netsteadfast.greenstep.model.UploadTypes,2,1,0,1,0,2,2,7,D:\Projetos\_Web\bamboobsc\core-base\src\com\netsteadfast\greenstep\model\UploadTypes.java,class,false
 UNDEFINED,com.netsteadfast.greenstep.sys.CxfServerBean,12,1,24,48,0,12,68,51,D:\Projetos\_Web\bamboobsc\core-base\src\com\netsteadfast\greenstep\sys\CxfServerBean.java,class,false
@@ -785,7 +796,7 @@ UNDEFINED,com.netsteadfast.greenstep.base.sys.UserCurrentCookie,3,1,3,3,0,3,20,1
 CONTROLLER,com.netsteadfast.greenstep.action.SystemFormTemplateManagementGridQueryAction,17,6,14,118,0,17,17,25,D:\Projetos\_Web\bamboobsc\core-web\src\com\netsteadfast\greenstep\action\SystemFormTemplateManagementGridQueryAction.java,class,true
 PERSISTENCE,com.netsteadfast.greenstep.bsc.dao.impl.DegreeFeedbackLevelDAOImpl,2,2,5,1,0,2,5,2,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\dao\impl\DegreeFeedbackLevelDAOImpl.java,class,true
 [UICOMPONENT],org.gsweb.components.ui.Button,50,1,2,1079,0,50,18,60,D:\Projetos\_Web\bamboobsc\core-lib\src\org\gsweb\components\ui\Button.java,class,false
-UNDEFINED,com.netsteadfast.greenstep.bsc.util.BscReportSupportUtils,12,1,14,56,0,12,41,37,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\util\BscReportSupportUtils.java,class,false
+UNDEFINED,com.netsteadfast.greenstep.bsc.util.BscReportSupportUtils,13,1,14,58,0,13,42,38,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\util\BscReportSupportUtils.java,class,false
 CONTROLLER,com.netsteadfast.greenstep.bsc.action.PdcaReportAction,9,4,11,24,0,9,10,11,D:\Projetos\_Web\bamboobsc\gsbsc-web\src\com\netsteadfast\greenstep\bsc\action\PdcaReportAction.java,class,true
 CONTROLLER,com.netsteadfast.greenstep.bsc.action.EmployeeManagementGridQueryAction,17,6,14,118,0,17,17,25,D:\Projetos\_Web\bamboobsc\gsbsc-web\src\com\netsteadfast\greenstep\bsc\action\EmployeeManagementGridQueryAction.java,class,true
 CONTROLLER,com.netsteadfast.greenstep.bsc.action.VisionManagementGridQueryAction,17,6,14,118,0,17,17,25,D:\Projetos\_Web\bamboobsc\gsbsc-web\src\com\netsteadfast\greenstep\bsc\action\VisionManagementGridQueryAction.java,class,true
@@ -806,7 +817,7 @@ BASECHAINCOMMANDSUPPORT,com.netsteadfast.greenstep.bsc.command.ParentItemDateRan
 MODEL,com.netsteadfast.greenstep.vo.StrategyMapVO,4,2,1,2,0,4,0,4,D:\Projetos\_Web\bamboobsc\gsbsc-persistence\src\com\netsteadfast\greenstep\vo\StrategyMapVO.java,class,false
 CONTROLLER,com.netsteadfast.greenstep.action.SystemCalendarNoteSaveOrUpdateAction,18,5,15,83,0,18,34,44,D:\Projetos\_Web\bamboobsc\core-web\src\com\netsteadfast\greenstep\action\SystemCalendarNoteSaveOrUpdateAction.java,class,true
 PERSISTENCE,com.netsteadfast.greenstep.bsc.dao.impl.PdcaOrgaDAOImpl,1,2,5,0,0,1,0,1,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\dao\impl\PdcaOrgaDAOImpl.java,class,true
-UNDEFINED,com.netsteadfast.greenstep.bsc.util.AggregationMethodUtils,15,1,6,85,0,15,35,44,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\util\AggregationMethodUtils.java,class,false
+UNDEFINED,com.netsteadfast.greenstep.bsc.util.AggregationMethodUtils,16,1,6,96,0,16,36,49,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\util\AggregationMethodUtils.java,class,false
 CONTROLLER,com.netsteadfast.greenstep.bsc.action.DegreeFeedbackProjectListAction,30,4,24,349,0,30,39,57,D:\Projetos\_Web\bamboobsc\gsbsc-web\src\com\netsteadfast\greenstep\bsc\action\DegreeFeedbackProjectListAction.java,class,true
 CONTROLLER,com.netsteadfast.greenstep.bsc.action.ObjectiveManagementGridQueryAction,17,6,14,118,0,17,17,25,D:\Projetos\_Web\bamboobsc\gsbsc-web\src\com\netsteadfast\greenstep\bsc\action\ObjectiveManagementGridQueryAction.java,class,true
 CONTROLLER,com.netsteadfast.greenstep.qcharts.action.DataSourceConfSaveOrUpdateAction,16,5,12,52,0,16,27,34,D:\Projetos\_Web\bamboobsc\qcharts-web\src\com\netsteadfast\greenstep\qcharts\action\DataSourceConfSaveOrUpdateAction.java,class,true
@@ -835,7 +846,7 @@ ENTITY,com.netsteadfast.greenstep.po.hbm.BbTsaMaCoefficients,16,2,8,104,0,16,0,1
 MODEL,com.netsteadfast.greenstep.vo.WorkspaceCompomentVO,10,2,1,35,0,10,0,10,D:\Projetos\_Web\bamboobsc\gsbsc-persistence\src\com\netsteadfast\greenstep\vo\WorkspaceCompomentVO.java,class,false
 PERSISTENCE,com.netsteadfast.greenstep.bsc.dao.impl.MonitorItemScoreDAOImpl,6,2,5,15,0,6,4,6,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\dao\impl\MonitorItemScoreDAOImpl.java,class,true
 CONTROLLER,com.netsteadfast.greenstep.action.SystemMessageNoticeConfigSaveOrUpdateAction,16,5,12,52,0,16,27,34,D:\Projetos\_Web\bamboobsc\core-web\src\com\netsteadfast\greenstep\action\SystemMessageNoticeConfigSaveOrUpdateAction.java,class,true
-ENTITY,com.netsteadfast.greenstep.job.impl.SysExpressionJobImpl,1,3,4,0,0,1,7,6,D:\Projetos\_Web\bamboobsc\core-base\src\com\netsteadfast\greenstep\job\impl\SysExpressionJobImpl.java,class,false
+ENTITY,com.netsteadfast.greenstep.job.impl.SysExpressionJobImpl,3,3,7,3,0,3,26,24,D:\Projetos\_Web\bamboobsc\core-base\src\com\netsteadfast\greenstep\job\impl\SysExpressionJobImpl.java,class,false
 SERVICE,com.netsteadfast.greenstep.service.impl.SysCodeServiceImpl,6,3,11,9,0,6,1,6,D:\Projetos\_Web\bamboobsc\core-base\src\com\netsteadfast\greenstep\service\impl\SysCodeServiceImpl.java,class,true
 ENTITY,com.netsteadfast.greenstep.po.hbm.BbOrganization,22,2,8,79,0,22,0,22,D:\Projetos\_Web\bamboobsc\gsbsc-persistence\src\com\netsteadfast\greenstep\po\hbm\BbOrganization.java,class,true
 PERSISTENCE,com.netsteadfast.greenstep.dao.impl.SysCalendarNoteDAOImpl,2,2,4,1,0,2,4,2,D:\Projetos\_Web\bamboobsc\core-base\src\com\netsteadfast\greenstep\dao\impl\SysCalendarNoteDAOImpl.java,class,true
@@ -865,8 +876,8 @@ ENTITY,com.netsteadfast.greenstep.po.hbm.TbSysMenuRole,14,2,8,77,0,14,0,14,D:\Pr
 ACTION,com.netsteadfast.greenstep.action.utils.DateFieldCheckUtils,1,1,1,0,0,1,1,3,D:\Projetos\_Web\bamboobsc\core-web\src\com\netsteadfast\greenstep\action\utils\DateFieldCheckUtils.java,class,false
 UNDEFINED,com.netsteadfast.greenstep.util.GenericsUtils,2,1,0,1,0,2,3,8,D:\Projetos\_Web\bamboobsc\core-lib\UTIL\com\netsteadfast\greenstep\util\GenericsUtils.java,class,false
 CONTROLLER,com.netsteadfast.greenstep.action.SystemProgramManagementSaveOrUpdateAction,23,5,16,99,0,23,47,65,D:\Projetos\_Web\bamboobsc\core-web\src\com\netsteadfast\greenstep\action\SystemProgramManagementSaveOrUpdateAction.java,class,true
-UNDEFINED,com.netsteadfast.greenstep.bsc.util.BscReportPropertyUtils,19,1,3,169,0,19,11,27,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\util\BscReportPropertyUtils.java,class,false
-UNDEFINED,com.netsteadfast.greenstep.util.MailClientUtils,7,1,4,21,0,7,24,30,D:\Projetos\_Web\bamboobsc\core-base\src\com\netsteadfast\greenstep\util\MailClientUtils.java,class,false
+UNDEFINED,com.netsteadfast.greenstep.bsc.util.BscReportPropertyUtils,20,1,3,184,0,20,12,28,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\util\BscReportPropertyUtils.java,class,false
+UNDEFINED,com.netsteadfast.greenstep.util.MailClientUtils,8,1,4,24,0,8,25,31,D:\Projetos\_Web\bamboobsc\core-base\src\com\netsteadfast\greenstep\util\MailClientUtils.java,class,false
 SERVICE,com.netsteadfast.greenstep.bsc.service.impl.ObjectiveServiceImpl,11,3,16,25,0,11,25,20,D:\Projetos\_Web\bamboobsc\gsbsc-standard\src\com\netsteadfast\greenstep\bsc\service\impl\ObjectiveServiceImpl.java,class,true
 PERSISTENCE,com.netsteadfast.greenstep.dao.impl.SysBpmnResourceRoleDAOImpl,1,2,5,0,0,1,0,1,D:\Projetos\_Web\bamboobsc\core-base\src\com\netsteadfast\greenstep\dao\impl\SysBpmnResourceRoleDAOImpl.java,class,true
 PERSISTENCE,com.netsteadfast.greenstep.dao.impl.SysMailHelperDAOImpl,3,2,5,3,0,3,6,3,D:\Projetos\_Web\bamboobsc\core-base\src\com\netsteadfast\greenstep\dao\impl\SysMailHelperDAOImpl.java,class,true
@@ -885,6 +896,7 @@ ENTITY,com.netsteadfast.greenstep.po.hbm.TbSysCalendarNote,26,2,8,299,0,26,0,26,
 MODEL,com.netsteadfast.greenstep.vo.SysUploadVO,18,2,2,109,0,18,0,18,D:\Projetos\_Web\bamboobsc\core-persistence\src\com\netsteadfast\greenstep\vo\SysUploadVO.java,class,false
 ABSTRACTINTERCEPTOR,com.netsteadfast.greenstep.base.interceptor.UserAgentRejectInterceptor,1,2,6,0,0,1,21,10,D:\Projetos\_Web\bamboobsc\core-lib\BASE\com\netsteadfast\greenstep\base\interceptor\UserAgentRejectInterceptor.java,class,false
 CONTROLLER,com.netsteadfast.greenstep.bsc.action.KpiTreeJsonAction,16,5,15,90,0,16,15,28,D:\Projetos\_Web\bamboobsc\gsbsc-web\src\com\netsteadfast\greenstep\bsc\action\KpiTreeJsonAction.java,class,true
+VIEW,com.netsteadfast.greenstep.qcharts.sys.QChartsWebSystemHttpSessionListenerForGeneralPackage,1,2,2,0,0,1,1,1,D:\Projetos\_Web\bamboobsc\qcharts-web\src\com\netsteadfast\greenstep\qcharts\sys\QChartsWebSystemHttpSessionListenerForGeneralPackage.java,class,false
 CONTROLLER,com.netsteadfast.greenstep.action.SystemExpressionManagementAction,13,4,14,66,0,13,22,21,D:\Projetos\_Web\bamboobsc\core-web\src\com\netsteadfast\greenstep\action\SystemExpressionManagementAction.java,class,true
 MODEL,com.netsteadfast.greenstep.vo.SysJreportVO,15,2,2,47,0,15,0,15,D:\Projetos\_Web\bamboobsc\core-persistence\src\com\netsteadfast\greenstep\vo\SysJreportVO.java,class,false
 MODEL,com.netsteadfast.greenstep.vo.KpiOrgaVO,6,2,1,9,0,6,0,6,D:\Projetos\_Web\bamboobsc\gsbsc-persistence\src\com\netsteadfast\greenstep\vo\KpiOrgaVO.java,class,false

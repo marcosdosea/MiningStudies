@@ -3,6 +3,7 @@ package study.similarity;
 import java.util.ArrayList;
 
 import org.designroleminer.ClassMetricResult;
+import org.designroleminer.MetricReport;
 import org.designroleminer.threshold.DesignRoleTechnique;
 import org.designroleminer.threshold.TechniqueExecutor;
 import org.systemsimilarity.SimilarityManager;
@@ -16,12 +17,12 @@ public class AndroidStudy {
 
 		ArrayList<String> listAndroid = new ArrayList<String>();
 		listAndroid.add("D:\\Projetos\\_Android\\bitcoin-wallet");
-		ArrayList<ClassMetricResult> bitcoin = executor.getMetricsFromProjects(listAndroid, PASTA_RESULTADO, true);
+		MetricReport bitcoin = executor.getMetricsFromProjects(listAndroid, PASTA_RESULTADO, true);
 
 		listAndroid = new ArrayList<String>();
 		listAndroid.add("D:\\Projetos\\_Android\\Talon-for-Twitter");
-		ArrayList<ClassMetricResult> k9 = executor.getMetricsFromProjects(listAndroid, PASTA_RESULTADO, true);
-		System.out.println("======>>>> Bitcoin x Talon : " + gSimilarity.calculate(bitcoin, k9));
+		MetricReport k9 = executor.getMetricsFromProjects(listAndroid, PASTA_RESULTADO, true);
+		System.out.println("======>>>> Bitcoin x Talon : " + gSimilarity.calculate(bitcoin.all(), k9.all()));
 	}
 
 }

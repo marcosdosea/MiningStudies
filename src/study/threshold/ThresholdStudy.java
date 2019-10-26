@@ -1,6 +1,7 @@
 package study.threshold;
 
 import java.util.ArrayList;
+import java.util.Collection;
 
 import org.designroleminer.ClassMetricResult;
 import org.designroleminer.threshold.AlvesTechnique;
@@ -10,14 +11,15 @@ import org.designroleminer.threshold.TechniqueExecutor;
 import org.designroleminer.threshold.ValeTechnique;
 
 public class ThresholdStudy {
-	
+
 	public static void main(String[] args) {
 		final String PASTA_RESULTADO = "thresholds\\";
 		TechniqueExecutor gLimiares = new TechniqueExecutor(new DesignRoleTechnique());
 
 		System.out.println("Iniciando a coleta de métricas dos projetos WEB...");
 		ArrayList<String> projetosBenchmark = gLimiares.lerProjetos("Benchmark.txt");
-		ArrayList<ClassMetricResult> metricasProjetosBenchmark = gLimiares.getMetricsFromProjects(projetosBenchmark, PASTA_RESULTADO, false);
+		Collection<ClassMetricResult> metricasProjetosBenchmark = gLimiares
+				.getMetricsFromProjects(projetosBenchmark, PASTA_RESULTADO, false).all();
 
 		System.out.println("Gerando Limiares por Alves usando benchmark...");
 		gLimiares.setTechinique(new AlvesTechnique());
@@ -31,6 +33,6 @@ public class ThresholdStudy {
 		gLimiares.setTechinique(new AnicheTechnique());
 		gLimiares.execute(metricasProjetosBenchmark, PASTA_RESULTADO + "X.csv");
 
-		System.out.println("Limiares gravados na pasta " + PASTA_RESULTADO + " com sucesso!");	
+		System.out.println("Limiares gravados na pasta " + PASTA_RESULTADO + " com sucesso!");
 	}
 }

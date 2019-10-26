@@ -94,7 +94,7 @@ PERSISTENCE,org.openmrs.api.db.hibernate.HibernateLocationDAO,26,1,10,0,0,26,41,
 SERVICE,org.openmrs.api.impl.EncounterServiceImpl,57,2,29,666,0,57,156,179,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\api\impl\EncounterServiceImpl.java,class,false
 UNDEFINED,org.openmrs.util.databasechange.DatabaseUpgradeTestUtil,9,1,6,0,0,9,49,22,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\util\databasechange\DatabaseUpgradeTestUtil.java,class,false
 UNDEFINED,org.openmrs.util.NaturalStrings,10,1,0,45,0,10,11,78,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\util\NaturalStrings.java,class,false
-BASEOPENMRSOBJECT,org.openmrs.Drug,26,4,10,295,0,26,17,38,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\Drug.java,class,false
+BASEOPENMRSOBJECT,org.openmrs.Drug,28,4,10,346,0,28,17,40,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\Drug.java,class,false
 TEST,org.openmrs.validator.ConceptReferenceTermValidatorTest,18,3,10,153,0,18,23,18,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\validator\ConceptReferenceTermValidatorTest.java,class,false
 SERVICE,org.openmrs.api.impl.LocationServiceImpl,42,2,13,0,0,42,60,79,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\api\impl\LocationServiceImpl.java,class,false
 ENTITY,org.openmrs.module.VersionComparator,1,1,0,0,0,1,1,1,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\module\VersionComparator.java,class,false
@@ -112,7 +112,7 @@ UNDEFINED,org.openmrs.util.GlobalPropertiesTestHelper,3,1,2,0,0,3,6,5,D:\Projeto
 ENTITY,org.openmrs.module.DaemonToken,2,1,0,0,0,2,0,2,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\module\DaemonToken.java,class,false
 TEST,org.openmrs.BaseCustomizableMetadataTest,5,3,9,4,0,5,24,5,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\BaseCustomizableMetadataTest.java,class,false
 UNDEFINED,org.openmrs.obs.handler.AbstractHandler,8,1,3,26,5,8,34,20,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\obs\handler\AbstractHandler.java,class,false
-ENTITY,org.openmrs.Encounter,47,4,30,959,0,47,105,117,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\Encounter.java,class,true
+ENTITY,org.openmrs.Encounter,49,4,30,1042,0,49,106,129,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\Encounter.java,class,true
 BASEOPENMRSOBJECT,org.openmrs.hl7.HL7Source,6,4,1,9,0,6,2,6,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\hl7\HL7Source.java,class,false
 BASEOPENMRSOBJECT,org.openmrs.ConceptAttributeType,4,5,3,4,0,4,2,4,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\ConceptAttributeType.java,class,false
 [SAVEHANDLER],org.openmrs.api.handler.RequireVoidReasonSaveHandler,1,1,5,0,0,1,4,3,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\api\handler\RequireVoidReasonSaveHandler.java,class,false
@@ -134,7 +134,7 @@ TEST,org.openmrs.util.DrugsByNameComparatorTest,4,1,3,6,0,4,3,4,D:\Projetos\_Web
 UNDEFINED,org.openmrs.api.cache.CachePropertiesUtil,7,1,7,21,0,7,28,10,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\api\cache\CachePropertiesUtil.java,class,false
 ENTITY,org.openmrs.Visit,24,5,21,220,0,24,8,28,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\Visit.java,class,true
 TEST,org.openmrs.validator.ConceptNameTagValidatorTest,7,3,5,21,0,7,11,7,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\validator\ConceptNameTagValidatorTest.java,class,false
-BASEOPENMRSOBJECT,org.openmrs.OrderSet,14,4,5,85,0,14,13,27,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\OrderSet.java,class,false
+BASEOPENMRSOBJECT,org.openmrs.OrderSet,16,4,6,112,0,16,13,29,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\OrderSet.java,class,false
 DISPATCHERSERVLET,org.openmrs.web.StaticDispatcherServlet,3,2,4,0,0,3,12,4,D:\Projetos\_Web\openmrs-core\web\src\main\java\org\openmrs\web\StaticDispatcherServlet.java,class,false
 EXCEPTION,org.openmrs.api.UnchangeablePropertyException,4,3,1,6,0,4,1,4,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\api\UnchangeablePropertyException.java,class,false
 BASEOPENMRSOBJECT,org.openmrs.ConceptProposal,32,2,5,460,0,32,5,34,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\ConceptProposal.java,class,false
@@ -240,7 +240,7 @@ TEST,org.openmrs.ObsTest,63,1,15,1945,0,63,123,107,D:\Projetos\_Web\openmrs-core
 TEST,org.openmrs.validator.ConceptDatatypeValidatorTest,5,3,5,10,0,5,9,5,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\validator\ConceptDatatypeValidatorTest.java,class,false
 TEST,org.openmrs.OrderTest,66,3,13,471,0,66,73,86,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\OrderTest.java,class,false
 EXCEPTION,org.openmrs.notification.MessageException,4,2,0,6,0,4,0,4,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\notification\MessageException.java,class,false
-BASEOPENMRSOBJECT,org.openmrs.Obs,83,4,20,3257,0,83,122,243,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\Obs.java,class,false
+ENTITY,org.openmrs.Obs,83,4,36,3257,0,83,122,243,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\Obs.java,class,true
 BASEOPENMRSOBJECT,org.openmrs.ConceptReferenceTermMap,14,3,4,53,0,14,5,22,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\ConceptReferenceTermMap.java,class,false
 TEST,org.openmrs.module.filter.ModuleFilterDefinitionTest,5,1,9,10,0,5,19,6,D:\Projetos\_Web\openmrs-core\web\src\test\java\org\openmrs\module\filter\ModuleFilterDefinitionTest.java,class,false
 EXCEPTION,org.openmrs.api.DuplicateIdentifierException,5,4,2,10,0,5,0,5,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\api\DuplicateIdentifierException.java,class,false
@@ -308,7 +308,7 @@ TEST,org.openmrs.validator.VisitTypeValidatorTest,2,3,5,1,0,2,8,2,D:\Projetos\_W
 [CUSTOMTASKCHANGE],org.openmrs.util.databasechange.ProgramValidatorChangeSet,5,1,5,10,0,5,17,15,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\util\databasechange\ProgramValidatorChangeSet.java,class,false
 TEST,org.openmrs.order.OrderUtilTest,17,1,4,136,0,17,20,22,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\order\OrderUtilTest.java,class,false
 UNDEFINED,org.openmrs.util.DatabaseUtil,7,1,4,15,0,7,29,34,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\util\DatabaseUtil.java,class,false
-[VALIDATOR],org.openmrs.validator.PersonValidator,7,1,8,21,0,7,30,35,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\validator\PersonValidator.java,class,false
+[VALIDATOR],org.openmrs.validator.PersonValidator,11,1,8,55,0,11,36,37,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\validator\PersonValidator.java,class,false
 TEST,org.openmrs.api.handler.RequireVoidReasonVoidHandlerTest,5,3,6,10,0,5,12,5,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\api\handler\RequireVoidReasonVoidHandlerTest.java,class,false
 SERVICE,org.openmrs.api.impl.ConceptServiceImpl,158,2,41,0,0,158,283,328,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\api\impl\ConceptServiceImpl.java,class,false
 UNDEFINED,org.openmrs.test.BaseContextMockTest,2,1,6,1,0,2,2,2,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\test\BaseContextMockTest.java,class,false
@@ -331,7 +331,7 @@ TEST,org.openmrs.api.ProviderServiceTest,42,3,10,0,0,42,77,43,D:\Projetos\_Web\o
 ENTITY,org.openmrs.logic.rule.RuleParameterInfo,9,1,0,0,0,9,0,9,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\logic\rule\RuleParameterInfo.java,class,false
 TEST,org.openmrs.util.PersonByNameComparatorTest,4,1,3,6,0,4,3,4,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\util\PersonByNameComparatorTest.java,class,false
 BASEOPENMRSOBJECT,org.openmrs.AllergyReaction,14,2,4,43,0,14,10,24,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\AllergyReaction.java,class,false
-TEST,org.openmrs.api.EncounterServiceTest,150,3,40,11125,0,150,283,190,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\api\EncounterServiceTest.java,class,false
+TEST,org.openmrs.api.EncounterServiceTest,151,3,40,11275,0,151,285,192,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\api\EncounterServiceTest.java,class,false
 TEST,org.openmrs.ConceptTest,74,3,12,2701,0,74,98,78,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\ConceptTest.java,class,false
 [TAGLET],org.openmrs.tools.doclet.ShouldTaglet,11,1,5,53,0,11,9,16,D:\Projetos\_Web\openmrs-core\tools\src\main\java\org\openmrs\tools\doclet\ShouldTaglet.java,class,false
 TEST,org.openmrs.obs.MediaHandlerTest,4,1,10,6,0,4,19,4,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\obs\MediaHandlerTest.java,class,false
@@ -379,6 +379,7 @@ ENTITY,org.openmrs.api.context.UserContext,23,1,12,97,0,23,53,75,D:\Projetos\_We
 TEST,org.openmrs.api.db.PersonDAOTest,4,3,6,0,0,4,12,4,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\api\db\PersonDAOTest.java,class,false
 TEST,org.openmrs.LocationTest,3,1,2,3,0,3,10,3,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\LocationTest.java,class,false
 UNDEFINED,org.openmrs.scheduler.TaskFactory,3,1,5,3,0,3,10,7,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\scheduler\TaskFactory.java,class,false
+ENTITY,org.openmrs.api.db.FullTextQueryAndEntityClass,3,1,1,0,0,3,0,3,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\api\db\FullTextQueryAndEntityClass.java,class,false
 EXCEPTION,org.openmrs.module.OpenmrsCoreModuleException,4,3,1,0,0,4,6,5,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\module\OpenmrsCoreModuleException.java,class,false
 EXCEPTION,org.openmrs.logic.result.ImmutableResultException,4,3,1,6,0,4,0,4,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\logic\result\ImmutableResultException.java,class,false
 UNDEFINED,org.openmrs.web.filter.util.FilterUtil,6,1,1,0,0,6,27,66,D:\Projetos\_Web\openmrs-core\web\src\main\java\org\openmrs\web\filter\util\FilterUtil.java,class,false
@@ -388,7 +389,7 @@ BASEOPENMRSOBJECT,org.openmrs.scheduler.TaskDefinition,27,4,4,297,0,27,16,27,D:\
 TEST,org.openmrs.api.db.hibernate.HibernatePatientDAOTest,3,3,7,0,0,3,15,3,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\api\db\hibernate\HibernatePatientDAOTest.java,class,false
 TEST,org.openmrs.DrugTest,2,3,4,0,0,2,9,2,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\DrugTest.java,class,false
 [COMPARISONOPERATOR],org.openmrs.logic.op.Within,1,1,1,0,0,1,0,1,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\logic\op\Within.java,class,false
-EMPTYINTERCEPTOR,org.openmrs.api.db.hibernate.AuditableInterceptor,7,2,5,19,0,7,17,22,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\api\db\hibernate\AuditableInterceptor.java,class,false
+EMPTYINTERCEPTOR,org.openmrs.api.db.hibernate.AuditableInterceptor,7,2,6,19,0,7,18,24,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\api\db\hibernate\AuditableInterceptor.java,class,false
 TEST,org.openmrs.api.db.hibernate.DropMillisecondsHibernateInterceptorTest,3,3,8,1,0,3,12,3,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\api\db\hibernate\DropMillisecondsHibernateInterceptorTest.java,class,false
 BASEOPENMRSOBJECT,org.openmrs.OrderGroup,17,4,7,122,0,17,14,36,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\OrderGroup.java,class,false
 ENTITY,org.openmrs.propertyeditor.ProviderEditor,3,2,3,3,0,3,12,10,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\propertyeditor\ProviderEditor.java,class,false
@@ -404,7 +405,7 @@ TEST,org.openmrs.MessagePropertiesFilesTest,5,1,5,6,0,5,10,9,D:\Projetos\_Web\op
 BASEENCOUNTERVISITHANDLER,org.openmrs.api.handler.ExistingOrNewVisitAssignmentHandler,7,3,11,19,0,7,39,24,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\api\handler\ExistingOrNewVisitAssignmentHandler.java,class,false
 SERVICE,org.openmrs.scheduler.timer.TimerSchedulerServiceImpl,24,2,12,144,0,24,60,88,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\scheduler\timer\TimerSchedulerServiceImpl.java,class,false
 TEST,org.openmrs.propertyeditor.ConceptAnswersEditorTest,1,3,6,0,0,1,9,1,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\propertyeditor\ConceptAnswersEditorTest.java,class,false
-TEST,org.openmrs.validator.PersonValidatorTest,13,3,11,6,0,13,26,13,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\validator\PersonValidatorTest.java,class,false
+TEST,org.openmrs.validator.PersonValidatorTest,14,3,12,19,0,14,28,14,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\validator\PersonValidatorTest.java,class,false
 BASEOPENMRSOBJECT,org.openmrs.ConceptAttribute,6,5,4,13,0,6,4,6,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\ConceptAttribute.java,class,false
 TEST,org.openmrs.api.impl.ConditionServiceImplTest,9,3,9,0,0,9,35,13,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\api\impl\ConditionServiceImplTest.java,class,false
 TEST,org.openmrs.DrugOrderTest,22,1,11,231,0,22,43,22,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\DrugOrderTest.java,class,false
@@ -412,7 +413,7 @@ PERSISTENCE,org.openmrs.api.db.hibernate.HibernateProviderDAO,24,1,17,264,0,24,4
 SERVICE,org.openmrs.api.impl.ProviderServiceImpl,28,2,9,0,0,28,30,30,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\api\impl\ProviderServiceImpl.java,class,false
 ENTITY,org.openmrs.api.cache.CacheConfig,2,1,6,1,0,2,5,2,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\api\cache\CacheConfig.java,class,false
 ENTITY,org.openmrs.propertyeditor.DrugEditor,3,3,2,3,0,3,3,3,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\propertyeditor\DrugEditor.java,class,false
-BASEOPENMRSOBJECT,org.openmrs.User,45,4,8,894,0,45,57,111,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\User.java,class,false
+ENTITY,org.openmrs.User,45,4,28,894,0,45,57,111,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\User.java,class,true
 VIEW,org.openmrs.layout.name.NameSupport,3,2,4,1,0,3,3,8,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\layout\name\NameSupport.java,class,false
 TEST,org.openmrs.util.SecurityTest,7,1,2,19,0,7,13,7,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\util\SecurityTest.java,class,false
 RELOADABLERESOURCEBUNDLEMESSAGESOURCE,org.openmrs.messagesource.impl.MutableResourceBundleMessageSource,14,2,9,45,0,14,53,55,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\messagesource\impl\MutableResourceBundleMessageSource.java,class,false
@@ -444,7 +445,7 @@ EXCEPTION,org.openmrs.api.CannotDeleteObjectInUseException,4,4,1,6,0,4,0,4,D:\Pr
 EXCEPTION,org.openmrs.api.PasswordException,4,3,1,6,2,4,0,4,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\api\PasswordException.java,class,false
 [COMPARISONOPERATOR],org.openmrs.logic.op.GreaterThan,1,1,1,0,0,1,0,1,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\logic\op\GreaterThan.java,class,false
 TEST,org.openmrs.hl7.HL7UtilTest,5,1,1,10,0,5,12,5,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\hl7\HL7UtilTest.java,class,false
-BASEOPENMRSOBJECT,org.openmrs.Allergy,32,4,8,382,0,32,49,83,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\Allergy.java,class,false
+ENTITY,org.openmrs.Allergy,32,4,18,382,0,32,49,83,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\Allergy.java,class,true
 ENTITY,org.openmrs.comparator.PatientIdentifierTypeDefaultComparator,2,1,3,0,0,2,8,4,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\comparator\PatientIdentifierTypeDefaultComparator.java,class,false
 TEST,org.openmrs.messagesource.PresentationMessageMapTest,3,1,4,0,0,3,7,3,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\messagesource\PresentationMessageMapTest.java,class,false
 TEST,org.openmrs.validator.RequireNameValidatorTest,2,1,4,1,0,2,7,2,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\validator\RequireNameValidatorTest.java,class,false
@@ -461,7 +462,7 @@ ABSTRACTTASK,org.openmrs.scheduler.tasks.AlertReminderTask,3,2,5,0,0,3,15,11,D:\
 BASEOPENMRSOBJECT,org.openmrs.LocationAttribute,6,5,4,13,0,6,4,6,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\LocationAttribute.java,class,false
 [CUSTOMDATATYPE],org.openmrs.customdatatype.datatype.LongFreeTextDatatype,6,1,5,15,0,6,9,9,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\customdatatype\datatype\LongFreeTextDatatype.java,class,false
 [VOIDHANDLER],org.openmrs.api.handler.BaseVoidHandler,1,1,4,0,0,1,7,7,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\api\handler\BaseVoidHandler.java,class,false
-UNDEFINED,org.openmrs.Allergen,13,1,3,18,0,13,11,21,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\Allergen.java,class,false
+UNDEFINED,org.openmrs.Allergen,13,1,8,18,0,13,11,21,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\Allergen.java,class,false
 UNDEFINED,org.openmrs.annotation.OpenmrsProfile1_8WithHtmlformentry,0,1,2,0,0,0,0,0,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\annotation\OpenmrsProfile1_8WithHtmlformentry.java,class,false
 ENTITY,org.openmrs.AllergyProperties,10,1,6,45,0,10,3,12,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\AllergyProperties.java,class,false
 ENTITY,org.openmrs.util.DrugsByNameComparator,3,1,1,3,0,3,5,3,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\util\DrugsByNameComparator.java,class,false
@@ -531,6 +532,7 @@ TEST,org.openmrs.api.context.ContextTest,18,3,11,153,0,18,43,18,D:\Projetos\_Web
 ENTITY,org.openmrs.propertyeditor.ConceptNumericEditor,3,3,2,3,0,3,3,3,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\propertyeditor\ConceptNumericEditor.java,class,false
 TEST,org.openmrs.AllergenTest,9,3,5,30,0,9,21,9,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\AllergenTest.java,class,false
 EXCEPTION,org.openmrs.api.context.ContextAuthenticationException,4,3,1,6,0,4,0,4,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\api\context\ContextAuthenticationException.java,class,false
+SESSIONDELEGATORBASEIMPL,org.openmrs.api.db.DelegatingFullTextSession,9,2,14,0,0,9,12,15,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\api\db\DelegatingFullTextSession.java,class,false
 SERIALIZINGCUSTOMDATATYPE,org.openmrs.customdatatype.datatype.RegexValidatedTextDatatype,4,2,3,4,0,4,3,6,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\customdatatype\datatype\RegexValidatedTextDatatype.java,class,false
 TEST,org.openmrs.module.ModuleTest,10,1,5,0,0,10,24,10,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\module\ModuleTest.java,class,false
 PERSISTENCE,org.openmrs.api.db.hibernate.HibernateOpenmrsObjectDAO,5,1,5,0,0,5,8,5,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\api\db\hibernate\HibernateOpenmrsObjectDAO.java,class,false
@@ -598,7 +600,7 @@ EXCEPTION,org.openmrs.util.DatabaseUpdateException,4,2,0,6,0,4,0,4,D:\Projetos\_
 ABSTRACTHANDLER,org.openmrs.obs.handler.TextHandler,4,2,8,4,0,4,32,26,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\obs\handler\TextHandler.java,class,false
 [VALIDATOR],org.openmrs.validator.OrderValidator,8,1,6,28,1,8,31,34,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\validator\OrderValidator.java,class,false
 TEST,org.openmrs.api.db.hibernate.HibernateDiagnosisDAOTest,10,3,12,0,0,10,33,10,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\api\db\hibernate\HibernateDiagnosisDAOTest.java,class,false
-TEST,org.openmrs.EncounterTest,59,3,20,1711,0,59,95,63,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\EncounterTest.java,class,false
+TEST,org.openmrs.EncounterTest,60,3,20,1770,0,60,96,64,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\EncounterTest.java,class,false
 TEST,org.openmrs.RoleTest,8,1,3,28,0,8,19,8,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\RoleTest.java,class,false
 TEST,org.openmrs.api.cache.OpenmrsCacheManagerFactoryBeanTest,1,3,4,0,0,1,6,1,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\api\cache\OpenmrsCacheManagerFactoryBeanTest.java,class,false
 UNDEFINED,org.openmrs.annotation.OpenmrsProfile1_6To1_8,0,1,2,0,0,0,0,0,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\annotation\OpenmrsProfile1_6To1_8.java,class,false
@@ -724,7 +726,6 @@ EXCEPTION,org.openmrs.api.CannotUnvoidOrderException,1,4,1,0,0,1,0,1,D:\Projetos
 ASYNCTASK,org.openmrs.hl7.Hl7InArchivesMigrateThread,13,2,3,38,0,13,16,25,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\hl7\Hl7InArchivesMigrateThread.java,class,false
 TEST,org.openmrs.api.db.hibernate.HibernateLocationDAOTest,4,3,6,0,0,4,8,4,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\api\db\hibernate\HibernateLocationDAOTest.java,class,false
 UNDEFINED,org.openmrs.module.ModuleTestSuite,0,1,1,0,0,0,0,0,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\module\ModuleTestSuite.java,class,false
-ENTITY,org.openmrs.FullTextSessionFactory,1,1,4,0,0,1,2,1,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\FullTextSessionFactory.java,class,false
 [AUTHENTICATED],org.openmrs.api.context.BasicAuthenticated,5,1,2,0,0,5,0,5,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\api\context\BasicAuthenticated.java,class,false
 TEST,org.openmrs.propertyeditor.ProgramEditorTest,4,3,3,6,0,4,3,4,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\propertyeditor\ProgramEditorTest.java,class,false
 SERVICE,org.openmrs.api.impl.BaseOpenmrsService,2,1,1,1,21,2,0,2,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\api\impl\BaseOpenmrsService.java,class,false
@@ -743,7 +744,7 @@ SERIALIZINGCUSTOMDATATYPE,org.openmrs.customdatatype.datatype.ConceptDatatype,2,
 TEST,org.openmrs.web.filter.update.UpdateFilterTest,5,4,2,10,0,5,8,5,D:\Projetos\_Web\openmrs-core\web\src\test\java\org\openmrs\web\filter\update\UpdateFilterTest.java,class,false
 TEST,org.openmrs.validator.VisitAttributeTypeValidatorTest,2,3,6,1,0,2,13,2,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\validator\VisitAttributeTypeValidatorTest.java,class,false
 EXCEPTION,org.openmrs.patient.UnallowedIdentifierException,4,3,1,6,0,4,0,4,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\patient\UnallowedIdentifierException.java,class,false
-BASEOPENMRSOBJECT,org.openmrs.Diagnosis,18,4,6,115,0,18,2,18,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\Diagnosis.java,class,false
+ENTITY,org.openmrs.Diagnosis,18,4,19,115,0,18,2,18,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\Diagnosis.java,class,true
 BASEOPENMRSOBJECT,org.openmrs.VisitAttributeType,4,5,3,4,0,4,2,4,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\VisitAttributeType.java,class,false
 UNDEFINED,org.openmrs.web.filter.util.CustomResourceLoader,6,1,5,7,0,6,19,14,D:\Projetos\_Web\openmrs-core\web\src\main\java\org\openmrs\web\filter\util\CustomResourceLoader.java,class,false
 [UNVOIDHANDLER],org.openmrs.api.handler.PatientDataUnvoidHandler,1,1,10,0,0,1,18,13,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\api\handler\PatientDataUnvoidHandler.java,class,false
@@ -757,6 +758,7 @@ UNDEFINED,org.openmrs.util.OpenmrsClassScanner,5,1,7,8,0,5,14,17,D:\Projetos\_We
 [STRINGBRIDGE],org.openmrs.api.db.hibernate.search.bridge.OpenmrsObjectFieldBridge,1,1,2,0,0,1,2,1,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\api\db\hibernate\search\bridge\OpenmrsObjectFieldBridge.java,class,false
 BASEOPENMRSOBJECT,org.openmrs.DrugReferenceMap,20,2,9,166,0,20,2,20,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\DrugReferenceMap.java,class,false
 [OPERATOR],org.openmrs.logic.op.AsOf,1,1,1,0,0,1,0,1,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\logic\op\AsOf.java,class,false
+[FULLTEXTSESSIONFACTORY],org.openmrs.api.db.FullTextSessionFactoryImpl,1,1,8,0,0,1,2,1,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\api\db\FullTextSessionFactoryImpl.java,class,false
 BASEOPENMRSOBJECT,org.openmrs.Program,20,4,6,174,0,20,16,35,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\Program.java,class,false
 TEST,org.openmrs.serialization.SimpleXStreamSerializerTest,5,1,5,4,0,5,27,5,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\serialization\SimpleXStreamSerializerTest.java,class,false
 TEST,org.openmrs.propertyeditor.VisitTypeEditorTest,2,4,5,1,0,2,1,2,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\propertyeditor\VisitTypeEditorTest.java,class,false
@@ -798,7 +800,7 @@ TEST,org.openmrs.validator.ConditionValidatorTest,5,1,9,0,0,5,9,5,D:\Projetos\_W
 [VALIDATOR],org.openmrs.validator.ConceptDrugValidator,2,1,5,1,0,2,5,4,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\validator\ConceptDrugValidator.java,class,false
 EXCEPTION,org.openmrs.api.MissingRequiredIdentifierException,5,4,2,10,0,5,0,5,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\api\MissingRequiredIdentifierException.java,class,false
 TEST,org.openmrs.PersonAttributeTest,6,3,6,15,0,6,16,6,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\PersonAttributeTest.java,class,false
-BASEOPENMRSOBJECT,org.openmrs.Condition,27,4,7,257,0,27,33,50,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\Condition.java,class,false
+ENTITY,org.openmrs.Condition,27,4,21,257,0,27,33,50,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\Condition.java,class,true
 TEST,org.openmrs.ConceptReferenceTermTest,3,1,3,3,0,3,10,3,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\ConceptReferenceTermTest.java,class,false
 TEST,org.openmrs.validator.HL7SourceValidatorTest,2,3,5,1,0,2,6,2,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\validator\HL7SourceValidatorTest.java,class,false
 UNDEFINED,org.openmrs.util.PrivilegeConstants,1,1,2,0,0,1,0,1,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\util\PrivilegeConstants.java,class,false
@@ -847,7 +849,7 @@ UNDEFINED,org.openmrs.util.HttpClient,3,1,2,0,0,3,28,18,D:\Projetos\_Web\openmrs
 ABSTRACTMESSAGESOURCE,org.openmrs.messagesource.impl.CachedMessageSource,8,2,4,0,0,8,16,18,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\messagesource\impl\CachedMessageSource.java,class,false
 [VALIDATOR],org.openmrs.validator.AllergyValidator,2,1,10,1,0,2,19,18,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\validator\AllergyValidator.java,class,false
 TEST,org.openmrs.ConceptNumericTest,8,3,8,28,0,8,25,13,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\ConceptNumericTest.java,class,false
-[AUTHENTICATIONSCHEME],org.openmrs.api.context.DaoAuthenticationScheme,2,1,2,0,2,2,0,2,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\api\context\DaoAuthenticationScheme.java,class,false
+[AUTHENTICATIONSCHEME],org.openmrs.api.context.DaoAuthenticationScheme,1,1,2,0,2,1,1,1,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\api\context\DaoAuthenticationScheme.java,class,false
 BASEOPENMRSOBJECT,org.openmrs.ProgramWorkflow,25,4,8,284,0,25,27,50,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\ProgramWorkflow.java,class,false
 VIEW,org.openmrs.util.HandlerUtil,8,1,10,6,0,8,22,45,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\util\HandlerUtil.java,class,false
 TEST,org.openmrs.propertyeditor.ConceptNameEditorTest,2,4,5,1,0,2,1,2,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\propertyeditor\ConceptNameEditorTest.java,class,false
@@ -862,7 +864,7 @@ TEST,org.openmrs.validator.FieldValidatorTest,8,3,6,28,0,8,14,8,D:\Projetos\_Web
 TEST,org.openmrs.notification.MessageTest,6,1,2,15,0,6,13,6,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\notification\MessageTest.java,class,false
 ENTITY,org.openmrs.api.db.hibernate.search.TermsFilterFactory,4,1,9,0,0,4,6,13,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\api\db\hibernate\search\TermsFilterFactory.java,class,false
 PERSISTENCE,org.openmrs.api.db.hibernate.HibernateProgramWorkflowDAO,37,1,17,0,0,37,35,76,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\api\db\hibernate\HibernateProgramWorkflowDAO.java,class,false
-UNDEFINED,org.openmrs.api.context.Context,93,1,53,4007,0,93,180,176,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\api\context\Context.java,class,false
+UNDEFINED,org.openmrs.api.context.Context,93,1,52,4007,0,93,179,174,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\api\context\Context.java,class,false
 ENTITY,org.openmrs.propertyeditor.ConceptEditor,3,3,2,3,0,3,3,3,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\propertyeditor\ConceptEditor.java,class,false
 TEST,org.openmrs.util.HttpClientTest,2,1,4,0,0,2,19,2,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\util\HttpClientTest.java,class,false
 [LOGICALOPERATOR],org.openmrs.logic.op.Not,1,1,1,0,0,1,0,1,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\logic\op\Not.java,class,false
@@ -875,6 +877,7 @@ TEST,org.openmrs.validator.ProviderAttributeTypeValidatorTest,2,3,6,1,0,2,10,2,D
 BASEOPENMRSOBJECT,org.openmrs.FormField,30,4,6,403,0,30,14,75,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\FormField.java,class,false
 [VALIDATOR],org.openmrs.validator.UserValidator,5,1,9,10,0,5,35,32,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\validator\UserValidator.java,class,false
 TEST,org.openmrs.util.ProviderByPersonNameComparatorTest,6,1,4,15,0,6,4,6,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\util\ProviderByPersonNameComparatorTest.java,class,false
+APPLICATIONEVENT,org.openmrs.api.db.FullTextQueryCreatedEvent,1,2,2,0,0,1,0,1,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\api\db\FullTextQueryCreatedEvent.java,class,false
 TEST,org.openmrs.notification.MessageServiceTest,3,3,5,0,0,3,19,9,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\notification\MessageServiceTest.java,class,false
 TEST,org.openmrs.api.db.hibernate.HibernateProviderDAOTest,4,3,7,0,0,4,12,6,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\api\db\hibernate\HibernateProviderDAOTest.java,class,false
 ENTITY,org.openmrs.api.context.ContextMockHelper,22,1,22,219,0,22,34,46,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\api\context\ContextMockHelper.java,class,false
@@ -884,7 +887,7 @@ UNDEFINED,org.openmrs.annotation.OpenmrsProfile1_8,0,1,2,0,0,0,0,0,D:\Projetos\_
 UNDEFINED,org.openmrs.customdatatype.CustomDatatypeUtil,15,1,19,103,0,15,46,43,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\customdatatype\CustomDatatypeUtil.java,class,false
 EXCEPTION,org.openmrs.util.VelocityExceptionHandler,1,1,3,0,0,1,4,3,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\util\VelocityExceptionHandler.java,class,false
 TEST,org.openmrs.api.PatientServiceAllergyTest,17,3,10,0,0,17,34,21,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\api\PatientServiceAllergyTest.java,class,false
-ENTITY,org.openmrs.CodedOrFreeText,8,1,2,10,0,8,0,8,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\CodedOrFreeText.java,class,false
+ENTITY,org.openmrs.CodedOrFreeText,8,1,4,10,0,8,0,8,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\CodedOrFreeText.java,class,false
 [CUSTOMTASKCHANGE],org.openmrs.util.databasechange.DuplicateEncounterRoleNameChangeSet,5,1,8,10,0,5,35,30,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\util\databasechange\DuplicateEncounterRoleNameChangeSet.java,class,false
 TEST,org.openmrs.PersonAddressTest,15,1,2,105,0,15,16,15,D:\Projetos\_Web\openmrs-core\api\src\test\java\org\openmrs\PersonAddressTest.java,class,false
 BASEOPENMRSOBJECT,org.openmrs.hl7.HL7InQueue,11,3,4,49,0,11,9,11,D:\Projetos\_Web\openmrs-core\api\src\main\java\org\openmrs\hl7\HL7InQueue.java,class,false

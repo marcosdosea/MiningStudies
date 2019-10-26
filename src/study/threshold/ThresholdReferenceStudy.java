@@ -1,6 +1,7 @@
 package study.threshold;
 
 import java.util.ArrayList;
+import java.util.Collection;
 
 import org.designroleminer.ClassMetricResult;
 import org.designroleminer.threshold.DesignRoleTechnique;
@@ -16,8 +17,8 @@ public class ThresholdReferenceStudy {
 
 		System.out.println("Iniciando a coleta de métricas do projeto referencia...");
 		ArrayList<String> projetosReferencia = gLimiares.lerProjetos("Reference.txt");
-		ArrayList<ClassMetricResult> metricasProjetosReferencia = gLimiares.getMetricsFromProjects(projetosReferencia,
-				PASTA_RESULTADO, false);
+		Collection<ClassMetricResult> metricasProjetosReferencia = gLimiares
+				.getMetricsFromProjects(projetosReferencia, PASTA_RESULTADO, false).all();
 
 		System.out.println("Gerando Limiares por Dosea apontando para projetos Referencia...");
 		gLimiares.setTechinique(new DoseaReferenceTechnique());

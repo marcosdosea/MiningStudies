@@ -2478,9 +2478,9 @@ UNDEFINED,edu.isi.karma.spark.KarmaDriver,main,58,8,0,1,0,1704,D:\Projetos\_Web\
 UNDEFINED,edu.isi.karma.spark.KarmaDriver,applyModelToGetJSON,57,1,0,6,0,8744,D:\Projetos\_Web\Web-Karma\karma-spark\src\main\java\edu\isi\karma\spark\KarmaDriver.java
 UNDEFINED,edu.isi.karma.spark.KarmaDriver,applyModelToGetN3,35,1,0,6,0,12100,D:\Projetos\_Web\Web-Karma\karma-spark\src\main\java\edu\isi\karma\spark\KarmaDriver.java
 UNDEFINED,edu.isi.karma.spark.KarmaDriver,createCommandLineOptions,8,1,2,0,0,14991,D:\Projetos\_Web\Web-Karma\karma-spark\src\main\java\edu\isi\karma\spark\KarmaDriver.java
-UNDEFINED,edu.isi.karma.spark.KarmaDriver,call,3,1,2,1,0,4224,D:\Projetos\_Web\Web-Karma\karma-spark\src\main\java\edu\isi\karma\spark\KarmaDriver.java
-UNDEFINED,edu.isi.karma.spark.KarmaDriver,call,4,1,19,1,0,3683,D:\Projetos\_Web\Web-Karma\karma-spark\src\main\java\edu\isi\karma\spark\KarmaDriver.java
 UNDEFINED,edu.isi.karma.spark.KarmaDriver,call,30,6,0,1,0,6245,D:\Projetos\_Web\Web-Karma\karma-spark\src\main\java\edu\isi\karma\spark\KarmaDriver.java
+UNDEFINED,edu.isi.karma.spark.KarmaDriver,call,4,1,19,1,0,3683,D:\Projetos\_Web\Web-Karma\karma-spark\src\main\java\edu\isi\karma\spark\KarmaDriver.java
+UNDEFINED,edu.isi.karma.spark.KarmaDriver,call,3,1,2,1,0,4224,D:\Projetos\_Web\Web-Karma\karma-spark\src\main\java\edu\isi\karma\spark\KarmaDriver.java
 UNDEFINED,edu.isi.karma.spark.KarmaDriver,call,3,1,0,1,0,8599,D:\Projetos\_Web\Web-Karma\karma-spark\src\main\java\edu\isi\karma\spark\KarmaDriver.java
 UNDEFINED,edu.isi.karma.spark.KarmaDriver,call,29,7,20,1,0,9219,D:\Projetos\_Web\Web-Karma\karma-spark\src\main\java\edu\isi\karma\spark\KarmaDriver.java
 UNDEFINED,edu.isi.karma.spark.KarmaDriver,call,3,1,10,1,0,11471,D:\Projetos\_Web\Web-Karma\karma-spark\src\main\java\edu\isi\karma\spark\KarmaDriver.java

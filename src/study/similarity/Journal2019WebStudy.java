@@ -15,7 +15,7 @@ public class Journal2019WebStudy {
 	private static SimilarityManager gSimilarity = new SimilarityManager();
 
 	public static void main(String[] args) {
-		final String PASTA_METRICAS = "thresholds\\2019\\";
+		final String PASTA_METRICAS = "thresholds\\web2019\\projects\\";
 		TechniqueExecutor executor = new TechniqueExecutor(new DesignRoleTechnique());
 		ArrayList<String> projetosReferencia = executor.lerProjetos("Benchmark2019.txt");
 		List<SimilarityResult> listSimilarity = gSimilarity.calculate(projetosReferencia, PASTA_METRICAS);

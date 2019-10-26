@@ -101,7 +101,7 @@ ABSTRACTMETHOD,allbegray.slack.webapi.method.users.UserSetPresenceMethod,6,2,3,0
 ABSTRACTMETHOD,allbegray.slack.webapi.method.AbstractSearchMethod,11,3,3,1,3,11,6,23,D:\Projetos\_Web\slack-api\src\main\java\allbegray\slack\webapi\method\AbstractSearchMethod.java,class,false
 ABSTRACTMETHOD,allbegray.slack.webapi.method.groups.GroupCreateMethod,6,2,2,0,0,6,3,10,D:\Projetos\_Web\slack-api\src\main\java\allbegray\slack\webapi\method\groups\GroupCreateMethod.java,class,false
 ABSTRACTMETHOD,allbegray.slack.webapi.method.users.profile.UserProfileGetMethoad,7,2,2,9,0,7,1,11,D:\Projetos\_Web\slack-api\src\main\java\allbegray\slack\webapi\method\users\profile\UserProfileGetMethoad.java,class,false
-[SLACKMETHOD],allbegray.slack.webapi.method.AbstractMethod,7,1,3,21,66,7,3,7,D:\Projetos\_Web\slack-api\src\main\java\allbegray\slack\webapi\method\AbstractMethod.java,class,false
+[SLACKMETHOD],allbegray.slack.webapi.method.AbstractMethod,7,1,3,21,67,7,3,7,D:\Projetos\_Web\slack-api\src\main\java\allbegray\slack\webapi\method\AbstractMethod.java,class,false
 EXCEPTION,allbegray.slack.exception.SlackResponseRateLimitException,2,4,1,0,0,2,0,2,D:\Projetos\_Web\slack-api\src\main\java\allbegray\slack\exception\SlackResponseRateLimitException.java,class,false
 VIEW,allbegray.slack.MessageEventListener,1,1,3,0,0,1,1,1,D:\Projetos\_Web\slack-api\src\test\java\allbegray\slack\MessageEventListener.java,class,false
 ABSTRACTMETHOD,allbegray.slack.webapi.method.files.FileUploadMethod,13,2,2,48,0,13,1,23,D:\Projetos\_Web\slack-api\src\main\java\allbegray\slack\webapi\method\files\FileUploadMethod.java,class,false
@@ -133,7 +133,7 @@ TEST,allbegray.slack.type.DndTeamInfoTest,1,1,5,0,0,1,14,2,D:\Projetos\_Web\slac
 ENTITY,allbegray.slack.type.Message,23,1,2,191,0,23,0,27,D:\Projetos\_Web\slack-api\src\main\java\allbegray\slack\type\Message.java,class,false
 ENTITY,allbegray.slack.type.StarItem,11,1,4,25,0,11,0,11,D:\Projetos\_Web\slack-api\src\main\java\allbegray\slack\type\StarItem.java,class,false
 ABSTRACTMETHOD,allbegray.slack.webapi.method.bots.BotInfoMethod,5,2,2,4,0,5,1,7,D:\Projetos\_Web\slack-api\src\main\java\allbegray\slack\webapi\method\bots\BotInfoMethod.java,class,false
-UNDEFINED,allbegray.slack.rtm.SlackRealTimeMessagingClient,17,1,15,93,0,17,52,54,D:\Projetos\_Web\slack-api\src\main\java\allbegray\slack\rtm\SlackRealTimeMessagingClient.java,class,false
+UNDEFINED,allbegray.slack.rtm.SlackRealTimeMessagingClient,17,1,15,93,0,17,51,54,D:\Projetos\_Web\slack-api\src\main\java\allbegray\slack\rtm\SlackRealTimeMessagingClient.java,class,false
 ABSTRACTMETHOD,allbegray.slack.webapi.method.usergroups.UsergroupsUpdateMethod,2,3,1,1,0,2,0,2,D:\Projetos\_Web\slack-api\src\main\java\allbegray\slack\webapi\method\usergroups\UsergroupsUpdateMethod.java,class,false
 ENTITY,allbegray.slack.rtm.ProxyServerInfo,15,1,0,31,0,15,0,15,D:\Projetos\_Web\slack-api\src\main\java\allbegray\slack\rtm\ProxyServerInfo.java,class,false
 ABSTRACTMETHOD,allbegray.slack.webapi.method.usergroups.users.UsergroupsUsersUpdateMethod,10,2,3,1,0,10,6,19,D:\Projetos\_Web\slack-api\src\main\java\allbegray\slack\webapi\method\usergroups\users\UsergroupsUsersUpdateMethod.java,class,false
@@ -151,6 +151,7 @@ DNDSIMPLEINFO,allbegray.slack.type.DndInfo,6,2,2,9,0,6,0,6,D:\Projetos\_Web\slac
 ABSTRACTMETHOD,allbegray.slack.webapi.method.channels.ChannelInviteMethod,8,2,3,0,1,8,2,12,D:\Projetos\_Web\slack-api\src\main\java\allbegray\slack\webapi\method\channels\ChannelInviteMethod.java,class,false
 ABSTRACTMETHOD,allbegray.slack.webapi.method.pins.PinsRemoveMethod,2,3,1,1,0,2,0,2,D:\Projetos\_Web\slack-api\src\main\java\allbegray\slack\webapi\method\pins\PinsRemoveMethod.java,class,false
 ABSTRACTMETHOD,allbegray.slack.webapi.method.groups.GroupCloseMethod,6,2,3,0,0,6,2,8,D:\Projetos\_Web\slack-api\src\main\java\allbegray\slack\webapi\method\groups\GroupCloseMethod.java,class,false
+ABSTRACTMETHOD,allbegray.slack.webapi.method.users.UserLookupByEmailMethod,6,2,3,0,0,6,2,8,D:\Projetos\_Web\slack-api\src\main\java\allbegray\slack\webapi\method\users\UserLookupByEmailMethod.java,class,false
 ABSTRACTMETHOD,allbegray.slack.webapi.method.channels.ChannelArchiveMethod,6,2,3,0,1,6,2,8,D:\Projetos\_Web\slack-api\src\main\java\allbegray\slack\webapi\method\channels\ChannelArchiveMethod.java,class,false
 ABSTRACTMETHOD,allbegray.slack.webapi.method.reactions.ReactionsListMethod,6,3,1,3,0,6,2,10,D:\Projetos\_Web\slack-api\src\main\java\allbegray\slack\webapi\method\reactions\ReactionsListMethod.java,class,false
 UNDEFINED,allbegray.slack.type.ReminderList,3,1,2,0,0,3,0,3,D:\Projetos\_Web\slack-api\src\main\java\allbegray\slack\type\ReminderList.java,class,false
@@ -178,7 +179,7 @@ ENTITY,allbegray.slack.type.File,91,1,3,3825,0,91,0,99,D:\Projetos\_Web\slack-ap
 ABSTRACTMETHOD,allbegray.slack.webapi.method.reactions.ReactionsRemoveMethod,6,3,3,0,0,6,2,8,D:\Projetos\_Web\slack-api\src\main\java\allbegray\slack\webapi\method\reactions\ReactionsRemoveMethod.java,class,false
 ABSTRACTMETHOD,allbegray.slack.webapi.method.groups.GroupOpenMethod,6,2,3,0,0,6,2,8,D:\Projetos\_Web\slack-api\src\main\java\allbegray\slack\webapi\method\groups\GroupOpenMethod.java,class,false
 ABSTRACTMETHOD,allbegray.slack.webapi.method.dnd.DndInfoMethod,7,2,2,9,0,7,1,9,D:\Projetos\_Web\slack-api\src\main\java\allbegray\slack\webapi\method\dnd\DndInfoMethod.java,class,false
-[SLACKWEBAPICLIENT],allbegray.slack.webapi.SlackWebApiClientImpl,161,1,83,12776,0,161,122,199,D:\Projetos\_Web\slack-api\src\main\java\allbegray\slack\webapi\SlackWebApiClientImpl.java,class,false
+[SLACKWEBAPICLIENT],allbegray.slack.webapi.SlackWebApiClientImpl,162,1,83,12937,0,162,122,200,D:\Projetos\_Web\slack-api\src\main\java\allbegray\slack\webapi\SlackWebApiClientImpl.java,class,false
 TEST,allbegray.slack.webapi.method.reminders.RemindersTest,2,1,7,0,0,2,16,2,D:\Projetos\_Web\slack-api\src\test\java\allbegray\slack\webapi\method\reminders\RemindersTest.java,class,false
 ENTITY,allbegray.slack.type.SetSnooze,6,1,1,9,0,6,0,6,D:\Projetos\_Web\slack-api\src\main\java\allbegray\slack\type\SetSnooze.java,class,false
 TEST,allbegray.slack.SlackSearchQueryBuilderTest,8,1,2,28,0,8,24,8,D:\Projetos\_Web\slack-api\src\test\java\allbegray\slack\SlackSearchQueryBuilderTest.java,class,false
