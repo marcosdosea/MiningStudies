@@ -2,7 +2,6 @@ package study.similarity;
 
 import java.util.ArrayList;
 
-import org.designroleminer.ClassMetricResult;
 import org.designroleminer.MetricReport;
 import org.designroleminer.threshold.DesignRoleTechnique;
 import org.designroleminer.threshold.TechniqueExecutor;

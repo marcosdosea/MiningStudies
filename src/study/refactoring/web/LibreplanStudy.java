@@ -21,15 +21,19 @@ public class LibreplanStudy {
 		String finalCommit = "edf8f775e7dcb7f6c10a5441a87c268ba1f36bae"; // 1.4.1 - 2015.04.14
 
 		List<LimiarTecnica> listThresholdsTechiniques = CarregaSalvaArquivo
-				.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\web2019\\");
+				.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\web2020\\");
 
 		listThresholdsTechiniques.addAll(CarregaSalvaArquivo
-				.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\web2019\\libreplan"));
+				.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\web2020\\libreplan"));
 		SmellRefactoredResult result = SmellRefactoredManager.getSmellRefactoredBetweenCommit(urlRepository,
 				localFolder, initialCommit, finalCommit, listThresholdsTechiniques);
 
 		SmellRefactoredManager.storeResult(result,
 				System.getProperty("user.dir") + "\\refactoring\\refactored-libreplan.csv", false);
+		SmellRefactoredManager.storeResult(result,
+				System.getProperty("user.dir") + "\\refactoring\\refactored-libreplan-message.csv", true);
+		SmellRefactoredManager.evaluateStoreResults(result,
+				System.getProperty("user.dir") + "\\refactoring\\refactored-libreplan-evaluation.csv");
 
 	}
 

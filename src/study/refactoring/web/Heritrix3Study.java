@@ -21,13 +21,17 @@ public class Heritrix3Study {
 		String finalCommit = "c7c6141ee10967c171dcc3dc193973ed0e5d85a8"; // 3.4.0 - 2019.04.18
 
 		List<LimiarTecnica> listThresholdsTechiniques = CarregaSalvaArquivo
-				.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\web2019\\");
+				.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\web2020\\");
 
 		listThresholdsTechiniques.addAll(
-				CarregaSalvaArquivo.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\web2019\\heritrix3"));
+				CarregaSalvaArquivo.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\web2020\\heritrix3"));
 		SmellRefactoredResult result = SmellRefactoredManager.getSmellRefactoredBetweenCommit(urlRepository,
 				localFolder, initialCommit, finalCommit, listThresholdsTechiniques);
 		SmellRefactoredManager.storeResult(result,
 				System.getProperty("user.dir") + "\\refactoring\\refactored-heritrix3.csv", false);
+		SmellRefactoredManager.storeResult(result,
+				System.getProperty("user.dir") + "\\refactoring\\refactored-heritrix3-message.csv", true);
+		SmellRefactoredManager.evaluateStoreResults(result,
+				System.getProperty("user.dir") + "\\refactoring\\refactored-heritrix3-evaluation.csv");
 	}
 }

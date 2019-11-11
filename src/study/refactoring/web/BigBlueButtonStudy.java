@@ -21,14 +21,18 @@ public class BigBlueButtonStudy {
 		String finalCommit = "b7d44d21e6cecf309ee1704dcfef264f2dc57639"; //2.0.0 - 2019.04.08
 		
 		List<LimiarTecnica> listThresholdsTechiniques = CarregaSalvaArquivo
-				.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\web2019\\");
+				.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\web2020\\");
 
 		listThresholdsTechiniques.addAll(CarregaSalvaArquivo
-				.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\web2019\\bigbluebutton"));
+				.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\web2020\\bigbluebutton"));
 		SmellRefactoredResult result = SmellRefactoredManager.getSmellRefactoredBetweenCommit(urlRepository,
 				localFolder, initialCommit, finalCommit, listThresholdsTechiniques);
 
 		SmellRefactoredManager.storeResult(result,
 				System.getProperty("user.dir") + "\\refactoring\\refactored-bigbluebutton.csv", false);
+		SmellRefactoredManager.storeResult(result,
+				System.getProperty("user.dir") + "\\refactoring\\refactored-bigbluebutton-message.csv", true);
+		SmellRefactoredManager.evaluateStoreResults(result,
+				System.getProperty("user.dir") + "\\refactoring\\refactored-bigbluebutton-evaluation.csv");
 	}
 }

@@ -14,8 +14,9 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry combineaccessrules="false" kind="src" path="/RefactoringMiner"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/designroleminer"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/SystemSimilarity"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/SmellRafactored"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/designroleminer"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

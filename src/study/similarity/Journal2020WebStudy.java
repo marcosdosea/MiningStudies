@@ -1,0 +1,32 @@
+package study.similarity;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.designroleminer.threshold.DesignRoleTechnique;
+import org.designroleminer.threshold.TechniqueExecutor;
+import org.repodriller.persistence.PersistenceMechanism;
+import org.repodriller.persistence.csv.CSVFile;
+import org.systemsimilarity.SimilarityManager;
+import org.systemsimilarity.SimilarityResult;
+
+public class Journal2020WebStudy {
+
+	private static SimilarityManager gSimilarity = new SimilarityManager();
+
+	public static void main(String[] args) {
+		final String PASTA_METRICAS = "thresholds\\web2020\\projects\\";
+		TechniqueExecutor executor = new TechniqueExecutor(new DesignRoleTechnique());
+		ArrayList<String> projetosReferencia = executor.lerProjetos("Benchmark2020Web.txt");
+		List<SimilarityResult> listSimilarity = gSimilarity.calculate(projetosReferencia, PASTA_METRICAS);
+
+		PersistenceMechanism pm = new CSVFile(System.getProperty("user.dir") + "\\similarity\\similarity-web2020.csv");
+		pm.write("Project 01", "Project 02", "SimilarityResult [0-1]");
+
+		for (SimilarityResult similarity : listSimilarity) {
+			pm.write(similarity.getProject1(), similarity.getProject2(),
+					String.format("%.2f", similarity.getSimilarity()));
+		}
+	}
+
+}

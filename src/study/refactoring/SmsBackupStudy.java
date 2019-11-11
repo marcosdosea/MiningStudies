@@ -33,6 +33,8 @@ public class SmsBackupStudy {
 		// resultado + mensgens do commit
 		SmellRefactoredManager.storeResult(result,
 				System.getProperty("user.dir") + "\\refactoring\\refactored-sms-message.csv", true);
+		
+		SmellRefactoredManager.evaluateStoreResults(result, System.getProperty("user.dir") + "\\refactoring\\refactored-sms-evaluation.csv");
 	}
 
 }

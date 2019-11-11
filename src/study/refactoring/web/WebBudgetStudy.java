@@ -21,13 +21,19 @@ public class WebBudgetStudy {
 		String finalCommit = "321e99e30dbbf6d2f1c740967c7b9aaff4841748"; // 3.0.2 - 2019.05.26
 
 		List<LimiarTecnica> listThresholdsTechiniques = CarregaSalvaArquivo
-				.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\web2019\\");
+				.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\web2020\\");
 
 		listThresholdsTechiniques.addAll(
-				CarregaSalvaArquivo.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\web2019\\web-budget"));
+				CarregaSalvaArquivo.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\web2020\\web-budget"));
 		SmellRefactoredResult result = SmellRefactoredManager.getSmellRefactoredBetweenCommit(urlRepository,
 				localFolder, initialCommit, finalCommit, listThresholdsTechiniques);
 		SmellRefactoredManager.storeResult(result,
-				System.getProperty("user.dir") + "\\refactoring\\refactored-web-budget.csv", false);
+				System.getProperty("user.dir") + "\\refactoring\\refactored-webbudget.csv", false);
+		
+		SmellRefactoredManager.storeResult(result,
+				System.getProperty("user.dir") + "\\refactoring\\refactored-webbudget-message.csv", true);
+				
+	
+		SmellRefactoredManager.evaluateStoreResults(result, System.getProperty("user.dir") + "\\refactoring\\refactored-webbudget-evaluation.csv");
 	}
 }
