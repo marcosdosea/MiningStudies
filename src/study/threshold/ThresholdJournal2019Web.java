@@ -31,7 +31,7 @@ public class ThresholdJournal2019Web {
 		System.out.println("Iniciando a coleta de métricas do projeto referencia...");
 		ArrayList<String> projetosReferencia = gLimiares.lerProjetos("Benchmark2019.txt");
 		Collection<ClassMetricResult> metricasProjetosBenchmark = gLimiares
-				.getMetricsFromProjects(projetosReferencia, PASTA_PROJECTS, true).all();
+				.getMetricsFromProjects(projetosReferencia, PASTA_PROJECTS, "").all();
 
 		System.out.println("Gerando Limiares por Alves usando benchmark...");
 		gLimiares.setTechinique(new AlvesTechnique());
@@ -51,7 +51,7 @@ public class ThresholdJournal2019Web {
 
 			// Entra no benchmark qualquer projeto com similaridade > 0
 			ArrayList<String> projetosSimilares = gSimilarity.filterSimilarProjects(projeto, listSimilarity, 0);
-			metricasProjetosBenchmark = gLimiares.getMetricsFromProjects(projetosSimilares, PASTA_PROJECTS, true).all();
+			metricasProjetosBenchmark = gLimiares.getMetricsFromProjects(projetosSimilares, PASTA_PROJECTS, "").all();
 
 			String nomeProjeto = projeto.substring(projeto.lastIndexOf("\\") + 1);
 			String pastaThresholdsProjeto = PASTA_THRESHOLDS + "\\" + nomeProjeto + "\\";

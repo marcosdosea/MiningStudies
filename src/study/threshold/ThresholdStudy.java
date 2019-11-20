@@ -19,7 +19,7 @@ public class ThresholdStudy {
 		System.out.println("Iniciando a coleta de métricas dos projetos WEB...");
 		ArrayList<String> projetosBenchmark = gLimiares.lerProjetos("Benchmark.txt");
 		Collection<ClassMetricResult> metricasProjetosBenchmark = gLimiares
-				.getMetricsFromProjects(projetosBenchmark, PASTA_RESULTADO, false).all();
+				.getMetricsFromProjects(projetosBenchmark, PASTA_RESULTADO, "").all();
 
 		System.out.println("Gerando Limiares por Alves usando benchmark...");
 		gLimiares.setTechinique(new AlvesTechnique());

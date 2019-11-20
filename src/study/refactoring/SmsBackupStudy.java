@@ -23,18 +23,13 @@ public class SmsBackupStudy {
 		List<LimiarTecnica> listThresholdsTechiniques = CarregaSalvaArquivo
 				.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\simple\\");
 
-		SmellRefactoredResult result = SmellRefactoredManager.getSmellRefactoredBetweenCommit(urlRepository,
-				localFolder, initialCommit, finalCommit, listThresholdsTechiniques);
+		SmellRefactoredManager manager = new SmellRefactoredManager(urlRepository, localFolder, initialCommit,
+				finalCommit, listThresholdsTechiniques);
+		SmellRefactoredResult result = manager.getSmellRefactoredBetweenCommit(
+				System.getProperty("user.dir") + "\\refactoring\\refactored-sms-evaluation.csv");
 
-		// resultado sem gravar mensgens do commit
-		SmellRefactoredManager.storeResult(result,
-				System.getProperty("user.dir") + "\\refactoring\\refactored-sms.csv", false);
-		
 		// resultado + mensgens do commit
-		SmellRefactoredManager.storeResult(result,
-				System.getProperty("user.dir") + "\\refactoring\\refactored-sms-message.csv", true);
-		
-		SmellRefactoredManager.evaluateStoreResults(result, System.getProperty("user.dir") + "\\refactoring\\refactored-sms-evaluation.csv");
+		manager.storeResult(result, System.getProperty("user.dir") + "\\refactoring\\refactored-sms-message.csv", true);
 	}
 
 }

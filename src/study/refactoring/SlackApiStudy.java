@@ -23,15 +23,16 @@ public class SlackApiStudy {
 		List<LimiarTecnica> listThresholdsTechiniques = CarregaSalvaArquivo
 				.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\web2019\\");
 
-		listThresholdsTechiniques.addAll(
-				CarregaSalvaArquivo.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\web2019\\slack-api"));
-		SmellRefactoredResult result = SmellRefactoredManager.getSmellRefactoredBetweenCommit(urlRepository,
-				localFolder, initialCommit, finalCommit, listThresholdsTechiniques);
-		SmellRefactoredManager.storeResult(result,
-				System.getProperty("user.dir") + "\\refactoring\\refactored-slackapi.csv", false);
-		SmellRefactoredManager.storeResult(result,
-				System.getProperty("user.dir") + "\\refactoring\\refactored-slackapi-message.csv", false);
-		SmellRefactoredManager.evaluateStoreResults(result,
+		listThresholdsTechiniques.addAll(CarregaSalvaArquivo
+				.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\web2019\\slack-api"));
+
+		SmellRefactoredManager manager = new SmellRefactoredManager(urlRepository, localFolder, initialCommit,
+				finalCommit, listThresholdsTechiniques);
+		SmellRefactoredResult result = manager.getSmellRefactoredBetweenCommit(
 				System.getProperty("user.dir") + "\\refactoring\\refactored-slackapi-evaluation.csv");
+
+		// resultado + mensgens do commit
+		manager.storeResult(result, System.getProperty("user.dir") + "\\refactoring\\refactored-slackapi-message.csv",
+				true);
 	}
 }

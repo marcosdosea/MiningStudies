@@ -23,17 +23,16 @@ public class WebBudgetStudy {
 		List<LimiarTecnica> listThresholdsTechiniques = CarregaSalvaArquivo
 				.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\web2020\\");
 
-		listThresholdsTechiniques.addAll(
-				CarregaSalvaArquivo.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\web2020\\web-budget"));
-		SmellRefactoredResult result = SmellRefactoredManager.getSmellRefactoredBetweenCommit(urlRepository,
-				localFolder, initialCommit, finalCommit, listThresholdsTechiniques);
-		SmellRefactoredManager.storeResult(result,
-				System.getProperty("user.dir") + "\\refactoring\\refactored-webbudget.csv", false);
-		
-		SmellRefactoredManager.storeResult(result,
-				System.getProperty("user.dir") + "\\refactoring\\refactored-webbudget-message.csv", true);
-				
-	
-		SmellRefactoredManager.evaluateStoreResults(result, System.getProperty("user.dir") + "\\refactoring\\refactored-webbudget-evaluation.csv");
+		listThresholdsTechiniques.addAll(CarregaSalvaArquivo
+				.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\web2020\\web-budget"));
+
+		SmellRefactoredManager manager = new SmellRefactoredManager(urlRepository, localFolder, initialCommit,
+				finalCommit, listThresholdsTechiniques);
+		SmellRefactoredResult result = manager.getSmellRefactoredBetweenCommit(
+				System.getProperty("user.dir") + "\\refactoring\\refactored-webbudget-evaluation.csv");
+
+		// resultado + mensgens do commit
+		manager.storeResult(result, System.getProperty("user.dir") + "\\refactoring\\refactored-webbudget-message.csv",
+				true);
 	}
 }

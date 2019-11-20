@@ -25,13 +25,13 @@ public class AetStudy {
 
 		listThresholdsTechiniques.addAll(
 				CarregaSalvaArquivo.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\web2020\\aet"));
-		SmellRefactoredResult result = SmellRefactoredManager.getSmellRefactoredBetweenCommit(urlRepository,
-				localFolder, initialCommit, finalCommit, listThresholdsTechiniques);
-		SmellRefactoredManager.storeResult(result,
-				System.getProperty("user.dir") + "\\refactoring\\refactored-AET.csv", false);
-		SmellRefactoredManager.storeResult(result,
-				System.getProperty("user.dir") + "\\refactoring\\refactored-AET-message.csv", true);
-		SmellRefactoredManager.evaluateStoreResults(result,
+
+		SmellRefactoredManager manager = new SmellRefactoredManager(urlRepository, localFolder, initialCommit,
+				finalCommit, listThresholdsTechiniques);
+		SmellRefactoredResult result = manager.getSmellRefactoredBetweenCommit(
 				System.getProperty("user.dir") + "\\refactoring\\refactored-AET-evaluation.csv");
+
+		// resultado + mensgens do commit
+		manager.storeResult(result, System.getProperty("user.dir") + "\\refactoring\\refactored-AET-message.csv", true);
 	}
 }

@@ -25,14 +25,14 @@ public class BigBlueButtonStudy {
 
 		listThresholdsTechiniques.addAll(CarregaSalvaArquivo
 				.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\web2020\\bigbluebutton"));
-		SmellRefactoredResult result = SmellRefactoredManager.getSmellRefactoredBetweenCommit(urlRepository,
-				localFolder, initialCommit, finalCommit, listThresholdsTechiniques);
-
-		SmellRefactoredManager.storeResult(result,
-				System.getProperty("user.dir") + "\\refactoring\\refactored-bigbluebutton.csv", false);
-		SmellRefactoredManager.storeResult(result,
-				System.getProperty("user.dir") + "\\refactoring\\refactored-bigbluebutton-message.csv", true);
-		SmellRefactoredManager.evaluateStoreResults(result,
+		
+		SmellRefactoredManager manager = new SmellRefactoredManager(urlRepository, localFolder, initialCommit,
+				finalCommit, listThresholdsTechiniques);
+		SmellRefactoredResult result = manager.getSmellRefactoredBetweenCommit(
 				System.getProperty("user.dir") + "\\refactoring\\refactored-bigbluebutton-evaluation.csv");
+
+		// resultado + mensgens do commit
+		manager.storeResult(result,
+				System.getProperty("user.dir") + "\\refactoring\\refactored-bigbluebutton-message.csv", true);
 	}
 }

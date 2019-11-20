@@ -18,7 +18,7 @@ public class ThresholdReferenceSefaz {
 		System.out.println("Iniciando a coleta de métricas do projeto referencia...");
 		ArrayList<String> projetosReferencia = gLimiares.lerProjetos("BenchmarkSefaz.txt");
 		Collection<ClassMetricResult> metricasProjetosReferencia = gLimiares
-				.getMetricsFromProjects(projetosReferencia, PASTA_RESULTADO, false).all();
+				.getMetricsFromProjects(projetosReferencia, PASTA_RESULTADO, "").all();
 
 		System.out.println("Gerando Limiares por Alves apontando para projetos Referencia...");
 		gLimiares.setTechinique(new AlvesTechnique());
