@@ -1,224 +1,34 @@
-RELATÓRIO COMPLETO SISTEMA
-Numero Refatoracoes em Metodos e Nao Metodos:,275
+RELATORIO COMPLETO SISTEMA
+Numero Refatoracoes em Metodos e Nao Metodos:,207
+Numero Refatoracoes relacionadas a operacoes em Metodos:,82
+Numero Refatoracoes relacionadas a rename em Metodos:,20
 Numero Metodos Smell Commit Inicial:,540
 Numero Metodos NOT Smell Commit Inicial:,580
 LONG METHODS
-True Negative,523.0
-False Negative = ,57.0
-False Positive (V) = ,521.0
-False Positive (X) = ,538.0
-False Positive (R) = ,538.0
-False Positive (D) = ,539.0
-True Positive  (V) = ,19.0
-True Positive (X) = ,2.0
-True Positive (R) = ,2.0
+True Negative,534.0
+False Negative = ,47.0
+False Positive (V) = ,110.0
+False Positive (X) = ,122.0
+False Positive (R) = ,122.0
+False Positive (D) = ,122.0
+True Positive  (V) = ,13.0
+True Positive (X) = ,1.0
+True Positive (R) = ,1.0
 True Positive (D) = ,1.0
-Precision (V) = ,0.035185184
-Precision (X) = ,0.0037037036
-Precision (R) = ,0.0037037036
-Precision (D) = ,0.0018518518
-Recall (V) = ,0.25
-Recall (X) = ,0.033898305
-Recall (R) = ,0.033898305
-Recall (D) = ,0.01724138
-F-measure (V) = ,0.06168831
-F-measure (X) = ,0.0066777966
-F-measure (R) = ,0.0066777966
-F-measure (D) = ,0.0033444818
-Acuracia (V) = ,0.48392856
-Acuracia (X) = ,0.46875
-Acuracia (R) = ,0.46875
-Acuracia (D) = ,0.46785715
-
-RELATÓRIO COMPLETO SISTEMA
-Numero Refatoracoes em Metodos e Nao Metodos:,275
-Numero Metodos Smell Commit Inicial:,540
-Numero Metodos NOT Smell Commit Inicial:,580
-LONG METHODS
-True Negative,523.0
-False Negative = ,57.0
-False Positive (V) = ,521.0
-False Positive (X) = ,538.0
-False Positive (R) = ,538.0
-False Positive (D) = ,539.0
-True Positive  (V) = ,19.0
-True Positive (X) = ,2.0
-True Positive (R) = ,2.0
-True Positive (D) = ,1.0
-Precision (V) = ,0.035185184
-Precision (X) = ,0.0037037036
-Precision (R) = ,0.0037037036
-Precision (D) = ,0.0018518518
-Recall (V) = ,0.25
-Recall (X) = ,0.033898305
-Recall (R) = ,0.033898305
-Recall (D) = ,0.01724138
-F-measure (V) = ,0.06168831
-F-measure (X) = ,0.0066777966
-F-measure (R) = ,0.0066777966
-F-measure (D) = ,0.0033444818
-Acuracia (V) = ,0.48392856
-Acuracia (X) = ,0.46875
-Acuracia (R) = ,0.46875
-Acuracia (D) = ,0.46785715
-
-RELATÓRIO COMPLETO SISTEMA
-Numero Refatoracoes em Metodos e Nao Metodos:,275
-Numero Metodos Smell Commit Inicial:,540
-Numero Metodos NOT Smell Commit Inicial:,580
-LONG METHODS
-True Negative,523.0
-False Negative = ,57.0
-False Positive (V) = ,521.0
-False Positive (X) = ,538.0
-False Positive (R) = ,538.0
-False Positive (D) = ,539.0
-True Positive  (V) = ,19.0
-True Positive (X) = ,2.0
-True Positive (R) = ,2.0
-True Positive (D) = ,1.0
-Precision (V) = ,0.035185184
-Precision (X) = ,0.0037037036
-Precision (R) = ,0.0037037036
-Precision (D) = ,0.0018518518
-Recall (V) = ,0.25
-Recall (X) = ,0.033898305
-Recall (R) = ,0.033898305
-Recall (D) = ,0.01724138
-F-measure (V) = ,0.06168831
-F-measure (X) = ,0.0066777966
-F-measure (R) = ,0.0066777966
-F-measure (D) = ,0.0033444818
-Acuracia (V) = ,0.48392856
-Acuracia (X) = ,0.46875
-Acuracia (R) = ,0.46875
-Acuracia (D) = ,0.46785715
-
-RELATÓRIO COMPLETO SISTEMA
-Numero Refatoracoes em Metodos e Nao Metodos:,275
-Numero Metodos Smell Commit Inicial:,540
-Numero Metodos NOT Smell Commit Inicial:,580
-LONG METHODS
-True Negative,523.0
-False Negative = ,57.0
-False Positive (V) = ,521.0
-False Positive (X) = ,538.0
-False Positive (R) = ,538.0
-False Positive (D) = ,539.0
-True Positive  (V) = ,19.0
-True Positive (X) = ,2.0
-True Positive (R) = ,2.0
-True Positive (D) = ,1.0
-Precision (V) = ,0.035185184
-Precision (X) = ,0.0037037036
-Precision (R) = ,0.0037037036
-Precision (D) = ,0.0018518518
-Recall (V) = ,0.25
-Recall (X) = ,0.033898305
-Recall (R) = ,0.033898305
-Recall (D) = ,0.01724138
-F-measure (V) = ,0.06168831
-F-measure (X) = ,0.0066777966
-F-measure (R) = ,0.0066777966
-F-measure (D) = ,0.0033444818
-Acuracia (V) = ,0.48392856
-Acuracia (X) = ,0.46875
-Acuracia (R) = ,0.46875
-Acuracia (D) = ,0.46785715
-
-RELATÓRIO COMPLETO SISTEMA
-Numero Refatoracoes em Metodos e Nao Metodos:,275
-Numero Metodos Smell Commit Inicial:,540
-Numero Metodos NOT Smell Commit Inicial:,580
-LONG METHODS
-True Negative,523.0
-False Negative = ,57.0
-False Positive (V) = ,521.0
-False Positive (X) = ,538.0
-False Positive (R) = ,538.0
-False Positive (D) = ,539.0
-True Positive  (V) = ,19.0
-True Positive (X) = ,2.0
-True Positive (R) = ,2.0
-True Positive (D) = ,1.0
-Precision (V) = ,0.035185184
-Precision (X) = ,0.0037037036
-Precision (R) = ,0.0037037036
-Precision (D) = ,0.0018518518
-Recall (V) = ,0.25
-Recall (X) = ,0.033898305
-Recall (R) = ,0.033898305
-Recall (D) = ,0.01724138
-F-measure (V) = ,0.06168831
-F-measure (X) = ,0.0066777966
-F-measure (R) = ,0.0066777966
-F-measure (D) = ,0.0033444818
-Acuracia (V) = ,0.48392856
-Acuracia (X) = ,0.46875
-Acuracia (R) = ,0.46875
-Acuracia (D) = ,0.46785715
-
-RELATÓRIO COMPLETO SISTEMA
-Numero Refatoracoes em Metodos e Nao Metodos:,275
-Numero Metodos Smell Commit Inicial:,540
-Numero Metodos NOT Smell Commit Inicial:,580
-LONG METHODS
-True Negative,523.0
-False Negative = ,57.0
-False Positive (V) = ,521.0
-False Positive (X) = ,538.0
-False Positive (R) = ,538.0
-False Positive (D) = ,539.0
-True Positive  (V) = ,19.0
-True Positive (X) = ,2.0
-True Positive (R) = ,2.0
-True Positive (D) = ,1.0
-Precision (V) = ,0.035185184
-Precision (X) = ,0.0037037036
-Precision (R) = ,0.0037037036
-Precision (D) = ,0.0018518518
-Recall (V) = ,0.25
-Recall (X) = ,0.033898305
-Recall (R) = ,0.033898305
-Recall (D) = ,0.01724138
-F-measure (V) = ,0.06168831
-F-measure (X) = ,0.0066777966
-F-measure (R) = ,0.0066777966
-F-measure (D) = ,0.0033444818
-Acuracia (V) = ,0.48392856
-Acuracia (X) = ,0.46875
-Acuracia (R) = ,0.46875
-Acuracia (D) = ,0.46785715
-
-RELATÓRIO COMPLETO SISTEMA
-Numero Refatoracoes em Metodos e Nao Metodos:,275
-Numero Metodos Smell Commit Inicial:,540
-Numero Metodos NOT Smell Commit Inicial:,580
-LONG METHODS
-True Negative,523.0
-False Negative = ,57.0
-False Positive (V) = ,521.0
-False Positive (X) = ,538.0
-False Positive (R) = ,538.0
-False Positive (D) = ,539.0
-True Positive  (V) = ,19.0
-True Positive (X) = ,2.0
-True Positive (R) = ,2.0
-True Positive (D) = ,1.0
-Precision (V) = ,0.035185184
-Precision (X) = ,0.0037037036
-Precision (R) = ,0.0037037036
-Precision (D) = ,0.0018518518
-Recall (V) = ,0.25
-Recall (X) = ,0.033898305
-Recall (R) = ,0.033898305
-Recall (D) = ,0.01724138
-F-measure (V) = ,0.06168831
-F-measure (X) = ,0.0066777966
-F-measure (R) = ,0.0066777966
-F-measure (D) = ,0.0033444818
-Acuracia (V) = ,0.48392856
-Acuracia (X) = ,0.46875
-Acuracia (R) = ,0.46875
-Acuracia (D) = ,0.46785715
+Precision (V) = ,0.10569106
+Precision (X) = ,0.008130081
+Precision (R) = ,0.008130081
+Precision (D) = ,0.008130081
+Recall (V) = ,0.21666667
+Recall (X) = ,0.020833334
+Recall (R) = ,0.020833334
+Recall (D) = ,0.020833334
+F-measure (V) = ,0.1420765
+F-measure (X) = ,0.0116959065
+F-measure (R) = ,0.0116959065
+F-measure (D) = ,0.0116959065
+Acuracia (V) = ,0.7769886
+Acuracia (X) = ,0.7599432
+Acuracia (R) = ,0.7599432
+Acuracia (D) = ,0.7599432
 
