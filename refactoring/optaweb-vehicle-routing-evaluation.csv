@@ -1,0 +1,118 @@
+RELATORIO COMPLETO SISTEMA
+Numero Refatoracoes em Metodos e Nao Metodos:,357
+Numero Refatoracoes relacionadas a operacoes em Metodos:,54
+Numero Refatoracoes relacionadas a rename em Metodos:,40
+Numero Metodos Smell Commit Inicial:,31
+Numero Metodos NOT Smell Commit Inicial:,320
+METODO LONGO
+True Negative,311.0
+False Negative = ,13.0
+False Positive (V) = ,6.0
+False Positive (X) = ,9.0
+False Positive (R) = ,9.0
+False Positive (D) = ,9.0
+True Positive  (V) = ,3.0
+True Positive (X) = ,0.0
+True Positive (R) = ,0.0
+True Positive (D) = ,0.0
+Precision (V) = ,0.33333334
+Precision (X) = ,0.0
+Precision (R) = ,0.0
+Precision (D) = ,0.0
+Recall (V) = ,0.1875
+Recall (X) = ,0.0
+Recall (R) = ,0.0
+Recall (D) = ,0.0
+F-measure (V) = ,0.23999998
+F-measure (X) = ,0.0
+F-measure (R) = ,0.0
+F-measure (D) = ,0.0
+Acuracia (V) = ,0.9429429
+Acuracia (X) = ,0.9339339
+Acuracia (R) = ,0.9339339
+Acuracia (D) = ,0.9339339
+
+MUITOS DESVIOS
+True Negative,315.0
+False Negative = ,8.0
+False Positive (V) = ,2.0
+False Positive (X) = ,2.0
+False Positive (R) = ,2.0
+False Positive (D) = ,2.0
+True Positive  (V) = ,0.0
+True Positive (X) = ,0.0
+True Positive (R) = ,0.0
+True Positive (D) = ,0.0
+Precision (V) = ,0.0
+Precision (X) = ,0.0
+Precision (R) = ,0.0
+Precision (D) = ,0.0
+Recall (V) = ,0.0
+Recall (X) = ,0.0
+Recall (R) = ,0.0
+Recall (D) = ,0.0
+F-measure (V) = ,0.0
+F-measure (X) = ,0.0
+F-measure (R) = ,0.0
+F-measure (D) = ,0.0
+Acuracia (V) = ,0.9692308
+Acuracia (X) = ,0.9692308
+Acuracia (R) = ,0.9692308
+Acuracia (D) = ,0.9692308
+
+ALTO ACOPLAMENTO EFFERENT
+True Negative,315.0
+False Negative = ,8.0
+False Positive (V) = ,11.0
+False Positive (X) = ,14.0
+False Positive (R) = ,14.0
+False Positive (D) = ,14.0
+True Positive  (V) = ,4.0
+True Positive (X) = ,1.0
+True Positive (R) = ,1.0
+True Positive (D) = ,1.0
+Precision (V) = ,0.26666668
+Precision (X) = ,0.06666667
+Precision (R) = ,0.06666667
+Precision (D) = ,0.06666667
+Recall (V) = ,0.33333334
+Recall (X) = ,0.11111111
+Recall (R) = ,0.11111111
+Recall (D) = ,0.11111111
+F-measure (V) = ,0.29629633
+F-measure (X) = ,0.083333336
+F-measure (R) = ,0.083333336
+F-measure (D) = ,0.083333336
+Acuracia (V) = ,0.943787
+Acuracia (X) = ,0.93491125
+Acuracia (R) = ,0.93491125
+Acuracia (D) = ,0.93491125
+
+MUITOS PARAMETROS
+True Negative,315.0
+False Negative = ,8.0
+False Positive (V) = ,5.0
+False Positive (X) = ,5.0
+False Positive (R) = ,5.0
+False Positive (D) = ,5.0
+True Positive  (V) = ,0.0
+True Positive (X) = ,0.0
+True Positive (R) = ,0.0
+True Positive (D) = ,0.0
+Precision (V) = ,0.0
+Precision (X) = ,0.0
+Precision (R) = ,0.0
+Precision (D) = ,0.0
+Recall (V) = ,0.0
+Recall (X) = ,0.0
+Recall (R) = ,0.0
+Recall (D) = ,0.0
+F-measure (V) = ,0.0
+F-measure (X) = ,0.0
+F-measure (R) = ,0.0
+F-measure (D) = ,0.0
+Acuracia (V) = ,0.96036583
+Acuracia (X) = ,0.96036583
+Acuracia (R) = ,0.96036583
+Acuracia (D) = ,0.96036583
+

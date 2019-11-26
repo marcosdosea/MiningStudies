@@ -7,7 +7,6 @@ import org.designroleminer.smelldetector.model.LimiarTecnica;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.smellrefactored.SmellRefactoredManager;
-import org.smellrefactored.SmellRefactoredResult;
 
 public class LibreplanStudy {
 
@@ -19,6 +18,13 @@ public class LibreplanStudy {
 		String urlRepository = "https://github.com/LibrePlan/libreplan.git";
 		String initialCommit = "0f107b60a55532a890b03afed7bcb3a81cde261b"; // 1.2.1 - 2012.01.19
 		String finalCommit = "edf8f775e7dcb7f6c10a5441a87c268ba1f36bae"; // 1.4.1 - 2015.04.14
+		String resultEvaluation = System.getProperty("user.dir") + "\\refactoring\\libreplan-evaluation.csv";
+		String resultSmellRefactored = System.getProperty("user.dir") + "\\refactoring\\libreplan-smellrefactored.csv";
+		String resultSmellRefactoredMessage = System.getProperty("user.dir")
+				+ "\\refactoring\\libreplan-smellrefactored-message.csv";
+		String resultSmellRefactoredCommit = System.getProperty("user.dir")
+				+ "\\refactoring\\libreplan-smellrefactored-commit.csv";
+		String resultRefactoring = System.getProperty("user.dir") + "\\refactoring\\libreplan-refactoring.csv";
 
 		List<LimiarTecnica> listThresholdsTechiniques = CarregaSalvaArquivo
 				.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\web2020\\");
@@ -27,14 +33,9 @@ public class LibreplanStudy {
 				.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\web2020\\libreplan"));
 
 		SmellRefactoredManager manager = new SmellRefactoredManager(urlRepository, localFolder, initialCommit,
-				finalCommit, listThresholdsTechiniques);
-		SmellRefactoredResult result = manager.getSmellRefactoredBetweenCommit(
-				System.getProperty("user.dir") + "\\refactoring\\refactored-libreplan-evaluation.csv");
-
-		// resultado + mensgens do commit
-		manager.storeResult(result, System.getProperty("user.dir") + "\\refactoring\\refactored-libreplan-message.csv",
-				true);
-
+				finalCommit, listThresholdsTechiniques, resultEvaluation, resultSmellRefactored,
+				resultSmellRefactoredMessage, resultSmellRefactoredCommit, resultRefactoring);
+		manager.getSmellRefactoredBetweenCommit();
 	}
 
 }

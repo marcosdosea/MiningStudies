@@ -7,7 +7,6 @@ import org.designroleminer.smelldetector.model.LimiarTecnica;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.smellrefactored.SmellRefactoredManager;
-import org.smellrefactored.SmellRefactoredResult;
 
 public class Heritrix3Study {
 
@@ -19,6 +18,13 @@ public class Heritrix3Study {
 		String urlRepository = "https://github.com/internetarchive/heritrix3.git";
 		String initialCommit = "484b3574d751173439fe0ee0426c051fcec98101"; // 3.2.0 - 2018.07.04
 		String finalCommit = "c7c6141ee10967c171dcc3dc193973ed0e5d85a8"; // 3.4.0 - 2019.04.18
+		String resultEvaluation = System.getProperty("user.dir") + "\\refactoring\\heritrix3-evaluation.csv";
+		String resultSmellRefactored = System.getProperty("user.dir") + "\\refactoring\\heritrix3-smellrefactored.csv";
+		String resultSmellRefactoredMessage = System.getProperty("user.dir")
+				+ "\\refactoring\\heritrix3-smellrefactored-message.csv";
+		String resultSmellRefactoredCommit = System.getProperty("user.dir")
+				+ "\\refactoring\\heritrix3-smellrefactored-commit.csv";
+		String resultRefactoring = System.getProperty("user.dir") + "\\refactoring\\heritrix3-refactoring.csv";
 
 		List<LimiarTecnica> listThresholdsTechiniques = CarregaSalvaArquivo
 				.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\web2020\\");
@@ -27,13 +33,8 @@ public class Heritrix3Study {
 				.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\web2020\\heritrix3"));
 
 		SmellRefactoredManager manager = new SmellRefactoredManager(urlRepository, localFolder, initialCommit,
-				finalCommit, listThresholdsTechiniques);
-		SmellRefactoredResult result = manager.getSmellRefactoredBetweenCommit(
-				System.getProperty("user.dir") + "\\refactoring\\refactored-heritrix3-evaluation.csv");
-
-		// resultado + mensgens do commit
-		manager.storeResult(result, System.getProperty("user.dir") + "\\refactoring\\refactored-heritrix3-message.csv",
-				true);
-
+				finalCommit, listThresholdsTechiniques, resultEvaluation, resultSmellRefactored,
+				resultSmellRefactoredMessage, resultSmellRefactoredCommit, resultRefactoring);
+		manager.getSmellRefactoredBetweenCommit();
 	}
 }

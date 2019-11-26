@@ -7,7 +7,6 @@ import org.designroleminer.smelldetector.model.LimiarTecnica;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.smellrefactored.SmellRefactoredManager;
-import org.smellrefactored.SmellRefactoredResult;
 
 public class SmsBackupStudy {
 
@@ -19,17 +18,21 @@ public class SmsBackupStudy {
 		String urlRepository = "https://github.com/jberkel/sms-backup-plus.git";
 		String initialCommit = "9c75e5f60abe2d0272fdf965a21c54771aa247c9";
 		String finalCommit = "efdc59004cd254692aa749fab3b1c35aa6680a9d";
+		String resultEvaluation = System.getProperty("user.dir") + "\\refactoring\\sms-evaluation.csv";
+		String resultSmellRefactored = System.getProperty("user.dir") + "\\refactoring\\sms-smellrefactored.csv";
+		String resultSmellRefactoredMessage = System.getProperty("user.dir")
+				+ "\\refactoring\\sms-smellrefactored-message.csv";
+		String resultSmellRefactoredCommit = System.getProperty("user.dir")
+				+ "\\refactoring\\sms-smellrefactored-commit.csv";
+		String resultRefactoring = System.getProperty("user.dir") + "\\refactoring\\sms-refactoring.csv";
 
 		List<LimiarTecnica> listThresholdsTechiniques = CarregaSalvaArquivo
 				.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\simple\\");
 
 		SmellRefactoredManager manager = new SmellRefactoredManager(urlRepository, localFolder, initialCommit,
-				finalCommit, listThresholdsTechiniques);
-		SmellRefactoredResult result = manager.getSmellRefactoredBetweenCommit(
-				System.getProperty("user.dir") + "\\refactoring\\refactored-sms-evaluation.csv");
-
-		// resultado + mensgens do commit
-		manager.storeResult(result, System.getProperty("user.dir") + "\\refactoring\\refactored-sms-message.csv", true);
+				finalCommit, listThresholdsTechiniques, resultEvaluation, resultSmellRefactored,
+				resultSmellRefactoredMessage, resultSmellRefactoredCommit, resultRefactoring);
+		manager.getSmellRefactoredBetweenCommit();
 	}
 
 }
