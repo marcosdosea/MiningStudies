@@ -4,14 +4,13 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 import org.designroleminer.ClassMetricResult;
-import org.designroleminer.threshold.DesignRoleTechnique;
 import org.designroleminer.threshold.TechniqueExecutor;
 import org.systemsimilarity.SimilarityManager;
 
 public class VEM2019Study {
 
 	private static SimilarityManager gSimilarity = new SimilarityManager();
-	private static TechniqueExecutor executor = new TechniqueExecutor(new DesignRoleTechnique());
+	private static TechniqueExecutor executor = new TechniqueExecutor();
 
 	public static void main(String[] args) {
 		final String PASTA_RESULTADO = "similarity\\";

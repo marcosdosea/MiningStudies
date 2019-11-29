@@ -3,7 +3,6 @@ package study.similarity;
 import java.util.ArrayList;
 
 import org.designroleminer.MetricReport;
-import org.designroleminer.threshold.DesignRoleTechnique;
 import org.designroleminer.threshold.TechniqueExecutor;
 import org.systemsimilarity.SimilarityManager;
 
@@ -12,7 +11,7 @@ public class AndroidStudy {
 	public static void main(String[] args) {
 		final String PASTA_RESULTADO = "similarity\\";
 		SimilarityManager gSimilarity = new SimilarityManager();
-		TechniqueExecutor executor = new TechniqueExecutor(new DesignRoleTechnique());
+		TechniqueExecutor executor = new TechniqueExecutor();
 
 		ArrayList<String> listAndroid = new ArrayList<String>();
 		listAndroid.add("D:\\Projetos\\_Android\\bitcoin-wallet");

@@ -18,13 +18,7 @@ public class AetStudy {
 		String urlRepository = "https://github.com/Cognifide/aet.git";
 		String initialCommit = "b787aa4d4342673e4195c7567d90895f15720cd3"; // 1.3.2 - 2016.06.09
 		String finalCommit = "401b73220c482d44240ed9179f82c2dd88f83552"; // 3.3.0 - 2019.08.19
-		String resultEvaluation = System.getProperty("user.dir") + "\\refactoring\\aet-evaluation.csv";
-		String resultSmellRefactored = System.getProperty("user.dir") + "\\refactoring\\aet-smellrefactored.csv";
-		String resultSmellRefactoredMessage = System.getProperty("user.dir")
-				+ "\\refactoring\\aet-smellrefactored-message.csv";
-		String resultSmellRefactoredCommit = System.getProperty("user.dir")
-				+ "\\refactoring\\aet-smellrefactored-commit.csv";
-		String resultRefactoring = System.getProperty("user.dir") + "\\refactoring\\aet-refactoring.csv";
+		String resultFile= System.getProperty("user.dir") + "\\refactoring\\aet";
 
 		List<LimiarTecnica> listThresholdsTechiniques = CarregaSalvaArquivo
 				.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\web2020\\");
@@ -33,8 +27,7 @@ public class AetStudy {
 				CarregaSalvaArquivo.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\web2020\\aet"));
 
 		SmellRefactoredManager manager = new SmellRefactoredManager(urlRepository, localFolder, initialCommit,
-				finalCommit, listThresholdsTechiniques, resultEvaluation, resultSmellRefactored,
-				resultSmellRefactoredMessage, resultSmellRefactoredCommit, resultRefactoring);
+				finalCommit, listThresholdsTechiniques, resultFile);
 		manager.getSmellRefactoredBetweenCommit();
 	}
 }

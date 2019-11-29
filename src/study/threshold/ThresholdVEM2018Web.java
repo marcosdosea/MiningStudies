@@ -8,7 +8,6 @@ import java.util.List;
 import org.designroleminer.ClassMetricResult;
 import org.designroleminer.threshold.AlvesTechnique;
 import org.designroleminer.threshold.AnicheTechnique;
-import org.designroleminer.threshold.DesignRoleTechnique;
 import org.designroleminer.threshold.DoseaDesignRoleTechnique;
 import org.designroleminer.threshold.DoseaReferenceTechnique;
 import org.designroleminer.threshold.TechniqueExecutor;
@@ -26,7 +25,7 @@ public class ThresholdVEM2018Web {
 		final String PASTA_PROJECTS = "thresholds\\WEB2018\\PROJECTS\\";
 		final String PASTA_THRESHOLDS = "thresholds\\WEB2018\\";
 
-		TechniqueExecutor gLimiares = new TechniqueExecutor(new DesignRoleTechnique());
+		TechniqueExecutor gLimiares = new TechniqueExecutor();
 
 		System.out.println("Iniciando a coleta de métricas do projeto referencia...");
 		ArrayList<String> projetosReferencia = gLimiares.lerProjetos("Benchmark2018.txt");
@@ -34,16 +33,13 @@ public class ThresholdVEM2018Web {
 				.getMetricsFromProjects(projetosReferencia, PASTA_PROJECTS, "").all();
 
 		System.out.println("Gerando Limiares por Alves usando benchmark...");
-		gLimiares.setTechinique(new AlvesTechnique());
-		gLimiares.execute(metricasProjetosBenchmark, PASTA_THRESHOLDS + "A.csv");
+		gLimiares.execute(metricasProjetosBenchmark, PASTA_THRESHOLDS + "A.csv", new AlvesTechnique());
 
 		System.out.println("Gerando Limiares por Vale usando benchmark...");
-		gLimiares.setTechinique(new ValeTechnique());
-		gLimiares.execute(metricasProjetosBenchmark, PASTA_THRESHOLDS + "V.csv");
+		gLimiares.execute(metricasProjetosBenchmark, PASTA_THRESHOLDS + "V.csv", new ValeTechnique());
 
 		System.out.println("Gerando Limiares por Aniche...");
-		gLimiares.setTechinique(new AnicheTechnique());
-		gLimiares.execute(metricasProjetosBenchmark, PASTA_THRESHOLDS + "X.csv");
+		gLimiares.execute(metricasProjetosBenchmark, PASTA_THRESHOLDS + "X.csv", new AnicheTechnique());
 
 		List<SimilarityResult> listSimilarity = gSimilarity.calculate(projetosReferencia, PASTA_PROJECTS);
 
@@ -71,12 +67,12 @@ public class ThresholdVEM2018Web {
 			}
 
 			System.out.println("Gerando Limiares por Dosea Referencia e Design Role...");
-			gLimiares.setTechinique(new DoseaDesignRoleTechnique());
-			gLimiares.execute(metricasProjetosBenchmark, pastaThresholdsProjeto + "D.csv");
+			gLimiares.execute(metricasProjetosBenchmark, pastaThresholdsProjeto + "D.csv",
+					new DoseaDesignRoleTechnique());
 
 			System.out.println("Gerando Limiares por Dosea Referencia...");
-			gLimiares.setTechinique(new DoseaReferenceTechnique());
-			gLimiares.execute(metricasProjetosBenchmark, pastaThresholdsProjeto + "R.csv");
+			gLimiares.execute(metricasProjetosBenchmark, pastaThresholdsProjeto + "R.csv",
+					new DoseaReferenceTechnique());
 
 			System.out.println("Limiares gravados na pasta " + pastaThresholdsProjeto + " com sucesso!");
 		}

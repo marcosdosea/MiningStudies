@@ -1,0 +1,311 @@
+Tecnicas,Design Role,Classe,Método,LOC,CC,Efferent,NOP,Problema de Design
+ V ,SERVICE,com.cognifide.aet.worker.listeners.ComparatorMessageListenerImpl,onMessage,32,6,16,1,Metodo Longo
+ V ,[JSONDESERIALIZER],com.cognifide.aet.job.common.comparators.w3chtml5.parser.W3cHtml5IssueDeserializer,deserialize,17,1,10,3,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,com.cognifide.aet.cleaner.processors.filters.SuiteRemoveConditionTest,evaluate_whenOnlyOneSuite_expectFalseNoMatterConditions,6,1,7,5,Muitos Parametros
+" A, V, X ",SERVICE,com.cognifide.aet.worker.impl.CollectorDispatcherImpl,getConfiguredCollector,10,2,8,4,Muitos Parametros
+ V ,TEST,com.cognifide.aet.job.common.comparators.layout.utils.ImageComparisonTest,testCompare_different,26,1,6,0,Metodo Longo
+ V ,UNDEFINED,com.cognifide.aet.worker.helpers.JavaScriptError,equals,40,14,4,1,Metodo Longo
+ V ,SERVICE,com.cognifide.aet.cleaner.CleanerScheduler,registerCleaningJob,10,1,11,0,Alto Acoplamento Efferent
+ V ,SERVICE,com.cognifide.aet.job.common.comparators.permormance.clientside.ClientSidePerformanceComparatorFactory,createInstance,5,1,5,3,Muitos Parametros
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,diff_prettyHtml,18,5,4,1,Muitos Desvios
+ V ,SERVICE,com.cognifide.aet.worker.drivers.WebDriverProvider,createWebDriverWithProxy,12,3,9,3,Muitos Parametros
+ V ,[COLLECTORJOB],com.cognifide.aet.job.common.modifiers.waitforpageloaded.WaitForPageLoadedModifier,collect,28,4,9,0,Alto Acoplamento Efferent
+ V ,HTTPSERVLET,com.cognifide.aet.rest.BasicDataServlet,process,0,1,3,3,Muitos Parametros
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffParser,addFullSource,25,5,8,3,Muitos Desvios
+" A, D, V, X ",TEST,com.cognifide.aet.job.common.comparators.statuscodes.StatusCodesFilterTest,testFilter_boundsWithfilterCodes,5,1,4,4,Muitos Parametros
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffParser,processDelta,35,6,10,1,Muitos Desvios
+ V ,UNDEFINED,com.cognifide.aet.xmlparser.xml.utils.ValidationUtils,validateCaseSensitiveNameAttribute,4,1,1,3,Muitos Parametros
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,diff_lineMode,47,10,8,3,Muitos Parametros
+" A, R, V, X ",[COMPARATORJOB],com.cognifide.aet.job.common.comparators.accessibility.AccessibilityComparator,compare,24,4,16,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,toString,43,10,8,0,Metodo Longo
+ V ,SERVICE,com.cognifide.aet.worker.drivers.WebDriverProvider,createWebDriverWithProxy,12,3,9,3,Alto Acoplamento Efferent
+ V ,TEST,com.cognifide.aet.runner.distribution.dispatch.CollectorJobSchedulerTest,messageReceived_expectDecreasedReceivedMessagesCounter,23,1,10,0,Metodo Longo
+" D, V ",[COLLECTORJOB],com.cognifide.aet.job.common.collectors.statuscodes.StatusCodesCollector,collect,20,4,11,0,Alto Acoplamento Efferent
+ V ,[JSONDESERIALIZER],com.cognifide.aet.job.common.comparators.w3chtml5.parser.W3cHtml5IssueDeserializer,deserialize,17,1,10,3,Alto Acoplamento Efferent
+ V ,UNDEFINED,com.cognifide.aet.common.SuiteFactory,stepFromCollectorStep,13,4,6,3,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,com.cognifide.aet.cleaner.processors.filters.SuiteRemoveConditionTest,evaluate_when8SuitesKeepNewerThanAndAtLeastXVersions_expectFalse,6,1,7,5,Muitos Parametros
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,diff_halfMatch,31,12,2,2,Metodo Longo
+ V ,UNDEFINED,com.cognifide.aet.job.common.utils.JsRuntimeWrapper,init,19,3,9,0,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,diff_cleanupEfficiency,73,27,7,1,Muitos Desvios
+ V ,UNDEFINED,com.cognifide.aet.runner.distribution.SuiteExecutor,executeSuite,16,3,10,0,Alto Acoplamento Efferent
+ V ,SERVICE,com.cognifide.aet.worker.impl.CollectorDispatcherImpl,run,27,3,13,3,Muitos Parametros
+ V ,SERVICE,com.cognifide.aet.rest.ConfigsServlet,doGet,30,5,14,2,Muitos Desvios
+ V ,VIEW,com.cognifide.aet.runner.distribution.RunnerMessageListener,onMessage,23,5,6,1,Metodo Longo
+ V ,SERVICE,com.cognifide.aet.vs.artifacts.ArtifactsDAOMongoDBImpl,getJsonFormatArtifact,3,1,5,3,Muitos Parametros
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,patch_addPadding,44,9,8,1,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,patch_apply,75,17,10,2,Muitos Desvios
+ V ,SERVICE,com.cognifide.aet.rest.MetadataServlet,doPost,33,6,7,2,Metodo Longo
+ V ,[PROXYSERVERWRAPPER],com.cognifide.aet.proxy.RestProxyServer,addHeader,28,4,15,2,Metodo Longo
+" A, R, V, X ",SERVICE,com.cognifide.aet.rest.ConfigsServlet,doGet,30,5,14,2,Alto Acoplamento Efferent
+ V ,[JSONSERIALIZER],com.cognifide.aet.vs.metadata.CollectionSerializer,serialize,11,4,6,3,Muitos Parametros
+ V ,[COMPARATORJOB],com.cognifide.aet.job.common.comparators.cookie.CookieComparator,compare,23,5,7,0,Metodo Longo
+ V ,UNDEFINED,com.cognifide.aet.xmlparser.xml.models.ModelConverterUtils,extendUrlsList,29,6,13,1,Metodo Longo
+ V ,UNDEFINED,com.cognifide.aet.rest.helpers.SuitesListProvider,listSuites,35,5,14,0,Metodo Longo
+" A, V, X ",SERVICE,com.cognifide.aet.cleaner.processors.FetchAllProjectSuitesProcessor,apply,3,1,12,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,com.cognifide.aet.validation.impl.ValidationUtils,validationResultToString,22,5,5,1,Metodo Longo
+ V ,[COLLECTORJOB],com.cognifide.aet.job.common.modifiers.hide.HideModifier,hideElement,26,5,10,2,Metodo Longo
+ V ,SERVICE,com.cognifide.aet.job.common.modifiers.login.LoginModifierFactory,createInstance,5,1,6,3,Muitos Parametros
+ V ,UNDEFINED,com.cognifide.aet.common.TestSuiteRunner,runTestSuite,41,6,21,1,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,patch_splitMax,89,21,10,1,Metodo Longo
+" V, X ",SERVICE,com.cognifide.aet.worker.listeners.CollectorMessageListenerImpl,onMessage,38,8,14,1,Muitos Desvios
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,diff_halfMatchI,24,4,3,3,Muitos Parametros
+ V ,SERVICE,com.cognifide.aet.worker.impl.ComparatorDispatcherImpl,run,21,2,10,2,Alto Acoplamento Efferent
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.permormance.clientside.parser.ClientSidePerformanceParser,parse,13,2,9,1,Alto Acoplamento Efferent
+ V ,SERVICE,com.cognifide.aet.rest.XUnitServlet,process,14,2,8,3,Muitos Parametros
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffParser,processDelta,35,6,10,1,Alto Acoplamento Efferent
+" A, V, X ",UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,toString,43,10,8,0,Muitos Desvios
+ V ,UNDEFINED,com.cognifide.aet.runner.distribution.SuiteExecutor,checkStatusUntilFinishedOrTimedOut,17,4,9,0,Alto Acoplamento Efferent
+ V ,SERVICE,com.cognifide.aet.cleaner.CleanerScheduler,activate,28,4,11,1,Alto Acoplamento Efferent
+" A, R, V, X ",SERVICE,com.cognifide.aet.worker.impl.CollectorDispatcherImpl,run,27,3,13,3,Alto Acoplamento Efferent
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,diff_main,30,7,7,4,Metodo Longo
+ V ,TEST,com.cognifide.aet.job.common.datafilters.removelines.RemoveLinesDataModifierTest,testModify,6,1,4,3,Muitos Parametros
+ V ,SERVICE,com.cognifide.aet.vs.metadata.MetadataDAOMongoDBImpl,getProjects,15,3,11,1,Alto Acoplamento Efferent
+ V ,SERVICE,com.cognifide.aet.job.common.collectors.screen.ScreenCollectorFactory,createInstance,3,1,5,3,Muitos Parametros
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,diff_cleanupSemanticScore,31,14,6,2,Metodo Longo
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,equals,24,8,4,1,Muitos Desvios
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffParser,addFullSource,25,5,8,3,Muitos Parametros
+ V ,[COMPARATORJOB],com.cognifide.aet.job.common.comparators.statuscodes.StatusCodesComparator,compare,31,6,20,0,Muitos Desvios
+ V ,SERVICE,com.cognifide.aet.job.common.collectors.statuscodes.StatusCodesCollectorFactory,createInstance,5,1,5,3,Muitos Parametros
+ V ,SERVICE,com.cognifide.aet.job.common.modifiers.click.ClickModiferFactory,createInstance,5,1,6,3,Muitos Parametros
+ V ,ABSTRACTDATAMODIFIERJOB,com.cognifide.aet.job.common.datafilters.statuscodesfilter.StatusCodesFilter,modifyData,11,6,2,1,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,com.cognifide.aet.cleaner.processors.filters.SuiteRemoveConditionTest,evaluate_whenDuplicatedVersion_expectKeepNewestVersion,6,1,7,5,Muitos Parametros
+ V ,[COLLECTORJOB],com.cognifide.aet.job.common.collectors.source.SourceCollector,collect,21,3,9,0,Alto Acoplamento Efferent
+ V ,TEST,com.cognifide.aet.runner.distribution.dispatch.CollectorJobSchedulerTest,mockMessagesQueue,12,1,8,3,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,com.cognifide.aet.job.common.comparators.layout.utils.ImageComparison,fastCompareMatchingArea,20,4,4,5,Muitos Parametros
+" A, R, D, V, X ",[COMPARATORJOB],com.cognifide.aet.job.common.comparators.statuscodes.StatusCodesComparator,compare,31,6,20,0,Alto Acoplamento Efferent
+ V ,VIEW,com.cognifide.aet.runner.distribution.RunnerMessageListener,processTestSuite,15,3,9,2,Alto Acoplamento Efferent
+" A, V, X ",SERVICE,com.cognifide.aet.worker.listeners.CollectorMessageListenerImpl,runUrls,22,4,12,4,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,diff_bisectSplit,10,1,4,5,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,patch_fromText,83,16,17,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,diff_halfMatchI,24,4,3,3,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,diff_cleanupMerge,119,30,6,1,Metodo Longo
+ V ,TEST,com.cognifide.aet.job.common.datafilters.w3chtml5filter.W3cHtml5IssuesFilterTest,getParams,13,4,4,3,Muitos Parametros
+" A, R, V, X ",SERVICE,com.cognifide.aet.worker.listeners.CollectorMessageListenerImpl,onMessage,38,8,14,1,Alto Acoplamento Efferent
+ V ,OBSERVABLE,com.cognifide.aet.runner.distribution.dispatch.CollectionResultsRouter,dispatch,6,1,4,3,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,diff_cleanupSemantic,103,27,8,1,Metodo Longo
+ V ,SERVICE,com.cognifide.aet.job.common.comparators.source.SourceComparatorFactory,createInstance,5,1,6,3,Muitos Parametros
+ V ,[JSONSERIALIZER],com.cognifide.aet.vs.metadata.TimestampSerializer,serialize,3,2,5,3,Muitos Parametros
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,match_bitap,69,15,6,3,Muitos Parametros
+ V ,[JSONDESERIALIZER],com.cognifide.aet.job.common.collectors.accessibility.AccessibilityIssueDeserializer,deserialize,14,2,9,3,Muitos Parametros
+ V ,SERVICE,com.cognifide.aet.rest.MetadataServlet,process,39,7,10,3,Muitos Desvios
+ V ,BASICPHASECONVERTER,com.cognifide.aet.xmlparser.xml.CompareConverter,read,19,3,10,1,Alto Acoplamento Efferent
+ V ,ENTITY,com.cognifide.aet.communication.api.job.ComparatorResultData,newBuilder,3,1,3,3,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,diff_cleanupSemanticScore,31,14,6,2,Muitos Desvios
+" A, V, X ",UNDEFINED,com.cognifide.aet.xmlparser.xml.utils.ValidationUtils,validateNameAttribute,13,3,3,4,Muitos Parametros
+ V ,[JOB],com.cognifide.aet.cleaner.CleanerJob,execute,31,4,13,1,Metodo Longo
+ V ,SERVICE,com.cognifide.aet.vs.artifacts.ArtifactsDAOMongoDBImpl,saveArtifact,13,3,7,3,Muitos Parametros
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffParser,buildDelta,24,5,8,3,Metodo Longo
+ V ,TEST,com.cognifide.aet.job.common.comparators.statuscodes.StatusCodesFilterTest,getTested,3,1,3,3,Muitos Parametros
+ V ,[VALIDATOR],com.cognifide.aet.cleaner.validation.CleanerSchedulerValidator,validateRestrictions,8,5,1,1,Muitos Desvios
+ V ,UNDEFINED,com.cognifide.aet.xmlparser.xml.models.TestSuite,adaptToTestSuiteRun,27,6,8,0,Muitos Desvios
+ V ,[COMPARATORJOB],com.cognifide.aet.job.common.comparators.cookie.CookieComparator,testCookie,12,6,7,1,Muitos Desvios
+" A, V, X ",UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,diff_lineMode,47,10,8,3,Muitos Desvios
+ V ,[JSONDESERIALIZER],com.cognifide.aet.job.common.collectors.accessibility.AccessibilityIssueDeserializer,deserialize,14,2,9,3,Alto Acoplamento Efferent
+" A, V, X ",SERVICE,com.cognifide.aet.worker.listeners.CollectorMessageListenerImpl,runUrls,22,4,12,4,Alto Acoplamento Efferent
+ V ,SERVICE,com.cognifide.aet.proxy.RestProxyManager,getBmpcProxy,22,5,9,0,Metodo Longo
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,diff_linesToCharsMunge,23,4,5,3,Muitos Parametros
+ V ,ABSTRACTDATAMODIFIERJOB,com.cognifide.aet.job.common.datafilters.statuscodesfilter.StatusCodesFilter,validateParameters,13,5,4,2,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,com.cognifide.aet.worker.helpers.JavaScriptError,equals,40,14,4,1,Muitos Desvios
+ V ,UNDEFINED,com.cognifide.aet.runner.distribution.TestRunProcessor,process,7,1,10,3,Muitos Parametros
+ V ,SERVICE,com.cognifide.aet.job.common.modifiers.resolution.ResolutionModifierFactory,createInstance,5,1,5,3,Muitos Parametros
+ V ,SERVICE,com.cognifide.aet.rest.ArtifactServlet,process,17,2,8,3,Muitos Parametros
+ V ,[JSONSERIALIZER],com.cognifide.aet.vs.metadata.MapSerializer,serialize,12,5,8,3,Muitos Parametros
+" D, V ",[COLLECTORJOB],com.cognifide.aet.job.common.modifiers.click.ClickModifier,setParameters,22,7,7,1,Muitos Desvios
+" A, R, V, X ",[COMPARATORJOB],com.cognifide.aet.job.common.comparators.layout.LayoutComparator,saveArtifacts,27,3,14,1,Alto Acoplamento Efferent
+" A, V, X ",UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffParser,prepareNoChangeResultDelta,9,1,4,4,Muitos Parametros
+ V ,SERVICE,com.cognifide.aet.vs.mongodb.MongoDBClient,getAetsDBNames,9,5,4,0,Muitos Desvios
+ V ,SERVICE,com.cognifide.aet.vs.metadata.MetadataDAOMongoDBImpl,getSuite,11,2,10,2,Alto Acoplamento Efferent
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,patch_addPadding,44,9,8,1,Metodo Longo
+ V ,SERVICE,com.cognifide.aet.job.common.collectors.performance.clientside.ClientSidePerformanceCollectorFactory,createInstance,5,1,5,3,Muitos Parametros
+ V ,[COMPARATORJOB],com.cognifide.aet.job.common.comparators.cookie.CookieComparator,compare,23,5,7,0,Muitos Desvios
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,patch_apply,75,17,10,2,Alto Acoplamento Efferent
+ V ,TEST,com.cognifide.aet.job.common.modifiers.cookie.CookieModifierValidatorTest,getTested,3,1,4,3,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,patch_apply,75,17,10,2,Metodo Longo
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,diff_levenshtein,22,5,4,1,Metodo Longo
+ V ,SERVICE,com.cognifide.aet.rest.MetadataServlet,doPost,33,6,7,2,Muitos Desvios
+" A, R, D, V, X ",[PROXYSERVERWRAPPER],com.cognifide.aet.proxy.RestProxyServer,addHeader,28,4,15,2,Alto Acoplamento Efferent
+ V ,[COLLECTORJOB],com.cognifide.aet.job.common.modifiers.click.ClickModifier,collect,26,4,6,0,Metodo Longo
+" D, V ",[COLLECTORJOB],com.cognifide.aet.job.common.modifiers.login.LoginModifier,collect,30,6,10,0,Alto Acoplamento Efferent
+" A, V ",UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,diff_fromDelta,58,13,12,2,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,diff_cleanupEfficiency,73,27,7,1,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,com.cognifide.aet.cleaner.processors.filters.SuiteRemoveConditionTest,evaluate_whenDuplicatedVersion_expectRemoveOnlyOldVersions,6,1,7,5,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,match_bitap,69,15,6,3,Metodo Longo
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,equals,24,8,4,1,Metodo Longo
+ V ,SERVICE,com.cognifide.aet.cleaner.processors.StartMetadataCleanupProcessor,process,12,1,9,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,match_main,18,7,4,3,Muitos Parametros
+ V ,SERVICE,com.cognifide.aet.vs.metadata.MetadataDAOMongoDBImpl,updateSuite,14,2,9,1,Alto Acoplamento Efferent
+ V ,SERVICE,com.cognifide.aet.job.common.modifiers.cookie.CookieModifierFactory,createInstance,5,1,6,3,Muitos Parametros
+ V ,SERVICE,com.cognifide.aet.job.common.modifiers.hide.HideModifierFactory,createInstance,5,1,5,3,Muitos Parametros
+ V ,OBSERVABLE,com.cognifide.aet.runner.distribution.dispatch.CollectionResultsRouter,createAndSendComparatorJobData,5,1,6,3,Muitos Parametros
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffParser,buildDelta,24,5,8,3,Muitos Parametros
+ V ,SERVICE,com.cognifide.aet.proxy.RestProxyManager,getBmpcProxy,22,5,9,0,Alto Acoplamento Efferent
+ V ,[DATAFILTERJOB],com.cognifide.aet.job.common.datafilters.removelines.RemoveLinesDataModifier,modify,15,4,11,2,Alto Acoplamento Efferent
+ V ,SERVICE,com.cognifide.aet.job.common.collectors.open.OpenPageFactory,createInstance,3,1,5,3,Muitos Parametros
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,patch_addContext,24,5,5,2,Metodo Longo
+ V ,UNDEFINED,com.cognifide.aet.common.TestSuiteRunner,runTestSuite,41,6,21,1,Metodo Longo
+ V ,UNDEFINED,com.cognifide.aet.xmlparser.xml.utils.EscapeUtils,escapeUrls,24,5,5,1,Muitos Desvios
+ V ,ABSTRACTDATAMODIFIERJOB,com.cognifide.aet.job.common.datafilters.accessibilityfilter.AccessibilityFilter,validateParameters,5,5,3,4,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,patch_fromText,83,16,17,1,Metodo Longo
+" A, R, V, X ",SERVICE,com.cognifide.aet.worker.listeners.ComparatorMessageListenerImpl,onMessage,32,6,16,1,Alto Acoplamento Efferent
+ V ,PERSISTENCE,com.cognifide.aet.job.common.ArtifactDAOMock,getJsonFormatArtifact,3,1,5,3,Muitos Parametros
+" A, V, X ",UNDEFINED,com.cognifide.aet.common.ProcessorFactory,produce,19,6,10,4,Muitos Parametros
+" V, X ",SERVICE,com.cognifide.aet.worker.listeners.CollectorMessageListenerImpl,onMessage,38,8,14,1,Metodo Longo
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffParser,processDelta,35,6,10,1,Metodo Longo
+ V ,ASYNCTASK,com.cognifide.aet.runner.distribution.dispatch.CollectorJobScheduler,sendMessage,21,4,10,1,Alto Acoplamento Efferent
+ V ,[COMPARATORJOB],com.cognifide.aet.job.common.comparators.accessibility.AccessibilityComparator,compare,24,4,16,0,Metodo Longo
+ V ,UNDEFINED,com.cognifide.aet.common.ProcessorFactory,produce,19,6,10,4,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,patch_splitMax,89,21,10,1,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,diff_cleanupMerge,119,30,6,1,Muitos Desvios
+" A, V, X ",UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,diff_main,30,7,7,4,Muitos Parametros
+" A, R, V, X ",[COMPARATORJOB],com.cognifide.aet.job.common.comparators.source.SourceComparator,compare,34,5,14,0,Alto Acoplamento Efferent
+ V ,[DATAFILTERJOB],com.cognifide.aet.job.common.datafilters.removelines.RemoveLinesDataModifier,extractIndexes,15,4,10,1,Alto Acoplamento Efferent
+ V ,W3CHTML5COMPARATORJOB,com.cognifide.aet.job.common.comparators.w3chtml5.W3cHtml5Comparator,compare,18,2,11,0,Alto Acoplamento Efferent
+ V ,SERVICE,com.cognifide.aet.worker.drivers.FirefoxWebDriverFactory,createWebDriver,18,2,9,1,Alto Acoplamento Efferent
+ V ,SERVICE,com.cognifide.aet.job.common.comparators.cookie.CookieComparatorFactory,createInstance,5,1,5,3,Muitos Parametros
+" A, V, X ",UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,diff_compute,44,12,8,4,Muitos Parametros
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,diff_commonOverlap,31,10,3,2,Metodo Longo
+ V ,[COMPARATORJOB],com.cognifide.aet.job.common.comparators.cookie.CookieComparator,compareCookies,15,3,11,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,diff_linesToCharsMunge,23,4,5,3,Metodo Longo
+ V ,[HTTPREQUESTBUILDER],com.cognifide.aet.worker.drivers.HttpRequestBuilderImpl,createRequest,24,4,0,2,Metodo Longo
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.layout.utils.ImageComparison,convertImageTo2DArray,23,3,4,1,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,com.cognifide.aet.cleaner.processors.filters.SuiteRemoveConditionTest,evaluate_when8SuitesKeepNewerThan_expectFalse,6,1,7,5,Muitos Parametros
+ V ,ABSTRACTDATAMODIFIERJOB,com.cognifide.aet.job.common.datafilters.w3chtmlfilter.W3cHtml5IssuesFilter,modifyData,22,6,10,1,Metodo Longo
+ V ,[COLLECTORJOB],com.cognifide.aet.job.common.modifiers.hide.HideModifier,hideElement,26,5,10,2,Muitos Desvios
+ V ,SERVICE,com.cognifide.aet.vs.metadata.MetadataDAOMongoDBImpl,getLatestRun,11,2,10,2,Alto Acoplamento Efferent
+ V ,TEST,com.cognifide.aet.job.common.comparators.layout.utils.ImageComparisonTest,testCompare_identical,26,1,6,0,Metodo Longo
+ V ,SERVICE,com.cognifide.aet.job.common.comparators.w3chtml5.W3cHtml5ComparatorFactory,createInstance,5,1,6,3,Muitos Parametros
+ V ,TEST,com.cognifide.aet.job.common.datafilters.w3chtml5filter.W3cHtml5IssuesFilterTest,prepareComparatorResult,14,5,8,2,Muitos Desvios
+ V ,UNDEFINED,com.cognifide.aet.xmlparser.xml.models.TestSuite,adaptToTestSuiteRun,27,6,8,0,Metodo Longo
+ V ,[HTTPREQUESTBUILDER],com.cognifide.aet.worker.drivers.HttpRequestBuilderImpl,executeRequest,9,2,9,0,Alto Acoplamento Efferent
+ V ,OBSERVABLE,com.cognifide.aet.runner.distribution.dispatch.CollectionResultsRouter,onMessage,29,5,9,1,Muitos Desvios
+ V ,[COMPARATORJOB],com.cognifide.aet.job.common.comparators.accessibility.AccessibilityComparator,getStatus,13,5,3,1,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,diff_fromDelta,58,13,12,2,Muitos Desvios
+" A, V, X ",UNDEFINED,com.cognifide.aet.xunit.MetadataToXUnitConverter,addFailures,16,3,8,4,Muitos Parametros
+ V ,SERVICE,com.cognifide.aet.vs.mongodb.MongoDBClient,getCompanies,16,5,5,0,Muitos Desvios
+ V ,SERVICE,com.cognifide.aet.cleaner.CleanerScheduler,activate,28,4,11,1,Metodo Longo
+ V ,SERVICE,com.cognifide.aet.job.common.collectors.cookie.CookieCollectorFactory,createInstance,3,1,5,3,Muitos Parametros
+" D, V ",[COLLECTORJOB],com.cognifide.aet.job.common.modifiers.login.LoginModifier,collect,30,6,10,0,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,diff_cleanupSemantic,103,27,8,1,Muitos Desvios
+ V ,[COMPARATORJOB],com.cognifide.aet.job.common.comparators.w3chtml5.W3cHtml5ComparatorJob,getComparatorStepResult,21,5,6,1,Muitos Desvios
+ V ,UNDEFINED,com.cognifide.aet.xmlparser.xml.utils.EscapeUtils,escapeUrls,24,5,5,1,Metodo Longo
+ V ,SERVICE,com.cognifide.aet.worker.impl.CollectorDispatcherImpl,run,27,3,13,3,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,com.cognifide.aet.cleaner.processors.filters.SuiteRemoveConditionTest,evaluate_when8SuitesRemoveOlderThanButAlwaysKeepLatestVersion_expectTrue,6,1,7,5,Muitos Parametros
+ V ,SERVICE,com.cognifide.aet.proxy.RestProxyManager,getBmpcProxy,22,5,9,0,Muitos Desvios
+ V ,[JSONSERIALIZER],com.cognifide.aet.vs.metadata.MapSerializer,serialize,12,5,8,3,Muitos Desvios
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,patch_splitMax,89,21,10,1,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,com.cognifide.aet.cleaner.processors.filters.SuiteRemoveConditionTest,evaluate_when8SuitesVersionsKeepLastVersions_expectFalse,6,1,7,5,Muitos Parametros
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,patch_addContext,24,5,5,2,Muitos Desvios
+ V ,[COLLECTORJOB],com.cognifide.aet.job.common.modifiers.click.ClickModifier,setParameters,22,7,7,1,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,com.cognifide.aet.rest.helpers.SuitesListProvider,listSuites,35,5,14,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,diff_levenshtein,22,5,4,1,Muitos Desvios
+" A, V, X ",UNDEFINED,com.cognifide.aet.job.common.utils.JsRuntimeWrapper,call,3,1,0,4,Muitos Parametros
+ V ,TEST,com.cognifide.aet.job.common.comparators.statuscodes.StatusCodesFilterTest,prepareStatusCodes,22,1,2,0,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,com.cognifide.aet.cleaner.processors.filters.SuiteRemoveConditionTest,evaluate_when8SuitesKeepNewerThanAndAtLeastXVersions_expectTrue,6,1,7,5,Muitos Parametros
+ V ,OBSERVABLE,com.cognifide.aet.runner.distribution.dispatch.CollectionResultsRouter,onSuccess,20,6,9,2,Muitos Desvios
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,diff_compute,44,12,8,4,Metodo Longo
+ V ,SERVICE,com.cognifide.aet.rest.MetadataServlet,process,39,7,10,3,Muitos Parametros
+ V ,SERVICE,com.cognifide.aet.vs.metadata.MetadataDAOMongoDBImpl,removeSuite,6,1,8,3,Muitos Parametros
+ V ,SERVICE,com.cognifide.aet.job.common.modifiers.header.HeaderModifierFactory,createInstance,5,1,5,3,Muitos Parametros
+" A, V ",UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,diff_lineMode,47,10,8,3,Metodo Longo
+ V ,OBSERVABLE,com.cognifide.aet.runner.distribution.dispatch.CollectionResultsRouter,onSuccess,20,6,9,2,Alto Acoplamento Efferent
+ V ,SERVICE,com.cognifide.aet.job.common.collectors.accessibility.AccessibilityCollectorFactory,createInstance,5,1,5,3,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,com.cognifide.aet.xmlparser.xml.models.ModelConverterUtils,extendUrlsList,29,6,13,1,Alto Acoplamento Efferent
+ V ,[COMPARATORJOB],com.cognifide.aet.job.common.comparators.layout.LayoutComparator,saveArtifacts,27,3,14,1,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,patch_fromText,83,16,17,1,Muitos Desvios
+ V ,UNDEFINED,com.cognifide.aet.model.CorrelationIdGenerator,generateCorrelationId,3,1,2,3,Muitos Parametros
+ V ,UNDEFINED,com.cognifide.aet.xmlparser.xml.utils.EscapeUtils,validateAttr,9,5,3,1,Muitos Desvios
+ V ,PERSISTENCE,com.cognifide.aet.job.common.ArtifactDAOMock,saveArtifact,3,1,3,3,Muitos Parametros
+ V ,SERVICE,com.cognifide.aet.job.common.modifiers.sleep.SleepModifierFactory,createInstance,5,1,5,3,Muitos Parametros
+ V ,ABSTRACTDATAMODIFIERJOB,com.cognifide.aet.job.common.datafilters.accessibilityfilter.AccessibilityFilter,modifyData,8,6,2,1,Muitos Desvios
+" D, V ",[COMPARATORJOB],com.cognifide.aet.job.common.comparators.source.SourceComparator,compare,34,5,14,0,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,diff_bisect,94,28,8,3,Muitos Desvios
+ V ,SERVICE,com.cognifide.aet.rest.LockServlet,doPost,18,5,6,2,Muitos Desvios
+ V ,SERVICE,com.cognifide.aet.job.common.modifiers.waitforpageloaded.WaitForPageLoadedModifierFactory,createInstance,3,1,5,3,Muitos Parametros
+ V ,UNDEFINED,com.cognifide.aet.common.TestSuiteRunner,process,6,2,5,3,Muitos Parametros
+ V ,[COMPARATORJOB],com.cognifide.aet.job.common.comparators.layout.LayoutComparator,compare,19,3,9,0,Alto Acoplamento Efferent
+ V ,[COLLECTORJOB],com.cognifide.aet.job.common.modifiers.waitforpageloaded.WaitForPageLoadedModifier,collect,28,4,9,0,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,org.browsermob.core.util.ThreadUtils,waitFor,19,4,7,5,Muitos Parametros
+ V ,TEST,com.cognifide.aet.runner.distribution.dispatch.CollectorJobSchedulerTest,messageReceived_expectDecreasedReceivedMessagesCounter,23,1,10,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,com.cognifide.aet.runner.distribution.TestRunProcessor,process,7,1,10,3,Alto Acoplamento Efferent
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,diff_toDelta,27,7,7,1,Muitos Desvios
+ V ,[JSONDESERIALIZER],com.cognifide.aet.proxy.DateDeserializer,deserialize,4,1,6,3,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,match_bitap,69,15,6,3,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,patch_make,59,18,7,2,Muitos Desvios
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffParser,generateDiffs,11,2,11,3,Alto Acoplamento Efferent
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,diff_xIndex,25,7,3,2,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,com.cognifide.aet.cleaner.processors.filters.SuiteRemoveConditionTest,evaluate_when8SuitesVersionsRemoveOldVersions_expectTrue,6,1,7,5,Muitos Parametros
+ V ,ABSTRACTDATAMODIFIERJOB,com.cognifide.aet.job.common.datafilters.w3chtmlfilter.W3cHtml5IssuesFilter,modifyData,22,6,10,1,Muitos Desvios
+" D, V ",ABSTRACTDATAMODIFIERJOB,com.cognifide.aet.job.common.datafilters.w3chtmlfilter.W3cHtml5IssuesFilter,modifyData,22,6,10,1,Alto Acoplamento Efferent
+ V ,SERVICE,com.cognifide.aet.job.common.collectors.source.SourceCollectorFactory,createInstance,3,1,5,3,Muitos Parametros
+ V ,UNDEFINED,com.cognifide.aet.xmlparser.xml.utils.ValidationUtils,validateCaseInsensitiveNameAttribute,3,1,1,3,Muitos Parametros
+" A, V, X ",UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,match_bitapScore,8,3,5,4,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,com.cognifide.aet.job.common.comparators.layout.utils.ImageComparison,fastMarkOuterAreaAsError,8,1,4,5,Muitos Parametros
+ V ,OBSERVABLE,com.cognifide.aet.runner.distribution.dispatch.CollectionResultsRouter,onMessage,29,5,9,1,Alto Acoplamento Efferent
+ V ,SERVICE,com.cognifide.aet.rest.MetadataServlet,process,39,7,10,3,Alto Acoplamento Efferent
+" A, V, X ",UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,diff_commonOverlap,31,10,3,2,Muitos Desvios
+ V ,TEST,com.cognifide.aet.worker.impl.JobRegistryImplTest,mockComparatorFactory,7,1,4,3,Muitos Parametros
+ V ,SERVICE,com.cognifide.aet.rest.ConfigsServlet,doGet,30,5,14,2,Metodo Longo
+ V ,[COLLECTORJOB],com.cognifide.aet.job.common.modifiers.login.LoginModifier,collect,30,6,10,0,Muitos Desvios
+ V ,SERVICE,com.cognifide.aet.job.common.comparators.jserrors.JsErrorsComparatorFactory,createInstance,3,1,5,3,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,com.cognifide.aet.common.TestSuiteRunner,runTestSuite,41,6,21,1,Alto Acoplamento Efferent
+" D, V ",[COMPARATORJOB],com.cognifide.aet.job.common.comparators.statuscodes.StatusCodesComparator,compare,31,6,20,0,Metodo Longo
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,patch_make,3,1,3,3,Muitos Parametros
+ V ,SERVICE,com.cognifide.aet.job.common.comparators.layout.LayoutComparatorFactory,createInstance,5,1,5,3,Muitos Parametros
+ V ,SERVICE,com.cognifide.aet.worker.listeners.ComparatorMessageListenerImpl,onMessage,32,6,16,1,Muitos Desvios
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,diff_toDelta,27,7,7,1,Metodo Longo
+ V ,ENTITY,com.cognifide.aet.communication.api.job.CollectorResultData,createSuccessResult,3,1,3,3,Muitos Parametros
+ V ,UNDEFINED,com.cognifide.aet.xunit.MetadataToXUnitConverter,traverseSteps,14,4,9,3,Alto Acoplamento Efferent
+ V ,TEST,com.cognifide.aet.runner.distribution.dispatch.CollectionResultsRouterTest,onMessage_whenSuccess_expectChangeListenersNotifiedAndMessageSent,19,1,10,0,Alto Acoplamento Efferent
+ V ,SERVICE,com.cognifide.aet.rest.XUnitServlet,getSuite,18,4,6,3,Muitos Parametros
+" A, D, V, X ",TEST,com.cognifide.aet.job.common.datafilters.w3chtml5filter.W3cHtml5IssuesFilterTest,prepareComparatorResult,6,1,7,4,Muitos Parametros
+ V ,UNDEFINED,com.cognifide.aet.rest.helpers.SuitesListProvider,listSuites,35,5,14,0,Muitos Desvios
+ V ,TEST,com.cognifide.aet.common.RedirectWriterTest,cleanUp,11,6,2,0,Muitos Desvios
+ V ,[COLLECTORJOB],com.cognifide.aet.job.common.modifiers.resolution.ResolutionModifier,setParameters,14,5,6,1,Muitos Desvios
+" A, V, X ",SERVICE,com.cognifide.aet.vs.metadata.MetadataDAOMongoDBImpl,saveSuite,7,1,12,1,Alto Acoplamento Efferent
+ V ,BASICPHASECONVERTER,com.cognifide.aet.xmlparser.xml.CollectConverter,read,12,2,9,1,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,diff_fromDelta,58,13,12,2,Metodo Longo
+ V ,TEST,com.cognifide.aet.job.common.comparators.statuscodes.StatusCodesFilterTest,testFilter_bounds,5,1,4,3,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,diff_compute,44,12,8,4,Muitos Desvios
+ V ,VIEW,com.cognifide.aet.runner.distribution.RunnerMessageListener,onMessage,23,5,6,1,Muitos Desvios
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,diff_bisect,94,28,8,3,Muitos Parametros
+ V ,VIEW,com.cognifide.aet.worker.listeners.AbstractTaskMessageListener,doActivate,18,2,9,1,Alto Acoplamento Efferent
+ V ,SCALARSERIALIZERBASE,org.browsermob.core.json.ISO8601DateFormatter,serialize,4,1,4,3,Muitos Parametros
+ V ,UNDEFINED,com.cognifide.aet.common.ReportWriter,write,12,2,6,3,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,diff_cleanupSemanticLossless,66,14,5,1,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,diff_halfMatch,31,12,2,2,Muitos Desvios
+ V ,SERVICE,com.cognifide.aet.rest.XUnitServlet,generateXUnitAndRespondWithIt,12,2,8,3,Muitos Parametros
+ V ,UNDEFINED,com.cognifide.aet.validation.impl.ValidationUtils,validationResultToString,22,5,5,1,Muitos Desvios
+ V ,SERVICE,com.cognifide.aet.job.common.comparators.statuscodes.StatusCodesComparatorFactory,createInstance,5,1,5,3,Muitos Parametros
+ V ,UNDEFINED,com.cognifide.aet.xmlparser.xml.models.ModelConverterUtils,extendUrlsList,29,6,13,1,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,diff_cleanupSemanticLossless,66,14,5,1,Metodo Longo
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffParser,generateDiffs,11,2,11,3,Muitos Parametros
+" A, V, X ",UNDEFINED,com.cognifide.aet.job.api.ParametersValidator,checkRange,5,3,3,4,Muitos Parametros
+" D, V ",OBSERVABLE,com.cognifide.aet.runner.distribution.dispatch.CollectDispatcher,processUrlsAndGroupToPackages,16,4,10,2,Alto Acoplamento Efferent
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,diff_main,30,7,7,4,Muitos Desvios
+" A, R, V, X ",[JOB],com.cognifide.aet.cleaner.CleanerJob,execute,31,4,13,1,Alto Acoplamento Efferent
+ V ,SERVICE,com.cognifide.aet.worker.listeners.CollectorMessageListenerImpl,runUrls,22,4,12,4,Metodo Longo
+ V ,ABSTRACTDATAMODIFIERJOB,com.cognifide.aet.job.common.datafilters.jserrorsfilter.JsErrorsFilter,validateParameters,5,4,3,3,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,patch_make,59,18,7,2,Metodo Longo
+ V ,[COMPARATORJOB],com.cognifide.aet.job.common.comparators.source.SourceComparator,compare,34,5,14,0,Muitos Desvios
+ V ,[JSONSERIALIZER],com.cognifide.aet.vs.metadata.TimestampSerializer,deserialize,12,3,6,3,Muitos Parametros
+" A, D, V, X ",ENTITY,com.cognifide.aet.communication.api.job.CollectorResultData,createErrorResult,3,1,4,4,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,com.cognifide.aet.job.common.comparators.w3chtml5.parser.W3cHtml5ValidationResultParser,parse,12,1,13,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffParser,addFullSource,25,5,8,3,Metodo Longo
+ V ,SERVICE,com.cognifide.aet.runner.util.MessagesManager,remove,15,3,10,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.statuscodes.StatusCodesFilter,apply,15,6,3,1,Muitos Desvios
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,match_main,18,7,4,3,Muitos Desvios
+ V ,TEST,com.cognifide.aet.job.common.comparators.source.SourceComparatorTest,compare,6,1,7,3,Muitos Parametros
+" A, V, X ",UNDEFINED,com.cognifide.aet.common.SuiteFactory,urlFromExtendedUrl,9,2,7,4,Muitos Parametros
+" A, D, V, X ",ABSTRACTDATAMODIFIERJOB,com.cognifide.aet.job.common.datafilters.accessibilityfilter.AccessibilityFilter,validateParameters,5,5,3,4,Muitos Parametros
+" D, V ",[COLLECTORJOB],com.cognifide.aet.job.common.modifiers.hide.HideModifier,hideElement,26,5,10,2,Alto Acoplamento Efferent
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,diff_xIndex,25,7,3,2,Metodo Longo
+ V ,UNDEFINED,com.cognifide.aet.xunit.MetadataToXUnitConverter,traverseSteps,14,4,9,3,Muitos Parametros
+ V ,UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffParser,buildDelta,24,5,8,3,Muitos Desvios
+ V ,SERVICE,com.cognifide.aet.job.common.comparators.accessibility.AccessibilityComparatorFactory,createInstance,5,1,5,3,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,com.cognifide.aet.job.common.comparators.source.diff.DiffMatchPatch,diff_bisect,94,28,8,3,Metodo Longo
+ V ,[DATAFILTERJOB],com.cognifide.aet.job.common.datafilters.removelines.RemoveLinesDataModifier,validateParameters,10,6,4,2,Muitos Desvios
+ V ,[COMPARATORJOB],com.cognifide.aet.job.common.comparators.jserrors.JsErrorsComparator,compare,22,4,8,0,Metodo Longo
+ V ,OBSERVABLE,com.cognifide.aet.runner.distribution.dispatch.CollectionResultsRouter,onMessage,29,5,9,1,Metodo Longo
+" V, X ",SERVICE,com.cognifide.aet.rest.MetadataServlet,process,39,7,10,3,Metodo Longo
+ V ,UNDEFINED,com.cognifide.aet.common.ProcessorFactory,produce,19,6,10,4,Muitos Desvios
+ V ,SERVICE,com.cognifide.aet.job.common.collectors.jserrors.JsErrorsCollectorFactory,createInstance,3,1,5,3,Muitos Parametros

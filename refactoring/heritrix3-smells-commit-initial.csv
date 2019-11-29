@@ -1,0 +1,1197 @@
+Tecnicas,Design Role,Classe,Método,LOC,CC,Efferent,NOP,Problema de Design
+" A, V, X ",UNDEFINED,org.archive.util.JavaLiterals,unescape,68,16,8,1,Muitos Desvios
+" A, V ",PROCESSOR,org.archive.modules.recrawl.PersistProcessor,populatePersistEnv,29,3,12,2,Alto Acoplamento Efferent
+" A, V, X ",UNDEFINED,org.archive.crawler.frontier.BdbMultipleWorkQueues,getFrom,54,9,17,4,Metodo Longo
+" A, D, V, X ",PROCESSOR,org.archive.modules.writer.WARCWriterProcessor,writeMetadata,55,16,15,5,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.extractor.ExtractorURI,extractQueryStringLinks,37,8,10,1,Alto Acoplamento Efferent
+ V ,PROCESSOR,org.archive.crawler.prefetch.QuotaEnforcer,checkQuotas,17,5,8,3,Muitos Parametros
+ V ,RESOURCE,org.archive.crawler.restlet.BaseResource,getPreferredVariant,19,5,4,0,Muitos Desvios
+ V ,UNDEFINED,org.archive.crawler.reporting.CrawlStatSnapshot,collect,25,2,5,2,Metodo Longo
+ V ,APPLICATION,org.archive.crawler.restlet.EngineApplication,createRoot,44,1,0,0,Metodo Longo
+ V ,UNDEFINED,org.archive.io.ArchiveTest,printInfo,9,6,2,0,Muitos Desvios
+ V ,RESOURCE,org.archive.crawler.restlet.ScriptResource,makePresentableMap,25,6,4,0,Muitos Desvios
+ V ,TEST,org.archive.modules.extractor.ExtractorSWFTest,xestHer1509,25,4,10,0,Alto Acoplamento Efferent
+" A, R, D, V, X ",PROCESSOR,org.archive.modules.extractor.ExtractorPDF,innerExtract,54,8,19,1,Alto Acoplamento Efferent
+ V ,PROCESSOR,org.archive.modules.extractor.ExtractorXML,innerExtract,28,6,7,1,Muitos Desvios
+" A, R, D, V, X ",RESOURCE,org.archive.crawler.restlet.JobResource,writeHtml,205,39,19,1,Alto Acoplamento Efferent
+ V ,TEST,org.archive.bdb.StoredQueueTest,setUp,17,2,9,0,Alto Acoplamento Efferent
+ V ,TEST,org.archive.crawler.selftest.SelfTestBase,open,34,4,7,0,Metodo Longo
+" A, V, X ",[IOFILEFILTER],org.archive.util.FileUtils,copyFile,60,14,9,4,Metodo Longo
+ V ,[ARCHIVEFILECONSTANTS| ITERABLE],org.archive.io.ArchiveReader,exceptionNext,22,5,4,0,Metodo Longo
+ V ,[ARCCONSTANTS],org.archive.io.arc.ARCUtils,testUncompressedARCFile,25,5,7,1,Metodo Longo
+ V ,APPLICATION,org.archive.crawler.restlet.EngineApplication,getRepresentation,20,3,7,3,Muitos Parametros
+ V ,PERSISTENCE,org.archive.io.RecordingOutputStream,write,19,5,4,3,Muitos Desvios
+" A, V, X ",[REPLAYCHARSEQUENCE],org.archive.io.GenericReplayCharSequence,decode,40,7,19,4,Muitos Parametros
+ V ,UNDEFINED,org.archive.net.PublicSuffixes,addBranch,17,5,4,1,Muitos Desvios
+" A, R, D, V, X ",PROCESSOR,org.archive.modules.writer.MirrorWriterProcessor,uriToFile,52,6,11,17,Muitos Parametros
+ V ,RESOURCE,org.archive.crawler.restlet.EngineResource,makePresentableMap,38,5,11,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.archive.util.InetAddressUtil,getAllLocalHostNames,32,9,8,0,Muitos Desvios
+ V ,ABSTRACTLONGFPSET,org.archive.util.fingerprint.MemLongFPSet,relocate,5,1,1,3,Muitos Parametros
+ V ,UNDEFINED,org.apache.hadoop.examples.PageRank,map,24,4,9,4,Metodo Longo
+ V ,PROCESSOR,org.archive.crawler.postprocessor.SupplementaryLinksScoper,innerProcess,13,5,2,1,Muitos Desvios
+ V ,UNDEFINED,org.archive.crawler.util.LogReader,tail,77,16,9,2,Alto Acoplamento Efferent
+ V ,FPMERGEURIUNIQFILTER,org.archive.crawler.util.DiskFPMergeUriUniqFilter,beginFpMerge,23,5,12,0,Muitos Desvios
+ V ,BASERULE,org.archive.modules.canonicalize.FixupQueryString,canonicalize,23,10,2,1,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.fetcher.FetchHTTP,doAbort,5,1,3,3,Muitos Parametros
+ V ,PROCESSOR,org.archive.modules.extractor.ExtractorJS,considerString,26,5,11,4,Muitos Desvios
+ V ,ENTITY,org.archive.crawler.frontier.WorkQueue,shortReportLineTo,41,3,4,1,Metodo Longo
+ V ,TEST,org.archive.modules.extractor.ExtractorSWFTest,xestNonAsciiLink,26,5,10,0,Alto Acoplamento Efferent
+ V ,TEST,org.archive.net.UURIFactoryTest,testSameAsNutchURLFilterBasic,24,1,1,0,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.writer.WARCWriterProcessor,addIfNotBlank,5,2,3,3,Muitos Parametros
+ V ,PROCESSOR,org.archive.modules.extractor.ExtractorHTML,getContentDeclaredCharset,38,7,7,2,Metodo Longo
+" A, V, X ",WRITERPOOLMEMBER,org.archive.io.warc.WARCWriter,subtally,26,5,2,4,Muitos Parametros
+ V ,VIEW,org.archive.crawler.frontier.AbstractFrontier,isDisregarded,14,8,2,1,Muitos Desvios
+" A, R, D, V, X ",[REPLAYCHARSEQUENCE],org.archive.io.GenericReplayCharSequence,decode,40,7,19,4,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.archive.util.anvl.SubElement,checkCRLF,5,2,6,3,Muitos Parametros
+ V ,URI,org.archive.net.UURIFactory,fixup,85,32,10,3,Alto Acoplamento Efferent
+ V ,KRYO,org.archive.bdb.AutoKryo,newInstance,38,9,15,1,Muitos Desvios
+" A, D, V, X ",ASYNCTASK,org.archive.crawler.framework.ToeThread,run,90,15,18,0,Muitos Desvios
+ V ,URLCODEC,org.archive.net.LaxURLCodec,decodeUrlLoose,27,8,4,1,Muitos Desvios
+ V ,PROCESSOR,org.archive.crawler.processor.CrawlMapper,innerProcessResult,34,9,5,1,Metodo Longo
+ V ,TEST,org.archive.util.TransformTest,randomTest,17,3,10,0,Alto Acoplamento Efferent
+ V ,ENTITY,org.archive.crawler.framework.CrawlJob,scanJobLog,28,6,10,0,Muitos Desvios
+ V ,PERSISTENCE,org.archive.io.RandomAccessOutputStream,write,3,1,3,3,Muitos Parametros
+ V ,PROCESSOR,org.archive.modules.extractor.ExtractorImpliedURI,extract,35,6,15,1,Metodo Longo
+ V ,URI,org.archive.net.UURIFactory,checkPort,23,8,8,1,Muitos Desvios
+ V ,ASYNCTASK,org.archive.crawler.reporting.StatisticsTracker,writeReportFile,19,6,9,2,Muitos Desvios
+ V ,UNDEFINED,org.archive.util.TextUtils,replaceFirst,7,1,4,3,Muitos Parametros
+" A, R, D, V, X ",PROCESSOR,org.archive.modules.writer.WARCWriterProcessor,writeRevisitUriAgnosticDigest,30,2,9,6,Muitos Parametros
+ V ,UNDEFINED,org.apache.hadoop.examples.PageRank,reduce,23,4,8,4,Metodo Longo
+ V ,CONCURRENTSKIPLISTSET,org.archive.util.SurtPrefixSet,main,14,6,10,1,Alto Acoplamento Efferent
+" A, V, X ",UNDEFINED,org.archive.net.PublicSuffixes,buildRegex,34,11,5,2,Muitos Desvios
+ V ,URI,org.archive.net.UURIFactory,fixup,85,32,10,3,Muitos Parametros
+" A, V, X ",PROCESSOR,org.archive.crawler.prefetch.PreconditionEnforcer,considerRobotsPreconditions,48,12,11,1,Muitos Desvios
+ V ,ARCHIVEREADER,org.archive.io.arc.ARCReader,createArchiveRecord,17,5,5,2,Muitos Desvios
+ V ,RESOURCE,org.archive.crawler.restlet.BeanBrowseResource,acceptRepresentation,21,4,9,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.archive.io.ArchiveTest,instanceMain,21,6,5,1,Muitos Desvios
+ V ,ENTITY,org.archive.crawler.framework.CrawlController,noteFrontierState,25,7,3,1,Muitos Desvios
+ V ,ENTITY,org.archive.crawler.frontier.WorkQueue,shortReportMap,28,3,3,0,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.writer.WARCWriterProcessor,write,42,8,9,2,Muitos Desvios
+ V ,TEST,org.archive.util.ms.DocTest,runReaders,22,7,4,2,Metodo Longo
+" A, V, X ",UNDEFINED,org.archive.util.UriUtils,isVeryLikelyUri,28,11,7,1,Muitos Desvios
+ V ,ENTITY,org.archive.modules.CrawlURI,hasRfc2617Credential,11,5,3,0,Muitos Desvios
+ V ,TEST,org.archive.modules.extractor.ExtractorSWFTest,xestNonAsciiLink,26,5,10,0,Metodo Longo
+" A, V ",TEST,org.archive.settings.file.BdbModuleTest,testDoCheckpoint,48,3,11,0,Metodo Longo
+ V ,DECIDERULE,org.archive.modules.deciderules.HopCrossesAssignmentLevelDomainDecideRule,evaluate,20,6,6,1,Muitos Desvios
+ V ,SEEDMODULE,org.archive.modules.seeds.TextSeedModule,announceSeedsFromReader,22,5,9,2,Alto Acoplamento Efferent
+ V ,URI,org.archive.net.UURIFactory,escapeWhitespace,24,7,5,1,Muitos Desvios
+" A, R, D, V, X ",PERSISTENCE,org.archive.io.arc.ARCRecord,parseHeaders,13,3,8,6,Muitos Parametros
+ V ,[IOFILEFILTER],org.archive.util.FileUtils,copyFile,60,14,9,4,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.archive.net.PublicSuffixes,dump,9,5,3,3,Muitos Parametros
+ V ,UNDEFINED,org.archive.util.JavaLiterals,escape,44,12,5,1,Metodo Longo
+ V ,UNDEFINED,org.archive.crawler.util.LogReader,getFromSeries,11,2,6,3,Muitos Parametros
+ V ,PERSISTENCE,org.archive.io.ArraySeekInputStream,read,9,2,4,3,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.archive.crawler.Heritrix,instanceMain,145,27,31,1,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.extractor.ExtractorHTML,processLink,12,3,4,3,Muitos Parametros
+" A, D, V, X ",ENTITY,org.archive.modules.fetcher.FetchStats,tally,59,13,3,2,Muitos Desvios
+" A, V, X ",RESOURCE,org.archive.crawler.restlet.JobRelatedResource,makePresentableMapFor,90,29,16,4,Muitos Parametros
+" A, V, X ",DIALOG,org.archive.crawler.restlet.EditRepresentation,write,49,1,7,1,Metodo Longo
+ V ,WORKQUEUE,org.archive.crawler.frontier.BdbWorkQueue,peekItem,29,6,9,1,Muitos Desvios
+ V ,TEST,org.archive.io.RecordingOutputStreamTest,writeIntRecordedFile,12,2,5,3,Muitos Parametros
+ V ,URI,org.archive.net.UURIFactory,checkHttpSchemeSpecificPartSlashPrefix,17,10,3,3,Muitos Parametros
+" A, V, X ",PROCESSOR,org.archive.modules.writer.Kw3WriterProcessor,writeContentPart,18,3,7,4,Muitos Parametros
+ V ,ASYNCTASK,org.archive.crawler.reporting.StatisticsTracker,tallySeeds,14,5,2,0,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.archive.crawler.util.LogReader,getByRegexFromSeries,10,2,6,6,Muitos Parametros
+" A, D, V, X ",ENTITY,org.archive.modules.extractor.Link,addRelativeToBase,4,1,7,5,Muitos Parametros
+ V ,TEST,org.archive.modules.extractor.ExtractorSWFTest,xestHer1509,25,4,10,0,Metodo Longo
+" A, R, D, V, X ",RESOURCE,org.archive.crawler.restlet.JobRelatedResource,makePresentableMapFor,90,29,16,4,Alto Acoplamento Efferent
+ V ,TEST,org.archive.modules.writer.WARCWriterProcessorTest,testResilientOnError,37,1,0,0,Metodo Longo
+ V ,TEST,org.archive.util.TransformTest,testTransform,14,2,10,0,Alto Acoplamento Efferent
+ V ,ROBOTSPOLICY,org.archive.modules.net.IgnoreRobotsPolicy,allows,3,1,5,3,Muitos Parametros
+" A, V, X ",[IOFILEFILTER],org.archive.util.FileUtils,copyFile,60,14,9,4,Muitos Parametros
+ V ,ENTITY,org.archive.bdb.BdbModule,openDatabase,24,6,9,3,Muitos Desvios
+ V ,UNDEFINED,org.archive.io.Arc2Warc,main,30,6,12,1,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.fetcher.FetchHTTP,chooseAuthScheme,30,8,8,2,Muitos Desvios
+ V ,UNDEFINED,org.archive.io.Arc2Warc,usage,4,1,5,3,Muitos Parametros
+ V ,RESOURCE,org.archive.crawler.restlet.EngineResource,makePresentableMap,38,5,11,0,Metodo Longo
+" A, V, X ",UNDEFINED,org.archive.crawler.util.LogReader,tail,77,16,9,2,Metodo Longo
+" A, D, V, X ",PERSISTENCE,org.archive.io.arc.ARCRecord,computeMetaData,43,14,12,5,Muitos Desvios
+" A, D, V, X ",PERSISTENCE,org.archive.io.arc.ARCRecord,getTokenizedHeaderLine,43,14,10,2,Muitos Desvios
+ V ,ENTITY,org.archive.modules.net.CrawlServer,equals,13,6,3,1,Muitos Desvios
+" A, V, X ",PROCESSOR,org.archive.modules.writer.MirrorWriterProcessor,uriToFile,85,35,13,2,Alto Acoplamento Efferent
+ V ,TEST,org.archive.util.ObjectIdentityBdbManualCacheTest,xestMemMapCleared,22,4,10,0,Metodo Longo
+ V ,URLCODEC,org.archive.net.LaxURLCodec,encode,6,2,2,3,Muitos Parametros
+ V ,PROCESSOR,org.archive.modules.extractor.ExtractorHTML,processStyle,4,1,4,3,Muitos Parametros
+ V ,[ARCHIVEFILECONSTANTS],org.archive.io.ArchiveReaderFactory,makeARCLocal,45,8,9,1,Alto Acoplamento Efferent
+ V ,ARCHIVEREADERFACTORY,org.archive.io.warc.WARCReaderFactory,getArchiveReader,3,1,5,3,Muitos Parametros
+ V ,UNDEFINED,org.archive.crawler.restlet.XmlMarshaller,marshal,14,4,3,3,Muitos Parametros
+ V ,PROCESSOR,org.archive.modules.writer.MirrorWriterProcessor,existsMaybeCaseSensitive,15,6,5,3,Muitos Desvios
+ V ,[IOFILEFILTER],org.archive.util.FileUtils,workaroundCopyFile,31,6,6,2,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.extractor.ExtractorHTML,innerExtract,30,7,9,1,Muitos Desvios
+" A, V, X ",UNDEFINED,org.archive.io.arc.ARC2WCDX,createWcdx,91,10,18,1,Muitos Desvios
+ V ,PROCESSOR,org.archive.crawler.prefetch.RuntimeLimitEnforcer,innerProcessResult,26,6,7,1,Metodo Longo
+ V ,TEST,org.archive.util.ObjectIdentityBdbManualCacheTest,run,12,4,9,0,Alto Acoplamento Efferent
+ V ,TEST,org.archive.util.ArchiveUtilsTest,testTooShortParseDigitDate,25,3,5,0,Metodo Longo
+ V ,APPLICATION,org.archive.crawler.restlet.EngineApplication,determineRootRef,4,1,9,1,Alto Acoplamento Efferent
+" A, V, X ",VIEW,org.archive.crawler.frontier.AbstractFrontier,needsReenqueuing,24,11,3,1,Muitos Desvios
+ V ,ENTITY,org.archive.bdb.BdbModule,setup,32,7,11,2,Muitos Desvios
+ V ,ENTITY,org.archive.bdb.BdbModule,getStoredQueue,10,2,8,3,Muitos Parametros
+ V ,DECIDERULE,org.archive.modules.deciderules.MatchesListRegexDecideRule,evaluate,31,8,6,1,Muitos Desvios
+ V ,ENTITY,org.archive.modules.credential.CredentialStore,subset,22,7,6,3,Muitos Parametros
+" A, V, X ",TEST,org.archive.modules.recrawl.ContentDigestHistoryTest,handle,6,1,2,4,Muitos Parametros
+ V ,SETBASEDURIUNIQFILTER,org.archive.crawler.util.BdbUriUniqFilter,setAdd,34,9,12,1,Muitos Desvios
+ V ,WRITERPOOLMEMBER,org.archive.io.arc.ARCWriter,generateARCFileMetaData,30,7,7,1,Metodo Longo
+ V ,UNDEFINED,org.archive.util.SURT,main,15,6,12,1,Muitos Desvios
+ V ,ENTITY,org.archive.bdb.BdbModule,close,27,7,9,0,Metodo Longo
+ V ,UNDEFINED,org.archive.io.arc.ARC2WCDX,appendTimeField,25,6,7,2,Muitos Desvios
+ V ,PERSISTENCE,org.archive.util.zip.OpenJDK7InflaterInputStream,skip,21,5,4,1,Muitos Desvios
+ V ,[REPLAYCHARSEQUENCE],org.archive.io.GenericReplayCharSequence,decode,40,7,19,4,Metodo Longo
+ V ,UNDEFINED,st.ata.util.FPGenerator,fp8,3,1,3,3,Muitos Parametros
+ V ,PROCESSOR,org.archive.modules.writer.WARCWriterProcessor,getMetadata,27,3,7,0,Metodo Longo
+ V ,TEST,org.archive.modules.net.RobotstxtTest,testCompactSerialization,22,1,7,0,Metodo Longo
+ V ,UNDEFINED,org.archive.util.SURT,fromURI,37,8,7,2,Metodo Longo
+" A, V ",PROCESSOR,org.archive.crawler.postprocessor.DispositionProcessor,politenessDelayFor,47,12,12,1,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.extractor.JerichoExtractorHTML,extract,25,8,7,2,Muitos Desvios
+ V ,UNDEFINED,org.archive.util.DevUtils,extraInfo,26,5,7,0,Muitos Desvios
+ V ,URI,org.archive.net.UURIFactory,fixupAuthority,29,10,2,2,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.fetcher.FetchFTP,disconnect,13,5,3,1,Muitos Desvios
+ V ,[CHARSEQUENCE],org.archive.io.SeekReaderCharSequence,charAt,16,5,8,1,Muitos Desvios
+ V ,TEST,org.archive.io.warc.WARCWriterTest,writeRandomHTTPRecord,18,1,9,2,Alto Acoplamento Efferent
+ V ,TEST,org.archive.modules.extractor.ExtractorCSSTest,makeData,12,1,9,2,Alto Acoplamento Efferent
+ V ,[ARCHIVEFILECONSTANTS],org.archive.io.ArchiveReaderFactory,makeARCLocal,45,8,9,1,Metodo Longo
+ V ,RESOURCE,org.archive.crawler.restlet.BeanBrowseResource,represent,24,3,0,1,Metodo Longo
+ V ,PERSISTENCE,org.archive.io.CompositeFileInputStream,read,8,3,3,3,Muitos Parametros
+ V ,TEST,org.archive.io.warc.WARCWriterTest,holeyUrl,10,1,5,3,Muitos Parametros
+" A, V, X ",PROCESSOR,org.archive.modules.fetcher.FetchFTP,fetch,88,12,12,3,Muitos Desvios
+ V ,TEST,org.archive.net.UURIFactoryTest,testRFC2396Relative,32,2,4,0,Metodo Longo
+" A, D, V, X ",ABSTRACTFRONTIER,org.archive.crawler.frontier.WorkQueueFrontier,findEligibleURI,108,19,10,0,Muitos Desvios
+ V ,UNDEFINED,st.ata.util.FPGenerator,fp,3,1,3,3,Muitos Parametros
+ V ,TEST,org.archive.crawler.frontier.BdbMultipleWorkQueuesTest,testCalculateInsertKey,33,3,8,0,Metodo Longo
+" D, V ",TEST,org.archive.settings.file.BdbModuleTest,testDoCheckpoint,48,3,11,0,Alto Acoplamento Efferent
+" A, V, X ",UNDEFINED,org.archive.crawler.util.LogReader,getByRegex,60,13,12,7,Muitos Desvios
+ V ,ENTITY,org.archive.crawler.framework.CrawlJob,writeHtmlTo,24,5,3,2,Metodo Longo
+ V ,ENTITY,org.archive.crawler.reporting.CrawlerLoggerModule,setupLogs,15,1,9,0,Alto Acoplamento Efferent
+" A, V, X ",UNDEFINED,org.apache.hadoop.examples.PageRank,reduce,23,4,8,4,Muitos Parametros
+ V ,UNDEFINED,org.archive.util.anvl.SubElement,checkCharacter,4,1,3,3,Muitos Parametros
+ V ,PROCESSOR,org.archive.modules.recrawl.PersistLoadProcessor,start,33,10,10,0,Metodo Longo
+ V ,TEST,org.archive.net.PublicSuffixesTest,testCompare,28,1,1,0,Metodo Longo
+ V ,TEST,org.archive.io.ReplayCharSequenceTest,testSingleByteEncodings,24,1,6,0,Metodo Longo
+" A, V, X ",VIEW,org.archive.crawler.frontier.AbstractFrontier,managementTasks,62,21,6,0,Muitos Desvios
+ V ,UNDEFINED,org.apache.hadoop.examples.PageRank,map,24,4,9,4,Alto Acoplamento Efferent
+ V ,PROCESSOR,org.archive.modules.fetcher.FetchDNS,storeDNSRecord,16,3,9,4,Alto Acoplamento Efferent
+" A, V, X ",TEST,org.archive.io.HeaderedArchiveRecordTest,testParseHttpHeadersInARC,55,1,0,0,Metodo Longo
+ V ,[ARCHIVEFILECONSTANTS| ITERABLE],org.archive.io.ArchiveReader,next,22,5,4,0,Muitos Desvios
+" A, V ",UNDEFINED,org.archive.io.Arc2Warc,main,30,6,12,1,Alto Acoplamento Efferent
+" A, V, X ",ABSTRACTFRONTIER,org.archive.crawler.frontier.WorkQueueFrontier,handleQueue,13,3,4,4,Muitos Parametros
+ V ,UNDEFINED,org.archive.crawler.restlet.Flash,getFlashes,17,5,9,1,Muitos Desvios
+ V ,UNDEFINED,org.archive.util.ProcessUtils,exec,25,4,12,1,Metodo Longo
+ V ,UNDEFINED,org.archive.modules.fetcher.FetchHTTPRequest,populateHtmlFormCredential,14,4,9,1,Alto Acoplamento Efferent
+ V ,ABSTRACTFRONTIER,org.archive.crawler.frontier.BdbFrontier,initAllQueues,38,6,14,0,Muitos Desvios
+ V ,UNDEFINED,org.archive.crawler.framework.Engine,findJobConfigs,24,8,5,0,Metodo Longo
+" A, R, D, V, X ",RESOURCE,org.archive.crawler.restlet.JobRelatedResource,makePresentableMapFor,90,29,16,4,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.extractor.ExtractorJS,shouldExtract,24,7,6,1,Metodo Longo
+ V ,[URIUNIQFILTER],org.archive.crawler.util.FPMergeUriUniqFilter,flush,66,19,9,0,Alto Acoplamento Efferent
+ V ,ENTITY,org.archive.bdb.BdbModule,close,27,7,9,0,Alto Acoplamento Efferent
+ V ,VIEW,org.archive.crawler.framework.CrawlLimitEnforcer,checkForLimitsExceeded,11,7,2,1,Muitos Desvios
+ V ,ENTITY,org.archive.crawler.util.TopNSet,update,20,9,3,2,Muitos Desvios
+" A, V, X ",URI,org.archive.net.LaxURI,parseUriReference,106,48,5,2,Metodo Longo
+ V ,URICANONICALIZATIONPOLICY,org.archive.modules.canonicalize.RulesCanonicalizationPolicy,canonicalize,15,6,3,1,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.archive.crawler.util.LogReader,getByRegex,10,2,7,6,Muitos Parametros
+" A, V, X ",PROCESSOR,org.archive.modules.writer.WARCWriterProcessor,writeFtpRecords,41,11,8,4,Muitos Parametros
+ V ,[LIFECYCLE| APPLICATIONCONTEXTAWARE| HASVALIDATOR],org.archive.crawler.framework.CheckpointService,requestCrawlCheckpoint,43,10,12,0,Metodo Longo
+ V ,ENTITY,org.archive.bdb.BdbModule,getStoredMap,32,4,0,5,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.writer.WARCWriterProcessor,writeHttpRecords,42,15,8,4,Metodo Longo
+" A, D, V, X ",ASYNCTASK,org.archive.crawler.framework.ActionDirectory,actOn,68,16,9,1,Muitos Desvios
+ V ,UNDEFINED,org.archive.crawler.util.CheckpointUtils,getClassCheckpointFile,3,1,3,3,Muitos Parametros
+ V ,PROCESSOR,org.archive.crawler.prefetch.PreconditionEnforcer,considerRobotsPreconditions,48,12,11,1,Alto Acoplamento Efferent
+" A, V, X ",TEST,org.archive.modules.fetcher.FetchHTTPTest,handle,56,11,7,4,Muitos Parametros
+ V ,PERSISTENCE,org.archive.io.BufferedSeekInputStream,read,10,2,4,3,Muitos Parametros
+ V ,QUEUEASSIGNMENTPOLICY,org.archive.crawler.frontier.URIAuthorityBasedQueueAssignmentPolicy,getClassKey,23,8,5,1,Metodo Longo
+" A, V ",PERSISTENCE,org.archive.io.HeaderedArchiveRecord,readContentHeaders,47,13,14,0,Metodo Longo
+ V ,PERSISTENCE,org.archive.io.RecordingOutputStream,checkLimits,24,7,9,0,Metodo Longo
+ V ,REPORT,org.archive.crawler.reporting.CrawlSummaryReport,write,37,5,5,2,Muitos Desvios
+ V ,TEST,org.archive.settings.file.PrefixFinderTest,doTest,36,8,11,0,Muitos Desvios
+ V ,UNDEFINED,org.archive.io.Arc2Warc,transform,36,4,15,2,Metodo Longo
+ V ,ASYNCTASK,org.archive.crawler.framework.ToePool,setSize,24,6,3,1,Metodo Longo
+ V ,ASYNCTASK,org.archive.crawler.framework.ToeThread,shortReportMap,27,4,6,0,Metodo Longo
+ V ,ENTITY,org.archive.util.ObjectIdentityBdbManualCache,getOrUse,38,7,6,2,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.recrawl.FetchHistoryProcessor,innerProcess,29,5,5,1,Muitos Desvios
+" A, R, D, V, X ",RESOURCE,org.archive.crawler.restlet.JobResource,writeHtml,205,39,19,1,Metodo Longo
+ V ,SETBASEDURIUNIQFILTER,org.archive.crawler.util.BdbUriUniqFilter,start,24,5,10,0,Metodo Longo
+ V ,ASYNCTASK,org.archive.crawler.reporting.StatisticsTracker,doCheckpoint,25,3,7,1,Metodo Longo
+ V ,[ARCHIVEFILECONSTANTS],org.archive.io.WriterPoolMember,getNextDirectory,23,7,4,1,Muitos Desvios
+ V ,UNDEFINED,org.archive.util.ArchiveUtils,longIntoByteArray,4,2,3,3,Muitos Parametros
+ V ,UNDEFINED,org.apache.hadoop.examples.GenGraph,reduce,29,7,9,4,Metodo Longo
+ V ,TEST,org.archive.io.GZIPMembersInputStreamTest,testMemberIterator,33,1,6,0,Metodo Longo
+ V ,TEST,org.archive.util.TransformTest,testSubclasses,30,7,9,0,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.writer.WARCWriterProcessor,writeFtpControlConversation,15,1,9,6,Alto Acoplamento Efferent
+ V ,[REPLAYCHARSEQUENCE],org.archive.io.GenericReplayCharSequence,decode,40,7,19,4,Muitos Desvios
+" A, V, X ",UNDEFINED,org.archive.crawler.util.LogReader,getByRegex,60,13,12,7,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.writer.WARCWriterProcessor,writeRequest,21,1,9,6,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.archive.util.UriUtils,speculativeFixup,28,7,9,2,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.archive.crawler.restlet.XmlMarshaller,marshalDocument,16,3,6,3,Muitos Parametros
+" A, V, X ",PROCESSOR,org.archive.crawler.prefetch.Preselector,innerProcessResult,28,10,4,1,Muitos Desvios
+" A, V, X ",WRITERPOOLMEMBER,org.archive.io.arc.ARCWriter,createMetaline,3,1,1,5,Muitos Parametros
+ V ,UNDEFINED,org.archive.util.ArchiveUtils,formatMillisecondsToConventional,26,7,7,2,Muitos Desvios
+ V ,PROCESSOR,org.archive.crawler.prefetch.QuotaEnforcer,applyQuota,14,4,4,3,Muitos Parametros
+ V ,ASYNCTASK,org.archive.crawler.framework.ToeThread,shortReportLineTo,34,4,6,1,Metodo Longo
+ V ,WRITERPOOLMEMBER,org.archive.io.warc.WARCWriter,writeWarcinfoRecord,30,6,10,2,Alto Acoplamento Efferent
+" A, V, X ",PROCESSOR,org.archive.modules.writer.MirrorWriterProcessor,innerProcess,59,12,11,1,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.writer.MirrorWriterProcessor,append,26,5,4,1,Metodo Longo
+ V ,PERSISTENCE,org.archive.io.RecordingInputStream,read,11,3,5,3,Muitos Parametros
+ V ,PROCESSOR,org.archive.modules.fetcher.FetchHTTP,extractChallenges,18,5,9,3,Alto Acoplamento Efferent
+ V ,[ARCHIVEFILECONSTANTS],org.archive.io.ArchiveReaderFactory,makeARCLocal,45,8,9,1,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.writer.WARCWriterProcessor,writeFtpRecords,41,11,8,4,Metodo Longo
+ V ,TEST,org.archive.util.ms.PieceReaderTest,testPosition,24,4,10,0,Metodo Longo
+ V ,TEST,org.archive.crawler.util.BloomUriUniqFilterTest,testWriting,25,5,9,0,Muitos Desvios
+ V ,UNDEFINED,org.archive.util.ms.Doc,getText,34,4,12,2,Metodo Longo
+ V ,WORKQUEUE,org.archive.crawler.frontier.BdbWorkQueue,peekItem,29,6,9,1,Alto Acoplamento Efferent
+ V ,PROCESSOR,org.archive.modules.extractor.Extractor,logUriError,3,1,4,3,Muitos Parametros
+" A, V, X ",PROCESSOR,org.archive.modules.fetcher.FetchWhois,fetch,49,10,13,3,Alto Acoplamento Efferent
+ V ,PROCESSOR,org.archive.modules.writer.MirrorWriterProcessor,existsMaybeCaseSensitive,15,6,5,3,Muitos Parametros
+ V ,UNDEFINED,org.archive.crawler.util.LogUtils,createFileLogger,22,5,11,3,Muitos Parametros
+" A, V, X ",RESOURCE,org.archive.crawler.restlet.JobRelatedResource,makePresentableMapFor,90,29,16,4,Metodo Longo
+ V ,UNDEFINED,org.archive.crawler.frontier.BdbMultipleWorkQueues,put,22,5,8,2,Metodo Longo
+" A, V, X ",VIEW,org.archive.crawler.frontier.AbstractFrontier,managementTasks,62,21,6,0,Metodo Longo
+ V ,ENTITY,org.archive.crawler.frontier.WorkQueue,peek,15,5,4,1,Muitos Desvios
+ V ,UNDEFINED,org.archive.util.ms.PieceTable,next,42,8,7,0,Muitos Desvios
+ V ,DECIDERULE,org.archive.modules.deciderules.AddRedirectFromRootServerToScope,evaluate,25,8,6,1,Muitos Desvios
+" A, R, V, X ",SWFTAGTYPESIMPL,org.archive.modules.extractor.CustomSWFTags,tagPlaceObject2,3,1,6,9,Muitos Parametros
+ V ,TEST,org.archive.util.InterruptibleCharSequenceTest,xestOverhead,26,2,6,0,Metodo Longo
+" A, V, X ",RESOURCE,org.archive.crawler.restlet.JobResource,makePresentableMap,63,13,14,0,Muitos Desvios
+" A, V, X ",PROCESSOR,org.archive.crawler.processor.LexicalCrawlMapper,loadMap,20,3,13,0,Alto Acoplamento Efferent
+ V ,ENTITY,org.archive.bdb.BdbModule,openDatabase,24,6,9,3,Muitos Parametros
+ V ,PROCESSOR,org.archive.modules.writer.WARCWriterProcessor,writeRevisitUriAgnosticDigest,30,2,9,6,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.archive.io.Warc2Arc,transform,37,6,9,2,Muitos Desvios
+ V ,[ARCHIVEFILECONSTANTS],org.archive.io.WriterPoolMember,write,3,1,3,3,Muitos Parametros
+ V ,ENTITY,org.archive.modules.net.CrawlServer,updateRobots,39,9,13,1,Muitos Desvios
+ V ,URI,org.archive.net.LaxURI,lax,15,5,1,1,Muitos Desvios
+" A, V, X ",PROCESSOR,org.archive.modules.writer.MirrorWriterProcessor,addToPath,45,12,10,1,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.writer.MirrorWriterProcessor,trimWithPadding,30,8,6,1,Metodo Longo
+ V ,UNDEFINED,org.archive.crawler.util.LogUtils,createFileLogger,22,5,11,3,Metodo Longo
+" A, R, D, V, X ",RESOURCE,org.archive.crawler.restlet.BeanBrowseResource,makePresentableMap,42,10,15,0,Alto Acoplamento Efferent
+ V ,PERSISTENCE,org.archive.io.RepositionableInputStream,read,10,4,2,3,Muitos Parametros
+ V ,UNDEFINED,org.archive.util.InetAddressUtil,getIPHostAddress,17,5,8,1,Muitos Desvios
+ V ,ARCHIVEREADERFACTORY,org.archive.io.arc.ARCReaderFactory,get,3,1,5,3,Muitos Parametros
+ V ,ABSTRACTFRONTIER,org.archive.crawler.frontier.WorkQueueFrontier,averageDepth,12,5,4,0,Muitos Desvios
+" A, V, X ",RESOURCE,org.archive.crawler.restlet.ScriptResource,writeHtml,67,8,8,1,Metodo Longo
+ V ,TEST,org.archive.util.ObjectIdentityBdbCacheTest,testMemMapCleared,17,2,9,0,Alto Acoplamento Efferent
+" A, D, V, X ",ASYNCTASK,org.archive.crawler.framework.ActionDirectory,actOn,68,16,9,1,Metodo Longo
+ V ,PROCESSOR,org.archive.crawler.prefetch.PreconditionEnforcer,credentialPrecondition,45,11,10,1,Alto Acoplamento Efferent
+ V ,DECIDERULE,org.archive.modules.deciderules.DecideRuleSequence,innerDecide,25,6,6,1,Muitos Desvios
+ V ,ABSTRACTFRONTIER,org.archive.crawler.frontier.BdbFrontier,consistencyCheck,41,11,9,0,Alto Acoplamento Efferent
+ V ,[REPLAYCHARSEQUENCE],org.archive.io.GenericReplayCharSequence,updateMemoryMappedBuffer,12,2,10,0,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.archive.io.arc.ARC2WCDX,createWcdx,91,10,18,1,Alto Acoplamento Efferent
+ V ,PROCESSOR,org.archive.modules.recrawl.PersistProcessor,populatePersistEnv,29,3,12,2,Metodo Longo
+ V ,UNDEFINED,org.archive.net.PublicSuffixes,dump,9,5,3,3,Muitos Desvios
+ V ,TEST,org.archive.net.UURIFactoryTest,tryRelative,4,1,3,3,Muitos Parametros
+" A, V, X ",UNDEFINED,org.archive.crawler.util.RecoveryLogMapper,load,68,18,12,1,Muitos Desvios
+ V ,URIPRECEDENCEPOLICY,org.archive.crawler.frontier.precedence.PreloadedUriPrecedencePolicy,start,18,3,9,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.archive.io.Warc2Arc,main,40,8,13,1,Muitos Desvios
+" A, R, D, V, X ",RESOURCE,org.archive.crawler.restlet.JobResource,writeHtml,205,39,19,1,Muitos Desvios
+ V ,PROCESSOR,org.archive.crawler.processor.HashCrawlMapper,mapString,12,5,6,3,Muitos Desvios
+ V ,TEST,org.archive.state.ModuleTestBase,getProjectDir,17,5,2,1,Muitos Desvios
+ V ,[URIUNIQFILTER.CRAWLURIRECEIVER],org.archive.crawler.util.BenchmarkUriUniqFilters,instanceMain,26,4,11,1,Metodo Longo
+ V ,UNDEFINED,org.archive.util.TestUtils,scanSuite,26,7,4,3,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.writer.WARCWriterProcessor,qualifyRecordID,5,1,5,3,Muitos Parametros
+ V ,ASYNCTASK,org.archive.crawler.reporting.AlertThreadGroup,publish,26,4,7,1,Metodo Longo
+" A, V, X ",UNDEFINED,org.archive.crawler.frontier.BdbMultipleWorkQueues,getFrom,54,9,17,4,Muitos Parametros
+" A, R, D, V, X ",URI,org.archive.net.UURIFactory,fixup,85,32,10,3,Muitos Desvios
+ V ,WORKQUEUE,org.archive.crawler.frontier.BdbWorkQueue,peekItem,29,6,9,1,Metodo Longo
+" A, V ",PROCESSOR,org.archive.crawler.prefetch.PreconditionEnforcer,considerRobotsPreconditions,48,12,11,1,Metodo Longo
+ V ,PROCESSOR,org.archive.crawler.postprocessor.LowDiskPauseProcessor,checkAvailableSpace,28,6,14,1,Metodo Longo
+ V ,ABSTRACTFRONTIER,org.archive.crawler.frontier.BdbFrontier,consistencyMarkup,8,5,4,3,Muitos Parametros
+ V ,TEST,org.archive.io.arc.ARCWriterTest,writeRecords,12,2,9,4,Alto Acoplamento Efferent
+" A, V, X ",PROCESSOR,org.archive.modules.extractor.Extractor,addOutlink,10,2,8,4,Muitos Parametros
+" A, D, V, X ",PROCESSOR,org.archive.modules.writer.WARCWriterProcessor,writeRevisitNotModified,28,2,8,5,Muitos Parametros
+ V ,PROCESSOR,org.archive.modules.extractor.ExtractorSWF,innerExtract,27,4,10,1,Metodo Longo
+" A, V, X ",UNDEFINED,org.archive.crawler.migrate.MigrateH1to3Tool,instanceMain,89,11,16,1,Muitos Desvios
+ V ,DECIDERULE,org.archive.modules.deciderules.ExternalGeoLocationDecideRule,evaluate,35,8,12,1,Muitos Desvios
+ V ,ENTITY,org.archive.util.BloomFilter64bit,hash,14,3,4,3,Muitos Parametros
+" A, V, X ",TEST,org.archive.io.ReplayCharSequenceTest,writeTestStream,11,2,6,4,Muitos Parametros
+ V ,PERSISTENCE,org.archive.io.arc.ARCRecord,fixSpaceInURL,24,8,4,2,Metodo Longo
+ V ,UNDEFINED,org.archive.crawler.framework.Engine,accept,3,8,6,2,Muitos Desvios
+" A, D, V, X ",ENTITY,org.archive.bdb.BdbModule,getStoredMap,32,4,0,5,Muitos Parametros
+" A, D, V, X ",ENTITY,org.archive.modules.fetcher.FetchStats,tally,59,13,3,2,Metodo Longo
+ V ,UNDEFINED,org.archive.io.Arc2Warc,transform,8,3,6,3,Muitos Parametros
+ V ,ASYNCTASK,org.archive.crawler.framework.ToePool,shortReportMap,24,5,7,0,Muitos Desvios
+" A, V ",UNDEFINED,org.archive.io.Warc2Arc,transform,9,1,12,5,Alto Acoplamento Efferent
+" A, R, D, V, X ",TEST,org.archive.modules.recrawl.ContentDigestHistoryTest,testWarcDedupe,115,2,21,0,Alto Acoplamento Efferent
+ V ,PROCESSOR,org.archive.crawler.prefetch.RuntimeLimitEnforcer,innerProcessResult,26,6,7,1,Muitos Desvios
+ V ,TEST,org.archive.modules.extractor.ExtractorSWFTest,xestNonAsciiLink,26,5,10,0,Muitos Desvios
+" A, V, X ",UNDEFINED,org.archive.util.BenchmarkBlooms,testBloom,19,6,7,5,Muitos Parametros
+ V ,ENTITY,org.archive.bdb.BdbModule,doCheckpoint,40,7,17,1,Metodo Longo
+ V ,RESOURCE,org.archive.crawler.restlet.EngineResource,makePresentableMap,38,5,11,0,Muitos Desvios
+ V ,PERSISTENCE,org.archive.io.HeaderedArchiveRecord,getEolCharsCount,10,6,2,1,Muitos Desvios
+" A, R, D, V, X ",PROCESSOR,org.archive.modules.extractor.ExtractorMultipleRegex,extract,37,7,15,1,Alto Acoplamento Efferent
+ V ,TEST,org.archive.crawler.util.FPUriUniqFilterTest,testWriting,27,6,8,0,Metodo Longo
+" A, D, V, X ",ENTITY,org.archive.modules.extractor.Link,add2,10,2,6,5,Muitos Parametros
+" A, V, X ",ABSTRACTFRONTIER,org.archive.crawler.frontier.BdbFrontier,doCheckpoint,44,8,13,1,Alto Acoplamento Efferent
+" A, V, X ",RESOURCE,org.archive.crawler.restlet.JobResource,acceptRepresentation,56,16,9,1,Muitos Desvios
+" A, V, X ",ENTITY,org.archive.modules.CrawlURI,createCrawlURI,6,1,5,4,Muitos Parametros
+ V ,RESOURCE,org.archive.crawler.restlet.ScriptResource,getAvailableGlobalVariables,25,1,5,0,Metodo Longo
+ V ,ASYNCTASK,org.archive.crawler.framework.ToeThread,seriousError,32,5,9,1,Metodo Longo
+ V ,DECIDERULE,org.archive.modules.deciderules.ResourceNoLongerThanDecideRule,evaluate,23,7,6,1,Muitos Desvios
+" A, R, D, V, X ",PROCESSOR,org.archive.modules.recrawl.PersistProcessor,copyPersistEnv,24,4,15,2,Alto Acoplamento Efferent
+" A, V, X ",UNDEFINED,org.archive.io.arc.ARC2WCDX,createWcdx,91,10,18,1,Metodo Longo
+" A, V, X ",BASERULE,org.archive.modules.canonicalize.FixupQueryString,canonicalize,23,10,2,1,Muitos Desvios
+" A, V, X ",PROCESSOR,org.archive.modules.extractor.ExtractorHTML,considerIfLikelyUri,5,2,4,4,Muitos Parametros
+ V ,PROCESSOR,org.archive.modules.extractor.ExtractorURI,extractQueryStringLinks,37,8,10,1,Muitos Desvios
+ V ,UNDEFINED,org.archive.util.Recorder,getContentReplayInputStream,26,8,7,0,Metodo Longo
+ V ,WORKQUEUE,org.archive.crawler.frontier.BdbWorkQueue,insertItem,12,3,9,3,Muitos Parametros
+" A, V, X ",PROCESSOR,org.archive.modules.extractor.ExtractorJS,considerString,26,5,11,4,Muitos Parametros
+" A, D, V, X ",PROCESSOR,org.archive.modules.fetcher.FetchDNS,innerProcess,64,15,11,1,Metodo Longo
+ V ,URLCONNECTION,org.archive.net.DownloadURLConnection,connect,29,7,9,0,Metodo Longo
+" A, V ",PROCESSOR,org.archive.modules.extractor.HTTPContentDigest,innerProcess,33,4,12,1,Alto Acoplamento Efferent
+ V ,PROCESSOR,org.archive.modules.fetcher.FetchHTTP,shouldProcess,12,5,4,1,Muitos Desvios
+ V ,REPORT,org.archive.crawler.reporting.SeedsReport,write,32,4,8,2,Metodo Longo
+" A, R, D, V, X ",ABSTRACTFRONTIER,org.archive.crawler.frontier.WorkQueueFrontier,reportTo,105,4,24,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.archive.util.Base32,encode,28,7,4,1,Muitos Desvios
+" A, D, V, X ",PROCESSOR,org.archive.modules.extractor.ExtractorDOC,innerExtract,30,4,14,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.archive.util.ArchiveUtils,padTo,14,3,4,3,Muitos Parametros
+" A, V, X ",ABSTRACTFRONTIER,org.archive.crawler.frontier.WorkQueueFrontier,processFinish,64,7,10,1,Metodo Longo
+ V ,ROBOTSPOLICY,org.archive.modules.net.CustomRobotsPolicy,allows,3,1,4,3,Muitos Parametros
+ V ,PERSISTENCE,org.archive.io.RecordingInputStream,readFullyOrUntil,41,13,10,1,Metodo Longo
+ V ,ENTITY,org.archive.util.ObjectIdentityBdbManualCache,sync,25,5,12,0,Muitos Desvios
+" A, V ",PROCESSOR,org.archive.crawler.postprocessor.DispositionProcessor,politenessDelayFor,47,12,12,1,Alto Acoplamento Efferent
+" A, V ",[URIUNIQFILTER.CRAWLURIRECEIVER],org.archive.crawler.util.BenchmarkUriUniqFilters,createUriUniqFilter,21,5,12,1,Alto Acoplamento Efferent
+" A, V, X ",PROCESSOR,org.archive.modules.fetcher.FetchFTP,createSocket,6,1,5,4,Muitos Parametros
+" A, V, X ",UNDEFINED,org.archive.util.JavaLiterals,unescape,68,16,8,1,Metodo Longo
+ V ,UNDEFINED,org.archive.util.TestUtils,scanSuite,26,7,4,3,Metodo Longo
+" A, V, X ",ARCHIVEREADER,org.archive.io.arc.ARCReader,dump,23,4,13,1,Alto Acoplamento Efferent
+ V ,TEST,org.archive.crawler.selftest.HttpAuthSelfTest,startHttpServer,30,1,11,0,Metodo Longo
+ V ,UNDEFINED,org.archive.crawler.frontier.BdbMultipleWorkQueues,get,23,4,9,1,Alto Acoplamento Efferent
+ V ,SETBASEDURIUNIQFILTER,org.archive.crawler.util.BdbUriUniqFilter,setAdd,34,9,12,1,Metodo Longo
+ V ,TEST,org.archive.crawler.framework.CrawlControllerTest,makeTempCrawlController,28,2,10,0,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.extractor.ExtractorURI,extractLink,27,5,10,2,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.fetcher.FetchFTP,addExtracted,23,5,10,2,Alto Acoplamento Efferent
+ V ,PROCESSOR,org.archive.modules.fetcher.FetchWhois,fetch,49,10,13,3,Muitos Parametros
+" A, V, X ",PROCESSOR,org.archive.modules.extractor.JerichoExtractorHTML,processForm,43,11,10,2,Muitos Desvios
+ V ,UNDEFINED,org.archive.util.DNSJavaUtil,getHostAddress,23,6,6,1,Metodo Longo
+ V ,ENTITY,org.archive.crawler.framework.CrawlJob,shortMessage,11,6,4,1,Muitos Desvios
+ V ,ENTITY,org.archive.bdb.BdbModule,getOIBCCache,13,3,7,3,Muitos Parametros
+ V ,TEST,org.archive.io.warc.WARCWriterTest,testRandomAccess,35,5,9,0,Alto Acoplamento Efferent
+ V ,PROCESSOR,org.archive.modules.fetcher.FetchHTTP,setSizes,11,5,4,2,Muitos Desvios
+ V ,ASYNCTASK,org.archive.crawler.framework.ToePool,shortReportLineTo,30,6,5,1,Muitos Desvios
+ V ,ENTITY,org.archive.bdb.BdbModule,start,20,5,4,0,Muitos Desvios
+" A, R, D, V, X ",ENTITY,org.archive.bdb.BdbModule,doCheckpoint,40,7,17,1,Alto Acoplamento Efferent
+ V ,PERSISTENCE,org.archive.io.RecordingOutputStream,write,19,5,4,3,Muitos Parametros
+ V ,URLCONNECTION,org.archive.net.DownloadURLConnection,connect,29,7,9,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.archive.util.Recorder,wrapInputStreamWithHttpRecord,17,5,8,4,Muitos Desvios
+" A, D, V, X ",ENTITY,org.archive.modules.net.Robotstxt,initializeFromReader,91,21,12,1,Muitos Desvios
+ V ,WRITERPOOLMEMBER,org.archive.io.warc.WARCWriter,subtally,26,5,2,4,Muitos Desvios
+" A, D, V, X ",PERSISTENCE,org.archive.io.HeaderedArchiveRecord,readContentHeaders,47,13,14,0,Alto Acoplamento Efferent
+" A, V, X ",RESOURCE,org.archive.crawler.restlet.JobRelatedResource,writeObject,3,1,4,4,Muitos Parametros
+ V ,UNDEFINED,org.archive.crawler.frontier.BdbMultipleWorkQueues,getFrom,54,9,17,4,Muitos Desvios
+ V ,TEST,org.archive.modules.fetcher.FetchHTTPTests,testDigestAuth,25,1,3,0,Metodo Longo
+ V ,RESOURCE,org.archive.crawler.restlet.JobRelatedResource,writeNestedNames,39,13,9,4,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.fetcher.FetchHTTP,getCredentials,14,5,5,2,Muitos Desvios
+" A, V, X ",TEST,org.archive.modules.fetcher.FetchHTTPTest,handle,56,11,7,4,Metodo Longo
+ V ,[ARCCONSTANTS],org.archive.io.arc.ARCUtils,testUncompressedARCFile,25,5,7,1,Muitos Desvios
+" A, V ",DIRECTORYRESOURCE,org.archive.crawler.restlet.EnhDirectoryResource,getVariants,47,12,11,0,Metodo Longo
+ V ,ENTITY,org.archive.crawler.framework.CrawlJob,launch,41,6,0,0,Muitos Desvios
+ V ,UNDEFINED,org.archive.util.ArchiveUtils,byteArrayEquals,17,9,2,2,Muitos Desvios
+ V ,ENTITY,org.archive.crawler.spring.SheetOverlaysManager,onApplicationEvent,19,7,10,1,Muitos Desvios
+ V ,PERSISTENCE,org.archive.modules.fetcher.AbstractCookieStore,saveCookies,36,8,9,2,Alto Acoplamento Efferent
+" A, V, X ",TEST,org.archive.util.FileUtilsTest,verifyTailLines,6,1,3,4,Muitos Parametros
+" A, V ",PROCESSOR,org.archive.modules.extractor.ExtractorHTML,processMeta,44,16,12,2,Alto Acoplamento Efferent
+ V ,PROCESSOR,org.archive.modules.fetcher.FetchFTP,fetch,88,12,12,3,Muitos Parametros
+" A, V, X ",TEST,org.archive.util.FileUtilsTest,verifyHeadLines,6,1,3,4,Muitos Parametros
+ V ,TEST,org.archive.io.RepositionableInputStreamTest,testname,24,2,7,0,Metodo Longo
+" A, V, X ",UNDEFINED,org.archive.util.SURT,append,6,2,3,4,Muitos Parametros
+ V ,TEST,org.archive.modules.fetcher.FetchHTTPTests,runDefaultChecks,34,5,8,2,Muitos Desvios
+ V ,UNDEFINED,org.archive.crawler.Heritrix,useAdhocKeystore,23,4,15,1,Metodo Longo
+ V ,UNDEFINED,org.archive.util.InetAddressUtil,getAllLocalHostNames,32,9,8,0,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.extractor.ExtractorXML,shouldExtract,11,9,3,1,Muitos Desvios
+" A, V, X ",CRAWLERJOURNAL,org.archive.crawler.frontier.FrontierJournal,importCompletionInfoFromLog,46,16,14,3,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.extractor.ExtractorImpliedURI,extract,35,6,15,1,Muitos Desvios
+ V ,UNDEFINED,org.archive.crawler.util.RecoveryLogMapper,main,21,5,6,1,Muitos Desvios
+ V ,UNDEFINED,org.apache.hadoop.examples.GenGraph,reduce,29,7,9,4,Alto Acoplamento Efferent
+ V ,TEST,org.archive.crawler.framework.CrawlControllerTest,makeTempCrawlController,28,2,10,0,Alto Acoplamento Efferent
+ V ,ROBOTSPOLICY,org.archive.modules.net.FirstNamedRobotsPolicy,allows,16,5,5,3,Muitos Parametros
+" A, V, X ",ARCHIVEREADER,org.archive.io.warc.WARCReader,main,72,15,18,1,Muitos Desvios
+ V ,[LIFECYCLE| APPLICATIONCONTEXTAWARE| HASVALIDATOR],org.archive.crawler.framework.CheckpointService,setupCheckpointTask,25,4,0,0,Metodo Longo
+" A, V, X ",RESOURCE,org.archive.crawler.restlet.JobRelatedResource,writeObject,97,27,13,5,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.archive.modules.fetcher.FetchHTTPRequest,populateHttpCredential,13,3,9,4,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.archive.util.TestUtils,scanSuite,26,7,4,3,Muitos Parametros
+ V ,VIEW,org.archive.crawler.monitor.DiskSpaceMonitor,onApplicationEvent,12,5,5,1,Muitos Desvios
+ V ,PROCESSOR,org.archive.crawler.postprocessor.LinksScoper,considerAsSeed,3,1,3,3,Muitos Parametros
+" A, V, X ",ASYNCTASK,org.archive.crawler.framework.ActionDirectory,tryAsScript,54,10,16,2,Muitos Desvios
+ V ,[IOFILEFILTER],org.archive.util.FileUtils,isReadableWithExtensionAndMagic,25,5,8,3,Muitos Parametros
+" A, V, X ",PROCESSOR,org.archive.modules.fetcher.FetchHTTP,cleanup,11,3,5,4,Muitos Parametros
+ V ,WRITERPOOLMEMBER,org.archive.io.arc.ARCWriter,writeMetaData,30,8,8,1,Metodo Longo
+" A, V, X ",PROCESSOR,org.archive.crawler.prefetch.PreconditionEnforcer,credentialPrecondition,45,11,10,1,Muitos Desvios
+ V ,UNDEFINED,org.archive.modules.fetcher.FetchHTTPRequest,configureRequestHeaders,39,15,11,0,Metodo Longo
+ V ,QUEUEASSIGNMENTPOLICY,org.archive.crawler.frontier.URIAuthorityBasedQueueAssignmentPolicy,getClassKey,23,8,5,1,Muitos Desvios
+ V ,PERSISTENCE,org.archive.util.zip.OpenJDK7GZIPInputStream,readTrailer,21,9,9,0,Muitos Desvios
+ V ,PERSISTENCE,org.archive.io.arc.ARCRecord,read,20,5,4,3,Muitos Parametros
+ V ,URLCODEC,org.archive.net.LaxURLCodec,decodeUrlLoose,27,8,4,1,Metodo Longo
+ V ,UNDEFINED,org.archive.util.SURT,fromURI,37,8,7,2,Muitos Desvios
+ V ,QUEUEASSIGNMENTPOLICY,org.archive.crawler.frontier.HostnameQueueAssignmentPolicy,getCoreKey,18,5,5,1,Muitos Desvios
+" A, R, V, X ",CRAWLERJOURNAL,org.archive.crawler.frontier.FrontierJournal,importQueuesFromLog,60,18,17,5,Alto Acoplamento Efferent
+ V ,ENTITY,org.archive.crawler.framework.CrawlJob,onApplicationEvent,13,6,2,1,Muitos Desvios
+ V ,UNDEFINED,org.archive.util.UriUtils,isVeryLikelyUri,28,11,7,1,Metodo Longo
+" A, R, D, V, X ",PROCESSOR,org.archive.modules.extractor.ExtractorHTML,processGeneralTag,154,47,18,3,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.writer.WARCWriterProcessor,addStats,16,6,5,1,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.writer.MirrorWriterProcessor,addToPath,45,12,10,1,Alto Acoplamento Efferent
+ V ,PROCESSOR,org.archive.modules.fetcher.FetchFTP,addExtracted,23,5,10,2,Metodo Longo
+ V ,UNDEFINED,org.archive.surt.SURTTokenizer,getKey,19,5,7,2,Muitos Desvios
+ V ,FILESYSTEMXMLAPPLICATIONCONTEXT,org.archive.spring.PathSharingContext,validate,18,5,9,0,Muitos Desvios
+ V ,URI,org.archive.net.UURI,equals,25,8,3,1,Metodo Longo
+ V ,PERSISTENCE,org.archive.modules.fetcher.AbstractCookieStore,saveCookies,36,8,9,2,Metodo Longo
+ V ,ASYNCTASK,org.archive.crawler.reporting.StatisticsTracker,addToManifest,2,1,3,3,Muitos Parametros
+ V ,[IOFILEFILTER],org.archive.util.FileUtils,isReadableWithExtensionAndMagic,25,5,8,3,Metodo Longo
+ V ,ENTITY,org.archive.crawler.framework.CrawlJob,teardown,22,6,4,0,Muitos Desvios
+ V ,ENTITY,org.archive.modules.net.CrawlHost,equals,13,6,3,1,Muitos Desvios
+" A, V, X ",PROCESSOR,org.archive.crawler.prefetch.FrontierPreparer,getSchedulingDirective,24,11,4,1,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.fetcher.FetchFTP,saveToRecorder,12,1,6,3,Muitos Parametros
+ V ,DIALOG,org.archive.crawler.restlet.PagedRepresentation,loadLines,12,5,9,0,Muitos Desvios
+ V ,UNDEFINED,org.archive.modules.fetcher.FetchHTTPRequest,configureRequestHeaders,39,15,11,0,Alto Acoplamento Efferent
+ V ,WRITERPOOLMEMBER,org.archive.io.warc.WARCWriter,createRecordHeader,20,5,5,1,Muitos Desvios
+ V ,ASYNCTASK,org.archive.crawler.framework.ActionDirectory,actOn,68,16,9,1,Alto Acoplamento Efferent
+" A, R, D, V, X ",ENTITY,org.archive.modules.CrawlURI,fetchStatusCodesToString,134,65,3,1,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.writer.MirrorWriterProcessor,joinParts,26,7,3,0,Muitos Desvios
+ V ,UNDEFINED,org.archive.util.ArchiveUtils,loadVersion,43,7,6,0,Metodo Longo
+ V ,RESOURCE,org.archive.crawler.restlet.JobRelatedResource,writeNestedNames,39,13,9,4,Alto Acoplamento Efferent
+ V ,ASYNCTASK,org.archive.crawler.framework.ToePool,compactReportTo,20,5,4,1,Muitos Desvios
+" A, V, X ",UNDEFINED,org.apache.hadoop.examples.PageRank,map,24,4,9,4,Muitos Parametros
+ V ,SIMPLEFORMATTER,org.archive.util.OneLineSimpleLogger,format,37,5,8,1,Muitos Desvios
+ V ,PERSISTENCE,org.archive.io.GZIPMembersInputStream,readTrailer,20,7,8,0,Muitos Desvios
+" A, V, X ",PROCESSOR,org.archive.modules.fetcher.FetchWhois,fetch,49,10,13,3,Metodo Longo
+ V ,UNDEFINED,org.archive.crawler.restlet.Flash,getFlashes,17,5,9,1,Alto Acoplamento Efferent
+ V ,TEST,org.archive.net.UURIFactoryTest,testRFC3986Relative,26,1,2,0,Metodo Longo
+ V ,UNDEFINED,org.archive.util.UriUtils,speculativeFixup,28,7,9,2,Metodo Longo
+ V ,PERSISTENCE,org.archive.io.ArchiveRecord,read,22,7,8,3,Muitos Desvios
+ V ,CONCURRENTHASHMAP,org.archive.spring.KeyedProperties,get,22,6,7,1,Metodo Longo
+ V ,ENTITY,org.archive.modules.CrawlURI,readUuri,23,5,4,1,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.writer.WriterPoolProcessor,shouldWrite,30,9,5,1,Metodo Longo
+ V ,PROCESSOR,org.archive.crawler.postprocessor.LinksScoper,shouldProcess,18,6,2,1,Muitos Desvios
+" A, V, X ",TEST,org.archive.io.RecordingInputStreamTest,testReadFullyOrUntil,51,3,13,0,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.extractor.ExtractorHTML,processMeta,44,16,12,2,Metodo Longo
+" A, V, X ",UNDEFINED,org.archive.crawler.util.LogReader,getByRegex,60,13,12,7,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.archive.crawler.Heritrix,setupGlobalProperties,22,7,7,1,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.writer.Kw3WriterProcessor,initOutputStream,15,4,10,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.archive.util.PropertyUtils,interpolateWithProperties,20,5,5,2,Muitos Desvios
+ V ,UNDEFINED,org.archive.modules.extractor.PDFParser,extractURIs,33,9,8,1,Muitos Desvios
+ V ,TEST,org.archive.io.warc.WARCWriterTest,writeBasicRecords,22,2,10,1,Alto Acoplamento Efferent
+" A, V, X ",RESOURCE,org.archive.crawler.restlet.EngineResource,acceptRepresentation,73,18,8,1,Metodo Longo
+ V ,UNDEFINED,org.archive.crawler.frontier.BdbMultipleWorkQueues,getNextNearestItem,23,4,6,2,Metodo Longo
+ V ,UNDEFINED,org.archive.modules.net.RobotsPolicy,allows,0,1,6,3,Muitos Parametros
+ V ,UNDEFINED,org.archive.crawler.framework.Engine,waitForNoRunningJobs,26,8,7,1,Muitos Desvios
+ V ,UNDEFINED,org.archive.io.ArchiveTest,readArchive,37,9,3,0,Metodo Longo
+ V ,ABSTRACTFRONTIER,org.archive.crawler.frontier.BdbFrontier,consistencyCheck,41,11,9,0,Metodo Longo
+" A, V, X ",ENTITY,org.archive.util.ObjectIdentityBdbManualCache,initialize,7,1,8,4,Muitos Parametros
+ V ,UNDEFINED,org.archive.crawler.frontier.BdbMultipleWorkQueues,deleteMatchingFromQueue,30,6,9,3,Metodo Longo
+ V ,PERSISTENCE,org.archive.util.zip.OpenJDK7InflaterInputStream,read,29,12,8,3,Metodo Longo
+ V ,UNDEFINED,org.archive.modules.fetcher.FetchHTTPRequest,maybeAddConditionalGetHeader,17,5,7,3,Muitos Parametros
+" A, V, X ",TEST,org.archive.modules.writer.ARCWriterProcessorTest,verifySerialization,2,1,2,4,Muitos Parametros
+ V ,UNDEFINED,org.archive.crawler.framework.Engine,copy,24,6,7,3,Muitos Desvios
+" A, V ",RESOURCE,org.archive.crawler.restlet.JobRelatedResource,addPresentableNestedNames,40,13,12,3,Alto Acoplamento Efferent
+ V ,PROCESSOR,org.archive.modules.writer.WARCWriterProcessor,writeRevisitNotModified,28,2,8,5,Metodo Longo
+" A, V, X ",TEST,org.archive.util.ms.PieceReaderTest,addPiece,11,3,3,4,Muitos Parametros
+ V ,UNDEFINED,org.archive.modules.fetcher.FetchHTTPRequest,populateTargetCredential,37,8,9,0,Muitos Desvios
+ V ,UNDEFINED,org.archive.crawler.util.CheckpointUtils,writeObjectToFile,10,1,6,3,Muitos Parametros
+" A, V, X ",PROCESSOR,org.archive.modules.fetcher.FetchWhois,deferOrFinishGeneric,48,13,12,2,Muitos Desvios
+ V ,UNDEFINED,org.archive.io.Warc2Arc,isARCType,10,5,2,1,Muitos Desvios
+" A, R, D, V, X ",VIEW,org.archive.crawler.frontier.AbstractFrontier,importRecoverFormat,56,12,17,5,Alto Acoplamento Efferent
+" A, D, V, X ",ABSTRACTFRONTIER,org.archive.crawler.frontier.WorkQueueFrontier,appendQueueReports,34,8,7,5,Muitos Parametros
+" A, R, D, V, X ",PROCESSOR,org.archive.modules.writer.WARCWriterProcessor,writeRequest,21,1,9,6,Muitos Parametros
+ V ,TEST,org.archive.io.warc.WARCWriterTest,testRandomAccess,35,5,9,0,Metodo Longo
+ V ,ENTITY,org.archive.crawler.spring.SheetOverlaysManager,applyOverlaysTo,17,5,8,1,Muitos Desvios
+ V ,RESOURCE,org.archive.crawler.restlet.BeanBrowseResource,makePresentableMap,42,10,15,0,Metodo Longo
+ V ,TEST,org.archive.io.ReplayCharSequenceTest,xestHugeReplayCharSequence,33,6,11,0,Muitos Desvios
+ V ,[IOFILEFILTER],org.archive.util.FileUtils,workaroundCopyFile,31,6,6,2,Metodo Longo
+ V ,ARCHIVEREADER,org.archive.io.warc.WARCReader,usage,4,1,4,3,Muitos Parametros
+" A, V, X ",ASYNCTASK,org.archive.crawler.reporting.StatisticsTracker,onApplicationEvent,49,14,4,1,Metodo Longo
+ V ,UNDEFINED,org.archive.crawler.util.LogUtils,createFileLogger,22,5,11,3,Alto Acoplamento Efferent
+ V ,WRITERPOOLMEMBER,org.archive.io.arc.ARCWriter,generateARCFileMetaData,30,7,7,1,Muitos Desvios
+" A, D, V, X ",PROCESSOR,org.archive.modules.writer.WARCWriterProcessor,updateMetadataAfterWrite,35,15,8,3,Muitos Desvios
+ V ,ENTITY,org.archive.util.ObjectIdentityMemCache,getOrUse,14,5,4,2,Muitos Desvios
+" A, V, X ",RESOURCE,org.archive.crawler.restlet.JobResource,getAvailableActions,25,10,3,0,Muitos Desvios
+ V ,PROCESSOR,org.archive.crawler.postprocessor.LinksScoper,getSchedulingFor,14,7,5,3,Muitos Desvios
+ V ,PERSISTENCE,org.archive.modules.fetcher.AbstractCookieStore,loadCookies,30,6,13,2,Muitos Desvios
+ V ,PERSISTENCE,org.archive.io.warc.WARCRecord,parseHeaders,82,7,0,4,Muitos Desvios
+ V ,PERSISTENCE,org.archive.util.zip.OpenJDK7InflaterInputStream,read,29,12,8,3,Muitos Parametros
+" A, R, D, V, X ",PROCESSOR,org.archive.modules.writer.MirrorWriterProcessor,uriToFile,85,35,13,2,Muitos Desvios
+" A, V ",UNDEFINED,org.archive.util.ProcessUtils,exec,25,4,12,1,Alto Acoplamento Efferent
+" A, D, V, X ",TEST,org.archive.util.FileUtilsTest,setUpLinesFile,15,4,6,5,Muitos Parametros
+" A, V, X ",TEST,org.archive.modules.writer.WARCWriterProcessorTest,verifySerialization,2,1,2,4,Muitos Parametros
+" A, R, V, X ",ASYNCTASK,org.archive.crawler.reporting.StatisticsTracker,start,44,5,15,0,Alto Acoplamento Efferent
+ V ,PROCESSOR,org.archive.modules.writer.ARCWriterProcessor,getMetadata,22,4,4,0,Metodo Longo
+" A, V, X ",UNDEFINED,org.archive.io.GzipHeader,readByte,6,2,4,5,Muitos Parametros
+ V ,PERSISTENCE,org.archive.io.arc.ARCRecord,getEolCharsCount,10,6,2,1,Muitos Desvios
+" A, V, X ",DIALOG,org.archive.crawler.restlet.PagedRepresentation,emitControls,49,2,5,1,Metodo Longo
+" A, R, D, V, X ",TEST,org.archive.modules.recrawl.ContentDigestHistoryTest,testWarcDedupe,115,2,21,0,Metodo Longo
+" A, V, X ",[URIUNIQFILTER],org.archive.crawler.util.FPMergeUriUniqFilter,flush,66,19,9,0,Metodo Longo
+" A, V, X ",UNDEFINED,st.ata.util.FPGenerator,extend8,6,2,3,4,Muitos Parametros
+" A, R, D, V, X ",PROCESSOR,org.archive.modules.extractor.JerichoExtractorHTML,processGeneralTag,116,54,22,3,Alto Acoplamento Efferent
+ V ,ABSTRACTFRONTIER,org.archive.crawler.frontier.WorkQueueFrontier,activateInactiveQueue,29,6,10,0,Muitos Desvios
+ V ,SWFTAGTYPESIMPL,org.archive.modules.extractor.CustomSWFTags,tagDefineButton2,3,1,4,3,Muitos Parametros
+ V ,ENTITY,org.archive.modules.net.Robotstxt,getDirectivesFor,14,5,4,2,Muitos Desvios
+" A, V ",TEST,org.archive.modules.canonicalize.StripSessionIDsTest,testCanonicalize,47,1,2,0,Metodo Longo
+ V ,TEST,org.archive.crawler.datamodel.CrawlURITest,testSerialization,24,1,8,0,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.fetcher.FetchWhois,addWhoisLinks,19,5,7,1,Muitos Desvios
+ V ,TEST,org.archive.modules.extractor.ExtractorHTMLTest,testConditionalComment1,17,1,9,0,Alto Acoplamento Efferent
+" A, V, X ",UNDEFINED,org.archive.util.ArchiveUtils,getDate,38,15,6,1,Muitos Desvios
+" A, R, D, V, X ",LINKEDLIST,org.archive.util.anvl.ANVLRecord,load,38,12,8,1,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.extractor.ExtractorSWF,innerExtract,27,4,10,1,Alto Acoplamento Efferent
+" A, D, V, X ",PROCESSOR,org.archive.crawler.postprocessor.LowDiskPauseProcessor,checkAvailableSpace,28,6,14,1,Alto Acoplamento Efferent
+ V ,TEST,org.archive.crawler.selftest.SelfTestBase,verifyProgressStatistics,17,5,3,0,Muitos Desvios
+" A, V, X ",RESOURCE,org.archive.crawler.restlet.JobRelatedResource,writeObject,97,27,13,5,Metodo Longo
+" A, V, X ",ARCHIVEREADER,org.archive.io.arc.ARCReader,main,81,18,18,1,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.extractor.AggressiveExtractorHTML,processScript,4,1,3,3,Muitos Parametros
+ V ,CREDENTIAL,org.archive.modules.credential.HttpAuthenticationCredential,getByRealm,16,7,4,3,Muitos Parametros
+ V ,ENTITY,org.archive.crawler.framework.CrawlJob,startContext,23,4,8,0,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.fetcher.FetchDNS,recordDNS,31,5,8,2,Muitos Desvios
+" A, V, X ",UNDEFINED,org.archive.crawler.util.LogReader,tail,77,16,9,2,Muitos Desvios
+ V ,DIRECTORYRESOURCE,org.archive.crawler.restlet.EnhDirectoryResource,getVariants,47,12,11,0,Alto Acoplamento Efferent
+ V ,[ARCHIVEFILECONSTANTS],org.archive.io.WriterPoolMember,getBaseFilename,12,5,4,0,Muitos Desvios
+ V ,ABSTRACTFRONTIER,org.archive.crawler.frontier.BdbFrontier,doCheckpoint,44,8,13,1,Metodo Longo
+ V ,ASYNCTASK,org.archive.crawler.framework.ToeThread,seriousError,32,5,9,1,Alto Acoplamento Efferent
+ V ,ENTITY,org.archive.util.ObjectIdentityBdbCache,sync,30,7,11,0,Muitos Desvios
+" A, V, X ",RESOURCE,org.archive.crawler.restlet.BeanBrowseResource,writeHtml,64,11,14,1,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.extractor.ExtractorSWF,parseDefineBitsLossless,2,1,3,3,Muitos Parametros
+ V ,ENTITY,org.archive.modules.CrawlURI,markPrerequisite,20,2,9,1,Alto Acoplamento Efferent
+" A, V, X ",PROCESSOR,org.archive.modules.extractor.ExtractorPDF,innerExtract,54,8,19,1,Metodo Longo
+" A, V, X ",ABSTRACTFRONTIER,org.archive.crawler.frontier.WorkQueueFrontier,reportTo,105,4,24,1,Metodo Longo
+ V ,WRITERPOOLMEMBER,org.archive.io.warc.WARCWriter,writeWarcinfoRecord,30,6,10,2,Metodo Longo
+ V ,ABSTRACTFRONTIER,org.archive.crawler.frontier.WorkQueueFrontier,processFinish,64,7,10,1,Alto Acoplamento Efferent
+ V ,PROCESSOR,org.archive.modules.recrawl.AbstractPersistProcessor,shouldStore,13,7,3,1,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.archive.crawler.frontier.precedence.PrecedenceLoader,main2args,45,6,22,1,Alto Acoplamento Efferent
+ V ,ENTITY,org.archive.crawler.reporting.SeedRecord,fillWith,17,6,4,2,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.extractor.ExtractorMultipleRegex,extract,37,7,15,1,Metodo Longo
+ V ,ENTITY,org.archive.modules.credential.CredentialStore,subset,22,7,6,3,Muitos Desvios
+ V ,ENTITY,org.archive.util.ObjectIdentityBdbCache,pageOutStaleEntries,17,5,9,0,Muitos Desvios
+ V ,PERSISTENCE,org.archive.io.OriginSeekInputStream,read,3,1,3,3,Muitos Parametros
+ V ,TEST,org.archive.io.RecordingOutputStreamTest,verifyRecording,14,2,5,3,Muitos Parametros
+ V ,SEEDMODULE,org.archive.modules.seeds.TextSeedModule,announceSeedsFromReader,22,5,9,2,Muitos Desvios
+" A, V, X ",ENTITY,org.archive.util.ObjectIdentityBdbCache,initialize,8,1,11,4,Muitos Parametros
+ V ,PERSISTENCE,org.archive.net.md5.Handler,main,22,3,8,1,Metodo Longo
+" A, V, X ",URI,org.archive.net.LaxURI,validate,3,1,4,4,Muitos Parametros
+ V ,PERSISTENCE,org.archive.io.RecordingInputStream,readFullyOrUntil,41,13,10,1,Alto Acoplamento Efferent
+ V ,PROCESSOR,org.archive.modules.fetcher.FetchHTTP,handle401,33,6,10,2,Muitos Desvios
+ V ,UNDEFINED,org.archive.util.Base32,decode,35,9,3,1,Muitos Desvios
+" A, V, X ",[IOFILEFILTER],org.archive.util.FileUtils,pagedLines,100,31,13,5,Alto Acoplamento Efferent
+ V ,ABSTRACTFRONTIER,org.archive.crawler.frontier.WorkQueueFrontier,appendQueueReports,34,8,7,5,Metodo Longo
+" A, V ",SETBASEDURIUNIQFILTER,org.archive.crawler.util.BdbUriUniqFilter,setAdd,34,9,12,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.archive.crawler.migrate.MigrateH1to3Tool,flattenH1Order,14,3,9,1,Alto Acoplamento Efferent
+ V ,SETBASEDURIUNIQFILTER,org.archive.crawler.util.BdbUriUniqFilter,start,24,5,10,0,Alto Acoplamento Efferent
+" A, V, X ",VIEW,org.archive.crawler.frontier.AbstractFrontier,importURIsSimple,48,11,14,1,Alto Acoplamento Efferent
+ V ,PERSISTENCE,org.archive.io.HeaderedArchiveRecord,read,19,5,4,3,Muitos Parametros
+" A, V, X ",URI,org.archive.net.UURIFactory,checkHttpSchemeSpecificPartSlashPrefix,17,10,3,3,Muitos Desvios
+ V ,ARCHIVEREADER,org.archive.io.arc.ARCReader,dump,23,4,13,1,Metodo Longo
+ V ,ROBOTSPOLICY,org.archive.modules.net.MostFavoredRobotsPolicy,allows,14,5,4,3,Muitos Parametros
+ V ,UNDEFINED,org.archive.net.PublicSuffixes,readPublishedFileToSurtTrie,18,6,6,1,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.extractor.JerichoExtractorHTML,processMeta,25,9,9,2,Muitos Desvios
+ V ,UNDEFINED,org.archive.crawler.frontier.BdbMultipleWorkQueues,put,22,5,8,2,Muitos Desvios
+" A, V, X ",VIEW,org.archive.crawler.frontier.AbstractFrontier,importRecoverFormat,56,12,17,5,Metodo Longo
+ V ,ENTITY,org.archive.modules.net.CrawlServer,getServerKey,15,7,2,1,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.extractor.ExtractorURI,extractLink,27,5,10,2,Muitos Desvios
+ V ,UNDEFINED,org.archive.crawler.frontier.BdbMultipleWorkQueues,deleteMatchingFromQueue,30,6,9,3,Muitos Parametros
+" A, V, X ",CRAWLERJOURNAL,org.archive.crawler.frontier.FrontierJournal,importCompletionInfoFromLog,46,16,14,3,Alto Acoplamento Efferent
+ V ,FILESYSTEMXMLAPPLICATIONCONTEXT,org.archive.spring.PathSharingContext,validate,18,5,9,0,Alto Acoplamento Efferent
+" A, V, X ",DIRECTORYRESOURCE,org.archive.crawler.restlet.EnhDirectoryResource,getVariants,47,12,11,0,Muitos Desvios
+ V ,PERSISTENCE,org.archive.io.RandomAccessInputStream,read,3,1,3,3,Muitos Parametros
+ V ,[URIUNIQFILTER],org.archive.crawler.util.FPMergeUriUniqFilter,pend,16,5,5,2,Muitos Desvios
+" A, V, X ",ASYNCTASK,org.archive.crawler.framework.ActionDirectory,tryAsScript,54,10,16,2,Metodo Longo
+" A, D, V, X ",ENTITY,org.archive.modules.net.Robotstxt,initializeFromReader,91,21,12,1,Metodo Longo
+" A, R, D, V, X ",PERSISTENCE,org.archive.io.arc.ARCRecord,readHttpHeader,66,15,16,0,Alto Acoplamento Efferent
+" A, R, D, V, X ",PROCESSOR,org.archive.modules.extractor.JerichoExtractorHTML,processGeneralTag,116,54,22,3,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.extractor.ExtractorHTML,considerQueryStringValues,15,5,9,4,Alto Acoplamento Efferent
+" A, V, X ",URI,org.archive.net.UURIFactory,appendNonNull,11,5,3,4,Muitos Parametros
+ V ,CRAWLERJOURNAL,org.archive.crawler.frontier.FrontierJournal,importCompletionInfoFromLog,46,16,14,3,Muitos Parametros
+ V ,PROCESSOR,org.archive.modules.fetcher.FetchHTTP,handle401,33,6,10,2,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.archive.util.Base32,encode,28,7,4,1,Metodo Longo
+" A, R, D, V, X ",PROCESSOR,org.archive.modules.writer.WARCWriterProcessor,writeResource,20,1,8,6,Muitos Parametros
+" A, D, V, X ",PROCESSOR,org.archive.modules.fetcher.FetchDNS,innerProcess,64,15,11,1,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.fetcher.FetchDNS,isQuadAddress,20,5,10,3,Muitos Parametros
+ V ,ARCHIVEREADERFACTORY,org.archive.io.arc.ARCReaderFactory,getArchiveReader,9,4,8,3,Muitos Parametros
+ V ,PROCESSOR,org.archive.modules.extractor.ExtractorSWF,parsePlaceObject2,33,13,8,1,Metodo Longo
+" A, V, X ",RESOURCE,org.archive.crawler.restlet.JobResource,makePresentableMap,63,13,14,0,Metodo Longo
+ V ,ENTITY,org.archive.crawler.framework.CrawlJob,launch,41,6,0,0,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.fetcher.FetchDNS,isQuadAddress,20,5,10,3,Alto Acoplamento Efferent
+ V ,TEST,org.archive.modules.fetcher.FetchHTTPTests,runDefaultChecks,34,5,8,2,Metodo Longo
+ V ,PROCESSOR,org.archive.crawler.prefetch.Preselector,innerProcessResult,28,10,4,1,Metodo Longo
+ V ,TEST,org.archive.crawler.util.BloomUriUniqFilterTest,testWriting,25,5,9,0,Metodo Longo
+" A, V, X ",WRITERPOOLMEMBER,org.archive.io.arc.ARCWriter,getMetaLine,6,2,6,5,Muitos Parametros
+ V ,DECIDERULE,org.archive.modules.deciderules.ResourceNoLongerThanDecideRule,evaluate,23,7,6,1,Metodo Longo
+" A, V, X ",PROCESSOR,org.archive.modules.extractor.ExtractorHTML,considerQueryStringValues,15,5,9,4,Muitos Parametros
+ V ,TEST,org.archive.util.ms.DocTest,report,8,1,3,3,Muitos Parametros
+ V ,PROCESSOR,org.archive.crawler.prefetch.PreconditionEnforcer,considerDnsPreconditions,34,11,9,1,Alto Acoplamento Efferent
+ V ,TEST,org.archive.crawler.selftest.SelfTestBase,filesInArcs,19,5,8,0,Muitos Desvios
+ V ,ASYNCTASK,org.archive.crawler.reporting.StatisticsTracker,getReports,15,2,11,0,Alto Acoplamento Efferent
+" A, R, D, V, X ",RESOURCE,org.archive.crawler.restlet.JobRelatedResource,writeObject,97,27,13,5,Muitos Desvios
+ V ,ENTITY,org.archive.crawler.frontier.WorkQueue,insertItem,0,1,3,3,Muitos Parametros
+ V ,SUBELEMENT,org.archive.util.anvl.Value,checkCharacter,21,6,6,3,Muitos Desvios
+" A, V, X ",FORMATTER,org.archive.crawler.io.UriProcessingFormatter,format,57,12,14,1,Alto Acoplamento Efferent
+ V ,TEST,org.archive.io.arc.ARCWriterTest,testRandomAccess,35,5,9,0,Alto Acoplamento Efferent
+ V ,WRITERPOOLMEMBER,org.archive.io.arc.ARCWriter,writeMetaData,30,8,8,1,Muitos Desvios
+ V ,PROCESSOR,org.archive.crawler.prefetch.PreconditionEnforcer,innerProcessResult,18,7,4,1,Muitos Desvios
+ V ,UNDEFINED,org.archive.io.Warc2Arc,usage,4,1,4,3,Muitos Parametros
+ V ,URI,org.archive.net.UURI,resolve,3,1,3,3,Muitos Parametros
+ V ,TEST,org.archive.io.arc.ARCWriterTest,holeyUrl,11,1,4,3,Muitos Parametros
+ V ,UNDEFINED,org.archive.util.anvl.SubElement,checkControlCharacter,5,4,6,3,Muitos Parametros
+" A, V, X ",PROCESSOR,org.archive.modules.extractor.ExtractorUniversal,innerExtract,59,13,14,1,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.extractor.JerichoExtractorHTML,processForm,43,11,10,2,Alto Acoplamento Efferent
+ V ,PERSISTENCE,org.archive.io.ReplayInputStream,read,18,5,5,3,Muitos Parametros
+" D, V ",ENTITY,org.archive.spring.Sheet,prime,36,5,11,0,Alto Acoplamento Efferent
+ V ,PERSISTENCE,org.archive.util.zip.OpenJDK7GZIPInputStream,readHeader,39,14,5,1,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.writer.MirrorWriterProcessor,trimWithPadding,30,8,6,1,Muitos Desvios
+" A, D, V ",DECIDERULE,org.archive.modules.deciderules.ExternalGeoLocationDecideRule,evaluate,35,8,12,1,Alto Acoplamento Efferent
+" A, V, X ",LINKCONTEXT,org.archive.modules.extractor.HTMLLinkContext,get,11,13,2,2,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.writer.MirrorWriterProcessor,append,26,5,4,1,Muitos Desvios
+ V ,RESOURCE,org.archive.crawler.restlet.ScriptResource,writeHtml,67,8,8,1,Muitos Desvios
+" A, V, X ",ARCHIVEREADER,org.archive.io.warc.WARCReader,main,72,15,18,1,Metodo Longo
+ V ,UNDEFINED,org.archive.util.BenchmarkBlooms,instanceMain,18,8,6,1,Muitos Desvios
+ V ,ASYNCTASK,org.archive.crawler.reporting.StatisticsTracker,start,44,5,15,0,Metodo Longo
+" A, V, X ",[IOFILEFILTER],org.archive.util.FileUtils,pagedLines,100,31,13,5,Metodo Longo
+" A, D, V, X ",PROCESSOR,org.archive.modules.recrawl.PersistProcessor,populatePersistEnvFromLog,37,8,14,2,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.archive.util.Recorder,getContentReplayCharSequence,9,6,2,0,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.writer.ARCWriterProcessor,innerProcessResult,23,3,7,1,Metodo Longo
+ V ,CREDENTIAL,org.archive.modules.credential.HttpAuthenticationCredential,getByRealm,16,7,4,3,Muitos Desvios
+ V ,ABSTRACTFRONTIER,org.archive.crawler.frontier.WorkQueueFrontier,queueSingleLinesTo,36,8,8,2,Metodo Longo
+" A, D, V, X ",PROCESSOR,org.archive.crawler.postprocessor.CandidatesProcessor,innerProcess,62,15,7,1,Muitos Desvios
+" A, V, X ",UNDEFINED,org.archive.crawler.migrate.MigrateH1to3Tool,instanceMain,89,11,16,1,Metodo Longo
+" A, V, X ",UNDEFINED,org.archive.util.UriUtils,isLikelyFalsePositive,50,21,8,1,Muitos Desvios
+" A, V ",VIEW,org.archive.crawler.frontier.AbstractFrontier,importURIsSimple,48,11,14,1,Metodo Longo
+ V ,ENTITY,org.archive.modules.net.CrawlServer,updateRobots,39,9,13,1,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.writer.WARCWriterProcessor,writeDnsRecords,23,3,7,4,Metodo Longo
+" A, D, V ",ENTITY,org.archive.util.ObjectIdentityBdbManualCache,sync,25,5,12,0,Alto Acoplamento Efferent
+ V ,TEST,org.archive.io.warc.WARCWriterTest,validate,25,4,8,2,Metodo Longo
+ V ,UNDEFINED,org.archive.io.ArchiveTest,filterArchive,17,5,7,1,Muitos Desvios
+" A, V, X ",PERSISTENCE,org.archive.io.warc.WARCRecord,getDate,3,1,13,0,Alto Acoplamento Efferent
+ V ,WRITERPOOLMEMBER,org.archive.io.warc.WARCWriter,writeRecord,39,7,7,1,Muitos Desvios
+ V ,UNDEFINED,org.archive.util.ArchiveUtils,formatMillisecondsToConventional,26,7,7,2,Metodo Longo
+ V ,TEST,org.archive.util.ObjectIdentityBdbCacheTest,run,11,7,5,0,Muitos Desvios
+ V ,ENTITY,org.archive.crawler.framework.CrawlController,requestCrawlStop,17,6,3,1,Muitos Desvios
+ V ,UNDEFINED,org.archive.crawler.util.CheckpointUtils,readObjectFromFile,11,1,6,3,Muitos Parametros
+ V ,[LIFECYCLE| APPLICATIONCONTEXTAWARE| HASVALIDATOR],org.archive.crawler.framework.CheckpointService,findAvailableCheckpointDirectories,17,4,9,0,Alto Acoplamento Efferent
+ V ,PROCESSOR,org.archive.crawler.postprocessor.DispositionProcessor,innerProcess,30,14,7,1,Metodo Longo
+ V ,UNDEFINED,org.archive.crawler.framework.Engine,addJobDirectory,35,2,0,1,Metodo Longo
+ V ,UNDEFINED,org.archive.modules.fetcher.FetchHTTPRequest,create,3,1,2,3,Muitos Parametros
+ V ,[ARCHIVEFILECONSTANTS| ITERABLE],org.archive.io.ArchiveReader,validate,20,6,7,1,Muitos Desvios
+ V ,PERSISTENCE,org.archive.io.ArchiveRecord,outputCdx,23,2,3,1,Metodo Longo
+" A, V, X ",RESOURCE,org.archive.crawler.restlet.JobResource,makePresentableMap,63,13,14,0,Alto Acoplamento Efferent
+ V ,TEST,org.archive.util.FileUtilsTest,getTestTailLines,14,2,8,3,Muitos Parametros
+ V ,DIALOG,org.archive.crawler.restlet.PagedRepresentation,getControlUri,19,5,10,3,Muitos Desvios
+ V ,SESSIONINPUTBUFFERIMPL,org.archive.modules.fetcher.RecordingSessionInputBuffer,readLine,23,8,4,1,Metodo Longo
+" A, V ",PROCESSOR,org.archive.modules.extractor.ExtractorHTML,extract,47,9,6,2,Metodo Longo
+" A, V, X ",ENTITY,org.archive.bdb.BdbModule,getObjectCache,8,2,6,4,Muitos Parametros
+ V ,ABSTRACTFRONTIER,org.archive.crawler.frontier.WorkQueueFrontier,processFinish,64,7,10,1,Muitos Desvios
+ V ,ABSTRACTFRONTIER,org.archive.crawler.frontier.BdbFrontier,initAllQueues,38,6,14,0,Metodo Longo
+ V ,TEST,org.archive.util.FileUtilsTest,getTestHeadLines,10,2,7,3,Muitos Parametros
+ V ,ASYNCTASK,org.archive.crawler.framework.ToePool,shortReportMap,24,5,7,0,Metodo Longo
+ V ,ASYNCTASK,org.archive.crawler.framework.ToeThread,seriousError,32,5,9,1,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.writer.ARCWriterProcessor,write,39,8,10,4,Muitos Desvios
+ V ,TEST,org.archive.crawler.BasicProfileTest,testBundledProfiles,14,6,2,0,Muitos Desvios
+ V ,[ARCHIVEFILECONSTANTS],org.archive.io.ArchiveReaderFactory,getArchiveReader,13,5,4,1,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.fetcher.FetchHTTP,handle401,33,6,10,2,Metodo Longo
+ V ,PERSISTENCE,org.archive.io.RecordingOutputStream,record,7,2,3,3,Muitos Parametros
+ V ,PROCESSOR,org.archive.crawler.postprocessor.LinksScoper,getSchedulingFor,14,7,5,3,Muitos Parametros
+" A, V, X ",ABSTRACTFRONTIER,org.archive.crawler.frontier.BdbFrontier,getURIsList,9,2,8,4,Muitos Parametros
+ V ,SUBELEMENT,org.archive.util.anvl.Label,checkCharacter,6,2,4,3,Muitos Parametros
+ V ,PERSISTENCE,org.archive.io.ArchiveRecord,read,22,7,8,3,Metodo Longo
+ V ,UNDEFINED,org.archive.io.Warc2Arc,main,40,8,13,1,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.extractor.ContentExtractor,shouldProcess,15,7,2,1,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.extractor.ExtractorImpliedURI,extractImplied,11,3,4,3,Muitos Parametros
+ V ,PROCESSOR,org.archive.modules.extractor.ExtractorMultipleRegex,makeBindings,11,2,6,3,Muitos Parametros
+ V ,TEST,org.archive.crawler.selftest.SelfTestBase,testSomething,24,3,2,0,Metodo Longo
+ V ,ARCHIVEREADER,org.archive.io.arc.ARCReader,gotoEOR,23,9,4,1,Metodo Longo
+" A, V, X ",RESOURCE,org.archive.crawler.restlet.JobResource,acceptRepresentation,56,16,9,1,Metodo Longo
+ V ,UNDEFINED,org.archive.crawler.restlet.Flash,addFlash,17,4,8,3,Muitos Parametros
+ V ,TEST,org.archive.util.InterruptibleCharSequenceTest,tryMatchInThread,18,1,0,3,Muitos Parametros
+ V ,PROCESSOR,org.archive.modules.extractor.ExtractorMultipleRegex,extract,37,7,15,1,Muitos Desvios
+ V ,TEST,org.archive.io.arc.ARCWriterTest,lengthTooShort,31,1,12,3,Muitos Parametros
+ V ,PROCESSOR,org.archive.modules.writer.WARCWriterProcessor,writeRevisitDigest,23,1,9,7,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.fetcher.FetchWhois,start,18,3,9,0,Alto Acoplamento Efferent
+" A, V, X ",ENTITY,org.archive.bdb.BdbModule,doRecover,57,15,16,0,Metodo Longo
+ V ,ENTITY,org.archive.crawler.reporting.CrawlerLoggerModule,addToManifest,3,2,4,3,Muitos Parametros
+ V ,UNDEFINED,org.archive.net.PublicSuffixes,main,26,5,11,1,Alto Acoplamento Efferent
+ V ,QUEUEPRECEDENCEPOLICY,org.archive.crawler.frontier.precedence.HighestUriQueuePrecedencePolicy,tally,14,6,3,2,Muitos Desvios
+ V ,SETBASEDURIUNIQFILTER,org.archive.crawler.util.BdbUriUniqFilter,close,39,10,6,0,Metodo Longo
+ V ,REPORT,org.archive.crawler.reporting.FrontierNonemptyReport,write,19,5,3,2,Muitos Desvios
+ V ,RESOURCE,org.archive.crawler.restlet.JobResource,acceptRepresentation,56,16,9,1,Alto Acoplamento Efferent
+ V ,PROCESSOR,org.archive.modules.writer.WARCWriterProcessor,writeWhoisRecords,23,2,8,4,Metodo Longo
+ V ,PROCESSOR,org.archive.crawler.postprocessor.LowDiskPauseProcessor,checkAvailableSpace,28,6,14,1,Muitos Desvios
+ V ,PROCESSOR,org.archive.crawler.prefetch.PreconditionEnforcer,considerDnsPreconditions,34,11,9,1,Metodo Longo
+ V ,TEST,org.archive.io.warc.WARCWriterTest,writeBasicRecords,22,2,10,1,Metodo Longo
+" A, D, V ",TEST,org.archive.io.arc.ARCWriterTest,lengthTooShort,31,1,12,3,Alto Acoplamento Efferent
+ V ,TEST,org.archive.io.GZIPMembersInputStreamTest,testByteReadPerMember,35,6,3,0,Metodo Longo
+ V ,PROCESSOR,org.archive.crawler.postprocessor.CandidatesProcessor,checkForSeedPromotion,9,5,2,1,Muitos Desvios
+ V ,ENTITY,org.archive.util.AbstractLongFPSet,relocate,0,1,1,3,Muitos Parametros
+ V ,TEST,org.archive.settings.file.PrefixFinderTest,doTest,36,8,11,0,Metodo Longo
+" A, D, V, X ",VIEW,org.archive.crawler.frontier.AbstractFrontier,importRecoverFormat,56,12,17,5,Muitos Parametros
+" A, R, D, V, X ",PROCESSOR,org.archive.modules.writer.WARCWriterProcessor,writeResponse,20,1,8,6,Muitos Parametros
+ V ,FILEHANDLER,org.archive.io.GenerationFileHandler,makeNew,4,1,5,3,Muitos Parametros
+ V ,PERSISTENCE,org.archive.io.RecordingOutputStream,tailRecord,19,4,6,3,Muitos Parametros
+" A, V, X ",PROCESSOR,org.archive.modules.writer.WARCWriterProcessor,writeDnsRecords,23,3,7,4,Muitos Parametros
+" A, V, X ",ENTITY,org.archive.util.ObjectIdentityBdbCache,getOrUse,56,12,9,2,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.fetcher.FetchHTTP,setOtherCodings,15,4,7,3,Muitos Parametros
+ V ,ASYNCTASK,org.archive.crawler.framework.ToePool,setSize,24,6,3,1,Muitos Desvios
+ V ,DECIDERULE,org.archive.modules.deciderules.ExternalGeoLocationDecideRule,evaluate,35,8,12,1,Metodo Longo
+ V ,DECIDERULE,org.archive.modules.deciderules.TransclusionDecideRule,evaluate,29,9,8,1,Metodo Longo
+" A, V, X ",PERSISTENCE,org.archive.util.zip.OpenJDK7InflaterInputStream,read,29,12,8,3,Muitos Desvios
+" A, D, V, X ",PERSISTENCE,org.archive.io.RecordingInputStream,readFullyOrUntil,41,13,10,1,Muitos Desvios
+ V ,[ITERABLE],org.archive.modules.ProcessorChain,process,26,8,7,2,Metodo Longo
+ V ,ENTITY,org.archive.spring.ConfigPathConfigurer,fixupPaths,26,11,7,2,Metodo Longo
+ V ,PROCESSOR,org.archive.crawler.processor.HashCrawlMapper,mapString,12,5,6,3,Muitos Parametros
+ V ,ABSTRACTFRONTIER,org.archive.crawler.frontier.WorkQueueFrontier,activateInactiveQueue,29,6,10,0,Metodo Longo
+ V ,TEST,org.archive.util.ArchiveUtilsTest,run,18,5,1,0,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.fetcher.FetchHTTP,extractChallenges,18,5,9,3,Muitos Desvios
+ V ,ENTITY,org.archive.crawler.frontier.WorkQueue,reportTo,38,2,4,1,Metodo Longo
+ V ,UNDEFINED,org.archive.util.DevUtils,extraInfo,26,5,7,0,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.extractor.ExtractorCSS,processStyleCode,28,4,12,3,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.writer.WriterPoolProcessor,getHostAddress,14,5,6,1,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.extractor.JerichoExtractorHTML,extract,25,8,7,2,Metodo Longo
+ V ,TEST,org.archive.io.arc.ARCWriterTest,testRandomAccess,35,5,9,0,Metodo Longo
+ V ,ARCHIVEREADERFACTORY,org.archive.io.warc.WARCReaderFactory,get,3,1,5,3,Muitos Parametros
+" A, V ",UNDEFINED,org.archive.io.GzipHeader,readHeader,48,14,6,1,Metodo Longo
+ V ,TEST,org.archive.util.BloomFilterTest,createBloom,0,1,4,3,Muitos Parametros
+ V ,TEST,org.archive.io.RecordingOutputStreamTest,reuse,6,1,5,3,Muitos Parametros
+ V ,TEST,org.archive.util.TransformTest,testSubclasses,30,7,9,0,Metodo Longo
+ V ,UNDEFINED,org.archive.util.ArchiveUtils,isTld,3,1,11,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.archive.modules.extractor.PDFParser,haveSeen,15,5,4,2,Muitos Desvios
+" A, D, V, X ",PROCESSOR,org.archive.modules.fetcher.FetchHTTP,innerProcess,97,21,18,1,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.archive.crawler.migrate.MigrateH1to3Tool,instanceMain,89,11,16,1,Alto Acoplamento Efferent
+" A, D, V, X ",ENTITY,org.archive.modules.net.CrawlServer,updateRobots,39,9,13,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.archive.util.Recorder,getContentReplayInputStream,26,8,7,0,Muitos Desvios
+ V ,DIRECTORYRESOURCE,org.archive.crawler.restlet.EnhDirectoryResource,acceptRepresentation,21,3,11,1,Alto Acoplamento Efferent
+ V ,ENTITY,org.archive.util.ObjectIdentityBdbManualCache,getOrUse,38,7,6,2,Metodo Longo
+ V ,UNDEFINED,org.apache.hadoop.examples.GenGraph,reduce,29,7,9,4,Muitos Desvios
+ V ,UNDEFINED,org.archive.util.ArchiveUtils,getSecondsSinceEpoch,17,7,4,1,Muitos Desvios
+ V ,ENTITY,org.archive.bdb.BdbModule,close,27,7,9,0,Muitos Desvios
+ V ,TEST,org.archive.io.arc.ARCWriterPoolTest,testInvalidate,35,6,8,0,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.recrawl.FetchHistoryProcessor,innerProcess,29,5,5,1,Metodo Longo
+ V ,PERSISTENCE,org.archive.io.SafeSeekInputStream,read,8,2,3,3,Muitos Parametros
+ V ,TEST,org.archive.io.arc.ARCWriterTest,lengthTooLong,23,1,10,3,Alto Acoplamento Efferent
+" A, V, X ",UNDEFINED,org.archive.surt.SURTTokenizer,nextSearch,57,15,2,0,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.recrawl.FetchHistoryProcessor,saveHeader,6,2,3,3,Muitos Parametros
+" A, V, X ",RESOURCE,org.archive.crawler.restlet.JobRelatedResource,addPresentableNestedNames,40,13,12,3,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.recrawl.PersistProcessor,populatePersistEnvFromLog,37,8,14,2,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.fetcher.FetchFTP,getAuth,24,4,7,1,Metodo Longo
+" A, V, X ",CRAWLERJOURNAL,org.archive.crawler.frontier.FrontierJournal,importQueuesFromLog,60,18,17,5,Muitos Parametros
+ V ,ABSTRACTLONGFPSET,org.archive.util.fingerprint.LongFPSetCache,discard,18,5,1,1,Muitos Desvios
+" A, V, X ",UNDEFINED,org.archive.util.JavaLiterals,escape,44,12,5,1,Muitos Desvios
+ V ,ENTITY,org.archive.bdb.BdbModule,setup,32,7,11,2,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.recrawl.PersistProcessor,main,22,3,7,1,Metodo Longo
+" A, V, X ",TEST,org.archive.util.ObjectIdentityBdbManualCacheTest,testReadConsistencyUnderLoad,62,2,0,0,Metodo Longo
+" A, V, X ",PROCESSOR,org.archive.modules.writer.WARCWriterProcessor,writeFtpRecords,41,11,8,4,Muitos Desvios
+ V ,URI,org.archive.net.UURIFactory,escapeWhitespace,24,7,5,1,Metodo Longo
+ V ,TEST,org.archive.crawler.selftest.UserAgentSelfTest,startHttpServer,18,1,9,0,Alto Acoplamento Efferent
+ V ,PROCESSOR,org.archive.modules.fetcher.FetchHTTP,chooseAuthScheme,30,8,8,2,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.extractor.JerichoExtractorHTML,processForm,43,11,10,2,Metodo Longo
+" A, V, X ",ABSTRACTFRONTIER,org.archive.crawler.frontier.BdbFrontier,initAllQueues,38,6,14,0,Alto Acoplamento Efferent
+ V ,ASYNCTASK,org.archive.crawler.framework.ToePool,shortReportLineTo,30,6,5,1,Metodo Longo
+" A, D, V, X ",PROCESSOR,org.archive.modules.writer.MirrorWriterProcessor,innerProcess,59,12,11,1,Metodo Longo
+" A, D, V, X ",TEST,org.archive.modules.fetcher.FetchHTTPTest,log,5,2,13,2,Alto Acoplamento Efferent
+" A, V, X ",FORMATTER,org.archive.crawler.io.UriProcessingFormatter,format,57,12,14,1,Metodo Longo
+ V ,PERSISTENCE,org.archive.util.zip.OpenJDK7GZIPInputStream,read,15,4,3,3,Muitos Parametros
+ V ,UNDEFINED,org.archive.crawler.frontier.precedence.PrecedenceLoader,main2args,45,6,22,1,Metodo Longo
+ V ,UNDEFINED,org.archive.net.PublicSuffixes,main,26,5,11,1,Metodo Longo
+" A, V, X ",[LIFECYCLE| APPLICATIONCONTEXTAWARE| HASVALIDATOR],org.archive.crawler.framework.CheckpointService,requestCrawlCheckpoint,43,10,12,0,Muitos Desvios
+ V ,DIALOG,org.archive.crawler.restlet.PagedRepresentation,getControlUri,19,5,10,3,Muitos Parametros
+" A, V, X ",PROCESSOR,org.archive.modules.recrawl.PersistLoadProcessor,start,33,10,10,0,Muitos Desvios
+ V ,[ARCHIVEFILECONSTANTS| ITERABLE],org.archive.io.ArchiveReader,cdxOutput,35,7,6,1,Metodo Longo
+" D, V ",ENTITY,org.archive.util.ObjectIdentityBdbCache,initialize,8,1,11,4,Alto Acoplamento Efferent
+ V ,DECIDERULE,org.archive.modules.deciderules.MatchesListRegexDecideRule,evaluate,31,8,6,1,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.extractor.ExtractorCSS,processStyleCode,28,4,12,3,Muitos Parametros
+" A, V, X ",UNDEFINED,org.archive.crawler.util.LogReader,get,26,6,8,4,Muitos Parametros
+ V ,UNDEFINED,org.archive.crawler.util.LogUtils,createFileLogger,22,5,11,3,Muitos Desvios
+ V ,UNDEFINED,org.archive.io.Warc2Arc,transform,37,6,9,2,Metodo Longo
+ V ,ABSTRACTFRONTIER,org.archive.crawler.frontier.WorkQueueFrontier,snoozeQueue,14,2,6,3,Muitos Parametros
+ V ,SERIALBINDING,org.archive.crawler.frontier.RecyclingSerialBinding,objectToEntry,15,4,9,2,Alto Acoplamento Efferent
+" A, D, V ",ENTITY,org.archive.modules.net.Robotstxt,initializeFromReader,91,21,12,1,Alto Acoplamento Efferent
+" A, D, V, X ",TEST,org.archive.crawler.selftest.Precedence3SelfTest,assertBefore,15,1,4,5,Muitos Parametros
+ V ,READER,org.archive.util.ms.PieceReader,read,17,5,4,3,Muitos Desvios
+" A, V, X ",PROCESSOR,org.archive.modules.fetcher.FetchWhois,fetch,49,10,13,3,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.recrawl.PersistProcessor,populatePersistEnvFromLog,37,8,14,2,Muitos Desvios
+" A, V, X ",PROCESSOR,org.archive.modules.writer.WARCWriterProcessor,saveHeader,6,2,3,4,Muitos Parametros
+" D, V ",TEST,org.archive.settings.file.PrefixFinderTest,doTest,36,8,11,0,Alto Acoplamento Efferent
+ V ,PERSISTENCE,org.archive.io.RecordingInputStream,setLimits,3,1,2,3,Muitos Parametros
+" A, V, X ",RESOURCE,org.archive.crawler.restlet.JobRelatedResource,writeNestedNames,39,13,9,4,Muitos Parametros
+" A, D, V, X ",PROCESSOR,org.archive.modules.fetcher.FetchFTP,fetch,88,12,12,3,Metodo Longo
+ V ,TEST,org.archive.io.arc.ARCWriterPoolTest,testInvalidate,35,6,8,0,Metodo Longo
+ V ,PERSISTENCE,org.archive.io.arc.ARCRecord,getTokenizedHeaderLine,43,14,10,2,Metodo Longo
+ V ,TEST,org.archive.io.RecordingOutputStreamTest,writeByteRecordedFile,14,2,6,3,Muitos Parametros
+" A, R, D, V, X ",PROCESSOR,org.archive.modules.extractor.ExtractorHTML,processGeneralTag,154,47,18,3,Metodo Longo
+ V ,PERSISTENCE,org.archive.io.arc.ARCRecord,computeMetaData,43,14,12,5,Metodo Longo
+ V ,UNDEFINED,org.archive.modules.fetcher.FetchHTTPRequest,maybeAddConditionalGetHeader,17,5,7,3,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.writer.MirrorWriterProcessor,addToPath,32,9,6,1,Metodo Longo
+ V ,PERSISTENCE,org.archive.io.RecordingOutputStream,setLimits,5,4,1,3,Muitos Parametros
+" A, V, X ",UNDEFINED,org.archive.crawler.util.RecoveryLogMapper,load,68,18,12,1,Metodo Longo
+" A, V, X ",PROCESSOR,org.archive.crawler.postprocessor.DispositionProcessor,politenessDelayFor,47,12,12,1,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.extractor.ExtractorJS,considerString,26,5,11,4,Metodo Longo
+" A, V, X ",FORMATTER,org.archive.crawler.io.UriProcessingFormatter,format,57,12,14,1,Muitos Desvios
+ V ,RESOURCE,org.archive.crawler.restlet.JobRelatedResource,addPresentableNestedNames,40,13,12,3,Metodo Longo
+ V ,TEST,org.archive.modules.fetcher.FetchHTTPTests,testAcceptCompression,23,1,6,0,Metodo Longo
+" A, D, V, X ",ABSTRACTFRONTIER,org.archive.crawler.frontier.WorkQueueFrontier,findEligibleURI,108,19,10,0,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.writer.Kw3WriterProcessor,writeHeaderPart,8,1,4,3,Muitos Parametros
+ V ,TEST,org.archive.crawler.util.BdbUriUniqFilterTest,runTestWriting,29,8,8,1,Muitos Desvios
+ V ,[ARCHIVEFILECONSTANTS| ITERABLE],org.archive.io.ArchiveReader,exceptionNext,22,5,4,0,Muitos Desvios
+ V ,UNDEFINED,org.archive.modules.fetcher.FetchHTTPRequest,populateTargetCredential,37,8,9,0,Alto Acoplamento Efferent
+ V ,PROCESSOR,org.archive.modules.writer.ARCWriterProcessor,replace,5,1,3,3,Muitos Parametros
+ V ,UNDEFINED,org.archive.net.PublicSuffixes,compareTo,9,9,4,1,Muitos Desvios
+ V ,[ARCHIVEFILECONSTANTS],org.archive.io.WriterPoolMember,copyFrom,14,4,6,3,Muitos Parametros
+ V ,RESOURCE,org.archive.crawler.restlet.ScriptResource,makePresentableMap,25,6,4,0,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.fetcher.FetchDNS,isQuadAddress,20,5,10,3,Muitos Desvios
+" A, V, X ",RESOURCE,org.archive.crawler.restlet.BeanBrowseResource,writeHtml,64,11,14,1,Alto Acoplamento Efferent
+" A, V, X ",URI,org.archive.net.UURIFactory,fixupAuthority,29,10,2,2,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.fetcher.FetchDNS,innerProcess,64,15,11,1,Alto Acoplamento Efferent
+" A, D, V, X ",PERSISTENCE,org.archive.io.arc.ARCRecord,readHttpHeader,66,15,16,0,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,org.archive.crawler.Heritrix,instanceMain,145,27,31,1,Alto Acoplamento Efferent
+" A, R, V, X ",ASYNCTASK,org.archive.crawler.framework.ActionDirectory,tryAsScript,54,10,16,2,Alto Acoplamento Efferent
+ V ,DECIDERULE,org.archive.modules.deciderules.TooManyPathSegmentsDecideRule,evaluate,17,5,4,1,Muitos Desvios
+ V ,[X509TRUSTMANAGER],org.archive.httpclient.ConfigurableX509TrustManager,checkServerTrusted,20,7,6,2,Muitos Desvios
+ V ,TEST,org.archive.io.arc.ARCWriterTest,lengthTooShort,31,1,12,3,Metodo Longo
+" A, V, X ",[IOFILEFILTER],org.archive.util.FileUtils,pagedLines,100,31,13,5,Muitos Parametros
+" A, R, D, V, X ",ENTITY,org.archive.bdb.BdbModule,doRecover,57,15,16,0,Alto Acoplamento Efferent
+ V ,ABSTRACTFRONTIER,org.archive.crawler.frontier.WorkQueueFrontier,wakeQueues,23,4,7,0,Metodo Longo
+ V ,RESOURCE,org.archive.crawler.restlet.ScriptResource,acceptRepresentation,40,4,11,1,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.recrawl.PersistProcessor,copyPersistEnv,24,4,15,2,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.extractor.ExtractorJS,shouldExtract,24,7,6,1,Muitos Desvios
+ V ,WRITERPOOLMEMBER,org.archive.io.warc.WARCWriter,getStat,8,4,3,3,Muitos Parametros
+ V ,PERSISTENCE,org.archive.io.ReplayInputStream,read,18,5,5,3,Muitos Desvios
+ V ,CRAWLERJOURNAL,org.archive.crawler.frontier.FrontierJournal,importRecoverLog,23,2,0,2,Metodo Longo
+" A, V, X ",TEST,org.archive.crawler.framework.CrawlControllerTest,verifySerialization,2,1,2,4,Muitos Parametros
+ V ,URI,org.archive.net.UURI,hasScheme,16,5,3,1,Muitos Desvios
+ V ,RESOURCE,org.archive.crawler.restlet.JobRelatedResource,addPresentableNestedNames,40,13,12,3,Muitos Parametros
+ V ,PROCESSOR,org.archive.modules.extractor.ExtractorHTML,innerExtract,30,7,9,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.archive.net.PublicSuffixes,main,26,5,11,1,Muitos Desvios
+ V ,ENTITY,org.archive.crawler.spring.SheetOverlaysManager,onApplicationEvent,19,7,10,1,Alto Acoplamento Efferent
+ V ,PROCESSOR,org.archive.modules.writer.WARCWriterProcessor,writeRevisitDigest,23,1,9,7,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.archive.io.Arc2Warc,main,30,6,12,1,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.extractor.ExtractorDOC,innerExtract,30,4,14,1,Metodo Longo
+ V ,PERSISTENCE,org.archive.io.ReplayInputStream,position,17,5,4,1,Muitos Desvios
+" A, D, V, X ",TEST,org.archive.io.RecordingInputStreamTest,testReadFullyOrUntil,51,3,13,0,Alto Acoplamento Efferent
+ V ,PERSISTENCE,org.archive.io.RecordingOutputStream,checkLimits,24,7,9,0,Muitos Desvios
+ V ,REPORT,org.archive.crawler.reporting.CrawlSummaryReport,write,37,5,5,2,Metodo Longo
+ V ,PROCESSOR,org.archive.crawler.processor.CrawlMapper,innerProcessResult,34,9,5,1,Muitos Desvios
+ V ,TEST,org.archive.modules.extractor.ExtractorJSTest,makeData,18,2,10,2,Alto Acoplamento Efferent
+" A, D, V, X ",PERSISTENCE,org.archive.io.HeaderedArchiveRecord,readContentHeaders,47,13,14,0,Muitos Desvios
+ V ,ARCHIVEREADER,org.archive.io.arc.ARCReader,usage,4,1,4,3,Muitos Parametros
+ V ,PROCESSOR,org.archive.modules.extractor.JerichoExtractorHTML,processGeneralTag,116,54,22,3,Muitos Parametros
+ V ,KRYO,org.archive.bdb.AutoKryo,newInstance,38,9,15,1,Metodo Longo
+ V ,UNDEFINED,org.archive.io.Arc2Warc,write,28,4,8,2,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.extractor.ExtractorHTML,considerQueryStringValues,15,5,9,4,Muitos Desvios
+ V ,URI,org.archive.net.UURIFactory,checkPort,23,8,8,1,Metodo Longo
+ V ,URI,org.archive.net.UURI,getAuthorityMinusUserinfo,14,6,3,0,Muitos Desvios
+" A, V, X ",[SESSIONBUFFERIMPLFACTORY],org.archive.modules.fetcher.RecordingSessionBufferFactory,createOutputBuffer,3,1,5,4,Muitos Parametros
+ V ,PERSISTENCE,org.archive.util.zip.OpenJDK7GZIPInputStream,readTrailer,21,9,9,0,Alto Acoplamento Efferent
+ V ,PROCESSOR,org.archive.modules.writer.ARCWriterProcessor,write,39,8,10,4,Alto Acoplamento Efferent
+ V ,TEST,org.archive.util.ArchiveUtilsTest,testDateFormatConcurrency,35,2,0,0,Metodo Longo
+ V ,ASYNCTASK,org.archive.crawler.framework.ToeThread,reportTo,43,4,5,1,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.extractor.ExtractorHTML,processGeneralTag,154,47,18,3,Muitos Parametros
+" A, D, V, X ",PROCESSOR,org.archive.modules.writer.WARCWriterProcessor,writeHttpRecords,42,15,8,4,Muitos Desvios
+ V ,TEST,org.archive.util.ms.DocTest,correctPOI,16,6,1,1,Muitos Desvios
+ V ,TEST,org.archive.modules.fetcher.FetchHTTPTests,testHttpProxyAuth,39,1,0,0,Metodo Longo
+ V ,TEST,org.archive.util.ObjectIdentityBdbManualCacheTest,run,11,7,6,0,Muitos Desvios
+ V ,UNDEFINED,org.archive.crawler.frontier.BdbMultipleWorkQueues,deleteMatchingFromQueue,30,6,9,3,Alto Acoplamento Efferent
+ V ,ENTITY,org.archive.util.ObjectIdentityBdbCache,getOrUse,56,12,9,2,Alto Acoplamento Efferent
+ V ,URI,org.archive.net.UURIFactory,ensureMinimalEscaping,18,5,5,3,Muitos Desvios
+" D, V ",TEST,org.archive.crawler.selftest.HttpAuthSelfTest,startHttpServer,30,1,11,0,Alto Acoplamento Efferent
+ V ,ENTITY,org.archive.spring.Sheet,prime,36,5,11,0,Metodo Longo
+" A, R, D, V, X ",PROCESSOR,org.archive.modules.fetcher.FetchHTTP,innerProcess,97,21,18,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.archive.crawler.frontier.BdbMultipleWorkQueues,get,23,4,9,1,Metodo Longo
+" A, V, X ",CRAWLERJOURNAL,org.archive.crawler.frontier.FrontierJournal,importQueuesFromLog,60,18,17,5,Muitos Desvios
+ V ,[ARCHIVEFILECONSTANTS],org.archive.io.WriterPoolMember,getNextDirectory,23,7,4,1,Metodo Longo
+ V ,ASYNCTASK,org.archive.crawler.reporting.StatisticsTracker,incrementMapCount,14,4,4,3,Muitos Parametros
+ V ,RESOURCE,org.archive.crawler.restlet.EngineResource,writeHtml,57,4,11,1,Alto Acoplamento Efferent
+ V ,ASYNCTASK,org.archive.crawler.framework.ToeThread,reportThread,24,3,6,2,Metodo Longo
+" A, D, V, X ",TEST,org.archive.modules.fetcher.FetchHTTPTest,makeAuthWrapper,19,1,0,5,Muitos Parametros
+ V ,[ARCHIVEFILECONSTANTS| ITERABLE],org.archive.io.ArchiveReader,cdxOutput,35,7,6,1,Muitos Desvios
+" A, V, X ",TEST,org.archive.state.ModuleTestBase,verifySerialization,3,1,3,4,Muitos Parametros
+ V ,UNDEFINED,org.archive.crawler.util.LogReader,get,26,6,8,4,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.extractor.ExtractorURI,extractLink,27,5,10,2,Alto Acoplamento Efferent
+ V ,PERSISTENCE,org.archive.io.GZIPMembersInputStream,read,11,3,2,3,Muitos Parametros
+" A, D, V, X ",PROCESSOR,org.archive.modules.extractor.ExtractorUniversal,innerExtract,59,13,14,1,Alto Acoplamento Efferent
+ V ,DIALOG,org.archive.crawler.restlet.PagedRepresentation,emitBumper,9,5,4,2,Muitos Desvios
+" A, V, X ",PROCESSOR,org.archive.modules.writer.Kw3WriterProcessor,writeArchiveInfoPart,30,2,11,4,Muitos Parametros
+" A, V ",PERSISTENCE,org.archive.io.arc.ARCRecord,computeMetaData,43,14,12,5,Alto Acoplamento Efferent
+ V ,TEST,org.archive.io.arc.ARCWriterTest,testRandomAccess,35,5,9,0,Muitos Desvios
+" A, V, X ",PROCESSOR,org.archive.modules.writer.WARCWriterProcessor,writeHttpRecords,42,15,8,4,Muitos Parametros
+ V ,PROCESSOR,org.archive.modules.fetcher.FetchHTTP,setCharacterEncoding,9,2,5,3,Muitos Parametros
+" A, D, V, X ",ENTITY,org.archive.modules.extractor.Link,addRelativeToVia,12,3,8,5,Muitos Parametros
+ V ,RESOURCE,org.archive.crawler.restlet.ScriptResource,acceptRepresentation,40,4,11,1,Alto Acoplamento Efferent
+ V ,PROCESSOR,org.archive.modules.writer.ARCWriterProcessor,write,39,8,10,4,Metodo Longo
+" A, V, X ",TEST,org.archive.crawler.framework.CrawlerProcessorTestBase,verifySerialization,2,1,2,4,Muitos Parametros
+" A, V, X ",ENTITY,org.archive.spring.ConfigPathConfigurer,fixupPaths,26,11,7,2,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.extractor.ExtractorHTML,extract,47,9,6,2,Muitos Desvios
+" A, D, V, X ",ENTITY,org.archive.bdb.BdbModule,doRecover,57,15,16,0,Muitos Desvios
+" A, D, V, X ",TEST,org.archive.io.arc.ARCWriterTest,writeRecord,3,1,5,5,Muitos Parametros
+ V ,ENTITY,org.archive.util.AbstractLongFPSet,removeAt,20,5,1,1,Muitos Desvios
+ V ,DECIDERULE,org.archive.modules.deciderules.surt.SurtPrefixedDecideRule,onApplicationEvent,19,5,7,1,Muitos Desvios
+ V ,TEST,org.archive.modules.fetcher.FetchHTTPTests,testBasicAuth,24,1,4,0,Metodo Longo
+ V ,PERSISTENCE,org.archive.io.MiserOutputStream,write,4,1,3,3,Muitos Parametros
+ V ,SUBELEMENT,org.archive.util.anvl.Value,checkCharacter,21,6,6,3,Muitos Parametros
+" A, R, D, V, X ",ASYNCTASK,org.archive.crawler.framework.ToeThread,run,90,15,18,0,Alto Acoplamento Efferent
+" A, D, V, X ",PERSISTENCE,org.archive.io.arc.ARCRecord,computeMetaData,43,14,12,5,Muitos Parametros
+ V ,UNDEFINED,org.archive.util.ms.PieceTable,next,42,8,7,0,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.writer.Kw3WriterProcessor,writeArchiveInfoPart,30,2,11,4,Alto Acoplamento Efferent
+" A, V, X ",PROCESSOR,org.archive.crawler.prefetch.PreconditionEnforcer,considerDnsPreconditions,34,11,9,1,Muitos Desvios
+ V ,ENTITY,org.archive.crawler.spring.SheetOverlaysManager,putSheetOverlay,12,2,4,3,Muitos Parametros
+ V ,TEST,org.archive.crawler.util.BdbUriUniqFilterTest,runTestWriting,29,8,8,1,Metodo Longo
+ V ,TEST,org.archive.util.BloomFilter64bitTest,createBloom,3,1,5,3,Muitos Parametros
+" A, D, V, X ",PERSISTENCE,org.archive.io.arc.ARCRecord,readHttpHeader,66,15,16,0,Muitos Desvios
+" A, V, X ",UNDEFINED,org.archive.io.Warc2Arc,transform,9,1,12,5,Muitos Parametros
+ V ,PROCESSOR,org.archive.modules.writer.MirrorWriterProcessor,innerProcess,59,12,11,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.archive.util.ArchiveUtils,doubleToString,9,2,5,3,Muitos Parametros
+" A, V, X ",ARCHIVEREADER,org.archive.io.arc.ARCReader,main,81,18,18,1,Metodo Longo
+" A, V ",FPMERGEURIUNIQFILTER,org.archive.crawler.util.DiskFPMergeUriUniqFilter,beginFpMerge,23,5,12,0,Alto Acoplamento Efferent
+" A, V, X ",TEST,org.archive.io.arc.ARCWriterTest,writeRecords,12,2,9,4,Muitos Parametros
+ V ,ENTITY,org.archive.bdb.BdbModule,openDatabase,24,6,9,3,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,org.archive.crawler.Heritrix,useAdhocKeystore,23,4,15,1,Alto Acoplamento Efferent
+" A, V, X ",ENTITY,org.archive.util.ObjectIdentityBdbCache,getOrUse,56,12,9,2,Metodo Longo
+" A, V, X ",CRAWLERJOURNAL,org.archive.crawler.frontier.FrontierJournal,importQueuesFromLog,60,18,17,5,Metodo Longo
+" A, V, X ",PROCESSOR,org.archive.modules.extractor.ExtractorJS,considerStrings,16,4,9,4,Muitos Parametros
+" A, V, X ",UNDEFINED,st.ata.util.FPGenerator,extend,6,2,3,4,Muitos Parametros
+ V ,ARCHIVEREADERFACTORY,org.archive.io.arc.ARCReaderFactory,testCompressedARCStream,19,6,5,1,Muitos Desvios
+ V ,TEST,org.archive.io.arc.ARCWriterTest,lengthTooLong,23,1,10,3,Metodo Longo
+" A, V, X ",PROCESSOR,org.archive.modules.extractor.ExtractorHTML,processEmbed,7,3,4,4,Muitos Parametros
+ V ,ARCHIVEREADER,org.archive.io.arc.ARCReader,gotoEOR,23,9,4,1,Muitos Desvios
+" A, V, X ",[IOFILEFILTER],org.archive.util.FileUtils,copyFile,60,14,9,4,Muitos Desvios
+" A, V, X ",TEST,org.archive.util.ObjectIdentityBdbCacheTest,testReadConsistencyUnderLoad,60,2,0,0,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.writer.WARCWriterProcessor,updateMetadataAfterWrite,35,15,8,3,Muitos Parametros
+ V ,PROCESSOR,org.archive.modules.extractor.ExtractorPDF,innerExtract,54,8,19,1,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.fetcher.FetchHTTP,failedExecuteCleanup,4,1,3,3,Muitos Parametros
+ V ,WORKQUEUE,org.archive.crawler.frontier.BdbWorkQueue,insertItem,12,3,9,3,Alto Acoplamento Efferent
+ V ,ENTITY,org.archive.util.ObjectIdentityBdbCache,sync,30,7,11,0,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.writer.WARCWriterProcessor,write,42,8,9,2,Alto Acoplamento Efferent
+ V ,TEST,org.archive.util.TransformTest,testSubclasses,30,7,9,0,Alto Acoplamento Efferent
+ V ,ENTITY,org.archive.crawler.reporting.CrawlerLoggerModule,logUriError,4,1,5,3,Muitos Parametros
+ V ,ENTITY,org.archive.util.ObjectIdentityBdbCache,pageOutStaleEntry,18,4,9,1,Alto Acoplamento Efferent
+ V ,TEST,org.archive.util.ObjectIdentityBdbCacheTest,run,12,4,9,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.archive.io.arc.ARC2WCDX,appendTimeField,25,6,7,2,Metodo Longo
+ V ,UNDEFINED,org.archive.crawler.util.LogReader,get,26,6,8,4,Muitos Desvios
+" A, D, V, X ",PROCESSOR,org.archive.modules.fetcher.FetchHTTP,innerProcess,97,21,18,1,Metodo Longo
+ V ,SESSIONINPUTBUFFERIMPL,org.archive.modules.fetcher.RecordingSessionInputBuffer,readLine,23,8,4,1,Muitos Desvios
+ V ,UNDEFINED,org.archive.util.Base32,decode,35,9,3,1,Metodo Longo
+" A, R, V, X ",KRYO,org.archive.bdb.AutoKryo,newInstance,38,9,15,1,Alto Acoplamento Efferent
+ V ,ENTITY,org.archive.spring.Sheet,prime,36,5,11,0,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.extractor.JerichoExtractorHTML,processMeta,25,9,9,2,Metodo Longo
+ V ,TEST,org.archive.io.GZIPMembersInputStreamTest,testByteReadPerMember,35,6,3,0,Muitos Desvios
+ V ,ABSTRACTFRONTIER,org.archive.crawler.frontier.WorkQueueFrontier,appendQueueReports,34,8,7,5,Muitos Desvios
+ V ,CONCURRENTSKIPLISTSET,org.archive.util.SurtPrefixSet,main,14,6,10,1,Muitos Desvios
+ V ,ASYNCTASK,org.archive.crawler.framework.ToePool,killThread,15,5,4,2,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.extractor.ExtractorHTML,getContentDeclaredCharset,38,7,7,2,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.recrawl.PersistLoadProcessor,start,33,10,10,0,Alto Acoplamento Efferent
+ V ,PROCESSOR,org.archive.modules.extractor.JerichoExtractorHTML,processMeta,25,9,9,2,Alto Acoplamento Efferent
+ V ,ABSTRACTFRONTIER,org.archive.crawler.frontier.WorkQueueFrontier,queueSingleLinesTo,36,8,8,2,Muitos Desvios
+" D, V ",ENTITY,org.archive.util.ObjectIdentityBdbCache,sync,30,7,11,0,Alto Acoplamento Efferent
+" A, V, X ",PERSISTENCE,org.archive.modules.fetcher.AbstractCookieStore,loadCookies,30,6,13,2,Alto Acoplamento Efferent
+ V ,SETBASEDURIUNIQFILTER,org.archive.crawler.util.BdbUriUniqFilter,start,24,5,10,0,Muitos Desvios
+ V ,DECIDERULE,org.archive.modules.deciderules.DecideRuleSequence,innerDecide,25,6,6,1,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.extractor.ExtractorXML,innerExtract,28,6,7,1,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.writer.WARCWriterProcessor,write,42,8,9,2,Metodo Longo
+ V ,URI,org.archive.net.UURIFactory,ensureMinimalEscaping,18,5,5,3,Muitos Parametros
+" A, V, X ",UNDEFINED,org.archive.modules.fetcher.FetchHTTPRequest,populateHttpCredential,13,3,9,4,Muitos Parametros
+" A, V, X ",UNDEFINED,org.archive.surt.SURTTokenizer,nextSearch,57,15,2,0,Muitos Desvios
+ V ,TEST,org.archive.io.arc.ARCWriterTest,testGapError,22,1,0,0,Metodo Longo
+ V ,ROBOTSPOLICY,org.archive.modules.net.MostFavoredRobotsPolicy,allows,14,5,4,3,Muitos Desvios
+ V ,ASYNCTASK,org.archive.crawler.reporting.StatisticsTracker,writeReportFile,19,6,9,2,Alto Acoplamento Efferent
+ V ,PERSISTENCE,org.archive.io.RecordingOutputStream,checkLimits,24,7,9,0,Alto Acoplamento Efferent
+ V ,URI,org.archive.net.UURI,equals,25,8,3,1,Muitos Desvios
+ V ,TEST,org.archive.io.GZIPMembersInputStreamTest,testReadPerMemberAllFour,30,1,5,0,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.writer.WARCWriterProcessor,report,14,2,9,0,Alto Acoplamento Efferent
+ V ,PROCESSOR,org.archive.crawler.prefetch.QuotaEnforcer,checkQuotas,17,5,8,3,Muitos Desvios
+" A, R, D, V, X ",ENTITY,org.archive.modules.CrawlURI,fetchStatusCodesToString,134,65,3,1,Muitos Desvios
+" A, V, X ",PROCESSOR,org.archive.modules.extractor.ExtractorHTML,addLinkFromString,10,2,7,4,Muitos Parametros
+ V ,PROCESSOR,org.archive.modules.extractor.ExtractorJS,considerStrings,16,4,9,4,Alto Acoplamento Efferent
+" A, V, X ",UNDEFINED,org.apache.hadoop.examples.GenGraph,reduce,29,7,9,4,Muitos Parametros
+" A, D, V, X ",ASYNCTASK,org.archive.crawler.framework.ToeThread,run,90,15,18,0,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.extractor.ExtractorSWF,parseFontInfo,2,1,3,3,Muitos Parametros
+ V ,PROCESSOR,org.archive.crawler.prefetch.FrontierPreparer,getSchedulingDirective,24,11,4,1,Metodo Longo
+ V ,SETBASEDURIUNIQFILTER,org.archive.crawler.util.BdbUriUniqFilter,setRemove,18,3,9,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.archive.crawler.frontier.BdbMultipleWorkQueues,insertKeyToString,17,2,9,1,Alto Acoplamento Efferent
+ V ,SIMPLEFORMATTER,org.archive.util.OneLineSimpleLogger,format,37,5,8,1,Metodo Longo
+" A, D, V, X ",PROCESSOR,org.archive.modules.writer.WARCWriterProcessor,writeMetadata,55,16,15,5,Muitos Parametros
+" A, V ",[LIFECYCLE| APPLICATIONCONTEXTAWARE| HASVALIDATOR],org.archive.crawler.framework.CheckpointService,requestCrawlCheckpoint,43,10,12,0,Alto Acoplamento Efferent
+ V ,ROBOTSPOLICY,org.archive.modules.net.ObeyRobotsPolicy,allows,3,1,5,3,Muitos Parametros
+" A, R, D, V, X ",PROCESSOR,org.archive.modules.extractor.JerichoExtractorHTML,processGeneralTag,116,54,22,3,Muitos Desvios
+ V ,DECIDERULE,org.archive.modules.deciderules.AddRedirectFromRootServerToScope,evaluate,25,8,6,1,Metodo Longo
+ V ,UNDEFINED,org.archive.util.ms.PieceTable,wrap,7,1,6,3,Muitos Parametros
+ V ,UNDEFINED,org.archive.crawler.frontier.precedence.PrecedenceLoader,main2args,45,6,22,1,Muitos Desvios
+" A, R, D, V, X ",ARCHIVEREADER,org.archive.io.arc.ARCReader,main,81,18,18,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.archive.util.UriUtils,speculativeFixup,28,7,9,2,Muitos Desvios
+ V ,TEST,org.archive.io.arc.ARCWriterTest,validate,25,4,8,2,Metodo Longo
+" A, V, X ",PROCESSOR,org.archive.modules.extractor.ExtractorSWF,parsePlaceObject2,33,13,8,1,Muitos Desvios
+ V ,CREDENTIAL,org.archive.modules.credential.HtmlFormCredential,isPrerequisite,21,7,7,1,Muitos Desvios
+" A, R, D, V, X ",PROCESSOR,org.archive.modules.writer.WARCWriterProcessor,writeMetadata,55,16,15,5,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.archive.io.Arc2Warc,transform,36,4,15,2,Alto Acoplamento Efferent
+" A, V, X ",VIEW,org.archive.crawler.frontier.AbstractFrontier,importURIsSimple,48,11,14,1,Muitos Desvios
+ V ,PERSISTENCE,org.archive.io.ArchiveRecord,read,22,7,8,3,Muitos Parametros
+" A, R, D, V, X ",[IOFILEFILTER],org.archive.util.FileUtils,pagedLines,100,31,13,5,Muitos Desvios
+" A, V, X ",RESOURCE,org.archive.crawler.restlet.EngineResource,acceptRepresentation,73,18,8,1,Muitos Desvios
+ V ,URLCODEC,org.archive.net.LaxURLCodec,(static_block),0,5,0,0,Muitos Desvios
+ V ,PROCESSOR,org.archive.crawler.prefetch.PreconditionEnforcer,isIpExpired,21,6,6,1,Muitos Desvios
+ V ,ENTITY,org.archive.crawler.framework.CrawlJob,writeHtmlTo,24,5,3,2,Muitos Desvios
+" A, V ",PROCESSOR,org.archive.modules.fetcher.FetchWhois,deferOrFinishGeneric,48,13,12,2,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.extractor.ExtractorXML,processXml,18,4,12,3,Muitos Parametros
+ V ,PROCESSOR,org.archive.modules.extractor.ExtractorUniversal,looksLikeAnURL,20,8,5,1,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.extractor.ExtractorJS,considerString,26,5,11,4,Alto Acoplamento Efferent
+" A, V, X ",ARCHIVEREADER,org.archive.io.arc.ARCReader,getDeleteFileOnCloseReader,62,1,0,1,Metodo Longo
+ V ,TEST,org.archive.modules.fetcher.FetchHTTPTests,testHttpBindAddress,18,7,5,0,Muitos Desvios
+ V ,ASYNCTASK,org.archive.crawler.reporting.StatisticsTracker,start,44,5,15,0,Muitos Desvios
+" A, V, X ",UNDEFINED,org.archive.io.Warc2Arc,main,40,8,13,1,Alto Acoplamento Efferent
+" A, R, D, V, X ",URI,org.archive.net.LaxURI,parseUriReference,106,48,5,2,Muitos Desvios
+ V ,PERSISTENCE,org.archive.util.ms.BlockInputStream,read,12,2,4,3,Muitos Parametros
+ V ,TEST,org.archive.util.TextUtilsTest,testUnescapeHtml,26,1,3,0,Metodo Longo
+" A, D, V, X ",PROCESSOR,org.archive.crawler.postprocessor.DispositionProcessor,innerProcess,30,14,7,1,Muitos Desvios
+ V ,ABSTRACTQUEUE,org.archive.bdb.StoredQueue,hookupDatabase,8,2,7,3,Muitos Parametros
+" A, V, X ",ABSTRACTFRONTIER,org.archive.crawler.frontier.BdbFrontier,consistencyCheck,41,11,9,0,Muitos Desvios
+ V ,ENTITY,org.archive.util.ObjectIdentityBdbCache,pageOutStaleEntries,17,5,9,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.archive.crawler.frontier.BdbMultipleWorkQueues,deleteMatchingFromQueue,30,6,9,3,Muitos Desvios
+ V ,ENTITY,org.archive.crawler.framework.CrawlJob,scanJobLog,28,6,10,0,Metodo Longo
+ V ,TEST,org.archive.crawler.selftest.Precedence3SelfTest,verify,23,2,8,0,Metodo Longo
+" A, V, X ",UNDEFINED,org.archive.crawler.Heritrix,setupServer,7,1,4,5,Muitos Parametros
+ V ,WRITERPOOLMEMBER,org.archive.io.warc.WARCWriter,writeRecord,39,7,7,1,Metodo Longo
+" A, V ",PROCESSOR,org.archive.modules.fetcher.FetchFTP,fetch,88,12,12,3,Alto Acoplamento Efferent
+ V ,TEST,org.archive.util.ms.DocTest,runReaders,22,7,4,2,Muitos Desvios
+ V ,RESOURCE,org.archive.crawler.restlet.JobResource,getAvailableActions,25,10,3,0,Metodo Longo
+" A, V, X ",RESOURCE,org.archive.crawler.restlet.BeanBrowseResource,makePresentableMap,42,10,15,0,Muitos Desvios
+" A, V ",UNDEFINED,org.archive.crawler.util.RecoveryLogMapper,load,68,18,12,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.archive.net.PublicSuffixes,buildRegex,34,11,5,2,Metodo Longo
+" A, V, X ",ENTITY,org.archive.crawler.reporting.CrawlerLoggerModule,setupLogFile,9,1,6,4,Muitos Parametros
+ V ,TEST,org.archive.io.ReplayCharSequenceTest,xestHugeReplayCharSequence,33,6,11,0,Metodo Longo
+ V ,ENTITY,org.archive.crawler.framework.CrawlController,noteFrontierState,25,7,3,1,Metodo Longo
+" A, V, X ",UNDEFINED,org.archive.util.UriUtils,isLikelyFalsePositive,50,21,8,1,Metodo Longo
+ V ,UNDEFINED,org.archive.util.TextUtils,replaceAll,7,1,4,3,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.archive.crawler.Heritrix,instanceMain,145,27,31,1,Metodo Longo
+ V ,UNDEFINED,org.archive.util.ArchiveUtils,getDate,38,15,6,1,Metodo Longo
+ V ,TEST,org.archive.crawler.selftest.FormAuthSelfTest,startHttpServer,17,1,9,0,Alto Acoplamento Efferent
+" A, V, X ",[URIUNIQFILTER],org.archive.crawler.util.FPMergeUriUniqFilter,flush,66,19,9,0,Muitos Desvios
+" A, V, X ",WRITERPOOLMEMBER,org.archive.io.warc.WARCWriter,tally,17,4,6,4,Muitos Parametros
+" A, V, X ",SETBASEDURIUNIQFILTER,org.archive.crawler.util.BdbUriUniqFilter,close,39,10,6,0,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.writer.MirrorWriterProcessor,mkdirs,13,5,2,0,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.fetcher.FetchDNS,getFirstARecord,20,7,4,1,Muitos Desvios
+ V ,DECIDERULE,org.archive.modules.deciderules.TransclusionDecideRule,evaluate,29,9,8,1,Muitos Desvios
+ V ,[ARCCONSTANTS],org.archive.io.arc.ARCUtils,testCompressedARCStream,21,6,5,1,Muitos Desvios
+ V ,[ARCHIVEFILECONSTANTS| ITERABLE],org.archive.io.ArchiveReader,output,21,5,2,1,Muitos Desvios
+ V ,WRITERPOOLMEMBER,org.archive.io.warc.WARCWriter,subtally,26,5,2,4,Metodo Longo
+ V ,ENTITY,org.archive.modules.credential.CredentialStore,subset,22,7,6,3,Metodo Longo
+ V ,PERSISTENCE,org.archive.io.HeaderedArchiveRecord,read,19,5,4,3,Muitos Desvios
+ V ,ABSTRACTFRONTIER,org.archive.crawler.frontier.WorkQueueFrontier,shortReportMap,26,2,7,0,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.extractor.HTTPContentDigest,innerProcess,33,4,12,1,Metodo Longo
+ V ,UNDEFINED,org.archive.io.ArchiveTest,readArchive,37,9,3,0,Muitos Desvios
+" A, V, X ",UNDEFINED,org.apache.hadoop.examples.GenGraph,map,15,3,7,4,Muitos Parametros
+ V ,[ARCHIVEFILECONSTANTS],org.archive.io.ArchiveReaderFactory,get,3,1,5,3,Muitos Parametros
+" A, V ",PROCESSOR,org.archive.modules.extractor.ExtractorXML,processXml,18,4,12,3,Alto Acoplamento Efferent
+ V ,ARCHIVEREADERFACTORY,org.archive.io.arc.ARCReaderFactory,gotoEOR,17,7,6,1,Muitos Desvios
+" A, V, X ",RESOURCE,org.archive.crawler.restlet.BeanBrowseResource,writeHtml,64,11,14,1,Muitos Desvios
+" A, V, X ",PROCESSOR,org.archive.modules.writer.ARCWriterProcessor,write,39,8,10,4,Muitos Parametros
+ V ,TEST,org.archive.crawler.util.BloomUriUniqFilterTest,testWriting,25,5,9,0,Alto Acoplamento Efferent
+ V ,PROCESSOR,org.archive.modules.extractor.ExtractorHTML,innerExtract,30,7,9,1,Metodo Longo
+ V ,[IOFILEFILTER],org.archive.util.FileUtils,ensureWriteableDirectory,17,5,3,1,Muitos Desvios
+" A, R, D, V, X ",PROCESSOR,org.archive.modules.writer.WARCWriterProcessor,writeFtpControlConversation,15,1,9,6,Muitos Parametros
+ V ,TEST,org.archive.io.arc.ARCWriterTest,lengthTooLong,23,1,10,3,Muitos Parametros
+ V ,PROCESSOR,org.archive.modules.writer.WARCWriterProcessor,writeRevisitUriAgnosticDigest,30,2,9,6,Metodo Longo
+" A, V, X ",TEST,org.archive.modules.fetcher.FetchHTTPTest,handle,56,11,7,4,Muitos Desvios
+" A, D, V, X ",PROCESSOR,org.archive.modules.extractor.ExtractorHTML,processMeta,44,16,12,2,Muitos Desvios
+ V ,WRITERPOOLMEMBER,org.archive.io.warc.WARCWriter,writeWarcinfoRecord,30,6,10,2,Muitos Desvios
+ V ,TEST,org.archive.util.BloomFilterTest,checkDistribution,15,5,2,1,Muitos Desvios
+ V ,UNDEFINED,org.archive.crawler.framework.Engine,findJobConfigs,24,8,5,0,Muitos Desvios
+" A, V, X ",KRYO,org.archive.bdb.AutoKryo,invokeStatic,3,1,5,4,Muitos Parametros
+ V ,UNDEFINED,org.archive.crawler.framework.Engine,copy,24,6,7,3,Muitos Parametros
+ V ,[ARCHIVEFILECONSTANTS| ITERABLE],org.archive.io.ArchiveReader,next,22,5,4,0,Metodo Longo
+" A, V ",UNDEFINED,org.archive.util.ms.Doc,getText,34,4,12,2,Alto Acoplamento Efferent
+ V ,DIALOG,org.archive.crawler.restlet.PagedRepresentation,getControlUri,19,5,10,3,Alto Acoplamento Efferent
+ V ,PROCESSOR,org.archive.crawler.prefetch.PreconditionEnforcer,credentialPrecondition,45,11,10,1,Metodo Longo
+ V ,ABSTRACTFRONTIER,org.archive.crawler.frontier.WorkQueueFrontier,activateInactiveQueue,29,6,10,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.archive.modules.fetcher.FetchHTTPRequest,configureRequest,22,4,7,0,Metodo Longo
+ V ,ENTITY,org.archive.modules.CrawlURI,readUuri,23,5,4,1,Metodo Longo
+" A, V, X ",UNDEFINED,org.archive.modules.fetcher.FetchHTTPRequest,configureRequestHeaders,39,15,11,0,Muitos Desvios
+" A, V, X ",[SESSIONBUFFERIMPLFACTORY],org.archive.modules.fetcher.RecordingSessionBufferFactory,createInputBuffer,3,1,7,5,Muitos Parametros
+ V ,[ARCHIVEFILECONSTANTS],org.archive.io.ArchiveReaderFactory,getArchiveReader,10,3,7,3,Muitos Parametros
+" A, V, X ",LINKEDLIST,org.archive.util.anvl.ANVLRecord,load,80,30,7,1,Metodo Longo
+" A, V, X ",RESOURCE,org.archive.crawler.restlet.JobRelatedResource,writeNestedNames,39,13,9,4,Muitos Desvios
+ V ,[URIERRORLOGGERMODULE],org.archive.modules.extractor.UnitTestUriLoggerModule,logUriError,3,1,5,3,Muitos Parametros
+ V ,SEEDMODULE,org.archive.modules.seeds.TextSeedModule,announceSeedsFromReader,22,5,9,2,Metodo Longo
+ V ,URI,org.archive.net.UURI,getReferencedHost,10,5,1,0,Muitos Desvios
+ V ,SEEDMODULE,org.archive.modules.seeds.TextSeedModule,announceSeeds,22,2,0,0,Metodo Longo
+ V ,VIEW,org.archive.crawler.frontier.AbstractFrontier,needsReenqueuing,24,11,3,1,Metodo Longo
+" A, D, V, X ",PROCESSOR,org.archive.modules.writer.MirrorWriterProcessor,dirPath,11,3,4,5,Muitos Parametros
+ V ,[ITERABLE],org.archive.modules.ProcessorChain,process,26,8,7,2,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.writer.Kw3WriterProcessor,writeArchiveInfoPart,30,2,11,4,Metodo Longo
+" A, V, X ",PROCESSOR,org.archive.modules.writer.WARCWriterProcessor,writeWhoisRecords,23,2,8,4,Muitos Parametros
+" A, V, X ",UNDEFINED,org.archive.util.Recorder,wrapInputStreamWithHttpRecord,17,5,8,4,Muitos Parametros
+" A, D, V, X ",PROCESSOR,org.archive.modules.writer.MirrorWriterProcessor,uriToFile,85,35,13,2,Metodo Longo
+" A, R, D, V, X ",PROCESSOR,org.archive.modules.writer.WARCWriterProcessor,writeRevisitDigest,5,2,6,6,Muitos Parametros
+" A, V, X ",TEST,org.archive.util.ArchiveUtilsTest,assertClose,3,1,2,4,Muitos Parametros
+ V ,ENTITY,org.archive.crawler.frontier.WorkQueue,insert,4,1,3,3,Muitos Parametros
+" A, V, X ",RESOURCE,org.archive.crawler.restlet.EngineResource,writeHtml,57,4,11,1,Metodo Longo
+" A, D, V, X ",TEST,org.archive.io.warc.WARCWriterTest,writeRecord,13,1,7,5,Muitos Parametros
+" D, V ",TEST,org.archive.io.ReplayCharSequenceTest,xestHugeReplayCharSequence,33,6,11,0,Alto Acoplamento Efferent
+ V ,ENTITY,org.archive.crawler.framework.CrawlJob,scanJobLog,28,6,10,0,Alto Acoplamento Efferent
+ V ,READER,org.archive.util.ms.PieceReader,read,17,5,4,3,Muitos Parametros
+" A, V ",PROCESSOR,org.archive.modules.extractor.ExtractorCSS,processStyleCode,28,4,12,3,Alto Acoplamento Efferent
+ V ,PROCESSOR,org.archive.crawler.prefetch.PreconditionEnforcer,authenticated,13,5,6,2,Muitos Desvios
+" A, V, X ",UNDEFINED,org.archive.io.GzipHeader,readHeader,48,14,6,1,Muitos Desvios
+ V ,ENTITY,org.archive.crawler.framework.CrawlJob,teardown,22,6,4,0,Metodo Longo
+ V ,[URIUNIQFILTER.CRAWLURIRECEIVER],org.archive.crawler.util.BenchmarkUriUniqFilters,instanceMain,26,4,11,1,Alto Acoplamento Efferent
+ V ,FPMERGEURIUNIQFILTER,org.archive.crawler.util.DiskFPMergeUriUniqFilter,beginFpMerge,23,5,12,0,Metodo Longo
+" A, R, D, V, X ",PROCESSOR,org.archive.modules.extractor.ExtractorImpliedURI,extract,35,6,15,1,Alto Acoplamento Efferent
+ V ,PERSISTENCE,org.archive.io.arc.ARCRecord,getTokenizedHeaderLine,43,14,10,2,Alto Acoplamento Efferent
+ V ,ABSTRACTFRONTIER,org.archive.crawler.frontier.WorkQueueFrontier,shortReportLineTo,37,3,7,1,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.fetcher.FetchFTP,addExtracted,23,5,10,2,Muitos Desvios
+" A, R, D, V, X ",PROCESSOR,org.archive.modules.extractor.ExtractorHTML,processGeneralTag,154,47,18,3,Alto Acoplamento Efferent
+ V ,PERSISTENCE,org.archive.io.arc.ARCRecord,fixSpaceInURL,24,8,4,2,Muitos Desvios
+ V ,[URIUNIQFILTER.CRAWLURIRECEIVER],org.archive.crawler.util.BenchmarkUriUniqFilters,createUriUniqFilter,21,5,12,1,Muitos Desvios
+ V ,[IOFILEFILTER],org.archive.util.FileUtils,deleteSoonerOrLater,18,5,5,1,Muitos Desvios
+" A, V ",PROCESSOR,org.archive.modules.fetcher.FetchWhois,deferOrFinishGeneric,48,13,12,2,Alto Acoplamento Efferent
+" A, V, X ",PROCESSOR,org.archive.modules.writer.WARCWriterProcessor,writeMetadata,55,16,15,5,Metodo Longo
+ V ,TEST,org.archive.crawler.util.FPUriUniqFilterTest,testWriting,27,6,8,0,Muitos Desvios
+" D, V ",ENTITY,org.archive.bdb.BdbModule,setup,32,7,11,2,Alto Acoplamento Efferent
+ V ,ENTITY,org.archive.util.AbstractLongFPSet,indexFor,15,5,1,1,Muitos Desvios
+ V ,TEST,org.archive.modules.recrawl.ContentDigestHistoryTest,testBasics,27,1,4,0,Metodo Longo
+ V ,RESOURCE,org.archive.crawler.restlet.JobResource,represent,24,3,0,1,Metodo Longo
+" A, V, X ",PERSISTENCE,org.archive.io.warc.WARCRecord,parseHeaders,82,7,0,4,Muitos Parametros
+ V ,PROCESSOR,org.archive.modules.writer.MirrorWriterProcessor,joinParts,26,7,3,0,Metodo Longo
+ V ,TEST,org.archive.util.ObjectIdentityBdbManualCacheTest,xestMemMapCleared,22,4,10,0,Alto Acoplamento Efferent
+" A, V, X ",TEST,org.archive.io.warc.WARCWriterTest,writeRecords,12,2,8,4,Muitos Parametros
+ V ,UNDEFINED,org.archive.util.ArchiveUtils,loadVersion,43,7,6,0,Muitos Desvios
+ V ,TEST,org.archive.modules.extractor.ExtractorSWFTest,setupURI,15,1,10,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.archive.crawler.Heritrix,setupGlobalProperties,22,7,7,1,Metodo Longo
+ V ,ENTITY,org.archive.bdb.BdbModule,openDatabase,24,6,9,3,Alto Acoplamento Efferent
+" A, V, X ",VIEW,org.archive.crawler.frontier.AbstractFrontier,importRecoverFormat,56,12,17,5,Muitos Desvios
+" A, D, V, X ",PERSISTENCE,org.archive.util.zip.OpenJDK7GZIPInputStream,readHeader,39,14,5,1,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.archive.crawler.frontier.BdbMultipleWorkQueues,getFrom,54,9,17,4,Alto Acoplamento Efferent
+ V ,CRAWLERJOURNAL,org.archive.crawler.frontier.FrontierJournal,importCompletionInfoFromLog,46,16,14,3,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.extractor.ExtractorURI,extractQueryStringLinks,37,8,10,1,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.fetcher.FetchDNS,recordDNS,31,5,8,2,Metodo Longo
+ V ,URI,org.archive.net.UURIFactory,appendNonNull,11,5,3,4,Muitos Desvios
+ V ,URI,org.archive.net.LaxURI,setURI,11,6,1,0,Muitos Desvios
+ V ,ABSTRACTFRONTIER,org.archive.crawler.frontier.BdbFrontier,doCheckpoint,44,8,13,1,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.writer.WriterPoolProcessor,shouldWrite,30,9,5,1,Muitos Desvios
+ V ,ENTITY,org.archive.bdb.BdbModule,doCheckpoint,40,7,17,1,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.extractor.ExtractorHTML,processScript,4,1,3,3,Muitos Parametros
+ V ,PERSISTENCE,org.archive.modules.fetcher.AbstractCookieStore,saveCookies,36,8,9,2,Muitos Desvios
+" A, D, V ",TEST,org.archive.modules.extractor.ExtractorHTMLTest,makeData,21,1,12,2,Alto Acoplamento Efferent
+ V ,ENTITY,org.archive.util.ObjectIdentityBdbManualCache,createDiskMap,8,2,7,3,Muitos Parametros
+ V ,UNDEFINED,org.archive.modules.fetcher.FetchHTTPRequest,populateTargetCredential,37,8,9,0,Metodo Longo
+" A, V, X ",RESOURCE,org.archive.crawler.restlet.JobResource,printLinkedFile,7,3,5,4,Muitos Parametros
+ V ,ENTITY,org.archive.util.ObjectIdentityBdbManualCache,sync,25,5,12,0,Metodo Longo
+ V ,TEST,org.archive.io.warc.WARCWriterTest,testRandomAccess,35,5,9,0,Muitos Desvios
+ V ,CONCURRENTHASHMAP,org.archive.spring.KeyedProperties,get,22,6,7,1,Muitos Desvios
+ V ,[ARCHIVEFILECONSTANTS],org.archive.io.WriterPoolMember,close,21,8,5,0,Muitos Desvios
+ V ,[REPLAYCHARSEQUENCE],org.archive.io.GenericReplayCharSequence,charAt,19,7,7,1,Muitos Desvios
+ V ,UNDEFINED,org.archive.crawler.framework.Engine,copy,24,6,7,3,Metodo Longo
+ V ,PROCESSOR,org.archive.modules.writer.MirrorWriterProcessor,trimToMax,18,5,3,1,Muitos Desvios
+" A, D, V, X ",PROCESSOR,org.archive.crawler.postprocessor.CandidatesProcessor,innerProcess,62,15,7,1,Metodo Longo
+" A, R, D, V, X ",WRITERPOOLMEMBER,org.archive.io.arc.ARCWriter,write,3,1,4,6,Muitos Parametros
+ V ,PERSISTENCE,org.archive.io.arc.ARCRecord,read,20,5,4,3,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.fetcher.FetchHTTP,extractChallenges,18,5,9,3,Muitos Parametros
+" A, D, V, X ",ENTITY,org.archive.modules.extractor.Link,add,4,1,7,5,Muitos Parametros
+ V ,ABSTRACTFRONTIER,org.archive.crawler.frontier.WorkQueueFrontier,findEligibleURI,108,19,10,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.archive.crawler.framework.Engine,waitForNoRunningJobs,26,8,7,1,Metodo Longo
+ V ,WRITERPOOLMEMBER,org.archive.io.arc.ARCWriter,getMetadataLength,21,5,5,0,Muitos Desvios
+" A, V, X ",TEST,org.archive.modules.fetcher.FetchHTTPTest,startHttpServers,65,1,0,0,Metodo Longo
+ V ,ENTITY,org.archive.util.ObjectIdentityBdbCache,createDiskMap,8,2,7,3,Muitos Parametros
+" A, D, V, X ",PROCESSOR,org.archive.modules.extractor.ExtractorUniversal,innerExtract,59,13,14,1,Metodo Longo
+ V ,TEST,org.archive.util.ms.PieceReaderTest,testPosition,24,4,10,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.archive.util.BenchmarkBlooms,testBloom,19,6,7,5,Muitos Desvios
+ V ,URLCONNECTION,org.archive.net.DownloadURLConnection,connect,29,7,9,0,Muitos Desvios
+ V ,ROBOTSPOLICY,org.archive.modules.net.FirstNamedRobotsPolicy,allows,16,5,5,3,Muitos Desvios
+" A, D, V, X ",PERSISTENCE,org.archive.io.warc.WARCRecord,parseHeaders,82,7,0,4,Metodo Longo
+ V ,ABSTRACTFRONTIER,org.archive.crawler.frontier.BdbFrontier,consistencyMarkup,8,5,4,3,Muitos Desvios
+" A, V, X ",URI,org.archive.net.UURIFactory,fixup,85,32,10,3,Metodo Longo
+ V ,PERSISTENCE,org.archive.modules.fetcher.AbstractCookieStore,loadCookies,30,6,13,2,Metodo Longo
+" A, V, X ",TEST,org.archive.util.BloomFilterTest,trialWithParameters,15,3,4,4,Muitos Parametros
+ V ,DIALOG,org.archive.crawler.restlet.PagedRepresentation,loadLines,12,5,9,0,Alto Acoplamento Efferent
+" A, V, X ",PROCESSOR,org.archive.modules.fetcher.FetchDNS,storeDNSRecord,16,3,9,4,Muitos Parametros
+ V ,PROCESSOR,org.archive.modules.writer.WARCWriterProcessor,updateMetadataAfterWrite,35,15,8,3,Metodo Longo
+ V ,UNDEFINED,org.archive.modules.extractor.PDFParser,extractURIs,33,9,8,1,Metodo Longo
+" A, V ",UNDEFINED,org.archive.util.SURT,main,15,6,12,1,Alto Acoplamento Efferent
+" A, R, D, V, X ",ARCHIVEREADER,org.archive.io.warc.WARCReader,main,72,15,18,1,Alto Acoplamento Efferent
+ V ,[IOFILEFILTER],org.archive.util.FileUtils,isReadableWithExtensionAndMagic,25,5,8,3,Muitos Desvios
+ V ,PROCESSOR,org.archive.modules.fetcher.FetchFTP,innerProcess,23,4,6,1,Metodo Longo
+" A, D, V, X ",ASYNCTASK,org.archive.crawler.reporting.StatisticsTracker,onApplicationEvent,49,14,4,1,Muitos Desvios
+ V ,UNDEFINED,org.archive.util.DNSJavaUtil,getHostAddress,23,6,6,1,Muitos Desvios

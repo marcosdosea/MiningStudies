@@ -1,0 +1,1452 @@
+Tecnicas,Design Role,Classe,Método,LOC,CC,Efferent,NOP,Problema de Design
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditDataDiffPanel,moveItemsTo,17,7,5,2,Muitos Desvios
+" A, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.DelimitedFormatter,processInputRow,25,8,13,2,Alto Acoplamento Efferent
+" A, D, V, X ",VIEW,org.jumpmind.metl.ui.views.design.EditTransformerPanel,createField,27,8,0,4,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Sorter,handle,36,12,6,3,Metodo Longo
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.AbstractJMSJndiDirectory,getPayload,31,8,10,2,Muitos Desvios
+ V ,UNDEFINED,org.jumpmind.metl.core.persist.ReleasePackageProjectVersionSorter,sort,24,7,11,1,Metodo Longo
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.SftpDirectory,listFile,27,9,9,2,Metodo Longo
+ V ,PERSISTENCE,org.jumpmind.metl.core.util.DatabaseScript,compareVersionTo,26,8,2,1,Muitos Desvios
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.FtpDirectory,createClient,49,6,0,0,Muitos Desvios
+ V ,DEFINITIONFACTORY,org.jumpmind.metl.ui.definition.DefinitionPlusUIFactory,loadComponentsForClassloader,41,9,17,3,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.mapping.EditMappingPanel,selected,8,5,3,0,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditFlowPanel,buildButtonBar,26,3,4,0,Metodo Longo
+" A, V, X ",VIEW,org.jumpmind.metl.ui.mapping.EditMappingPanel,autoMap,21,10,5,6,Muitos Desvios
+ V ,SERVICE,org.jumpmind.metl.core.persist.ConfigurationService,saveNewVersion,47,7,18,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XsltProcessor,handle,15,3,7,3,Muitos Parametros
+ V ,SERVICE,org.jumpmind.metl.core.persist.ImportExportService,addAgentConfigData,21,7,10,3,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jumpmind.metl.Wrapper,createConfigFileIfNeeded,16,3,8,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.UnZip,handle,60,17,19,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.DelimitedParser,processInputRows,37,8,18,3,Muitos Desvios
+ V ,WINDOW,org.jumpmind.metl.ui.common.ImportDialog,uploadFinished,24,3,1,1,Metodo Longo
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.flow.FlowRuntime,execute,36,7,5,0,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditFormatPanel,getStyle,6,4,4,3,Muitos Parametros
+ V ,UNDEFINED,org.jumpmind.metl.core.utils.TestUtils,assertNullNotNull,8,5,1,2,Muitos Desvios
+" A, R, V, X ",[IDEFINITIONFACTORY],org.jumpmind.metl.core.plugin.DefinitionFactory,refresh,89,17,22,2,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlParser,addAttributes,10,3,6,3,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jumpmind.metl.ui.common.CutCopyPasteManager,pasteResources,50,39,8,2,Metodo Longo
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XPathXmlParser,start,29,7,15,0,Alto Acoplamento Efferent
+" A, R, D, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlFormatter,addModelAttributeXml,82,14,17,5,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Lookup,start,19,7,5,0,Muitos Desvios
+" A, R, D, V, X ",SERVICE,org.jumpmind.metl.core.persist.ImportExportService,export,8,1,3,4,Muitos Parametros
+ V ,SERVICE,org.jumpmind.metl.core.persist.ExecutionService,findExecutionStepLogs,44,15,15,3,Muitos Parametros
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Transformer,handle,70,17,23,3,Muitos Desvios
+ V ,UNDEFINED,org.jumpmind.metl.ui.common.UiUtils,getName,13,6,3,2,Muitos Desvios
+ V ,EXECUTIONTRACKERLOGGER,org.jumpmind.metl.core.runtime.ExecutionTrackerRecorder,updateStatistics,22,5,9,2,Alto Acoplamento Efferent
+ V ,[IUICACHE],org.jumpmind.metl.ui.persist.UICache,removeOldResourcePvEntryIfNeeded,15,6,4,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.ExcelFileWriter,convertAttributeSettingsToAttributeFormat,28,6,0,0,Muitos Desvios
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsReader,extractData,37,12,12,1,Muitos Desvios
+ V ,ASYNCTASK,org.jumpmind.metl.core.runtime.flow.StepRuntime,sendEntityDataMessage,7,1,6,3,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.deploy.EditAgentPanel,setButtonsEnabled,28,10,7,0,Metodo Longo
+" A, R, V, X ",VIEW,org.jumpmind.metl.ui.views.design.EditMergerPanel,buildUI,71,1,0,0,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditContentRouterPanel,buildUI,36,5,6,0,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.jumpmind.metl.core.runtime.AgentRuntime,deployResources,53,12,24,1,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.FixedLengthParser,handle,29,8,10,3,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditXmlFormatPanel,saveEntitySetting,19,6,3,3,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditDataDiffPanel,createAttributeCheckBox,25,2,0,2,Metodo Longo
+ V ,SERVICE,org.jumpmind.metl.core.persist.ImportExportService,findDeletes,22,5,5,3,Muitos Desvios
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.SMBDirectory,copyToDir,2,1,2,3,Muitos Parametros
+" A, R, D, V, X ",VIEW,org.jumpmind.metl.ui.views.manage.ExecutionRunPanel,getNodes,59,11,17,0,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.DelimitedParser,handle,29,8,10,3,Metodo Longo
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.TextConstant,handle,39,12,13,3,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.BinaryFileReader,processFiles,34,7,12,4,Metodo Longo
+ V ,[IUICACHE],org.jumpmind.metl.ui.persist.UICache,removeOldModelPvEntryIfNeeded,15,6,4,3,Muitos Desvios
+" A, R, D, V, X ",SERVICE,org.jumpmind.metl.core.persist.ExecutionService,findExecutionStepLogs,44,15,15,3,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.DataDiff,loadIntoDatabase,27,5,3,1,Muitos Desvios
+ V ,MODEL,org.jumpmind.metl.core.model.Component,toRow,14,1,0,3,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.design.PropertySheet,buildSettings,20,5,10,1,Muitos Desvios
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Assert,handle,82,23,14,3,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.NoOp,handle,3,1,3,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsWriter,compareTo,14,7,3,1,Muitos Desvios
+ V ,SERVICE,org.jumpmind.metl.core.persist.ExecutionService,purgeExecutions,37,10,14,2,Metodo Longo
+" A, R, D, V, X ",VIEW,org.jumpmind.metl.ui.views.admin.LoggingPanel,onBackgroundDataRefresh,60,14,16,0,Muitos Desvios
+ V ,SERVICE,org.jumpmind.metl.core.security.SecurityService,initializeCipher,14,5,5,2,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.TempRdbms,handle,7,5,4,3,Muitos Desvios
+ V ,[FILTER],org.jumpmind.metl.HttpMethodFilter,doFilter,13,4,6,3,Muitos Parametros
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.ContentRouter,handleEntityListPayload,38,11,14,3,Alto Acoplamento Efferent
+ V ,EXECUTIONTRACKERLOGGER,org.jumpmind.metl.core.runtime.ExecutionTrackerRecorder,log,15,6,9,5,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.admin.GroupPanel,buttonClick,25,6,10,1,Alto Acoplamento Efferent
+" A, V, X ",VIEW,org.jumpmind.metl.ui.init.AppInitializer,initPlugins,47,10,14,1,Muitos Desvios
+ V ,UI,org.jumpmind.metl.ui.init.AppUI,login,30,1,12,1,Metodo Longo
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.component.ScriptHelper,getAttributeValue,4,1,6,3,Muitos Parametros
+ V ,MODEL,org.jumpmind.metl.core.model.Flow,findFlowStepLink,10,5,2,2,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditMergerPanel,generateCell,6,5,8,3,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditSorterPanel,compare,9,6,2,2,Muitos Desvios
+" A, R, D, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Assert,flowCompleted,48,21,11,1,Muitos Desvios
+" D, V ",WINDOW,org.jumpmind.metl.ui.init.LoginDialog,login,41,11,15,0,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditRelationalModelPanel,generateCell,44,5,0,3,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Delay,handle,6,5,5,3,Muitos Parametros
+ V ,ENTITY,org.jumpmind.metl.core.model.Plugin,matches,9,5,3,2,Muitos Desvios
+" A, V, X ",[ISUBSCRIBEMANAGER],org.jumpmind.metl.core.runtime.subscribe.SubscribeManager,deploy,16,3,13,4,Alto Acoplamento Efferent
+" A, V ",VIEW,org.jumpmind.metl.ui.views.design.EditScriptPanel,buildUI,47,1,0,0,Metodo Longo
+" A, R, V, X ",RESIZABLEWINDOW,org.jumpmind.metl.ui.views.admin.PluginsPanelAddDialog,buildSearchLayout,54,2,9,0,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.UnZip,start,26,3,4,0,Metodo Longo
+" A, R, D, V, X ",RESIZABLEWINDOW,org.jumpmind.metl.ui.common.ExportDialog,addSelectedAndDependentObjects,70,15,16,2,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.BinaryFileWriter,handle,25,7,12,3,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditSorterPanel,calculatePositions,26,7,5,0,Muitos Desvios
+ V ,RESIZABLEWINDOW,org.jumpmind.metl.ui.views.deploy.DeployDialog,takeAction,23,5,10,0,Muitos Desvios
+ V ,WINDOW,org.jumpmind.metl.ui.init.LoginDialog,createContent,27,1,0,3,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.EmailWriter,processMessage,34,12,8,3,Muitos Parametros
+ V ,RESIZABLEWINDOW,org.jumpmind.metl.ui.common.SelectProjectVersionDialog,buttonClick,3,1,11,1,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Execute,handle,33,9,14,3,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Sorter,sortData,43,8,13,1,Metodo Longo
+" A, V, X ",UNDEFINED,org.jumpmind.metl.core.runtime.component.ScriptHelper,setAttributeValue,4,1,6,4,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsWriter,executeSqlChanges,23,8,10,3,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.deploy.SelectFlowsPanel,addFlowsToCollection,17,6,5,3,Muitos Desvios
+ V ,ABSTRACTRUNTIMEOBJECT,org.jumpmind.metl.core.runtime.resource.Datasource,getTableFromCache,4,1,3,3,Muitos Parametros
+ V ,UNDEFINED,org.jumpmind.metl.ui.common.CutCopyPasteManager,modelsMatchAcrossProjects,21,6,4,2,Muitos Desvios
+" A, V, X ",RESIZABLEWINDOW,org.jumpmind.metl.ui.views.design.TableColumnSelectWindow,getModelEntityCollection,25,4,13,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.AgentRuntime,start,35,7,13,0,Muitos Desvios
+" A, R, D, V, X ",SERVICE,org.jumpmind.metl.core.persist.ConfigurationService,compare,3,9,14,2,Alto Acoplamento Efferent
+" A, R, D, V, X ",CONTROLLER,org.jumpmind.metl.ui.api.ExecutionApi,buildSwagger,54,11,26,3,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditExcelReaderPanel,saveAttributeSetting,19,6,3,3,Muitos Desvios
+ V ,ENTITY,org.jumpmind.metl.core.model.Plugin,compareTo,16,5,2,1,Muitos Desvios
+ V ,UNDEFINED,org.jumpmind.metl.core.util.DatabaseScriptContainer,executeScripts,20,8,6,3,Muitos Parametros
+" A, R, D, V, X ",VIEW,org.jumpmind.metl.ui.views.design.DesignNavigator,buildTreeTable,81,1,0,0,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,org.jumpmind.metl.StartWebServer,runWebServer,36,2,22,1,Alto Acoplamento Efferent
+" A, D, V, X ",VIEW,org.jumpmind.metl.ui.views.deploy.DeployNavigator,createField,3,1,7,4,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.AbstractRdbmsComponentRuntime,enhanceParamMapWithInValues,19,5,10,3,Muitos Desvios
+ V ,[IUICACHE],org.jumpmind.metl.ui.persist.UICache,removeOldFlowPvEntryIfNeeded,15,6,4,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.AbstractFileWriter,getFileName,17,5,3,1,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.release.ReleasesView,rowClicked,13,5,3,1,Muitos Desvios
+ V ,WINDOW,org.jumpmind.metl.ui.common.ImportDialog,show,4,1,4,3,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditDataDiffPanel,fillEntityContainer,21,7,0,0,Muitos Desvios
+ V ,WINDOW,org.jumpmind.metl.ui.init.LoginDialog,createContent,27,1,0,3,Muitos Parametros
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.SftpDirectory,moveFile,16,4,5,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Script,invoke,26,6,8,2,Metodo Longo
+ V ,RESIZABLEWINDOW,org.jumpmind.metl.ui.views.deploy.DeployDialog,deployFlow,27,5,11,4,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.flow.FlowRuntime,manipulateFlow,25,5,9,1,Alto Acoplamento Efferent
+" A, V, X ",[IEXECUTIONTRACKER],org.jumpmind.metl.core.runtime.ExecutionTrackerNoOp,flowStepFinished,2,1,4,4,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditFormatPanel,saveSetting,13,3,3,3,Muitos Parametros
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.SMBDirectory,moveToDir,2,1,2,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.ExcelFileWriter,handle,79,6,0,3,Muitos Desvios
+ V ,EXECUTIONTRACKERLOGGER,org.jumpmind.metl.core.runtime.ExecutionTrackerRecorder,updateStatistics,22,5,9,2,Metodo Longo
+" A, R, D, V, X ",VIEW,org.jumpmind.metl.ui.views.manage.ExecutionRunPanel,refreshUI,66,14,19,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jumpmind.metl.core.util.LogUtils,initLogging,34,5,9,2,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsWriter,start,41,9,7,0,Muitos Desvios
+ V ,PANEL,org.jumpmind.metl.ui.views.manage.ManageNavigator,buildTreeTable,65,6,0,0,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlFormatter,handle,9,6,5,3,Muitos Parametros
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.flow.FlowRuntime,start,26,6,10,0,Muitos Desvios
+" A, R, D, V, X ",VIEW,org.jumpmind.metl.ui.views.design.PropertySheet,addSettingField,253,5,0,3,Metodo Longo
+ V ,SERVICE,org.jumpmind.metl.core.persist.ImportExportService,importConfiguration,35,13,9,2,Alto Acoplamento Efferent
+" A, R, V, X ",[IDIRECTORY],org.jumpmind.metl.core.runtime.resource.AbstractDirectory,getInputStream,3,1,4,5,Muitos Parametros
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Script,start,78,11,25,0,Muitos Desvios
+" A, R, D, V, X ",VIEW,org.jumpmind.metl.ui.views.design.EditSorterPanel,getLastSortItemIndex,34,14,5,3,Muitos Desvios
+ V ,UNDEFINED,org.jumpmind.metl.ui.common.UiUtils,getFilterMatchRange,26,6,3,2,Muitos Desvios
+" A, R, D, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.UnZip,handle,60,17,19,3,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlParser,start,40,11,18,0,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.FileUtil,moveFile,33,13,5,2,Metodo Longo
+ V ,[IDIRECTORY],org.jumpmind.metl.core.runtime.resource.AbstractDirectory,moveFile,2,1,2,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsWriter,execute,36,8,10,4,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditXmlFormatPanel,saveAttributeSetting,19,6,3,3,Muitos Desvios
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.LocalFileDirectory,listFiles,20,5,9,1,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.ContentRouter,start,23,5,11,0,Muitos Desvios
+ V ,MENUBAR,org.jumpmind.metl.ui.common.AbstractMenuBar,getContextMenuItem,19,5,5,1,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XPathXmlParser,start,29,7,15,0,Metodo Longo
+ V ,EXECUTIONTRACKERLOGGER,org.jumpmind.metl.core.runtime.ExecutionTrackerRecorder,afterHandle,23,6,12,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlParser,handle,10,3,3,3,Muitos Parametros
+" A, V ",EXECUTIONTRACKERLOGGER,org.jumpmind.metl.core.runtime.ExecutionTrackerRecorder,afterHandle,23,6,12,3,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Assert,handle,82,23,14,3,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditFlowPanel,hasAdvancedEditor,18,5,9,1,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditSorterPanel,moveItemsTo,18,7,6,2,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.DelimitedFormatter,processInputRow,25,8,13,2,Metodo Longo
+" A, R, V, X ",VIEW,org.jumpmind.metl.ui.views.admin.AdminView,init,50,1,5,0,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditHierarchicalModelPanel,updateExportTable,21,8,11,2,Muitos Desvios
+" A, D, V, X ",SERVICE,org.jumpmind.metl.core.security.SecurityService,rot13,20,10,3,1,Muitos Desvios
+" A, R, V, X ",SERVICE,org.jumpmind.metl.core.persist.ImportExportService,exportFlows,10,1,8,5,Muitos Parametros
+" A, R, D, V, X ",CONTROLLER,org.jumpmind.metl.ui.api.ExecutionApi,callFlow,74,19,23,4,Muitos Desvios
+ V ,ENTITY,org.jumpmind.metl.ui.init.AppConfig,executionDataSource,30,3,8,0,Metodo Longo
+" A, R, D, V, X ",RESIZABLEWINDOW,org.jumpmind.metl.ui.common.ExportDialog,addSelectedAndDependentObjects,70,15,16,2,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Stamp,handle,28,8,12,3,Metodo Longo
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.FtpDirectory,getInputStream,3,1,3,3,Muitos Parametros
+ V ,SERVICE,org.jumpmind.metl.core.persist.ImportExportService,addAgentConfigData,21,7,10,3,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditRelationalModelPanel,updateExportTable,21,8,11,2,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.MessageLogger,handle,21,6,8,3,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditRelationalModelPanel,buttonClick,25,5,7,1,Metodo Longo
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.LocalFileDirectory,moveToDir,3,1,2,3,Muitos Parametros
+ V ,UI,org.jumpmind.metl.ui.init.AppUI,getFormat,5,2,10,1,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsReader,getTableNameFromSql,22,7,1,1,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.TextFileReader,handle,6,5,6,3,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditSorterPanel,valueChange,23,5,0,1,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.admin.GroupPanel,buttonClick,25,6,10,1,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditTransformerPanel,updateTable,32,15,10,1,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.HttpResponse,getContentType,14,5,3,0,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditTempRdbmsPanel,buildUI,38,1,0,0,Metodo Longo
+ V ,ASYNCTASK,org.jumpmind.metl.core.runtime.flow.StepRuntime,calculateUnitOfWorkLastMessage,20,6,6,1,Muitos Desvios
+ V ,PERSISTENCE,org.jumpmind.metl.core.runtime.resource.HttpOutputStream,close,34,7,12,0,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Serializer,createByTablePayload,33,8,16,1,Muitos Desvios
+" A, R, D, V, X ",CONTROLLER,org.jumpmind.metl.ui.api.ExecutionApi,callFlow,74,19,23,4,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsWriter,executeSqlInserts,25,5,9,3,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.BinaryFileWriter,handle,25,7,12,3,Muitos Parametros
+" A, R, V, X ",RESIZABLEWINDOW,org.jumpmind.metl.ui.views.release.EditReleasePackageDialog,buildProjectsAndVersions,41,6,14,1,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditDeduperPanel,getStyle,6,4,4,3,Muitos Parametros
+" A, R, V, X ",[IUICACHE],org.jumpmind.metl.ui.persist.UICache,onDelete,35,11,14,1,Muitos Desvios
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.SequenceGenerator,start,62,19,10,0,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.design.PropertySheet,addInputModelCombo,45,10,0,3,Muitos Parametros
+ V ,SERVICE,org.jumpmind.metl.ui.persist.AuditableConfigurationService,purgeAudit,13,3,9,0,Alto Acoplamento Efferent
+" A, R, D, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.DataDiff,calculateDiff,118,24,21,1,Metodo Longo
+ V ,RESIZABLEWINDOW,org.jumpmind.metl.ui.views.design.TableColumnSelectWindow,getModelEntityCollection,25,4,13,0,Metodo Longo
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Sorter,createDatabase,44,8,14,0,Alto Acoplamento Efferent
+" A, V, X ",MOCKDRIVER,org.jumpmind.metl.core.util.MockJdbcDriver,getColumns,39,10,14,4,Muitos Desvios
+ V ,TABSHEET,org.jumpmind.metl.ui.common.TabbedPanel,setMainTab,4,1,4,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.FixedLengthFormatter,handle,37,10,12,3,Metodo Longo
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.UnZip,handle,60,17,19,3,Metodo Longo
+ V ,PANEL,org.jumpmind.metl.ui.views.manage.ManageNavigator,addFlowsToFolder,16,3,10,1,Alto Acoplamento Efferent
+" A, D, V, X ",[IEXECUTIONTRACKER],org.jumpmind.metl.core.runtime.ExecutionTrackerLogger,flowStepFinished,7,2,13,4,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.ContentRouter,handleControlMessages,21,6,10,3,Muitos Desvios
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.SftpDirectory,openConnectedChannel,23,6,8,1,Metodo Longo
+" A, D, V, X ",VIEW,org.jumpmind.metl.core.runtime.component.HttpRequestDeploymentListener,buildMapping,33,5,17,4,Muitos Parametros
+ V ,UNDEFINED,org.jumpmind.metl.StartWebServer,getTrustStore,23,5,9,1,Metodo Longo
+ V ,SERVICE,org.jumpmind.metl.core.persist.ImportExportService,processConfigTableData,27,8,8,6,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditExcelReaderPanel,saveAttributeSetting,19,6,3,3,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditRelationalModelPanel,save,4,4,10,1,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RelationalHierarchicalMapping,processEntityArray,27,6,8,4,Muitos Desvios
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Serializer,createByTablePayload,33,8,16,1,Alto Acoplamento Efferent
+" A, V, X ",VIEW,org.jumpmind.metl.ui.views.design.EditFormatPanel,buildUI,69,10,0,0,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.DelimitedParser,handle,29,8,10,3,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.explore.ExploreDirectoryView,fileLinkComponent,21,3,8,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Gate,handle,32,14,6,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlParser,processCurrentLevel,24,7,9,2,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.FilePoller,matchFiles,34,9,8,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.DataDiff,start,31,4,0,0,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditHierarchicalModelPanel,generateCell,44,5,0,3,Muitos Desvios
+ V ,[IDIRECTORY],org.jumpmind.metl.core.runtime.resource.HttpDirectory,setOAuth10IfNeeded,23,3,10,2,Metodo Longo
+" A, V, X ",TABSHEET,org.jumpmind.metl.ui.common.TabbedPanel,addCloseableTab,14,2,6,4,Muitos Parametros
+ V ,SERVICE,org.jumpmind.metl.core.persist.ConfigurationService,delete,32,7,14,1,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.AbstractRdbmsComponentRuntime,getStatements,23,4,9,2,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.design.DesignNavigator,addResourcesToFolder,28,7,7,2,Metodo Longo
+ V ,[ICOMPONENTRUNTIME],org.jumpmind.metl.core.runtime.component.AbstractComponentRuntime,bindStringData,12,2,4,3,Muitos Parametros
+ V ,[IDEFINITIONFACTORY],org.jumpmind.metl.core.plugin.DefinitionFactory,loadComponentsForClassloader,84,18,24,3,Muitos Parametros
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Zip,handle,60,12,15,3,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.flow.FlowRuntime,sendNotifications,37,8,13,1,Muitos Desvios
+" A, R, V, X ",DEFINITIONFACTORY,org.jumpmind.metl.ui.definition.DefinitionPlusUIFactory,loadComponentsForClassloader,41,9,17,3,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsWriter,executeSql,9,2,6,3,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditSorterPanel,updateTable,48,8,0,1,Muitos Desvios
+" A, R, D, V, X ",VIEW,org.jumpmind.metl.ui.views.admin.AdminView,itemClick,46,15,18,1,Muitos Desvios
+" A, R, V, X ",[IDEFINITIONFACTORY],org.jumpmind.metl.core.plugin.DefinitionFactory,refresh,21,6,16,0,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditRdbmsWriterPanel,generateCell,7,1,9,3,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditFlowPalette,populateComponentPalette,11,6,6,0,Muitos Desvios
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.SftpDirectory,listFile,27,9,9,2,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jumpmind.metl.StartWebServer,getConnectors,51,9,18,2,Alto Acoplamento Efferent
+ V ,ASYNCTASK,org.jumpmind.metl.core.job.BackupJob,backup,11,2,11,2,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.manage.ManageView,getBackgroundData,37,13,6,0,Metodo Longo
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.SMBDirectory,listFiles,27,6,11,2,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsWriter,sortAndStoreRowsByTableAndOperation,39,13,12,1,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.deploy.SelectFlowsPanel,addFlowsToCollection,17,6,5,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsWriter,executeSqlChanges,23,8,10,3,Muitos Parametros
+" A, R, D, V, X ",VIEW,org.jumpmind.metl.ui.views.design.EditRelationalModelPanel,move,37,12,10,2,Muitos Desvios
+ V ,[IDIRECTORY],org.jumpmind.metl.core.runtime.resource.HttpDirectory,moveToDir,3,1,2,3,Muitos Parametros
+" A, R, D, V, X ",SERVICE,org.jumpmind.metl.core.persist.ImportExportService,addConfigData,27,11,13,4,Muitos Desvios
+ V ,PANEL,org.jumpmind.metl.ui.views.admin.NotificationEditPanel,updateLinks,29,9,10,0,Muitos Desvios
+" A, R, V, X ",ABSTRACTSELECTEDVALUEMENUMANAGER,org.jumpmind.metl.ui.views.design.menu.AbstractDesignSelectedValueMenuManager,handle,104,87,4,2,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.MessageFilter,handle,27,10,10,3,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditHierarchicalModelPanel,buttonClick,25,5,7,1,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditRelationalModelPanel,buttonClick,31,7,11,1,Alto Acoplamento Efferent
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Execute,handle,33,9,14,3,Alto Acoplamento Efferent
+ V ,RESIZABLEWINDOW,org.jumpmind.metl.ui.views.deploy.DeployDialog,takeAction,23,5,10,0,Alto Acoplamento Efferent
+" A, R, V, X ",VIEW,org.jumpmind.metl.ui.init.AppInitializer,initPlugins,47,10,14,1,Alto Acoplamento Efferent
+" A, R, D, V, X ",CONTROLLER,org.jumpmind.metl.ui.api.ExecutionApi,buildSwagger,54,11,26,3,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.admin.UserEditPanel,valueChange,22,7,9,1,Metodo Longo
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.SftpDirectory,getInputStream,21,8,9,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.AbstractRdbmsComponentRuntime,enhanceParamMapWithInValues,19,5,10,3,Alto Acoplamento Efferent
+" A, D, V, X ",ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.SMBDirectory,getOutputStream,10,2,6,4,Muitos Parametros
+" A, V, X ",EXECUTIONTRACKERLOGGER,org.jumpmind.metl.core.runtime.ExecutionTrackerRecorder,flowStepFinished,34,7,12,4,Muitos Parametros
+" A, R, D, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsWriter,handle,70,22,20,3,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.FixedLengthFormatter,processInputRow,20,5,8,2,Muitos Desvios
+" A, R, D, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlFormatter,addModelAttributeXml,82,14,17,5,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.TempRdbms,handle,7,5,4,3,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditFlowPanel,runFlow,44,10,16,0,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Deduper,start,26,8,15,0,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditRdbmsWriterPanel,updateTable,12,6,6,1,Muitos Desvios
+ V ,MESSAGE,org.jumpmind.metl.core.runtime.ContentMessage,getTextFromPayload,17,5,5,0,Muitos Desvios
+" A, R, D, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Script,start,78,11,25,0,Alto Acoplamento Efferent
+ V ,WINDOW,org.jumpmind.metl.ui.views.design.ChooseWsdlServiceOperationWindow,compare,3,2,9,2,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.core.runtime.component.HttpRequestDeploymentListener,buildMapping,33,5,17,4,Muitos Desvios
+ V ,UNDEFINED,org.jumpmind.metl.StartWebServer,getHostName,32,9,8,1,Metodo Longo
+ V ,WINDOW,org.jumpmind.metl.ui.init.ChangePasswordDialog,changePassword,18,5,8,0,Muitos Desvios
+" A, R, V, X ",VIEW,org.jumpmind.metl.ui.mapping.EditMappingPanel,buildUI,69,4,17,0,Metodo Longo
+ V ,SERVICE,org.jumpmind.metl.core.persist.ExecutionService,findExecutions,32,3,0,2,Metodo Longo
+ V ,DEFINITIONFACTORY,org.jumpmind.metl.ui.definition.DefinitionPlusUIFactory,createUiPanel,17,5,6,2,Muitos Desvios
+ V ,ASYNCTASK,org.jumpmind.metl.core.runtime.flow.StepRuntime,queue,12,6,5,1,Muitos Desvios
+" A, V, X ",[ISUBSCRIBEMANAGER],org.jumpmind.metl.core.runtime.subscribe.SubscribeManager,deploy,16,3,13,4,Muitos Parametros
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.AgentRuntime,run,26,5,7,0,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Gate,handle,32,14,6,3,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.common.ButtonBar,addButtonRight,5,1,5,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Transformer,handle,70,17,23,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Mapping,mapInputToOutput,27,9,8,1,Metodo Longo
+" A, V ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.BinaryFileReader,processFiles,34,7,12,4,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jumpmind.metl.core.persist.AbstractService,find,3,1,5,3,Muitos Parametros
+ V ,EXECUTIONTRACKERLOGGER,org.jumpmind.metl.core.runtime.ExecutionTrackerRecorder,flowStepFinished,34,7,12,4,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditHierarchicalModelPanel,buttonClick,40,9,9,1,Alto Acoplamento Efferent
+ V ,CONTROLLER,org.jumpmind.metl.ui.api.ExecutionApi,buildSwagger,54,11,26,3,Muitos Parametros
+ V ,[ISUBSCRIBEMANAGER],org.jumpmind.metl.core.runtime.subscribe.SubscribeManager,onMessage,23,4,17,1,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.FilePoller,matchFiles,34,9,8,3,Muitos Desvios
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.flow.FlowRuntime,start,26,6,10,0,Alto Acoplamento Efferent
+ V ,PANEL,org.jumpmind.metl.ui.views.manage.ManageNavigator,refresh,37,6,8,0,Muitos Desvios
+ V ,VERTICALSPLITPANEL,org.jumpmind.metl.ui.views.deploy.EditAgentDeploymentPanel,updateScheduleFields,18,6,6,0,Muitos Desvios
+" A, R, D, V, X ",SERVICE,org.jumpmind.metl.core.persist.ExecutionService,purgeExecutions,37,10,14,2,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Sorter,createDatabase,44,8,14,0,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.common.ButtonBar,addButton,5,1,5,3,Muitos Parametros
+" A, R, V, X ",[IDEFINITIONFACTORY],org.jumpmind.metl.core.plugin.DefinitionFactory,loadComponentsForClassloader,84,18,24,3,Muitos Desvios
+ V ,UNDEFINED,org.jumpmind.metl.ui.common.CutCopyPasteManager,destinationHasModel,15,5,7,3,Muitos Desvios
+" A, V ",UNDEFINED,org.jumpmind.metl.core.runtime.AbstractFactory,getClassesForPackage,35,8,12,1,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.FilePoller,handle,22,9,7,3,Muitos Desvios
+ V ,MODEL,org.jumpmind.metl.core.model.Flow,findStartSteps,17,5,8,0,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditXmlFormatPanel,saveAttributeSetting,19,6,3,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.FixedLengthFormatter,convertAttributeSettingsToAttributeFormat,28,6,0,0,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.design.PropertySheet,addInputModelCombo,45,10,0,3,Metodo Longo
+" A, R, D, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlReader,processFiles,102,20,17,4,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.deploy.DeployNavigator,refresh,32,8,10,0,Metodo Longo
+ V ,MOCKDRIVER,org.jumpmind.metl.core.util.MockJdbcDriver,getColumns,39,10,14,4,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditXmlFormatPanel,buildXpathChoices,19,3,10,0,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditHierarchicalModelPanel,deleteEntity,27,7,7,1,Metodo Longo
+" A, V, X ",VIEW,org.jumpmind.metl.ui.views.design.PropertySheet,addInputModelCombo,45,10,0,3,Muitos Desvios
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.UnZip,handle,60,17,19,3,Muitos Desvios
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsWriter,writeStats,63,18,8,1,Muitos Desvios
+" A, V, X ",UNDEFINED,org.jumpmind.metl.core.runtime.flow.FlowRuntime,sendNotifications,37,8,13,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.AgentRuntime,scheduleNow,9,2,8,3,Muitos Parametros
+" A, R, V, X ",ABSTRACTSELECTEDVALUEMENUMANAGER,org.jumpmind.metl.ui.views.design.menu.AbstractDesignSelectedValueMenuManager,handle,104,87,4,2,Metodo Longo
+" A, V, X ",MOCKDRIVER,org.jumpmind.metl.core.util.MockJdbcDriver,getColumns,39,10,14,4,Muitos Parametros
+ V ,SERVICE,org.jumpmind.metl.core.persist.ImportExportService,addAgentConfigData,21,7,10,3,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.MessageLogger,handle,21,6,8,3,Muitos Parametros
+" A, R, D, V, X ",WINDOW,org.jumpmind.metl.ui.init.LoginDialog,login,41,11,15,0,Alto Acoplamento Efferent
+" A, R, D, V, X ",CONTROLLER,org.jumpmind.metl.ui.api.ExecutionApi,buildSwagger,54,11,26,3,Metodo Longo
+" A, V ",RESIZABLEWINDOW,org.jumpmind.metl.ui.views.design.ImportXmlTemplateWindow,createResourceCB,19,4,12,0,Alto Acoplamento Efferent
+ V ,ASYNCTASK,org.jumpmind.metl.core.runtime.flow.StepRuntime,isStepRuntimeDead,15,8,3,1,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.FileUtil,getTargetFileName,11,5,4,3,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.init.AppInitializer,initBackgroundJobs,20,3,11,1,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.EmailWriter,processMessage,34,12,8,3,Metodo Longo
+" A, D, V, X ",RESIZABLEWINDOW,org.jumpmind.metl.ui.views.deploy.EditAgentParametersDialog,createField,18,1,0,4,Muitos Parametros
+" A, R, V, X ",VIEW,org.jumpmind.metl.ui.init.AppInitializer,onStartup,25,1,14,1,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditRdbmsReaderPanel,getPlatform,3,1,11,0,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Sorter,handle,36,12,6,3,Muitos Parametros
+" A, R, V, X ",SERVICE,org.jumpmind.metl.core.persist.ConfigurationService,updateProjectVersionWithNewDependencyGUIDs,8,3,3,5,Muitos Parametros
+" A, D, V, X ",VIEW,org.jumpmind.metl.ui.views.design.AbstractComponentEditPanel,init,8,1,5,4,Muitos Parametros
+" A, D, V, X ",VIEW,org.jumpmind.metl.core.runtime.component.HttpRequestDeploymentListener,onUndeploy,3,1,5,4,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.design.DesignNavigator,saveExpandedList,22,7,7,0,Muitos Desvios
+ V ,[IPLUGINMANAGER],org.jumpmind.metl.core.plugin.PluginManager,collectDependencies,18,4,14,3,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditDataDiffPanel,generateCell,6,2,4,3,Muitos Parametros
+ V ,UNDEFINED,org.jumpmind.metl.Wrapper,getConfigDir,34,11,6,2,Metodo Longo
+" A, V, X ",VIEW,org.jumpmind.metl.ui.views.design.PropertySheet,valueChange,3,10,11,1,Muitos Desvios
+" A, R, V, X ",VIEW,org.jumpmind.metl.ui.views.design.DesignNavigator,doPaste,38,11,10,0,Muitos Desvios
+" A, R, D, V, X ",SERVICE,org.jumpmind.metl.core.persist.ConfigurationService,saveNewVersion,47,7,18,3,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jumpmind.metl.core.runtime.AgentRuntime,deployResources,53,12,24,1,Metodo Longo
+ V ,UNDEFINED,org.jumpmind.metl.core.util.DatabaseScriptContainer,executeScripts,20,8,6,3,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.mapping.EditMappingPanel,minimum,3,1,2,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsWriter,execute,36,8,10,4,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.design.PropertySheet,addCommonComponentSettings,17,6,5,2,Muitos Desvios
+ V ,CONTROLLER,org.jumpmind.metl.ui.api.ExecutionApi,addParameter,9,2,7,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.DelimitedParser,convertAttributeSettingsToAttributeFormat,31,7,0,0,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.manage.ExecutionRunPanel,setLogMinimized,10,5,3,1,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditRelationalModelPanel,updateExportTable,21,8,11,2,Alto Acoplamento Efferent
+ V ,RESIZABLEWINDOW,org.jumpmind.metl.ui.views.admin.PluginsPanelAddDialog,buildSearchLayout,54,2,9,0,Alto Acoplamento Efferent
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.LocalFileDirectory,copyToDir,3,1,2,3,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.core.plugin.PluginTransferListener,transferSucceeded,18,5,9,1,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.design.PropertySheet,addResourceCombo,38,9,0,3,Metodo Longo
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XPathXmlParser,handleUsingXPath,57,15,20,3,Metodo Longo
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.AgentRuntime,doComponentDeploymentEvent,25,8,11,2,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditExcelWriterPanel,saveSetting,13,3,3,3,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditSorterPanel,buildUI,31,1,11,0,Metodo Longo
+" A, R, D, V, X ",VIEW,org.jumpmind.metl.ui.views.design.EditTransformerPanel,generateCell,7,1,15,3,Alto Acoplamento Efferent
+ V ,RESIZABLEWINDOW,org.jumpmind.metl.ui.views.deploy.DeployDialog,takeAction,23,5,10,0,Metodo Longo
+" A, R, D, V, X ",WINDOW,org.jumpmind.metl.ui.init.LoginDialog,login,41,11,15,0,Muitos Desvios
+ V ,RESIZABLEWINDOW,org.jumpmind.metl.ui.common.ExportDialog,updateAffectedObjects,17,5,9,0,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditDataDiffPanel,updateEntityTable,12,5,6,1,Muitos Desvios
+" A, R, V, X ",EXECUTIONTRACKERLOGGER,org.jumpmind.metl.core.runtime.ExecutionTrackerRecorder,log,15,6,9,5,Muitos Parametros
+ V ,[IUICACHE],org.jumpmind.metl.ui.persist.UICache,removeOldModelPvEntryIfNeeded,15,6,4,3,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.deploy.EditAgentPanel,setSortProperties,5,1,4,3,Muitos Parametros
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.AgentRuntime,create,20,4,9,3,Alto Acoplamento Efferent
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.FtpDirectory,protocolReplyReceived,3,1,10,1,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditTransformerPanel,updateExportTable,29,12,11,1,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditSorterPanel,calculatePositions,26,7,5,0,Metodo Longo
+ V ,[IDIRECTORY],org.jumpmind.metl.core.runtime.resource.HttpDirectory,copyToDir,3,1,2,3,Muitos Parametros
+ V ,UNDEFINED,org.jumpmind.metl.ui.common.CutCopyPasteManager,destinationHasResource,15,5,7,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.ContentRouter,start,23,5,11,0,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.DataDiff,createDatabase,51,9,14,0,Muitos Desvios
+" A, R, D, V, X ",ENTITY,org.jumpmind.metl.core.model.Plugin,equals,19,13,4,1,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.admin.GroupEditPanel,valueChange,23,7,8,1,Metodo Longo
+" V, X ",CONTROLLER,org.jumpmind.metl.ui.api.ExecutionApi,executeFlow,42,8,18,3,Muitos Desvios
+ V ,SERVICE,org.jumpmind.metl.core.persist.ImportExportService,importModelConfiguration,15,3,9,4,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditTransformerPanel,generateCell,7,1,15,3,Muitos Parametros
+ V ,UNDEFINED,org.jumpmind.metl.ui.common.CutCopyPasteManager,modelInCutBuffer,11,7,5,2,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Serializer,createByInboundRowPayload,29,9,12,1,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditHierarchicalModelPanel,updateExportTable,21,8,11,2,Alto Acoplamento Efferent
+" A, R, V, X ",PANEL,org.jumpmind.metl.ui.views.manage.ManageNavigator,buildTreeTable,65,6,0,0,Metodo Longo
+" A, V, X ",UNDEFINED,org.jumpmind.metl.core.runtime.AgentRuntime,logWithFlowName,11,4,6,4,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlFormatter,fillAttributeDetails,37,8,12,1,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsWriter,executeSqlChanges,23,8,10,3,Metodo Longo
+ V ,EXECUTIONTRACKERLOGGER,org.jumpmind.metl.core.runtime.ExecutionTrackerRecorder,updateStatistics,22,5,9,2,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XsltProcessor,getBatchXml,53,13,18,3,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditContentRouterPanel,buildUI,36,5,6,0,Metodo Longo
+" A, R, D, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Script,start,78,11,25,0,Metodo Longo
+ V ,SERVICE,org.jumpmind.metl.core.persist.ImportExportService,findInserts,22,5,5,3,Muitos Parametros
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.AbstractFactory,getClassesForPackage,35,8,12,1,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.DesignNavigator,finishEditingItem,28,7,10,1,Metodo Longo
+" A, D, V, X ",ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.LocalFileDirectory,getOutputStream,8,2,6,4,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.deploy.ValidateFlowDeploymentPanel,buildContainerFlows,23,3,9,2,Alto Acoplamento Efferent
+" A, D, V, X ",ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.AbstractJMSJndiDirectory,close,47,10,16,0,Muitos Desvios
+" A, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.TextConstant,handle,39,12,13,3,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.manage.ExecutionRunPanel,generateCell,6,1,7,3,Muitos Parametros
+" A, R, D, V, X ",ASYNCTASK,org.jumpmind.metl.core.runtime.flow.StepRuntime,sendMessage,52,13,21,2,Muitos Desvios
+ V ,UNDEFINED,org.jumpmind.metl.StartWebServer,getTrustStore,23,5,9,1,Alto Acoplamento Efferent
+" A, R, D, V, X ",ASYNCTASK,org.jumpmind.metl.core.runtime.flow.StepRuntime,processOnAnotherThread,48,12,18,3,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.SqlExecutor,handle,36,12,13,3,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditFlowPanel,setPropertiesMinimized,12,7,2,1,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.deploy.DeployNavigator,finishEditingItem,29,6,10,0,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsWriter,execute,36,8,10,4,Metodo Longo
+ V ,PANEL,org.jumpmind.metl.ui.views.admin.NotificationEditPanel,closing,20,9,9,0,Muitos Desvios
+ V ,UNDEFINED,org.jumpmind.metl.core.util.LogUtils,toJson,26,5,6,2,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.DelimitedFormatter,handle,31,8,14,3,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.DelimitedFormatter,processInputRow,25,8,13,2,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.PropertySheet,addResourceCombo,38,9,0,3,Muitos Parametros
+" A, R, D, V, X ",PANEL,org.jumpmind.metl.ui.views.design.ProjectVersionSettingsPanel,getValue,4,1,20,3,Alto Acoplamento Efferent
+ V ,ABSTRACTJAVASCRIPTCOMPONENT,org.jumpmind.metl.ui.mapping.MappingDiagram,addConnection,22,2,6,2,Metodo Longo
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.AgentRuntime,createFlowRuntime,4,1,4,3,Muitos Parametros
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsWriter,getValues,19,14,7,3,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.FilePoller,matchFiles,34,9,8,3,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditMergerPanel,generateCell,7,1,9,3,Muitos Parametros
+" A, D, V, X ",VIEW,org.jumpmind.metl.ui.views.design.EditSorterPanel,createField,12,4,5,4,Muitos Parametros
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlFormatter,addModelAttributeXml,82,14,17,5,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsWriter,createTableFromEntity,27,6,7,2,Metodo Longo
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.AgentRuntime,create,20,4,9,3,Muitos Parametros
+" A, R, D, V, X ",[IDEFINITIONFACTORY],org.jumpmind.metl.core.plugin.DefinitionFactory,load,11,2,5,5,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.SequenceGenerator,start,62,19,10,0,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.admin.AboutPanel,refresh,15,1,10,0,Alto Acoplamento Efferent
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.ContentRouter,handleEntityListPayload,38,11,14,3,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.EmailWriter,addToRecipients,28,10,6,1,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.admin.GroupPanel,buttonClick,25,6,10,1,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.EmailWriter,processMessages,9,3,4,3,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditSorterPanel,buttonClick,44,13,8,1,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsReader,handle,44,14,14,3,Metodo Longo
+" A, R, V, X ",VIEW,org.jumpmind.metl.ui.views.design.PropertySheet,addOutputModelCombo,42,11,0,3,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.TextConstant,handle,39,12,13,3,Muitos Parametros
+ V ,TABLE,org.jumpmind.metl.ui.common.Table,formatPropertyValue,8,3,4,3,Muitos Parametros
+ V ,UNDEFINED,org.jumpmind.metl.ui.common.CutCopyPasteManager,restampAllSourceProjectFlows,12,3,9,2,Alto Acoplamento Efferent
+ V ,WINDOW,org.jumpmind.metl.ui.init.LoginDialog,containsCommonWords,37,7,12,1,Metodo Longo
+ V ,MENUBAR,org.jumpmind.metl.ui.common.AbstractMenuBar,addToMenuBarIfNotExists,17,7,3,3,Muitos Desvios
+" A, R, D, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.TextFileWriter,handle,57,22,13,3,Muitos Desvios
+" D, V ",ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.SftpDirectory,listFile,27,9,9,2,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.core.runtime.component.HttpRequestDeploymentListener,buildMapping,33,5,17,4,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.design.CallWebServicePanel,runFlow,46,9,17,0,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.deploy.DeployNavigator,getStyle,8,3,0,3,Muitos Parametros
+" A, R, D, V, X ",VIEW,org.jumpmind.metl.ui.views.design.PropertySheet,setSource,46,13,10,1,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.DataDiff,appendColumns,11,4,8,3,Muitos Parametros
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Mapping,mapInputToOutputByEntity,43,12,11,1,Muitos Desvios
+" A, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.SqlExecutor,handle,36,12,13,3,Alto Acoplamento Efferent
+ V ,RESIZABLEWINDOW,org.jumpmind.metl.ui.views.design.ImportXmlTemplateWindow,importFromXsd,14,1,10,1,Alto Acoplamento Efferent
+ V ,DEFINITIONFACTORY,org.jumpmind.metl.ui.definition.DefinitionPlusUIFactory,loadComponentsForClassloader,41,9,17,3,Muitos Desvios
+" A, R, D, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XPathXmlParser,handleUsingXPath,57,15,20,3,Alto Acoplamento Efferent
+ V ,WINDOW,org.jumpmind.metl.ui.common.ImportDialog,replaceUploadButton,38,2,0,0,Metodo Longo
+ V ,SERVICE,org.jumpmind.metl.core.persist.ConfigurationService,compare,3,5,2,2,Muitos Desvios
+" A, R, V, X ",SERVICE,org.jumpmind.metl.core.persist.ConfigurationService,updateComponentWithNewGUIDs,18,4,4,5,Muitos Parametros
+ V ,[IPLUGINMANAGER],org.jumpmind.metl.core.plugin.PluginManager,getAvailableVersions,31,6,22,3,Metodo Longo
+" A, V, X ",SERVICE,org.jumpmind.metl.core.persist.ImportExportService,addConfigData,27,11,13,4,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditDeduperPanel,updateEntityTable,12,5,6,1,Muitos Desvios
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.component.ModelAttributeScriptHelper,nextLongValueInMessage,33,9,12,1,Metodo Longo
+ V ,CONTROLLER,org.jumpmind.metl.ui.api.ExecutionApi,post,3,1,4,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.DelimitedParser,processInputRows,37,8,18,3,Muitos Parametros
+ V ,[IPLUGINMANAGER],org.jumpmind.metl.core.plugin.PluginManager,toPluginId,3,1,1,3,Muitos Parametros
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.LocalFileDirectory,toFile,20,5,5,2,Muitos Desvios
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Lookup,handle,28,11,10,3,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlReader,handle,11,6,8,3,Muitos Parametros
+ V ,UNDEFINED,org.jumpmind.metl.core.utils.TestUtils,createComponent,11,1,9,8,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.AgentRuntime,deploy,30,5,13,2,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XsltProcessor,getTransformedXml,31,4,11,4,Metodo Longo
+" A, D, V, X ",VIEW,org.jumpmind.metl.ui.views.design.EditFlowPanel,addComponent,13,1,7,4,Muitos Parametros
+" A, R, V, X ",ASYNCTASK,org.jumpmind.metl.core.runtime.flow.StepRuntime,run,30,11,5,0,Muitos Desvios
+ V ,UNDEFINED,org.jumpmind.metl.core.utils.TestUtils,createNoOpProcessorFlowStep,12,1,6,3,Muitos Parametros
+ V ,ASYNCTASK,org.jumpmind.metl.core.runtime.flow.StepRuntime,logInput,27,7,15,3,Metodo Longo
+ V ,VERTICALSPLITPANEL,org.jumpmind.metl.ui.views.deploy.EditAgentDeploymentPanel,getScheduleComponent,43,12,0,1,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.TempRdbms,query,24,3,10,1,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.design.DesignNavigator,expand,37,14,7,1,Metodo Longo
+ V ,SERVICE,org.jumpmind.metl.core.persist.ImportExportService,findInserts,22,5,5,3,Metodo Longo
+" A, R, D, V, X ",VIEW,org.jumpmind.metl.ui.views.manage.ManageView,init,143,1,0,0,Metodo Longo
+ V ,SERVICE,org.jumpmind.metl.core.persist.ImportExportService,importFlowConfiguration,15,3,9,4,Alto Acoplamento Efferent
+" A, R, D, V, X ",[IDIRECTORY],org.jumpmind.metl.core.runtime.resource.HttpDirectory,getOutputStream,4,1,6,6,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jumpmind.metl.core.utils.TestUtils,createComponent,11,1,9,8,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.design.PropertySheet,saveSetting,8,4,6,3,Muitos Parametros
+" A, R, D, V, X ",ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.SftpDirectory,listFiles,42,14,15,2,Muitos Desvios
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.AgentRuntime,cancel,15,5,6,1,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsWriter,executeSqlInserts,25,5,9,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlFormatter,applyAttributeXPath,33,9,7,3,Metodo Longo
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlParser,start,40,11,18,0,Alto Acoplamento Efferent
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.SftpDirectory,getInputStream,21,8,9,3,Muitos Desvios
+ V ,SERVICE,org.jumpmind.metl.ui.persist.AuditableConfigurationService,log,26,7,10,1,Metodo Longo
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.SftpDirectory,createRelativePathDirectoriesIfNecessary,26,6,8,3,Muitos Parametros
+ V ,[IPLUGINMANAGER],org.jumpmind.metl.core.plugin.PluginManager,getAvailableVersions,31,6,22,3,Muitos Parametros
+ V ,MOCKDRIVER,org.jumpmind.metl.core.util.MockJdbcDriver,getPrimaryKeys,24,6,1,3,Muitos Desvios
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.AbstractFactory,checkJarFile,14,4,6,3,Muitos Parametros
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsWriter,writeStats,63,18,8,1,Metodo Longo
+ V ,RESIZABLEWINDOW,org.jumpmind.metl.ui.views.release.EditReleasePackageDialog,save,20,5,10,0,Alto Acoplamento Efferent
+ V ,[IEXECUTIONTRACKER],org.jumpmind.metl.core.runtime.ExecutionTrackerLogger,log,22,8,8,5,Muitos Desvios
+" A, R, V, X ",VIEW,org.jumpmind.metl.ui.views.design.EditFormatPanel,buildUI,69,10,0,0,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.admin.PluginsPanel,moveItemsTo,17,7,5,2,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditTransformerPanel,updateExportTable,29,12,11,1,Alto Acoplamento Efferent
+" A, R, V, X ",[IDEFINITIONFACTORY],org.jumpmind.metl.core.plugin.DefinitionFactory,loadComponentsForClassloader,84,18,24,3,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.AbstractRdbmsComponentRuntime,getStatements,23,4,9,2,Metodo Longo
+" A, R, D, V, X ",VIEW,org.jumpmind.metl.ui.views.deploy.EditAgentPanel,save,11,2,17,1,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.init.AppInitializer,cleanTempJettyDirectories,16,9,6,0,Muitos Desvios
+ V ,SERVICE,org.jumpmind.metl.core.persist.ImportExportService,importAgentConfiguration,21,5,9,3,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.mapping.EditMappingPanel,export,20,3,9,0,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.design.DesignNavigator,doRemove,32,8,15,0,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XPathXmlParser,handle,5,2,3,3,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditFormatPanel,moveItemsTo,17,7,5,2,Muitos Desvios
+" A, R, D, V, X ",MODEL,org.jumpmind.metl.core.model.ProjectVersionPlugin,equals,19,13,4,1,Muitos Desvios
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XsltProcessor,getBatchXml,53,13,18,3,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.DelimitedFormatter,convertAttributeSettingsToAttributeFormat,31,7,0,0,Metodo Longo
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.AbstractJMSJndiDirectory,getPayload,31,8,10,2,Alto Acoplamento Efferent
+ V ,ASYNCTASK,org.jumpmind.metl.core.runtime.flow.StepRuntime,start,29,6,14,0,Muitos Desvios
+" A, R, V, X ",ASYNCTASK,org.jumpmind.metl.core.runtime.flow.StepRuntime,logInput,27,7,15,3,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.component.ModelAttributeScriptHelper,getSignatures,25,7,11,0,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.BinaryFileReader,processFiles,34,7,12,4,Muitos Desvios
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsWriter,sortAndStoreRowsByTableAndOperation,39,13,12,1,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Web,parseDelimitedMultiLineParamsToMap,13,5,5,2,Muitos Desvios
+ V ,SERVICE,org.jumpmind.metl.core.persist.ImportExportService,findUpdates,31,8,8,3,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.deploy.DeployNavigator,buildEditableNavigatorField,39,3,0,1,Metodo Longo
+" A, V ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsReader,extractData,37,12,12,1,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.manage.ManageView,needsUpdated,27,10,7,1,Metodo Longo
+ V ,MENUBAR,org.jumpmind.metl.ui.common.AbstractMenuBar,addToContextMenuIfNotExists,17,7,4,3,Muitos Desvios
+ V ,UNDEFINED,org.jumpmind.metl.core.util.ThreadUtils,createFixedThreadPool,13,2,8,3,Muitos Parametros
+ V ,[ISUBSCRIBEMANAGER],org.jumpmind.metl.core.runtime.subscribe.SubscribeManager,getPayload,31,8,10,2,Metodo Longo
+" A, R, V, X ",[IUICACHE],org.jumpmind.metl.ui.persist.UICache,onSave,64,14,16,1,Metodo Longo
+" A, R, D, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.ExcelFileWriter,compare,3,20,13,2,Muitos Desvios
+ V ,SERVICE,org.jumpmind.metl.core.persist.OperationsService,refresh,13,2,9,1,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.DelimitedParser,handle,29,8,10,3,Muitos Desvios
+" A, R, D, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.DataDiff,calculateDiff,118,24,21,1,Alto Acoplamento Efferent
+" A, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XsltProcessor,getTransformedXml,31,4,11,4,Muitos Parametros
+ V ,TEST,org.jumpmind.metl.core.runtime.component.RdbmsReaderTest,testGetSqlColumnEntityHints,26,3,5,0,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Merger,join,22,5,6,1,Muitos Desvios
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.FtpDirectory,copyFile,3,1,2,3,Muitos Parametros
+ V ,ENTITY,org.jumpmind.metl.ui.init.AppConfig,configDataSource,25,2,7,0,Metodo Longo
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.FilePoller,pollForFiles,59,16,19,3,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.DataDiff,loadIntoDatabase,27,5,3,1,Metodo Longo
+" A, V, X ",SERVICE,org.jumpmind.metl.core.persist.ImportExportService,importResourceConfiguration,15,3,9,4,Muitos Parametros
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.component.ModelAttributeScriptHelper,mapChangeType,11,7,2,3,Muitos Desvios
+" A, V ",VIEW,org.jumpmind.metl.ui.views.design.EditSorterPanel,updateTable,48,8,0,1,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditXsltPanel,getMatchingEntities,24,7,6,1,Metodo Longo
+ V ,[ICOMPONENTRUNTIME],org.jumpmind.metl.core.runtime.component.AbstractComponentRuntime,log,3,1,4,3,Muitos Parametros
+ V ,RESIZABLEWINDOW,org.jumpmind.metl.ui.views.design.ImportXmlTemplateWindow,importFromWsdl,29,4,0,1,Metodo Longo
+ V ,SERVICE,org.jumpmind.metl.core.persist.ImportExportService,importAgentConfiguration,21,5,9,3,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.BinaryFileWriter,handle,25,7,12,3,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsWriter,fitToColumn,10,4,4,3,Muitos Parametros
+" A, R, D, V, X ",VIEW,org.jumpmind.metl.ui.views.design.CallWebServicePanel,runFlow,46,9,17,0,Alto Acoplamento Efferent
+" A, D, V, X ",VIEW,org.jumpmind.metl.core.runtime.component.HttpRequestDeploymentListener,onDeploy,9,3,7,4,Muitos Parametros
+ V ,SERVICE,org.jumpmind.metl.core.persist.ConfigurationService,delete,32,7,14,1,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditFormatPanel,calculatePositions,35,12,6,0,Metodo Longo
+" A, D, V ",WINDOW,org.jumpmind.metl.ui.init.LoginDialog,containsCommonWords,37,7,12,1,Alto Acoplamento Efferent
+" A, R, D, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.ExcelFileReader,readWorkbook,84,20,19,3,Muitos Desvios
+ V ,SERVICE,org.jumpmind.metl.core.persist.ImportExportService,processTableUpdates,14,2,9,2,Alto Acoplamento Efferent
+" A, R, V, X ",[IPLUGINMANAGER],org.jumpmind.metl.core.plugin.PluginManager,getAvailableVersions,31,6,22,3,Alto Acoplamento Efferent
+ V ,CUSTOMFIELD,org.jumpmind.metl.ui.common.ImmediateUpdateTogglePasswordField,initContent,46,3,0,0,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.release.ReleasesView,archive,17,4,9,0,Alto Acoplamento Efferent
+ V ,ASYNCTASK,org.jumpmind.metl.core.runtime.flow.StepRuntime,logInput,27,7,15,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlFormatter,applyAttributeXPath,33,9,7,3,Muitos Parametros
+" A, R, D, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Assert,handle,82,23,14,3,Metodo Longo
+" A, V, X ",[IEXECUTIONTRACKER],org.jumpmind.metl.core.runtime.ExecutionTrackerLogger,flowStepFinished,7,2,13,4,Muitos Parametros
+ V ,UNDEFINED,org.jumpmind.metl.core.utils.TestUtils,assertList,24,8,6,3,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlFormatter,fillStackWithStaticParentElements,35,5,9,3,Muitos Parametros
+ V ,SERVICE,org.jumpmind.metl.core.persist.ImportExportService,processTableDeletes,16,4,10,2,Alto Acoplamento Efferent
+ V ,[ICOMPONENTRUNTIME],org.jumpmind.metl.core.runtime.component.AbstractComponentRuntime,getTypedProperties,16,5,5,0,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Deserializer,handle,41,11,17,3,Muitos Parametros
+" A, R, V, X ",VIEW,org.jumpmind.metl.ui.views.manage.ExecutionRunPanel,getNodes,59,11,17,0,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.init.AppInitializer,loadProperties,25,3,13,0,Metodo Longo
+ V ,UNDEFINED,org.jumpmind.metl.ui.common.UiUtils,getComponentImageInputStream,20,8,7,3,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditRdbmsWriterPanel,generateCell,7,1,9,3,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.BinaryFileReader,handle,6,5,6,3,Muitos Desvios
+ V ,PANEL,org.jumpmind.metl.ui.views.manage.ManageNavigator,getStyle,8,6,4,3,Muitos Desvios
+ V ,RESIZABLEWINDOW,org.jumpmind.metl.ui.views.design.ImportXmlTemplateWindow,buttonClick,40,7,13,1,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.DelimitedFormatter,handle,31,8,14,3,Muitos Parametros
+" A, V ",EXECUTIONTRACKERLOGGER,org.jumpmind.metl.core.runtime.ExecutionTrackerRecorder,flowStepFinished,34,7,12,4,Alto Acoplamento Efferent
+ V ,SERVICE,org.jumpmind.metl.core.persist.ImportExportService,importConfiguration,35,13,9,2,Metodo Longo
+ V ,[IDEFINITIONFACTORY],org.jumpmind.metl.core.plugin.DefinitionFactory,loadResources,18,5,10,2,Alto Acoplamento Efferent
+ V ,RESIZABLEWINDOW,org.jumpmind.metl.ui.views.deploy.DeployDialog,deployFlow,27,5,11,4,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditContentRouterPanel,save,4,5,9,1,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.ExcelFileReader,processFiles,25,5,11,4,Muitos Desvios
+" A, V ",VIEW,org.jumpmind.metl.ui.views.design.EditRelationalModelPanel,valueChange,4,1,12,1,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlFormatter,processMsgEntities,21,6,10,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Multiplier,handle,26,9,7,3,Muitos Parametros
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.SftpDirectory,close,20,5,8,1,Muitos Desvios
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.component.ModelAttributeScriptHelper,getSignatures,25,7,11,0,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditDataDiffPanel,getStyle,6,4,4,3,Muitos Parametros
+" A, R, D, V, X ",VIEW,org.jumpmind.metl.ui.views.design.DesignNavigator,refreshProjects,77,19,25,0,Alto Acoplamento Efferent
+ V ,[IDIRECTORY],org.jumpmind.metl.core.runtime.resource.AbstractDirectory,copyFile,2,1,2,3,Muitos Parametros
+ V ,UNDEFINED,org.jumpmind.metl.StartWebServer,getConnectors,51,9,18,2,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditFlowPanel,hasAdvancedEditor,18,5,9,1,Alto Acoplamento Efferent
+ V ,WINDOW,org.jumpmind.metl.ui.common.InProgressDialog,show,22,1,0,0,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Union,handle,11,4,4,3,Muitos Parametros
+ V ,ENTITY,org.jumpmind.metl.ui.common.ViewManager,getMenuItemsByCategory,25,5,0,0,Metodo Longo
+ V ,[IPLUGINMANAGER],org.jumpmind.metl.core.plugin.PluginManager,checkForNewerVersion,25,7,8,1,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.AbstractRdbmsComponentRuntime,enhanceParamMapWithInValues,19,5,10,3,Muitos Parametros
+ V ,UNDEFINED,org.jumpmind.metl.core.utils.DbTestUtils,createDatabasePlatform,14,2,10,0,Alto Acoplamento Efferent
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.SftpDirectory,copyToDir,22,5,8,3,Muitos Desvios
+ V ,CONTROLLER,org.jumpmind.metl.ui.api.ExecutionApi,put,3,1,4,3,Muitos Parametros
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.flow.FlowRuntime,sendNotifications,37,8,13,1,Metodo Longo
+ V ,UNDEFINED,org.jumpmind.metl.core.util.LogUtils,initLogging,34,5,9,2,Metodo Longo
+" A, R, D, V, X ",VIEW,org.jumpmind.metl.ui.views.design.DesignNavigator,doRemove,32,8,15,0,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.AbstractRdbmsComponentRuntime,prepareParams,19,7,9,4,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Script,invoke,26,6,8,2,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsWriter,executeSqlChanges,23,8,10,3,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditSorterPanel,valueChange,23,5,0,1,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.sample.Sample,handle,2,1,3,3,Muitos Parametros
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.AgentRuntime,deploy,27,6,21,3,Muitos Parametros
+" A, V ",UNDEFINED,org.jumpmind.metl.core.persist.AbstractService,findSettings,19,6,12,2,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditTransformerPanel,updateTable,32,15,10,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.flow.FlowRuntime,manipulateFlow,25,5,9,1,Metodo Longo
+ V ,[ISENDMESSAGECALLBACK],org.jumpmind.metl.core.runtime.component.SendMessageCallback,sendBinaryMessage,4,1,8,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Mapping,handle,18,5,5,3,Muitos Parametros
+ V ,SERVICE,org.jumpmind.metl.core.persist.ConfigurationService,copy,45,9,15,3,Muitos Desvios
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.FtpDirectory,moveFile,3,1,2,3,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.explore.ExploreDirectoryView,refresh,27,5,0,0,Muitos Desvios
+ V ,RESIZABLEWINDOW,org.jumpmind.metl.ui.views.deploy.DeployDialog,getName,18,5,5,1,Muitos Desvios
+" V, X ",CONTROLLER,org.jumpmind.metl.ui.api.ExecutionApi,enforceBasicAuth,36,8,10,3,Muitos Desvios
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.SftpDirectory,renameFile,17,4,4,3,Muitos Parametros
+ V ,[IAGENTMANAGER],org.jumpmind.metl.core.runtime.AgentManager,deploy,8,2,5,3,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditHierarchicalModelPanel,generateCell,43,3,0,3,Muitos Parametros
+" A, V, X ",VIEW,org.jumpmind.metl.ui.views.release.ReleasesView,finalizeSelectedReleasePackages,53,10,20,0,Muitos Desvios
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.FileUtil,copyFile,37,12,6,2,Muitos Desvios
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.TempRdbms,createDatabase,51,9,14,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.AgentRuntime,stop,29,7,11,0,Metodo Longo
+ V ,UNDEFINED,org.jumpmind.metl.core.persist.ReleasePackageProjectVersionSorter,sort,24,7,11,1,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.design.PropertySheet,addSettingField,253,5,0,3,Muitos Desvios
+" A, D, V ",SERVICE,org.jumpmind.metl.core.persist.ConfigurationService,saveNewVersion,47,7,18,3,Metodo Longo
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.SftpDirectory,copyFile,18,4,6,3,Muitos Parametros
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Web,handle,70,18,17,3,Metodo Longo
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Zip,handle,60,12,15,3,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Stamp,handle,28,8,12,3,Muitos Desvios
+ V ,[IUICACHE],org.jumpmind.metl.ui.persist.UICache,removeOldFlowPvEntryIfNeeded,15,6,4,3,Muitos Desvios
+ V ,PANEL,org.jumpmind.metl.ui.views.admin.NotificationEditPanel,updateLinks,29,9,10,0,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.ContentRouter,handle,16,6,4,3,Muitos Parametros
+" A, R, D, V, X ",CONTROLLER,org.jumpmind.metl.ui.api.ExecutionApi,addParameters,40,11,6,3,Muitos Desvios
+ V ,RESIZABLEWINDOW,org.jumpmind.metl.ui.views.release.EditReleasePackageDialog,buildProjectsAndVersions,41,6,14,1,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditExcelWriterPanel,moveItemsTo,17,7,5,2,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditXmlFormatPanel,refresh,37,5,0,0,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.deploy.EditAgentPanel,compare,8,5,4,2,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.jumpmind.metl.core.runtime.StandaloneFlowRunner,init,49,6,29,0,Alto Acoplamento Efferent
+ V ,SERVICE,org.jumpmind.metl.core.persist.ConfigurationService,refreshModelRelations,31,6,19,1,Muitos Desvios
+ V ,MENUBAR,org.jumpmind.metl.ui.views.design.menu.DesignMenuBar,buildMenu,30,1,0,0,Metodo Longo
+ V ,SERVICE,org.jumpmind.metl.core.persist.ConfigurationService,findResourcesByTypes,20,5,8,3,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.jumpmind.metl.core.runtime.flow.FlowRuntime,getFlowParameters,40,9,15,2,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.design.PropertySheet,save,5,5,4,1,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.SequenceGenerator,handle,30,6,8,3,Muitos Parametros
+" A, V ",VIEW,org.jumpmind.metl.ui.views.manage.ExecutionRunPanel,componentEvent,19,4,12,1,Alto Acoplamento Efferent
+" A, R, D, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlParser,handleUsingXPath,74,19,22,3,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Execute,parseCommand,24,6,8,2,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Subscriber,handle,6,2,4,3,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.design.DesignNavigator,addFlowsToFolder,16,5,8,3,Muitos Desvios
+" A, R, D, V, X ",SERVICE,org.jumpmind.metl.core.persist.ExecutionService,findExecutionStepLogs,44,15,15,3,Muitos Desvios
+" A, V ",UNDEFINED,org.jumpmind.metl.core.util.VersionUtils,getCurrentVersion,3,1,12,0,Alto Acoplamento Efferent
+" A, R, D, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.FilePoller,pollForFiles,59,16,19,3,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditSorterPanel,buttonClick,46,16,9,1,Alto Acoplamento Efferent
+" A, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.FilePoller,listFilesAndDirsFromDirectory,11,3,6,4,Muitos Parametros
+ V ,[IPLUGINMANAGER],org.jumpmind.metl.core.plugin.PluginManager,delete,10,3,7,3,Muitos Parametros
+" A, R, V, X ",VIEW,org.jumpmind.metl.ui.views.design.EditFlowPanel,componentEvent,71,21,16,1,Metodo Longo
+ V ,[IDIRECTORY],org.jumpmind.metl.core.runtime.resource.AbstractDirectory,renameFile,3,1,2,3,Muitos Parametros
+ V ,CONTROLLER,org.jumpmind.metl.ui.api.ExecutionApi,enforceSecurity,14,4,4,3,Muitos Parametros
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.AgentRuntime,execute,4,1,6,3,Muitos Parametros
+ V ,RESIZABLEWINDOW,org.jumpmind.metl.ui.views.design.ChangeDependencyVersionDialog,buildPossibleTargetVersions,22,3,7,1,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditXmlFormatPanel,addShowPopulatedFilter,14,2,9,2,Alto Acoplamento Efferent
+" D, V ",[IDIRECTORY],org.jumpmind.metl.core.runtime.resource.HttpDirectory,getInputStream,20,5,10,5,Alto Acoplamento Efferent
+ V ,SERVICE,org.jumpmind.metl.ui.persist.AuditableConfigurationService,log,26,7,10,1,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.TextConstant,handle,39,12,13,3,Metodo Longo
+ V ,[ICOMPONENTRUNTIME],org.jumpmind.metl.core.runtime.component.AbstractComponentRuntime,getAttributeValues,4,1,5,3,Muitos Parametros
+" D, V ",[IDIRECTORY],org.jumpmind.metl.core.runtime.resource.HttpDirectory,setOAuth10IfNeeded,23,3,10,2,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditRelationalModelPanel,save,27,10,2,1,Metodo Longo
+ V ,[ISENDMESSAGECALLBACK],org.jumpmind.metl.core.runtime.component.SendMessageCallback,sendTextMessage,5,1,4,3,Muitos Parametros
+" A, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsWriter,execute,36,8,10,4,Muitos Parametros
+ V ,PANEL,org.jumpmind.metl.ui.views.design.ProjectVersionSettingsPanel,getValue,4,1,20,3,Muitos Parametros
+" A, V, X ",VIEW,org.jumpmind.metl.ui.views.design.EditHierarchicalModelPanel,save,27,10,0,1,Muitos Desvios
+" A, R, V, X ",VIEW,org.jumpmind.metl.ui.views.design.EditExcelWriterPanel,buildUI,56,6,0,0,Metodo Longo
+ V ,SERVICE,org.jumpmind.metl.core.persist.ImportExportService,exportProjectVersion,21,4,11,2,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.SequenceGenerator,handle,30,6,8,3,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RelationalHierarchicalMapping,getCntrlBreakAttributes,13,5,6,2,Muitos Desvios
+" A, R, D, V, X ",VIEW,org.jumpmind.metl.ui.views.manage.ExecutionRunPanel,refreshUI,66,14,19,1,Muitos Desvios
+ V ,UNDEFINED,org.jumpmind.metl.core.util.ComponentUtils,getAttributeValues,14,6,7,4,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditTransformerPanel,createField,27,8,0,4,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.admin.UserEditPanel,valueChange,22,7,9,1,Alto Acoplamento Efferent
+ V ,MODEL,org.jumpmind.metl.core.model.Flow,calculateApproximateOrder,18,5,8,3,Muitos Desvios
+" A, V ",UI,org.jumpmind.metl.ui.init.AppUI,login,30,1,12,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jumpmind.metl.ui.common.CutCopyPasteManager,resourcesMatchAcrossProjects,19,8,4,2,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.FixedLengthParser,convertAttributeSettingsToAttributeFormat,28,6,0,0,Muitos Desvios
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsReader,handle,44,14,14,3,Alto Acoplamento Efferent
+" A, R, D, V, X ",VIEW,org.jumpmind.metl.ui.views.design.DesignNavigator,createField,3,15,5,4,Muitos Desvios
+" A, V ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlFormatter,fillAttributeDetails,37,8,12,1,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditFlowPanel,openAdvancedEditor,22,6,10,0,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Deduper,handle,42,11,8,3,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.manage.ExecutionRunPanel,download,24,2,0,0,Metodo Longo
+" A, R, V, X ",[ISUBSCRIBEMANAGER],org.jumpmind.metl.core.runtime.subscribe.SubscribeManager,onMessage,23,4,17,1,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.AbstractSerializer,getDetectedFormat,24,7,5,0,Muitos Desvios
+" A, V, X ",VIEW,org.jumpmind.metl.ui.init.AppInitializer,initDatabase,33,9,13,1,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.design.DesignNavigator,open,34,6,19,1,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditSorterPanel,buildUI,31,1,11,0,Alto Acoplamento Efferent
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.SftpDirectory,statelessConnect,22,4,7,0,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.deploy.EditAgentPanel,runClicked,19,4,9,0,Alto Acoplamento Efferent
+ V ,SERVICE,org.jumpmind.metl.core.security.SecurityService,getKeyStore,22,4,7,0,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.admin.NotificationPanel,refresh,16,6,7,0,Muitos Desvios
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.AbstractJMSJndiDirectory,getInputStream,28,6,10,3,Muitos Desvios
+ V ,[IFLOWMANIPULATOR],org.jumpmind.metl.core.runtime.component.EmbedFlowFlowManipulator,manipulate,27,6,9,3,Muitos Desvios
+ V ,EXECUTIONTRACKERLOGGER,org.jumpmind.metl.core.runtime.ExecutionTrackerRecorder,afterHandle,23,6,12,3,Muitos Desvios
+" A, R, D, V, X ",WINDOW,org.jumpmind.metl.ui.init.LoginDialog,testPassword,62,22,9,3,Muitos Desvios
+" A, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Sorter,sortData,43,8,13,1,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.design.DesignNavigator,addNewDependency,28,5,7,1,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditHierarchicalModelPanel,selected,26,7,8,1,Muitos Desvios
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.FtpDirectory,renameFile,3,1,2,3,Muitos Parametros
+" A, R, V, X ",PANEL,org.jumpmind.metl.ui.views.admin.NotificationEditPanel,save,4,1,17,1,Alto Acoplamento Efferent
+ V ,TABSHEET,org.jumpmind.metl.ui.common.TabbedPanel,close,30,7,7,1,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.ExcelFileWriter,start,33,9,8,0,Metodo Longo
+" A, R, D, V, X ",ASYNCTASK,org.jumpmind.metl.core.runtime.flow.StepRuntime,processOnAnotherThread,48,12,18,3,Alto Acoplamento Efferent
+" A, R, D, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlReader,processFiles,102,20,17,4,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Merger,handle,20,7,6,3,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.DesignNavigator,addNewResource,19,2,7,3,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditSorterPanel,saveSetting,13,3,3,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Serializer,processHierarchicalEntityArray,9,2,5,3,Muitos Parametros
+ V ,ENTITY,org.jumpmind.metl.core.runtime.component.EntityNameLookup,getEntityNames,22,5,9,1,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.EmailWriter,sendEmail,35,7,11,9,Muitos Desvios
+" A, R, D, V, X ",VERTICALSPLITPANEL,org.jumpmind.metl.ui.views.deploy.EditAgentDeploymentPanel,getScheduleComponent,43,12,0,1,Muitos Desvios
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.TempRdbms,createDatabase,51,9,14,0,Metodo Longo
+ V ,MOCKDRIVER,org.jumpmind.metl.core.util.MockJdbcDriver,getPrimaryKeys,24,6,1,3,Metodo Longo
+ V ,PANEL,org.jumpmind.metl.ui.views.admin.NotificationEditPanel,closing,20,9,9,0,Alto Acoplamento Efferent
+" D, V ",WINDOW,org.jumpmind.metl.ui.init.LoginDialog,containsCommonWords,37,7,12,1,Muitos Desvios
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.component.ScriptHelper,nextRowFromInputMessage,17,6,5,0,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.DesignNavigator,open,34,6,19,1,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlParser,handleUsingPullParser,71,18,20,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Deduper,start,26,8,15,0,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.ExcelFileReader,readWorkbook,84,20,19,3,Muitos Parametros
+" A, R, D, V, X ",VIEW,org.jumpmind.metl.ui.views.design.EditFlowPanel,componentEvent,71,21,16,1,Alto Acoplamento Efferent
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.TextFileReader,processFiles,75,14,17,4,Alto Acoplamento Efferent
+ V ,ASYNCTASK,org.jumpmind.metl.core.runtime.flow.StepRuntime,logInput,27,7,15,3,Muitos Desvios
+ V ,ASYNCTASK,org.jumpmind.metl.core.runtime.flow.StepRuntime,cancel,21,5,6,0,Muitos Desvios
+" A, V, X ",ASYNCTASK,org.jumpmind.metl.core.runtime.flow.AsyncRecorder,logAll,49,12,20,0,Metodo Longo
+ V ,ASYNCTASK,org.jumpmind.metl.core.runtime.flow.StepRuntime,processOnAnotherThread,48,12,18,3,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.deploy.DeployNavigator,refresh,32,8,10,0,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Multiplier,handle,26,9,7,3,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditDeduperPanel,moveItemsTo,15,7,5,2,Muitos Desvios
+" A, V, X ",UNDEFINED,org.jumpmind.metl.core.runtime.StandaloneFlowRunner,init,49,6,29,0,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Multiplier,multiply,24,6,5,2,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.design.DesignNavigator,doNewProjectBranch,25,4,8,0,Metodo Longo
+ V ,MODEL,org.jumpmind.metl.core.model.Model,toStringMap,18,6,9,2,Muitos Desvios
+" A, R, D, V, X ",ASYNCTASK,org.jumpmind.metl.core.runtime.flow.StepRuntime,sendMessage,52,13,21,2,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.flow.FlowRuntime,getFlowParameters,40,9,15,2,Metodo Longo
+" A, V ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Serializer,createByInboundRowPayload,29,9,12,1,Alto Acoplamento Efferent
+" A, V, X ",VERTICALSPLITPANEL,org.jumpmind.metl.ui.views.deploy.EditAgentDeploymentPanel,createField,15,2,0,4,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.EmailWriter,handle,10,2,5,3,Muitos Parametros
+ V ,[IDIRECTORY],org.jumpmind.metl.core.runtime.resource.AbstractDirectory,moveToDir,2,1,2,3,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.design.PropertySheet,addOutputModelCombo,42,11,0,3,Muitos Parametros
+ V ,[ICOMPONENTRUNTIME],org.jumpmind.metl.core.runtime.component.AbstractComponentRuntime,bindEntityData,25,4,13,3,Muitos Parametros
+ V ,MENUBAR,org.jumpmind.metl.ui.common.AbstractMenuBar,setContextMenuEnabled,9,3,4,3,Muitos Parametros
+" A, D, V, X ",VIEW,org.jumpmind.metl.ui.views.design.EditMergerPanel,createField,9,2,5,4,Muitos Parametros
+" A, R, D, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlParser,handleUsingPullParser,71,18,20,3,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.AbstractXMLComponentRuntime,removeNamespaces,15,5,6,1,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditXmlFormatPanel,refresh,37,5,0,0,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.FixedLengthFormatter,convertAttributeSettingsToAttributeFormat,28,6,0,0,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditDeduperPanel,generateCell,6,1,4,3,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditFlowPanel,redrawFlow,21,5,8,0,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.ExcelFileReader,convertAttributeSettingsToMaps,22,4,9,0,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Sorter,start,38,8,0,0,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Merger,join,22,5,6,1,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditRelationalModelPanel,selected,28,7,8,1,Metodo Longo
+" A, R, D, V, X ",CONTROLLER,org.jumpmind.metl.ui.api.ExecutionApi,executeFlow,42,8,18,3,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Serializer,processHierarchicalEntity,38,9,8,3,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.manage.ExecutionRunPanel,save,5,7,26,1,Muitos Desvios
+" A, R, V, X ",VIEW,org.jumpmind.metl.ui.views.design.EditTransformerPanel,generateCell,7,11,6,3,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlFormatter,fillStackWithStaticParentElements,35,5,9,3,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditFlowPanel,openAdvancedEditor,22,6,10,0,Metodo Longo
+" A, R, V, X ",[IUICACHE],org.jumpmind.metl.ui.persist.UICache,onSave,64,14,16,1,Muitos Desvios
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XsltProcessor,getBatchXml,53,13,18,3,Muitos Desvios
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.SftpDirectory,listFiles,42,14,15,2,Metodo Longo
+" A, V, X ",[ICOMPONENTRUNTIME],org.jumpmind.metl.core.runtime.component.AbstractComponentRuntime,bindEntityData,25,4,13,3,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.design.PropertySheet,setSource,46,13,10,1,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.FileUtil,handle,32,13,10,3,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsReader,getAttributeIds,45,11,8,3,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditDeduperPanel,createAttributeCheckBox,22,1,0,2,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.manage.ManageView,itemClick,5,6,11,1,Alto Acoplamento Efferent
+ V ,SERVICE,org.jumpmind.metl.core.persist.ImportExportService,findInserts,22,5,5,3,Muitos Desvios
+ V ,RESIZABLEWINDOW,org.jumpmind.metl.ui.views.design.ImportXmlTemplateWindow,importXml,24,5,8,1,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.PropertySheet,addResourceCombo,38,9,0,3,Muitos Desvios
+" A, R, V, X ",VIEW,org.jumpmind.metl.ui.views.design.EditXsltPanel,getSampleXml,30,8,14,0,Alto Acoplamento Efferent
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.AbstractJMSJndiDirectory,initialize,35,8,9,0,Metodo Longo
+ V ,[ISUBSCRIBEMANAGER],org.jumpmind.metl.core.runtime.subscribe.SubscribeManager,getPayload,31,8,10,2,Muitos Desvios
+" A, R, D, V, X ",VIEW,org.jumpmind.metl.ui.views.deploy.SelectFlowsPanel,addItem,7,1,5,5,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Mapping,mapInputToOutputByEntity,43,12,11,1,Alto Acoplamento Efferent
+ V ,ENTITY,org.jumpmind.metl.core.model.EntityRow,toEntityData,15,6,6,1,Muitos Desvios
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.LocalFileDirectory,getInputStream,3,1,3,3,Muitos Parametros
+ V ,[IUICACHE],org.jumpmind.metl.ui.persist.UICache,refreshAll,53,9,20,0,Muitos Desvios
+ V ,SERVICE,org.jumpmind.metl.core.persist.ImportExportService,importProjectConfiguration,35,8,13,4,Muitos Desvios
+" A, R, D, V, X ",VIEW,org.jumpmind.metl.ui.views.design.EditTransformerPanel,buildUI,126,4,0,0,Metodo Longo
+" A, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.TextFileReader,processFiles,75,14,17,4,Muitos Parametros
+ V ,ASYNCTASK,org.jumpmind.metl.core.runtime.flow.StepRuntime,start,29,6,14,0,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Deduper,handle,42,11,8,3,Muitos Parametros
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.DataDiff,createDatabase,51,9,14,0,Alto Acoplamento Efferent
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XPathXmlParser,handleUsingXPath,57,15,20,3,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Deserializer,handle,41,11,17,3,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.deploy.DeployNavigator,finishEditingItem,29,6,10,0,Alto Acoplamento Efferent
+ V ,CONTROLLER,org.jumpmind.metl.ui.api.ExecutionApi,executeFlow,42,8,18,3,Muitos Parametros
+ V ,UNDEFINED,org.jumpmind.metl.ui.common.UiUtils,getBase64RepresentationOfImageForComponentType,15,3,8,3,Muitos Parametros
+" A, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.TextFileWriter,handle,57,22,13,3,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.design.DesignNavigator,addNewDependency,28,5,7,1,Muitos Desvios
+ V ,SERVICE,org.jumpmind.metl.core.persist.ConfigurationService,refresh,20,5,7,2,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.deploy.EditAgentPanel,updateItems,24,7,8,1,Metodo Longo
+ V ,RESIZABLEWINDOW,org.jumpmind.metl.ui.views.deploy.EditAgentParametersDialog,save,4,1,9,1,Alto Acoplamento Efferent
+ V ,SERVICE,org.jumpmind.metl.core.persist.ImportExportService,importReleasePackageConfiguration,21,5,9,3,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.TextFileWriter,handle,57,22,13,3,Muitos Parametros
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.SMBDirectory,copyFile,2,1,2,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Web,handle,70,18,17,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.FilePoller,pollForFiles,59,16,19,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Serializer,createByInboundRowPayload,29,9,12,1,Metodo Longo
+ V ,[IDEFINITIONFACTORY],org.jumpmind.metl.core.plugin.DefinitionFactory,awaitTermination,31,8,7,2,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.admin.GroupEditPanel,valueChange,23,7,8,1,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlFormatter,fillEntityDetails,27,6,12,1,Metodo Longo
+ V ,MENUBAR,org.jumpmind.metl.ui.common.AbstractMenuBar,addMenuManager,10,5,4,2,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.jumpmind.metl.Wrapper,getConfigDir,34,11,6,2,Muitos Desvios
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.component.ModelAttributeScriptHelper,formatdate,19,5,4,1,Muitos Desvios
+ V ,WINDOW,org.jumpmind.metl.ui.init.LoginDialog,testPassword,62,22,9,3,Muitos Parametros
+" A, R, D, V, X ",ASYNCTASK,org.jumpmind.metl.core.runtime.flow.AsyncRecorder,logAll,49,12,20,0,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.FileUtil,handle,32,13,10,3,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.design.DesignNavigator,buildEditableNavigatorField,27,3,0,1,Metodo Longo
+ V ,ASYNCTASK,org.jumpmind.metl.core.runtime.flow.StepRuntime,flowCompletedWithErrors,11,3,4,3,Muitos Parametros
+ V ,SERVICE,org.jumpmind.metl.core.persist.OperationsService,findAgentResource,30,5,9,2,Muitos Desvios
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.SftpDirectory,openConnectedChannel,23,6,8,1,Muitos Desvios
+" A, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.ContentRouter,handleStringListPayload,37,10,13,3,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlFormatter,fillAttributeDetails,37,8,12,1,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.DesignNavigator,saveExpandedList,22,7,7,0,Metodo Longo
+" D, V, X ",CONTROLLER,org.jumpmind.metl.ui.api.ExecutionApi,executeFlow,42,8,18,3,Metodo Longo
+ V ,UNDEFINED,org.jumpmind.metl.core.util.LogUtils,toJson,26,5,6,2,Muitos Desvios
+ V ,[IDIRECTORY],org.jumpmind.metl.core.runtime.resource.AbstractDirectory,copyToDir,2,1,2,3,Muitos Parametros
+" A, R, D, V, X ",VIEW,org.jumpmind.metl.ui.views.design.EditRelationalModelPanel,textChange,5,1,20,1,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.FilePoller,compressedArchive,41,5,10,1,Muitos Desvios
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.StandaloneFlowRunner,runFlow,14,1,9,2,Alto Acoplamento Efferent
+ V ,SERVICE,org.jumpmind.metl.core.persist.ConfigurationService,findFolders,24,1,0,2,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.FileUtil,handle,32,13,10,3,Muitos Parametros
+" A, R, D, V, X ",VIEW,org.jumpmind.metl.ui.views.design.DesignNavigator,open,34,6,19,1,Alto Acoplamento Efferent
+ V ,MENUBAR,org.jumpmind.metl.ui.common.AbstractMenuBar,addToMenuBarIfNotExists,17,7,3,3,Muitos Parametros
+ V ,[ISENDMESSAGECALLBACK],org.jumpmind.metl.core.runtime.component.SendMessageCallback,sendEntityDataMessage,4,1,6,3,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditHierarchicalModelPanel,generateCell,43,3,0,3,Metodo Longo
+" A, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.FixedLengthFormatter,handle,37,10,12,3,Muitos Desvios
+" A, D, V ",ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.AbstractJMSJndiDirectory,close,47,10,16,0,Metodo Longo
+ V ,EXECUTIONTRACKERLOGGER,org.jumpmind.metl.core.runtime.ExecutionTrackerRecorder,beforeHandle,17,7,10,2,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Serializer,handle,33,7,13,3,Muitos Desvios
+" A, V ",RESIZABLEWINDOW,org.jumpmind.metl.ui.views.admin.PluginsPanelAddDialog,addPlugin,21,5,12,0,Alto Acoplamento Efferent
+ V ,ENTITY,org.jumpmind.metl.ui.common.ApplicationContext,isReadOnly,16,5,6,2,Muitos Desvios
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlReader,processFiles,102,20,17,4,Alto Acoplamento Efferent
+" D, V ",ENTITY,org.jumpmind.metl.ui.common.DbProvider,refresh,45,12,0,1,Metodo Longo
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlParser,handleUsingPullParser,71,18,20,3,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditHierarchicalModelPanel,addEntity,26,6,5,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Web,assembleRelativePathPlusParameters,22,4,9,0,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.ExcelFileReader,handle,6,5,6,3,Muitos Desvios
+ V ,ASYNCTASK,org.jumpmind.metl.core.runtime.flow.StepRuntime,logOutput,22,7,13,2,Muitos Desvios
+" A, R, V, X ",[IEXECUTIONTRACKER],org.jumpmind.metl.core.runtime.ExecutionTrackerNoOp,log,2,1,5,5,Muitos Parametros
+" A, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.EmailWriter,addToRecipients,28,10,6,1,Muitos Desvios
+" A, R, D, V, X ",VIEW,org.jumpmind.metl.ui.views.design.EditSorterPanel,buttonClick,44,13,8,1,Muitos Desvios
+" A, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlReader,processFiles,102,20,17,4,Muitos Parametros
+ V ,RESIZABLEWINDOW,org.jumpmind.metl.ui.common.ExportDialog,updateAffectedObjects,17,5,9,0,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.deploy.DeployNavigator,finishEditingItem,29,6,10,0,Metodo Longo
+ V ,UNDEFINED,org.jumpmind.metl.ui.common.CutCopyPasteManager,destinationHasModel,15,5,7,3,Muitos Parametros
+ V ,UNDEFINED,org.jumpmind.metl.ui.common.CutCopyPasteManager,destinationHasResource,15,5,7,3,Muitos Desvios
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsWriter,handle,70,22,20,3,Metodo Longo
+" A, R, D, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.TextFileReader,processFiles,75,14,17,4,Metodo Longo
+" A, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.MessageFilter,handle,27,10,10,3,Muitos Desvios
+ V ,[IDIRECTORY],org.jumpmind.metl.core.runtime.resource.HttpDirectory,buildHttpUrlConnection,28,6,6,3,Muitos Desvios
+ V ,WINDOW,org.jumpmind.metl.ui.init.LoginDialog,testPassword,62,22,9,3,Alto Acoplamento Efferent
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.SftpDirectory,copyToDir,22,5,8,3,Muitos Parametros
+" A, R, D, V, X ",PANEL,org.jumpmind.metl.ui.views.admin.GeneralSettingsPanel,addSetting,3,1,2,4,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.admin.AdminView,itemClick,46,15,18,1,Metodo Longo
+" A, R, V, X ",VIEW,org.jumpmind.metl.ui.views.design.EditFlowPanel,getNodes,31,5,14,0,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.TextReplace,handle,16,4,6,3,Muitos Parametros
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Deduper,start,26,8,15,0,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.explore.ExploreDirectoryView,cellStyle,10,4,3,3,Muitos Parametros
+ V ,UNDEFINED,org.jumpmind.metl.StartWebServer,installSslCertIfNecessary,35,4,19,2,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditXmlFormatPanel,buildGrid,26,1,4,0,Metodo Longo
+ V ,SERVICE,org.jumpmind.metl.core.security.SecurityService,nextSecureHexString,27,6,9,1,Alto Acoplamento Efferent
+" A, V, X ",VIEW,org.jumpmind.metl.ui.views.design.EditFlowPanel,runFlow,44,10,16,0,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Lookup,handle,28,11,10,3,Metodo Longo
+ V ,[IUICACHE],org.jumpmind.metl.ui.persist.UICache,onDelete,35,11,14,1,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,org.jumpmind.metl.ui.common.CutCopyPasteManager,pasteModels,50,39,8,2,Metodo Longo
+" A, V ",ASYNCTASK,org.jumpmind.metl.core.runtime.flow.StepRuntime,processOnAnotherThread,48,12,18,3,Metodo Longo
+ V ,ENTITY,org.jumpmind.metl.ui.init.AppConfig,h2Server,14,5,5,0,Muitos Desvios
+" A, R, V, X ",PERSISTENCE,org.jumpmind.metl.core.util.DatabaseScript,compareTo,33,11,2,1,Muitos Desvios
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.component.ModelAttributeScriptHelper,nextLongValueInMessage,33,9,12,1,Muitos Desvios
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.component.ModelAttributeScriptHelper,sequence,22,4,10,3,Muitos Parametros
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.TextFileWriter,handle,57,22,13,3,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.design.PropertySheet,textChange,5,3,9,1,Alto Acoplamento Efferent
+" A, R, D, V, X ",SERVICE,org.jumpmind.metl.core.persist.ConfigurationService,refreshFlowRelations,54,1,0,1,Metodo Longo
+ V ,UNDEFINED,org.jumpmind.metl.core.util.ComponentUtils,containsEntity,12,4,7,3,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.design.DesignNavigator,addResourcesToFolder,28,7,7,2,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.PropertySheet,addOutputModelCombo,42,11,0,3,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditFlowPanel,openAdvancedEditor,22,6,10,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.AgentRuntime,stop,29,7,11,0,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditRelationalModelPanel,addAll,19,7,9,2,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XsltProcessor,getModelEntities,15,5,10,2,Alto Acoplamento Efferent
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Deserializer,handle,41,11,17,3,Alto Acoplamento Efferent
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Web,handle,70,18,17,3,Alto Acoplamento Efferent
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsReader,handle,44,14,14,3,Muitos Desvios
+" A, V, X ",[IPLUGINMANAGER],org.jumpmind.metl.core.plugin.PluginManager,getClassLoader,26,5,15,4,Muitos Parametros
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.SftpDirectory,createRelativePathDirectoriesIfNecessary,26,6,8,3,Metodo Longo
+" A, R, V, X ",[IPLUGINMANAGER],org.jumpmind.metl.core.plugin.PluginManager,getClassLoader,26,5,15,4,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.SqlExecutor,handle,36,12,13,3,Metodo Longo
+ V ,MENUBAR,org.jumpmind.metl.ui.common.AbstractMenuBar,getMenuItem,19,5,5,1,Muitos Desvios
+ V ,SERVICE,org.jumpmind.metl.core.persist.ImportExportService,addConfigData,27,11,13,4,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.common.ButtonBar,createButton,9,2,4,3,Muitos Parametros
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.AbstractJMSJndiDirectory,initialize,35,8,9,0,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditFlowPanel,getNodes,31,5,14,0,Muitos Desvios
+" A, D, V, X ",VIEW,org.jumpmind.metl.ui.views.design.EditRdbmsWriterPanel,createField,12,3,5,4,Muitos Parametros
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.DelimitedFormatter,handle,31,8,14,3,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.core.plugin.PluginTransferListener,transferSucceeded,18,5,9,1,Muitos Desvios
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.SMBDirectory,listFiles,27,6,11,2,Muitos Desvios
+ V ,EXECUTIONTRACKERLOGGER,org.jumpmind.metl.core.runtime.ExecutionTrackerRecorder,beforeHandle,17,7,10,2,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.PropertySheet,addThreadCount,6,2,4,3,Muitos Parametros
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.AgentRuntime,doComponentDeploymentEvent,25,8,11,2,Muitos Desvios
+ V ,ENTITY,org.jumpmind.metl.ui.init.AppConfig,addShutdownHook,25,4,6,0,Metodo Longo
+ V ,PANEL,org.jumpmind.metl.ui.views.admin.MailServerPanel,closing,11,5,5,0,Muitos Desvios
+ V ,RESIZABLEWINDOW,org.jumpmind.metl.ui.views.design.EditFlowSettingsDialog,createField,24,1,0,4,Metodo Longo
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlParser,handleUsingXPath,74,19,22,3,Metodo Longo
+" A, D, V, X ",VIEW,org.jumpmind.metl.core.runtime.component.SubscribeDeploymentListener,onDeploy,5,2,5,4,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditHierarchicalModelPanel,addEntity,26,6,5,3,Muitos Desvios
+" A, R, D, V, X ",VIEW,org.jumpmind.metl.ui.views.design.EditRdbmsReaderPanel,buildUI,77,3,0,0,Metodo Longo
+ V ,UNDEFINED,org.jumpmind.metl.StartWebServer,getHostName,32,9,8,1,Muitos Desvios
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.SMBDirectory,moveFile,2,1,2,3,Muitos Parametros
+ V ,SERVICE,org.jumpmind.metl.core.persist.ConfigurationService,findResourcesByTypes,20,5,8,3,Muitos Parametros
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.AgentRuntime,start,35,7,13,0,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.LastUnitOfWork,handle,5,2,3,3,Muitos Parametros
+" A, R, D, V, X ",VIEW,org.jumpmind.metl.ui.views.design.DesignNavigator,refreshProjects,77,19,25,0,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlFormatter,fillStackWithStaticParentElements,35,5,9,3,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.design.PropertySheet,buildOptionGroup,9,1,3,3,Muitos Parametros
+ V ,SERVICE,org.jumpmind.metl.core.persist.OperationsService,findAgentResource,30,5,9,2,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.AbstractRdbmsComponentRuntime,prepareParams,19,7,9,4,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.AbstractRdbmsComponentRuntime,findWhereInParameters,24,6,6,1,Metodo Longo
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.AgentRuntime,deploy,30,5,13,2,Muitos Desvios
+ V ,[IDIRECTORY],org.jumpmind.metl.core.runtime.resource.HttpDirectory,getInputStream,20,5,10,5,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.FilePoller,handle,22,9,7,3,Metodo Longo
+ V ,PANEL,org.jumpmind.metl.ui.views.manage.ManageNavigator,refresh,37,6,8,0,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsReader,getAttributeIds,45,11,8,3,Muitos Parametros
+" A, R, D, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.ExcelFileWriter,handle,79,6,0,3,Metodo Longo
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.SMBDirectory,getInputStream,11,2,6,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Lookup,handle,28,11,10,3,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.ContentRouter,start,23,5,11,0,Metodo Longo
+" A, V, X ",UNDEFINED,org.jumpmind.metl.core.runtime.component.ScriptHelper,putAttributeValue,4,1,5,4,Muitos Parametros
+" A, R, V, X ",SERVICE,org.jumpmind.metl.core.persist.ImportExportService,addProjectVersionToConfigData,15,4,6,5,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.ExcelFileReader,processFiles,25,5,11,4,Alto Acoplamento Efferent
+ V ,SERVICE,org.jumpmind.metl.core.persist.ImportExportService,importReleasePackageConfiguration,21,5,9,3,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlParser,processCurrentLevel,24,7,9,2,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.jumpmind.metl.StartWebServer,installSslCertIfNecessary,35,4,19,2,Alto Acoplamento Efferent
+ V ,EXECUTIONTRACKERLOGGER,org.jumpmind.metl.core.runtime.ExecutionTrackerRecorder,flowStepFinished,34,7,12,4,Muitos Desvios
+ V ,ABSTRACTRUNTIMEOBJECT,org.jumpmind.metl.core.runtime.resource.JMS,reference,22,6,7,0,Metodo Longo
+" A, V, X ",RESIZABLEWINDOW,org.jumpmind.metl.ui.views.design.ImportXmlTemplateWindow,buttonClick,40,7,13,1,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.design.PropertySheet,createResourceCombo,29,5,15,3,Muitos Parametros
+ V ,ENTITY,org.jumpmind.metl.ui.common.ViewManager,init,12,5,6,2,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditSorterPanel,getLastSortItemIndex,34,14,5,3,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.deploy.DeployNavigator,handleDelete,27,2,0,0,Metodo Longo
+" A, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RelationalHierarchicalMapping,processEntityArray,27,6,8,4,Muitos Parametros
+ V ,SERVICE,org.jumpmind.metl.core.persist.ConfigurationService,save,21,7,7,1,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.init.AppInitializer,initDatabase,33,9,13,1,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.TempRdbms,query,24,3,10,1,Alto Acoplamento Efferent
+" A, R, D, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.ExcelFileReader,readWorkbook,84,20,19,3,Metodo Longo
+" A, R, D, V, X ",VIEW,org.jumpmind.metl.ui.views.design.EditFormatPanel,calculatePositions,35,12,6,0,Muitos Desvios
+ V ,[ICOMPONENTRUNTIMEFACTORY],org.jumpmind.metl.core.runtime.component.ComponentRuntimeFactory,create,19,4,10,4,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.AgentRuntime,run,26,5,7,0,Muitos Desvios
+ V ,SERVICE,org.jumpmind.metl.core.persist.ImportExportService,findUpdates,31,8,8,3,Metodo Longo
+" A, R, D, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsWriter,handle,70,22,20,3,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.manage.ManageView,itemClick,5,6,11,1,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlFormatter,processMsgEntities,21,6,10,3,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.DelimitedParser,convertAttributeSettingsToAttributeFormat,31,7,0,0,Muitos Desvios
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.FtpDirectory,moveToDir,3,1,2,3,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.design.DesignNavigator,doPaste,38,11,10,0,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RelationalHierarchicalMapping,validate,18,8,3,0,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.PropertySheet,createResourceCombo,29,5,15,3,Muitos Desvios
+ V ,SERVICE,org.jumpmind.metl.core.security.SecurityService,nextSecureHexString,27,6,9,1,Metodo Longo
+" A, R, V, X ",[IUICACHE],org.jumpmind.metl.ui.persist.UICache,onDelete,35,11,14,1,Alto Acoplamento Efferent
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.LocalFileDirectory,renameFile,3,1,2,3,Muitos Parametros
+" A, R, D, V, X ",SERVICE,org.jumpmind.metl.core.persist.ConfigurationService,copy,45,9,15,3,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.BinaryFileReader,handle,6,5,6,3,Muitos Parametros
+ V ,VERTICALSPLITPANEL,org.jumpmind.metl.ui.views.deploy.EditAgentDeploymentPanel,getStartTypeComponent,33,2,0,0,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsWriter,executeSqlInserts,25,5,9,3,Metodo Longo
+" A, R, D, V, X ",VIEW,org.jumpmind.metl.ui.views.release.ReleasesView,finalizeSelectedReleasePackages,53,10,20,0,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.design.DesignNavigator,findFolderWithName,20,7,5,1,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.ContentRouter,handleControlMessages,21,6,10,3,Muitos Parametros
+" A, D, V, X ",VIEW,org.jumpmind.metl.ui.views.design.EditDataDiffPanel,createField,15,4,5,4,Muitos Parametros
+ V ,UNDEFINED,org.jumpmind.metl.StartWebServer,getTrustStore,23,5,9,1,Muitos Desvios
+" A, V, X ",ASYNCTASK,org.jumpmind.metl.core.runtime.flow.StepRuntime,logOutput,22,7,13,2,Alto Acoplamento Efferent
+ V ,SERVICE,org.jumpmind.metl.core.persist.ImportExportService,processTableInserts,16,2,9,2,Alto Acoplamento Efferent
+" A, R, V, X ",ASYNCTASK,org.jumpmind.metl.core.runtime.flow.StepRuntime,sendMessage,52,13,21,2,Metodo Longo
+" A, R, V, X ",MOCKDRIVER,org.jumpmind.metl.core.util.MockJdbcDriver,connect,88,1,0,2,Metodo Longo
+" A, R, D, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.DataDiff,calculateDiff,118,24,21,1,Muitos Desvios
+" A, R, V, X ",ASYNCTASK,org.jumpmind.metl.core.runtime.flow.StepRuntime,start,29,6,14,0,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jumpmind.metl.ui.common.CutCopyPasteManager,pasteResources,50,39,8,2,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlFormatter,addModelEntityXml,25,7,7,3,Metodo Longo
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.SequenceGenerator,start,62,19,10,0,Muitos Desvios
+" A, R, D, V, X ",VIEW,org.jumpmind.metl.ui.views.design.DesignNavigator,refreshProjects,77,19,25,0,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.admin.AuditEventPanel,selected,23,3,6,0,Metodo Longo
+" A, R, D, V, X ",UI,org.jumpmind.metl.ui.init.AppUI,init,118,1,0,1,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditHierarchicalModelPanel,addEntity,26,6,5,3,Metodo Longo
+" A, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsWriter,write,5,1,4,4,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.TextFileReader,handle,6,5,6,3,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Merger,start,18,7,9,0,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RelationalHierarchicalMapping,handle,16,4,5,3,Muitos Parametros
+" A, R, D, V, X ",VIEW,org.jumpmind.metl.ui.views.admin.AdminView,itemClick,46,15,18,1,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsReader,handle,44,14,14,3,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.deploy.DeployNavigator,addChildren,20,5,6,1,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditFlowPanel,getNodes,31,5,14,0,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsReader,extractData,37,12,12,1,Metodo Longo
+ V ,RESIZABLEWINDOW,org.jumpmind.metl.ui.views.admin.PluginsPanelAddDialog,addPlugin,21,5,12,0,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditXmlFormatPanel,compare,3,5,5,2,Muitos Desvios
+ V ,SERVICE,org.jumpmind.metl.core.persist.ImportExportService,exportReleasePackage,21,2,10,2,Alto Acoplamento Efferent
+ V ,PERSISTENCE,org.jumpmind.metl.core.runtime.resource.HttpOutputStream,close,34,7,12,0,Muitos Desvios
+" A, R, D, V, X ",ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.AbstractJMSJndiDirectory,close,47,10,16,0,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.HttpRequest,handle,6,2,4,3,Muitos Parametros
+" A, V, X ",[ISUBSCRIBEMANAGER],org.jumpmind.metl.core.runtime.subscribe.SubscribeManager,undeploy,20,4,11,4,Muitos Parametros
+ V ,[IDIRECTORY],org.jumpmind.metl.core.runtime.resource.HttpDirectory,moveFile,3,1,2,3,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditRelationalModelPanel,setButtonsEnabled,24,2,3,0,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.ExcelFileWriter,convertAttributeSettingsToAttributeFormat,28,6,0,0,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RelationalHierarchicalMapping,processEntityArray,27,6,8,4,Metodo Longo
+ V ,[IDIRECTORY],org.jumpmind.metl.core.runtime.resource.HttpDirectory,buildHttpUrlConnection,28,6,6,3,Muitos Parametros
+" A, V, X ",VIEW,org.jumpmind.metl.ui.views.deploy.EditAgentPanel,setButtonsEnabled,28,10,7,0,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.DesignNavigator,finishEditingItem,28,7,10,1,Muitos Desvios
+ V ,MENUBAR,org.jumpmind.metl.ui.common.AbstractMenuBar,addToContextMenuIfNotExists,17,7,4,3,Muitos Parametros
+" A, V, X ",MOCKDRIVER,org.jumpmind.metl.core.util.MockJdbcDriver,getTables,5,1,7,4,Muitos Parametros
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.AbstractFactory,checkDirectory,18,7,6,3,Muitos Parametros
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Transformer,handle,70,17,23,3,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlFormatter,addModelEntityXml,25,7,7,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.ExcelFileWriter,handle,79,6,0,3,Muitos Parametros
+ V ,ABSTRACTJAVASCRIPTCOMPONENT,org.jumpmind.metl.ui.mapping.MappingDiagram,cleanupAttributes,14,5,6,1,Muitos Desvios
+" A, D, V, X ",RESIZABLEWINDOW,org.jumpmind.metl.ui.views.design.EditFlowSettingsDialog,createField,24,1,0,4,Muitos Parametros
+ V ,ENTITY,org.jumpmind.metl.core.runtime.component.EntityNameLookup,getEntityNames,22,5,9,1,Alto Acoplamento Efferent
+ V ,MODEL,org.jumpmind.metl.core.model.Component,getAttributeSettingsFor,19,9,7,1,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.deploy.EditAgentPanel,editClicked,21,4,10,0,Alto Acoplamento Efferent
+" A, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.ContentRouter,handleStringListPayload,37,10,13,3,Alto Acoplamento Efferent
+ V ,ASYNCTASK,org.jumpmind.metl.core.runtime.flow.StepRuntime,copy,17,5,6,1,Muitos Desvios
+" A, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.AbstractRdbmsComponentRuntime,prepareParams,19,7,9,4,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.init.AppSessionInitListener,sessionInit,23,1,0,1,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsReader,logEntityAttributes,30,6,5,1,Metodo Longo
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.SMBDirectory,renameFile,3,1,2,3,Muitos Parametros
+" A, V, X ",VIEW,org.jumpmind.metl.ui.views.design.EditTransformerPanel,buttonClick,11,2,13,1,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.DelimitedParser,processInputRows,37,8,18,3,Metodo Longo
+ V ,ASYNCTASK,org.jumpmind.metl.core.runtime.flow.StepRuntime,process,11,8,6,2,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.AbstractRdbmsComponentRuntime,findWhereInParameters,24,6,6,1,Muitos Desvios
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.SftpDirectory,connect,22,4,8,0,Metodo Longo
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.flow.FlowRuntime,execute,36,7,5,0,Metodo Longo
+" A, R, V, X ",[IPLUGINMANAGER],org.jumpmind.metl.core.plugin.PluginManager,install,25,3,14,4,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Script,handle,6,1,3,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsWriter,createTableFromEntity,27,6,7,2,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.jumpmind.metl.core.runtime.AgentRuntime,deploy,30,5,13,2,Alto Acoplamento Efferent
+ V ,ABSTRACTRUNTIMEOBJECT,org.jumpmind.metl.core.runtime.resource.JMS,reference,22,6,7,0,Muitos Desvios
+ V ,[IPLUGINMANAGER],org.jumpmind.metl.core.plugin.PluginManager,getClassLoader,26,5,15,4,Muitos Desvios
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Gate,handle,32,14,6,3,Muitos Desvios
+" A, R, V, X ",RESIZABLEWINDOW,org.jumpmind.metl.ui.common.ExportDialog,addSelectedAndDependentObjects,70,15,16,2,Muitos Desvios
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.SftpDirectory,moveToDir,20,5,7,3,Muitos Parametros
+ V ,SERVICE,org.jumpmind.metl.core.persist.ImportExportService,findUpdates,31,8,8,3,Muitos Parametros
+ V ,[ICOMPONENTRUNTIME],org.jumpmind.metl.core.runtime.component.AbstractComponentRuntime,getAttributeValue,4,1,5,3,Muitos Parametros
+ V ,SERVICE,org.jumpmind.metl.core.security.SecurityService,nextSecureHexString,27,6,9,1,Muitos Desvios
+" A, V, X ",VIEW,org.jumpmind.metl.ui.init.AppInitializer,loadProperties,25,3,13,0,Alto Acoplamento Efferent
+" A, V ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlFormatter,fillEntityDetails,27,6,12,1,Alto Acoplamento Efferent
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.LocalFileDirectory,moveFile,3,1,2,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Merger,handle,20,7,6,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Serializer,processHierarchicalEntity,38,9,8,3,Muitos Parametros
+" A, R, V, X ",[IDIRECTORY],org.jumpmind.metl.core.runtime.resource.HttpDirectory,getInputStream,20,5,10,5,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditRelationalModelPanel,move,37,12,10,2,Metodo Longo
+" A, V ",UNDEFINED,org.jumpmind.metl.core.runtime.component.ModelAttributeScriptHelper,nextLongValueInMessage,33,9,12,1,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlParser,handleUsingXPath,74,19,22,3,Muitos Parametros
+ V ,CONTROLLER,org.jumpmind.metl.ui.api.ExecutionApi,handleError,10,2,7,3,Muitos Parametros
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.EmailWriter,sendEmail,51,5,17,8,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jumpmind.metl.ui.common.CutCopyPasteManager,modelAttributesMatchAcrossEntities,19,5,4,2,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditXsltPanel,getSampleXml,30,8,14,0,Metodo Longo
+ V ,UI,org.jumpmind.metl.ui.init.AppUI,getFormat,8,6,10,1,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditDataDiffPanel,buildButtonBar,25,3,10,0,Metodo Longo
+ V ,PANEL,org.jumpmind.metl.ui.views.admin.NotificationEditPanel,updateLinks,29,9,10,0,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.design.PropertySheet,createResourceCombo,29,5,15,3,Metodo Longo
+ V ,UNDEFINED,org.jumpmind.metl.ui.common.CutCopyPasteManager,mapModelOldToNewUUID,11,3,4,3,Muitos Parametros
+" A, R, V, X ",[IUICACHE],org.jumpmind.metl.ui.persist.UICache,onSave,64,14,16,1,Alto Acoplamento Efferent
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.FtpDirectory,copyToDir,3,1,2,3,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditHierarchicalModelPanel,save,4,4,10,1,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Execute,handle,33,9,14,3,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.deploy.SelectFlowsPanel,addFlowsToVersion,14,4,9,2,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jumpmind.metl.core.runtime.AgentRuntime,deployResources,53,12,24,1,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditRelationalModelPanel,blur,14,5,2,1,Muitos Desvios
+" A, D, V, X ",VIEW,org.jumpmind.metl.core.runtime.component.SubscribeDeploymentListener,onUndeploy,3,1,5,4,Muitos Parametros
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.flow.FlowRuntime,start,26,6,10,0,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Execute,parseCommand,24,6,8,2,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsWriter,start,41,9,7,0,Metodo Longo
+ V ,[CONTAINER.FILTER],org.jumpmind.metl.ui.common.MultiPropertyFilter,passesFilter,18,5,7,2,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditDeduperPanel,buildAttributeTable,24,1,0,0,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.AbstractSerializer,getDetectedFormat,24,7,5,0,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.deploy.EditAgentPanel,generateCell,4,3,4,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.ContentRouter,handleStringListPayload,37,10,13,3,Metodo Longo
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XsltProcessor,getBatchXml,53,13,18,3,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditMergerPanel,generateCell,7,1,9,3,Alto Acoplamento Efferent
+ V ,[IEXECUTIONTRACKER],org.jumpmind.metl.core.runtime.ExecutionTrackerNoOp,afterHandle,2,1,3,3,Muitos Parametros
+ V ,MODEL,org.jumpmind.metl.core.model.Flow,calculateApproximateOrder,18,5,8,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlFormatter,fillEntityDetails,27,6,12,1,Muitos Desvios
+" A, V, X ",UNDEFINED,org.jumpmind.metl.core.runtime.component.ModelAttributeScriptHelper,eval,22,3,13,8,Alto Acoplamento Efferent
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.EmailWriter,processMessage,34,12,8,3,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Mapping,mapInputToOutput,27,9,8,1,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Serializer,handle,33,7,13,3,Muitos Parametros
+ V ,[IDIRECTORY],org.jumpmind.metl.core.runtime.resource.HttpDirectory,renameFile,3,1,2,3,Muitos Parametros
+" A, R, D, V, X ",VIEW,org.jumpmind.metl.ui.mapping.EditMappingPanel,buildUI,69,4,17,0,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Lookup,enhanceAndSend,17,3,8,3,Muitos Parametros
+" A, R, D, V, X ",VIEW,org.jumpmind.metl.ui.views.admin.LoggingPanel,onBackgroundDataRefresh,60,14,16,0,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditSorterPanel,getLastSortItemIndex,34,14,5,3,Muitos Parametros
+ V ,SERVICE,org.jumpmind.metl.core.persist.ImportExportService,findDeletes,22,5,5,3,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsReader,logEntityAttributes,30,6,5,1,Muitos Desvios
+ V ,RESIZABLEWINDOW,org.jumpmind.metl.ui.views.design.ImportXmlTemplateWindow,importXml,24,5,8,1,Metodo Longo
+ V ,EXECUTIONTRACKERLOGGER,org.jumpmind.metl.core.runtime.ExecutionTrackerRecorder,log,15,6,9,5,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XPathXmlParser,handleUsingXPath,57,15,20,3,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditXmlFormatPanel,saveEntitySetting,19,6,3,3,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.deploy.EditAgentPanel,updateItems,24,7,8,1,Muitos Desvios
+" A, R, V, X ",[IDEFINITIONFACTORY],org.jumpmind.metl.core.plugin.DefinitionFactory,loadComponentsForClassloader,84,18,24,3,Metodo Longo
+" A, R, D, V, X ",ENTITY,org.jumpmind.metl.ui.common.DbProvider,refresh,45,12,0,1,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditHierarchicalModelPanel,deleteEntity,27,7,7,1,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.MessageFilter,handle,27,10,10,3,Muitos Parametros
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.LocalFileDirectory,listFiles,18,6,5,1,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.DesignNavigator,addFlowsToFolder,16,5,8,3,Muitos Parametros
+ V ,UNDEFINED,org.jumpmind.metl.ui.common.UiUtils,getFilterMatchRange,26,6,3,2,Metodo Longo
+ V ,VERTICALSPLITPANEL,org.jumpmind.metl.ui.views.deploy.EditAgentDeploymentPanel,updateScheduleExpression,31,4,5,0,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsWriter,executeSqlDeletes,7,2,6,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.ExcelFileReader,handle,6,5,6,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.FilePoller,compressedArchive,41,5,10,1,Metodo Longo
+" A, V ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.FixedLengthFormatter,handle,37,10,12,3,Alto Acoplamento Efferent
+" A, V, X ",UNDEFINED,org.jumpmind.metl.core.runtime.AgentRuntime,start,35,7,13,0,Alto Acoplamento Efferent
+ V ,PANEL,org.jumpmind.metl.ui.views.manage.ManageNavigator,addAgentsToFolder,19,5,8,1,Muitos Desvios
+ V ,UNDEFINED,org.jumpmind.metl.StartWebServer,getKeyStore,22,4,8,2,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.DataDiff,handle,7,3,3,3,Muitos Parametros
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.TextFileReader,processFiles,75,14,17,4,Muitos Desvios
+" A, R, D, V, X ",UI,org.jumpmind.metl.ui.init.AppUI,error,19,4,15,1,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Sorter,createDatabase,44,8,14,0,Metodo Longo
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.FileUtil,moveFile,33,13,5,2,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.HttpResponse,handle,9,3,5,3,Muitos Parametros
+" A, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Serializer,handle,33,7,13,3,Alto Acoplamento Efferent
+" A, V, X ",SERVICE,org.jumpmind.metl.core.persist.ImportExportService,addConfigData,27,11,13,4,Muitos Parametros
+ V ,PERSISTENCE,org.jumpmind.metl.core.util.DatabaseScript,compareTo,33,11,2,1,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlFormatter,handle,9,6,5,3,Muitos Desvios
+" A, R, D, V, X ",CONTROLLER,org.jumpmind.metl.ui.api.ExecutionApi,callFlow,74,19,23,4,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.SequenceGenerator,handle,30,6,8,3,Muitos Desvios
+ V ,SERVICE,org.jumpmind.metl.core.persist.OperationsService,findAgentResource,30,5,9,2,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,org.jumpmind.metl.ui.common.CutCopyPasteManager,pasteModels,50,39,8,2,Muitos Desvios
+" A, R, D, V, X ",ASYNCTASK,org.jumpmind.metl.core.runtime.flow.AsyncRecorder,logAll,49,12,20,0,Muitos Desvios
+ V ,[IPLUGINMANAGER],org.jumpmind.metl.core.plugin.PluginManager,getClassLoader,26,5,15,4,Metodo Longo
+" A, V ",VIEW,org.jumpmind.metl.ui.views.design.EditSorterPanel,compare,3,1,12,2,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jumpmind.metl.Develop,main,25,1,16,1,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditDataDiffPanel,createEntityCheckBox,22,1,0,2,Metodo Longo
+" A, V, X ",SERVICE,org.jumpmind.metl.core.persist.ImportExportService,importProjectConfiguration,35,8,13,4,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditTransformerPanel,createField,27,8,0,4,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditRelationalModelPanel,buttonClick,25,5,7,1,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.FixedLengthParser,convertAttributeSettingsToAttributeFormat,28,6,0,0,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Stamp,handle,28,8,12,3,Muitos Parametros
+ V ,SERVICE,org.jumpmind.metl.core.persist.ImportExportService,convertTimestampColumns,16,7,8,2,Muitos Desvios
+ V ,ASYNCTASK,org.jumpmind.metl.core.runtime.flow.StepRuntime,logOutput,22,7,13,2,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditXsltPanel,buildUI,40,2,10,0,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.TempRdbms,createDatabase,51,9,14,0,Muitos Desvios
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.EmailWriter,sendEmail,51,5,17,8,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.ContentRouter,handle,16,6,4,3,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditXsltPanel,getSampleXml,30,8,14,0,Muitos Desvios
+ V ,[ISUBSCRIBEMANAGER],org.jumpmind.metl.core.runtime.subscribe.SubscribeManager,getPayload,31,8,10,2,Alto Acoplamento Efferent
+ V ,[IEXECUTIONTRACKER],org.jumpmind.metl.core.runtime.ExecutionTrackerLogger,afterHandle,5,1,7,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.FixedLengthFormatter,handle,37,10,12,3,Muitos Parametros
+" A, V, X ",SERVICE,org.jumpmind.metl.core.persist.ImportExportService,importModelConfiguration,15,3,9,4,Muitos Parametros
+ V ,[IDIRECTORY],org.jumpmind.metl.core.runtime.resource.HttpDirectory,buildHttpUrlConnection,28,6,6,3,Metodo Longo
+ V ,PERSISTENCE,org.jumpmind.metl.core.util.DatabaseScript,compareVersionTo,26,8,2,1,Metodo Longo
+ V ,SERVICE,org.jumpmind.metl.core.persist.ConfigurationService,refreshModelRelations,31,6,19,1,Metodo Longo
+ V ,ENTITY,org.jumpmind.metl.core.runtime.component.EntityNameLookup,getEntityNames,22,5,9,1,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Mapping,handle,18,5,5,3,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditExcelWriterPanel,getStyle,6,4,4,3,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jumpmind.metl.core.runtime.component.ModelAttributeScriptHelper,eval,22,3,13,8,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditDataDiffPanel,buildAttributeTable,25,1,0,0,Metodo Longo
+ V ,SERVICE,org.jumpmind.metl.core.persist.ConfigurationService,updateComponentSettingsWithNewGUIDs,12,4,4,3,Muitos Parametros
+ V ,[IDEFINITIONFACTORY],org.jumpmind.metl.core.plugin.DefinitionFactory,getResourceDefinitions,15,7,8,2,Muitos Desvios
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.flow.FlowRuntime,findStartSteps,17,6,8,0,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Assert,flowCompleted,48,21,11,1,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.admin.UserEditPanel,valueChange,22,7,9,1,Muitos Desvios
+ V ,RESIZABLEWINDOW,org.jumpmind.metl.ui.views.design.EditFlowSettingsDialog,save,4,1,9,1,Alto Acoplamento Efferent
+ V ,[IPLUGINMANAGER],org.jumpmind.metl.core.plugin.PluginManager,checkForNewerVersion,25,7,8,1,Metodo Longo
+ V ,[IFLOWMANIPULATOR],org.jumpmind.metl.core.runtime.component.EmbedFlowFlowManipulator,manipulate,27,6,9,3,Muitos Parametros
+" A, V, X ",SERVICE,org.jumpmind.metl.core.persist.ImportExportService,importProjectConfiguration,35,8,13,4,Muitos Parametros
+" A, R, V, X ",[IDEFINITIONFACTORY],org.jumpmind.metl.core.plugin.DefinitionFactory,refresh,89,17,22,2,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditRelationalModelPanel,generateCell,43,3,0,3,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.design.PropertySheet,addSettingField,253,5,0,3,Muitos Parametros
+ V ,ENTITY,org.jumpmind.metl.ui.common.ViewManager,getMenuItemsByCategory,25,5,0,0,Muitos Desvios
+" A, R, V, X ",SERVICE,org.jumpmind.metl.core.persist.ConfigurationService,updateFlowWithNewGUIDs,7,2,4,5,Muitos Parametros
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.AbstractJMSJndiDirectory,getInputStream,28,6,10,3,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditFormatPanel,focus,3,6,2,1,Muitos Desvios
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.AbstractJMSJndiDirectory,getPayload,31,8,10,2,Metodo Longo
+ V ,[IUICACHE],org.jumpmind.metl.ui.persist.UICache,removeOldResourcePvEntryIfNeeded,15,6,4,3,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.PropertySheet,buildSettings,20,5,10,1,Alto Acoplamento Efferent
+ V ,CONTROLLER,org.jumpmind.metl.ui.api.ExecutionApi,enforceBasicAuth,36,8,10,3,Alto Acoplamento Efferent
+" A, R, D, V, X ",VIEW,org.jumpmind.metl.ui.views.manage.ExecutionRunPanel,save,5,7,26,1,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditDataDiffPanel,buildEntityTable,31,1,0,0,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.FixedLengthParser,handle,29,8,10,3,Alto Acoplamento Efferent
+" A, R, V, X ",VIEW,org.jumpmind.metl.ui.views.manage.ExecutionRunPanel,getNodes,59,11,17,0,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsWriter,handle,70,22,20,3,Muitos Parametros
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsReader,getAttributeIds,45,11,8,3,Muitos Desvios
+" A, V, X ",UNDEFINED,org.jumpmind.metl.core.util.ComponentUtils,getAttributeValue,7,2,5,4,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Delay,handle,6,5,5,3,Muitos Desvios
+ V ,UNDEFINED,org.jumpmind.metl.core.persist.ReleasePackageProjectVersionSorter,sort,24,7,11,1,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XPathXmlParser,start,29,7,15,0,Muitos Desvios
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.FtpDirectory,getInputStream,22,4,7,2,Metodo Longo
+" A, D, V, X ",RESIZABLEWINDOW,org.jumpmind.metl.ui.common.SelectProjectVersionDialog,show,5,1,6,4,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.design.DesignNavigator,finishEditingItem,28,7,10,1,Alto Acoplamento Efferent
+" A, R, D, V, X ",VIEW,org.jumpmind.metl.ui.views.deploy.DeployNavigator,buildTreeTable,79,1,0,0,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlFormatter,fillStackWithStaticParentElements,35,5,9,3,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.init.AppInitializer,initDatabase,33,9,13,1,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditDeduperPanel,buildEntityTable,29,1,0,0,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.FileUtil,getTargetFileName,11,5,4,3,Muitos Desvios
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.DelimitedParser,processInputRows,37,8,18,3,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Merger,start,18,7,9,0,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditMergerPanel,updateTable,12,6,6,1,Muitos Desvios
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Sorter,handle,36,12,6,3,Muitos Desvios
+ V ,UNDEFINED,org.jumpmind.metl.core.persist.AbstractService,findOne,9,2,6,3,Muitos Parametros
+" A, V ",PERSISTENCE,org.jumpmind.metl.core.runtime.resource.HttpOutputStream,close,34,7,12,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.component.ModelAttributeScriptHelper,sequence,22,4,10,3,Metodo Longo
+ V ,MODEL,org.jumpmind.metl.core.model.Model,toRow,23,1,0,2,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlParser,processCurrentLevel,24,7,9,2,Alto Acoplamento Efferent
+ V ,MODEL,org.jumpmind.metl.core.model.Model,toStringMap,18,6,9,2,Alto Acoplamento Efferent
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.SftpDirectory,copyToDir,22,5,8,3,Metodo Longo
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.flow.FlowRuntime,getFlowParameters,40,9,15,2,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Web,assembleRelativePathPlusParameters,22,4,9,0,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsReader,countColumnSeparatingCommas,20,8,3,1,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.deploy.ValidateFlowDeploymentPanel,buildContainerFlows,23,3,9,2,Metodo Longo
+" A, D, V, X ",ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.FtpDirectory,createClient,49,6,0,0,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Serializer,createByTablePayload,33,8,16,1,Metodo Longo
+" A, R, V, X ",[IUICACHE],org.jumpmind.metl.ui.persist.UICache,refreshAll,53,9,20,0,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditRelationalModelPanel,generateCell,43,3,0,3,Metodo Longo
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.SftpDirectory,moveToDir,20,5,7,3,Muitos Desvios
+ V ,SERVICE,org.jumpmind.metl.core.persist.ImportExportService,importResourceConfiguration,15,3,9,4,Alto Acoplamento Efferent
+ V ,SERVICE,org.jumpmind.metl.core.persist.ConfigurationService,findRelationshipsBetweenEntities,12,2,9,2,Alto Acoplamento Efferent
+" A, R, D, V, X ",VIEW,org.jumpmind.metl.ui.views.design.EditFlowPalette,addItemToFlowPanelSection,21,2,5,5,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.FilePoller,start,27,4,7,0,Metodo Longo
+" A, R, D, V, X ",VIEW,org.jumpmind.metl.core.runtime.component.HttpRequestDeploymentListener,buildMapping,33,5,17,4,Alto Acoplamento Efferent
+" A, R, D, V, X ",SERVICE,org.jumpmind.metl.core.persist.ConfigurationService,refreshModelRelations,31,6,19,1,Alto Acoplamento Efferent
+" A, V, X ",SERVICE,org.jumpmind.metl.core.persist.ImportExportService,importFlowConfiguration,15,3,9,4,Muitos Parametros
+ V ,[IDEFINITIONFACTORY],org.jumpmind.metl.core.plugin.DefinitionFactory,loadResources,18,5,10,2,Muitos Desvios
+ V ,[ISELECTEDVALUEMENUMANAGER],org.jumpmind.metl.ui.common.AbstractSelectedValueMenuManager,isEnabled,19,7,4,2,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.FilePoller,handle,22,9,7,3,Muitos Parametros
+" A, R, D, V, X ",VIEW,org.jumpmind.metl.ui.mapping.EditMappingPanel,autoMap,21,10,5,6,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditContentRouterPanel,save,4,5,9,1,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.TextFileWriter,initStreamAndWriter,18,5,3,1,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlFormatter,createXml,22,4,8,1,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Serializer,processHierarchicalEntity,38,9,8,3,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditExcelWriterPanel,calculatePositions,18,5,5,0,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.explore.ExploreDirectoryView,refresh,27,5,0,0,Metodo Longo
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.AbstractJMSJndiDirectory,getInputStream,28,6,10,3,Muitos Parametros
+ V ,SERVICE,org.jumpmind.metl.core.persist.ImportExportService,importProjectConfiguration,35,8,13,4,Metodo Longo
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlParser,handleUsingXPath,74,19,22,3,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XsltProcessor,getModelAttributes,10,4,6,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Sorter,compare,12,7,0,2,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Serializer,createHierarchicalPayload,27,4,9,1,Metodo Longo
+" A, D, V, X ",VIEW,org.jumpmind.metl.ui.views.design.EditContentRouterPanel,createField,48,2,0,4,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jumpmind.metl.core.util.ComponentUtils,setAttributeValue,9,3,6,5,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.UnZip,copyZipLocally,24,3,9,2,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.FileUtil,copyFile,37,12,6,2,Metodo Longo
+ V ,[IFLOWMANIPULATOR],org.jumpmind.metl.core.runtime.component.EmbedFlowFlowManipulator,manipulate,27,6,9,3,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditHierarchicalModelPanel,buttonClick,25,5,7,1,Metodo Longo
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.StandaloneFlowRunner,init,49,6,29,0,Muitos Desvios
+ V ,SERVICE,org.jumpmind.metl.core.persist.ImportExportService,excludeUpdateColumns,7,5,2,1,Muitos Desvios
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.AbstractJMSJndiDirectory,initialize,35,8,9,0,Muitos Desvios
+" D, V ",ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.SMBDirectory,listFiles,27,6,11,2,Alto Acoplamento Efferent
+" A, R, D, V, X ",VIEW,org.jumpmind.metl.ui.views.design.PropertySheet,valueChange,8,5,15,1,Alto Acoplamento Efferent
+" A, D, V, X ",VIEW,org.jumpmind.metl.ui.views.design.DesignNavigator,createField,3,15,5,4,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.SqlExecutor,getExecutorSqlStatements,29,4,8,0,Metodo Longo
+" A, V, X ",UNDEFINED,org.jumpmind.metl.core.util.ComponentUtils,getAttributeValues,14,6,7,4,Muitos Parametros
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.AbstractFactory,checkDirectory,18,7,6,3,Muitos Desvios
+ V ,ASYNCTASK,org.jumpmind.metl.core.runtime.flow.StepRuntime,sendBinaryMessage,6,1,6,3,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.mapping.EditMappingPanel,computeLevenshteinDistance,15,6,3,2,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.release.ReleasesView,refresh,26,1,0,0,Metodo Longo
+" A, D, V, X ",SERVICE,org.jumpmind.metl.core.persist.ExecutionService,purgeExecutions,37,10,14,2,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.DesignNavigator,doPaste,38,11,10,0,Alto Acoplamento Efferent
+" A, V ",VIEW,org.jumpmind.metl.ui.views.design.EditHierarchicalModelPanel,valueChange,4,1,12,1,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.AbstractRdbmsComponentRuntime,prepareSql,4,1,3,3,Muitos Parametros
+" A, D, V, X ",VIEW,org.jumpmind.metl.ui.views.design.AbstractComponentEditPanel,init,8,1,5,4,Muitos Parametros
+" A, V ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Assert,flowCompleted,48,21,11,1,Metodo Longo
+ V ,PANEL,org.jumpmind.metl.ui.views.manage.ManageNavigator,getStyle,8,6,4,3,Muitos Parametros
+ V ,MENUBAR,org.jumpmind.metl.ui.common.AbstractMenuBar,setMenuBarEnabled,9,3,4,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XsltProcessor,getTransformedXml,31,4,11,4,Alto Acoplamento Efferent
+ V ,EXECUTIONTRACKERLOGGER,org.jumpmind.metl.core.runtime.ExecutionTrackerRecorder,afterFlow,19,6,8,0,Muitos Desvios
+" A, V ",VIEW,org.jumpmind.metl.ui.init.AppInitializer,initPlugins,47,10,14,1,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Sorter,sortData,43,8,13,1,Muitos Desvios
+" A, R, D, V, X ",VIEW,org.jumpmind.metl.ui.views.manage.ManageView,getBackgroundData,37,13,6,0,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlFormatter,addModelEntityXml,25,7,7,3,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsWriter,executeSqlInserts,25,5,9,3,Alto Acoplamento Efferent
+ V ,SERVICE,org.jumpmind.metl.core.persist.ConfigurationService,saveNewVersion,47,7,18,3,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.DesignNavigator,doRemove,32,8,15,0,Muitos Desvios
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.component.ModelAttributeScriptHelper,mapChangeType,11,7,2,3,Muitos Parametros
+ V ,[IEXECUTIONTRACKER],org.jumpmind.metl.core.runtime.ExecutionTrackerLogger,log,22,8,8,5,Metodo Longo
+" A, R, D, V, X ",VIEW,org.jumpmind.metl.ui.views.design.DesignNavigator,expand,37,14,7,1,Muitos Desvios
+ V ,ASYNCTASK,org.jumpmind.metl.core.runtime.flow.StepRuntime,sendTextMessage,5,1,4,3,Muitos Parametros
+ V ,PANEL,org.jumpmind.metl.ui.views.admin.GeneralSettingsPanel,addSetting,26,2,0,5,Metodo Longo
+ V ,UNDEFINED,org.jumpmind.metl.core.persist.AbstractService,findSettings,19,6,12,2,Muitos Desvios
+ V ,EXECUTIONTRACKERLOGGER,org.jumpmind.metl.core.runtime.ExecutionTrackerRecorder,afterHandle,23,6,12,3,Metodo Longo
+ V ,[ICOMPONENTRUNTIME],org.jumpmind.metl.core.runtime.component.AbstractComponentRuntime,bindEntityData,25,4,13,3,Metodo Longo
+" A, V, X ",[ICOMPONENTRUNTIMEFACTORY],org.jumpmind.metl.core.runtime.component.ComponentRuntimeFactory,create,19,4,10,4,Muitos Parametros
+" A, D, V, X ",CONTROLLER,org.jumpmind.metl.ui.api.ExecutionApi,invoke,3,1,3,4,Muitos Parametros
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.AbstractJMSJndiDirectory,getInputStream,28,6,10,3,Metodo Longo
+" A, V, X ",UNDEFINED,org.jumpmind.metl.core.runtime.AgentRuntime,run,30,8,13,0,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.ExcelFileReader,convertAttributeSettingsToMaps,22,4,9,0,Alto Acoplamento Efferent
+" D, V ",SERVICE,org.jumpmind.metl.core.persist.ExecutionService,findExecutionStepLogs,44,15,15,3,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.UnZip,copyZipLocally,24,3,9,2,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.init.AppInitializer,onStartup,25,1,14,1,Metodo Longo
+" A, R, V, X ",MOCKDRIVER,org.jumpmind.metl.core.util.MockJdbcDriver,getColumns,39,10,14,4,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.FilePoller,compressedArchive,41,5,10,1,Alto Acoplamento Efferent
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlParser,start,40,11,18,0,Muitos Desvios
+ V ,[IPLUGINMANAGER],org.jumpmind.metl.core.plugin.PluginManager,serviceCreationFailed,3,1,0,3,Muitos Parametros
+ V ,SERVICE,org.jumpmind.metl.core.persist.ImportExportService,importReleasePackageConfiguration,21,5,9,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Serializer,handle,33,7,13,3,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.DelimitedFormatter,convertAttributeSettingsToAttributeFormat,31,7,0,0,Muitos Desvios
+ V ,SERVICE,org.jumpmind.metl.ui.persist.AuditableConfigurationService,log,26,7,10,1,Muitos Desvios
+ V ,ASYNCTASK,org.jumpmind.metl.core.runtime.flow.StepRuntime,run,30,11,5,0,Metodo Longo
+" A, V, X ",VIEW,org.jumpmind.metl.ui.views.design.EditRelationalModelPanel,save,27,10,2,1,Muitos Desvios
+ V ,CONTROLLER,org.jumpmind.metl.ui.api.ExecutionApi,delete,3,1,4,3,Muitos Parametros
+ V ,[FILTER],org.jumpmind.metl.HttpMethodFilter,forbid,4,1,4,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.EmbedFlow,handle,3,1,3,3,Muitos Parametros
+ V ,RESIZABLEWINDOW,org.jumpmind.metl.ui.views.design.ImportXmlTemplateWindow,rebuildOptionLayout,19,5,6,0,Muitos Desvios
+ V ,SERVICE,org.jumpmind.metl.core.persist.ImportExportService,processConfigTableData,27,8,8,6,Metodo Longo
+" A, R, V, X ",VIEW,org.jumpmind.metl.ui.views.manage.ExecutionRunPanel,refreshUI,66,14,19,1,Metodo Longo
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.component.ModelAttributeScriptHelper,sequence,22,4,10,3,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlReader,handle,11,6,8,3,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.ContentRouter,handleStringListPayload,37,10,13,3,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditExcelReaderPanel,addShowPopulatedFilter,14,2,9,2,Alto Acoplamento Efferent
+ V ,RESIZABLEWINDOW,org.jumpmind.metl.ui.views.design.ChangeDependencyVersionDialog,show,4,1,5,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Execute,handle,33,9,14,3,Muitos Parametros
+" A, D, V, X ",VIEW,org.jumpmind.metl.ui.views.design.EditFormatPanel,createField,60,2,0,4,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditXsltPanel,getMatchingEntities,24,7,6,1,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditDeduperPanel,saveSetting,13,3,3,3,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.admin.LoggingPanel,buttonClick,3,1,9,1,Alto Acoplamento Efferent
+" A, R, D, V, X ",VIEW,org.jumpmind.metl.ui.views.design.EditRdbmsWriterPanel,buildUI,74,1,0,0,Metodo Longo
+ V ,[IFLOWMANIPULATOR],org.jumpmind.metl.core.runtime.component.EmbedFlowFlowManipulator,manipulate,27,6,9,3,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.design.DesignNavigator,addNewFlow,22,3,7,1,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.FixedLengthParser,processInputRow,18,5,8,2,Muitos Desvios
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Deduper,handle,42,11,8,3,Muitos Desvios
+ V ,UNDEFINED,org.jumpmind.metl.ui.common.CutCopyPasteManager,mapResourceOldToNewUUID,11,4,3,3,Muitos Parametros
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.FilePoller,pollForFiles,59,16,19,3,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditDataDiffPanel,saveSetting,13,3,3,3,Muitos Parametros
+ V ,DEFINITIONFACTORY,org.jumpmind.metl.ui.definition.DefinitionPlusUIFactory,loadComponentsForClassloader,41,9,17,3,Muitos Parametros
+ V ,UNDEFINED,org.jumpmind.metl.StartWebServer,runWebServer,36,2,22,1,Metodo Longo
+ V ,CONTROLLER,org.jumpmind.metl.ui.api.ExecutionApi,addParameters,40,11,6,3,Muitos Parametros
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.AgentRuntime,doComponentDeploymentEvent,25,8,11,2,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Lookup,handle,28,11,10,3,Muitos Parametros
+" A, V ",VIEW,org.jumpmind.metl.ui.views.design.EditContentRouterPanel,createField,48,2,0,4,Metodo Longo
+ V ,[IPLUGINMANAGER],org.jumpmind.metl.core.plugin.PluginManager,install,25,3,14,4,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.FixedLengthParser,handle,29,8,10,3,Muitos Parametros
+ V ,TABSHEET,org.jumpmind.metl.ui.common.TabbedPanel,close,30,7,7,1,Metodo Longo
+ V ,UNDEFINED,org.jumpmind.metl.ui.common.UiUtils,getComponentImageInputStream,20,8,7,3,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditRelationalModelPanel,move,37,12,10,2,Alto Acoplamento Efferent
+" A, R, D, V, X ",WINDOW,org.jumpmind.metl.ui.init.LoginDialog,testPassword,62,22,9,3,Metodo Longo
+ V ,ABSTRACTSELECTEDVALUEMENUMANAGER,org.jumpmind.metl.ui.views.design.menu.ProjectVersionMenuManager,getEnabledPaths,11,5,7,1,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsReader,getTableNameFromSql,22,7,1,1,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditHierarchicalModelPanel,save,27,10,0,1,Metodo Longo
+" A, V, X ",VIEW,org.jumpmind.metl.ui.views.manage.ManageView,needsUpdated,27,10,7,1,Muitos Desvios
+" A, R, V, X ",UI,org.jumpmind.metl.ui.init.AppUI,createStringConverter,52,4,0,1,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsWriter,getValues,19,14,7,3,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditExcelWriterPanel,buildUI,56,6,0,0,Muitos Desvios
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.SftpDirectory,createRelativePathDirectoriesIfNecessary,26,6,8,3,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.ExcelFileWriter,start,33,9,8,0,Muitos Desvios
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.SqlExecutor,handle,36,12,13,3,Muitos Desvios
+ V ,MODEL,org.jumpmind.metl.core.model.Flow,findFinalSteps,15,5,5,0,Muitos Desvios
+" A, R, D, V, X ",VIEW,org.jumpmind.metl.ui.views.design.PropertySheet,createResourceCombo,29,5,15,3,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditRdbmsWriterPanel,generateCell,6,6,8,3,Muitos Desvios
+" A, R, D, V, X ",RESIZABLEWINDOW,org.jumpmind.metl.ui.common.SelectProjectVersionDialog,addItem,7,1,5,5,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditHierarchicalModelPanel,selected,26,7,8,1,Metodo Longo
+" A, D, V, X ",RESIZABLEWINDOW,org.jumpmind.metl.ui.views.deploy.DeployDialog,deployFlow,27,5,11,4,Muitos Parametros
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditDataDiffPanel,buildButtonBar,25,3,10,0,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlFormatter,processMsgEntities,21,6,10,3,Muitos Desvios
+" A, R, D, V, X ",SERVICE,org.jumpmind.metl.core.persist.ImportExportService,importConfiguration,35,13,9,2,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.jumpmind.metl.Develop,main,25,1,16,1,Alto Acoplamento Efferent
+" A, V ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsWriter,sortAndStoreRowsByTableAndOperation,39,13,12,1,Alto Acoplamento Efferent
+" A, R, D, V, X ",VIEW,org.jumpmind.metl.ui.views.design.EditTransformerPanel,updateTable,32,15,10,1,Muitos Desvios
+ V ,SERVICE,org.jumpmind.metl.core.persist.ConfigurationService,copy,45,9,15,3,Muitos Parametros
+ V ,CONTROLLER,org.jumpmind.metl.ui.api.ExecutionApi,enforceBasicAuth,36,8,10,3,Muitos Parametros
+" A, R, D, V, X ",SERVICE,org.jumpmind.metl.core.persist.ImportExportService,processConfigTableData,27,8,8,6,Muitos Parametros
+ V ,[IHTTPREQUESTMAPPINGREGISTRY],org.jumpmind.metl.core.runtime.web.HttpRequestMappingRegistry,findBestMatch,12,4,9,2,Alto Acoplamento Efferent
+" A, V ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Stamp,handle,28,8,12,3,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Multiplier,multiply,24,6,5,2,Muitos Desvios
+ V ,RESIZABLEWINDOW,org.jumpmind.metl.ui.common.ExportDialog,initWindow,30,1,6,1,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.core.plugin.PluginTransferListener,transferProgressed,16,3,9,1,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditXsltPanel,buildUI,40,2,10,0,Metodo Longo
+" A, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.ExcelFileWriter,compare,3,20,13,2,Alto Acoplamento Efferent
+" A, V, X ",SERVICE,org.jumpmind.metl.ui.persist.AuditableConfigurationService,recordAudit,19,4,13,0,Alto Acoplamento Efferent
+" A, R, D, V, X ",VIEW,org.jumpmind.metl.ui.views.design.EditTransformerPanel,updateExportTable,29,12,11,1,Muitos Desvios
+" A, R, D, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Transformer,handle,70,17,23,3,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.AgentRuntime,stop,29,7,11,0,Muitos Desvios
+ V ,UNDEFINED,org.jumpmind.metl.core.utils.TestUtils,assertList,24,8,6,3,Metodo Longo
+" A, R, V, X ",[IUICACHE],org.jumpmind.metl.ui.persist.UICache,refreshAll,53,9,20,0,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.ExcelFileReader,processFiles,25,5,11,4,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Serializer,createHierarchicalPayload,27,4,9,1,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Zip,handle,60,12,15,3,Muitos Parametros
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.LocalFileDirectory,copyFile,3,1,2,3,Muitos Parametros
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.component.ModelAttributeScriptHelper,eval,22,3,13,8,Metodo Longo
+" A, D, V, X ",VIEW,org.jumpmind.metl.ui.views.design.EditDeduperPanel,createField,3,1,4,4,Muitos Parametros
+ V ,UNDEFINED,org.jumpmind.metl.core.utils.TestUtils,assertList,24,8,6,3,Muitos Parametros
+" A, D, V, X ",ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.AbstractJMSJndiDirectory,getOutputStream,3,1,4,4,Muitos Parametros
+" A, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.ExcelFileReader,processFiles,25,5,11,4,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.ContentRouter,handleControlMessages,21,6,10,3,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditRelationalModelPanel,selected,28,7,8,1,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.DesignNavigator,findChild,17,5,4,2,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.deploy.DeployNavigator,refresh,32,8,10,0,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jumpmind.metl.ui.common.UiUtils,whereAreYou,19,16,2,1,Muitos Desvios
+ V ,SERVICE,org.jumpmind.metl.core.persist.ImportExportService,findDeletes,22,5,5,3,Muitos Parametros
+" A, R, D, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.EmailWriter,sendEmail,35,7,11,9,Muitos Parametros
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlFormatter,addModelAttributeXml,82,14,17,5,Alto Acoplamento Efferent
+ V ,SERVICE,org.jumpmind.metl.core.persist.OperationsService,findAgents,23,3,0,2,Metodo Longo
+" A, D, V, X ",ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.SftpDirectory,getOutputStream,13,3,8,4,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Mapping,validate,15,5,2,0,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditSorterPanel,createAttributeCheckBox,32,1,0,2,Metodo Longo
+ V ,RESIZABLEWINDOW,org.jumpmind.metl.ui.views.release.EditReleasePackageDialog,save,20,5,10,0,Muitos Desvios
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.AbstractFactory,getClassesForPackage,35,8,12,1,Metodo Longo
+" A, R, D, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Assert,handle,82,23,14,3,Muitos Desvios
+ V ,UNDEFINED,org.jumpmind.metl.core.util.LogUtils,initLogging,34,5,9,2,Muitos Desvios
+ V ,ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.SftpDirectory,getInputStream,21,8,9,3,Alto Acoplamento Efferent
+" A, D, V, X ",ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.FtpDirectory,getOutputStream,3,1,3,4,Muitos Parametros
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlParser,handleUsingPullParser,71,18,20,3,Muitos Desvios
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.component.ModelAttributeScriptHelper,getSignatures,25,7,11,0,Muitos Desvios
+ V ,RESIZABLEWINDOW,org.jumpmind.metl.ui.views.design.ScriptTemplatesDialog,applyTemplate,16,3,4,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Multiplier,handle,26,9,7,3,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.ContentRouter,handleEntityListPayload,38,11,14,3,Muitos Parametros
+" D, V ",SERVICE,org.jumpmind.metl.core.persist.ConfigurationService,copy,45,9,15,3,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.DelimitedFormatter,handle,31,8,14,3,Muitos Desvios
+" A, D, V, X ",ABSTRACTRUNTIMEOBJECT,org.jumpmind.metl.core.runtime.resource.Datasource,putTableInCache,4,1,3,4,Muitos Parametros
+ V ,[IPLUGINMANAGER],org.jumpmind.metl.core.plugin.PluginManager,getAvailableVersions,31,6,22,3,Muitos Desvios
+ V ,MOCKDRIVER,org.jumpmind.metl.core.util.MockJdbcDriver,getPrimaryKeys,24,6,1,3,Muitos Parametros
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.ContentRouter,handleEntityListPayload,38,11,14,3,Metodo Longo
+" A, R, D, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.ExcelFileReader,readWorkbook,84,20,19,3,Alto Acoplamento Efferent
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.FileUtil,handle,32,13,10,3,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditSorterPanel,getStyle,6,4,4,3,Muitos Parametros
+" A, R, D, V, X ",VIEW,org.jumpmind.metl.ui.views.design.EditFlowPanel,componentEvent,71,21,16,1,Muitos Desvios
+ V ,VIEW,org.jumpmind.metl.ui.views.deploy.DeployNavigator,buildMenuBar,45,1,0,0,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,org.jumpmind.metl.StartWebServer,getConnectors,51,9,18,2,Metodo Longo
+" A, R, V, X ",[IEXECUTIONTRACKER],org.jumpmind.metl.core.runtime.ExecutionTrackerLogger,log,22,8,8,5,Muitos Parametros
+ V ,UNDEFINED,org.jumpmind.metl.core.runtime.flow.FlowRuntime,manipulateFlow,25,5,9,1,Muitos Desvios
+ V ,[ICOMPONENTRUNTIME],org.jumpmind.metl.core.runtime.component.AbstractComponentRuntime,create,6,1,4,3,Muitos Parametros
+ V ,RESIZABLEWINDOW,org.jumpmind.metl.ui.views.deploy.DeployDialog,deployFlow,27,5,11,4,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.RdbmsReader,getTableNameFromSql,18,7,3,3,Muitos Parametros
+" A, R, V, X ",VIEW,org.jumpmind.metl.ui.views.admin.LoggingPanel,onBackgroundDataRefresh,60,14,16,0,Metodo Longo
+ V ,SERVICE,org.jumpmind.metl.core.persist.ImportExportService,importAgentConfiguration,21,5,9,3,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XmlFormatter,applyAttributeXPath,33,9,7,3,Muitos Desvios
+ V ,[ISUBSCRIBEMANAGER],org.jumpmind.metl.core.runtime.subscribe.SubscribeManager,undeploy,20,4,11,4,Alto Acoplamento Efferent
+" D, V ",CONTROLLER,org.jumpmind.metl.ui.api.ExecutionApi,enforceBasicAuth,36,8,10,3,Metodo Longo
+ V ,RESIZABLEWINDOW,org.jumpmind.metl.ui.views.design.ImportXmlTemplateWindow,buttonClick,40,7,13,1,Metodo Longo
+ V ,VIEW,org.jumpmind.metl.ui.views.design.PropertySheet,setSource,46,13,10,1,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.FixedLengthParser,handle,29,8,10,3,Metodo Longo
+" A, V, X ",[IPLUGINMANAGER],org.jumpmind.metl.core.plugin.PluginManager,install,25,3,14,4,Muitos Parametros
+" A, R, D, V, X ",ABSTRACTDIRECTORY,org.jumpmind.metl.core.runtime.resource.SftpDirectory,listFiles,42,14,15,2,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.deploy.EditAgentPanel,exportConfiguration,22,1,0,0,Metodo Longo
+ V ,UNDEFINED,org.jumpmind.metl.core.util.VersionUtils,(static_block),0,7,0,0,Muitos Desvios
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.DataDiff,createDatabase,51,9,14,0,Metodo Longo
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Deserializer,handle,41,11,17,3,Muitos Desvios
+ V ,UNDEFINED,org.jumpmind.metl.ui.common.CutCopyPasteManager,resourceInCutBuffer,11,7,5,2,Muitos Desvios
+" D, V, X ",CONTROLLER,org.jumpmind.metl.ui.api.ExecutionApi,addParameters,40,11,6,3,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Mapping,mapInputToOutputByEntity,43,12,11,1,Metodo Longo
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.XsltProcessor,getModelEntities,15,5,10,2,Muitos Desvios
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Zip,handle,60,12,15,3,Metodo Longo
+" A, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.BinaryFileReader,processFiles,34,7,12,4,Muitos Parametros
+" A, R, V, X ",[IPLUGINMANAGER],org.jumpmind.metl.core.plugin.PluginManager,collectDependencies,18,4,14,3,Alto Acoplamento Efferent
+" A, R, V, X ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Web,handle,70,18,17,3,Muitos Desvios
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.MessageFilter,handle,27,10,10,3,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.Sorter,start,38,8,0,0,Metodo Longo
+ V ,[IDEFINITIONFACTORY],org.jumpmind.metl.core.plugin.DefinitionFactory,awaitTermination,31,8,7,2,Metodo Longo
+" A, R, D, V, X ",[IDIRECTORY],org.jumpmind.metl.core.runtime.resource.AbstractDirectory,getOutputStream,3,1,4,6,Muitos Parametros
+" A, R, D, V, X ",SERVICE,org.jumpmind.metl.core.persist.ConfigurationService,delete,32,7,14,1,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditRelationalModelPanel,addAll,19,7,9,2,Alto Acoplamento Efferent
+ V ,ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.DelimitedParser,handle,29,8,10,3,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.design.EditRdbmsWriterPanel,createCheckBox,21,5,5,2,Muitos Desvios
+" A, D, V, X ",CONTROLLER,org.jumpmind.metl.ui.api.ExecutionApi,callFlow,74,19,23,4,Muitos Parametros
+ V ,[IDIRECTORY],org.jumpmind.metl.core.runtime.resource.HttpDirectory,copyFile,3,1,2,3,Muitos Parametros
+ V ,RESIZABLEWINDOW,org.jumpmind.metl.ui.views.release.EditReleasePackageDialog,buildProjectsAndVersions,41,6,14,1,Metodo Longo
+" A, R, V, X ",VIEW,org.jumpmind.metl.ui.views.release.ReleasesView,finalizeSelectedReleasePackages,53,10,20,0,Metodo Longo
+" A, R, D, V, X ",VIEW,org.jumpmind.metl.ui.views.design.EditFlowPanel,runFlow,44,10,16,0,Alto Acoplamento Efferent
+" A, V ",ABSTRACTCOMPONENTRUNTIME,org.jumpmind.metl.core.runtime.component.BinaryFileWriter,handle,25,7,12,3,Alto Acoplamento Efferent
+ V ,VIEW,org.jumpmind.metl.ui.views.design.CallWebServicePanel,runFlow,46,9,17,0,Muitos Desvios
+" A, R, V, X ",VIEW,org.jumpmind.metl.ui.views.design.EditFormatPanel,createField,60,2,0,4,Metodo Longo

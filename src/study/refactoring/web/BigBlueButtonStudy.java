@@ -18,14 +18,7 @@ public class BigBlueButtonStudy {
 		String urlRepository = "https://github.com/bigbluebutton/bigbluebutton.git";
 		String initialCommit = "73db36bc9d8ede10e531265809cda62b0e59ae5b"; // 2.0.x-RC2 - 2018.07.07
 		String finalCommit = "b7d44d21e6cecf309ee1704dcfef264f2dc57639"; // 2.0.0 - 2019.04.08
-		String resultEvaluation = System.getProperty("user.dir")
-				+ "\\refactoring\\bigbluebutton-evaluation.csv";
-		String resultSmellRefactored = System.getProperty("user.dir") + "\\refactoring\\bigbluebutton-smellrefactored.csv";
-		String resultSmellRefactoredMessage = System.getProperty("user.dir")
-				+ "\\refactoring\\bigbluebutton-smellrefactored-message.csv";
-		String resultSmellRefactoredCommit = System.getProperty("user.dir")
-				+ "\\refactoring\\bigbluebutton-smellrefactored-commit.csv";
-		String resultRefactoring = System.getProperty("user.dir") + "\\refactoring\\bigbluebutton-refactoring.csv";
+		String resultFile = System.getProperty("user.dir") + "\\refactoring\\bigbluebutton";
 
 		List<LimiarTecnica> listThresholdsTechiniques = CarregaSalvaArquivo
 				.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\web2020\\");
@@ -34,8 +27,7 @@ public class BigBlueButtonStudy {
 				.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\web2020\\bigbluebutton"));
 
 		SmellRefactoredManager manager = new SmellRefactoredManager(urlRepository, localFolder, initialCommit,
-				finalCommit, listThresholdsTechiniques, resultEvaluation, resultSmellRefactored,
-				resultSmellRefactoredMessage, resultSmellRefactoredCommit, resultRefactoring);
+				finalCommit, listThresholdsTechiniques, resultFile);
 		manager.getSmellRefactoredBetweenCommit();
 	}
 }

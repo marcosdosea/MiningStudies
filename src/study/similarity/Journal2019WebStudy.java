@@ -3,7 +3,6 @@ package study.similarity;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.designroleminer.threshold.DesignRoleTechnique;
 import org.designroleminer.threshold.TechniqueExecutor;
 import org.repodriller.persistence.PersistenceMechanism;
 import org.repodriller.persistence.csv.CSVFile;
@@ -16,7 +15,7 @@ public class Journal2019WebStudy {
 
 	public static void main(String[] args) {
 		final String PASTA_METRICAS = "thresholds\\web2019\\projects\\";
-		TechniqueExecutor executor = new TechniqueExecutor(new DesignRoleTechnique());
+		TechniqueExecutor executor = new TechniqueExecutor();
 		ArrayList<String> projetosReferencia = executor.lerProjetos("Benchmark2019.txt");
 		List<SimilarityResult> listSimilarity = gSimilarity.calculate(projetosReferencia, PASTA_METRICAS);
 

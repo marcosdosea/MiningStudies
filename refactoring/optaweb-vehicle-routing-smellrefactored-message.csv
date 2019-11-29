@@ -1086,11 +1086,7 @@ org.optaweb.vehiclerouting.service.demo.dataset.DataSetLocation,toString,null,3,
 org.optaweb.vehiclerouting.plugin.persistence.DistanceRepositoryIntegrationTest,should_return_saved_distance,null,7,1,4,0,null,37b23c4c07cdcef49715ffd8fe827a9746c38f2f,,,,
 org.optaweb.vehiclerouting.service.demo.dataset.DataSetLocation,setLabel,null,3,1,2,1,null,37b23c4c07cdcef49715ffd8fe827a9746c38f2f,,,,
 org.optaweb.vehiclerouting.service.location.LocationServiceTest,clear,null,6,1,1,0,null,37b23c4c07cdcef49715ffd8fe827a9746c38f2f,,,,
-null,null,null,11,1,6,0,null,488ddeaf97d35391b366e35fe37f41931df3d605,EXTRACT_OPERATION,package export_should_marshal_routing_plans_with_locations_from_repository() : void,private verifyAndCaptureMarshalledProblem() : RoutingProblem,"Simplify capturing of arguments
-"
-null,null,null,11,1,6,0,null,72f093d52291d7bbc0217c41becfb6ef4ccdbaa3,EXTRACT_OPERATION,package export_should_marshal_routing_plans_with_locations_from_repository() : void,private verifyAndCaptureMarshalledProblem() : RoutingProblem,"Merge pull request #155 from kiegroup/vehicles
-
-PLANNER-1418: Vehicle editing"
+org.optaweb.vehiclerouting.service.demo.DemoServiceTest,export_should_marshal_routing_plans_with_locations_from_repository,null,12,1,7,0,null,37b23c4c07cdcef49715ffd8fe827a9746c38f2f,,,,
 org.optaweb.vehiclerouting.service.demo.dataset.DataSetLocation,setLatitude,null,3,1,2,1,null,37b23c4c07cdcef49715ffd8fe827a9746c38f2f,,,,
 org.optaweb.vehiclerouting.plugin.planner.SolverIntegrationTest,startSolver,null,3,1,3,2,null,37b23c4c07cdcef49715ffd8fe827a9746c38f2f,,,,
 org.optaweb.vehiclerouting.plugin.websocket.PortableLocation,toString,null,3,1,1,0,null,37b23c4c07cdcef49715ffd8fe827a9746c38f2f,,,,
@@ -1223,8 +1219,7 @@ org.optaweb.vehiclerouting.plugin.planner.SolverIntegrationTest,tearDown,null,4,
 org.optaweb.vehiclerouting.plugin.planner.SolutionUtilTest,fail_fast_if_vehicles_next_customer_doesnt_exist,null,11,1,6,0,null,37b23c4c07cdcef49715ffd8fe827a9746c38f2f,,,,
 org.optaweb.vehiclerouting.plugin.planner.SolverExceptionTest,assertTestExceptionThrownWhenStoppingSolver,null,3,1,1,1,null,37b23c4c07cdcef49715ffd8fe827a9746c38f2f,,,,
 org.optaweb.vehiclerouting.plugin.persistence.LocationRepositoryImplTest,setUp,null,11,1,6,0,null,37b23c4c07cdcef49715ffd8fe827a9746c38f2f,,,,
-null,null,null,16,2,7,0,null,488ddeaf97d35391b366e35fe37f41931df3d605,EXTRACT_OPERATION,package publish_new_best_solution_if_all_fact_changes_processed() : void,private verifyAndCaptureEvent() : RouteChangedEvent,"Simplify capturing of arguments
-"
+org.optaweb.vehiclerouting.plugin.planner.RouteOptimizerImplTest,publish_new_best_solution_if_all_fact_changes_processed,null,14,2,7,0,null,37b23c4c07cdcef49715ffd8fe827a9746c38f2f,,,,
 org.optaweb.vehiclerouting.plugin.websocket.PortableLocation,getId,null,3,1,1,0,null,37b23c4c07cdcef49715ffd8fe827a9746c38f2f,,,,
 org.optaweb.vehiclerouting.service.distance.DistanceMatrixImpl,calculateOrRestoreDistance,null,8,2,4,2,null,37b23c4c07cdcef49715ffd8fe827a9746c38f2f,,,,
 org.optaweb.vehiclerouting.plugin.planner.RouteOptimizerImpl,bestSolutionChanged,null,8,2,2,1,null,37b23c4c07cdcef49715ffd8fe827a9746c38f2f,,,,
@@ -1257,8 +1252,7 @@ org.optaweb.vehiclerouting.plugin.websocket.RoutePublisherImpl,portableTrack,nul
 org.optaweb.vehiclerouting.plugin.websocket.WebSocketControllerTest,demo,null,5,1,2,0,null,37b23c4c07cdcef49715ffd8fe827a9746c38f2f,,,,
 org.optaweb.vehiclerouting.plugin.planner.DistanceMapTest,distance_map_should_convert_millis_to_secs,null,11,1,8,0,null,37b23c4c07cdcef49715ffd8fe827a9746c38f2f,,,,
 org.optaweb.vehiclerouting.plugin.planner.DistanceMap,values,null,3,1,2,0,null,37b23c4c07cdcef49715ffd8fe827a9746c38f2f,,,,
-null,null,null,16,2,7,0,null,488ddeaf97d35391b366e35fe37f41931df3d605,EXTRACT_OPERATION,package solution_with_depot_and_no_visits_should_be_published() : void,private verifyAndCaptureEvent() : RouteChangedEvent,"Simplify capturing of arguments
-"
+org.optaweb.vehiclerouting.plugin.planner.RouteOptimizerImplTest,solution_with_depot_and_no_visits_should_be_published,null,12,2,7,0,null,37b23c4c07cdcef49715ffd8fe827a9746c38f2f,,,,
 org.optaweb.vehiclerouting.plugin.websocket.PortableLocation,getLongitude,null,3,1,1,0,null,37b23c4c07cdcef49715ffd8fe827a9746c38f2f,,,,
 org.optaweb.vehiclerouting.service.region.RegionService,boundingBox,null,4,1,4,0,null,37b23c4c07cdcef49715ffd8fe827a9746c38f2f,,,,
 org.optaweb.vehiclerouting.plugin.websocket.ServerInfo,getBoundingBox,null,3,1,1,0,null,37b23c4c07cdcef49715ffd8fe827a9746c38f2f,,,,
@@ -1331,18 +1325,10 @@ org.optaweb.vehiclerouting.domain.RoutingPlanTest,constructor_args_not_null,null
 org.optaweb.vehiclerouting.plugin.websocket.PortableCoordinates,fromCoordinates,null,3,1,2,1,null,37b23c4c07cdcef49715ffd8fe827a9746c38f2f,,,,
 org.optaweb.vehiclerouting.plugin.planner.DistanceMap,clear,null,3,1,1,0,null,37b23c4c07cdcef49715ffd8fe827a9746c38f2f,,,,
 org.optaweb.vehiclerouting.service.region.BoundingBox,getNorthEast,null,3,1,1,0,null,37b23c4c07cdcef49715ffd8fe827a9746c38f2f,,,,
-null,null,null,8,1,4,0,null,488ddeaf97d35391b366e35fe37f41931df3d605,EXTRACT_OPERATION,package export_should_marshal_empty_routing_plan_when_no_locations_in_repository() : void,private verifyAndCaptureMarshalledProblem() : RoutingProblem,"Simplify capturing of arguments
-"
-null,null,null,8,1,4,0,null,72f093d52291d7bbc0217c41becfb6ef4ccdbaa3,EXTRACT_OPERATION,package export_should_marshal_empty_routing_plan_when_no_locations_in_repository() : void,private verifyAndCaptureMarshalledProblem() : RoutingProblem,"Merge pull request #155 from kiegroup/vehicles
-
-PLANNER-1418: Vehicle editing"
+org.optaweb.vehiclerouting.service.demo.DemoServiceTest,export_should_marshal_empty_routing_plan_when_no_locations_in_repository,null,9,1,5,0,null,37b23c4c07cdcef49715ffd8fe827a9746c38f2f,,,,
 org.optaweb.vehiclerouting.plugin.persistence.DistanceKey,equals,null,10,4,4,1,null,37b23c4c07cdcef49715ffd8fe827a9746c38f2f,,,,
 org.optaweb.vehiclerouting.domain.RouteTest,package no_visit_should_be_visited_twice_by_the_same_vehicle(),null,3,1,2,0,null,37b23c4c07cdcef49715ffd8fe827a9746c38f2f,,,,
-null,null,null,12,1,7,0,null,488ddeaf97d35391b366e35fe37f41931df3d605,EXTRACT_OPERATION,package event_with_no_routes_should_be_published_as_an_empty_routing_plan() : void,private verifyAndCapturePublishedPlan() : RoutingPlan,"Simplify capturing of arguments
-"
-null,null,null,13,1,8,0,null,72f093d52291d7bbc0217c41becfb6ef4ccdbaa3,EXTRACT_OPERATION,package event_with_no_routes_should_be_published_as_an_empty_routing_plan() : void,private verifyAndCapturePublishedPlan() : RoutingPlan,"Merge pull request #155 from kiegroup/vehicles
-
-PLANNER-1418: Vehicle editing"
+org.optaweb.vehiclerouting.service.route.RouteListenerTest,event_with_no_routes_should_be_published_as_an_empty_routing_plan,null,9,1,4,0,null,37b23c4c07cdcef49715ffd8fe827a9746c38f2f,,,,
 org.optaweb.vehiclerouting.service.region.BoundingBox,getSouthWest,null,3,1,1,0,null,37b23c4c07cdcef49715ffd8fe827a9746c38f2f,,,,
 org.optaweb.vehiclerouting.plugin.persistence.LocationRepositoryIntegrationTest,setUp,null,3,1,1,0,null,37b23c4c07cdcef49715ffd8fe827a9746c38f2f,,,,
 org.optaweb.vehiclerouting.plugin.persistence.DistanceEntityTest,equals,null,13,1,4,0,null,37b23c4c07cdcef49715ffd8fe827a9746c38f2f,,,,
