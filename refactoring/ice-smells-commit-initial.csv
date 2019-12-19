@@ -1,0 +1,1576 @@
+Tecnicas,Design Role,Classe,Método,LOC,CC,Efferent,NOP,Problema de Design
+ V ,HASENTRY,org.jbei.ice.lib.entry.EntryCreator,createEntry,52,17,18,3,Muitos Parametros
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.SequenceFeatureDAO,getEntryIdsByFeature,14,2,9,1,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.ApiKey,setAllowDelegate,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.TraceSequenceAlignment,setTraceSequence,3,1,2,1,Muitos Parametros
+ V ,SBOLBASEVISITOR,org.jbei.ice.lib.parsers.sbol.ICESBOLParserVisitor,visit,42,10,12,1,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.Attachment,setId,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkUploadController,deleteEntry,13,2,10,3,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.services.rest.RestClient,post,0,1,5,5,Muitos Parametros
+" A, D, V, X ",TEST,org.jbei.ice.lib.entry.sample.SampleServiceTest,testRetrieveEntrySamples,31,5,13,0,Alto Acoplamento Efferent
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.EntryDAO,retrieveVisibleEntries,27,7,17,7,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.Sequence,setUri,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.common.logging.Logger,sendEmail,27,6,7,2,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.Sample,setModificationTime,3,1,2,1,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.EntryHistory,get,17,4,15,4,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.folder.FolderContents,getContents,25,6,17,4,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.folder.FolderContents,getRemotelySharedContents,36,6,19,6,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Entry,setAlias,3,1,2,1,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.sequence.annotation.Annotations,generate,39,13,21,2,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkEntryCreator,createEntryForUpload,43,8,12,3,Muitos Desvios
+ V ,SERVICE,org.jbei.ice.services.rest.PartResource,deleteTrace,7,2,5,3,Muitos Parametros
+ V ,HASENTRY,org.jbei.ice.lib.entry.EntryCreator,copyPart,27,5,15,2,Metodo Longo
+" A, R, D, V, X ",MODEL,org.jbei.ice.services.rest.PartDataJSONHandler,getSize,3,1,6,5,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Entry,setSelectionMarkers,13,3,1,1,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.auth.hmac.HmacSignatureFactory,buildSignature,15,3,9,6,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.SequenceHistoryModel,setSequence,3,1,2,1,Muitos Parametros
+" A, D, V ",TEST,org.jbei.ice.lib.account.PreferencesControllerTest,testRetrieveAccountPreferences,23,1,12,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkCSVUploadHeaders,getHeadersForType,21,6,2,1,Muitos Desvios
+" A, R, D, V, X ",HASENTRY,org.jbei.ice.lib.entry.EntryController,getRequestedEntry,21,6,13,5,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkUploadController,create,34,6,15,2,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.storage.hibernate.search.HibernateSearch,getSort,14,6,5,2,Muitos Desvios
+" A, V, X ",UNDEFINED,org.jbei.ice.lib.entry.EntryUtil,setPartDataFromField,100,39,9,4,Muitos Parametros
+" A, V, X ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.FeatureDAO,getFeaturesGroupBy,23,3,13,2,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Entry,setStatus,3,1,2,1,Muitos Parametros
+ V ,HASENTRY,org.jbei.ice.lib.entry.sample.SampleService,retrievePlate,8,3,6,3,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.parsers.abi.ABITrace,setTraces,55,18,8,0,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.CustomEntryFieldModel,setRequired,3,1,2,1,Muitos Parametros
+ V ,SERVICE,org.jbei.ice.services.rest.PartResource,getTooltipDetails,12,3,8,3,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Request,setEntry,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sample.RequestRetriever,updateStatus,12,5,10,3,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.Folder,setType,3,1,2,1,Muitos Parametros
+" A, V ",UNDEFINED,org.jbei.ice.lib.entry.sequence.annotation.Annotations,get,19,5,12,3,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.net.RemoteEntries,getPublicAttachment,3,1,3,3,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Parameter,setValue,3,1,2,1,Muitos Parametros
+" A, R, D, V, X ",TEST,org.jbei.ice.lib.entry.sample.SampleServiceTest,testCreateSample,53,5,13,0,Metodo Longo
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.ApiKeyDAO,getApiKeysForUser,12,3,9,5,Alto Acoplamento Efferent
+ V ,ABSTRACTFORMATTER,org.jbei.ice.lib.entry.sequence.composers.formatters.GenbankFormatter,getAnnotations,17,7,8,1,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.net.RemoteTransfer,transferFolder,19,5,9,3,Alto Acoplamento Efferent
+ V ,TEST,org.jbei.ice.lib.dto.entry.CustomFieldsTest,testUpdateField,24,1,10,0,Metodo Longo
+ V ,TEST,org.jbei.ice.storage.hibernate.dao.PermissionDAOTest,testGetByFolder,26,1,10,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sequence.Sequences,bulkUpdate,39,12,18,2,Metodo Longo
+ V ,[CLOSEABLE],org.jbei.ice.lib.search.blast.BlastPlus,parseBlastOutputLine,22,2,11,1,Metodo Longo
+" A, V, X ",[FIELDBRIDGE],org.jbei.ice.lib.access.PermissionEntryBridge,set,12,10,5,4,Muitos Desvios
+" A, V ",SERVICE,org.jbei.ice.services.rest.IceRestClient,post,12,5,12,5,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.storage.ModelToInfoFactory,getInfo,24,7,3,1,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.account.AccountController,createAdminAccount,22,2,5,0,Metodo Longo
+" A, V ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.EntryDAO,retrieveOwnerEntries,16,3,12,6,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.group.Groups,getGroupMembers,20,8,12,1,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.storage.hibernate.search.HibernateSearch,executeSearchNoTerms,68,13,36,3,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.sequence.TraceSequences,bulkUpdate,33,10,16,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.net.RemoteEntries,getEntryDetails,14,2,11,3,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.entry.EntryUtil,entryFieldToValue,24,8,4,2,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.Permission,setSharer,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sequence.Sequences,getRequestedSequence,22,5,13,5,Muitos Desvios
+ V ,HASENTRY,org.jbei.ice.lib.parsers.genbank.GenBankParser,splitTags,38,10,8,3,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.Account,setIp,3,1,2,1,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.sequence.SequenceUtil,dnaFeatureToSequenceFeature,64,17,16,2,Alto Acoplamento Efferent
+" A, R, D, V, X ",SERVICE,org.jbei.ice.services.rest.IceRestClient,postWor,13,5,12,6,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.servlet.InfoToModelFactory,infoToProteinForField,20,6,5,3,Muitos Desvios
+ V ,HASENTRY,org.jbei.ice.lib.parsers.genbank.GenBankParser,parseGenbankLocation,28,6,10,1,Alto Acoplamento Efferent
+ V ,HASENTRY,org.jbei.ice.lib.entry.EntryController,updateEntryComment,12,6,9,4,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.ArabidopsisSeed,setEcotype,3,1,2,1,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.storage.hibernate.search.HibernateSearch,generateQueriesForType,34,6,15,6,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.bulkupload.BulkEntryCreator,createOrUpdateEntry,47,16,17,3,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Account,setId,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.search.filter.SearchFieldFactory,classesForTypes,24,9,2,1,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkEntryCreator,submitBulkImportDraft,29,6,10,3,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.Group,setCreationTime,3,1,2,1,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.EntryUtil,setPartDataFromField,100,39,9,4,Metodo Longo
+" A, R, V, X ",[IAUTHENTICATION],org.jbei.ice.lib.account.authentication.LblLdapAuthentication,authenticateWithLDAP,57,11,8,2,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.search.WebSearch,run,47,11,17,2,Alto Acoplamento Efferent
+ V ,TEST,org.jbei.ice.storage.hibernate.dao.GroupDAOTest,testGetGroupsByType,27,5,9,0,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.entry.EntryUtil,getPlasmidFieldValues,16,6,3,2,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.AnnotationLocation,setSingleResidue,3,1,2,1,Muitos Parametros
+" A, V ",UNDEFINED,org.jbei.ice.lib.search.SearchController,runSearch,30,9,12,2,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.net.RemoteEntriesAsCSV,writeZip,14,2,9,2,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sample.RequestRetriever,setRequestsStatus,25,9,12,3,Muitos Desvios
+ V ,HASENTRY,org.jbei.ice.lib.entry.EntryController,moveEntriesToTrash,24,7,13,2,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.access.PermissionsController,propagateFolderPermissions,9,4,9,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.message.Messages,get,24,3,14,2,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.Group,setDescription,3,1,2,1,Muitos Parametros
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.RequestDAO,getAccountRequests,18,4,11,6,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.ManuscriptModel,setParagonUrl,3,1,2,1,Muitos Parametros
+" A, V, X ",UNDEFINED,org.jbei.ice.lib.entry.PartDataUtil,getSeedFieldValues,21,10,3,2,Muitos Desvios
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.EntryDAO,ownerEntryCount,19,3,17,3,Muitos Parametros
+" D, V ",TEST,org.jbei.ice.storage.hibernate.dao.SequenceDAOTest,testSequenceString,14,1,11,0,Alto Acoplamento Efferent
+ V ,TEST,org.jbei.ice.lib.folder.FolderContentsTest,testAddEntrySelection,22,1,11,0,Metodo Longo
+" A, V, X ",SERVICE,org.jbei.ice.services.rest.PartResource,getShotgunSequences,16,3,13,4,Muitos Parametros
+ V ,TEST,org.jbei.ice.storage.hibernate.dao.ApiKeyDAOTest,testGetAllApiKeys,24,4,8,0,Metodo Longo
+ V ,MODEL,org.jbei.ice.lib.entry.sample.PlateSamples,numberToPosition,24,11,3,1,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.folder.collection.Collection,getFolder,7,2,4,3,Muitos Parametros
+ V ,HASENTRY,org.jbei.ice.lib.parsers.genbank.GenBankParser,splitTags,38,10,8,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.folder.collection.CollectionEntries,getAvailableEntries,9,1,10,6,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.folder.FolderContents,addEntriesToFolders,31,9,16,3,Alto Acoplamento Efferent
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.FolderDAO,getEntryCountByFolderType,16,2,10,2,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.RemoteAccessModel,setIdentifier,3,1,2,1,Muitos Parametros
+" A, V, X ",SERVICE,org.jbei.ice.services.rest.FolderResource,addSelectedEntriesToFolders,14,3,7,4,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sequence.PartTraceSequences,getTraces,25,4,13,2,Metodo Longo
+" A, R, D, V, X ",TEST,org.jbei.ice.lib.folder.FolderContentsTest,testGetContents,40,4,19,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.servlet.InfoToModelFactory,infoToProteinForField,20,6,5,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.net.RemoteEntries,getSequence,13,2,11,3,Alto Acoplamento Efferent
+" A, R, D, V, X ",HASENTRY,org.jbei.ice.lib.parsers.genbank.GenBankParser,parseFeaturesTag,68,14,13,1,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.folder.FolderContents,getAndFilterFolderPermissions,23,11,11,2,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.folder.UserFolders,getList,11,4,10,1,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Audit,setLastName,3,1,2,1,Muitos Parametros
+ V ,ABSTRACTFORMATTER,org.jbei.ice.lib.entry.sequence.composers.formatters.GFF3Formatter,format,23,7,9,2,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.net.RemoteEntriesAsCSV,writeLocalEntries,37,7,19,4,Muitos Desvios
+" A, R, D, V, X ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.EntryDAO,retrieveUserEntries,24,6,18,8,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sequence.Sequences,parseSequence,23,8,13,2,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.folder.collection.CollectionEntries,getPersonalEntries,10,3,11,6,Alto Acoplamento Efferent
+ V ,HASENTRY,org.jbei.ice.lib.parsers.sbol.SBOLParser,createNewEntry,24,3,11,2,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.access.PermissionsController,retrieveSetFolderPermission,25,8,14,2,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.Sequence,setFormat,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.CustomEntryFieldModel,setLabel,3,1,2,1,Muitos Parametros
+" A, R, D, V, X ",SERVICE,org.jbei.ice.services.rest.FolderResource,read,30,6,15,9,Alto Acoplamento Efferent
+" A, R, D, V, X ",MODEL,org.jbei.ice.services.rest.ArrayDataJSONHandler,writeTo,6,1,10,7,Muitos Parametros
+ V ,ABSTRACTFORMATTER,org.jbei.ice.lib.entry.sequence.composers.formatters.GFF3Formatter,format,23,7,9,2,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.Parameter,setId,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.RemoteAccessModel,setToken,3,1,2,1,Muitos Parametros
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.FolderDAO,getCanEditFolders,14,2,10,2,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.bulkupload.BulkUploadController,approveBulkImport,41,11,15,2,Muitos Desvios
+ V ,HASENTRY,org.jbei.ice.lib.entry.EntryController,canEdit,3,1,4,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.dto.entry.CustomFields,getCustomFieldValuesForPart,26,7,15,1,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.SelectionMarker,setId,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.services.rest.RestResource,getThisServer,12,6,5,1,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkUploadController,deleteAttachment,18,5,13,3,Muitos Parametros
+ V ,EMAIL,org.jbei.ice.lib.email.GMail,send,31,1,0,4,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.SequenceHistoryModel,setSessionId,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkEntryCreator,createEntryForUpload,43,8,12,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.entry.PartDataUtil,getProteinFieldValues,15,6,3,2,Muitos Desvios
+" A, R, D, V, X ",MODEL,org.jbei.ice.lib.entry.sample.PlateSamples,numberToPosition,24,11,3,1,Muitos Desvios
+ V ,HASENTRY,org.jbei.ice.lib.entry.EntryController,deleteShotgunSequence,15,5,11,3,Muitos Desvios
+" A, R, D, V, X ",SERVICE,org.jbei.ice.services.rest.SearchResource,search,17,3,12,6,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.sample.RequestRetriever,getRequests,16,3,14,7,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.bulkupload.BulkEntryCreator,saveFiles,41,11,19,3,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.group.Groups,setGroupMembers,55,16,19,3,Alto Acoplamento Efferent
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.TraceSequenceDAO,create,20,5,9,3,Muitos Parametros
+ V ,TEST,org.jbei.ice.storage.hibernate.dao.ApiKeyDAOTest,testGetApiKeysCount,24,4,7,0,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.servlet.InfoToModelFactory,setCommon,44,25,8,2,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sequence.annotation.Annotations,filter,20,2,15,3,Muitos Parametros
+" A, R, D, V, X ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.EntryDAO,sharedWithUserEntryIds,23,3,15,2,Alto Acoplamento Efferent
+" D, V ",TEST,org.jbei.ice.storage.hibernate.dao.SequenceDAOTest,testUpdate,23,1,11,0,Alto Acoplamento Efferent
+" A, D, V ",TEST,org.jbei.ice.storage.hibernate.dao.FolderDAOTest,testRetrieveFolderContents,26,3,12,0,Alto Acoplamento Efferent
+" A, V ",UNDEFINED,org.jbei.ice.lib.bulkupload.BulkEntryCreator,createOrUpdateEntries,20,7,12,3,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.sample.RequestRetriever,getUserSamples,9,2,10,6,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.servlet.InfoToModelFactory,setCommon,44,25,8,2,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.Sequence,setFwdHash,3,1,2,1,Muitos Parametros
+ V ,TASK,org.jbei.ice.lib.bulkupload.BulkUploadDeleteTask,execute,21,7,7,0,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.sequence.PartSequence,toFile,46,13,16,1,Alto Acoplamento Efferent
+ V ,SERVICE,org.jbei.ice.services.rest.IceRestClient,put,11,5,11,4,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkUploadController,revertSubmitted,19,5,10,2,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Entry,setName,3,1,2,1,Muitos Parametros
+" A, D, V, X ",MODEL,org.jbei.ice.services.rest.PartDataJSONHandler,isReadable,3,1,5,4,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.folder.collection.CollectionEntries,getSampleEntries,9,1,11,6,Muitos Parametros
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.PreferencesDAO,createOrUpdatePreference,21,4,9,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.services.rest.RestResource,getUserId,25,10,9,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.folder.collection.Collections,getAllCounts,19,2,9,0,Alto Acoplamento Efferent
+" A, V, X ",SERVICE,org.jbei.ice.services.rest.IceRestClient,get,9,3,7,4,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Message,setDestinationAccounts,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.net.WebPartners,updateAPIKey,24,6,11,2,Alto Acoplamento Efferent
+ V ,SERVICE,org.jbei.ice.services.rest.PartResource,getAllTraces,13,3,9,2,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.net.RemoteFolder,getEntries,17,3,10,4,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sequence.PartSequence,getFeaturedSequence,16,3,11,2,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.net.RemoteContact,addTransferredEntriesToFolder,13,2,9,6,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.ApiKey,setSecret,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.access.PermissionsController,retrieveSetFolderPermission,25,8,14,2,Metodo Longo
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.EntryDAO,getMatchingEntryPartNumbers,17,4,11,3,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Sample,setNotes,3,1,2,1,Muitos Parametros
+" A, V, X ",EMAIL,org.jbei.ice.lib.email.GMail,send,31,1,0,4,Muitos Parametros
+" A, V ",SERVICE,org.jbei.ice.services.rest.PartResource,getSequence,28,6,12,5,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.account.UserApiKeys,deleteKey,12,5,8,2,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkCSVUpload,processUpload,38,7,11,0,Alto Acoplamento Efferent
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.GroupDAO,getMatchingGroups,22,4,13,3,Metodo Longo
+" A, V, X ",SERVICE,org.jbei.ice.services.rest.FileResource,downloadSequence,18,3,12,4,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.SequenceFeature,setFeature,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Request,toDataTransferObject,20,3,5,0,Alto Acoplamento Efferent
+" A, R, V, X ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.AccountDAO,getAccounts,16,5,9,5,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Plasmid,setCircular,4,2,2,1,Muitos Parametros
+" A, R, V, X ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.EntryDAO,retrieveAllEntries,18,4,16,5,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.storage.ModelToInfoFactory,getInfo,24,7,3,1,Muitos Desvios
+" A, R, V, X ",[CLOSEABLE],org.jbei.ice.lib.search.blast.BlastPlus,runBlast2Seq,34,5,18,2,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.SequenceHistoryModel,setUserId,3,1,2,1,Muitos Parametros
+" D, V ",TEST,org.jbei.ice.lib.bulkupload.BulkUploadControllerTest,testAutoUpdateBulkUpload,28,1,11,0,Alto Acoplamento Efferent
+" A, V, X ",[FIELDBRIDGE],org.jbei.ice.lib.access.PermissionEntryBridge,set,12,10,5,4,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.sequence.PartTraceSequences,addTraceSequence,58,12,14,2,Metodo Longo
+ V ,HASENTRY,org.jbei.ice.lib.entry.EntryLinks,get,34,5,14,1,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.ArabidopsisSeed,setGeneration,3,1,2,1,Muitos Parametros
+ V ,SERVICE,org.jbei.ice.services.rest.FileResource,getRemoteAttachment,7,2,5,3,Muitos Parametros
+" A, R, V, X ",SERVICE,org.jbei.ice.services.rest.PartResource,read,26,4,14,5,Alto Acoplamento Efferent
+" D, V ",TEST,org.jbei.ice.lib.bulkupload.BulkUploadControllerTest,testApproveBulkImport,37,1,11,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.dto.entry.CustomFields,getCustomFieldValuesForPart,26,7,15,1,Muitos Desvios
+" A, D, V ",TEST,org.jbei.ice.lib.entry.sample.SampleServiceTest,testDelete,71,1,12,0,Alto Acoplamento Efferent
+" A, R, V, X ",[CLOSEABLE],org.jbei.ice.lib.search.blast.BlastPlus,rebuildDatabase,57,13,15,1,Muitos Desvios
+ V ,HASENTRY,org.jbei.ice.lib.entry.sample.SampleService,createStorage,10,1,5,3,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.RemotePartner,setAuthenticationToken,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Permission,setUpload,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Storage,setIndex,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.storage.ModelToInfoFactory,seedInfo,23,6,9,1,Alto Acoplamento Efferent
+ V ,HASENTRY,org.jbei.ice.lib.parsers.sbol.SBOLParser,createICEModuleDefinitionRecord,32,8,11,2,Alto Acoplamento Efferent
+ V ,HASENTRY,org.jbei.ice.lib.parsers.sbol.SBOLParser,createICEComponentDefinitionRecord,19,5,9,2,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Storage,setOwnerEmail,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.TraceSequenceAlignment,setStrand,3,1,2,1,Muitos Parametros
+ V ,TEST,org.jbei.ice.lib.parsers.genbank.GenBankParserTest,testParseFeaturesTag,30,1,5,0,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.Preference,setValue,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sequence.SequenceUtil,normalizeAnnotationLocations,26,8,7,1,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.storage.ModelToInfoFactory,createTipView,53,8,17,1,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.Preference,setId,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.BulkUpload,setImportType,3,1,2,1,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.sequence.PartTraceSequences,getAll,28,4,15,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sequence.PartTraceSequences,canEdit,3,1,4,3,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.folder.collection.CollectionEntries,getEntries,3,1,4,4,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Feature,setHash,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.FeatureCurationModel,setExclude,3,1,2,1,Muitos Parametros
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.ManuscriptModelDAO,list,15,5,9,5,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkEntryCreator,submitBulkImportDraft,29,6,10,3,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.group.GroupController,getMatchingGroups,5,2,6,3,Muitos Parametros
+ V ,TEST,org.jbei.ice.lib.net.TransferredPartsTest,testReceiveTransferredEntry,30,1,9,0,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.net.RemoteContact,getPublicEntryStatistics,4,1,4,3,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.RemotePartner,setSent,3,1,2,1,Muitos Parametros
+ V ,SERVICE,org.jbei.ice.services.rest.SampleResource,getSamplesLocations,4,1,6,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkCSVUpload,processColumnHeaders,34,8,11,1,Alto Acoplamento Efferent
+ V ,HASENTRY,org.jbei.ice.lib.entry.EntryController,deleteTraceSequence,15,5,11,3,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.search.filter.SearchFieldFactory,classesForTypes,24,9,2,1,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.Comment,setModificationTime,3,1,2,1,Muitos Parametros
+ V ,TEST,org.jbei.ice.lib.bulkupload.BulkUploadControllerTest,testGetBulkImport,29,4,10,0,Metodo Longo
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.RemoteAccessModelDAO,getByFolder,13,2,9,2,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.TraceSequence,setCreationTime,3,1,2,1,Muitos Parametros
+" A, V ",HASENTRY,org.jbei.ice.lib.entry.sample.SampleService,createSample,53,13,12,4,Alto Acoplamento Efferent
+ V ,HASENTRY,org.jbei.ice.lib.entry.sample.SampleService,delete,26,7,9,3,Muitos Desvios
+ V ,[IAUTHENTICATION],org.jbei.ice.lib.account.authentication.LocalAuthentication,authenticates,6,5,4,2,Muitos Desvios
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.RequestDAO,createPredicates,10,4,7,3,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.sequence.SequenceAnalysisController,buildOrRebuildAlignment,71,17,14,2,Alto Acoplamento Efferent
+ V ,[COMPARATOR],org.jbei.ice.lib.bulkupload.DNAFeatureComparator,compare,11,7,3,2,Muitos Desvios
+ V ,TASK,org.jbei.ice.lib.entry.sequence.annotation.AutoAnnotationBlastDbBuildTask,execute,28,6,5,0,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.sequence.PartSequence,parseSequenceFile,37,7,19,3,Alto Acoplamento Efferent
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.FeatureDAO,getFeatures,12,2,9,3,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.servlet.InfoToModelFactory,infoToEntryForField,103,42,11,4,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Experiment,setCreationTime,3,1,2,1,Muitos Parametros
+" A, V, X ",SERVICE,org.jbei.ice.services.rest.FileResource,downloadCSV,20,5,13,3,Alto Acoplamento Efferent
+ V ,TEST,org.jbei.ice.lib.entry.sequence.annotation.AnnotationsTest,testCurate,25,1,17,0,Metodo Longo
+" A, R, V, X ",[CLOSEABLE],org.jbei.ice.lib.search.blast.BlastPlus,writeBigFastaFileForFeatures,51,17,19,1,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.Message,setDateSent,3,1,2,1,Muitos Parametros
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.AccountDAO,getAccounts,16,5,9,5,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkUploadValidation,validateCommonFields,8,7,5,1,Muitos Desvios
+" A, V, X ",UNDEFINED,org.jbei.ice.lib.folder.FolderContents,getContents,25,6,17,4,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Sample,setUuid,3,1,2,1,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.VisibleEntries,getEntries,17,3,16,6,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Request,setAccount,3,1,2,1,Muitos Parametros
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.EntryDAO,checkAddFilter,5,3,3,3,Muitos Parametros
+" A, R, D, V, X ",SERVICE,org.jbei.ice.services.rest.IceRestClient,putWor,17,7,13,6,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.entry.PartDefaults,get,28,5,9,1,Alto Acoplamento Efferent
+" A, R, V, X ",ABSTRACTFORMATTER,org.jbei.ice.lib.entry.sequence.composers.formatters.GenbankFormatter,format,52,19,21,2,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.jbei.auth.hmac.HmacAuthorizor,initSignature,18,6,8,5,Muitos Parametros
+ V ,[CLOSEABLE],org.jbei.ice.lib.search.blast.BlastPlus,formatBlastDb,38,4,13,0,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,org.jbei.auth.hmac.HmacSignatureFactory,buildRequestString,11,1,4,5,Muitos Parametros
+ V ,MODEL,org.jbei.ice.services.rest.ArrayDataJSONHandler,readFrom,6,1,10,6,Alto Acoplamento Efferent
+ V ,ABSTRACTFORMATTER,org.jbei.ice.lib.entry.sequence.composers.formatters.GenbankFormatter,normalizeFeatureValue,21,7,1,1,Muitos Desvios
+" A, V ",UNDEFINED,org.jbei.ice.lib.group.Groups,get,16,4,12,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.group.GroupController,getAllPublicGroupsForAccount,8,5,4,1,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.Permission,setClient,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sample.SampleCreator,createSampleObject,12,1,5,3,Muitos Parametros
+ V ,HASENTRY,org.jbei.ice.lib.access.Permissions,addPermission,27,6,9,4,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.Request,setRequested,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.BulkUpload,setAccount,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.entry.EntriesAsCSV,getEntryFields,26,7,10,0,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Audit,setEntry,3,1,2,1,Muitos Parametros
+ V ,HASENTRY,org.jbei.ice.lib.entry.EntryCreator,copyPart,27,5,15,2,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.Sample,setDepositor,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.net.RemoteContact,getToolTipDetails,13,2,9,5,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.access.RemoteAccess,add,18,9,16,2,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.Entry,setLongDescription,3,1,2,1,Muitos Parametros
+" A, D, V, X ",TEST,org.jbei.ice.lib.dto.entry.CustomFieldsTest,testGetPartsByFields,35,1,13,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.entry.attachment.Attachments,addAttachmentToEntry,13,4,10,3,Alto Acoplamento Efferent
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.SequenceDAO,hasOriginalSequence,13,2,9,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.storage.hibernate.search.HibernateSearch,executeSearchNoTerms,68,13,36,3,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.bulkupload.BulkEntryCreator,updateStatus,32,11,16,3,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Entry,setReferences,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sequence.SequenceUtil,sequenceToDNASequence,37,8,16,2,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.net.RemoteTransfer,transferEntries,42,11,18,2,Metodo Longo
+" A, V, X ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.ApiKeyDAO,getAllApiKeys,12,3,9,4,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Strain,setGenotypePhenotype,3,1,2,1,Muitos Parametros
+" D, V ",TASK,org.jbei.ice.lib.net.WebOfRegistriesTask,execute,33,9,10,0,Metodo Longo
+" A, V, X ",UNDEFINED,org.jbei.ice.lib.account.AccountController,updateAccount,26,10,8,3,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.SampleEntries,get,9,2,14,6,Muitos Parametros
+" A, R, D, V, X ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.PermissionDAO,removePermission,20,2,14,7,Muitos Parametros
+ V ,TEST,org.jbei.ice.lib.entry.sample.SampleServiceTest,testCreateSample,53,5,13,0,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.folder.collection.CollectionEntries,getEntries,22,10,7,6,Metodo Longo
+ V ,SERVICE,org.jbei.ice.services.rest.PartResource,addSample,9,1,7,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.servlet.InfoToModelFactory,setSeedFields,36,9,12,2,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.net.WebPartners,get,11,5,5,2,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.net.RemoteEntriesAsCSV,writeDataEntries,39,7,21,5,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.entry.EntryUtil,entryFieldToValue,24,8,4,2,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.Comment,toDataTransferObject,17,4,3,0,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.EntriesAsCSV,customize,39,6,20,2,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Feature,setSequence,5,2,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkUploadController,approveBulkImport,41,11,15,2,Metodo Longo
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.FolderDAO,getFolderContentIds,21,4,13,3,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.parsers.abi.ABITrace,getImage,71,20,10,2,Muitos Desvios
+" D, V ",TEST,org.jbei.ice.lib.folder.FolderControllerTest,testGetPublicFolders,20,1,11,0,Alto Acoplamento Efferent
+" A, V, X ",UNDEFINED,org.jbei.ice.lib.bulkupload.BulkUploadController,getPendingImports,31,5,13,1,Alto Acoplamento Efferent
+" A, V ",UNDEFINED,org.jbei.ice.lib.account.AccountController,createNewAccount,38,7,12,2,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.storage.hibernate.search.HibernateSearch,filterBlastResults,36,6,27,5,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Parameter,setKey,3,1,2,1,Muitos Parametros
+ V ,TEST,org.jbei.ice.lib.dto.entry.CustomFieldsTest,testCreateField,16,1,10,0,Alto Acoplamento Efferent
+ V ,[CLOSEABLE],org.jbei.ice.lib.search.blast.BlastPlus,rebuildSequenceDatabase,27,6,9,1,Muitos Desvios
+ V ,SBOLBASEVISITOR,org.jbei.ice.lib.parsers.sbol.ICESBOLParserVisitor,walkTree,22,6,8,2,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.Group,setType,3,1,2,1,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.storage.ModelToInfoFactory,getCommon,70,12,17,2,Alto Acoplamento Efferent
+" A, D, V ",TEST,org.jbei.ice.lib.dto.entry.CustomFieldsTest,testGetFieldsForPart,19,3,12,0,Alto Acoplamento Efferent
+" A, R, V, X ",SERVICE,org.jbei.ice.services.rest.AnnotationResource,getFeatures,11,4,7,5,Muitos Parametros
+" A, R, D, V, X ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.SequenceFeatureDAO,getSequenceFeaturesCount,17,2,16,3,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.entry.EntryUtil,setStrainDataFromField,12,4,3,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.net.RemoteContact,getPublicEntry,8,2,4,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.entry.attachment.Attachments,delete,15,4,10,3,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.account.Accounts,filterAccount,13,2,8,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkUploadController,addPermission,9,2,8,3,Muitos Parametros
+ V ,HASENTRY,org.jbei.ice.lib.parsers.genbank.GenBankParser,parseOriginTag,23,5,7,1,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sequence.SequenceUtil,detectFormat,9,5,5,1,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sequence.PartSequence,update,24,5,11,2,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.storage.hibernate.search.HibernateSearch,filterBlastResults,36,6,27,5,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.config.ConfigurationController,autoUpdateSetting,39,7,17,2,Alto Acoplamento Efferent
+ V ,[IAUTHENTICATION],org.jbei.ice.lib.account.authentication.LblLdapAuthentication,authenticates,25,9,4,2,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.sequence.PartTraceSequences,buildOrRebuildAlignment,71,17,14,2,Metodo Longo
+ V ,TEST,org.jbei.ice.lib.access.TokenVerificationTest,testVerifyAPIKey,22,2,9,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.net.RemoteEntries,getPublicEntries,24,5,14,5,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.Experiment,setSubjects,3,1,2,1,Muitos Parametros
+ V ,HASENTRY,org.jbei.ice.lib.parsers.fasta.FastaParser,parse,27,5,10,2,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.AccountPreferences,setPreferences,3,1,2,1,Muitos Parametros
+" A, R, V, X ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.AuditDAO,getAuditsForEntry,14,4,10,5,Muitos Parametros
+ V ,SERVICE,org.jbei.ice.services.rest.BulkUploadResource,uploadSequenceFile,16,3,10,4,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.folder.collection.Collection,getBulkUploadFolder,22,4,13,3,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.RemotePartner,setFetched,3,1,2,1,Muitos Parametros
+ V ,[CONTAINERREQUESTFILTER| READERINTERCEPTOR],org.jbei.ice.services.rest.AuthenticationInterceptor,filter,20,5,9,1,Muitos Desvios
+" A, R, D, V, X ",TEST,org.jbei.ice.lib.net.RemoteTransferTest,testGetPartsForTransfer,33,2,14,0,Alto Acoplamento Efferent
+ V ,SERVICE,org.jbei.ice.services.rest.PartResource,deleteLink,7,1,6,3,Muitos Parametros
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.BulkUploadDAO,retrieveDraftEntries,13,2,9,3,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.servlet.InfoToModelFactory,infoToSeedForField,37,12,11,3,Metodo Longo
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.FolderDAO,retrieveFolderContents,38,9,15,3,Metodo Longo
+" A, R, V, X ",SERVICE,org.jbei.ice.services.rest.ManuscriptResource,getList,4,1,5,5,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sequence.annotation.Annotations,generate,39,13,21,2,Metodo Longo
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.FolderDAO,retrieveFolderContents,38,9,15,3,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.SharedEntries,getEntries,13,2,17,6,Muitos Parametros
+" A, R, D, V, X ",HASENTRY,org.jbei.ice.lib.entry.EntryCreator,createEntry,52,17,18,3,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.folder.collection.Collection,getBulkUploadFolder,22,4,13,3,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.folder.FolderController,getPublicEntries,21,3,18,5,Alto Acoplamento Efferent
+" A, R, D, V, X ",MODEL,org.jbei.ice.services.rest.PartDataJSONHandler,readFrom,6,1,10,6,Muitos Parametros
+ V ,HASENTRY,org.jbei.ice.lib.entry.EntryController,getRequestedEntry,21,6,13,5,Muitos Desvios
+" A, V ",HASENTRY,org.jbei.ice.lib.entry.sample.SampleService,getSamplesByBarcode,20,8,12,2,Alto Acoplamento Efferent
+ V ,[CLOSEABLE],org.jbei.ice.lib.search.blast.BlastPlus,runBlastQuery,41,7,18,2,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkEntryCreator,submitBulkImportDraft,29,6,10,3,Muitos Parametros
+ V ,SERVICE,org.jbei.ice.services.rest.WebResource,getWebEntries,11,2,7,3,Muitos Parametros
+ V ,HASENTRY,org.jbei.ice.lib.folder.FolderPermissions,disablePublicReadAccess,13,3,9,0,Alto Acoplamento Efferent
+" A, D, V ",TASK,org.jbei.ice.lib.executor.TransferTask,execute,15,3,12,0,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Sequence,setIdentifier,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Storage,setStorageType,3,1,2,1,Muitos Parametros
+" D, V ",TEST,org.jbei.ice.storage.hibernate.dao.FolderDAOTest,testGetFolderSize,20,2,11,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.common.logging.Logger,sendEmail,27,6,7,2,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.sample.RequestRetriever,generateCSVFile,53,17,20,2,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.Protein,setGeneName,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Request,setType,3,1,2,1,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.message.Messages,send,33,13,13,1,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.net.RemoteEntriesAsCSV,writeDataEntries,39,7,21,5,Muitos Parametros
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.EntryDAO,getMatchingPlasmidField,25,5,9,3,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.AnnotationLocation,setGenbankStart,3,1,2,1,Muitos Parametros
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.PermissionDAO,retrieveAccountPermissions,17,2,10,3,Alto Acoplamento Efferent
+" A, D, V ",TEST,org.jbei.ice.storage.hibernate.dao.FolderDAOTest,testRemoveFolderEntries,28,2,12,0,Alto Acoplamento Efferent
+" D, V ",TEST,org.jbei.ice.lib.entry.sample.SampleServiceTest,testGetSamplesByBarcode,16,1,11,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.search.filter.SearchFieldFactory,entryFields,21,6,4,1,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.parsers.abi.ABITrace,setTraces,55,18,8,0,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sequence.PartTraceSequences,importTraceSequence,15,6,10,3,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.RemotePartner,setSalt,3,1,2,1,Muitos Parametros
+" A, V, X ",UNDEFINED,org.jbei.ice.lib.dto.web.WebEntries,fetchPartnerEntries,23,9,13,1,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Experiment,setOwnerEmail,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Request,setUpdated,3,1,2,1,Muitos Parametros
+ V ,AUTHORIZATION,org.jbei.ice.lib.dto.folder.FolderAuthorization,canRead,11,7,8,2,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.ArabidopsisSeed,setSentToABRC,3,2,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.servlet.InfoToModelFactory,infoToSeedForField,37,12,11,3,Muitos Parametros
+ V ,[IAUTHENTICATION],org.jbei.ice.lib.account.authentication.LblLdapAuthentication,isWikiUser,54,9,13,1,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.net.RemoteContact,getSequence,15,2,9,6,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Entry,setParameters,13,4,2,1,Muitos Parametros
+ V ,SERVICE,org.jbei.ice.services.rest.PartResource,addShotgunSequence,18,2,13,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkUploadController,getMatchingPartNumbersForLinks,10,3,10,3,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.TraceSequenceAlignment,setSubjectEnd,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Plasmid,setReplicatesIn,3,1,2,1,Muitos Parametros
+" A, R, D, V, X ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.PermissionDAO,retrievePermission,13,5,12,7,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.net.WebPartners,handleRemoteAddRequest,29,6,9,1,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.bulkupload.BulkCSVUpload,getBulkUploadDataFromFile,80,20,27,1,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.folder.FolderContents,remotelyAddEntrySelection,22,6,20,5,Alto Acoplamento Efferent
+" A, R, V, X ",AUTHORIZATION,org.jbei.ice.lib.entry.EntryAuthorization,canRead,18,12,10,2,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.net.WoRController,updateWebPartner,26,5,10,3,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.ManuscriptModel,setCreationTime,3,1,2,1,Muitos Parametros
+ V ,SERVICE,org.jbei.ice.services.rest.PartResource,createLink,6,1,5,3,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Permission,setCanRead,3,1,2,1,Muitos Parametros
+" A, R, V, X ",HASENTRY,org.jbei.ice.lib.parsers.genbank.GenBankParser,parseQualifiers,49,11,10,2,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.EntriesAsCSV,writeList,48,12,26,1,Muitos Desvios
+" A, R, D, V, X ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.SequenceFeatureDAO,getSequenceFeatures,16,2,17,5,Alto Acoplamento Efferent
+" A, V, X ",SERVICE,org.jbei.ice.services.rest.PartResource,addShotgunSequence,18,2,13,3,Alto Acoplamento Efferent
+" A, V ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.PermissionDAO,retrievePermission,13,5,12,7,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkUploadController,getMatchingPartNumbersForLinks,10,3,10,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.net.RemoteEntries,getPublicEntry,6,4,7,3,Muitos Parametros
+ V ,SERVICE,org.jbei.ice.services.rest.IceRestClient,postSequenceFile,15,2,11,4,Alto Acoplamento Efferent
+ V ,TEST,org.jbei.ice.lib.bulkupload.BulkUploadControllerTest,testDeletePermission,24,1,10,0,Alto Acoplamento Efferent
+ V ,TEST,org.jbei.ice.lib.entry.sample.SampleServiceTest,numberToPosition,24,9,3,1,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.Preference,setKey,3,1,2,1,Muitos Parametros
+ V ,HASENTRY,org.jbei.ice.lib.entry.Entries,validateEntries,33,8,16,2,Muitos Desvios
+" A, V, X ",[CLOSEABLE],org.jbei.ice.lib.entry.sample.SampleCSV,verify,49,15,13,0,Alto Acoplamento Efferent
+ V ,TASK,org.jbei.ice.lib.search.RebuildLuceneIndexTask,execute,18,3,10,0,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.sequence.composers.formatters.SBOLVisitor,visit,57,15,16,1,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.Entry,setKeywords,3,1,2,1,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.bulkupload.BulkEntryCreator,doUpdate,36,11,12,3,Muitos Desvios
+" V, X ",ENTITY,org.jbei.ice.storage.model.BulkUpload,toDataTransferObject,22,3,5,0,Metodo Longo
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.FolderDAO,getCanReadFolderIds,14,2,11,2,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.net.RemoteEntries,transferEntries,6,2,7,3,Muitos Parametros
+ V ,TEST,org.jbei.ice.lib.bulkupload.BulkUploadControllerTest,testRevertSubmitted,23,1,9,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.parsers.GeneralParser,parse,25,5,10,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.net.RemoteContact,getSequence,15,2,9,6,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.folder.FolderContents,getRemoteContents,30,4,16,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.servlet.InfoToModelFactory,infoToStrainForField,14,4,5,3,Muitos Parametros
+" A, R, V, X ",[CLOSEABLE],org.jbei.ice.lib.search.blast.BlastPlus,writeBigFastaFileForFeatures,51,17,19,1,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.ArabidopsisSeed,setParents,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Sample,setEntry,3,1,2,1,Muitos Parametros
+" A, V, X ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.MessageDAO,retrieveMessages,36,8,18,4,Muitos Parametros
+ V ,TASK,org.jbei.ice.lib.net.WebOfRegistriesTask,execute,33,9,10,0,Alto Acoplamento Efferent
+ V ,SERVICE,org.jbei.ice.services.rest.SequenceResource,updateSequences,15,3,10,2,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Entry,setLongDescriptionType,3,1,2,1,Muitos Parametros
+" A, R, V, X ",[CLOSEABLE],org.jbei.ice.lib.search.blast.BlastPlus,rebuildDatabase,57,13,15,1,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.config.ConfigurationController,autoUpdateSetting,39,7,17,2,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.net.RemoteEntries,retrieveRemoteToolTip,13,2,10,3,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.folder.FolderController,getPublicFolders,13,2,11,0,Alto Acoplamento Efferent
+ V ,HASENTRY,org.jbei.ice.lib.entry.EntryLinks,addLink,18,5,9,2,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sequence.PartTraceSequences,importTraceSequence,15,6,10,3,Muitos Desvios
+" A, V, X ",HASENTRY,org.jbei.ice.lib.parsers.sbol.SBOLParser,parseToGenBank,43,10,16,4,Muitos Desvios
+ V ,SERVICE,org.jbei.ice.services.rest.PartResource,moveToTrash,15,2,11,1,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Request,setPlateDescription,3,1,2,1,Muitos Parametros
+" D, V ",TEST,org.jbei.ice.lib.entry.EntryCreatorTest,testCreatePart,33,1,12,0,Metodo Longo
+" A, R, D, V, X ",TEST,org.jbei.ice.lib.entry.EntriesTest,testGetEntriesFromSelectionContext,34,1,15,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.net.RemoteEntries,retrieveRemoteToolTip,13,2,10,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.dto.web.WebEntries,getPart,15,8,9,1,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.dto.web.WebEntries,getSequence,19,6,9,1,Muitos Desvios
+" A, D, V ",TEST,org.jbei.ice.lib.entry.EntryControllerTest,testICE90,48,9,14,0,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.account.AccountController,updatePassword,11,4,8,3,Muitos Parametros
+ V ,SERVICE,org.jbei.ice.services.rest.BulkUploadResource,updateEntry,6,1,6,3,Muitos Parametros
+ V ,SBOLBASEVISITOR,org.jbei.ice.lib.parsers.sbol.ICESBOLParserVisitor,walkTree,22,6,8,2,Metodo Longo
+" A, R, V, X ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.SequenceFeatureDAO,getSequenceFeatures,16,2,17,5,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.group.Groups,addGroup,46,15,19,1,Alto Acoplamento Efferent
+ V ,HASENTRY,org.jbei.ice.lib.entry.sample.SampleService,delete,26,7,9,3,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.dto.entry.CustomFields,deleteCustomField,8,3,9,3,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Sample,setId,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Plasmid,setOriginOfReplication,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkUploadController,deletePermission,18,6,9,3,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.dto.entry.CustomFields,deleteCustomField,8,3,9,3,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.storage.ModelToInfoFactory,createTipView,53,8,17,1,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Storage,setName,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Sequence,setSequence,10,2,4,1,Muitos Parametros
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.EntryDAO,visibleEntryCount,25,5,14,3,Metodo Longo
+" A, R, D, V, X ",HASENTRY,org.jbei.ice.lib.entry.EntryController,retrieveEntryDetails,55,16,21,2,Alto Acoplamento Efferent
+" A, R, V, X ",HASENTRY,org.jbei.ice.lib.entry.EntryLinks,get,34,5,14,1,Alto Acoplamento Efferent
+ V ,HASENTRY,org.jbei.ice.lib.entry.EntryCreator,setCustomFieldValuesForPart,21,7,10,2,Muitos Desvios
+ V ,SERVICE,org.jbei.ice.services.rest.GroupResource,getGroups,6,1,6,3,Muitos Parametros
+ V ,SERVICE,org.jbei.ice.services.rest.ApiKeyResource,deleteApiKey,5,1,4,3,Muitos Parametros
+ V ,MODEL,org.jbei.ice.lib.entry.sample.PlateSamples,setSample,31,7,13,2,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.bulkupload.BulkEntryCreator,createEntries,62,17,23,4,Muitos Desvios
+ V ,TEST,org.jbei.ice.lib.bulkupload.BulkEntryCreatorTest,testUpdateEntry,24,1,7,0,Metodo Longo
+ V ,SERVICE,org.jbei.ice.services.rest.CustomFieldResource,getPartByCustomFields,12,3,9,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sequence.PartSequence,createSequenceFeature,21,6,8,2,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.RemoteAccessModel,setRemoteClientModel,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.TraceSequence,setTraceSequenceAlignment,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.folder.FolderController,getUserFolders,16,4,9,1,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.TraceSequenceAlignment,setQueryEnd,3,1,2,1,Muitos Parametros
+ V ,HASENTRY,org.jbei.ice.lib.entry.EntryPermissions,getEntryPermissions,13,6,9,0,Alto Acoplamento Efferent
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.StorageDAO,get,12,2,8,3,Muitos Parametros
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.SequenceDAO,getSequenceCount,14,2,9,0,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.account.UserApiKeys,getKeys,23,5,14,5,Alto Acoplamento Efferent
+ V ,TEST,org.jbei.ice.lib.entry.sample.SampleServiceTest,verifyMainPlate,22,3,6,3,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.folder.FolderController,createPersonalFolder,13,5,8,2,Muitos Desvios
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.MessageDAO,retrieveNewMessageCount,24,5,9,1,Muitos Desvios
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.MessageDAO,retrieveMessageCount,25,6,11,2,Muitos Desvios
+ V ,HASENTRY,org.jbei.ice.lib.folder.FolderPermissions,createRemotePermission,39,3,16,1,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.sample.RequestRetriever,generateCSVFile,53,17,20,2,Alto Acoplamento Efferent
+ V ,[FIELDBRIDGE| PARAMETERIZEDBRIDGE],org.jbei.ice.storage.hibernate.bridge.EntryBooleanPropertiesBridge,set,17,5,7,4,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.entry.attachment.Attachments,delete,15,4,10,3,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Account,setPassword,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Group,setModificationTime,3,1,2,1,Muitos Parametros
+" A, V, X ",SERVICE,org.jbei.ice.services.rest.FileResource,uploadSequence,26,5,13,5,Alto Acoplamento Efferent
+ V ,HASENTRY,org.jbei.ice.lib.entry.Entries,getCollectionEntries,22,8,9,3,Muitos Parametros
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.EntryDAO,getMatchingPlasmidField,25,5,9,3,Muitos Parametros
+" A, R, V, X ",[CLOSEABLE],org.jbei.ice.lib.search.blast.BlastPlus,runBlastQuery,41,7,18,2,Alto Acoplamento Efferent
+ V ,[CLOSEABLE],org.jbei.ice.lib.search.blast.BlastPlus,writeBigFastaFile,46,11,14,1,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.AnnotationLocation,setId,3,1,2,1,Muitos Parametros
+ V ,HASENTRY,org.jbei.ice.lib.entry.Entries,getEntriesFromSelectionContext,25,7,6,1,Muitos Desvios
+" A, R, V, X ",ABSTRACTFORMATTER,org.jbei.ice.lib.entry.sequence.composers.formatters.GenbankFormatter,format,52,19,21,2,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sequence.PartTraceSequences,importTraceSequence,15,6,10,3,Muitos Parametros
+" A, R, D, V, X ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.EntryDAO,getByVisibility,19,4,15,7,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Sequence,setEntry,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Sequence,setId,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Message,setRead,3,1,1,1,Muitos Parametros
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.PermissionDAO,retrieveAccountPermissions,17,2,10,3,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.sequence.PartTraceSequences,addTraceSequence,58,12,14,2,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.servlet.InfoToModelFactory,setProteinFields,9,6,3,2,Muitos Desvios
+ V ,HASENTRY,org.jbei.ice.lib.access.Permissions,addPermission,27,6,9,4,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.folder.FolderContents,remotelyAddEntrySelection,22,6,20,5,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.net.RemoteEntriesAsCSV,writeList,40,6,26,1,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.search.SearchController,rebuildIndexes,24,5,10,2,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.storage.ModelToInfoFactory,seedInfo,23,6,9,1,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sequence.TraceSequences,add,12,2,10,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.parsers.abi.ABITrace,isABI,19,9,2,0,Muitos Desvios
+" A, V ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.PreferencesDAO,retrievePreferenceValues,21,4,12,2,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.bulkupload.BulkCSVUpload,getBulkUploadDataFromFile,80,20,27,1,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.account.PreferencesController,getUserPreferences,18,7,11,2,Muitos Desvios
+" A, V, X ",UNDEFINED,org.jbei.ice.lib.net.WebPartners,addNewPartner,35,10,10,3,Muitos Desvios
+" A, D, V, X ",TEST,org.jbei.ice.lib.search.SearchControllerTest,testRunSearch,41,1,13,0,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.bulkupload.BulkUploadController,addAttachment,18,3,15,5,Alto Acoplamento Efferent
+" A, R, V, X ",HASENTRY,org.jbei.ice.lib.parsers.sbol.SBOLParser,parseToGenBank,43,10,16,4,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.account.TokenHash,encrypt,12,6,8,2,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.Folder,setDescription,3,1,2,1,Muitos Parametros
+ V ,[CLOSEABLE],org.jbei.ice.lib.entry.sample.SampleCSV,generate,36,6,16,0,Metodo Longo
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.PreferencesDAO,getAccountPreferences,14,3,11,2,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.storage.hibernate.search.HibernateSearch,filterBlastResults,36,6,27,5,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Folder,setParent,3,1,1,1,Muitos Parametros
+" A, R, D, V, X ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.EntryDAO,sharedWithUserEntries,28,7,20,7,Alto Acoplamento Efferent
+ V ,HASENTRY,org.jbei.ice.lib.entry.Entries,getEntriesFromSelectionContext,25,7,6,1,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.search.filter.SearchFieldFactory,searchFieldForEntryField,14,6,2,1,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.group.Groups,addGroup,46,15,19,1,Muitos Desvios
+ V ,HASENTRY,org.jbei.ice.lib.parsers.genbank.GenBankParser,parse,33,7,7,2,Muitos Desvios
+ V ,HASENTRY,org.jbei.ice.lib.entry.sample.SampleService,createChildrenStorage,14,3,4,3,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.RemotePartner,setAdded,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.servlet.InfoToModelFactory,getSelectionMarkers,25,6,7,2,Metodo Longo
+" A, V, X ",UNDEFINED,org.jbei.ice.storage.ModelToInfoFactory,createTableViewData,57,19,10,4,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Link,setLink,3,1,2,1,Muitos Parametros
+ V ,HASENTRY,org.jbei.ice.lib.entry.EntryController,createEntryComment,23,5,15,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.net.RemoteEntriesAsCSV,writeLocalEntries,37,7,19,4,Metodo Longo
+ V ,HASENTRY,org.jbei.ice.lib.parsers.genbank.GenBankParser,parseQualifiers,49,11,10,2,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.net.RemoteContact,getRemoteContents,17,2,11,6,Muitos Parametros
+" A, V, X ",UNDEFINED,org.jbei.ice.lib.net.RemoteTransfer,performTransfer,26,7,13,2,Alto Acoplamento Efferent
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.TraceSequenceDAO,create,20,5,9,3,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkEntryCreator,setCustomFieldValuesForPart,24,9,11,2,Metodo Longo
+ V ,UNDEFINED,org.jbei.auth.hmac.HmacAuthorizor,validate,14,5,6,1,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.folder.FolderContents,addEntrySelection,17,8,12,2,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sequence.annotation.Annotations,get,19,5,12,3,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkCSVUpload,setPartSampleData,27,5,5,3,Muitos Parametros
+ V ,TEST,org.jbei.ice.lib.dto.entry.CustomFieldsTest,testCreate,29,3,15,0,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.manuscript.Manuscripts,update,21,9,7,2,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.storage.ModelToInfoFactory,getTipViewCommon,29,5,7,1,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.servlet.InfoToModelFactory,infoToEntryForField,103,42,11,4,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.SequenceFeatureAttribute,setQuoted,3,1,2,1,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.access.RemoteAccess,add,18,9,16,2,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.ManuscriptModel,setFolder,3,1,2,1,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.folder.FolderContents,addRemoteEntries,57,14,21,3,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sequence.PartSequence,saveSequenceObject,18,5,8,1,Muitos Desvios
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.MessageDAO,retrieveMessageCount,25,6,11,2,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.ManuscriptModel,setAuthorLastName,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.search.SearchController,rebuildIndexes,24,5,10,2,Metodo Longo
+ V ,HASENTRY,org.jbei.ice.lib.entry.sample.SampleService,createPlate96Location,45,13,10,2,Alto Acoplamento Efferent
+ V ,HASENTRY,org.jbei.ice.lib.entry.EntryPermissions,getEntryPermissions,13,6,9,0,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkEntryCreator,createEntryForUpload,43,8,12,3,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkUploadController,deletePermission,18,6,9,3,Alto Acoplamento Efferent
+" A, V, X ",SERVICE,org.jbei.ice.services.rest.IceRestClient,postSequenceFile,15,2,11,4,Muitos Parametros
+ V ,SERVICE,org.jbei.ice.services.rest.FileResource,post,16,2,11,2,Alto Acoplamento Efferent
+" A, R, V, X ",SERVICE,org.jbei.ice.services.rest.PartnerResource,getWebEntries,6,1,7,5,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.ArabidopsisSeed,toDataTransferObject,17,2,6,0,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.net.RemoteContact,getUser,3,1,3,3,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.SequenceFeatureAttribute,setValue,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Comment,setBody,3,1,2,1,Muitos Parametros
+ V ,SERVICE,org.jbei.ice.services.rest.SampleResource,getRequests,8,2,11,6,Alto Acoplamento Efferent
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.RequestDAO,getSampleRequestByStatus,12,2,9,3,Alto Acoplamento Efferent
+" A, V ",UNDEFINED,org.jbei.ice.lib.bulkupload.BulkEntryCreator,doUpdate,36,11,12,3,Alto Acoplamento Efferent
+ V ,TEST,org.jbei.ice.lib.experiment.ExperimentsTest,testCreateStudy,31,1,10,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.servlet.InfoToModelFactory,infoToEntry,31,9,12,1,Metodo Longo
+ V ,HASENTRY,org.jbei.ice.lib.entry.EntryCreator,createPart,31,7,9,2,Alto Acoplamento Efferent
+" A, R, V, X ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.ShotgunSequenceDAO,create,9,2,5,5,Muitos Parametros
+" D, V ",TEST,org.jbei.ice.lib.entry.EntryControllerTest,testICE90,48,9,14,0,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sequence.Sequences,getRequestedSequence,22,5,13,5,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.Request,setStatus,3,1,2,1,Muitos Parametros
+ V ,HASENTRY,org.jbei.ice.lib.parsers.sbol.SBOLParser,createNewEntry,24,3,11,2,Metodo Longo
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.RequestDAO,getSampleRequestByStatus,12,2,9,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.folder.FolderController,delete,33,9,12,3,Metodo Longo
+" A, V ",UNDEFINED,org.jbei.ice.lib.folder.FolderController,getSharedUserFolders,17,4,12,1,Alto Acoplamento Efferent
+" A, R, D, V, X ",HASENTRY,org.jbei.ice.lib.entry.Entries,update,27,6,19,2,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.dto.web.WebEntries,getSequence,19,6,9,1,Alto Acoplamento Efferent
+ V ,TEST,org.jbei.ice.lib.entry.sequence.PartSequenceTest,testGet,17,1,10,0,Alto Acoplamento Efferent
+" D, V ",TEST,org.jbei.ice.lib.entry.sample.SampleServiceTest,numberToPosition,24,9,3,1,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.Attachment,setDescription,3,1,2,1,Muitos Parametros
+" A, V ",SERVICE,org.jbei.ice.services.rest.SampleResource,getRequestFile,17,4,12,2,Alto Acoplamento Efferent
+ V ,TEST,org.jbei.ice.lib.entry.EntryControllerTest,testMoveEntriesToTrash,30,1,13,0,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.dto.entry.AutoCompleteFieldValues,getMatchingValues,28,10,9,2,Alto Acoplamento Efferent
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.MessageDAO,retrieveMessages,36,8,18,4,Muitos Desvios
+" A, V, X ",UNDEFINED,org.jbei.ice.lib.entry.sequence.PartTraceSequences,getTraces,25,4,13,2,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Entry,setOwnerEmail,3,1,2,1,Muitos Parametros
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.GroupDAO,getGroupsByType,12,2,8,3,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.CustomEntryFieldValueModel,setEntry,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.auth.hmac.HmacAuthorizor,version1,22,3,0,4,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.search.SearchController,runSearch,30,9,12,2,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.Entry,setPrincipalInvestigator,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkEntryCreator,doUpdate,36,11,12,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.net.WebPartners,update,9,4,9,3,Muitos Parametros
+" A, R, D, V, X ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.PermissionDAO,getCanReadEntries,20,3,15,3,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.CustomEntryFieldModel,setFieldType,3,1,2,1,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.bulkupload.BulkEntryCreator,createEntries,62,17,23,4,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.storage.hibernate.search.HibernateSearch,executeSearch,58,9,31,4,Alto Acoplamento Efferent
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.EntryDAO,getMatchingPlasmidField,25,5,9,3,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.net.WebPartners,handleRemoteAddRequest,29,6,9,1,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sequence.TraceSequences,add,12,2,10,3,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.bulkupload.BulkUploadController,addAttachment,18,3,15,5,Muitos Parametros
+ V ,HASENTRY,org.jbei.ice.lib.entry.EntryLinks,isCompatible,15,6,2,2,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.dto.entry.CustomFields,updateField,9,2,7,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.storage.ModelToInfoFactory,createTableViewData,57,19,10,4,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.net.RemoteEntries,getPublicEntryTooltip,6,4,6,3,Muitos Parametros
+" A, V, X ",UNDEFINED,org.jbei.ice.lib.account.AccountController,authenticate,36,8,13,3,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.group.GroupController,createGroup,27,8,7,2,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.net.RemoteTransfer,getPartsForTransfer,29,11,14,1,Alto Acoplamento Efferent
+" D, V ",TEST,org.jbei.ice.storage.hibernate.dao.FolderDAOTest,testAddFolderContents,20,2,11,0,Alto Acoplamento Efferent
+ V ,HASENTRY,org.jbei.ice.lib.entry.Entries,validateEntries,33,8,16,2,Metodo Longo
+" A, V, X ",HASENTRY,org.jbei.ice.lib.parsers.genbank.GenBankParser,parseFeaturesTag,68,14,13,1,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.BulkUpload,setStatus,3,1,2,1,Muitos Parametros
+" A, R, D, V, X ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.PermissionDAO,createPermissionQuery,14,1,11,7,Muitos Parametros
+ V ,TEST,org.jbei.ice.lib.group.GroupsTest,testAddGroup,25,1,10,0,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.AnnotationLocation,setEnd,3,1,2,1,Muitos Parametros
+" D, V, X ",ENTITY,org.jbei.ice.storage.model.Permission,toDataTransferObject,33,9,6,0,Muitos Desvios
+" A, V ",UNDEFINED,org.jbei.ice.lib.entry.sequence.PartTraceSequences,parseTraceSequence,23,7,12,2,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.account.AccountController,authenticate,36,8,13,3,Muitos Parametros
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.PermissionDAO,getCanReadEntries,20,3,15,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.net.RemoteEntriesAsCSV,writeDataEntries,39,7,21,5,Muitos Desvios
+" A, D, V ",TEST,org.jbei.ice.storage.hibernate.dao.SelectionMarkerDAOTest,testGetMatchingSelectionMarkers,26,1,12,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.net.WebPartners,update,9,4,9,3,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.FeatureCurationModel,setFeature,3,1,2,1,Muitos Parametros
+ V ,TEST,org.jbei.ice.lib.group.GroupsTest,testUpdate,46,1,9,0,Alto Acoplamento Efferent
+ V ,SBOLBASEVISITOR,org.jbei.ice.lib.parsers.sbol.ICESBOLParserVisitor,getFeatureType,11,6,5,1,Muitos Desvios
+" A, V, X ",UNDEFINED,org.jbei.ice.lib.net.RemoteContact,getFolderEntries,3,1,4,4,Muitos Parametros
+" A, V, X ",[IAUTHENTICATION],org.jbei.ice.lib.account.authentication.LblLdapAuthentication,isWikiUser,54,9,13,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.net.RemoteEntries,getSequence,13,2,11,3,Muitos Parametros
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.EntryDAO,retrieveVisibleEntries,27,7,17,7,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.SequenceHistoryModel,setAction,3,1,2,1,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.folder.FolderContents,getContents,25,6,17,4,Alto Acoplamento Efferent
+" A, V ",UNDEFINED,org.jbei.ice.lib.entry.EntriesAsCSV,writeList,48,12,26,1,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.FileBulkUpload,getCSVTemplateBytes,37,10,8,3,Metodo Longo
+ V ,SERVICE,org.jbei.ice.services.rest.FolderResource,modifyFolderEntries,7,1,6,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkUploadController,updateLinkType,7,2,7,3,Muitos Parametros
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.PermissionDAO,get,13,2,10,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.group.GroupController,deleteGroup,18,6,10,2,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.servlet.InfoToModelFactory,infoToSeedForField,37,12,11,3,Muitos Desvios
+" A, V, X ",UNDEFINED,org.jbei.ice.servlet.InfoToModelFactory,infoToEntryForField,103,42,11,4,Muitos Parametros
+" A, R, D, V, X ",HASENTRY,org.jbei.ice.lib.entry.sample.SampleService,retrieveEntrySamples,60,13,19,2,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.EntryUtil,getCommonFieldValues,38,17,3,2,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sequence.PartSequence,parseSequenceFile,37,7,19,3,Metodo Longo
+ V ,HASENTRY,org.jbei.ice.lib.parsers.sbol.SBOLParser,parseToEntry,37,9,14,2,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.Permission,setFolder,3,1,2,1,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.sequence.composers.formatters.SBOLVisitor,visit,57,15,16,1,Muitos Desvios
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.PermissionDAO,get,13,2,10,3,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.group.Groups,get,12,2,9,3,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Entry,setCreationTime,3,1,2,1,Muitos Parametros
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.ShotgunSequenceDAO,writeSequenceFileToDisk,21,6,9,2,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Entry,setModificationTime,3,1,2,1,Muitos Parametros
+ V ,TEST,org.jbei.ice.storage.hibernate.dao.SequenceDAOTest,testHasSequence,23,1,10,0,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.TraceSequence,setFileId,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.SequenceHistoryModel,setTime,3,1,2,1,Muitos Parametros
+" A, R, D, V, X ",MODEL,org.jbei.ice.services.rest.ArrayDataJSONHandler,getSize,3,1,6,5,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.account.AccountController,createNewAccount,38,7,12,2,Muitos Desvios
+" A, D, V, X ",EXCEPTION,org.jbei.ice.services.rest.ICEExceptionMapper,toResponse,39,10,7,1,Muitos Desvios
+ V ,[CLOSEABLE],org.jbei.ice.lib.search.blast.BlastPlus,rebuildFeaturesBlastDatabase,37,8,9,0,Metodo Longo
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.FolderDAO,retrieveFolderContents,38,9,15,3,Muitos Desvios
+" D, V ",TEST,org.jbei.ice.storage.hibernate.dao.AuditDAOTest,testDeleteAll,33,3,12,0,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.Audit,setFirstName,3,1,2,1,Muitos Parametros
+" A, V ",SERVICE,org.jbei.ice.services.rest.AnnotationResource,curate,17,2,12,1,Alto Acoplamento Efferent
+" A, V, X ",UNDEFINED,org.jbei.ice.lib.bulkupload.BulkUploadController,deleteAttachment,18,5,13,3,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkUploadController,setFileData,13,3,6,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkCSVUpload,setPartSampleData,27,5,5,3,Muitos Desvios
+ V ,[IAUTHENTICATION],org.jbei.ice.lib.account.authentication.LblLdapAuthentication,authenticates,25,9,4,2,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.sequence.Sequences,bulkUpdate,39,12,18,2,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.services.rest.RestResource,getUserId,25,10,9,1,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.Plasmid,setBackbone,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Entry,setBioSafetyLevel,3,1,2,1,Muitos Parametros
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.PermissionDAO,getPredicateForCollection,4,3,4,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.net.RemoteContact,shareFolder,3,1,3,3,Muitos Parametros
+ V ,TEST,org.jbei.ice.lib.net.TransferredPartsTest,testReceiveTransferredEntry,30,1,9,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.entry.EntryUtil,getSeedFieldValues,23,10,5,2,Metodo Longo
+ V ,TEST,org.jbei.ice.lib.entry.sample.SampleServiceTest,createPlateSamples,28,2,9,3,Metodo Longo
+ V ,[COMPARATOR],org.jbei.ice.lib.entry.sequence.composers.formatters.SequenceFeatureComparator,compareEnds,8,6,3,2,Muitos Desvios
+ V ,TEST,org.jbei.ice.lib.bulkupload.BulkUploadControllerTest,testAddPermission,24,1,9,0,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.TraceSequenceAlignment,setQueryStart,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Account,toDataTransferObject,14,4,3,0,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.ApiKey,setStatus,3,1,2,1,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.folder.collection.CollectionEntries,getAvailableEntries,9,1,10,6,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.account.AccountController,resetPassword,33,5,14,1,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.parsers.abi.ABITrace,getImage,71,20,10,2,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.sequence.PartTraceSequences,buildOrRebuildAlignment,71,17,14,2,Muitos Desvios
+ V ,TEST,org.jbei.auth.hmac.HmacSignatureFactoryTest,setUp,16,1,9,0,Alto Acoplamento Efferent
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.PermissionDAO,createPermissionQuery,14,1,11,7,Alto Acoplamento Efferent
+" A, V, X ",HASENTRY,org.jbei.ice.lib.parsers.sbol.SBOLParser,parseToGenBank,43,10,16,4,Muitos Parametros
+" A, R, V, X ",HASENTRY,org.jbei.ice.lib.entry.EntryCreator,createEntry,52,17,18,3,Metodo Longo
+ V ,HASENTRY,org.jbei.ice.lib.entry.EntryController,retrieveEntryStatistics,17,2,9,2,Alto Acoplamento Efferent
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.EntryDAO,getByVisibilityCount,16,3,11,3,Alto Acoplamento Efferent
+ V ,[CLOSEABLE],org.jbei.ice.lib.search.blast.BlastPlus,processFeaturesBlastOutput,39,7,17,1,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.servlet.InfoToModelFactory,infoToPlasmidForField,23,7,5,3,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.message.Messages,send,33,13,13,1,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.entry.EntriesAsCSV,getSequenceName,23,9,5,1,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.entry.EntryUtil,setSeedDataFromField,29,13,6,3,Metodo Longo
+" A, R, D, V, X ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.EntryDAO,getByVisibility,19,4,15,7,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.sequence.composers.formatters.SBOL2Visitor,visit,51,32,16,1,Alto Acoplamento Efferent
+ V ,HASENTRY,org.jbei.ice.lib.entry.Entries,getCollectionEntries,22,8,9,3,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkEntryCreator,createOrRetrieveBulkUpload,8,2,6,3,Muitos Parametros
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.PreferencesDAO,createOrUpdatePreference,21,4,9,3,Alto Acoplamento Efferent
+" D, V ",TEST,org.jbei.ice.storage.hibernate.dao.SequenceDAOTest,testGetSequenceCount,36,1,10,0,Metodo Longo
+" A, V ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.EntryDAO,getAllEntryCount,16,2,12,1,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.sequence.SequenceUtil,dnaFeatureToSequenceFeature,64,17,16,2,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.folder.FolderContents,addEntryPermission,19,6,7,3,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.EntriesAsCSV,writeZip,22,4,17,1,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.net.RemoteContact,addTransferredEntriesToFolder,13,2,9,6,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sample.RequestRetriever,setRequestsStatus,25,9,12,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sequence.SequenceUtil,normalizeAnnotationLocations,26,8,7,1,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.folder.FolderContents,getRemoteContents,30,4,16,3,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.folder.collection.Collections,getSubFolders,24,9,7,1,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.search.SearchController,parseQueryString,34,12,6,1,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.ShotgunSequence,setCreationTime,3,1,2,1,Muitos Parametros
+" A, V, X ",UNDEFINED,org.jbei.ice.lib.entry.sequence.TraceSequences,bulkUpdate,33,10,16,1,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.sample.RequestRetriever,placeSampleInCart,24,6,16,2,Alto Acoplamento Efferent
+" A, R, V, X ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.ManuscriptModelDAO,list,15,5,9,5,Muitos Parametros
+ V ,TEST,org.jbei.ice.storage.hibernate.dao.GroupDAOTest,testGetGroupsByType,27,5,9,0,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Comment,setAccount,3,1,2,1,Muitos Parametros
+" D, V ",TEST,org.jbei.ice.storage.hibernate.dao.GroupDAOTest,testGetMemberGroupUUIDs,17,2,11,0,Alto Acoplamento Efferent
+" A, R, D, V, X ",MODEL,org.jbei.ice.lib.dto.ShotgunSequenceDTO,setQuality,47,11,14,1,Muitos Desvios
+" A, R, V, X ",HASENTRY,org.jbei.ice.lib.entry.sample.SampleService,createSample,53,13,12,4,Muitos Desvios
+ V ,SERVICE,org.jbei.ice.services.rest.FolderResource,read,30,6,15,9,Metodo Longo
+" A, R, V, X ",HASENTRY,org.jbei.ice.lib.entry.EntryController,createEntryComment,23,5,15,3,Alto Acoplamento Efferent
+" A, V, X ",HASENTRY,org.jbei.ice.lib.parsers.genbank.GenBankParser,splitTags,38,10,8,3,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.folder.Folders,getCanEditFolders,24,4,14,0,Alto Acoplamento Efferent
+ V ,SERVICE,org.jbei.ice.services.rest.SampleResource,getUserRequests,6,1,9,6,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkUploadController,deletePermission,18,6,9,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.net.RemoteContact,getRemoteEntry,14,2,9,6,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.ShotgunSequence,setDepositor,3,1,2,1,Muitos Parametros
+" A, V, X ",UNDEFINED,org.jbei.ice.lib.entry.HasEntry,getEntry,21,10,8,1,Muitos Desvios
+" A, R, V, X ",BULKCSVUPLOAD,org.jbei.ice.lib.bulkupload.BulkZipUpload,processUpload,82,21,21,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkEntryCreator,saveFiles,41,11,19,3,Muitos Parametros
+ V ,HASENTRY,org.jbei.ice.lib.folder.FolderPermissions,createPermission,19,6,8,1,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.folder.FolderContents,getRemotelySharedContents,36,6,19,6,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.Sequence,setComponentUri,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.ArabidopsisSeed,setHarvestDate,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.RemoteClientModel,setEmail,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.auth.hmac.HmacAuthorizor,initSignature,18,6,8,5,Muitos Desvios
+ V ,[CLOSEABLE],org.jbei.ice.lib.search.blast.BlastPlus,rebuildSequenceDatabase,27,6,9,1,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.servlet.InfoToModelFactory,setSeedFields,36,9,12,2,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.net.RemoteSequence,get,38,8,17,1,Muitos Desvios
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.EntryDAO,getMatchingEntryPartNumbers,17,4,11,3,Alto Acoplamento Efferent
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.FeatureDAO,buildFilter,4,3,3,3,Muitos Parametros
+ V ,HASENTRY,org.jbei.ice.lib.parsers.fasta.FastaParser,parse,27,5,10,2,Muitos Desvios
+ V ,TEST,org.jbei.ice.storage.hibernate.dao.SequenceDAOTest,testUpdate,23,1,11,0,Metodo Longo
+" A, V, X ",SERVICE,org.jbei.ice.services.rest.BulkUploadResource,uploadAttachmentFile,9,2,7,4,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.net.RemoteContact,getPublicTooltipDetails,4,1,4,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.net.RemoteEntries,getPublicEntries,24,5,14,5,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.Sample,setStorage,3,1,1,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkUploadValidation,validateEntry,26,9,2,1,Muitos Desvios
+ V ,SERVICE,org.jbei.ice.services.rest.IceRestClient,postWor,13,5,12,6,Muitos Desvios
+" A, V, X ",UNDEFINED,org.jbei.ice.lib.entry.attachment.Attachments,save,20,7,13,3,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.account.AccountController,updateAccount,26,10,8,3,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.bulkupload.BulkFileSBOLUpload,processUpload,23,4,15,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.entry.PartDataUtil,entryFieldToValue,22,7,3,2,Muitos Desvios
+" A, D, V, X ",TEST,org.jbei.ice.lib.entry.sample.SampleServiceTest,testCreateSample,53,5,13,0,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Entry,equals,6,3,3,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.access.PermissionsController,addPermission,30,9,12,2,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.group.Groups,setGroupMembers,55,16,19,3,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.folder.Folders,isValidEntry,39,12,11,2,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.access.TokenVerification,verifyAPIKey,14,9,8,3,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sequence.PartSequence,checkSequenceString,8,3,3,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.servlet.InfoToModelFactory,infoToSeedForField,37,12,11,3,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.folder.FolderContents,getRemotelySharedContents,36,6,19,6,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sequence.TraceSequences,bulkUpdate,33,10,16,1,Metodo Longo
+" A, V, X ",HASENTRY,org.jbei.ice.lib.entry.EntryController,moveEntriesToTrash,24,7,13,2,Alto Acoplamento Efferent
+ V ,SERVICE,org.jbei.ice.services.rest.PartResource,deleteSample,6,1,6,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.account.UserSessions,getUserAccount,14,5,8,2,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.ArabidopsisSeed,setPlantType,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Request,toDataTransferObject,20,3,5,0,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.group.GroupController,deleteGroup,18,6,10,2,Alto Acoplamento Efferent
+" A, V, X ",UNDEFINED,org.jbei.ice.lib.entry.EntryHistory,get,17,4,15,4,Muitos Parametros
+" D, V ",TEST,org.jbei.ice.lib.bulkupload.BulkUploadControllerTest,testApproveBulkImport,37,1,11,0,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.sequence.SequenceUtil,dnaFeatureToSequenceFeature,64,17,16,2,Metodo Longo
+" A, V ",UNDEFINED,org.jbei.ice.lib.bulkupload.BulkEntryCreator,createOrUpdateEntry,47,16,17,3,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.net.RemoteContact,refreshPartnerKey,3,1,3,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.entry.EntryUtil,setPartDataFromField,100,39,9,4,Alto Acoplamento Efferent
+ V ,SERVICE,org.jbei.ice.services.rest.PartResource,getSequence,28,6,12,5,Metodo Longo
+" A, R, D, V, X ",HASENTRY,org.jbei.ice.lib.entry.EntryCreator,createEntry,52,17,18,3,Alto Acoplamento Efferent
+ V ,SERVICE,org.jbei.ice.services.rest.PartResource,create,21,4,9,2,Alto Acoplamento Efferent
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.AccountDAO,getMatchingAccounts,18,3,11,2,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sequence.Sequences,getFeaturedSequence,17,3,10,2,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.storage.ModelToInfoFactory,getTipViewCommon,29,5,7,1,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.TraceSequence,setDepositor,3,1,2,1,Muitos Parametros
+ V ,[CLOSEABLE],org.jbei.ice.lib.entry.sample.SampleCSV,parse,27,8,8,0,Metodo Longo
+ V ,HASENTRY,org.jbei.ice.lib.parsers.sbol.SBOLParser,createICEModuleDefinitionRecord,32,8,11,2,Muitos Desvios
+ V ,HASENTRY,org.jbei.ice.lib.entry.Entries,update,27,6,19,2,Muitos Desvios
+" A, R, V, X ",BULKCSVUPLOAD,org.jbei.ice.lib.bulkupload.BulkZipUpload,processUpload,82,21,21,0,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sequence.PartTraceSequences,parseTraceSequence,23,7,12,2,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.Link,setUrl,3,1,2,1,Muitos Parametros
+" A, R, V, X ",SERVICE,org.jbei.ice.services.rest.PartResource,read,26,4,14,5,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.dto.entry.CustomFields,get,9,2,9,1,Alto Acoplamento Efferent
+" A, R, D, V, X ",TEST,org.jbei.ice.lib.entry.sample.SampleServiceTest,testDelete,71,1,12,0,Metodo Longo
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.TraceSequenceDAO,writeTraceSequenceToFile,4,1,6,3,Muitos Parametros
+" A, V, X ",[CLOSEABLE],org.jbei.ice.lib.search.blast.BlastPlus,writeSequenceString,6,1,4,4,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.entry.PartDataUtil,getPlasmidFieldValues,17,7,3,2,Muitos Desvios
+ V ,SERVICE,org.jbei.ice.services.rest.FileResource,getTmpFile,9,5,7,3,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.entry.EntryFactory,buildEntry,14,5,7,1,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.SequenceFeatureAttribute,setKey,3,1,2,1,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.bulkupload.BulkEntryCreator,saveFiles,41,11,19,3,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.sequence.PartSequence,toFile,46,13,16,1,Muitos Desvios
+ V ,HASENTRY,org.jbei.ice.lib.parsers.sbol.SBOLParser,createICEComponentDefinitionRecord,19,5,9,2,Muitos Desvios
+ V ,[CLOSEABLE],org.jbei.ice.lib.search.blast.BlastPlus,parseBlastOutputLine,22,2,11,1,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Audit,setTime,3,1,2,1,Muitos Parametros
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.EntryDAO,sharedEntryCount,26,5,16,3,Metodo Longo
+ V ,SERVICE,org.jbei.ice.services.rest.PartResource,addTraceSequence,16,2,13,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.storage.hibernate.search.HibernateSearch,executeSearch,58,9,31,4,Muitos Desvios
+" A, R, V, X ",SERVICE,org.jbei.ice.services.rest.IceRestClient,getWor,11,3,8,5,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.servlet.InfoToModelFactory,setPlasmidFields,10,7,3,2,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.SharedEntries,getEntries,13,2,17,6,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.folder.Folders,isValidEntry,39,12,11,2,Metodo Longo
+" D, V ",TEST,org.jbei.ice.lib.folder.FolderContentsTest,testAddEntrySelection,22,1,11,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.servlet.InfoToModelFactory,infoToPlasmidForField,23,7,5,3,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.TraceSequenceAlignment,setScore,3,1,2,1,Muitos Parametros
+" A, R, V, X ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.ApiKeyDAO,getApiKeysForUser,12,3,9,5,Muitos Parametros
+" A, V ",SERVICE,org.jbei.ice.services.rest.SearchResource,search,17,3,12,6,Alto Acoplamento Efferent
+ V ,ABSTRACTFORMATTER,org.jbei.ice.lib.entry.sequence.composers.formatters.GFF3Formatter,format,23,7,9,2,Alto Acoplamento Efferent
+" A, R, V, X ",SERVICE,org.jbei.ice.services.rest.IceRestClient,post,12,5,12,5,Muitos Parametros
+" A, V, X ",HASENTRY,org.jbei.ice.lib.entry.EntryController,getRequestedEntry,21,6,13,5,Alto Acoplamento Efferent
+ V ,HASENTRY,org.jbei.ice.lib.entry.EntryController,retrieveEntryComments,11,3,10,2,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.sequence.SequenceAnalysisController,buildOrRebuildAlignment,71,17,14,2,Muitos Desvios
+" A, R, D, V, X ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.EntryDAO,ownerEntryCount,19,3,17,3,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.folder.FolderContents,getAndFilterFolderPermissions,23,11,11,2,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.sequence.annotation.Annotations,filter,20,2,15,3,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.access.PermissionsController,propagateFolderPermissions,9,4,9,3,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.entry.attachment.Attachments,getAttachmentByFileId,8,2,9,2,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.parsers.abi.ABITrace,transmute,3,1,2,3,Muitos Parametros
+" D, V ",TEST,org.jbei.ice.storage.hibernate.dao.EntryDAOTest,testGetOwnerEntryIds,18,3,11,0,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.TraceSequenceAlignment,setSubjectStart,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.account.AccountController,createNewAccount,38,7,12,2,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.Permission,setAccount,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkEntryCreator,createEntry,5,1,6,3,Muitos Parametros
+" A, R, D, V, X ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.RequestDAO,getAccountRequests,18,4,11,6,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.access.PermissionsController,removePermission,29,8,11,2,Muitos Desvios
+ V ,SERVICE,org.jbei.ice.services.rest.PartResource,getTraces,7,2,8,3,Muitos Parametros
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.TraceSequenceDAO,create,20,5,9,3,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkCSVUpload,processUpload,38,7,11,0,Metodo Longo
+ V ,SERVICE,org.jbei.ice.services.rest.PartResource,updateComment,4,1,4,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.net.RemoteTransfer,transferFolder,19,5,9,3,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.storage.hibernate.search.HibernateSearch,generateQueriesForType,34,6,15,6,Muitos Parametros
+" A, R, D, V, X ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.EntryDAO,retrieveOwnerEntries,16,3,12,6,Muitos Parametros
+ V ,UNDEFINED,org.jbei.auth.hmac.HmacSignatureFactory,buildSignature,15,3,9,3,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.entry.EntryUtil,setProteinDataFromField,18,6,3,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.storage.ModelToInfoFactory,seedInfo,23,6,9,1,Muitos Desvios
+" A, V, X ",SERVICE,org.jbei.ice.services.rest.PartResource,getShotgunSequences,16,3,13,4,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.dto.web.WebEntries,fetchPartnerEntries,23,9,13,1,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.folder.Folders,validateFolderForSamples,14,5,10,1,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkUploadController,deleteEntry,13,2,10,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.net.RemoteEntries,getEntryDetails,14,2,11,3,Muitos Parametros
+" D, V ",TEST,org.jbei.ice.lib.entry.sample.SampleServiceTest,testRetrieveEntrySamples,31,5,13,0,Metodo Longo
+ V ,[CONTAINERREQUESTFILTER| READERINTERCEPTOR],org.jbei.ice.services.rest.AuthenticationInterceptor,filter,20,5,9,1,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Group,setUuid,3,1,2,1,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.dto.entry.CustomFields,getCustomFieldValuesForPart,26,7,15,1,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Entry,setRecordType,3,1,2,1,Muitos Parametros
+" A, V ",SERVICE,org.jbei.ice.services.rest.IceRestClient,postWor,13,5,12,6,Alto Acoplamento Efferent
+ V ,TEST,org.jbei.ice.lib.dto.entry.CustomFieldsTest,testUpdateField,24,1,10,0,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Parameter,setEntry,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.entry.EntryUtil,setSeedDataFromField,29,13,6,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.folder.collection.Collection,setFileData,14,3,6,3,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Group,setId,3,1,2,1,Muitos Parametros
+ V ,[CLOSEABLE],org.jbei.ice.lib.search.blast.BlastPlus,processFeaturesBlastOutput,39,7,17,1,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.folder.FolderContents,addEntriesToFolders,31,9,16,3,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.Configuration,setId,3,1,2,1,Muitos Parametros
+" A, R, D, V, X ",SERVICE,org.jbei.ice.services.rest.PartnerResource,getPublicFolderEntries,10,2,8,6,Muitos Parametros
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.FeatureDAO,getFeaturesGroupBy,23,3,13,2,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.Account,setCreationTime,3,1,2,1,Muitos Parametros
+ V ,TEST,org.jbei.ice.lib.account.PreferencesControllerTest,testRetrieveAccountPreferences,23,1,12,0,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.net.WebPartners,processRemoteWebPartnerAdd,14,6,5,1,Muitos Desvios
+ V ,TEST,org.jbei.ice.lib.experiment.ExperimentsTest,testGetPartStudies,26,1,8,0,Metodo Longo
+ V ,SERVICE,org.jbei.ice.services.rest.SampleResource,createSamplesModel,12,2,9,2,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.account.AccountController,resetPassword,33,5,14,1,Muitos Desvios
+" A, V ",UNDEFINED,org.jbei.ice.lib.search.WebSearch,run,47,11,17,2,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.RemotePartner,setUrl,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.entry.EntryUtil,setPlasmidDataFromField,21,7,3,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.entry.EntryUtil,getProteinFieldValues,14,5,3,2,Muitos Desvios
+" A, R, D, V, X ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.PermissionDAO,removePermission,20,2,14,7,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.net.TransferredParts,saveTransferred,22,3,6,1,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.sequence.PartTraceSequences,buildOrRebuildAlignment,71,17,14,2,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sequence.annotation.Annotations,curate,25,8,7,1,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.account.UserApiKeys,update,9,5,7,2,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.dto.entry.AutoCompleteFieldValues,getMatchingValues,28,10,9,2,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.RemotePartner,setName,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.entry.EntriesAsCSV,customize,39,6,20,2,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.SequenceFeature,setUri,3,1,2,1,Muitos Parametros
+ V ,HASENTRY,org.jbei.ice.lib.entry.sample.SampleService,getSamplesByBarcode,20,8,12,2,Muitos Desvios
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.EntryDAO,getByVisibilityCount,16,3,11,3,Muitos Parametros
+" A, V ",[CLOSEABLE],org.jbei.ice.lib.search.blast.BlastPlus,processBlastOutput,19,4,12,2,Alto Acoplamento Efferent
+ V ,TEST,org.jbei.ice.storage.hibernate.dao.SequenceDAOTest,testGetByEntry,15,1,10,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.servlet.InfoToModelFactory,infoToPlasmidForField,23,7,5,3,Metodo Longo
+ V ,SERVICE,org.jbei.ice.services.rest.SearchResource,searchPartFields,5,1,5,3,Muitos Parametros
+ V ,TEST,org.jbei.ice.storage.hibernate.dao.SequenceDAOTest,testGetSequence,12,1,10,0,Alto Acoplamento Efferent
+ V ,PERSISTENCE,org.jbei.auth.hmac.HmacOutputStream,write,4,1,3,3,Muitos Parametros
+" A, R, V, X ",SERVICE,org.jbei.ice.services.rest.ApiKeyResource,getApiKeys,10,2,7,5,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkUploadController,autoUpdateBulkUpload,4,1,4,3,Muitos Parametros
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.RequestDAO,getSampleRequestInCart,18,4,11,2,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Entry,setLinks,10,3,1,1,Muitos Parametros
+ V ,HASENTRY,org.jbei.ice.lib.parsers.genbank.GenBankParser,parseGenbankLocation,28,6,10,1,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.entry.attachment.Attachments,save,20,7,13,3,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.storage.hibernate.search.HibernateSearch,executeSearchNoTerms,68,13,36,3,Alto Acoplamento Efferent
+ V ,SERVICE,org.jbei.ice.services.rest.PartResource,deleteShotgunSequence,5,1,5,3,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.folder.FolderContents,addToRemoteFolder,19,2,14,3,Alto Acoplamento Efferent
+" A, R, D, V, X ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.FolderDAO,retrieveFolderContents,38,9,15,3,Alto Acoplamento Efferent
+ V ,AUTHORIZATION,org.jbei.ice.lib.entry.EntryAuthorization,canWrite,12,8,8,2,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sequence.annotation.Annotations,get,19,5,12,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.net.RemoteEntries,getEntryAttachments,6,4,5,3,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Configuration,setValue,3,1,2,1,Muitos Parametros
+ V ,TEST,org.jbei.ice.storage.hibernate.dao.GroupDAOTest,testGetMemberCount,14,2,10,0,Alto Acoplamento Efferent
+" A, V, X ",EMAIL,org.jbei.ice.lib.email.CustomEmail,send,21,3,8,4,Muitos Parametros
+ V ,TEST,org.jbei.ice.lib.dto.entry.CustomFieldsTest,testDeleteField,21,1,10,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkEntryCreator,updateStatus,32,11,16,3,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.RemoteAccessModel,setPermission,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.ShotgunSequence,setFileId,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.AccountPreferences,setAccount,3,1,2,1,Muitos Parametros
+ V ,TEST,org.jbei.ice.lib.folder.collection.CollectionEntriesTest,testGetEntriesByVisibility,13,1,10,0,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Entry,setCreator,3,1,2,1,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.folder.FolderController,update,17,11,8,3,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.sequence.composers.formatters.SBOL2Visitor,visit,51,32,16,1,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.Folder,setId,3,1,2,1,Muitos Parametros
+" A, V, X ",[FIELDBRIDGE| PARAMETERIZEDBRIDGE],org.jbei.ice.storage.hibernate.bridge.EntryBooleanPropertiesBridge,set,17,5,7,4,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.SampleEntries,get,9,2,14,6,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Message,setMessage,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkUploadController,clearBulkEdits,11,6,6,1,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.storage.ModelToInfoFactory,getCommon,70,12,17,2,Metodo Longo
+ V ,HASENTRY,org.jbei.ice.lib.parsers.genbank.GenBankParser,populateName,27,5,5,1,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.net.RemoteEntriesAsCSV,writeDataEntries,39,7,21,5,Alto Acoplamento Efferent
+" A, V, X ",[CONTAINERREQUESTFILTER| READERINTERCEPTOR],org.jbei.ice.services.rest.AuthenticationInterceptor,getKey,17,3,13,1,Alto Acoplamento Efferent
+ V ,MODEL,org.jbei.ice.services.rest.PartDataJSONHandler,readFrom,6,1,10,6,Alto Acoplamento Efferent
+ V ,SERVICE,org.jbei.ice.services.rest.UserResource,updatePreference,5,1,4,3,Muitos Parametros
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.ManuscriptModelDAO,list,15,5,9,5,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.net.RemoteContact,getRemoteEntry,14,2,9,6,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Feature,setUri,3,1,2,1,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.manuscript.Manuscripts,get,9,3,8,5,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkCSVUpload,processColumnHeaders,34,8,11,1,Muitos Desvios
+ V ,HASENTRY,org.jbei.ice.lib.entry.EntryCreator,createPart,31,7,9,2,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.search.WebSearch,run,47,11,17,2,Muitos Desvios
+ V ,SERVICE,org.jbei.ice.services.rest.PartResource,customExport,13,2,9,2,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.entry.EntriesAsCSV,getEntryFields,26,7,10,0,Muitos Desvios
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.EntryDAO,sharedEntryCount,26,5,16,3,Muitos Parametros
+" A, V, X ",HASENTRY,org.jbei.ice.lib.entry.sample.SampleService,getStorageLocations,7,1,9,4,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Group,setLabel,3,1,2,1,Muitos Parametros
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.BulkUploadDAO,retrieveDraftEntries,13,2,9,3,Muitos Parametros
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.BulkUploadDAO,setEntryStatus,21,3,11,2,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.entry.PartDefaults,get,28,5,9,1,Muitos Desvios
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.AuditDAO,getAuditsForEntry,14,4,10,5,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.entry.EntriesAsCSV,customize,39,6,20,2,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.account.AccountController,resetPassword,33,5,14,1,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.Account,setLastName,3,1,2,1,Muitos Parametros
+" A, V, X ",UNDEFINED,org.jbei.ice.lib.folder.collection.Collection,getBulkUploadFolder,22,4,13,3,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.parsers.abi.ABITrace,getImage,71,20,10,2,Alto Acoplamento Efferent
+ V ,HASENTRY,org.jbei.ice.lib.parsers.genbank.GenBankParser,parseGenbankLocation,28,6,10,1,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.Feature,setName,3,1,2,1,Muitos Parametros
+" A, R, D, V, X ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.FolderDAO,getEntrysByFolderType,17,3,14,6,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sequence.annotation.Annotations,curate,25,8,7,1,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.TraceSequenceAlignment,setSequenceHash,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.group.Groups,update,17,4,9,2,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.storage.ModelToInfoFactory,createTableViewData,57,19,10,4,Metodo Longo
+" A, V, X ",UNDEFINED,org.jbei.ice.lib.entry.sequence.Sequences,getRequestedSequence,22,5,13,5,Alto Acoplamento Efferent
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.PermissionDAO,getPredicate,4,2,4,3,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.SelectionMarker,setEntry,3,1,2,1,Muitos Parametros
+" A, D, V ",TEST,org.jbei.ice.storage.hibernate.dao.AuditDAOTest,testDeleteAll,33,3,12,0,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.ManuscriptModel,setAuthorFirstName,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Message,setTitle,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.servlet.InfoToModelFactory,getSelectionMarkers,25,6,7,2,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.Protein,setFullName,3,1,2,1,Muitos Parametros
+" A, R, V, X ",HASENTRY,org.jbei.ice.lib.entry.EntryCreator,copyPart,27,5,15,2,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Sequence,setRevHash,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sequence.SequenceAnalysisController,getTraceSequences,23,9,7,1,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkEntryCreator,submitBulkImportDraft,29,6,10,3,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.bulkupload.BulkUploadController,create,34,6,15,2,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Preference,setAccount,3,1,2,1,Muitos Parametros
+" A, V, X ",UNDEFINED,DevelopmentServer,main,10,1,13,1,Alto Acoplamento Efferent
+" A, R, D, V, X ",SERVICE,org.jbei.ice.services.rest.SampleResource,getUserRequests,6,1,9,6,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.search.SearchController,runSearch,30,9,12,2,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.CustomEntryFieldModel,setDisabled,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.CustomEntryFieldModel,setEntryType,3,1,2,1,Muitos Parametros
+" A, V, X ",SERVICE,org.jbei.ice.services.rest.BulkUploadResource,uploadSequenceFile,16,3,10,4,Muitos Parametros
+" A, V ",UNDEFINED,org.jbei.ice.lib.entry.sample.RequestRetriever,setRequestsStatus,25,9,12,3,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.sequence.composers.formatters.SBOL2Visitor,visit,51,32,16,1,Metodo Longo
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.RequestDAO,get,14,4,11,6,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Comment,setEntry,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Message,setFromEmail,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.RemoteClientModel,setRemotePartner,3,1,2,1,Muitos Parametros
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.EntryDAO,sharedEntryCount,26,5,16,3,Muitos Desvios
+" A, V, X ",HASENTRY,org.jbei.ice.lib.entry.sample.SampleService,createSample,53,13,12,4,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.folder.Folders,isValidEntry,39,12,11,2,Muitos Desvios
+" A, R, D, V, X ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.EntryDAO,retrieveAllEntries,18,4,16,5,Alto Acoplamento Efferent
+" A, V, X ",UNDEFINED,org.jbei.ice.lib.access.PermissionsController,removePermission,14,3,9,4,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.ArabidopsisSeed,setHomozygosity,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Account,setDescription,3,1,2,1,Muitos Parametros
+" A, V ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.PermissionDAO,hasPermissionMulti,20,2,12,6,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.PartDataUtil,getCommonFieldValues,38,17,3,2,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.entry.attachment.Attachments,addAttachmentToEntry,13,4,10,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.storage.hibernate.search.HibernateSearch,checkEnableHasAttribute,15,6,5,2,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.net.RemoteContact,getAttachmentList,4,1,4,3,Muitos Parametros
+ V ,TEST,org.jbei.ice.storage.hibernate.dao.FolderDAOTest,testRetrieveFolderContents,26,3,12,0,Metodo Longo
+ V ,ABSTRACTFORMATTER,org.jbei.ice.lib.entry.sequence.composers.formatters.FastaFormatter,format,12,5,7,2,Muitos Desvios
+ V ,HASENTRY,org.jbei.ice.lib.parsers.genbank.GenBankParser,parse,33,7,7,2,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.folder.FolderContents,addEntryPermission,19,6,7,3,Muitos Desvios
+" A, V, X ",UNDEFINED,org.jbei.ice.lib.entry.sequence.Sequences,parseSequence,23,8,13,2,Alto Acoplamento Efferent
+" A, R, D, V, X ",TEST,org.jbei.ice.lib.entry.sequence.annotation.AnnotationsTest,testCurate,25,1,17,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.parsers.abi.ABITrace,getTrace,18,5,4,1,Muitos Desvios
+ V ,SERVICE,org.jbei.ice.services.rest.FileResource,uploadSequence,26,5,13,5,Metodo Longo
+ V ,TEST,org.jbei.ice.lib.entry.EntryLinksTest,testGetParents,18,1,10,0,Alto Acoplamento Efferent
+" A, R, D, V, X ",SERVICE,org.jbei.ice.services.rest.UserResource,getRequestedSamples,4,1,7,6,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.net.RemoteContact,getPublicEntrySequence,9,2,4,3,Muitos Parametros
+ V ,HASENTRY,org.jbei.ice.lib.entry.EntryCreator,addReadPermission,10,3,5,3,Muitos Parametros
+" A, R, D, V, X ",SERVICE,org.jbei.ice.services.rest.SampleResource,getRequests,8,2,11,6,Muitos Parametros
+ V ,TEST,org.jbei.ice.storage.hibernate.dao.SequenceDAOTest,testHasOriginalSequence,21,1,10,0,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.parsers.abi.ABITrace,setIndex,38,12,4,0,Muitos Desvios
+" A, D, V, X ",MODEL,org.jbei.ice.services.rest.ArrayDataJSONHandler,isReadable,3,1,5,4,Muitos Parametros
+ V ,AUTHORIZATION,org.jbei.ice.lib.entry.EntryAuthorization,canRead,18,12,10,2,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkUploadValidation,validateEntry,26,9,2,1,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sequence.PartTraceSequences,parseTraceSequence,23,7,12,2,Metodo Longo
+" A, V, X ",UNDEFINED,org.jbei.ice.storage.hibernate.search.HibernateSearch,executeSearch,58,9,31,4,Muitos Parametros
+ V ,TEST,org.jbei.ice.lib.entry.sample.SampleServiceTest,testRetrieveEntrySamples,31,5,13,0,Muitos Desvios
+ V ,TEST,org.jbei.ice.lib.bulkupload.BulkUploadControllerTest,testAutoUpdateBulkUpload,28,1,11,0,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.Message,setDestinationGroups,3,1,2,1,Muitos Parametros
+" A, V, X ",UNDEFINED,org.jbei.ice.lib.account.PreferencesController,updatePreference,6,2,7,4,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.SequenceFeatureAttribute,setId,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sequence.PartSequence,update,24,5,11,2,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Entry,setPartNumber,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.dto.web.WebEntries,fetchPartnerEntries,23,9,13,1,Metodo Longo
+ V ,HASENTRY,org.jbei.ice.lib.entry.EntryController,deleteShotgunSequence,15,5,11,3,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.folder.FolderContents,addRemoteEntries,57,14,21,3,Metodo Longo
+ V ,PERSISTENCE,org.jbei.auth.hmac.HmacInputStream,read,9,2,6,3,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Account,setType,4,2,2,1,Muitos Parametros
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.SequenceFeatureDAO,getSequenceFeaturesCount,17,2,16,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.parsers.abi.ABITrace,getMaximum,11,7,1,0,Muitos Desvios
+" A, V ",UNDEFINED,org.jbei.ice.lib.bulkupload.BulkEntryCreator,createEntryForUpload,43,8,12,3,Alto Acoplamento Efferent
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.MessageDAO,retrieveNewMessageCount,24,5,9,1,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.dto.web.WebEntries,fetchMore,14,6,2,0,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.Audit,setUserId,3,1,2,1,Muitos Parametros
+" A, V ",UNDEFINED,org.jbei.ice.servlet.InfoToModelFactory,setSeedFields,36,9,12,2,Alto Acoplamento Efferent
+" A, R, D, V, X ",TEST,org.jbei.ice.lib.access.RemoteAccessTest,testAdd,29,3,16,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkUploadController,getPendingImports,31,5,13,1,Metodo Longo
+" A, V, X ",SERVICE,org.jbei.ice.services.rest.IceRestClient,putWor,17,7,13,6,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.access.TokenVerification,verifyAPIKey,14,9,8,3,Muitos Parametros
+" A, V ",UNDEFINED,org.jbei.ice.lib.folder.FolderController,getAvailableFolders,15,2,12,1,Alto Acoplamento Efferent
+" A, R, V, X ",[CLOSEABLE],org.jbei.ice.lib.entry.sample.SampleCSV,verify,49,15,13,0,Muitos Desvios
+ V ,HASENTRY,org.jbei.ice.lib.parsers.sbol.SBOLParser,createICEModuleDefinitionRecord,32,8,11,2,Metodo Longo
+" D, V ",TEST,org.jbei.ice.lib.entry.sequence.PartSequenceTest,testUpdate,47,2,11,0,Alto Acoplamento Efferent
+" A, R, V, X ",BULKCSVUPLOAD,org.jbei.ice.lib.bulkupload.BulkZipUpload,processUpload,82,21,21,0,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkUploadController,deleteDraftById,12,4,11,2,Alto Acoplamento Efferent
+ V ,TEST,org.jbei.ice.storage.hibernate.dao.SequenceDAOTest,testCreate,14,1,10,0,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Account,setEmail,3,1,2,1,Muitos Parametros
+" D, V ",TEST,org.jbei.ice.lib.group.GroupsTest,testUpdate,46,1,9,0,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.AnnotationLocation,setInbetween,3,1,2,1,Muitos Parametros
+" A, V, X ",[CLOSEABLE],org.jbei.ice.lib.search.blast.BlastPlus,formatBlastDb,38,4,13,0,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.ApiKey,setHashedToken,3,1,2,1,Muitos Parametros
+ V ,SERVICE,org.jbei.ice.services.rest.FileResource,getTmpFile,9,5,7,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkUploadController,revertSubmitted,19,5,10,2,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.net.RemoteContact,getToolTipDetails,13,2,9,5,Muitos Parametros
+ V ,[COMPARATOR],org.jbei.ice.lib.entry.sequence.composers.formatters.SequenceFeatureComparator,compare,11,7,3,2,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.Feature,setGenbankType,3,1,2,1,Muitos Parametros
+ V ,SERVICE,org.jbei.ice.services.rest.PartResource,getSequence,28,6,12,5,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.sequence.annotation.Annotations,generate,39,13,21,2,Alto Acoplamento Efferent
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.SequenceDAO,getSequence,13,2,10,1,Alto Acoplamento Efferent
+" A, R, V, X ",HASENTRY,org.jbei.ice.lib.entry.sample.SampleService,createSample,53,13,12,4,Metodo Longo
+" A, V, X ",UNDEFINED,org.jbei.ice.services.rest.RestResource,getUserId,25,10,9,1,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.net.WebPartners,addNewPartner,35,10,10,3,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.folder.FolderContents,addRemoteEntries,57,14,21,3,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Storage,setParent,3,1,1,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.entry.attachment.Attachments,save,20,7,13,3,Muitos Desvios
+ V ,TEST,org.jbei.ice.lib.dto.entry.CustomFieldsTest,testGetField,13,1,9,0,Alto Acoplamento Efferent
+ V ,HASENTRY,org.jbei.ice.lib.parsers.fasta.FastaParser,parse,27,5,10,2,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.email.Email,send,0,1,2,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.entry.EntryUtil,validates,12,8,5,1,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.Permission,setEntry,3,1,2,1,Muitos Parametros
+" A, R, D, V, X ",MODEL,org.jbei.ice.services.rest.ArrayDataJSONHandler,readFrom,6,1,10,6,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.storage.hibernate.search.HibernateSearch,executeSearch,58,9,31,4,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.Sequence,setFileName,3,1,2,1,Muitos Parametros
+" A, R, V, X ",HASENTRY,org.jbei.ice.lib.entry.sample.SampleService,createPlate96Location,45,13,10,2,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.sequence.PartTraceSequences,addTraceSequence,58,12,14,2,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.folder.Folders,updateFolderType,19,8,14,2,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.Plasmid,setPromoters,3,1,2,1,Muitos Parametros
+" A, R, D, V, X ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.EntryDAO,visibleEntryCount,25,5,14,3,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.folder.collection.Collections,getSubFolders,24,9,7,1,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.net.RemoteContact,handleRemoteRemoveRequest,12,5,8,2,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkEntryCreator,setCustomFieldValuesForPart,24,9,11,2,Alto Acoplamento Efferent
+ V ,TEST,org.jbei.ice.lib.bulkupload.BulkUploadControllerTest,testGetBulkImport,29,4,10,0,Alto Acoplamento Efferent
+ V ,TEST,org.jbei.ice.lib.group.GroupControllerTest,testGetMatchingGroups,28,1,8,0,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.net.RemoteSequence,get,38,8,17,1,Alto Acoplamento Efferent
+ V ,HASENTRY,org.jbei.ice.lib.entry.Entries,getFolderEntries,8,2,7,3,Muitos Parametros
+ V ,MODEL,org.jbei.ice.lib.entry.sample.PlateSamples,setSample,31,7,13,2,Muitos Desvios
+" A, V, X ",UNDEFINED,org.jbei.ice.services.rest.RestClient,get,0,1,4,4,Muitos Parametros
+" A, V ",UNDEFINED,org.jbei.ice.lib.folder.FolderContents,addEntrySelection,17,8,12,2,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.net.RemoteEntriesAsCSV,writeLocalEntries,37,7,19,4,Alto Acoplamento Efferent
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.EntryDAO,getMatching,12,2,8,3,Muitos Parametros
+" A, R, V, X ",SERVICE,org.jbei.ice.services.rest.FileResource,uploadSequence,26,5,13,5,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.net.RemoteEntries,getPublicEntryStatistics,6,4,6,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.parsers.GeneralParser,parse,25,5,10,1,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.folder.FolderContents,addEntriesToFolders,31,9,16,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.storage.hibernate.search.HibernateSearch,generateQueriesForType,34,6,15,6,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.Experiment,setLabel,3,1,2,1,Muitos Parametros
+" A, R, D, V, X ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.EntryDAO,sharedWithUserEntries,28,7,20,7,Muitos Parametros
+ V ,TEST,org.jbei.ice.lib.entry.EntryLinksTest,testGetChildren,20,1,10,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkEntryCreator,createOrUpdateEntry,47,16,17,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.net.WebPartners,updateAPIKey,24,6,11,2,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.AnnotationLocation,setSequenceFeature,3,1,2,1,Muitos Parametros
+" A, V, X ",UNDEFINED,org.jbei.ice.lib.entry.EntryUtil,getSeedFieldValues,23,10,5,2,Muitos Desvios
+" A, V, X ",UNDEFINED,org.jbei.ice.lib.net.RemoteFolder,getEntries,17,3,10,4,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.access.PermissionsController,removePermission,29,8,11,2,Metodo Longo
+ V ,SERVICE,org.jbei.ice.services.rest.FolderResource,read,30,6,15,9,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.net.RemoteTransfer,performTransfer,26,7,13,2,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.Comment,setCreationTime,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.SequenceFeature,setName,3,1,2,1,Muitos Parametros
+" D, V ",TEST,org.jbei.ice.lib.dto.entry.CustomFieldsTest,testGetPartsByFields,35,1,13,0,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.sequence.Sequences,bulkUpdate,39,12,18,2,Alto Acoplamento Efferent
+" A, V, X ",UNDEFINED,org.jbei.ice.lib.folder.collection.CollectionEntries,getEntriesByVisibility,10,2,13,8,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.account.UserApiKeys,requestKey,25,3,10,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.entry.PartDataUtil,entryFieldToValue,22,7,3,2,Metodo Longo
+ V ,MODEL,org.jbei.ice.services.rest.ArrayDataJSONHandler,writeTo,6,1,10,7,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Account,setSalt,3,1,2,1,Muitos Parametros
+ V ,[CLOSEABLE],org.jbei.ice.lib.search.blast.BlastPlus,runBlast2Seq,34,5,18,2,Metodo Longo
+" A, D, V ",MODEL,org.jbei.ice.lib.dto.ShotgunSequenceDTO,setQuality,47,11,14,1,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.sequence.SequenceUtil,sequenceToDNASequence,37,8,16,2,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.access.PermissionsController,addPermission,30,9,12,2,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.search.SearchController,parseQueryString,34,12,6,1,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.BulkUpload,setLastUpdateTime,3,1,2,1,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.group.Groups,setGroupMembers,55,16,19,3,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.folder.collection.CollectionEntries,getPersonalEntries,10,3,11,6,Muitos Parametros
+" A, V, X ",UNDEFINED,org.jbei.ice.lib.bulkupload.FileBulkUpload,getCSVTemplateBytes,37,10,8,3,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.account.PreferencesController,getUserPreferences,18,7,11,2,Alto Acoplamento Efferent
+ V ,SERVICE,org.jbei.ice.services.rest.FileResource,downloadCSV,20,5,13,3,Muitos Parametros
+ V ,HASENTRY,org.jbei.ice.lib.entry.Entries,getCollectionEntries,22,8,9,3,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.net.RemoteTransfer,transferEntries,42,11,18,2,Alto Acoplamento Efferent
+ V ,HASENTRY,org.jbei.ice.lib.parsers.sbol.SBOLParser,parseToEntry,37,9,14,2,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.servlet.InfoToModelFactory,updateEntryField,22,7,3,2,Metodo Longo
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.EntryDAO,retrieveUserEntries,24,6,18,8,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.net.RemoteContact,getRemoteContents,17,2,11,6,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Account,setFirstName,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.folder.collection.CollectionEntries,getSampleEntries,9,1,11,6,Alto Acoplamento Efferent
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.SequenceDAO,hasSequence,13,2,9,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.group.Groups,getMatchingGroups,9,2,10,2,Alto Acoplamento Efferent
+ V ,HASENTRY,org.jbei.ice.lib.entry.EntryController,updateEntryComment,12,6,9,4,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.net.RemoteEntriesAsCSV,writeList,40,6,26,1,Alto Acoplamento Efferent
+" A, R, D, V, X ",MODEL,org.jbei.ice.services.rest.PartDataJSONHandler,writeTo,6,1,10,7,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Protein,setUploadedFrom,3,1,2,1,Muitos Parametros
+" A, V ",SBOLBASEVISITOR,org.jbei.ice.lib.parsers.sbol.ICESBOLParserVisitor,visit,42,10,12,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.account.UserApiKeys,getKeys,23,5,14,5,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.access.PermissionsController,retrieveSetFolderPermission,25,8,14,2,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Entry,setIntellectualProperty,3,1,2,1,Muitos Parametros
+ V ,[CLOSEABLE],org.jbei.ice.lib.search.blast.BlastPlus,rebuildFeaturesBlastDatabase,37,8,9,0,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.Message,setParent,3,1,1,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Account,setInitials,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.entry.EntryUtil,setPlasmidDataFromField,21,7,3,3,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.folder.FolderContents,getRemotelySharedContents,36,6,19,6,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.RemoteClientModel,toDataTransferObject,12,1,4,0,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.TraceSequenceAlignment,setId,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.entry.EntriesAsCSV,getSequenceName,23,9,5,1,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.net.WoRController,updateWebPartner,26,5,10,3,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Attachment,setEntry,3,1,2,1,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.EntryUtil,setSeedDataFromField,29,13,6,3,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.account.AccountController,authenticate,36,8,13,3,Muitos Desvios
+" A, R, D, V, X ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.EntryDAO,retrieveUserEntries,24,6,18,8,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Permission,toDataTransferObject,33,9,6,0,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Storage,setId,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.group.GroupController,createGroup,27,8,7,2,Muitos Desvios
+" A, R, V, X ",SERVICE,org.jbei.ice.services.rest.PartResource,getHistory,5,1,6,5,Muitos Parametros
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.EntryDAO,sharedWithUserEntryIds,23,3,15,2,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sequence.PartSequence,toFile,46,13,16,1,Metodo Longo
+" A, R, V, X ",HASENTRY,org.jbei.ice.lib.entry.sample.SampleService,retrieveEntrySamples,60,13,19,2,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.ManuscriptModel,setStatus,3,1,2,1,Muitos Parametros
+" A, V ",SERVICE,org.jbei.ice.services.rest.FileResource,downloadSequence,18,3,12,4,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.entry.EntryUtil,setProteinDataFromField,18,6,3,3,Muitos Desvios
+ V ,HASENTRY,org.jbei.ice.lib.experiment.Experiments,createOrUpdateStudy,28,8,7,1,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.sequence.SequenceAnalysisController,buildOrRebuildAlignment,71,17,14,2,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.Configuration,setKey,3,1,2,1,Muitos Parametros
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.EntryDAO,getOwnerEntryIds,14,3,9,2,Alto Acoplamento Efferent
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.EntryDAO,sharedWithUserEntries,28,7,20,7,Metodo Longo
+" A, R, D, V, X ",HASENTRY,org.jbei.ice.lib.entry.EntryController,retrieveEntryDetails,55,16,21,2,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.account.UserApiKeys,getKeys,23,5,14,5,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Entry,setShortDescription,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.TraceSequenceAlignment,setModificationTime,3,1,2,1,Muitos Parametros
+" A, R, V, X ",[CLOSEABLE],org.jbei.ice.lib.entry.sample.SampleCSV,generate,36,6,16,0,Alto Acoplamento Efferent
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.ShotgunSequenceDAO,writeSequenceFileToDisk,21,6,9,2,Muitos Desvios
+ V ,SERVICE,org.jbei.ice.services.rest.BulkUploadResource,read,5,1,7,3,Muitos Parametros
+ V ,HASENTRY,org.jbei.ice.lib.entry.sample.SampleService,delete,26,7,9,3,Muitos Parametros
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.PermissionDAO,retrieveFolderPermissions,23,3,10,2,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.RemotePartner,setPartnerStatus,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sequence.PartSequence,parseSequenceFile,37,7,19,3,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sequence.PartSequence,sameFeatureUri,6,7,2,2,Muitos Desvios
+ V ,SERVICE,org.jbei.ice.services.rest.BulkUploadResource,setLink,10,2,9,2,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Group,setAutoJoin,3,1,2,1,Muitos Parametros
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.EntryDAO,getMatchingPlasmidField,25,5,9,3,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sequence.PartSequence,update,24,5,11,2,Muitos Desvios
+" A, D, V ",TEST,org.jbei.ice.lib.entry.EntryCreatorTest,testCreatePart,33,1,12,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sequence.PartSequence,checkFeature,12,8,3,2,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.storage.hibernate.search.HibernateSearch,createBlastFilterQuery,10,3,7,3,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Sequence,setSequence,10,2,4,1,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Folder,setName,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkUploadController,retrieveByUser,14,4,10,2,Alto Acoplamento Efferent
+ V ,HASENTRY,org.jbei.ice.lib.entry.EntryController,createEntryComment,23,5,15,3,Muitos Desvios
+" A, R, D, V, X ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.MessageDAO,retrieveMessages,36,8,18,4,Alto Acoplamento Efferent
+" A, R, D, V, X ",TEST,org.jbei.ice.lib.dto.entry.CustomFieldsTest,testCreate,29,3,15,0,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.folder.FolderContents,remotelyAddEntrySelection,22,6,20,5,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Attachment,setFileId,3,1,2,1,Muitos Parametros
+ V ,HASENTRY,org.jbei.ice.lib.entry.sample.SampleService,createPlate96Location,45,13,10,2,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.Entry,setOwner,3,1,2,1,Muitos Parametros
+" A, R, V, X ",HASENTRY,org.jbei.ice.lib.folder.FolderPermissions,createRemotePermission,39,3,16,1,Alto Acoplamento Efferent
+ V ,HASENTRY,org.jbei.ice.lib.entry.EntryLinks,get,34,5,14,1,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.account.Accounts,getAvailableAccounts,16,3,10,6,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.entry.EntryUtil,getCommonFieldValues,38,17,3,2,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.net.RemoteTransfer,getPartsForTransfer,29,11,14,1,Muitos Desvios
+ V ,TEST,org.jbei.ice.storage.hibernate.dao.FolderDAOTest,testRemoveFolderEntries,28,2,12,0,Metodo Longo
+" D, V ",TEST,org.jbei.ice.storage.hibernate.dao.AuditDAOTest,testGetAuditsForEntryCount,17,2,11,0,Alto Acoplamento Efferent
+ V ,SERVICE,org.jbei.ice.services.rest.FileResource,downloadCSV,20,5,13,3,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.Feature,setIdentification,3,1,2,1,Muitos Parametros
+ V ,HASENTRY,org.jbei.ice.lib.entry.sample.SampleService,delete,26,7,9,3,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.net.RemoteTransfer,transferEntries,42,11,18,2,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.servlet.InfoToModelFactory,infoToEntry,31,9,12,1,Muitos Desvios
+ V ,[FIELDBRIDGE],org.jbei.ice.lib.access.PermissionEntryBridge,fieldValueExists,8,5,4,2,Muitos Desvios
+ V ,TEST,org.jbei.ice.lib.access.TokenVerificationTest,testVerifyAPIKey,22,2,9,0,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.TraceSequenceAlignment,setSubjectAlignment,3,1,2,1,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.storage.ModelToInfoFactory,createTableViewData,57,19,10,4,Muitos Desvios
+" A, R, D, V, X ",HASENTRY,org.jbei.ice.lib.entry.EntryController,retrieveEntryDetails,55,16,21,2,Metodo Longo
+ V ,TEST,org.jbei.ice.lib.entry.sample.SampleServiceTest,verifyMainPlate,22,3,6,3,Muitos Parametros
+ V ,TEST,org.jbei.ice.storage.hibernate.dao.SequenceDAOTest,testRetrieve,14,1,10,0,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Permission,setGroup,3,1,2,1,Muitos Parametros
+ V ,SERVICE,org.jbei.ice.services.rest.SampleResource,createSamples,14,2,9,2,Alto Acoplamento Efferent
+ V ,TASK,org.jbei.ice.lib.entry.EntryPermissionTask,execute,17,5,6,0,Muitos Desvios
+ V ,SERVICE,org.jbei.ice.services.rest.CustomFieldResource,create,9,6,6,2,Muitos Desvios
+" A, V, X ",UNDEFINED,org.jbei.ice.lib.dto.entry.AutoCompleteFieldValues,getMatchingValues,28,10,9,2,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.net.WebPartners,addNewPartner,35,10,10,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkCSVUpload,setPartSampleData,27,5,5,3,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.folder.collection.CollectionEntries,getSharedEntries,9,1,11,6,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.entry.attachment.Attachments,getByEntry,6,2,9,2,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Message,setDateRead,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.storage.hibernate.search.HibernateSearch,cleanQuery,23,4,1,1,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.account.Accounts,getAvailableAccounts,16,3,10,6,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.entry.PartDataUtil,getCommonFieldValues,38,17,3,2,Metodo Longo
+ V ,HASENTRY,org.jbei.ice.lib.entry.EntryController,deleteTraceSequence,15,5,11,3,Alto Acoplamento Efferent
+" A, R, D, V, X ",TEST,org.jbei.ice.lib.entry.EntryControllerTest,testICE90,48,9,14,0,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.TraceSequence,setSequence,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.net.RemoteSequence,get,38,8,17,1,Metodo Longo
+" D, V ",EXCEPTION,org.jbei.ice.services.rest.ICEExceptionMapper,toResponse,39,10,7,1,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.access.PermissionsController,setFolderPermissions,17,3,12,3,Muitos Parametros
+ V ,TEST,org.jbei.ice.lib.bulkupload.BulkUploadControllerTest,testRevertSubmitted,23,1,9,0,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sample.RequestRetriever,placeSampleInCart,24,6,16,2,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.Account,setInstitution,3,1,2,1,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.sample.RequestRetriever,generateCSVFile,53,17,20,2,Muitos Desvios
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.MessageDAO,retrieveMessages,36,8,18,4,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.parsers.abi.ABITrace,setIndex,38,12,4,0,Metodo Longo
+ V ,TEST,org.jbei.ice.lib.bulkupload.BulkUploadControllerTest,testAddPermission,24,1,9,0,Alto Acoplamento Efferent
+" A, R, V, X ",[CLOSEABLE],org.jbei.ice.lib.search.blast.BlastPlus,writeBigFastaFile,46,11,14,1,Alto Acoplamento Efferent
+" A, V, X ",UNDEFINED,org.jbei.ice.lib.bulkupload.BulkEntryCreator,updateEntry,11,3,10,4,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.folder.FolderController,delete,33,9,12,3,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.folder.collection.CollectionEntries,getSharedEntries,9,1,11,6,Muitos Parametros
+" A, R, D, V, X ",MODEL,org.jbei.ice.lib.dto.ShotgunSequenceDTO,setQuality,47,11,14,1,Alto Acoplamento Efferent
+ V ,TEST,org.jbei.ice.storage.hibernate.dao.SequenceDAOTest,testGetSequenceCount,36,1,10,0,Alto Acoplamento Efferent
+" D, V ",TEST,org.jbei.ice.lib.net.RemoteTransferTest,testGetPartsForTransfer,33,2,14,0,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.Account,setModificationTime,3,1,2,1,Muitos Parametros
+ V ,TEST,org.jbei.ice.lib.access.RemoteAccessTest,testAdd,29,3,16,0,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkEntryCreator,createOrUpdateEntries,20,7,12,3,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.Sample,setCreationTime,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Message,setStatus,3,1,2,1,Muitos Parametros
+ V ,HASENTRY,org.jbei.ice.lib.entry.EntryCreator,createPart,31,7,9,2,Muitos Desvios
+ V ,HASENTRY,org.jbei.ice.lib.entry.Entries,getCollectionEntries,22,8,9,3,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.BulkUpload,setContents,4,2,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Experiment,setUrl,3,1,2,1,Muitos Parametros
+" A, R, V, X ",[CLOSEABLE],org.jbei.ice.lib.search.blast.BlastPlus,rebuildDatabase,57,13,15,1,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Attachment,setFileName,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Feature,setCuration,3,1,2,1,Muitos Parametros
+" A, V, X ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.FolderDAO,getFolderContentIds,21,4,13,3,Alto Acoplamento Efferent
+" D, V, X ",ENTITY,org.jbei.ice.storage.model.Permission,toDataTransferObject,33,9,6,0,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.ApiKey,setReadOnly,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.RemotePartner,setLastContact,3,1,2,1,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.storage.hibernate.search.HibernateSearch,executeSearchNoTerms,68,13,36,3,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.group.Groups,addGroup,46,15,19,1,Metodo Longo
+" A, V, X ",UNDEFINED,org.jbei.ice.lib.net.RemoteContact,transferSequence,3,1,3,4,Muitos Parametros
+ V ,SERVICE,org.jbei.ice.services.rest.BulkUploadResource,post,20,3,14,3,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Account,setLastLoginTime,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.config.ConfigurationController,updateSetting,12,3,8,3,Muitos Parametros
+" A, V, X ",UNDEFINED,org.jbei.auth.hmac.HmacAuthorizor,version1,22,3,0,4,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.sequence.composers.formatters.SBOLVisitor,visit,31,6,13,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.FileBulkUpload,getCSVTemplateBytes,37,10,8,3,Muitos Parametros
+ V ,TASK,org.jbei.ice.lib.entry.EntryPermissionTask,addPermissions,26,5,8,1,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.ShotgunSequence,setId,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkCSVUpload,processColumnHeaders,34,8,11,1,Metodo Longo
+" A, V, X ",UNDEFINED,org.jbei.ice.lib.net.RemoteEntriesAsCSV,writeLocalEntries,37,7,19,4,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.folder.FolderContents,getRemoteContents,30,4,16,3,Metodo Longo
+ V ,SERVICE,org.jbei.ice.services.rest.PartResource,getAttachments,5,2,6,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkUploadController,deleteAttachment,18,5,13,3,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.Entry,setSequence,3,1,2,1,Muitos Parametros
+ V ,[CLOSEABLE],org.jbei.ice.lib.search.blast.BlastPlus,rebuildSequenceDatabase,27,6,9,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkEntryCreator,setCustomFieldValuesForPart,24,9,11,2,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.bulkupload.BulkUploadController,addSequence,14,3,11,5,Muitos Parametros
+" A, R, D, V, X ",SERVICE,org.jbei.ice.services.rest.UserResource,getProfileEntries,11,1,8,6,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Entry,setVisibility,4,2,3,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkEntryCreator,updateEntry,11,3,10,4,Alto Acoplamento Efferent
+" A, D, V, X ",MODEL,org.jbei.ice.services.rest.ArrayDataJSONHandler,isWriteable,3,1,5,4,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.AccountPreferences,setRestrictionEnzymes,3,1,2,1,Muitos Parametros
+ V ,TASK,org.jbei.ice.lib.entry.EntryPermissionTask,addPermissions,26,5,8,1,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.net.WebPartners,handleRemoteAddRequest,29,6,9,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.account.AccountUtils,encryptNewUserPassword,13,4,9,2,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.ShotgunSequence,setEntry,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.entry.PartDataUtil,join,15,5,5,1,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.net.WebPartners,addNewPartner,35,10,10,3,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.account.PreferencesController,createPreference,4,1,4,3,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Folder,setPropagatePermissions,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.entry.EntriesAsCSV,getEntryFields,26,7,10,0,Metodo Longo
+ V ,HASENTRY,org.jbei.ice.lib.entry.EntryLinks,addLink,18,5,9,2,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.Audit,setAction,3,1,2,1,Muitos Parametros
+" A, V, X ",SERVICE,org.jbei.ice.services.rest.IceRestClient,put,11,5,11,4,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.folder.FolderContents,getAndFilterFolderPermissions,23,11,11,2,Muitos Desvios
+" A, V, X ",[FIELDBRIDGE],org.jbei.ice.lib.access.EntryFolderPermissionBridge,set,12,9,6,4,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkFileSBOLUpload,processUpload,23,4,15,0,Metodo Longo
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.EntryDAO,visibleEntryCount,25,5,14,3,Muitos Parametros
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.PermissionDAO,retrieveFolderPermissions,23,3,10,2,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.storage.ModelToInfoFactory,getCommon,70,12,17,2,Muitos Desvios
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.MessageDAO,retrieveNewMessageCount,24,5,9,1,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.folder.collection.CollectionEntries,getEntriesByVisibility,10,2,13,8,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.folder.FolderContents,addEntriesToFolders,31,9,16,3,Muitos Desvios
+" D, V ",TEST,org.jbei.ice.lib.bulkupload.BulkUploadControllerTest,testRetrieveByUser,32,3,7,0,Metodo Longo
+" A, V ",UNDEFINED,org.jbei.ice.lib.access.PermissionsController,setFolderPermissions,17,3,12,3,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Feature,setId,3,1,2,1,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.storage.ModelToInfoFactory,createTipView,53,8,17,1,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.dto.entry.CustomFields,createField,10,1,8,3,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Storage,setUuid,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sequence.SequenceAnalysisController,getTraceSequences,23,9,7,1,Muitos Desvios
+ V ,TEST,org.jbei.ice.lib.entry.sample.SampleServiceTest,createPlateSamples,28,2,9,3,Alto Acoplamento Efferent
+ V ,MODEL,org.jbei.ice.services.rest.PartDataJSONHandler,writeTo,6,1,10,7,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.BulkUpload,toDataTransferObject,22,3,5,0,Alto Acoplamento Efferent
+ V ,SERVICE,org.jbei.ice.services.rest.BulkUploadResource,getPartNumbersForUpload,5,1,6,3,Muitos Parametros
+" A, V, X ",HASENTRY,org.jbei.ice.lib.access.Permissions,addPermission,27,6,9,4,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.bulkupload.BulkEntryCreator,updateStatus,32,11,16,3,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.OwnerEntries,retrieveOwnerEntries,19,4,19,6,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.folder.FolderContents,getContents,25,6,17,4,Metodo Longo
+ V ,SERVICE,org.jbei.ice.services.rest.FileResource,uploadSequence,26,5,13,5,Muitos Desvios
+ V ,HASENTRY,org.jbei.ice.lib.entry.EntryCreator,setCustomFieldValuesForPart,21,7,10,2,Alto Acoplamento Efferent
+" A, V ",UNDEFINED,org.jbei.ice.lib.folder.FolderController,delete,33,9,12,3,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sequence.PartTraceSequences,getAll,28,4,15,0,Metodo Longo
+" A, R, V, X ",[CLOSEABLE],org.jbei.ice.lib.search.blast.BlastPlus,writeBigFastaFile,46,11,14,1,Muitos Desvios
+ V ,HASENTRY,org.jbei.ice.lib.entry.EntryController,deleteShotgunSequence,15,5,11,3,Muitos Parametros
+ V ,SERVICE,org.jbei.ice.services.rest.FileResource,getEntriesInFile,11,2,9,3,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.bulkupload.BulkUploadController,approveBulkImport,41,11,15,2,Alto Acoplamento Efferent
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.RequestDAO,getCount,14,3,9,2,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sequence.Sequences,parseSequence,23,8,13,2,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sample.RequestRetriever,updateStatus,12,5,10,3,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.access.RemoteAccess,createRemoteAccessModel,8,1,5,3,Muitos Parametros
+" A, R, D, V, X ",HASENTRY,org.jbei.ice.lib.parsers.genbank.GenBankParser,parseFeaturesTag,68,14,13,1,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.ShotgunSequence,setFilename,3,1,2,1,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.folder.FolderController,getPublicEntries,21,3,18,5,Muitos Parametros
+" A, V, X ",UNDEFINED,org.jbei.ice.lib.bulkupload.BulkEntryCreator,createEntries,62,17,23,4,Muitos Parametros
+" D, V ",TEST,org.jbei.ice.storage.hibernate.dao.FolderDAOTest,testGetFolderContents,20,2,11,0,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.SelectionMarker,setName,3,1,2,1,Muitos Parametros
+ V ,TEST,org.jbei.ice.lib.net.WebPartnersTest,refreshPartnerKey,5,1,6,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.net.WoRController,updateWebPartner,26,5,10,3,Muitos Parametros
+" D, V ",TEST,org.jbei.ice.lib.entry.EntriesTest,testGetEntriesFromSelectionContext,34,1,15,0,Metodo Longo
+" A, R, V, X ",[CLOSEABLE],org.jbei.ice.lib.search.blast.BlastPlus,processFeaturesBlastOutput,39,7,17,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.net.RemoteEntriesAsCSV,writeList,40,6,26,1,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.Entry,setPrincipalInvestigatorEmail,3,1,2,1,Muitos Parametros
+" A, V ",UNDEFINED,org.jbei.ice.lib.folder.FolderContents,removeFolderContents,15,4,12,4,Alto Acoplamento Efferent
+" A, V, X ",HASENTRY,org.jbei.ice.lib.entry.EntryController,updateEntryComment,12,6,9,4,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.account.UserApiKeys,requestKey,25,3,10,1,Metodo Longo
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.GroupDAO,getMatchingGroups,22,4,13,3,Muitos Parametros
+" A, R, D, V, X ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.PermissionDAO,hasPermission,21,2,13,7,Muitos Parametros
+ V ,HASENTRY,org.jbei.ice.lib.parsers.sbol.SBOLParser,parseToGenBank,43,10,16,4,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.Sample,setLabel,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.entry.PartDefaults,get,28,5,9,1,Metodo Longo
+" A, R, V, X ",[CLOSEABLE],org.jbei.ice.lib.entry.sample.SampleCSV,createSample,17,1,4,5,Muitos Parametros
+" A, R, V, X ",HASENTRY,org.jbei.ice.lib.entry.Entries,validateEntries,33,8,16,2,Alto Acoplamento Efferent
+" A, R, D, V, X ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.PermissionDAO,hasPermissionMulti,20,2,12,6,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.dto.entry.CustomFields,create,16,4,11,2,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkEntryCreator,saveFiles,41,11,19,3,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.access.PermissionsController,removePermission,29,8,11,2,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sample.RequestRetriever,placeSampleInCart,24,6,16,2,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkUploadController,create,34,6,15,2,Muitos Desvios
+ V ,ENTITY,org.jbei.ice.storage.hibernate.filter.EntrySecurityFilterFactory,getFilter,17,6,6,0,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.Entry,setCreatorEmail,3,1,2,1,Muitos Parametros
+" D, V ",TEST,org.jbei.ice.lib.entry.EntryLinksTest,testAddLink,17,1,11,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.folder.FolderController,getFoldersByType,12,3,9,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.servlet.InfoToModelFactory,updateEntryField,22,7,3,2,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.Sequence,setSequenceUser,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkCSVUpload,processUpload,38,7,11,0,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkEntryCreator,updateStatus,32,11,16,3,Muitos Parametros
+ V ,TEST,org.jbei.ice.lib.group.GroupsTest,testAddGroup,25,1,10,0,Metodo Longo
+ V ,[CLOSEABLE],org.jbei.ice.lib.search.blast.BlastPlus,runBlastQuery,41,7,18,2,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.SequenceFeature,setId,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Audit,setInstitution,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.folder.Folders,getCanEditFolders,24,4,14,0,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.TraceSequence,setFilename,3,1,2,1,Muitos Parametros
+ V ,TEST,org.jbei.ice.storage.hibernate.dao.SelectionMarkerDAOTest,testGetMatchingSelectionMarkers,26,1,12,0,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.Sequence,setSequenceFeatures,3,1,1,1,Muitos Parametros
+" A, V, X ",SERVICE,org.jbei.ice.services.rest.CollectionResource,read,20,4,13,7,Alto Acoplamento Efferent
+" A, V, X ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.GroupDAO,getMatchingGroups,22,4,13,3,Alto Acoplamento Efferent
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.FolderDAO,getFolderSize,19,3,14,3,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Group,setOwner,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sample.RequestRetriever,setRequestsStatus,25,9,12,3,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.Audit,setRemoteClientModel,3,1,2,1,Muitos Parametros
+ V ,TEST,org.jbei.ice.storage.hibernate.dao.GroupDAOTest,testGetGroupsByType,27,5,9,0,Metodo Longo
+" A, D, V ",TEST,org.jbei.ice.lib.entry.sequence.PartSequenceTest,testUpdate,47,2,11,0,Metodo Longo
+" A, V ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.EntryDAO,getVisibleEntryIds,19,3,12,2,Alto Acoplamento Efferent
+ V ,HASENTRY,org.jbei.ice.lib.entry.EntryController,createEntryComment,23,5,15,3,Metodo Longo
+" A, V, X ",SERVICE,org.jbei.ice.services.rest.PartResource,updateSequence,13,2,8,4,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.CustomEntryFieldValueModel,setValue,3,1,2,1,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.EntryUtil,setPartDataFromField,100,39,9,4,Muitos Desvios
+ V ,SERVICE,org.jbei.ice.services.rest.FileResource,getEntriesInFile,11,2,9,3,Muitos Parametros
+" A, V, X ",SBOLBASEVISITOR,org.jbei.ice.lib.parsers.sbol.ICESBOLParserVisitor,visit,42,10,12,1,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.entry.EntriesAsCSV,writeZip,22,4,17,1,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.net.RemoteEntries,getPublicEntries,24,5,14,5,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.net.RemoteTransfer,transferFolder,19,5,9,3,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.bulkupload.BulkUploadController,getBulkImport,21,4,14,4,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.ApiKey,setExpires,3,1,2,1,Muitos Parametros
+" A, R, D, V, X ",SERVICE,org.jbei.ice.services.rest.CollectionResource,read,20,4,13,7,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Folder,setCreationTime,3,1,2,1,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.net.RemoteEntries,getPublicEntries,24,5,14,5,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.servlet.InfoToModelFactory,infoToEntryForField,103,42,11,4,Metodo Longo
+ V ,HASENTRY,org.jbei.ice.lib.parsers.genbank.GenBankParser,populateName,27,5,5,1,Metodo Longo
+" A, R, V, X ",[IAUTHENTICATION],org.jbei.ice.lib.account.authentication.LblLdapAuthentication,isWikiUser,54,9,13,1,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.OwnerEntries,retrieveOwnerEntries,19,4,19,6,Muitos Parametros
+" A, R, D, V, X ",HASENTRY,org.jbei.ice.lib.entry.sample.SampleService,retrieveEntrySamples,60,13,19,2,Metodo Longo
+ V ,HASENTRY,org.jbei.ice.lib.entry.EntryController,moveEntriesToTrash,24,7,13,2,Muitos Desvios
+" A, R, D, V, X ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.EntryDAO,retrieveVisibleEntries,27,7,17,7,Muitos Parametros
+" A, V ",UNDEFINED,org.jbei.ice.lib.access.PermissionsController,addPermission,30,9,12,2,Alto Acoplamento Efferent
+ V ,HASENTRY,org.jbei.ice.lib.entry.Entries,update,27,6,19,2,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.parsers.GeneralParser,parse,25,5,10,1,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.Folder,setOwnerEmail,3,1,2,1,Muitos Parametros
+ V ,[CLOSEABLE],org.jbei.ice.lib.search.blast.BlastPlus,runBlast2Seq,34,5,18,2,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.storage.hibernate.dao.EntryAccessorUtilities,columnFieldToString,20,9,2,1,Muitos Desvios
+" A, V, X ",UNDEFINED,org.jbei.ice.lib.message.Messages,send,33,13,13,1,Alto Acoplamento Efferent
+" D, V ",TEST,org.jbei.ice.storage.hibernate.dao.SequenceDAOTest,testGetSequenceFilename,14,1,11,0,Alto Acoplamento Efferent
+ V ,[FIELDBRIDGE],org.jbei.ice.lib.access.EntryFolderPermissionBridge,set,12,9,6,4,Muitos Desvios
+" A, V ",UNDEFINED,org.jbei.ice.servlet.InfoToModelFactory,infoToEntry,31,9,12,1,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Entry,setId,3,1,2,1,Muitos Parametros
+" D, V ",TASK,org.jbei.ice.lib.net.WebOfRegistriesTask,execute,33,9,10,0,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.net.WebPartners,updateAPIKey,24,6,11,2,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sequence.PartSequence,parseSequenceFile,37,7,19,3,Muitos Parametros
+ V ,[CLOSEABLE],org.jbei.ice.lib.search.blast.BlastPlus,rebuildFeaturesBlastDatabase,37,8,9,0,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Folder,setModificationTime,3,1,2,1,Muitos Parametros
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.PermissionDAO,retrievePermission,13,5,12,7,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.TraceSequenceAlignment,setQueryAlignment,3,1,2,1,Muitos Parametros
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.ParameterDAO,filter,14,5,7,1,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sample.RequestRetriever,getUserSamples,9,2,10,6,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.EntriesAsCSV,writeList,48,12,26,1,Alto Acoplamento Efferent
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.FeatureDAO,getFeatures,12,2,9,3,Muitos Parametros
+" A, V, X ",UNDEFINED,org.jbei.ice.lib.bulkupload.BulkUploadController,getBulkImport,21,4,14,4,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.BulkUpload,setLinkType,3,1,2,1,Muitos Parametros
+ V ,[CLOSEABLE],org.jbei.ice.lib.entry.sample.SampleCSV,parse,27,8,8,0,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.SequenceFeature,setStrand,3,1,2,1,Muitos Parametros
+" A, D, V ",TEST,org.jbei.ice.storage.hibernate.dao.GroupDAOTest,testRetrieveMemberGroups,18,3,12,0,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.VisibleEntries,getEntries,17,3,16,6,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Entry,setVersionId,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.folder.FolderContents,remotelyAddEntrySelection,22,6,20,5,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.account.UserApiKeys,getKeys,23,5,14,5,Muitos Desvios
+" D, V ",TEST,org.jbei.ice.lib.experiment.ExperimentsTest,testCreateStudy,31,1,10,0,Metodo Longo
+" A, R, V, X ",SERVICE,org.jbei.ice.services.rest.UserResource,get,12,2,10,5,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Permission,setSecret,3,1,2,1,Muitos Parametros
+" D, V ",TEST,org.jbei.ice.lib.net.WebPartnersTest,setUp,34,1,0,0,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.AccountCreator,createTestAccount,19,3,9,2,Alto Acoplamento Efferent
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.ApiKeyDAO,getAllApiKeys,12,3,9,4,Alto Acoplamento Efferent
+" A, R, D, V, X ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.FolderDAO,getFolderSize,19,3,14,3,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.bulkupload.BulkCSVUpload,getBulkUploadDataFromFile,80,20,27,1,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.net.RemoteTransfer,getPartsForTransfer,29,11,14,1,Metodo Longo
+" D, V ",TEST,org.jbei.ice.storage.hibernate.dao.AuditDAOTest,testGetAuditsForEntry,18,2,11,0,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.ManuscriptModel,setTitle,3,1,2,1,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.folder.FolderContents,addRemoteEntries,57,14,21,3,Alto Acoplamento Efferent
+ V ,HASENTRY,org.jbei.ice.lib.parsers.genbank.GenBankParser,parseOriginTag,23,5,7,1,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.SequenceHistoryModel,setSequenceString,3,1,2,1,Muitos Parametros
+ V ,[CLOSEABLE],org.jbei.ice.lib.entry.sample.SampleCSV,generate,36,6,16,0,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.net.WoRController,updateWebPartner,26,5,10,3,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.config.ConfigurationController,autoUpdateSetting,39,7,17,2,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.RemotePartner,setApiKey,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.BulkUpload,setName,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.ApiKey,setClientId,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkUploadController,getPendingImports,31,5,13,1,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.ApiKey,setCreationTime,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.search.SearchController,rebuildIndexes,24,5,10,2,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.group.Groups,setGroupMembers,55,16,19,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.servlet.InfoToModelFactory,getLinks,21,5,6,2,Muitos Desvios
+" A, R, V, X ",HASENTRY,org.jbei.ice.lib.parsers.sbol.SBOLParser,parseToEntry,37,9,14,2,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Strain,setHost,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Entry,setFundingSource,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.TraceSequence,setId,3,1,2,1,Muitos Parametros
+ V ,TEST,org.jbei.ice.storage.hibernate.dao.SequenceDAOTest,testDelete,17,1,10,0,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.sequence.Sequences,getRequestedSequence,22,5,13,5,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.net.RemoteTransfer,performTransfer,26,7,13,2,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.access.RemoteAccess,getOrCreateRemoteFolder,12,2,3,3,Muitos Parametros
+ V ,SERVICE,org.jbei.ice.services.rest.IceRestClient,post,12,5,12,5,Muitos Desvios
+" A, D, V, X ",TEST,org.jbei.ice.lib.entry.EntryControllerTest,testMoveEntriesToTrash,30,1,13,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.folder.FolderController,acceptTransferredFolder,11,5,8,2,Muitos Desvios
+ X ,ENTITY,org.jbei.ice.storage.model.Link,setId,3,1,2,1,Muitos Parametros
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.EntryDAO,retrieveUserEntries,24,6,18,8,Muitos Desvios
+ V ,TEST,org.jbei.ice.lib.bulkupload.BulkUploadControllerTest,testDeletePermission,24,1,10,0,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.net.WoRController,setEnable,10,2,7,3,Muitos Parametros
+" A, V, X ",[CLOSEABLE],org.jbei.ice.lib.entry.sample.SampleCSV,verify,49,15,13,0,Metodo Longo
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.EntryDAO,visibleEntryCount,25,5,14,3,Muitos Desvios
+ V ,SERVICE,org.jbei.ice.services.rest.IceRestClient,put,11,5,11,4,Alto Acoplamento Efferent
+ V ,HASENTRY,org.jbei.ice.lib.experiment.Experiments,createOrUpdateStudy,28,8,7,1,Muitos Desvios
+ V ,TEST,org.jbei.ice.storage.hibernate.dao.SequenceDAOTest,testHasSequence,23,1,10,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkUploadController,addSequence,14,3,11,5,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.folder.Folders,updateFolderType,19,8,14,2,Alto Acoplamento Efferent
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.MessageDAO,retrieveMessageCount,25,6,11,2,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.access.RemoteAccess,createPermissionModel,8,1,5,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.folder.FolderController,update,17,11,8,3,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.SequenceFeature,setSequence,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.account.AccountController,authenticate,36,8,13,3,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.entry.sample.RequestRetriever,getRequests,16,3,14,7,Muitos Parametros
+" A, R, V, X ",SERVICE,org.jbei.ice.services.rest.BulkUploadResource,post,20,3,14,3,Alto Acoplamento Efferent
+ V ,HASENTRY,org.jbei.ice.lib.entry.sample.SampleService,getStorageLocations,7,1,9,4,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.ArabidopsisSeed,toDataTransferObject,17,2,6,0,Alto Acoplamento Efferent
+ V ,SERVICE,org.jbei.ice.services.rest.UserResource,get,12,2,10,5,Alto Acoplamento Efferent
+ V ,SERVICE,org.jbei.ice.services.rest.IceRestClient,delete,7,1,7,3,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.SequenceFeatureAttribute,setSequenceFeature,3,1,2,1,Muitos Parametros
+ V ,SERVICE,org.jbei.ice.services.rest.PartResource,read,26,4,14,5,Metodo Longo
+" A, R, D, V, X ",SERVICE,org.jbei.ice.services.rest.FolderResource,read,30,6,15,9,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.storage.hibernate.search.HibernateSearch,filterBlastResults,36,6,27,5,Muitos Desvios
+" A, D, V, X ",MODEL,org.jbei.ice.lib.entry.sample.PlateSamples,setSample,31,7,13,2,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.ApiKey,setOwnerEmail,3,1,2,1,Muitos Parametros
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.EntryDAO,sharedWithUserEntries,28,7,20,7,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.message.Messages,get,24,3,14,2,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.folder.FolderContents,addToRemoteFolder,19,2,14,3,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sequence.SequenceUtil,sequenceToDNASequence,37,8,16,2,Muitos Desvios
+" A, V, X ",SERVICE,org.jbei.ice.services.rest.PartResource,addTraceSequence,16,2,13,3,Alto Acoplamento Efferent
+" A, V, X ",UNDEFINED,org.jbei.ice.lib.folder.collection.CollectionEntries,getEntries,22,10,7,6,Muitos Desvios
+" A, R, V, X ",[IAUTHENTICATION],org.jbei.ice.lib.account.authentication.LblLdapAuthentication,authenticateWithLDAP,57,11,8,2,Metodo Longo
+ V ,HASENTRY,org.jbei.ice.lib.entry.EntryController,deleteTraceSequence,15,5,11,3,Muitos Parametros
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.PermissionDAO,retrieveGroupPermissions,13,2,8,3,Muitos Parametros
+" A, D, V, X ",MODEL,org.jbei.ice.services.rest.PartDataJSONHandler,isWriteable,3,1,5,4,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.utils.Utils,getString,9,2,9,1,Alto Acoplamento Efferent
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.TraceSequenceDAO,getByEntry,13,2,8,3,Muitos Parametros
+" A, R, D, V, X ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.RequestDAO,get,14,4,11,6,Muitos Parametros
+" D, V ",TEST,org.jbei.ice.lib.folder.FolderContentsTest,testGetContents,40,4,19,0,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.storage.hibernate.search.HibernateSearch,generateQueriesForType,34,6,15,6,Metodo Longo
+ V ,HASENTRY,org.jbei.ice.lib.access.Permissions,addPermission,27,6,9,4,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.bulkupload.BulkEntryCreator,createOrUpdateEntry,47,16,17,3,Muitos Desvios
+" A, R, V, X ",ABSTRACTFORMATTER,org.jbei.ice.lib.entry.sequence.composers.formatters.GenbankFormatter,format,52,19,21,2,Alto Acoplamento Efferent
+" A, R, D, V, X ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.EntryDAO,retrieveVisibleEntries,27,7,17,7,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkEntryCreator,createOrUpdateEntries,20,7,12,3,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Storage,setDescription,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.account.AccountController,updateAccount,26,10,8,3,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Link,setEntry,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Entry,setRecordId,3,1,2,1,Muitos Parametros
+" A, V, X ",UNDEFINED,org.jbei.ice.lib.access.PermissionsController,addPermission,26,5,10,4,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.BulkUpload,setCreationTime,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.AccountPreferences,setId,3,1,2,1,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Entry,getSelectionMarkersAsString,9,2,5,0,Alto Acoplamento Efferent
+ V ,TEST,org.jbei.ice.storage.hibernate.dao.PermissionDAOTest,testGetByFolder,26,1,10,0,Metodo Longo
+ X ,ENTITY,org.jbei.ice.storage.model.Request,setGrowthTemperature,3,1,2,1,Muitos Parametros
+" A, V, X ",HASENTRY,org.jbei.ice.lib.parsers.genbank.GenBankParser,parseQualifiers,49,11,10,2,Metodo Longo
+ V ,SERVICE,org.jbei.ice.services.rest.IceRestClient,putWor,17,7,13,6,Muitos Desvios
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkEntryCreator,renameBulkUpload,9,3,8,3,Muitos Parametros
+" A, V ",UNDEFINED,org.jbei.ice.lib.group.Groups,getGroupMembers,20,8,12,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.bulkupload.BulkEntryCreator,doUpdate,36,11,12,3,Metodo Longo
+ V ,[COMPARATOR],org.jbei.ice.lib.bulkupload.DNAFeatureComparator,compareEnds,8,6,3,2,Muitos Desvios
+ V ,PERSISTENCE,org.jbei.ice.storage.hibernate.dao.AccountDAO,getAccounts,16,5,9,5,Alto Acoplamento Efferent
+" A, V, X ",UNDEFINED,org.jbei.ice.lib.folder.FolderContents,removeFolderContents,15,4,12,4,Muitos Parametros
+" A, V, X ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.PermissionDAO,hasPermission,21,2,13,7,Alto Acoplamento Efferent
+ V ,UNDEFINED,org.jbei.ice.lib.folder.FolderController,delete,33,9,12,3,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.Permission,setCanWrite,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.dto.web.WebEntries,getPart,15,8,9,1,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Protein,setOrganism,3,1,2,1,Muitos Parametros
+ V ,UNDEFINED,org.jbei.ice.lib.entry.sample.RequestRetriever,updateStatus,12,5,10,3,Muitos Parametros
+ V ,TEST,org.jbei.ice.lib.entry.sample.SampleServiceTest,createPlateSamples,28,2,9,3,Muitos Parametros
+" A, R, V, X ",SERVICE,org.jbei.ice.services.rest.PartResource,getSequence,28,6,12,5,Muitos Parametros
+ X ,ENTITY,org.jbei.ice.storage.model.TraceSequence,setEntry,3,1,2,1,Muitos Parametros
+" A, R, D, V, X ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.FolderDAO,getEntrysByFolderType,17,3,14,6,Muitos Parametros
+" D, V ",TEST,org.jbei.ice.lib.search.SearchControllerTest,testRunSearch,41,1,13,0,Metodo Longo
+ V ,TASK,org.jbei.ice.lib.entry.sequence.annotation.AutoAnnotationBlastDbBuildTask,execute,28,6,5,0,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.storage.hibernate.HibernateUtil,initialize,70,4,7,1,Metodo Longo
+ V ,UNDEFINED,org.jbei.ice.lib.folder.Folders,validateFolderForSamples,14,5,10,1,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.Account,equals,5,3,3,1,Muitos Parametros
+" A, R, V, X ",[CLOSEABLE],org.jbei.ice.lib.search.blast.BlastPlus,writeBigFastaFileForFeatures,51,17,19,1,Alto Acoplamento Efferent
+" A, R, D, V, X ",PERSISTENCE,org.jbei.ice.storage.hibernate.dao.EntryDAO,sharedEntryCount,26,5,16,3,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,org.jbei.ice.lib.bulkupload.BulkEntryCreator,createEntries,62,17,23,4,Alto Acoplamento Efferent
+ X ,ENTITY,org.jbei.ice.storage.model.CustomEntryFieldValueModel,setField,3,1,2,1,Muitos Parametros

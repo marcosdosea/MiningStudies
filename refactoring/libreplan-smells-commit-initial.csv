@@ -1223,7 +1223,7 @@ Tecnicas,Design Role,Classe,Método,LOC,CC,Efferent,NOP,Problema de Design
  V ,GENERICFORWARDCOMPOSER,org.libreplan.web.resources.worker.CriterionsController,validateCriterionSatisfactionDTO,18,5,10,2,Muitos Desvios
  V ,UNDEFINED,org.libreplan.web.common.ExceptionCatcherProxy,invoke,14,3,0,3,Muitos Parametros
  V ,GENERICFORWARDCOMPOSER,org.libreplan.web.costcategories.CostCategoryCRUDController,appendTextboxCode,27,2,0,1,Metodo Longo
- V ,UNDEFINED,org.libreplan.web.common.Util,bind,16,1,0,3,Muitos Parametros
+ V ,UNDEFINED,org.libreplan.web.common.Util,bind,13,1,0,3,Muitos Parametros
 " A, R, D, V, X ",ENTITY,org.libreplan.business.orders.entities.OrderLineGroup,calculateFakeDirectAdvanceAssignmentChildren,25,4,14,1,Alto Acoplamento Efferent
  V ,UNDEFINED,org.libreplan.web.users.dashboard.PersonalTimesheetRow,appendInputsForDays,41,2,0,2,Metodo Longo
  V ,TEST,org.libreplan.web.scenarios.ScenarioModelTest,testRemoveScenarioWithOrdersJustInThisScenario,22,3,10,0,Alto Acoplamento Efferent
@@ -1957,8 +1957,8 @@ Tecnicas,Design Role,Classe,Método,LOC,CC,Efferent,NOP,Problema de Design
  V ,SERVICE,org.libreplan.web.advance.AdvanceTypeModel,distinctNames,11,5,5,1,Muitos Desvios
  V ,ENTITY,org.libreplan.business.resources.entities.CriterionSatisfaction,updateUnvalidated,23,5,7,4,Metodo Longo
  V ,UNDEFINED,org.libreplan.web.planner.order.PlanningStateCreator,forceLoadOfWorkingHours,14,5,3,1,Muitos Desvios
-" A, R, D, V, X ",TEST,org.libreplan.web.test.ws.orders.OrderElementServiceTest,execute,10,2,21,0,Alto Acoplamento Efferent
- V ,ENTITY,org.libreplan.business.planner.entities.DerivedAllocation,resetAssignmentsTo,0,1,2,3,Muitos Parametros
+" A, R, D, V, X ",TEST,org.libreplan.web.test.ws.orders.OrderElementServiceTest,execute,10,2,17,0,Alto Acoplamento Efferent
+ V ,ENTITY,org.libreplan.business.planner.entities.DerivedAllocation,resetAssignmentsTo,7,1,3,3,Muitos Parametros
  V ,UNDEFINED,org.libreplan.web.planner.order.PlanningStateCreator,isSatisfiedBy,9,5,2,1,Muitos Desvios
  V ,ENTITY,org.libreplan.business.common.entities.EntitySequence,setNumberOfDigits,11,5,3,1,Muitos Desvios
  V ,TEST,org.libreplan.business.test.expensesheet.daos.ExpenseSheetTestDAO,validExpenseSheetWithInvalidValuesInLines,38,5,7,0,Muitos Desvios

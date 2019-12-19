@@ -24,7 +24,7 @@ public class ThresholdReferenceSimple {
 		logger.info("Iniciando a coleta de métricas do projeto referencia...");
 		ArrayList<String> projetosReferencia = gLimiares.lerProjetos("BenchmarkSimple.txt");
 		Collection<ClassMetricResult> metricasProjetosReferencia = gLimiares
-				.getMetricsFromProjects(projetosReferencia, PASTA_RESULTADO, "").all();
+				.getMetricsFromProjects(projetosReferencia, PASTA_RESULTADO, "efdc59004cd254692aa749fab3b1c35aa6680a9d").all();
 
 		logger.info("Gerando Limiares por Dosea apontando para projetos Referencia...");
 		gLimiares.execute(metricasProjetosReferencia, PASTA_RESULTADO + "R.csv", new DoseaReferenceTechnique());
