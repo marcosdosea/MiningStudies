@@ -1,0 +1,24 @@
+Tecnicas,Design Role,Classe,LOC,Problema de Design,Deveria ser REFATORADO por conta desse problema?,"Se DISCORDAR, quais os motivos? "
+" A, X ",UNDEFINED,com.zegoggles.smssync.activity.Dialogs,358,Class Longa,(1) Discordo Fortemente;
+" A, X ",TEST,com.zegoggles.smssync.mail.MessageGeneratorTest,258,Class Longa,(1) Discordo Fortemente;
+ A ,UNDEFINED,com.zegoggles.smssync.utils.AppLog,208,Class Longa,(1) Discordo Fortemente;
+" A, X ",PREFERENCE,com.zegoggles.smssync.activity.StatusPreference,360,Class Longa,(1) Discordo Fortemente;
+ A ,FRAGMENT,com.zegoggles.smssync.activity.fragments.MainSettings,206,Class Longa,(1) Discordo Fortemente;
+" A, X ",TEST,com.zegoggles.smssync.mail.MessageConverterTest,223,Class Longa,(1) Discordo Fortemente;
+" A, X ",ASYNCTASK,com.zegoggles.smssync.service.BackupTask,307,Class Longa,(1) Discordo Fortemente;
+" A, X ",APPLICATION,com.zegoggles.smssync.App,227,Class Longa,(1) Discordo Fortemente;
+" A, X ",UNDEFINED,com.zegoggles.smssync.preferences.AuthPreferences,275,Class Longa,(1) Discordo Fortemente;
+" A, X ",ACTIVITY,com.zegoggles.smssync.activity.donation.DonationActivity,266,Class Longa,(1) Discordo Fortemente;
+" A, X ",UNDEFINED,com.zegoggles.smssync.preferences.Preferences,306,Class Longa,(1) Discordo Fortemente;
+" A, X ",ACTIVITY,com.zegoggles.smssync.activity.MainActivity,496,Class Longa,(1) Discordo Fortemente;
+" A, X ",UNDEFINED,com.zegoggles.smssync.mail.MessageConverter,215,Class Longa,(1) Discordo Fortemente;
+" A, X ",TEST,com.zegoggles.smssync.service.SmsBackupServiceTest,231,Class Longa,(1) Discordo Fortemente;
+" A, X ",SERVICE,com.zegoggles.smssync.service.ServiceBase,229,Class Longa,(1) Discordo Fortemente;
+" A, X ",PERSISTENCE,com.zegoggles.smssync.mail.BackupImapStore,228,Class Longa,(1) Discordo Fortemente;
+" A, X ",FRAGMENT,com.zegoggles.smssync.activity.fragments.AdvancedSettings,384,Class Longa,(1) Discordo Fortemente;
+" A, X ",ASYNCTASK,com.zegoggles.smssync.service.RestoreTask,348,Class Longa,(1) Discordo Fortemente;
+" A, X ",UNDEFINED,com.zegoggles.smssync.mail.MessageGenerator,236,Class Longa,(1) Discordo Fortemente;
+ A ,UNDEFINED,com.zegoggles.smssync.service.BackupJobs,207,Class Longa,(1) Discordo Fortemente;
+" A, X ",TEST,com.zegoggles.smssync.service.BackupTaskTest,261,Class Longa,(1) Discordo Fortemente;
+" A, X ",UNDEFINED,com.zegoggles.smssync.auth.OAuth2Client,289,Class Longa,(1) Discordo Fortemente;
+" A, X ",SERVICE,com.zegoggles.smssync.service.SmsBackupService,319,Class Longa,(1) Discordo Fortemente;
