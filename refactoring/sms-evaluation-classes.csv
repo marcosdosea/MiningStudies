@@ -1,0 +1,39 @@
+RELATORIO COMPLETO SISTEMA
+Numero Refatoracoes em Metodos e Nao Metodos:,207
+Numero Refatoracoes relacionadas a Classes:,19
+Numero Classes Smell Commit Inicial:,0
+Numero Classes NOT Smell Commit Inicial:,117
+CLASS LONGA
+True Negative,112.0
+False Negative = ,9.0
+False Positive (A) = ,0.0
+False Positive (V) = ,0.0
+False Positive (X) = ,0.0
+False Positive (R) = ,0.0
+False Positive (D) = ,0.0
+True Positive  (A) = ,0.0
+True Positive  (V) = ,0.0
+True Positive (X) = ,0.0
+True Positive (R) = ,0.0
+True Positive (D) = ,0.0
+Precision (A) = ,0.0
+Precision (V) = ,0.0
+Precision (X) = ,0.0
+Precision (R) = ,0.0
+Precision (D) = ,0.0
+Recall (A) = ,0.0
+Recall (V) = ,0.0
+Recall (X) = ,0.0
+Recall (R) = ,0.0
+Recall (D) = ,0.0
+F-measure (A) = ,0.0
+F-measure (V) = ,0.0
+F-measure (X) = ,0.0
+F-measure (R) = ,0.0
+F-measure (D) = ,0.0
+Acuracia (A) = ,0.92561984
+Acuracia (V) = ,0.92561984
+Acuracia (X) = ,0.92561984
+Acuracia (R) = ,0.92561984
+Acuracia (D) = ,0.92561984
+

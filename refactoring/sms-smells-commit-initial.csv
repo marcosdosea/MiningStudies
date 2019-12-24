@@ -1,532 +1,338 @@
 Tecnicas,Design Role,Classe,Método,LOC,CC,Efferent,NOP,Problema de Design
- V ,[CALENDARACCESSOR],com.zegoggles.smssync.calendar.CalendarAccessorPost40,getCalendars,26,6,9,0,Alto Acoplamento Efferent
- V ,FRAGMENT,com.zegoggles.smssync.activity.donation.DonationListFragment,onCreateDialog,14,1,0,1,Metodo Longo
-" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.utils.ThreadHelper,getThreadId,30,11,12,2,Muitos Desvios
- V ,[DRIVER| JOBVALIDATOR],com.zegoggles.smssync.service.AlarmManagerDriver,schedule,15,3,7,1,Muitos Desvios
- V ,SERVICE,com.zegoggles.smssync.service.ServiceBase,appLog,9,3,5,2,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.utils.BundleBuilder,putShort,4,1,4,2,Muitos Parametros
- V ,ASYNCTASK,com.zegoggles.smssync.service.RestoreTask,importCallLog,11,5,7,1,Muitos Desvios
- V ,ACTIVITY,com.zegoggles.smssync.activity.auth.AccountManagerAuthActivity,onAccountSelected,17,1,0,1,Metodo Longo
- V ,[CONTACTACCESSOR],com.zegoggles.smssync.contacts.ContactAccessorPost20,getGroups,10,3,6,2,Muitos Parametros
- V ,UNDEFINED,com.zegoggles.smssync.mail.PersonLookup,getPrimaryEmail,20,7,5,1,Metodo Longo
- V ,UNDEFINED,com.zegoggles.smssync.utils.BundleBuilder,putChar,4,1,4,2,Muitos Parametros
- V ,[CONTACTACCESSOR],com.zegoggles.smssync.contacts.ContactAccessorPost20,getGroupContactIds,10,4,5,2,Muitos Parametros
- V ,UNDEFINED,com.zegoggles.smssync.compat.GooglePlayServices,isAvailable,33,6,7,1,Alto Acoplamento Efferent
- V ,UNDEFINED,com.zegoggles.smssync.service.BackupJobs,createJob,3,3,4,2,Muitos Parametros
-" A, V, X ",PREFERENCE,com.zegoggles.smssync.activity.StatusPreference,backupStateChanged,23,7,5,1,Muitos Desvios
-" A, V, X ",ASYNCTASK,com.zegoggles.smssync.service.BackupTask,fetchAndBackupItems,38,8,13,1,Metodo Longo
- V ,ASYNCTASK,com.zegoggles.smssync.service.BackupTask,doInBackground,10,4,3,1,Muitos Desvios
- V ,[CONTACTACCESSOR],com.zegoggles.smssync.contacts.ContactAccessorPost20,getGroups,10,3,6,2,Alto Acoplamento Efferent
- V ,UNDEFINED,com.zegoggles.smssync.utils.AppLog,close,4,3,2,0,Muitos Desvios
- V ,ACTIVITY,com.zegoggles.smssync.activity.MainActivity,onPreferenceStartScreen,12,3,4,2,Muitos Desvios
-" A, D, V, X ",PERSISTENCE,com.zegoggles.smssync.mail.BackupImapStore,search,3,7,5,0,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.mail.MessageGenerator,includeInBackup,8,3,4,2,Muitos Parametros
- V ,UNDEFINED,com.zegoggles.smssync.mail.CallFormatter,mapCallType,16,6,1,1,Metodo Longo
- V ,BROADCASTRECEIVER,com.zegoggles.smssync.receiver.BootReceiver,onReceive,9,3,4,2,Muitos Parametros
-" A, V, X ",[CALENDARACCESSOR],com.zegoggles.smssync.calendar.CalendarAccessorPre40,addEntry,21,3,10,5,Alto Acoplamento Efferent
- V ,SERVICE,com.zegoggles.smssync.service.ServiceBase,onCreate,14,3,7,0,Muitos Desvios
- V ,TEST,com.zegoggles.smssync.service.BackupTaskTest,shouldHandleAuthErrorAndTokenCouldBeRefreshed,15,1,5,0,Metodo Longo
- V ,PERSISTENCE,com.zegoggles.smssync.mail.BackupImapStore,createAndOpenFolder,15,3,6,2,Muitos Desvios
- V ,ACTIVITY,com.zegoggles.smssync.activity.donation.DonationActivity,selectedSku,7,3,4,1,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.auth.TokenRefresher,refreshUsingAccountManager,27,6,8,2,Muitos Desvios
- V ,PERSISTENCE,com.zegoggles.smssync.mail.BackupImapStore,getFolder,10,3,6,2,Muitos Parametros
- V ,ASYNCTASK,com.zegoggles.smssync.service.BackupTask,handleAuthError,25,5,8,2,Metodo Longo
-" A, R, V, X ",ASYNCTASK,com.zegoggles.smssync.service.RestoreTask,importMessage,31,8,11,1,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.service.BulkFetcher,fetch,13,4,8,3,Muitos Desvios
- V ,SERVICE,com.zegoggles.smssync.service.SmsBackupService,backup,27,6,9,2,Muitos Desvios
- V ,[ITERATOR],com.zegoggles.smssync.service.BackupCursors,next,14,4,3,0,Metodo Longo
- V ,UNDEFINED,com.zegoggles.smssync.activity.Dialogs,onClick,3,1,0,2,Muitos Parametros
- V ,TEST,com.zegoggles.smssync.service.AlarmManagerDriverTest,testScheduleJobWithUnknownTrigger,5,1,7,0,Alto Acoplamento Efferent
- V ,ACTIVITY,com.zegoggles.smssync.activity.MainActivity,showFragment,11,3,4,2,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.auth.OAuth2Client,getToken,14,2,6,1,Alto Acoplamento Efferent
- V ,UNDEFINED,com.zegoggles.smssync.auth.OAuth2Token,getTokenForLogging,3,3,1,0,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.mail.Attachment,createPart,13,3,4,3,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.activity.Dialogs,instantiate,3,1,5,2,Muitos Parametros
-" D, V ",PERSISTENCE,com.zegoggles.smssync.mail.BackupImapStore,buildSearchQuery,6,3,7,3,Alto Acoplamento Efferent
- V ,ASYNCTASK,com.zegoggles.smssync.service.RestoreTask,doInBackground,16,5,4,1,Metodo Longo
- V ,ACTIVITY,com.zegoggles.smssync.activity.MainActivity,showDialog,18,5,4,1,Muitos Desvios
- V ,PERSISTENCE,com.zegoggles.smssync.mail.BackupImapStore,getFolder,10,3,6,2,Alto Acoplamento Efferent
- V ,ASYNCTASK,com.zegoggles.smssync.service.RestoreTask,transition,3,1,4,2,Muitos Parametros
-" A, R, D, V, X ",SERVICE,com.zegoggles.smssync.service.SmsRestoreService,handleIntent,18,5,12,1,Alto Acoplamento Efferent
+ V ,TEST,com.zegoggles.smssync.service.SmsBackupServiceTest,assertNotificationShown,6,1,3,2,Muitos Parametros
+ V ,ACTIVITY,com.zegoggles.smssync.activity.MainActivity,doPerform,11,5,1,1,Muitos Desvios
+ V ,PERSISTENCE,com.zegoggles.smssync.mail.BackupImapStore,buildSearchQuery,6,3,7,3,Alto Acoplamento Efferent
+ V ,UNDEFINED,com.zegoggles.smssync.mail.HeaderGenerator,setMmsHeaders,7,1,2,2,Muitos Parametros
+ V ,FRAGMENT,com.zegoggles.smssync.activity.donation.DonationListFragment,onClick,3,1,8,2,Muitos Parametros
+ V ,ACTIVITY,com.zegoggles.smssync.activity.auth.AccountManagerAuthActivity,checkAccounts,12,3,8,0,Alto Acoplamento Efferent
+ V ,BROADCASTRECEIVER,com.zegoggles.smssync.compat.MmsReceiver,onReceive,2,1,2,2,Muitos Parametros
+" A, R, V, X ",SERVICE,com.zegoggles.smssync.service.SmsBackupService,backup,33,8,9,1,Muitos Desvios
+ V ,UNDEFINED,com.zegoggles.smssync.contacts.ContactGroupIds,add,4,1,3,2,Muitos Parametros
+ V ,PERSISTENCE,com.zegoggles.smssync.mail.BackupImapStore,compare,5,5,4,2,Muitos Desvios
+" A, V, X ",ACTIVITY,com.zegoggles.smssync.activity.MainActivity,onActivityResult,46,14,11,3,Muitos Parametros
+" A, V, X ",ACTIVITY,com.zegoggles.smssync.activity.auth.AccountManagerAuthActivity,onRequestPermissionsResult,16,4,6,3,Muitos Parametros
+" D, V ",TEST,com.zegoggles.smssync.mail.HeaderGeneratorTest,testShouldGenerateSMSHeaders,23,1,7,0,Metodo Longo
+ V ,ACTIVITY,com.zegoggles.smssync.activity.donation.DonationActivity,onPurchasesUpdated,25,5,4,2,Muitos Parametros
+" A, R, D, V, X ",ACTIVITY,com.zegoggles.smssync.activity.MainActivity,onActivityResult,46,14,11,3,Alto Acoplamento Efferent
+" A, R, V, X ",[TRUSTEDSOCKETFACTORY],com.zegoggles.smssync.mail.AllTrustedSocketFactory,createSocket,14,2,7,4,Muitos Parametros
+" A, V, X ",PREFERENCE,com.zegoggles.smssync.activity.StatusPreference,restoreStateChanged,26,6,5,1,Muitos Desvios
+" A, V, X ",UNDEFINED,com.zegoggles.smssync.utils.ThreadHelper,getThreadId,30,11,12,2,Metodo Longo
+" A, V, X ",SERVICE,com.zegoggles.smssync.service.SmsBackupService,handleIntent,14,6,4,1,Muitos Desvios
+ V ,TEST,com.zegoggles.smssync.service.BackupJobsTest,before,14,1,7,0,Alto Acoplamento Efferent
+ V ,PREFERENCE,com.zegoggles.smssync.activity.StatusPreference,backupStateChanged,23,6,5,1,Metodo Longo
+ V ,BROADCASTRECEIVER,com.zegoggles.smssync.receiver.BackupBroadcastReceiver,backupRequested,9,2,5,2,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.utils.AppLog,rotate,26,10,10,1,Muitos Desvios
  V ,UNDEFINED,com.zegoggles.smssync.utils.BundleBuilder,putInt,4,1,4,2,Muitos Parametros
- V ,UNDEFINED,com.zegoggles.smssync.auth.OAuth2Token,fromJSON,15,3,7,1,Metodo Longo
- V ,UNDEFINED,com.zegoggles.smssync.utils.AppLog,getLogDialog,18,1,0,2,Metodo Longo
-" A, V, X ",UNDEFINED,com.zegoggles.smssync.auth.OAuth2Client,endElement,5,3,1,3,Muitos Parametros
-" D, V ",PERSISTENCE,com.zegoggles.smssync.mail.BackupImapStore,getTrustedSocketFactory,11,3,7,2,Alto Acoplamento Efferent
- V ,TEST,com.zegoggles.smssync.mail.MessageConverterTest,testConvertMessagesSeenFlagReadWithSMS,16,1,7,0,Metodo Longo
- V ,UNDEFINED,com.zegoggles.smssync.preferences.Preferences,shouldShowAboutDialog,18,3,7,0,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.mail.MessageGenerator,includePersonInBackup,5,3,5,2,Muitos Desvios
- V ,SERVICE,com.zegoggles.smssync.service.SmsBackupService,handleIntent,12,6,4,1,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.auth.TokenRefresher,refreshUsingOAuth2Client,9,3,6,2,Muitos Desvios
-" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.mail.MmsSupport,getMMSBodyParts,24,8,11,1,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.mail.MessageConverter,markAsSeen,18,6,3,2,Metodo Longo
- V ,SERVICE,com.zegoggles.smssync.service.SmsBackupService,scheduleNextBackup,13,4,6,1,Alto Acoplamento Efferent
- V ,UNDEFINED,com.zegoggles.smssync.service.BackupJobs,schedule,18,9,6,3,Metodo Longo
-" A, R, D, V, X ",[TRUSTEDSOCKETFACTORY],com.zegoggles.smssync.mail.AllTrustedSocketFactory,createSocket,14,2,7,4,Muitos Parametros
- V ,ACTIVITY,com.zegoggles.smssync.activity.donation.DonationActivity,onCreate,23,1,0,1,Metodo Longo
-" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.utils.ListPreferenceHelper,initListPreference,29,8,0,3,Muitos Desvios
-" D, V ",APPLICATION,com.zegoggles.smssync.App,onCreate,28,2,0,0,Metodo Longo
- V ,UNDEFINED,com.zegoggles.smssync.preferences.Preferences,isFirstUse,9,3,2,0,Muitos Desvios
- V ,TEST,com.zegoggles.smssync.service.BackupItemsFetcherTest,mockMostRecentTimestampForType,7,1,6,2,Alto Acoplamento Efferent
- V ,ASYNCTASK,com.zegoggles.smssync.service.BackupTask,handleAuthError,25,5,8,2,Muitos Parametros
-" A, V, X ",UNDEFINED,com.zegoggles.smssync.preferences.AuthPreferences,setOauth2Token,5,1,2,3,Muitos Parametros
- V ,UNDEFINED,com.zegoggles.smssync.service.state.State,transition,0,1,3,2,Muitos Parametros
- V ,UNDEFINED,com.zegoggles.smssync.mail.HeaderGenerator,setHeaders,21,4,7,7,Metodo Longo
- V ,UNDEFINED,com.zegoggles.smssync.mail.MessageGenerator,messageForDataType,12,4,3,2,Muitos Parametros
- V ,TEST,com.zegoggles.smssync.mail.MessageGeneratorTest,shouldGenerateCorrectHeaders,10,1,6,0,Alto Acoplamento Efferent
- V ,TEST,com.zegoggles.smssync.service.BackupItemsFetcherTest,mockMostRecentTimestampForType,7,1,6,2,Muitos Parametros
-" D, V ",[CALENDARACCESSOR],com.zegoggles.smssync.calendar.CalendarAccessorPost40,getCalendars,26,6,9,0,Metodo Longo
- V ,UNDEFINED,com.zegoggles.smssync.utils.BundleBuilder,putString,4,1,3,2,Muitos Parametros
- V ,UNDEFINED,com.zegoggles.smssync.service.BackupItemsFetcher,performQuery,15,5,6,1,Alto Acoplamento Efferent
- V ,SERVICE,com.zegoggles.smssync.service.SmsBackupService,handleErrorState,17,6,1,1,Metodo Longo
- V ,ACTIVITY,com.zegoggles.smssync.activity.auth.AccountManagerAuthActivity,onCreate,14,3,8,1,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.preferences.AuthPreferences,isLoginInformationSet,10,3,2,0,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.mail.MessageConverter,markAsSeen,18,6,3,2,Muitos Parametros
- V ,[DRIVER| JOBVALIDATOR],com.zegoggles.smssync.service.AlarmManagerDriver,createPendingIntent,4,1,4,2,Muitos Parametros
- V ,UNDEFINED,com.zegoggles.smssync.utils.AppLog,rotate,32,3,0,1,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.preferences.Preferences,isFirstBackup,8,3,3,0,Muitos Desvios
-" A, V, X ",UNDEFINED,com.zegoggles.smssync.activity.Dialogs,createMessageDialog,3,1,4,3,Muitos Parametros
- V ,BROADCASTRECEIVER,com.zegoggles.smssync.receiver.BackupBroadcastReceiver,onReceive,6,3,4,2,Muitos Desvios
- V ,SERVICE,com.zegoggles.smssync.service.SmsRestoreService,clearCache,14,3,0,0,Muitos Desvios
-" A, V, X ",UNDEFINED,com.zegoggles.smssync.mail.CallFormatter,format,8,3,3,3,Muitos Parametros
- V ,UNDEFINED,com.zegoggles.smssync.compat.GooglePlayServices,isAvailable,33,6,7,1,Metodo Longo
-" A, V, X ",PERSISTENCE,com.zegoggles.smssync.mail.BackupImapStore,buildSearchQuery,6,3,7,3,Muitos Parametros
- V ,FRAGMENT,com.zegoggles.smssync.activity.fragments.AdvancedSettings,onCreatePreferences,4,1,3,2,Muitos Parametros
  V ,UNDEFINED,com.zegoggles.smssync.mail.HeaderGenerator,setCallLogHeaders,6,1,2,2,Muitos Parametros
- V ,ACTIVITY,com.zegoggles.smssync.activity.donation.DonationActivity,showSelectDialog,14,4,7,1,Muitos Desvios
- V ,TEST,com.zegoggles.smssync.mail.MessageConverterTest,testConvertMessagesSeenFlagReadWithSMS,16,1,7,0,Alto Acoplamento Efferent
- V ,TEST,com.zegoggles.smssync.mail.MessageGeneratorTest,mockCalllogMessage,7,1,6,3,Alto Acoplamento Efferent
- V ,PREFERENCE,com.zegoggles.smssync.activity.StatusPreference,setViewAttributes,25,6,4,1,Muitos Desvios
- V ,PREFERENCE,com.zegoggles.smssync.activity.StatusPreference,finishedBackup,17,4,6,1,Muitos Desvios
- V ,SERVICE,com.zegoggles.smssync.service.SmsJobService,onStartJob,23,6,7,1,Muitos Desvios
-" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.mail.MessageConverter,messageToContentValues,39,8,13,1,Muitos Desvios
- V ,TEST,com.zegoggles.smssync.service.SmsBackupServiceTest,shouldCheckForWifiConnectivityAndNetworkType,10,1,6,0,Alto Acoplamento Efferent
- V ,UNDEFINED,com.zegoggles.smssync.auth.OAuth2Client,characters,5,3,3,3,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.preferences.Preferences,shouldShowUpgradeMessage,11,3,3,0,Muitos Desvios
- V ,BROADCASTRECEIVER,com.zegoggles.smssync.receiver.SmsBroadcastReceiver,onReceive,9,3,4,2,Muitos Parametros
-" A, V, X ",PERSISTENCE,com.zegoggles.smssync.mail.BackupImapStore,getMessages,28,2,0,3,Muitos Parametros
-" A, D, V, X ",TEST,com.zegoggles.smssync.mail.MessageGeneratorTest,mockCalllogMessage,7,1,6,3,Muitos Parametros
-" A, V, X ",ASYNCTASK,com.zegoggles.smssync.service.BackupTask,backupCursors,35,7,13,4,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.mail.ConversionResult,add,15,4,9,2,Muitos Desvios
- V ,SERVICE,com.zegoggles.smssync.service.state.RestoreState,transition,3,1,3,2,Muitos Parametros
- V ,UNDEFINED,com.zegoggles.smssync.preferences.Preferences,getDefaultType,10,3,7,3,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.mail.HeaderGenerator,createMessageId,21,5,11,3,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.service.CalendarSyncer,syncCalendar,17,4,13,1,Muitos Desvios
- V ,FRAGMENT,com.zegoggles.smssync.activity.donation.DonationListFragment,getOptions,13,3,8,1,Alto Acoplamento Efferent
- V ,UNDEFINED,com.zegoggles.smssync.mail.PersonRecord,getAddress,17,4,3,1,Metodo Longo
- V ,TEST,com.zegoggles.smssync.service.BackupCursorsTest,shouldIterateOverAllContainedCursors,16,3,3,0,Metodo Longo
- V ,UNDEFINED,com.zegoggles.smssync.auth.OAuth2Client,getUsernameFromContacts,28,5,9,1,Metodo Longo
- V ,UNDEFINED,com.zegoggles.smssync.preferences.DataTypePreferences,enabled,9,4,5,0,Muitos Desvios
- V ,ASYNCTASK,com.zegoggles.smssync.service.BackupTask,handleAuthError,25,5,8,2,Alto Acoplamento Efferent
- V ,UNDEFINED,com.zegoggles.smssync.auth.TokenRefresher,invalidateToken,12,3,5,1,Muitos Desvios
- V ,SERVICE,com.zegoggles.smssync.service.SmsRestoreService,handleIntent,18,5,12,1,Metodo Longo
- V ,UNDEFINED,com.zegoggles.smssync.auth.TokenRefresher,refreshOAuth2Token,14,3,3,0,Metodo Longo
- V ,UNDEFINED,com.zegoggles.smssync.utils.ListPreferenceHelper,onPreferenceChange,4,1,3,2,Muitos Parametros
- V ,FRAGMENT,com.zegoggles.smssync.activity.fragments.MainSettings,getConnectedSummary,10,4,4,1,Muitos Desvios
-" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.mail.MessageGenerator,messageFromMapSms,28,5,14,1,Alto Acoplamento Efferent
- V ,UNDEFINED,com.zegoggles.smssync.utils.AppLog,readLog,25,5,7,1,Alto Acoplamento Efferent
- V ,UNDEFINED,com.zegoggles.smssync.service.BackupJobs,scheduleBootup,13,3,3,0,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.utils.AppLog,append,8,3,5,1,Muitos Desvios
- V ,ACTIVITY,com.zegoggles.smssync.activity.donation.DonationActivity,userHasDonated,10,4,4,1,Muitos Desvios
- V ,TEST,com.zegoggles.smssync.auth.TokenRefresherTest,shouldHandleExceptionsThrownByFuture,16,2,6,0,Alto Acoplamento Efferent
- V ,UNDEFINED,com.zegoggles.smssync.service.BackupQueryBuilder,getQueryForMMS,7,2,6,2,Alto Acoplamento Efferent
- V ,UNDEFINED,com.zegoggles.smssync.auth.OAuth2Client,getUsernameFromContacts,28,5,9,1,Alto Acoplamento Efferent
-" A, R, D, V, X ",TEST,com.zegoggles.smssync.service.SmsBackupServiceTest,notifyUser,3,1,5,4,Muitos Parametros
- V ,ACTIVITY,com.zegoggles.smssync.activity.MainActivity,performAction,16,5,4,1,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.preferences.DataTypePreferences,setMaxSyncedDate,3,1,4,2,Muitos Parametros
- V ,UNDEFINED,com.zegoggles.smssync.preferences.Preferences,getStringAsInt,10,3,5,2,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.service.CalendarSyncer,syncCalendar,17,4,13,1,Metodo Longo
-" D, V ",ACTIVITY,com.zegoggles.smssync.activity.donation.DonationActivity,onBillingSetupFinished,13,2,7,1,Alto Acoplamento Efferent
- V ,ACTIVITY,com.zegoggles.smssync.activity.MainActivity,handleAccountManagerAuth,14,4,4,1,Metodo Longo
- V ,UNDEFINED,com.zegoggles.smssync.service.BackupJobs,schedule,18,9,6,3,Alto Acoplamento Efferent
-" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.mail.MessageGenerator,messageFromMapMms,39,7,14,1,Metodo Longo
- V ,BROADCASTRECEIVER,com.zegoggles.smssync.receiver.BackupBroadcastReceiver,onReceive,6,3,4,2,Muitos Parametros
-" A, R, D, V, X ",[CALENDARACCESSOR],com.zegoggles.smssync.calendar.CalendarAccessorPost40,addEntry,26,4,11,5,Alto Acoplamento Efferent
-" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.service.BackupJobs,schedule,18,9,6,3,Muitos Desvios
-" D, V ",SERVICE,com.zegoggles.smssync.service.SmsJobService,onStartJob,23,6,7,1,Metodo Longo
+" A, V, X ",PERSISTENCE,com.zegoggles.smssync.mail.BackupImapStore,buildSearchQuery,6,3,7,3,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.mail.MessageGenerator,messageFromMapMms,39,7,14,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,com.zegoggles.smssync.mail.MessageConverter,getMessageMap,21,4,7,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,com.zegoggles.smssync.mail.MessageConverter,convertMessages,10,2,6,2,Muitos Parametros
+" A, R, V, X ",SERVICE,com.zegoggles.smssync.service.SmsBackupService,handleErrorState,24,8,2,1,Muitos Desvios
+" A, V, X ",PREFERENCE,com.zegoggles.smssync.activity.StatusPreference,setViewAttributes,25,6,4,1,Muitos Desvios
+" A, R, V, X ",ASYNCTASK,com.zegoggles.smssync.service.BackupTask,backupCursors,35,7,13,4,Muitos Desvios
+" A, D, V, X ",SERVICE,com.zegoggles.smssync.service.ServiceBase,onStartCommand,4,1,2,3,Muitos Parametros
+ V ,SERVICE,com.zegoggles.smssync.service.SmsRestoreService,accept,3,3,1,2,Muitos Parametros
+" A, V, X ",[CALENDARACCESSOR],com.zegoggles.smssync.calendar.CalendarAccessorPost40,getCalendars,26,6,9,0,Muitos Desvios
+" A, V, X ",ACTIVITY,com.zegoggles.smssync.activity.MainActivity,onRequestPermissionsResult,25,7,8,3,Muitos Parametros
+ V ,TEST,com.zegoggles.smssync.mail.MessageConverterTest,testConvertMessagesSeenFlagUnreadWithSMS,16,1,7,0,Alto Acoplamento Efferent
+" A, V, X ",UNDEFINED,com.zegoggles.smssync.compat.GooglePlayServices,isAvailable,33,6,7,1,Muitos Desvios
+ V ,TEST,com.zegoggles.smssync.service.AlarmManagerDriverTest,testScheduleJobWithUnknownTrigger,5,1,7,0,Alto Acoplamento Efferent
+" A, V, X ",UNDEFINED,com.zegoggles.smssync.mail.CallFormatter,mapTextCallType,16,6,1,1,Muitos Desvios
+ V ,ACTIVITY,com.zegoggles.smssync.activity.donation.DonationActivity,onCreate,23,1,0,1,Metodo Longo
+ V ,UNDEFINED,com.zegoggles.smssync.mail.MessageGenerator,messageForDataType,12,4,3,2,Muitos Parametros
+ V ,FRAGMENT,com.zegoggles.smssync.activity.fragments.SMSBackupPreferenceFragment,onCreatePreferences,5,1,4,2,Muitos Parametros
+ V ,ACTIVITY,com.zegoggles.smssync.activity.donation.DonationActivity,onSkuDetailsResponse,14,5,5,2,Muitos Parametros
+ V ,FRAGMENT,com.zegoggles.smssync.activity.fragments.MainSettings,onPreferenceChange,4,1,0,2,Muitos Parametros
+" A, D, V, X ",TEST,com.zegoggles.smssync.service.CalendarSyncerTest,shouldSyncCalendar,15,1,9,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,com.zegoggles.smssync.service.state.State,transition,0,1,3,2,Muitos Parametros
+ V ,UNDEFINED,com.zegoggles.smssync.utils.BundleBuilder,putParcelableArray,4,1,4,2,Muitos Parametros
+ V ,BROADCASTRECEIVER,com.zegoggles.smssync.receiver.PackageReplacedReceiver,onReceive,10,3,7,2,Alto Acoplamento Efferent
+ V ,UNDEFINED,com.zegoggles.smssync.compat.GooglePlayServices,isAvailable,33,6,7,1,Alto Acoplamento Efferent
+ V ,PERSISTENCE,com.zegoggles.smssync.mail.BackupImapStore,compare,5,5,4,2,Muitos Parametros
+ V ,UNDEFINED,com.zegoggles.smssync.auth.TokenRefresher,refreshUsingOAuth2Client,9,3,6,2,Muitos Parametros
+" A, R, V, X ",ASYNCTASK,com.zegoggles.smssync.service.BackupTask,backupCursors,35,7,13,4,Metodo Longo
+ V ,SERVICE,com.zegoggles.smssync.service.state.BackupState,transition,3,1,3,2,Muitos Parametros
+ V ,UNDEFINED,com.zegoggles.smssync.service.BulkFetcher,fetch,13,4,8,3,Alto Acoplamento Efferent
+ V ,ACTIVITY,com.zegoggles.smssync.activity.MainActivity,startRestore,27,5,7,0,Muitos Desvios
+ V ,UNDEFINED,com.zegoggles.smssync.mail.MessageGenerator,includeInBackup,8,3,4,2,Muitos Parametros
+ V ,UNDEFINED,com.zegoggles.smssync.mail.HeaderGenerator,createMessageId,21,5,11,3,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.mail.Attachment,createPartFromUri,3,1,5,4,Muitos Parametros
+ V ,FRAGMENT,com.zegoggles.smssync.activity.fragments.AdvancedSettings,checkValidImapFolder,10,2,5,2,Muitos Parametros
+ V ,UNDEFINED,com.zegoggles.smssync.mail.CallFormatter,callTypeString,8,2,3,2,Muitos Parametros
+ V ,ASYNCTASK,com.zegoggles.smssync.service.BackupTask,transition,3,1,4,2,Muitos Parametros
+ V ,UNDEFINED,com.zegoggles.smssync.mail.Headers,get,9,2,3,2,Muitos Parametros
+ V ,[DRIVER| JOBVALIDATOR],com.zegoggles.smssync.service.AlarmManagerDriver,createPendingIntent,4,1,4,2,Muitos Parametros
+ V ,UNDEFINED,com.zegoggles.smssync.preferences.Preferences,getStringAsInt,3,1,2,2,Muitos Parametros
+ V ,UNDEFINED,com.zegoggles.smssync.utils.BundleBuilder,putShort,4,1,4,2,Muitos Parametros
+" A, D, V, X ",SERVICE,com.zegoggles.smssync.service.SmsBackupService,backup,33,8,9,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,com.zegoggles.smssync.utils.ListPreferenceHelper,initListPreference,29,8,0,3,Metodo Longo
+" A, D, V, X ",FRAGMENT,com.zegoggles.smssync.activity.fragments.AdvancedSettings,updateMaxItems,7,3,3,3,Muitos Parametros
+" A, V, X ",UNDEFINED,com.zegoggles.smssync.auth.TokenRefresher,refreshUsingAccountManager,27,6,8,2,Muitos Desvios
+ V ,APPLICATION,com.zegoggles.smssync.App,enableOrDisableComponent,6,3,4,2,Muitos Parametros
+" D, V ",FRAGMENT,com.zegoggles.smssync.activity.donation.DonationListFragment,onClick,3,1,8,2,Alto Acoplamento Efferent
+ V ,ASYNCTASK,com.zegoggles.smssync.service.BackupTask,handleAuthError,25,5,8,2,Metodo Longo
+ V ,BROADCASTRECEIVER,com.zegoggles.smssync.receiver.PackageReplacedReceiver,onReceive,10,3,7,2,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.auth.OAuth2Client,startElement,6,2,3,4,Muitos Parametros
+ V ,FRAGMENT,com.zegoggles.smssync.activity.fragments.MainSettings,onCreatePreferences,4,1,3,2,Muitos Parametros
+" A, V, X ",UNDEFINED,com.zegoggles.smssync.service.BackupJobs,schedule,18,9,6,3,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.preferences.AuthPreferences,formatUri,3,1,2,5,Muitos Parametros
+ V ,ACTIVITY,com.zegoggles.smssync.activity.MainActivity,startRestore,27,5,7,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,com.zegoggles.smssync.mail.MmsSupport,getMMSBodyParts,24,8,11,1,Metodo Longo
+ V ,ASYNCTASK,com.zegoggles.smssync.tasks.OAuth2CallbackTask,doInBackground,13,5,7,1,Alto Acoplamento Efferent
+ V ,[TRUSTEDSOCKETFACTORY],com.zegoggles.smssync.mail.AllTrustedSocketFactory,createSocket,14,2,7,4,Alto Acoplamento Efferent
+" A, R, D, V, X ",ACTIVITY,com.zegoggles.smssync.activity.MainActivity,onActivityResult,46,14,11,3,Muitos Desvios
+ V ,ACTIVITY,com.zegoggles.smssync.activity.MainActivity,onRequestPermissionsResult,25,7,8,3,Alto Acoplamento Efferent
+" A, V, X ",UNDEFINED,com.zegoggles.smssync.auth.OAuth2Client,endElement,5,3,1,3,Muitos Parametros
+ V ,UNDEFINED,com.zegoggles.smssync.auth.TokenRefresher,refreshUsingAccountManager,27,6,8,2,Muitos Parametros
+ V ,ACTIVITY,com.zegoggles.smssync.activity.MainActivity,showDialog,18,5,4,1,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.utils.AppLog,onLayout,4,1,2,5,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.mail.MmsSupport,getDetails,25,6,16,2,Alto Acoplamento Efferent
+" A, R, D, V, X ",PERSISTENCE,com.zegoggles.smssync.mail.BackupImapStore,search,3,7,5,0,Muitos Desvios
+" A, R, V, X ",ASYNCTASK,com.zegoggles.smssync.service.BackupTask,backupCursors,35,7,13,4,Muitos Parametros
  V ,UNDEFINED,com.zegoggles.smssync.utils.AppLog,getLogDialog,18,1,0,2,Muitos Parametros
- V ,APPLICATION,com.zegoggles.smssync.App,enableOrDisableComponent,6,3,4,2,Muitos Desvios
-" A, V, X ",SERVICE,com.zegoggles.smssync.service.SmsBackupService,backupStateChanged,20,7,1,1,Muitos Desvios
-" A, V, X ",PREFERENCE,com.zegoggles.smssync.activity.StatusPreference,stateChanged,26,7,4,1,Muitos Desvios
+ V ,UNDEFINED,com.zegoggles.smssync.service.BackupItemsFetcher,performQuery,15,5,6,1,Muitos Desvios
+" A, R, V, X ",ACTIVITY,com.zegoggles.smssync.activity.MainActivity,onRequestPermissionsResult,25,7,8,3,Muitos Desvios
+ V ,SERVICE,com.zegoggles.smssync.service.SmsRestoreService,handleIntent,18,5,12,1,Muitos Desvios
+ V ,ASYNCTASK,com.zegoggles.smssync.service.BackupTask,handleAuthError,25,5,8,2,Muitos Desvios
+ V ,UNDEFINED,com.zegoggles.smssync.preferences.DataTypePreferences,setBackupEnabled,3,1,3,2,Muitos Parametros
+" A, R, D, V, X ",TEST,com.zegoggles.smssync.service.AlarmManagerDriverTest,jobBuilder,31,1,0,0,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.mail.HeaderGenerator,createMessageId,21,5,11,3,Alto Acoplamento Efferent
+ V ,FRAGMENT,com.zegoggles.smssync.activity.fragments.MainSettings,userDonationState,10,5,2,1,Muitos Desvios
+ V ,UNDEFINED,com.zegoggles.smssync.utils.BundleBuilder,putChar,4,1,4,2,Muitos Parametros
+" A, D, V, X ",TEST,com.zegoggles.smssync.service.AlarmManagerDriverTest,assertAlarmScheduled,16,1,9,1,Alto Acoplamento Efferent
  V ,[CALENDARACCESSOR],com.zegoggles.smssync.calendar.CalendarAccessorPre40,addEntry,21,3,10,5,Metodo Longo
- V ,FRAGMENT,com.zegoggles.smssync.activity.fragments.MainSettings,checkUserDonationStatus,20,1,0,0,Metodo Longo
- V ,UNDEFINED,com.zegoggles.smssync.service.BackupJobs,cancel,11,3,4,1,Muitos Desvios
- V ,FRAGMENT,com.zegoggles.smssync.activity.fragments.AdvancedSettings,updateMaxItems,7,3,3,3,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.mail.Attachment,encodeRFC2231value,26,6,7,2,Alto Acoplamento Efferent
- V ,SERVICE,com.zegoggles.smssync.service.ServiceBase,acquireLocks,14,4,4,0,Muitos Desvios
- V ,BROADCASTRECEIVER,com.zegoggles.smssync.receiver.PackageReplacedReceiver,onReceive,10,3,7,2,Muitos Desvios
- V ,TEST,com.zegoggles.smssync.mail.MessageGeneratorTest,testShouldGenerateSubjectWithNameForMMS,8,1,6,0,Alto Acoplamento Efferent
- V ,PERSISTENCE,com.zegoggles.smssync.mail.BackupImapStore,getMessages,28,2,0,3,Metodo Longo
- V ,UNDEFINED,com.zegoggles.smssync.service.BackupQueryBuilder,buildMostRecentQueryForDataType,12,4,3,1,Muitos Desvios
- V ,FRAGMENT,com.zegoggles.smssync.activity.fragments.AdvancedSettings,onPreferenceChange,5,1,6,2,Alto Acoplamento Efferent
-" A, R, D, V, X ",SERVICE,com.zegoggles.smssync.service.SmsBackupService,notifyUser,4,1,5,4,Muitos Parametros
- V ,[CALENDARACCESSOR],com.zegoggles.smssync.calendar.CalendarAccessorPre40,getCalendars,19,4,7,0,Alto Acoplamento Efferent
- V ,UNDEFINED,com.zegoggles.smssync.mail.PersonLookup,lookupPerson,21,7,9,1,Alto Acoplamento Efferent
- V ,PERSISTENCE,com.zegoggles.smssync.mail.BackupImapStore,getStoreUriForLogging,16,4,4,0,Muitos Desvios
-" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.mail.MessageGenerator,messageFromMapCallLog,40,11,15,1,Alto Acoplamento Efferent
-" A, D, V, X ",TEST,com.zegoggles.smssync.service.BackupJobsTest,verifyJobScheduled,20,3,5,3,Muitos Parametros
+" A, V, X ",UNDEFINED,com.zegoggles.smssync.contacts.ContactGroup,equals,8,6,3,1,Muitos Desvios
+ V ,BROADCASTRECEIVER,com.zegoggles.smssync.receiver.BackupBroadcastReceiver,onReceive,6,3,4,2,Muitos Parametros
+ V ,ASYNCTASK,com.zegoggles.smssync.service.RestoreTask,transition,3,1,4,2,Muitos Parametros
+ V ,UNDEFINED,com.zegoggles.smssync.mail.MessageConverter,getMessageMap,21,4,7,1,Metodo Longo
+" A, R, V, X ",ASYNCTASK,com.zegoggles.smssync.service.RestoreTask,importSms,19,11,10,1,Alto Acoplamento Efferent
+ V ,ACTIVITY,com.zegoggles.smssync.activity.auth.AccountManagerAuthActivity,useToken,6,1,4,2,Muitos Parametros
+ V ,[ITERATOR],com.zegoggles.smssync.service.BackupCursors,add,4,1,5,2,Muitos Parametros
+ V ,UNDEFINED,com.zegoggles.smssync.activity.Dialogs,shouldOverrideUrlLoading,4,1,1,2,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.utils.ThreadHelper,getThreadId,30,11,12,2,Muitos Desvios
+ V ,ACTIVITY,com.zegoggles.smssync.activity.MainActivity,backupStateChanged,5,5,2,1,Muitos Desvios
+ V ,UNDEFINED,com.zegoggles.smssync.mail.MmsSupport,getDetails,25,6,16,2,Muitos Parametros
  V ,SERVICE,com.zegoggles.smssync.service.state.RestoreState,getNotificationLabel,16,5,2,1,Muitos Desvios
+ V ,SERVICE,com.zegoggles.smssync.service.ServiceBase,appLogDebug,8,4,4,2,Muitos Parametros
+ V ,[DRIVER| JOBVALIDATOR],com.zegoggles.smssync.service.AlarmManagerDriver,schedule,15,3,7,1,Alto Acoplamento Efferent
+" A, V, X ",SERVICE,com.zegoggles.smssync.service.SmsBackupService,legacyCheckConnectivity,9,6,3,0,Muitos Desvios
+ V ,UNDEFINED,com.zegoggles.smssync.utils.AppLog,readLog,25,5,7,1,Alto Acoplamento Efferent
+" A, R, V, X ",ASYNCTASK,com.zegoggles.smssync.service.BackupTask,backupCursors,35,7,13,4,Alto Acoplamento Efferent
+ V ,UNDEFINED,com.zegoggles.smssync.contacts.ContactAccessor,getGroupContactIds,10,4,5,2,Muitos Parametros
+ V ,UNDEFINED,com.zegoggles.smssync.mail.ConversionResult,add,15,4,9,2,Muitos Parametros
+" A, V, X ",[CALENDARACCESSOR],com.zegoggles.smssync.calendar.CalendarAccessorPost40,addEntry,30,5,12,5,Metodo Longo
+" A, V, X ",UNDEFINED,com.zegoggles.smssync.mail.Attachment,createPart,13,3,4,3,Muitos Parametros
+ V ,UNDEFINED,com.zegoggles.smssync.utils.AppLog,rotate,26,10,10,1,Metodo Longo
+ V ,ASYNCTASK,com.zegoggles.smssync.service.RestoreTask,importCallLog,11,5,7,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,com.zegoggles.smssync.service.state.State,getDetailedErrorMessage,14,5,5,1,Muitos Desvios
+" A, V, X ",UNDEFINED,com.zegoggles.smssync.mail.MessageConverter,markAsSeen,18,6,3,2,Muitos Desvios
+" A, R, V, X ",ASYNCTASK,com.zegoggles.smssync.service.BackupTask,fetchAndBackupItems,41,9,14,1,Metodo Longo
+ V ,ASYNCTASK,com.zegoggles.smssync.service.RestoreTask,handleAuthError,24,5,9,3,Muitos Desvios
+ V ,ACTIVITY,com.zegoggles.smssync.activity.auth.AccountManagerAuthActivity,onCreateDialog,21,1,0,1,Metodo Longo
+" A, V, X ",UNDEFINED,com.zegoggles.smssync.mail.HeaderGenerator,createMessageId,21,5,11,3,Muitos Parametros
+ V ,ASYNCTASK,com.zegoggles.smssync.service.RestoreTask,handleAuthError,24,5,9,3,Metodo Longo
+ V ,UNDEFINED,com.zegoggles.smssync.service.BackupJobs,createJob,3,3,4,2,Muitos Parametros
+ V ,FRAGMENT,com.zegoggles.smssync.activity.fragments.SMSBackupPreferenceFragment,addPreferenceListener,16,2,0,2,Muitos Parametros
+ V ,ACTIVITY,com.zegoggles.smssync.activity.donation.DonationActivity,onBillingSetupFinished,24,6,5,1,Metodo Longo
+" A, V, X ",UNDEFINED,com.zegoggles.smssync.mail.ConversionResult,add,15,4,9,2,Alto Acoplamento Efferent
+ V ,TEST,com.zegoggles.smssync.mail.MessageConverterTest,testConvertMessagesSeenFlagFromMessageStatusWithSMS,16,1,7,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,com.zegoggles.smssync.utils.BundleBuilder,putByte,4,1,4,2,Muitos Parametros
+ V ,UNDEFINED,com.zegoggles.smssync.utils.BundleBuilder,putParcelableArrayList,4,1,4,2,Muitos Parametros
+ V ,TEST,com.zegoggles.smssync.service.SmsBackupServiceTest,shouldCheckForEnabledDataTypes,10,1,7,0,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.utils.AppLog,rotate,26,10,10,1,Alto Acoplamento Efferent
+" A, D, V, X ",SERVICE,com.zegoggles.smssync.service.SmsBackupService,getBackupConfig,3,1,4,3,Muitos Parametros
+" A, R, V, X ",[CALENDARACCESSOR],com.zegoggles.smssync.calendar.CalendarAccessorPost40,addEntry,30,5,12,5,Alto Acoplamento Efferent
+ V ,ACTIVITY,com.zegoggles.smssync.activity.MainActivity,onPreferenceStartFragment,8,2,7,2,Muitos Parametros
+ V ,TEST,com.zegoggles.smssync.mail.HeaderGeneratorTest,testShouldGenerateMMSHeaders,17,1,7,0,Alto Acoplamento Efferent
+ V ,SERVICE,com.zegoggles.smssync.service.ServiceBase,releaseLocks,10,5,2,0,Muitos Desvios
+ V ,ACTIVITY,com.zegoggles.smssync.activity.donation.DonationActivity,onPurchasesUpdated,25,5,4,2,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.mail.MessageConverter,messageToContentValues,39,8,13,1,Alto Acoplamento Efferent
+" A, R, V, X ",[CALENDARACCESSOR],com.zegoggles.smssync.calendar.CalendarAccessorPre40,addEntry,21,3,10,5,Alto Acoplamento Efferent
+ V ,UNDEFINED,com.zegoggles.smssync.auth.TokenRefresher,refreshUsingAccountManager,27,6,8,2,Metodo Longo
+ V ,PREFERENCE,com.zegoggles.smssync.activity.StatusPreference,restoreStateChanged,26,6,5,1,Metodo Longo
+" A, V, X ",UNDEFINED,com.zegoggles.smssync.utils.ListPreferenceHelper,initListPreference,29,8,0,3,Muitos Parametros
+ V ,UNDEFINED,com.zegoggles.smssync.mail.MessageGenerator,messageFromMapSms,28,5,14,1,Metodo Longo
+" A, R, V, X ",ASYNCTASK,com.zegoggles.smssync.service.RestoreTask,restore,50,12,16,1,Muitos Desvios
+" A, R, V, X ",[CALENDARACCESSOR],com.zegoggles.smssync.calendar.CalendarAccessorPost40,addEntry,30,5,12,5,Muitos Parametros
+" A, R, D, V, X ",TEST,com.zegoggles.smssync.service.RestoreTaskTest,shouldRestoreItems,20,1,11,0,Alto Acoplamento Efferent
+" A, V, X ",BROADCASTRECEIVER,com.zegoggles.smssync.compat.SmsReceiver,storeMessage,33,6,11,2,Muitos Desvios
+" D, V ",APPLICATION,com.zegoggles.smssync.App,enabled,3,1,8,0,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.mail.MessageGenerator,messageFromMapMms,39,7,14,1,Muitos Desvios
+" A, R, D, V, X ",TEST,com.zegoggles.smssync.service.SmsBackupServiceTest,before,40,1,0,0,Metodo Longo
+ V ,ACTIVITY,com.zegoggles.smssync.activity.donation.DonationActivity,showSelectDialog,14,4,7,1,Alto Acoplamento Efferent
+ V ,ACTIVITY,com.zegoggles.smssync.activity.MainActivity,onCreate,23,4,7,1,Metodo Longo
+ V ,[TRUSTEDSOCKETFACTORY],com.zegoggles.smssync.mail.AllTrustedSocketFactory,checkClientTrusted,2,1,2,2,Muitos Parametros
+" A, D, V, X ",BROADCASTRECEIVER,com.zegoggles.smssync.receiver.SmsBroadcastReceiver,log,6,2,5,3,Muitos Parametros
+ V ,UNDEFINED,com.zegoggles.smssync.mail.Attachment,createPartFromFile,3,1,4,2,Muitos Parametros
+" A, D, V, X ",FRAGMENT,com.zegoggles.smssync.activity.fragments.AdvancedSettings,onRequestPermissionsResult,7,2,6,3,Muitos Parametros
+" A, R, V, X ",[CALENDARACCESSOR],com.zegoggles.smssync.calendar.CalendarAccessorPre40,addEntry,21,3,10,5,Muitos Parametros
+" A, V, X ",UNDEFINED,com.zegoggles.smssync.service.BackupItemsFetcher,getItemsForDataType,4,2,6,3,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.service.CalendarSyncer,syncCalendar,17,4,13,1,Alto Acoplamento Efferent
+ V ,PERSISTENCE,com.zegoggles.smssync.mail.BackupImapStore,createAndOpenFolder,15,3,6,2,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.mail.MessageGenerator,messageFromMapCallLog,40,11,15,1,Metodo Longo
+ V ,FRAGMENT,com.zegoggles.smssync.activity.fragments.AdvancedSettings,onPreferenceChange,4,1,4,2,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.mail.MmsSupport,getMMSBodyParts,24,8,11,1,Alto Acoplamento Efferent
+ V ,ACTIVITY,com.zegoggles.smssync.activity.MainActivity,showFragment,11,3,4,2,Muitos Parametros
+ V ,TEST,com.zegoggles.smssync.mail.HeaderGeneratorTest,testShouldSetHeadersWithNullAddress,7,1,7,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,com.zegoggles.smssync.utils.BundleBuilder,putString,4,1,3,2,Muitos Parametros
+" A, D, V, X ",SERVICE,com.zegoggles.smssync.service.SmsBackupService,notificationBuilder,3,1,4,3,Muitos Parametros
+" A, V, X ",UNDEFINED,com.zegoggles.smssync.auth.OAuth2Client,characters,5,3,3,3,Muitos Parametros
+ V ,[TRUSTEDSOCKETFACTORY],com.zegoggles.smssync.mail.AllTrustedSocketFactory,checkServerTrusted,2,1,2,2,Muitos Parametros
+ V ,UNDEFINED,com.zegoggles.smssync.auth.OAuth2Token,fromJSON,15,3,7,1,Alto Acoplamento Efferent
 " A, V, X ",ASYNCTASK,com.zegoggles.smssync.service.RestoreTask,handleAuthError,24,5,9,3,Muitos Parametros
  V ,TEST,com.zegoggles.smssync.calendar.CalendarAccessorPost40Test,shouldAddEntry,17,1,7,0,Alto Acoplamento Efferent
- V ,ACTIVITY,com.zegoggles.smssync.activity.auth.AccountManagerAuthActivity,onClick,3,1,10,2,Muitos Parametros
- V ,PREFERENCE,com.zegoggles.smssync.activity.StatusPreference,setViewAttributes,25,6,4,1,Metodo Longo
- V ,UNDEFINED,com.zegoggles.smssync.mail.Attachment,encodeRFC2231value,26,6,7,2,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.auth.OAuth2Client,getUsernameFromContacts,28,5,9,1,Muitos Desvios
-" D, V ",ACTIVITY,com.zegoggles.smssync.activity.MainActivity,onPreferenceStartFragment,8,2,7,2,Alto Acoplamento Efferent
-" A, R, D, V, X ",ACTIVITY,com.zegoggles.smssync.activity.MainActivity,onActivityResult,46,14,11,3,Muitos Desvios
- V ,APPLICATION,com.zegoggles.smssync.App,debugSensitive,3,3,1,0,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.preferences.DataTypePreferences,setBackupEnabled,3,1,3,2,Muitos Parametros
- V ,BROADCASTRECEIVER,com.zegoggles.smssync.compat.SmsReceiver,onReceive,2,1,2,2,Muitos Parametros
- V ,ACTIVITY,com.zegoggles.smssync.activity.donation.DonationActivity,showSelectDialog,14,4,7,1,Metodo Longo
- V ,[TRUSTEDSOCKETFACTORY],com.zegoggles.smssync.mail.AllTrustedSocketFactory,checkServerTrusted,2,1,2,2,Muitos Parametros
- V ,ASYNCTASK,com.zegoggles.smssync.service.BackupTask,backupCursors,35,7,13,4,Metodo Longo
- V ,ACTIVITY,com.zegoggles.smssync.activity.MainActivity,onOptionsItemSelected,14,4,2,1,Metodo Longo
- V ,UNDEFINED,com.zegoggles.smssync.service.state.State,getDetailedErrorMessage,14,5,5,1,Metodo Longo
- V ,SERVICE,com.zegoggles.smssync.service.SmsJobService,backupStateChanged,15,4,4,1,Muitos Desvios
- V ,ACTIVITY,com.zegoggles.smssync.activity.donation.DonationActivity,onSkuDetailsResponse,19,5,5,2,Metodo Longo
-" A, V, X ",UNDEFINED,com.zegoggles.smssync.service.BackupQueryBuilder,buildQueryForDataType,12,4,4,3,Muitos Parametros
- V ,UNDEFINED,com.zegoggles.smssync.mail.MessageConverter,getDataType,12,3,6,1,Alto Acoplamento Efferent
- V ,ACTIVITY,com.zegoggles.smssync.activity.MainActivity,startRestore,22,4,5,0,Muitos Desvios
- V ,SERVICE,com.zegoggles.smssync.service.SmsBackupService,transition,3,1,3,2,Muitos Parametros
-" A, V, X ",UNDEFINED,com.zegoggles.smssync.mail.CallFormatter,formatForCalendar,8,2,4,3,Muitos Parametros
- V ,SERVICE,com.zegoggles.smssync.service.SmsBackupService,scheduleNextBackup,13,4,6,1,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.auth.TokenRefresher,refreshOAuth2Token,14,3,3,0,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.mail.MessageConverter,getDataType,12,3,6,1,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.mail.PersonRecord,getAddress,17,4,3,1,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.mail.HeaderGenerator,createMessageId,21,5,11,3,Metodo Longo
-" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.auth.OAuth2Client,startElement,6,2,3,4,Muitos Parametros
- V ,UNDEFINED,com.zegoggles.smssync.mail.CallFormatter,mapCallType,16,6,1,1,Muitos Desvios
- V ,FRAGMENT,com.zegoggles.smssync.activity.donation.DonationListFragment,onClick,3,1,8,2,Alto Acoplamento Efferent
-" A, V, X ",UNDEFINED,com.zegoggles.smssync.mail.PersonLookup,lookupPerson,21,7,9,1,Muitos Desvios
- V ,TEST,com.zegoggles.smssync.receiver.SmsBroadcastReceiverTest,before,16,1,0,0,Metodo Longo
- V ,UNDEFINED,com.zegoggles.smssync.service.state.State,getNotificationLabel,12,4,2,1,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.mail.Headers,get,9,2,3,2,Muitos Parametros
-" D, V ",ACTIVITY,com.zegoggles.smssync.activity.donation.DonationActivity,onPurchasesUpdated,3,1,6,2,Alto Acoplamento Efferent
- V ,TEST,com.zegoggles.smssync.service.BackupCursorsTest,shouldIterateOverAllContainedCursors,16,3,3,0,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.service.state.State,getErrorMessage,12,5,3,1,Muitos Desvios
-" A, V, X ",UNDEFINED,com.zegoggles.smssync.utils.Drawables,getTinted,6,1,5,3,Muitos Parametros
- V ,FRAGMENT,com.zegoggles.smssync.activity.fragments.SMSBackupPreferenceFragment,onCreatePreferences,5,1,4,2,Muitos Parametros
-" A, R, D, V, X ",ACTIVITY,com.zegoggles.smssync.activity.MainActivity,onActivityResult,46,14,11,3,Alto Acoplamento Efferent
- V ,ACTIVITY,com.zegoggles.smssync.activity.MainActivity,onCreate,22,4,7,1,Muitos Desvios
- V ,ASYNCTASK,com.zegoggles.smssync.service.BackupTask,onProgressUpdate,5,4,1,1,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.mail.Attachment,encodeRFC2231,10,2,3,2,Muitos Parametros
- V ,UNDEFINED,com.zegoggles.smssync.auth.OAuth2Client,extractEmail,7,1,6,1,Alto Acoplamento Efferent
- V ,SERVICE,com.zegoggles.smssync.service.ServiceBase,releaseLocks,10,5,2,0,Muitos Desvios
- V ,[DRIVER| JOBVALIDATOR],com.zegoggles.smssync.service.AlarmManagerDriver,scheduleTime,12,3,4,1,Muitos Desvios
- V ,PERSISTENCE,com.zegoggles.smssync.mail.BackupImapStore,buildSearchQuery,6,3,7,3,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.mail.HeaderGenerator,setMmsHeaders,7,1,2,2,Muitos Parametros
- V ,ACTIVITY,com.zegoggles.smssync.activity.donation.DonationActivity,onSkuDetailsResponse,19,5,5,2,Muitos Parametros
- V ,SERVICE,com.zegoggles.smssync.service.ServiceBase,onCreate,14,3,7,0,Alto Acoplamento Efferent
- V ,BROADCASTRECEIVER,com.zegoggles.smssync.receiver.BackupBroadcastReceiver,backupRequested,9,2,5,2,Muitos Parametros
- V ,UNDEFINED,com.zegoggles.smssync.mail.CallFormatter,format,8,3,3,3,Muitos Desvios
- V ,ASYNCTASK,com.zegoggles.smssync.service.RestoreTask,importSms,19,11,10,1,Metodo Longo
- V ,TEST,com.zegoggles.smssync.service.BackupJobsTest,verifyJobScheduled,20,3,5,3,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.service.BackupItemsFetcher,getItemsForDataType,4,2,6,3,Alto Acoplamento Efferent
- V ,TEST,com.zegoggles.smssync.mail.MessageConverterTest,testConvertMessagesSeenFlagUnreadWithSMS,16,1,7,0,Alto Acoplamento Efferent
- V ,[CALENDARACCESSOR],com.zegoggles.smssync.calendar.CalendarAccessorPre40,getCalendars,19,4,7,0,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.service.BackupQueryBuilder,getQueryForSMS,3,1,5,2,Muitos Parametros
-" D, V ",BROADCASTRECEIVER,com.zegoggles.smssync.receiver.SmsBroadcastReceiver,log,6,2,6,3,Alto Acoplamento Efferent
- V ,TEST,com.zegoggles.smssync.mail.HeaderGeneratorTest,testShouldGenerateCallLogHeaders,15,1,7,0,Alto Acoplamento Efferent
- V ,ASYNCTASK,com.zegoggles.smssync.service.RestoreTask,handleAuthError,24,5,9,3,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.auth.OAuth2Client,endElement,5,3,1,3,Muitos Desvios
- V ,ASYNCTASK,com.zegoggles.smssync.service.BackupTask,skip,8,2,6,1,Alto Acoplamento Efferent
- V ,BROADCASTRECEIVER,com.zegoggles.smssync.receiver.SmsBroadcastReceiver,onReceive,9,3,4,2,Muitos Desvios
-" A, V, X ",UNDEFINED,com.zegoggles.smssync.preferences.Preferences,getDefaultType,10,3,7,3,Muitos Parametros
- V ,SERVICE,com.zegoggles.smssync.service.SmsBackupService,backupStateChanged,20,7,1,1,Metodo Longo
- V ,PERSISTENCE,com.zegoggles.smssync.mail.BackupImapStore,getTrustedSocketFactory,11,3,7,2,Muitos Parametros
- V ,PREFERENCE,com.zegoggles.smssync.activity.StatusPreference,stateChanged,26,7,4,1,Metodo Longo
- V ,UNDEFINED,com.zegoggles.smssync.service.state.State,getDetailedErrorMessage,14,5,5,1,Muitos Desvios
- V ,SERVICE,com.zegoggles.smssync.service.SmsRestoreService,restoreStateChanged,13,3,2,1,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.mail.MessageConverter,getMessageMap,21,4,7,1,Alto Acoplamento Efferent
- V ,UNDEFINED,com.zegoggles.smssync.service.BackupItemsFetcher,performQuery,15,5,6,1,Metodo Longo
-" A, V, X ",UNDEFINED,com.zegoggles.smssync.mail.MessageGenerator,messageFromMapMms,39,7,14,1,Muitos Desvios
-" A, V, X ",UNDEFINED,com.zegoggles.smssync.mail.HeaderGenerator,createMessageId,21,5,11,3,Muitos Parametros
- V ,TEST,com.zegoggles.smssync.mail.MessageGeneratorTest,testShouldGenerateMMSMessageWithCorrectEncoding,7,1,6,0,Alto Acoplamento Efferent
-" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.mail.MmsSupport,getMMSBodyParts,24,8,11,1,Alto Acoplamento Efferent
-" D, V ",APPLICATION,com.zegoggles.smssync.App,enabled,3,1,8,0,Alto Acoplamento Efferent
-" A, R, D, V, X ",SERVICE,com.zegoggles.smssync.service.SmsBackupService,checkConnectivity,13,8,5,1,Muitos Desvios
- V ,ASYNCTASK,com.zegoggles.smssync.service.RestoreTask,onProgressUpdate,5,4,1,1,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.preferences.Preferences,getAppTheme,12,3,3,0,Muitos Desvios
- V ,[ITERATOR],com.zegoggles.smssync.service.BackupCursors,getNextNonEmptyIndex,8,3,2,0,Muitos Desvios
-" A, D, V, X ",TEST,com.zegoggles.smssync.service.SmsBackupServiceTest,before,37,1,0,0,Metodo Longo
- V ,TEST,com.zegoggles.smssync.service.CalendarSyncerTest,shouldSyncCalendar,15,1,9,0,Metodo Longo
- V ,ACTIVITY,com.zegoggles.smssync.activity.MainActivity,onOptionsItemSelected,14,4,2,1,Muitos Desvios
-" A, R, D, V, X ",TEST,com.zegoggles.smssync.service.RestoreTaskTest,shouldRestoreItems,20,1,11,0,Alto Acoplamento Efferent
- V ,UNDEFINED,com.zegoggles.smssync.mail.ConversionResult,add,15,4,9,2,Alto Acoplamento Efferent
- V ,UNDEFINED,com.zegoggles.smssync.utils.BundleBuilder,putByte,4,1,4,2,Muitos Parametros
- V ,UNDEFINED,com.zegoggles.smssync.service.BackupQueryBuilder,groupSelection,8,4,6,2,Alto Acoplamento Efferent
- V ,TEST,com.zegoggles.smssync.mail.HeaderGeneratorTest,testShouldGenerateMMSHeaders,17,1,7,0,Alto Acoplamento Efferent
-" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.mail.MmsSupport,getDetails,25,6,16,2,Alto Acoplamento Efferent
- V ,TEST,com.zegoggles.smssync.service.BackupJobsTest,before,14,1,7,0,Alto Acoplamento Efferent
- V ,UNDEFINED,com.zegoggles.smssync.mail.MessageConverter,convertMessages,10,2,6,2,Alto Acoplamento Efferent
-" A, R, V, X ",[CALENDARACCESSOR],com.zegoggles.smssync.calendar.CalendarAccessorPre40,addEntry,21,3,10,5,Muitos Parametros
- V ,SERVICE,com.zegoggles.smssync.service.SmsJobService,backupStateChanged,15,4,4,1,Metodo Longo
- V ,UNDEFINED,com.zegoggles.smssync.auth.OAuth2Token,fromJSON,15,3,7,1,Alto Acoplamento Efferent
- V ,ASYNCTASK,com.zegoggles.smssync.service.BackupTask,handleAuthError,25,5,8,2,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.preferences.Preferences,shouldShowAboutDialog,18,3,7,0,Metodo Longo
-" D, V ",TEST,com.zegoggles.smssync.service.AlarmManagerDriverTest,assertAlarmScheduled,16,1,9,1,Alto Acoplamento Efferent
-" A, V, X ",UNDEFINED,com.zegoggles.smssync.auth.OAuth2Client,characters,5,3,3,3,Muitos Parametros
- V ,PERSISTENCE,com.zegoggles.smssync.mail.BackupImapStore,getStoreUriForLogging,16,4,4,0,Metodo Longo
-" D, V ",TEST,com.zegoggles.smssync.service.BackupJobsTest,verifyJobScheduled,20,3,5,3,Metodo Longo
-" A, R, V, X ",ASYNCTASK,com.zegoggles.smssync.service.RestoreTask,importSms,19,11,10,1,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.mail.ConversionResult,add,15,4,9,2,Muitos Parametros
- V ,UNDEFINED,com.zegoggles.smssync.utils.ListPreferenceHelper,initListPreference,29,8,0,3,Metodo Longo
- V ,ACTIVITY,com.zegoggles.smssync.activity.MainActivity,showDialog,3,1,2,2,Muitos Parametros
-" A, V, X ",UNDEFINED,com.zegoggles.smssync.mail.Attachment,createPart,13,3,4,3,Muitos Parametros
-" A, R, V, X ",ASYNCTASK,com.zegoggles.smssync.service.BackupTask,backupCursors,35,7,13,4,Alto Acoplamento Efferent
- V ,UNDEFINED,com.zegoggles.smssync.auth.OAuth2Client,postTokenEndpoint,13,1,6,1,Alto Acoplamento Efferent
- V ,TEST,com.zegoggles.smssync.mail.HeaderGeneratorTest,testShouldGenerateCallLogHeaders,15,1,7,0,Metodo Longo
- V ,UNDEFINED,com.zegoggles.smssync.utils.AppLog,displayAsDialog,9,3,4,2,Muitos Parametros
- V ,ASYNCTASK,com.zegoggles.smssync.service.BackupTask,transition,3,1,4,2,Muitos Parametros
- V ,PERSISTENCE,com.zegoggles.smssync.mail.BackupImapStore,getTrustedSocketFactory,11,3,7,2,Muitos Desvios
- V ,PERSISTENCE,com.zegoggles.smssync.mail.BackupImapStore,compare,5,5,4,2,Muitos Parametros
- V ,PREFERENCE,com.zegoggles.smssync.activity.StatusPreference,finishedBackup,17,4,6,1,Alto Acoplamento Efferent
- V ,FRAGMENT,com.zegoggles.smssync.activity.fragments.AdvancedSettings,updateUsernameLabel,9,3,2,1,Muitos Desvios
- V ,TEST,com.zegoggles.smssync.service.SmsBackupServiceTest,shouldCheckForWifiConnectivity,9,1,6,0,Alto Acoplamento Efferent
- V ,TEST,com.zegoggles.smssync.calendar.CalendarAccessorPost40Test,shouldAddEntry,17,1,7,0,Metodo Longo
- V ,ACTIVITY,com.zegoggles.smssync.activity.MainActivity,onCreate,22,4,7,1,Metodo Longo
- V ,UNDEFINED,com.zegoggles.smssync.mail.MessageConverter,markAsSeen,18,6,3,2,Muitos Desvios
- V ,FRAGMENT,com.zegoggles.smssync.activity.fragments.MainSettings,summarizeAutoBackupSettings,17,4,6,0,Alto Acoplamento Efferent
- V ,TEST,com.zegoggles.smssync.mail.MessageConverterTest,testConvertMessagesSeenFlagFromMessageStatusWithSMS,16,1,7,0,Alto Acoplamento Efferent
-" A, R, V, X ",ASYNCTASK,com.zegoggles.smssync.service.BackupTask,backupCursors,35,7,13,4,Muitos Parametros
- V ,UNDEFINED,com.zegoggles.smssync.auth.TokenRefresher,refreshUsingOAuth2Client,9,3,6,2,Muitos Parametros
- V ,UNDEFINED,com.zegoggles.smssync.service.BackupQueryBuilder,groupSelection,8,4,6,2,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.contacts.ContactGroup,equals,8,6,3,1,Muitos Desvios
- V ,ASYNCTASK,com.zegoggles.smssync.service.RestoreTask,handleAuthError,24,5,9,3,Metodo Longo
- V ,PREFERENCE,com.zegoggles.smssync.activity.StatusPreference,onClick,8,3,1,1,Muitos Desvios
-" A, V, X ",UNDEFINED,com.zegoggles.smssync.service.BulkFetcher,fetch,13,4,8,3,Muitos Parametros
- V ,SERVICE,com.zegoggles.smssync.service.SmsBackupService,backup,27,6,9,2,Alto Acoplamento Efferent
- V ,UNDEFINED,com.zegoggles.smssync.activity.Dialogs,onClick,3,3,3,2,Muitos Desvios
- V ,ACTIVITY,com.zegoggles.smssync.activity.auth.AccountManagerAuthActivity,onCreate,14,3,8,1,Metodo Longo
- V ,UNDEFINED,com.zegoggles.smssync.auth.TokenRefresher,refreshUsingAccountManager,27,6,8,2,Alto Acoplamento Efferent
-" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.utils.ThreadHelper,getThreadId,30,11,12,2,Alto Acoplamento Efferent
-" D, V ",[CALENDARACCESSOR],com.zegoggles.smssync.calendar.CalendarAccessorPost40,getCalendars,26,6,9,0,Muitos Desvios
- V ,PERSISTENCE,com.zegoggles.smssync.mail.BackupImapStore,closeFolders,12,3,5,0,Muitos Desvios
- V ,PERSISTENCE,com.zegoggles.smssync.mail.BackupImapStore,createAndOpenFolder,15,3,6,2,Alto Acoplamento Efferent
- V ,[DRIVER| JOBVALIDATOR],com.zegoggles.smssync.service.AlarmManagerDriver,schedule,15,3,7,1,Alto Acoplamento Efferent
- V ,ACTIVITY,com.zegoggles.smssync.activity.donation.DonationActivity,checkUserDonationStatus,38,1,0,2,Muitos Parametros
- V ,TEST,com.zegoggles.smssync.mail.HeaderGeneratorTest,testShouldGenerateStandardHeaders,14,1,7,0,Alto Acoplamento Efferent
-" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.mail.MessageConverter,messageToContentValues,39,8,13,1,Metodo Longo
-" A, V, X ",PREFERENCE,com.zegoggles.smssync.activity.StatusPreference,restoreStateChanged,27,7,5,1,Muitos Desvios
- V ,ACTIVITY,com.zegoggles.smssync.activity.MainActivity,onPreferenceStartScreen,12,3,4,2,Muitos Parametros
- V ,TEST,com.zegoggles.smssync.service.BackupTaskTest,result,7,2,5,2,Muitos Parametros
- V ,BROADCASTRECEIVER,com.zegoggles.smssync.receiver.BootReceiver,onReceive,9,3,4,2,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.preferences.DataTypePreferences,getMaxSyncedDate,9,3,3,1,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.compat.GooglePlayServices,isAvailable,33,6,7,1,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.service.BackupItemsFetcher,performQuery,15,5,6,1,Muitos Desvios
-" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.preferences.AuthPreferences,formatUri,3,1,3,4,Muitos Parametros
- V ,UNDEFINED,com.zegoggles.smssync.mail.MessageGenerator,includePersonInBackup,5,3,5,2,Muitos Parametros
- V ,UNDEFINED,com.zegoggles.smssync.utils.BundleBuilder,putParcelableArray,4,1,4,2,Muitos Parametros
- V ,PERSISTENCE,com.zegoggles.smssync.mail.BackupImapStore,getFolder,10,3,6,2,Muitos Desvios
-" D, V ",TEST,com.zegoggles.smssync.service.CalendarSyncerTest,shouldSyncCalendar,15,1,9,0,Alto Acoplamento Efferent
- V ,TEST,com.zegoggles.smssync.contacts.ContactAccessorPost20Test,shouldGetGroupsFromResolver,11,1,6,0,Alto Acoplamento Efferent
- V ,ACTIVITY,com.zegoggles.smssync.activity.MainActivity,restoreStateChanged,5,3,2,1,Muitos Desvios
- V ,ACTIVITY,com.zegoggles.smssync.activity.auth.AccountManagerAuthActivity,useToken,6,1,4,2,Muitos Parametros
- V ,TEST,com.zegoggles.smssync.mail.HeaderGeneratorTest,testShouldGenerateSMSHeaders,23,1,7,0,Alto Acoplamento Efferent
- V ,SERVICE,com.zegoggles.smssync.service.SmsRestoreService,handleIntent,18,5,12,1,Muitos Desvios
- V ,SERVICE,com.zegoggles.smssync.service.ServiceBase,appLog,9,3,5,2,Muitos Parametros
- V ,UNDEFINED,com.zegoggles.smssync.auth.TokenRefresher,refreshUsingAccountManager,27,6,8,2,Muitos Parametros
- V ,UNDEFINED,com.zegoggles.smssync.mail.MmsSupport,getMMSBodyParts,24,8,11,1,Metodo Longo
- V ,TEST,com.zegoggles.smssync.service.BackupQueryBuilderTest,shouldBuildQueryForMMSWithSyncedDate,10,1,7,0,Alto Acoplamento Efferent
- V ,UNDEFINED,com.zegoggles.smssync.service.BulkFetcher,fetch,13,4,8,3,Alto Acoplamento Efferent
- V ,APPLICATION,com.zegoggles.smssync.App,rescheduleJobs,9,4,2,0,Muitos Desvios
-" A, R, D, V, X ",TEST,com.zegoggles.smssync.service.CalendarSyncerTest,message,8,1,5,4,Muitos Parametros
- V ,[CONTACTACCESSOR],com.zegoggles.smssync.contacts.ContactAccessorPost20,getGroupContactIds,10,4,5,2,Muitos Desvios
-" A, D, V, X ",ACTIVITY,com.zegoggles.smssync.activity.MainActivity,onActivityResult,46,14,11,3,Muitos Parametros
- V ,TEST,com.zegoggles.smssync.service.AlarmManagerDriverTest,assertAlarmScheduled,16,1,9,1,Metodo Longo
- V ,SERVICE,com.zegoggles.smssync.service.SmsBackupService,backup,27,6,9,2,Muitos Parametros
- V ,UNDEFINED,com.zegoggles.smssync.preferences.Preferences,shouldShowAboutDialog,18,3,7,0,Alto Acoplamento Efferent
- V ,UNDEFINED,com.zegoggles.smssync.mail.MessageConverter,getMessageMap,21,4,7,1,Muitos Desvios
-" A, R, V, X ",ASYNCTASK,com.zegoggles.smssync.service.BackupTask,fetchAndBackupItems,38,8,13,1,Muitos Desvios
- V ,ASYNCTASK,com.zegoggles.smssync.service.BackupTask,appLogDebug,3,1,3,2,Muitos Parametros
- V ,ACTIVITY,com.zegoggles.smssync.activity.MainActivity,performAction,16,5,4,1,Metodo Longo
- V ,FRAGMENT,com.zegoggles.smssync.activity.fragments.AdvancedSettings,onResume,18,1,0,0,Metodo Longo
- V ,BROADCASTRECEIVER,com.zegoggles.smssync.receiver.PackageReplacedReceiver,onReceive,10,3,7,2,Muitos Parametros
- V ,UNDEFINED,com.zegoggles.smssync.service.BackupItemsFetcher,getMostRecentTimestampForQuery,14,2,3,1,Metodo Longo
- V ,UNDEFINED,com.zegoggles.smssync.mail.MessageGenerator,includeInBackup,8,3,4,2,Muitos Desvios
- V ,[ITERATOR],com.zegoggles.smssync.service.BackupCursors,next,14,4,3,0,Muitos Desvios
- V ,[CALENDARACCESSOR],com.zegoggles.smssync.calendar.CalendarAccessorPre40,addEntry,21,3,10,5,Muitos Desvios
- V ,ENTITY,com.zegoggles.smssync.activity.donation.Sku,writeToParcel,8,1,2,2,Muitos Parametros
- V ,ASYNCTASK,com.zegoggles.smssync.service.RestoreTask,handleAuthError,24,5,9,3,Alto Acoplamento Efferent
- V ,APPLICATION,com.zegoggles.smssync.App,setupStrictMode,5,3,2,0,Muitos Desvios
- V ,ACTIVITY,com.zegoggles.smssync.activity.MainActivity,showFragment,11,3,4,2,Muitos Parametros
- V ,UNDEFINED,com.zegoggles.smssync.utils.BundleBuilder,putFloat,4,1,4,2,Muitos Parametros
- V ,SERVICE,com.zegoggles.smssync.service.state.BackupState,transition,3,1,3,2,Muitos Parametros
- V ,ACTIVITY,com.zegoggles.smssync.activity.MainActivity,doPerform,11,4,1,1,Muitos Desvios
- V ,PREFERENCE,com.zegoggles.smssync.activity.StatusPreference,finishedBackup,17,4,6,1,Metodo Longo
- V ,UNDEFINED,com.zegoggles.smssync.preferences.Preferences,getVersion,11,3,6,1,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.mail.HeaderGenerator,setSmsHeaders,10,1,2,2,Muitos Parametros
- V ,[DRIVER| JOBVALIDATOR],com.zegoggles.smssync.service.AlarmManagerDriver,schedule,15,3,7,1,Metodo Longo
- V ,PREFERENCE,com.zegoggles.smssync.activity.StatusPreference,backupStateChanged,23,7,5,1,Metodo Longo
- V ,SERVICE,com.zegoggles.smssync.service.ServiceBase,onCreate,14,3,7,0,Metodo Longo
-" A, R, V, X ",ASYNCTASK,com.zegoggles.smssync.service.RestoreTask,restore,50,12,16,1,Metodo Longo
- V ,UNDEFINED,com.zegoggles.smssync.contacts.ContactGroupIds,add,4,1,3,2,Muitos Parametros
- V ,TEST,com.zegoggles.smssync.mail.HeaderGeneratorTest,testShouldGenerateStandardHeaders,14,1,7,0,Metodo Longo
- V ,[CALENDARACCESSOR],com.zegoggles.smssync.calendar.CalendarAccessorPost40,addEntry,26,4,11,5,Muitos Desvios
-" D, V ",BROADCASTRECEIVER,com.zegoggles.smssync.receiver.PackageReplacedReceiver,onReceive,10,3,7,2,Alto Acoplamento Efferent
-" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.mail.MessageGenerator,messageFromMapMms,39,7,14,1,Alto Acoplamento Efferent
- V ,SERVICE,com.zegoggles.smssync.service.SmsBackupService,handleErrorState,17,6,1,1,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.mail.CallFormatter,callTypeString,8,2,3,2,Muitos Parametros
- V ,TEST,com.zegoggles.smssync.mail.HeaderGeneratorTest,testShouldSetHeadersWithNullAddress,7,1,7,0,Alto Acoplamento Efferent
- V ,[CALENDARACCESSOR],com.zegoggles.smssync.calendar.CalendarAccessorPre40,getCalendars,19,4,7,0,Metodo Longo
- V ,UNDEFINED,com.zegoggles.smssync.utils.ThreadHelper,getThreadId,30,11,12,2,Muitos Parametros
- V ,UNDEFINED,com.zegoggles.smssync.utils.AppLog,readLog,25,5,7,1,Muitos Desvios
- V ,ASYNCTASK,com.zegoggles.smssync.service.RestoreTask,importMessage,31,8,11,1,Metodo Longo
- V ,UNDEFINED,com.zegoggles.smssync.mail.Attachment,encodeRFC2231value,26,6,7,2,Metodo Longo
- V ,FRAGMENT,com.zegoggles.smssync.activity.fragments.MainSettings,summarizeBackupScheduleSettings,15,3,4,1,Muitos Desvios
- V ,ACTIVITY,com.zegoggles.smssync.activity.donation.DonationActivity,onSkuDetailsResponse,19,5,5,2,Muitos Desvios
-" D, V ",TEST,com.zegoggles.smssync.mail.HeaderGeneratorTest,testShouldGenerateSMSHeaders,23,1,7,0,Metodo Longo
-" D, V ",SERVICE,com.zegoggles.smssync.service.SmsBackupService,backup,27,6,9,2,Metodo Longo
- V ,PREFERENCE,com.zegoggles.smssync.activity.StatusPreference,onRestore,11,3,7,0,Alto Acoplamento Efferent
- V ,UNDEFINED,com.zegoggles.smssync.auth.OAuth2Token,fromJSON,15,3,7,1,Muitos Desvios
- V ,SERVICE,com.zegoggles.smssync.service.state.RestoreState,getNotificationLabel,16,5,2,1,Metodo Longo
-" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.mail.HeaderGenerator,setHeaders,21,4,7,7,Muitos Parametros
- V ,SERVICE,com.zegoggles.smssync.service.ServiceBase,acquireLocks,14,4,4,0,Metodo Longo
- V ,SERVICE,com.zegoggles.smssync.service.SmsRestoreService,accept,3,3,1,2,Muitos Desvios
- V ,[TRUSTEDSOCKETFACTORY],com.zegoggles.smssync.mail.AllTrustedSocketFactory,createSocket,14,2,7,4,Metodo Longo
- V ,ACTIVITY,com.zegoggles.smssync.activity.MainActivity,showDialog,18,5,4,1,Metodo Longo
- V ,TEST,com.zegoggles.smssync.service.BackupTaskTest,mockFetch,8,1,0,2,Muitos Parametros
-" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.utils.AppLog,run,24,8,0,0,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.utils.BundleBuilder,putBoolean,4,1,4,2,Muitos Parametros
- V ,UNDEFINED,com.zegoggles.smssync.service.BackupJobs,createJob,3,3,4,2,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.mail.MmsSupport,getDetails,25,6,16,2,Muitos Desvios
- V ,SERVICE,com.zegoggles.smssync.service.ServiceBase,appLogDebug,8,4,4,2,Muitos Desvios
-" A, V, X ",UNDEFINED,com.zegoggles.smssync.mail.PersonLookup,getPrimaryEmail,20,7,5,1,Muitos Desvios
- V ,FRAGMENT,com.zegoggles.smssync.activity.fragments.SMSBackupPreferenceFragment,onPreferenceChange,9,1,0,2,Muitos Parametros
- V ,UNDEFINED,com.zegoggles.smssync.utils.ThreadHelper,getThreadId,30,11,12,2,Metodo Longo
- V ,UNDEFINED,com.zegoggles.smssync.mail.PersonLookup,lookupPerson,21,7,9,1,Metodo Longo
-" A, V, X ",ACTIVITY,com.zegoggles.smssync.activity.donation.DonationActivity,checkUserDonationStatus,38,1,0,2,Metodo Longo
- V ,ASYNCTASK,com.zegoggles.smssync.service.RestoreTask,doInBackground,16,5,4,1,Muitos Desvios
- V ,ACTIVITY,com.zegoggles.smssync.activity.MainActivity,startRestore,22,4,5,0,Metodo Longo
- V ,UNDEFINED,com.zegoggles.smssync.auth.OAuth2Client,getToken,14,2,6,1,Metodo Longo
- V ,[ITERATOR],com.zegoggles.smssync.service.BackupCursors,close,10,3,3,0,Muitos Desvios
-" A, R, V, X ",[CALENDARACCESSOR],com.zegoggles.smssync.calendar.CalendarAccessorPost40,addEntry,26,4,11,5,Muitos Parametros
- V ,UNDEFINED,com.zegoggles.smssync.utils.BundleBuilder,putDouble,4,1,4,2,Muitos Parametros
- V ,TEST,com.zegoggles.smssync.service.BackupJobsTest,before,14,1,7,0,Metodo Longo
- V ,FRAGMENT,com.zegoggles.smssync.activity.fragments.SMSBackupPreferenceFragment,addPreferenceListener,16,2,0,2,Muitos Parametros
- V ,PREFERENCE,com.zegoggles.smssync.activity.StatusPreference,onRestore,11,3,7,0,Muitos Desvios
- V ,APPLICATION,com.zegoggles.smssync.App,onChange,3,1,3,2,Muitos Parametros
- V ,UNDEFINED,com.zegoggles.smssync.service.RestoreConfig,retryWithStore,3,1,3,2,Muitos Parametros
-" D, V ",TEST,com.zegoggles.smssync.service.RestoreTaskTest,shouldRestoreItems,20,1,11,0,Metodo Longo
- V ,UNDEFINED,com.zegoggles.smssync.mail.HeaderGenerator,setHeaders,21,4,7,7,Alto Acoplamento Efferent
- V ,FRAGMENT,com.zegoggles.smssync.activity.fragments.MainSettings,userDonationState,10,5,2,1,Muitos Desvios
- V ,ACTIVITY,com.zegoggles.smssync.activity.donation.DonationActivity,onPurchasesUpdated,24,5,4,2,Metodo Longo
-" A, R, V, X ",ACTIVITY,com.zegoggles.smssync.activity.MainActivity,onActivityResult,46,14,11,3,Metodo Longo
- V ,ACTIVITY,com.zegoggles.smssync.activity.MainActivity,onPreferenceStartFragment,8,2,7,2,Muitos Parametros
- V ,PREFERENCE,com.zegoggles.smssync.activity.StatusPreference,onBackup,12,4,7,0,Muitos Desvios
- V ,SERVICE,com.zegoggles.smssync.service.state.BackupState,getNotificationLabel,14,4,2,1,Metodo Longo
- V ,UNDEFINED,com.zegoggles.smssync.preferences.AuthPreferences,getStoreUri,14,3,3,0,Metodo Longo
-" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.mail.MessageConverter,messageToContentValues,39,8,13,1,Alto Acoplamento Efferent
- V ,UNDEFINED,com.zegoggles.smssync.mail.HeaderGenerator,setHeaders,21,4,7,7,Muitos Desvios
- V ,FRAGMENT,com.zegoggles.smssync.activity.fragments.MainSettings,summarizeBackupScheduleSettings,15,3,4,1,Metodo Longo
-" D, V ",ACTIVITY,com.zegoggles.smssync.activity.auth.AccountManagerAuthActivity,onCreate,14,3,8,1,Alto Acoplamento Efferent
- V ,UNDEFINED,com.zegoggles.smssync.mail.MessageConverter,getMessageMap,21,4,7,1,Metodo Longo
- V ,UNDEFINED,com.zegoggles.smssync.preferences.Preferences,getVersion,11,3,6,1,Alto Acoplamento Efferent
- V ,UNDEFINED,com.zegoggles.smssync.mail.MessageGenerator,getSubject,3,2,5,2,Muitos Parametros
- V ,UNDEFINED,com.zegoggles.smssync.service.BackupQueryBuilder,getQueryForMMS,7,2,6,2,Muitos Parametros
- V ,UNDEFINED,com.zegoggles.smssync.service.BackupJobs,jobConstraints,8,3,3,1,Muitos Desvios
-" A, R, D, V, X ",ASYNCTASK,com.zegoggles.smssync.service.RestoreTask,restore,50,12,16,1,Alto Acoplamento Efferent
-" A, V, X ",UNDEFINED,com.zegoggles.smssync.service.BackupJobs,schedule,18,9,6,3,Muitos Parametros
- V ,UNDEFINED,com.zegoggles.smssync.mail.MessageGenerator,messageForDataType,12,4,3,2,Muitos Desvios
- V ,TEST,com.zegoggles.smssync.service.SmsBackupServiceTest,shouldPassInCorrectBackupConfig,11,1,6,0,Alto Acoplamento Efferent
-" A, R, V, X ",ASYNCTASK,com.zegoggles.smssync.service.BackupTask,fetchAndBackupItems,38,8,13,1,Alto Acoplamento Efferent
- V ,FRAGMENT,com.zegoggles.smssync.activity.fragments.MainSettings,onCreatePreferences,4,1,3,2,Muitos Parametros
- V ,UNDEFINED,com.zegoggles.smssync.mail.MessageGenerator,messageFromMapSms,28,5,14,1,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.mail.ConversionResult,add,15,4,9,2,Metodo Longo
- V ,UNDEFINED,com.zegoggles.smssync.utils.AppLog,run,24,8,0,0,Metodo Longo
-" A, V, X ",FRAGMENT,com.zegoggles.smssync.activity.fragments.AdvancedSettings,updateMaxItems,7,3,3,3,Muitos Parametros
- V ,ACTIVITY,com.zegoggles.smssync.activity.MainActivity,handleAccountManagerAuth,14,4,4,1,Muitos Desvios
- V ,ACTIVITY,com.zegoggles.smssync.activity.donation.DonationActivity,onPurchasesUpdated,24,5,4,2,Muitos Desvios
-" D, V ",ACTIVITY,com.zegoggles.smssync.activity.MainActivity,onCreate,22,4,7,1,Alto Acoplamento Efferent
- V ,ASYNCTASK,com.zegoggles.smssync.tasks.OAuth2CallbackTask,doInBackground,13,5,7,1,Alto Acoplamento Efferent
- V ,TEST,com.zegoggles.smssync.service.BackupJobsTest,shouldScheduleContentUriTriggerForCallLogIfEnabled,8,1,6,0,Alto Acoplamento Efferent
- V ,FRAGMENT,com.zegoggles.smssync.activity.fragments.MainSettings,summarizeAutoBackupSettings,17,4,6,0,Metodo Longo
- V ,ACTIVITY,com.zegoggles.smssync.activity.MainActivity,checkDefaultSmsApp,5,3,2,0,Muitos Desvios
- V ,TEST,com.zegoggles.smssync.mail.HeaderGeneratorTest,testShouldGenerateMMSHeaders,17,1,7,0,Metodo Longo
- V ,UNDEFINED,com.zegoggles.smssync.service.BackupQueryBuilder,buildQueryForDataType,12,4,4,3,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.mail.CallFormatter,mapTextCallType,16,6,1,1,Metodo Longo
- V ,PREFERENCE,com.zegoggles.smssync.activity.StatusPreference,onBackup,12,4,7,0,Alto Acoplamento Efferent
- V ,[ITERATOR],com.zegoggles.smssync.service.BackupCursors,add,4,1,5,2,Muitos Parametros
- V ,UNDEFINED,com.zegoggles.smssync.utils.BundleBuilder,putLong,4,1,4,2,Muitos Parametros
-" A, D, V, X ",ACTIVITY,com.zegoggles.smssync.activity.auth.AccountManagerAuthActivity,onClick,3,1,10,2,Alto Acoplamento Efferent
- V ,UNDEFINED,com.zegoggles.smssync.utils.BundleBuilder,putParcelable,4,1,4,2,Muitos Parametros
- V ,ASYNCTASK,com.zegoggles.smssync.tasks.OAuth2CallbackTask,doInBackground,13,5,7,1,Muitos Desvios
- V ,TEST,com.zegoggles.smssync.service.AlarmManagerDriverTest,getValidator,14,1,0,0,Metodo Longo
- V ,FRAGMENT,com.zegoggles.smssync.activity.fragments.AdvancedSettings,checkValidImapFolder,10,2,5,2,Muitos Parametros
- V ,UNDEFINED,com.zegoggles.smssync.mail.Attachment,encodeRFC2231value,26,6,7,2,Muitos Parametros
- V ,UNDEFINED,com.zegoggles.smssync.service.BackupQueryBuilder,groupSelection,8,4,6,2,Muitos Parametros
-" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.mail.MessageGenerator,messageFromMapCallLog,40,11,15,1,Muitos Desvios
- V ,TEST,com.zegoggles.smssync.service.BackupTaskTest,shouldBackupItems,14,1,4,0,Metodo Longo
- V ,APPLICATION,com.zegoggles.smssync.App,enableOrDisableComponent,6,3,4,2,Muitos Parametros
- V ,UNDEFINED,com.zegoggles.smssync.auth.OAuth2Client,refreshToken,11,2,6,1,Alto Acoplamento Efferent
- V ,UNDEFINED,com.zegoggles.smssync.mail.MmsSupport,getDetails,25,6,16,2,Metodo Longo
- V ,UNDEFINED,com.zegoggles.smssync.mail.Attachment,createPartFromFile,3,1,4,2,Muitos Parametros
-" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.mail.Attachment,createPartFromUri,3,1,5,4,Muitos Parametros
-" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.utils.AppLog,onLayout,4,1,1,5,Muitos Parametros
- V ,SERVICE,com.zegoggles.smssync.service.state.BackupState,getNotificationLabel,14,4,2,1,Muitos Desvios
- V ,[CALENDARACCESSOR],com.zegoggles.smssync.calendar.CalendarAccessorPost40,enableSync,6,1,6,1,Alto Acoplamento Efferent
-" A, R, V, X ",ASYNCTASK,com.zegoggles.smssync.service.RestoreTask,importMessage,31,8,11,1,Alto Acoplamento Efferent
- V ,TEST,com.zegoggles.smssync.auth.TokenRefresherTest,shouldSetNewTokenAfterRefresh,11,1,6,0,Alto Acoplamento Efferent
- V ,SERVICE,com.zegoggles.smssync.service.ServiceBase,isConnectedViaWifi_SDK21,9,5,3,0,Muitos Desvios
- V ,SERVICE,com.zegoggles.smssync.service.SmsJobService,onStartJob,23,6,7,1,Alto Acoplamento Efferent
-" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.service.CalendarSyncer,syncCalendar,17,4,13,1,Alto Acoplamento Efferent
- V ,UNDEFINED,com.zegoggles.smssync.service.BackupJobs,observedUris,8,3,4,0,Muitos Desvios
- V ,[TRUSTEDSOCKETFACTORY],com.zegoggles.smssync.mail.AllTrustedSocketFactory,createSocket,14,2,7,4,Alto Acoplamento Efferent
- V ,TEST,com.zegoggles.smssync.mail.MessageGeneratorTest,mockMessage,6,1,5,2,Muitos Parametros
- V ,TEST,com.zegoggles.smssync.auth.TokenRefresherTest,shouldHandleExceptionsThrownByFuture,16,2,6,0,Metodo Longo
- V ,FRAGMENT,com.zegoggles.smssync.activity.donation.DonationListFragment,onClick,3,1,8,2,Muitos Parametros
- V ,ACTIVITY,com.zegoggles.smssync.activity.donation.DonationActivity,onBillingSetupFinished,25,6,6,1,Metodo Longo
- V ,TEST,com.zegoggles.smssync.service.SmsBackupServiceTest,shouldCheckForEnabledDataTypes,10,1,7,0,Alto Acoplamento Efferent
- V ,SERVICE,com.zegoggles.smssync.service.SmsJobService,shouldRun,13,3,4,1,Muitos Desvios
- V ,SERVICE,com.zegoggles.smssync.service.SmsRestoreService,clearCache,14,3,0,0,Metodo Longo
- V ,UNDEFINED,com.zegoggles.smssync.preferences.Preferences,getStringAsInt,3,1,2,2,Muitos Parametros
- V ,UNDEFINED,com.zegoggles.smssync.mail.MessageGenerator,messageFromMapSms,28,5,14,1,Metodo Longo
- V ,[CONTACTACCESSOR],com.zegoggles.smssync.contacts.ContactAccessorPost20,getGroups,10,3,6,2,Muitos Desvios
-" D, V ",PERSISTENCE,com.zegoggles.smssync.mail.BackupImapStore,compare,5,5,4,2,Muitos Desvios
- V ,SERVICE,com.zegoggles.smssync.service.SmsRestoreService,accept,3,3,1,2,Muitos Parametros
- V ,UNDEFINED,com.zegoggles.smssync.utils.AppLog,readLog,25,5,7,1,Metodo Longo
- V ,ACTIVITY,com.zegoggles.smssync.activity.donation.DonationActivity,onPurchasesUpdated,24,5,4,2,Muitos Parametros
- V ,PERSISTENCE,com.zegoggles.smssync.mail.BackupImapStore,createAndOpenFolder,15,3,6,2,Metodo Longo
- V ,ACTIVITY,com.zegoggles.smssync.activity.auth.AccountManagerAuthActivity,run,11,3,0,1,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.preferences.AuthPreferences,getStoreUri,14,3,3,0,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.auth.TokenRefresher,refreshUsingAccountManager,27,6,8,2,Metodo Longo
- V ,UNDEFINED,com.zegoggles.smssync.mail.MessageConverter,convertMessages,10,2,6,2,Muitos Parametros
-" A, V, X ",SERVICE,com.zegoggles.smssync.service.ServiceBase,onStartCommand,4,1,2,3,Muitos Parametros
- V ,UNDEFINED,com.zegoggles.smssync.activity.Dialogs,shouldOverrideUrlLoading,4,1,1,2,Muitos Parametros
- V ,TEST,com.zegoggles.smssync.service.BackupTaskTest,shouldSkipItems,8,1,6,0,Alto Acoplamento Efferent
-" A, R, V, X ",ASYNCTASK,com.zegoggles.smssync.service.RestoreTask,restore,50,12,16,1,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.utils.AppLog,rotate,32,3,0,1,Metodo Longo
-" A, V, X ",ASYNCTASK,com.zegoggles.smssync.service.RestoreTask,importSms,19,11,10,1,Alto Acoplamento Efferent
-" D, V ",[CALENDARACCESSOR],com.zegoggles.smssync.calendar.CalendarAccessorPost40,addEntry,26,4,11,5,Metodo Longo
- V ,UNDEFINED,com.zegoggles.smssync.auth.TokenRefresher,refreshUsingOAuth2Client,9,3,6,2,Alto Acoplamento Efferent
- V ,UNDEFINED,com.zegoggles.smssync.mail.MmsSupport,getDetails,25,6,16,2,Muitos Parametros
- V ,SERVICE,com.zegoggles.smssync.service.ServiceBase,appLogDebug,8,4,4,2,Muitos Parametros
- V ,TEST,com.zegoggles.smssync.mail.MessageConverterTest,testConvertMessagesSeenFlagUnreadWithSMS,16,1,7,0,Metodo Longo
-" D, V ",ACTIVITY,com.zegoggles.smssync.activity.donation.DonationActivity,onBillingSetupFinished,25,6,6,1,Muitos Desvios
- V ,UNDEFINED,com.zegoggles.smssync.mail.CallFormatter,mapTextCallType,16,6,1,1,Muitos Desvios
- V ,TEST,com.zegoggles.smssync.mail.MessageConverterTest,testConvertMessagesSeenFlagFromMessageStatusWithSMS,16,1,7,0,Metodo Longo
- V ,FRAGMENT,com.zegoggles.smssync.activity.fragments.AdvancedSettings,onPreferenceChange,3,1,0,2,Muitos Parametros
-" A, V, X ",UNDEFINED,com.zegoggles.smssync.service.BackupItemsFetcher,getItemsForDataType,4,2,6,3,Muitos Parametros
- V ,FRAGMENT,com.zegoggles.smssync.activity.fragments.MainSettings,onPreferenceChange,4,1,0,2,Muitos Parametros
- V ,BROADCASTRECEIVER,com.zegoggles.smssync.compat.MmsReceiver,onReceive,2,1,2,2,Muitos Parametros
- V ,PERSISTENCE,com.zegoggles.smssync.mail.BackupImapStore,createAndOpenFolder,15,3,6,2,Muitos Parametros
- V ,ASYNCTASK,com.zegoggles.smssync.service.RestoreTask,importCallLog,11,5,7,1,Alto Acoplamento Efferent
- V ,UNDEFINED,com.zegoggles.smssync.utils.BundleBuilder,putParcelableArrayList,4,1,4,2,Muitos Parametros
- V ,ACTIVITY,com.zegoggles.smssync.activity.auth.AccountManagerAuthActivity,onCreateDialog,21,1,0,1,Metodo Longo
- V ,FRAGMENT,com.zegoggles.smssync.activity.fragments.MainSettings,summarizeAutoBackupSettings,17,4,6,0,Muitos Desvios
- V ,TEST,com.zegoggles.smssync.service.SmsBackupServiceTest,assertNotificationShown,6,1,3,2,Muitos Parametros
-" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.mail.HeaderGenerator,createMessageId,21,5,11,3,Alto Acoplamento Efferent
-" D, V ",TEST,com.zegoggles.smssync.service.AlarmManagerDriverTest,jobBuilder,31,1,0,0,Metodo Longo
- V ,UNDEFINED,com.zegoggles.smssync.preferences.AuthPreferences,encode,8,3,4,1,Muitos Desvios
-" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.mail.MessageGenerator,messageFromMapCallLog,40,11,15,1,Metodo Longo
- V ,UNDEFINED,com.zegoggles.smssync.preferences.Preferences,getDefaultType,10,3,7,3,Alto Acoplamento Efferent
-" A, V, X ",BROADCASTRECEIVER,com.zegoggles.smssync.receiver.SmsBroadcastReceiver,log,6,2,6,3,Muitos Parametros
- V ,UNDEFINED,com.zegoggles.smssync.utils.AppLog,displayAsDialog,9,3,4,2,Muitos Desvios
- V ,[TRUSTEDSOCKETFACTORY],com.zegoggles.smssync.mail.AllTrustedSocketFactory,checkClientTrusted,2,1,2,2,Muitos Parametros
  V ,ASYNCTASK,com.zegoggles.smssync.service.BackupTask,appLog,3,1,3,2,Muitos Parametros
- V ,PREFERENCE,com.zegoggles.smssync.activity.StatusPreference,restoreStateChanged,27,7,5,1,Metodo Longo
-" A, R, D, V, X ",SERVICE,com.zegoggles.smssync.service.SmsBackupService,getBackupConfig,3,1,5,4,Muitos Parametros
-" A, V, X ",UNDEFINED,com.zegoggles.smssync.utils.ListPreferenceHelper,initListPreference,29,8,0,3,Muitos Parametros
- V ,FRAGMENT,com.zegoggles.smssync.activity.fragments.SMSBackupPreferenceFragment,addPreferenceListener,16,2,0,2,Metodo Longo
- V ,FRAGMENT,com.zegoggles.smssync.activity.donation.DonationListFragment,getOptions,13,3,8,1,Muitos Desvios
-" D, V ",ACTIVITY,com.zegoggles.smssync.activity.donation.DonationActivity,showSelectDialog,14,4,7,1,Alto Acoplamento Efferent
+" A, V, X ",UNDEFINED,com.zegoggles.smssync.activity.Dialogs,createMessageDialog,3,1,4,3,Muitos Parametros
+ V ,ASYNCTASK,com.zegoggles.smssync.service.BackupTask,skip,13,3,7,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,com.zegoggles.smssync.service.BackupQueryBuilder,getQueryForSMS,3,1,5,2,Muitos Parametros
+ V ,[CALENDARACCESSOR],com.zegoggles.smssync.calendar.CalendarAccessorPost40,addEntry,30,5,12,5,Muitos Desvios
+ V ,TEST,com.zegoggles.smssync.service.BackupItemsFetcherTest,mockMostRecentTimestampForType,7,1,6,2,Muitos Parametros
+ V ,TEST,com.zegoggles.smssync.mail.HeaderGeneratorTest,testShouldGenerateCallLogHeaders,15,1,7,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,com.zegoggles.smssync.preferences.Preferences,getDefaultType,10,3,7,4,Alto Acoplamento Efferent
+" A, V, X ",UNDEFINED,com.zegoggles.smssync.mail.PersonLookup,lookupPerson,21,7,9,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,com.zegoggles.smssync.utils.BundleBuilder,putParcelable,4,1,4,2,Muitos Parametros
+ V ,UNDEFINED,com.zegoggles.smssync.utils.BundleBuilder,putBoolean,4,1,4,2,Muitos Parametros
+ V ,UNDEFINED,com.zegoggles.smssync.service.BackupQueryBuilder,groupSelection,8,4,6,2,Muitos Parametros
+" A, R, V, X ",ASYNCTASK,com.zegoggles.smssync.service.BackupTask,fetchAndBackupItems,41,9,14,1,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.mail.PersonLookup,lookupPerson,21,7,9,1,Muitos Desvios
+" A, V, X ",UNDEFINED,com.zegoggles.smssync.mail.CallFormatter,mapCallType,16,6,1,1,Muitos Desvios
+ V ,ASYNCTASK,com.zegoggles.smssync.service.BackupTask,handleAuthError,25,5,8,2,Muitos Parametros
+ V ,PREFERENCE,com.zegoggles.smssync.activity.StatusPreference,stateChanged,29,8,5,1,Metodo Longo
+ V ,UNDEFINED,com.zegoggles.smssync.utils.AppLog,readLog,25,5,7,1,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.preferences.Preferences,getDefaultType,10,3,7,4,Muitos Parametros
+" A, R, V, X ",ASYNCTASK,com.zegoggles.smssync.service.BackupTask,fetchAndBackupItems,41,9,14,1,Alto Acoplamento Efferent
+ V ,SERVICE,com.zegoggles.smssync.service.SmsBackupService,checkPermissions,13,5,7,1,Alto Acoplamento Efferent
+ V ,FRAGMENT,com.zegoggles.smssync.activity.fragments.AdvancedSettings,onCreatePreferences,4,1,3,2,Muitos Parametros
+ V ,UNDEFINED,com.zegoggles.smssync.auth.OAuth2Client,getUsernameFromContacts,28,5,9,1,Muitos Desvios
+ V ,UNDEFINED,com.zegoggles.smssync.service.state.State,getErrorMessage,12,5,3,1,Muitos Desvios
+" A, V, X ",ASYNCTASK,com.zegoggles.smssync.service.RestoreTask,handleAuthError,24,5,9,3,Alto Acoplamento Efferent
+ V ,BROADCASTRECEIVER,com.zegoggles.smssync.compat.SmsReceiver,onReceive,10,5,6,2,Muitos Parametros
+ V ,TEST,com.zegoggles.smssync.mail.MessageGeneratorTest,mockMessage,6,1,5,2,Muitos Parametros
+ V ,UNDEFINED,com.zegoggles.smssync.mail.Attachment,encodeRFC2231,10,2,3,2,Muitos Parametros
+" A, V, X ",ACTIVITY,com.zegoggles.smssync.activity.donation.DonationActivity,onBillingSetupFinished,24,6,5,1,Muitos Desvios
+ V ,ACTIVITY,com.zegoggles.smssync.activity.MainActivity,onPreferenceStartFragment,8,2,7,2,Alto Acoplamento Efferent
+ V ,UNDEFINED,com.zegoggles.smssync.mail.HeaderGenerator,setHeaders,21,4,7,7,Metodo Longo
+ V ,UNDEFINED,com.zegoggles.smssync.mail.HeaderGenerator,setSmsHeaders,10,1,2,2,Muitos Parametros
+ V ,ACTIVITY,com.zegoggles.smssync.activity.auth.AccountManagerAuthActivity,onClick,3,1,10,2,Muitos Parametros
+ V ,UNDEFINED,com.zegoggles.smssync.activity.Dialogs,instantiate,3,1,5,2,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.service.BackupJobs,schedule,18,9,6,3,Muitos Desvios
+ V ,SERVICE,com.zegoggles.smssync.service.SmsJobService,onStartJob,22,5,6,1,Metodo Longo
+ V ,UNDEFINED,com.zegoggles.smssync.mail.MessageGenerator,includePersonInBackup,5,3,5,2,Muitos Parametros
+ V ,SERVICE,com.zegoggles.smssync.service.ServiceBase,appLog,9,3,5,2,Muitos Parametros
+ V ,SERVICE,com.zegoggles.smssync.service.SmsBackupService,notifyUser,3,1,2,2,Muitos Parametros
+ V ,SERVICE,com.zegoggles.smssync.service.ServiceBase,isConnectedViaWifi_SDK21,9,5,3,0,Muitos Desvios
+ V ,BROADCASTRECEIVER,com.zegoggles.smssync.compat.SmsReceiver,onReceive,10,5,6,2,Muitos Desvios
+" A, R, V, X ",ASYNCTASK,com.zegoggles.smssync.service.RestoreTask,importMessage,31,8,11,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,com.zegoggles.smssync.utils.AppLog,readLog,25,5,7,1,Metodo Longo
+ V ,TEST,com.zegoggles.smssync.service.SmsBackupServiceTest,notifyUser,3,1,5,2,Muitos Parametros
+ V ,UNDEFINED,com.zegoggles.smssync.preferences.Preferences,shouldShowAboutDialog,19,3,7,0,Alto Acoplamento Efferent
+ V ,PREFERENCE,com.zegoggles.smssync.activity.StatusPreference,getString,3,1,3,2,Muitos Parametros
+ V ,UNDEFINED,com.zegoggles.smssync.utils.BundleBuilder,putLong,4,1,4,2,Muitos Parametros
+ V ,UNDEFINED,com.zegoggles.smssync.mail.Attachment,encodeRFC2231value,26,6,7,2,Alto Acoplamento Efferent
+" A, R, V, X ",ASYNCTASK,com.zegoggles.smssync.service.RestoreTask,restore,50,12,16,1,Metodo Longo
+ V ,TEST,com.zegoggles.smssync.service.BackupQueryBuilderTest,shouldBuildQueryForMMSWithSyncedDate,10,1,7,0,Alto Acoplamento Efferent
+" A, R, D, V, X ",SERVICE,com.zegoggles.smssync.service.SmsRestoreService,handleIntent,18,5,12,1,Alto Acoplamento Efferent
+ V ,ASYNCTASK,com.zegoggles.smssync.service.BackupTask,appLogDebug,3,1,3,2,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.mail.MessageGenerator,messageFromMapMms,39,7,14,1,Metodo Longo
+ V ,SERVICE,com.zegoggles.smssync.service.SmsBackupService,transition,3,1,3,2,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.mail.MessageGenerator,messageFromMapSms,28,5,14,1,Alto Acoplamento Efferent
+ V ,TEST,com.zegoggles.smssync.mail.HeaderGeneratorTest,testShouldGenerateSMSHeaders,23,1,7,0,Alto Acoplamento Efferent
+ V ,UNDEFINED,com.zegoggles.smssync.mail.MessageGenerator,messageFromMapSms,28,5,14,1,Muitos Desvios
+" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.mail.MessageGenerator,messageFromMapCallLog,40,11,15,1,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.mail.MessageConverter,messageToContentValues,39,8,13,1,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.mail.MessageGenerator,messageFromMapCallLog,40,11,15,1,Muitos Desvios
+" A, D, V, X ",TEST,com.zegoggles.smssync.service.BackupJobsTest,verifyJobScheduled,20,3,5,3,Muitos Parametros
+" A, R, D, V, X ",FRAGMENT,com.zegoggles.smssync.activity.fragments.AdvancedSettings,onResume,35,1,0,0,Metodo Longo
+" A, D, V, X ",PREFERENCE,com.zegoggles.smssync.activity.StatusPreference,getQuantityString,3,1,3,3,Muitos Parametros
+ V ,ACTIVITY,com.zegoggles.smssync.activity.MainActivity,onCreate,23,4,7,1,Alto Acoplamento Efferent
+ V ,ACTIVITY,com.zegoggles.smssync.activity.MainActivity,performAction,16,5,4,1,Muitos Desvios
+" A, R, D, V, X ",ACTIVITY,com.zegoggles.smssync.activity.auth.AccountManagerAuthActivity,onClick,3,1,10,2,Alto Acoplamento Efferent
+" A, V, X ",UNDEFINED,com.zegoggles.smssync.mail.CallFormatter,formatForCalendar,8,2,4,3,Muitos Parametros
+" A, V, X ",UNDEFINED,com.zegoggles.smssync.mail.Attachment,encodeRFC2231value,26,6,7,2,Muitos Desvios
+ V ,ASYNCTASK,com.zegoggles.smssync.tasks.OAuth2CallbackTask,doInBackground,13,5,7,1,Muitos Desvios
+" A, R, D, V, X ",TEST,com.zegoggles.smssync.service.CalendarSyncerTest,message,8,1,5,4,Muitos Parametros
+" A, R, V, X ",ASYNCTASK,com.zegoggles.smssync.service.RestoreTask,importMessage,31,8,11,1,Muitos Desvios
+" A, V, X ",UNDEFINED,com.zegoggles.smssync.utils.Drawables,getTinted,6,1,5,3,Muitos Parametros
+ V ,UNDEFINED,com.zegoggles.smssync.mail.MmsSupport,getDetails,25,6,16,2,Metodo Longo
+ V ,ACTIVITY,com.zegoggles.smssync.activity.MainActivity,onPreferenceStartScreen,12,3,4,2,Muitos Parametros
+" A, R, V, X ",BROADCASTRECEIVER,com.zegoggles.smssync.compat.SmsReceiver,storeMessage,33,6,11,2,Metodo Longo
+ V ,UNDEFINED,com.zegoggles.smssync.service.RestoreConfig,retryWithStore,3,1,3,2,Muitos Parametros
+ V ,PREFERENCE,com.zegoggles.smssync.activity.StatusPreference,onBackup,12,4,7,0,Alto Acoplamento Efferent
+ V ,SERVICE,com.zegoggles.smssync.service.state.RestoreState,transition,3,1,3,2,Muitos Parametros
+ V ,UNDEFINED,com.zegoggles.smssync.service.BackupQueryBuilder,getQueryForMMS,7,2,6,2,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.mail.HeaderGenerator,setHeaders,21,4,7,7,Muitos Parametros
+ V ,UNDEFINED,com.zegoggles.smssync.activity.Dialogs,onClick,3,1,0,2,Muitos Parametros
+" A, V, X ",PREFERENCE,com.zegoggles.smssync.activity.StatusPreference,backupStateChanged,23,6,5,1,Muitos Desvios
+ V ,TEST,com.zegoggles.smssync.service.BackupTaskTest,mockFetch,8,1,0,2,Muitos Parametros
+" A, V, X ",UNDEFINED,com.zegoggles.smssync.auth.OAuth2Client,getUsernameFromContacts,28,5,9,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,com.zegoggles.smssync.mail.PersonLookup,lookupPerson,21,7,9,1,Metodo Longo
+ V ,FRAGMENT,com.zegoggles.smssync.activity.fragments.AdvancedSettings,onViewCreated,6,1,2,2,Muitos Parametros
+ V ,UNDEFINED,com.zegoggles.smssync.mail.Attachment,encodeRFC2231value,26,6,7,2,Muitos Parametros
+" A, V, X ",UNDEFINED,com.zegoggles.smssync.service.BackupQueryBuilder,buildQueryForDataType,12,4,4,3,Muitos Parametros
+ V ,UNDEFINED,com.zegoggles.smssync.mail.MessageGenerator,getSubject,3,2,5,2,Muitos Parametros
+" A, R, V, X ",SERVICE,com.zegoggles.smssync.service.SmsBackupService,backupStateChanged,20,7,1,1,Muitos Desvios
+ V ,ACTIVITY,com.zegoggles.smssync.activity.donation.DonationActivity,onSkuDetailsResponse,14,5,5,2,Muitos Desvios
+ V ,ACTIVITY,com.zegoggles.smssync.activity.MainActivity,showDialog,3,1,2,2,Muitos Parametros
+" A, V, X ",[CALENDARACCESSOR],com.zegoggles.smssync.calendar.CalendarAccessorPost40,getCalendars,26,6,9,0,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.utils.ThreadHelper,getThreadId,30,11,12,2,Alto Acoplamento Efferent
+" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.compat.GooglePlayServices,isAvailable,33,6,7,1,Metodo Longo
+ V ,UNDEFINED,com.zegoggles.smssync.auth.TokenRefresher,refreshUsingAccountManager,27,6,8,2,Alto Acoplamento Efferent
+" A, R, V, X ",ASYNCTASK,com.zegoggles.smssync.service.RestoreTask,restore,50,12,16,1,Alto Acoplamento Efferent
+ V ,UNDEFINED,com.zegoggles.smssync.utils.BundleBuilder,putDouble,4,1,4,2,Muitos Parametros
+ V ,ACTIVITY,com.zegoggles.smssync.activity.donation.DonationActivity,onBillingSetupFinished,13,2,7,1,Alto Acoplamento Efferent
+" A, V, X ",UNDEFINED,com.zegoggles.smssync.service.BulkFetcher,fetch,13,4,8,3,Muitos Parametros
+ V ,PREFERENCE,com.zegoggles.smssync.activity.StatusPreference,onRestore,11,3,7,0,Alto Acoplamento Efferent
+ V ,SERVICE,com.zegoggles.smssync.service.SmsBackupService,handleErrorState,24,8,2,1,Metodo Longo
+ V ,ACTIVITY,com.zegoggles.smssync.activity.donation.DonationActivity,onPurchasesUpdated,25,5,4,2,Muitos Desvios
+ V ,TEST,com.zegoggles.smssync.service.BackupTaskTest,result,7,2,5,2,Muitos Parametros
+ V ,PREFERENCE,com.zegoggles.smssync.activity.StatusPreference,setViewAttributes,25,6,4,1,Metodo Longo
+ V ,PERSISTENCE,com.zegoggles.smssync.mail.BackupImapStore,getMessages,28,2,0,3,Metodo Longo
+ V ,TEST,com.zegoggles.smssync.mail.HeaderGeneratorTest,testShouldGenerateStandardHeaders,14,1,7,0,Alto Acoplamento Efferent
+ V ,BROADCASTRECEIVER,com.zegoggles.smssync.receiver.BootReceiver,onReceive,9,3,4,2,Muitos Parametros
+ V ,[CALENDARACCESSOR],com.zegoggles.smssync.calendar.CalendarAccessorPost40,getCalendars,26,6,9,0,Metodo Longo
+ V ,SERVICE,com.zegoggles.smssync.service.SmsBackupService,checkPermissions,13,5,7,1,Muitos Desvios
+ V ,SERVICE,com.zegoggles.smssync.service.SmsJobService,onStartJob,22,5,6,1,Muitos Desvios
+ V ,ACTIVITY,com.zegoggles.smssync.activity.donation.DonationActivity,checkUserDonationStatus,37,1,0,2,Muitos Parametros
+ V ,UNDEFINED,com.zegoggles.smssync.mail.HeaderGenerator,setHeaders,21,4,7,7,Alto Acoplamento Efferent
+ V ,PERSISTENCE,com.zegoggles.smssync.mail.BackupImapStore,getFolder,10,3,6,2,Muitos Parametros
+" A, R, V, X ",PREFERENCE,com.zegoggles.smssync.activity.StatusPreference,stateChanged,29,8,5,1,Muitos Desvios
+ V ,ASYNCTASK,com.zegoggles.smssync.service.RestoreTask,importCallLog,11,5,7,1,Muitos Desvios
+ V ,UNDEFINED,com.zegoggles.smssync.utils.BundleBuilder,putFloat,4,1,4,2,Muitos Parametros
+" A, V, X ",UNDEFINED,com.zegoggles.smssync.mail.MmsSupport,getDetails,25,6,16,2,Muitos Desvios
+ V ,UNDEFINED,com.zegoggles.smssync.utils.ThreadHelper,getThreadId,30,11,12,2,Muitos Parametros
+ V ,ASYNCTASK,com.zegoggles.smssync.service.BackupTask,handleAuthError,25,5,8,2,Alto Acoplamento Efferent
+ V ,UNDEFINED,com.zegoggles.smssync.auth.OAuth2Client,getUsernameFromContacts,28,5,9,1,Metodo Longo
+ V ,BROADCASTRECEIVER,com.zegoggles.smssync.compat.SmsReceiver,storeMessage,33,6,11,2,Muitos Parametros
+" A, D, V, X ",TEST,com.zegoggles.smssync.mail.MessageGeneratorTest,mockCalllogMessage,7,1,6,3,Muitos Parametros
+" A, R, D, V, X ",ACTIVITY,com.zegoggles.smssync.activity.MainActivity,onActivityResult,46,14,11,3,Metodo Longo
+ V ,BROADCASTRECEIVER,com.zegoggles.smssync.receiver.SmsBroadcastReceiver,onReceive,9,3,4,2,Muitos Parametros
+" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.mail.PersonLookup,getPrimaryEmail,20,7,5,1,Muitos Desvios
+ V ,FRAGMENT,com.zegoggles.smssync.activity.fragments.SMSBackupPreferenceFragment,onPreferenceChange,9,1,0,2,Muitos Parametros
+" A, V, X ",UNDEFINED,com.zegoggles.smssync.preferences.AuthPreferences,setOauth2Token,5,1,2,3,Muitos Parametros
+ V ,[CALENDARACCESSOR],com.zegoggles.smssync.calendar.CalendarAccessorPre40,getCalendars,19,4,7,0,Alto Acoplamento Efferent
+ V ,APPLICATION,com.zegoggles.smssync.App,onCreate,29,2,0,0,Metodo Longo
+ V ,ENTITY,com.zegoggles.smssync.activity.donation.Sku,writeToParcel,8,1,2,2,Muitos Parametros
+" A, R, V, X ",ACTIVITY,com.zegoggles.smssync.activity.donation.DonationActivity,checkUserDonationStatus,37,1,0,2,Metodo Longo
+ V ,UNDEFINED,com.zegoggles.smssync.mail.MessageConverter,markAsSeen,18,6,3,2,Muitos Parametros
+ V ,UNDEFINED,com.zegoggles.smssync.mail.HeaderGenerator,createMessageId,21,5,11,3,Muitos Desvios
+" A, V, X ",UNDEFINED,com.zegoggles.smssync.mail.CallFormatter,format,8,3,3,3,Muitos Parametros
+" A, R, D, V, X ",SERVICE,com.zegoggles.smssync.service.SmsBackupService,backup,33,8,9,1,Metodo Longo
+" A, R, V, X ",BROADCASTRECEIVER,com.zegoggles.smssync.compat.SmsReceiver,storeMessage,33,6,11,2,Alto Acoplamento Efferent
+ V ,UNDEFINED,com.zegoggles.smssync.mail.Attachment,encodeRFC2231value,26,6,7,2,Metodo Longo
+" A, V, X ",PERSISTENCE,com.zegoggles.smssync.mail.BackupImapStore,getMessages,28,2,0,3,Muitos Parametros
+ V ,ACTIVITY,com.zegoggles.smssync.activity.MainActivity,startRestore,27,5,7,0,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.mail.MmsSupport,getMMSBodyParts,24,8,11,1,Muitos Desvios
+ V ,UNDEFINED,com.zegoggles.smssync.contacts.ContactAccessor,getGroups,10,3,6,2,Muitos Parametros
+ V ,ASYNCTASK,com.zegoggles.smssync.service.RestoreTask,doInBackground,16,5,4,1,Muitos Desvios
+ V ,UNDEFINED,com.zegoggles.smssync.preferences.DataTypePreferences,setMaxSyncedDate,3,1,4,2,Muitos Parametros
+" A, R, V, X ",ASYNCTASK,com.zegoggles.smssync.service.RestoreTask,importSms,19,11,10,1,Muitos Desvios
+" A, R, V, X ",ASYNCTASK,com.zegoggles.smssync.service.RestoreTask,importMessage,31,8,11,1,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.mail.MessageConverter,messageToContentValues,39,8,13,1,Muitos Desvios
+ V ,ACTIVITY,com.zegoggles.smssync.activity.MainActivity,onRequestPermissionsResult,25,7,8,3,Metodo Longo
+" A, R, D, V, X ",UNDEFINED,com.zegoggles.smssync.utils.ListPreferenceHelper,initListPreference,29,8,0,3,Muitos Desvios
+ V ,UNDEFINED,com.zegoggles.smssync.utils.ListPreferenceHelper,onPreferenceChange,4,1,3,2,Muitos Parametros
+ V ,TEST,com.zegoggles.smssync.mail.MessageConverterTest,testConvertMessagesSeenFlagReadWithSMS,16,1,7,0,Alto Acoplamento Efferent
+" D, V ",FRAGMENT,com.zegoggles.smssync.activity.donation.DonationListFragment,getOptions,13,3,8,1,Alto Acoplamento Efferent
+" A, D, V, X ",TEST,com.zegoggles.smssync.service.SmsBackupServiceTest,checkPermission,3,1,2,3,Muitos Parametros
+ V ,APPLICATION,com.zegoggles.smssync.App,onChange,3,1,3,2,Muitos Parametros

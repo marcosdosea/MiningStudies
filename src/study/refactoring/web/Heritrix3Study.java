@@ -28,6 +28,6 @@ public class Heritrix3Study {
 
 		SmellRefactoredManager manager = new SmellRefactoredManager(urlRepository, localFolder, initialCommit,
 				finalCommit, listThresholdsTechiniques, resultFile);
-		manager.getSmellRefactoredBetweenCommit();
+		manager.getSmellRefactoredMethods();
 	}
 }

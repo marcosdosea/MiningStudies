@@ -25,7 +25,8 @@ public class SmsBackupStudy {
 
 		SmellRefactoredManager manager = new SmellRefactoredManager(urlRepository, localFolder, initialCommit,
 				finalCommit, listThresholdsTechiniques, resultFile);
-		manager.getSmellRefactoredBetweenCommit();
+		manager.getSmellRefactoredMethods();
+		manager.getSmellRefactoredClasses();
 	}
 
 }
