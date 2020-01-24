@@ -8,23 +8,23 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.smellrefactored.SmellRefactoredManager2;
 
-public class IceStudy {
+public class ZkspreadsheetStudy {
 
-	static Logger logger = LoggerFactory.getLogger(IceStudy.class);
+	static Logger logger = LoggerFactory.getLogger(ZkspreadsheetStudy.class);
 
 	public static void main(String[] args) {
 
-		String localFolder = "D:\\Projetos\\_Web\\ice";
-		String urlRepository = "https://github.com/JBEI/ice.git";
-		String initialCommit = "b3f9a0784b9a61ad713675aac3543e0035345e85"; // 3.3 - 2013-04-01
-		String finalCommit = "fe2b16d3ceea866114cf0653f68a999d84405df9"; // 5.6.3 - 2019.12.16
-		String resultFile = System.getProperty("user.dir") + "\\refactoring\\ice";
+		String localFolder = "D:\\Projetos\\_Web\\zkspreadsheet";
+		String urlRepository = "https://github.com/zkoss/zkspreadsheet.git";
+		String initialCommit = "153bd00fca262911cb19cbbc8b36dba17cba0c2c"; // 3.0.0 - 2013.11.05
+		String finalCommit = "d4a2eaf1dd6955c79f71dc07f6a55925802a9b34"; // 3.9.6 - 2019.11.22
+		String resultFile= System.getProperty("user.dir") + "\\refactoring\\zkspreadsheet";
 
 		List<LimiarTecnica> listThresholdsTechiniques = CarregaSalvaArquivo
 				.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\web2020\\");
 
 		listThresholdsTechiniques.addAll(
-				CarregaSalvaArquivo.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\web2020\\ice"));
+				CarregaSalvaArquivo.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\web2020\\zkspreadsheet"));
 
 		SmellRefactoredManager2 manager = new SmellRefactoredManager2(urlRepository, localFolder, initialCommit,
 				finalCommit, listThresholdsTechiniques, resultFile);

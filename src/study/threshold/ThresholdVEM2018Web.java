@@ -45,9 +45,13 @@ public class ThresholdVEM2018Web {
 
 		for (String projeto : projetosReferencia) {
 
+			ArrayList<String> projetoAnalisado = new ArrayList<String>();
+			projetoAnalisado.add(projeto);
+			Collection<ClassMetricResult> metricasProjetosAnalisado =  gLimiares.getMetricsFromProjects( projetoAnalisado, PASTA_PROJECTS, "" ).all();
+			
 			// Entra no benchmark qualquer projeto com similaridade > 0
 			ArrayList<String> projetosSimilares = gSimilarity.filterSimilarProjects(projeto, listSimilarity, 0);
-			metricasProjetosBenchmark = gLimiares.getMetricsFromProjects(projetosSimilares, PASTA_PROJECTS, "").all();
+			Collection<ClassMetricResult> metricasProjetosBenchmarkSimilares = gLimiares.getMetricsFromProjects(projetosSimilares, PASTA_PROJECTS, "").all();
 
 			String nomeProjeto = projeto.substring(projeto.lastIndexOf("\\") + 1);
 			String pastaThresholdsProjeto = PASTA_THRESHOLDS + "\\" + nomeProjeto + "\\";
@@ -67,8 +71,8 @@ public class ThresholdVEM2018Web {
 			}
 
 			System.out.println("Gerando Limiares por Dosea Referencia e Design Role...");
-			gLimiares.execute(metricasProjetosBenchmark, pastaThresholdsProjeto + "D.csv",
-					new DoseaDesignRoleTechnique());
+			gLimiares.execute(metricasProjetosBenchmarkSimilares, pastaThresholdsProjeto + "D.csv",
+					new DoseaDesignRoleTechnique(metricasProjetosAnalisado));
 
 			System.out.println("Gerando Limiares por Dosea Referencia...");
 			gLimiares.execute(metricasProjetosBenchmark, pastaThresholdsProjeto + "R.csv",

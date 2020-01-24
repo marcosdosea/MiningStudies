@@ -23,7 +23,7 @@ public class ThresholdReferenceSefaz {
 		gLimiares.execute(metricasProjetosReferencia, PASTA_RESULTADO + "R.csv", new AlvesTechnique());
 
 		System.out.println("Gerando Limiares por Dosea Referencia e Design Role...");
-		gLimiares.execute(metricasProjetosReferencia, PASTA_RESULTADO + "D.csv", new DoseaDesignRoleTechnique());
+		gLimiares.execute(metricasProjetosReferencia, PASTA_RESULTADO + "D.csv", new DoseaDesignRoleTechnique(metricasProjetosReferencia));
 
 		System.out.println("Limiares gravados na pasta " + PASTA_RESULTADO + " com sucesso!");
 	}

@@ -8,23 +8,23 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.smellrefactored.SmellRefactoredManager2;
 
-public class IceStudy {
+public class MesStudy {
 
-	static Logger logger = LoggerFactory.getLogger(IceStudy.class);
+	static Logger logger = LoggerFactory.getLogger(MesStudy.class);
 
 	public static void main(String[] args) {
 
-		String localFolder = "D:\\Projetos\\_Web\\ice";
-		String urlRepository = "https://github.com/JBEI/ice.git";
-		String initialCommit = "b3f9a0784b9a61ad713675aac3543e0035345e85"; // 3.3 - 2013-04-01
-		String finalCommit = "fe2b16d3ceea866114cf0653f68a999d84405df9"; // 5.6.3 - 2019.12.16
-		String resultFile = System.getProperty("user.dir") + "\\refactoring\\ice";
+		String localFolder = "D:\\Projetos\\_Web\\mes";
+		String urlRepository = "https://github.com/qcadoo/mes.git";
+		String initialCommit = "508218fd7a5577b7883a091354a38c4bb3f27a1f"; // 1.1.0 - 2011.11.23
+		String finalCommit = "c862e9e8ca1158d5e5a6288520be9ddb5adf132c"; // 1.10.20 - 2019.10.03
+		String resultFile = System.getProperty("user.dir") + "\\refactoring\\mes";
 
 		List<LimiarTecnica> listThresholdsTechiniques = CarregaSalvaArquivo
 				.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\web2020\\");
 
 		listThresholdsTechiniques.addAll(
-				CarregaSalvaArquivo.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\web2020\\ice"));
+				CarregaSalvaArquivo.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\web2020\\mes"));
 
 		SmellRefactoredManager2 manager = new SmellRefactoredManager2(urlRepository, localFolder, initialCommit,
 				finalCommit, listThresholdsTechiniques, resultFile);

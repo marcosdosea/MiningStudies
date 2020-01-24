@@ -30,7 +30,7 @@ public class ThresholdReferenceSimple {
 		gLimiares.execute(metricasProjetosReferencia, PASTA_RESULTADO + "R.csv", new DoseaReferenceTechnique());
 
 		logger.info("Gerando Limiares por Dosea Referencia e Design Role...");
-		gLimiares.execute(metricasProjetosReferencia, PASTA_RESULTADO + "D.csv", new DoseaDesignRoleTechnique());
+		gLimiares.execute(metricasProjetosReferencia, PASTA_RESULTADO + "D.csv", new DoseaDesignRoleTechnique(metricasProjetosReferencia));
 
 		logger.info("Gerando Limiares por Alves...");
 		gLimiares.execute(metricasProjetosReferencia, PASTA_RESULTADO + "A.csv", new AlvesTechnique());

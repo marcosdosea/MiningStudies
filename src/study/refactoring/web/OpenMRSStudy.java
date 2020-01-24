@@ -6,7 +6,7 @@ import org.designroleminer.smelldetector.CarregaSalvaArquivo;
 import org.designroleminer.smelldetector.model.LimiarTecnica;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.smellrefactored.SmellRefactoredManager;
+import org.smellrefactored.SmellRefactoredManager2;
 
 public class OpenMRSStudy {
 
@@ -26,7 +26,7 @@ public class OpenMRSStudy {
 		listThresholdsTechiniques.addAll(CarregaSalvaArquivo
 				.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\web2020\\openmrs-core"));
 
-		SmellRefactoredManager manager = new SmellRefactoredManager(urlRepository, localFolder, initialCommit,
+		SmellRefactoredManager2 manager = new SmellRefactoredManager2(urlRepository, localFolder, initialCommit,
 				finalCommit, listThresholdsTechiniques, resultFile);
 		manager.getSmellRefactoredMethods();
 	}

@@ -24,10 +24,10 @@ public class ThresholdJournal2020Web {
 	public static void main(String[] args) {
 		final String PASTA_PROJECTS = "thresholds\\WEB2020\\PROJECTS\\";
 		final String PASTA_THRESHOLDS = "thresholds\\WEB2020\\";
+		final double LEVEL_SIMILARITY = 0.0;
 
 		TechniqueExecutor gLimiares = new TechniqueExecutor();
 
-		System.out.println("Iniciando a coleta de métricas do projeto referencia...");
 		ArrayList<String> projetosReferencia = gLimiares.lerProjetos("Benchmark2020Web.txt");
 		Collection<ClassMetricResult> metricasProjetosBenchmark = gLimiares
 				.getMetricsFromProjects(projetosReferencia, PASTA_PROJECTS, "").all();
@@ -44,11 +44,12 @@ public class ThresholdJournal2020Web {
 		List<SimilarityResult> listSimilarity = gSimilarity.calculate(projetosReferencia, PASTA_PROJECTS);
 
 		for (String projeto : projetosReferencia) {
+			ArrayList<String> projetosSimilares = gSimilarity.filterSimilarProjects(projeto, listSimilarity,  LEVEL_SIMILARITY);
+			Collection<ClassMetricResult> metricasProjetosSimilares = gLimiares.getMetricsFromProjects(projetosSimilares, PASTA_PROJECTS, "").all();
 
-			// Entra no benchmark qualquer projeto com similaridade > 0
-			ArrayList<String> projetosSimilares = gSimilarity.filterSimilarProjects(projeto, listSimilarity, 0.1);
-			metricasProjetosBenchmark = gLimiares.getMetricsFromProjects(projetosSimilares, PASTA_PROJECTS, "").all();
-
+			ArrayList<String> projetoAnalisado = new ArrayList<String>();
+			projetoAnalisado.add(projeto);
+			Collection<ClassMetricResult> metricasProjetosAnalisado =  gLimiares.getMetricsFromProjects( projetoAnalisado, PASTA_PROJECTS, "" ).all();
 			String nomeProjeto = projeto.substring(projeto.lastIndexOf("\\") + 1);
 			String pastaThresholdsProjeto = PASTA_THRESHOLDS + "\\" + nomeProjeto + "\\";
 			// cria nova pasta
@@ -67,11 +68,11 @@ public class ThresholdJournal2020Web {
 			}
 
 			System.out.println("Gerando Limiares por Dosea Referencia e Design Role...");
-			gLimiares.execute(metricasProjetosBenchmark, pastaThresholdsProjeto + "D.csv",
-					new DoseaDesignRoleTechnique());
+			gLimiares.execute(metricasProjetosSimilares, pastaThresholdsProjeto + "D.csv",
+					new DoseaDesignRoleTechnique(metricasProjetosAnalisado));
 
 			System.out.println("Gerando Limiares por Dosea Referencia...");
-			gLimiares.execute(metricasProjetosBenchmark, pastaThresholdsProjeto + "R.csv",
+			gLimiares.execute(metricasProjetosSimilares, pastaThresholdsProjeto + "R.csv",
 					new DoseaReferenceTechnique());
 
 			System.out.println("Limiares gravados na pasta " + pastaThresholdsProjeto + " com sucesso!");
