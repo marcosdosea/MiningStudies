@@ -24,7 +24,7 @@ public class ThresholdJournal2020Web {
 	public static void main(String[] args) {
 		final String PASTA_PROJECTS = "thresholds\\WEB2020\\PROJECTS\\";
 		final String PASTA_THRESHOLDS = "thresholds\\WEB2020\\";
-		final double LEVEL_SIMILARITY = 0.0;
+		final double LEVEL_SIMILARITY = 0.2;
 
 		TechniqueExecutor gLimiares = new TechniqueExecutor();
 
@@ -70,6 +70,7 @@ public class ThresholdJournal2020Web {
 			System.out.println("Gerando Limiares por Dosea Referencia e Design Role...");
 			gLimiares.execute(metricasProjetosSimilares, pastaThresholdsProjeto + "D.csv",
 					new DoseaDesignRoleTechnique(metricasProjetosAnalisado));
+	
 
 			System.out.println("Gerando Limiares por Dosea Referencia...");
 			gLimiares.execute(metricasProjetosSimilares, pastaThresholdsProjeto + "R.csv",

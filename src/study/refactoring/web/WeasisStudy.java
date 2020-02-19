@@ -6,7 +6,7 @@ import org.designroleminer.smelldetector.CarregaSalvaArquivo;
 import org.designroleminer.smelldetector.model.LimiarTecnica;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.smellrefactored.SmellRefactoredManager2;
+import org.smellrefactored.SmellRefactoredAllManager;
 
 public class WeasisStudy {
 
@@ -26,7 +26,7 @@ public class WeasisStudy {
 		listThresholdsTechiniques.addAll(
 				CarregaSalvaArquivo.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\web2020\\Weasis"));
 
-		SmellRefactoredManager2 manager = new SmellRefactoredManager2(urlRepository, localFolder, initialCommit,
+		SmellRefactoredAllManager manager = new SmellRefactoredAllManager(urlRepository, localFolder, initialCommit,
 				finalCommit, listThresholdsTechiniques, resultFile);
 		manager.getSmellRefactoredMethods();
 	}

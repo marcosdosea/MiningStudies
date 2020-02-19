@@ -6,7 +6,7 @@ import org.designroleminer.smelldetector.CarregaSalvaArquivo;
 import org.designroleminer.smelldetector.model.LimiarTecnica;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.smellrefactored.SmellRefactoredManager;
+import org.smellrefactored.SmellRefactoredFirstManager;
 
 public class SmsBackupStudy {
 
@@ -23,7 +23,7 @@ public class SmsBackupStudy {
 		List<LimiarTecnica> listThresholdsTechiniques = CarregaSalvaArquivo
 				.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\simple\\");
 
-		SmellRefactoredManager manager = new SmellRefactoredManager(urlRepository, localFolder, initialCommit,
+		SmellRefactoredFirstManager manager = new SmellRefactoredFirstManager(urlRepository, localFolder, initialCommit,
 				finalCommit, listThresholdsTechiniques, resultFile);
 		manager.getSmellRefactoredMethods();
 		manager.getSmellRefactoredClasses();
