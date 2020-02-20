@@ -4,7 +4,6 @@ D:\Projetos\_Web\webprotege
 D:\Projetos\_Web\libreplan
 D:\Projetos\_Web\metl
 D:\Projetos\_Web\drools-wb
-D:\Projetos\_Web\DWSurvey
 D:\Projetos\_Web\aet
 D:\Projetos\_Web\phenotips
 D:\Projetos\_Web\bamboobsc
