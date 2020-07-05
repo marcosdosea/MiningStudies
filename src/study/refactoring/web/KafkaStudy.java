@@ -17,7 +17,7 @@ public class KafkaStudy {
 		String localFolder = "D:\\Projetos\\_Web\\kafka-webview";
 		String urlRepository = "https://github.com/SourceLabOrg/kafka-webview.git";
 		String initialCommit = "256efabbd913f5a3ac76907569d41ed6a5a42b47"; // 1.0.0 - 2018.01.06
-		String finalCommit = "bc038be255455438626270ee64a2569d29adfefd"; // 2.5.0 - 2019.11.18
+		String finalCommit = "e3ff968c5cfaf6f60effce6eadb46c970e61ffc5"; // 2.5.1 - 2020.05.19
 		String resultFile = System.getProperty("user.dir") + "\\refactoring\\kafka-webview";
 
 		List<LimiarTecnica> listThresholdsTechiniques = CarregaSalvaArquivo

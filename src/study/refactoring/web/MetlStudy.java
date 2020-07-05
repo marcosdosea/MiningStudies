@@ -17,7 +17,7 @@ public class MetlStudy {
 		String localFolder = "D:\\Projetos\\_Web\\metl";
 		String urlRepository = "https://github.com/JumpMind/metl.git";
 		String initialCommit = "e93109a94bf069776ee422657be1bc825c163017"; // 1.0.0 - 2016.01.22
-		String finalCommit = "57d3f3879ba4aae3c13504384bf92728a4e33fc1"; // 3.5.1.r15 - 2019.09.10
+		String finalCommit = "84cca413c3e5d7c8c27dcc94d10ca7688eea8285"; // 3.6.1.r19 - 2019.12.06
 		String resultFile = System.getProperty("user.dir") + "\\refactoring\\metl";
 
 		List<LimiarTecnica> listThresholdsTechiniques = CarregaSalvaArquivo

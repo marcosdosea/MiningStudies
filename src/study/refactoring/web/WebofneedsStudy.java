@@ -16,8 +16,8 @@ public class WebofneedsStudy {
 
 		String localFolder = "D:\\Projetos\\_Web\\webofneeds";
 		String urlRepository = "https://github.com/researchstudio-sat/webofneeds.git";
-		String initialCommit = "13cfee5bcce45dcab53f26bfdd9288bfc0929848"; // 0.1 - 2014.12.19
-		String finalCommit = "8543b0dc2702a89ba683069fe01d35c1ed0acf30"; // webofneeds-0.6 - 2019.10.23
+		String initialCommit = "9d16bcdd529d9ae2c757957a5b821ff8b1f62d8b"; // webofneeds-0.3 - 2018.09.05
+		String finalCommit = "887b3b6852b8e63afe58303c79dfd7c0a75c42da"; // webofneeds-0.9 - 2020.02.17
 		String resultFile = System.getProperty("user.dir") + "\\refactoring\\webofneeds";
 
 		List<LimiarTecnica> listThresholdsTechiniques = CarregaSalvaArquivo

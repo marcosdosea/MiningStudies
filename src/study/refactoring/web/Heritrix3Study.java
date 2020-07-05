@@ -17,7 +17,7 @@ public class Heritrix3Study {
 		String localFolder = "D:\\Projetos\\_Web\\heritrix3";
 		String urlRepository = "https://github.com/internetarchive/heritrix3.git";
 		String initialCommit = "484b3574d751173439fe0ee0426c051fcec98101"; // 3.2.0 - 2018.07.04
-		String finalCommit = "c7c6141ee10967c171dcc3dc193973ed0e5d85a8"; // 3.4.0 - 2019.04.18
+		String finalCommit = "ef38dc08c357bcb2353bbfbcd00a2c3370aad9c7"; // 3.4.0-20200518 - 2020.05.18
 		String resultFile = System.getProperty("user.dir") + "\\refactoring\\heritrix3";
 
 		List<LimiarTecnica> listThresholdsTechiniques = CarregaSalvaArquivo

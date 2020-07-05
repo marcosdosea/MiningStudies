@@ -8,23 +8,23 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.smellrefactored.SmellRefactoredAllManager;
 
-public class MesStudy {
+public class WebAnnoStudy {
 
-	static Logger logger = LoggerFactory.getLogger(MesStudy.class);
+	static Logger logger = LoggerFactory.getLogger(WebAnnoStudy.class);
 
 	public static void main(String[] args) {
 
-		String localFolder = "D:\\Projetos\\_Web\\mes";
-		String urlRepository = "https://github.com/qcadoo/mes.git";
-		String initialCommit = "f2d931c441f8fc8a9ebaa7aaf7cf4ed546060d71"; // 1.9.20 - 2018.11.30
-		String finalCommit = "f7f82f5e5f751c9b23e361bb5e0a6757562ceee7"; // 2.1.1 - 2020.05.29
-		String resultFile = System.getProperty("user.dir") + "\\refactoring\\mes";
+		String localFolder = "D:\\Projetos\\_Web\\webanno";
+		String urlRepository = "https://github.com/webanno/webanno.git";
+		String initialCommit = "4825d913ba9b3250594738cd81779ed0c339c343"; // webanno-2.0.0 - 2014-07-30
+		String finalCommit = "4ac3ee90460e0bd75e6668dbdd45d56e72fceae6"; // webanno-4.0.0 - 2020.05.13
+		String resultFile = System.getProperty("user.dir") + "\\refactoring\\webanno";
 
 		List<LimiarTecnica> listThresholdsTechiniques = CarregaSalvaArquivo
 				.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\web2020\\");
 
 		listThresholdsTechiniques.addAll(
-				CarregaSalvaArquivo.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\web2020\\mes"));
+				CarregaSalvaArquivo.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\web2020\\webanno"));
 
 		SmellRefactoredAllManager manager = new SmellRefactoredAllManager(urlRepository, localFolder, initialCommit,
 				finalCommit, listThresholdsTechiniques, resultFile);

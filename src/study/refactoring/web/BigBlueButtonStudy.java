@@ -16,8 +16,8 @@ public class BigBlueButtonStudy {
 
 		String localFolder = "D:\\Projetos\\_Web\\bigbluebutton";
 		String urlRepository = "https://github.com/bigbluebutton/bigbluebutton.git";
-		String initialCommit = "73db36bc9d8ede10e531265809cda62b0e59ae5b"; // 2.0.x-RC2 - 2018.07.07
-		String finalCommit = "771079c8f19d5bad6efe5add963219bd7e59bf5a"; // 2.2-RC-4 - 2019.12.09
+		String initialCommit = "68e35c9d722e62892d2e885646a9eab3bf44f77d"; // 2.0.x-RC2 - 2018.07.07
+		String finalCommit = "34fea22ccb96abfa09729f5331862eeec3272e2a"; // 2.2.16 - 2020.06.03
 		String resultFile = System.getProperty("user.dir") + "\\refactoring\\bigbluebutton";
 
 		List<LimiarTecnica> listThresholdsTechiniques = CarregaSalvaArquivo
