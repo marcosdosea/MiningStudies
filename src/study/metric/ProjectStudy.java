@@ -1,7 +1,6 @@
 package study.metric;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -21,16 +20,16 @@ public class ProjectStudy implements Study {
 	}
 
 	public void execute() {
-		// mineAndroidApplications();
-		// mineEclipseApplications();
-		// mineWebApplications();
-		// mineVersions();
+		mineAndroidApplications();
+		mineEclipseApplications();
+		mineWebApplications();
+		mineVersions();
 		mineOpenMRSVersions();
 
 	}
 
 	public void mineOpenMRSVersions() {
-		List<String> webSelectedDR = Arrays.asList("ENTITY", "VIEW", "PERSISTENCE");
+		// List<String> webSelectedDR = Arrays.asList("ENTITY", "VIEW", "PERSISTENCE");
 
 		List<String> openmrsWeb = new ArrayList<String>();
 		openmrsWeb.add("4fba6363dc5e3865dcf166331a129c3b9066193b"); // HEAD 2016-10-12

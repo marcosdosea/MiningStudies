@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 import org.designroleminer.ClassMetricResult;
-import org.designroleminer.threshold.AlvesTechnique;
-import org.designroleminer.threshold.DoseaDesignRoleTechnique;
-import org.designroleminer.threshold.TechniqueExecutor;
+import org.threshold.AlvesTechnique;
+import org.threshold.DoseaDesignRoleTechnique;
+import org.threshold.TechniqueExecutor;
 
 public class ThresholdReferenceSefaz {
 

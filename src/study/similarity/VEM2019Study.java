@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 import org.designroleminer.ClassMetricResult;
-import org.designroleminer.threshold.TechniqueExecutor;
 import org.systemsimilarity.SimilarityManager;
+import org.threshold.TechniqueExecutor;
 
 public class VEM2019Study {
 

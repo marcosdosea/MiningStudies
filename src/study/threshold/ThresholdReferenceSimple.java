@@ -4,14 +4,14 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 import org.designroleminer.ClassMetricResult;
-import org.designroleminer.threshold.AlvesTechnique;
-import org.designroleminer.threshold.AnicheTechnique;
-import org.designroleminer.threshold.DoseaDesignRoleTechnique;
-import org.designroleminer.threshold.DoseaReferenceTechnique;
-import org.designroleminer.threshold.TechniqueExecutor;
-import org.designroleminer.threshold.ValeTechnique;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.threshold.AlvesTechnique;
+import org.threshold.AnicheTechnique;
+import org.threshold.DoseaDesignRoleTechnique;
+import org.threshold.DoseaReferenceTechnique;
+import org.threshold.TechniqueExecutor;
+import org.threshold.ValeTechnique;
 
 public class ThresholdReferenceSimple {
 

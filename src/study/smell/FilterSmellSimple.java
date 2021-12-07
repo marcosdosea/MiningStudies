@@ -8,7 +8,7 @@ import org.designroleminer.smelldetector.CarregaSalvaArquivo;
 import org.designroleminer.smelldetector.FilterSmells;
 import org.designroleminer.smelldetector.model.FilterSmellResult;
 import org.designroleminer.smelldetector.model.LimiarTecnica;
-import org.designroleminer.threshold.TechniqueExecutor;
+import org.threshold.TechniqueExecutor;
 
 public class FilterSmellSimple {
 
@@ -32,7 +32,7 @@ public class FilterSmellSimple {
 				.carregarLimiares(System.getProperty("user.dir") + "\\thresholds\\web2019\\");
 
 		System.out.println("Gerando SMELLS.csv com a lista de problemas de design encontrados...");
-		FilterSmellResult result = FilterSmells.filtrar(metricasProjetosAnalisar.all(), listaTecnicas, "HEAD");
+		FilterSmellResult result = FilterSmells.filtrar((MetricReport) metricasProjetosAnalisar.all(), listaTecnicas, "HEAD");
 		FilterSmells.gravarMetodosSmellProgramador(result.getMetodosSmell(), System.getProperty("user.dir") + "\\results\\SMELLS.csv");
 		FilterSmells.gravarClassesSmellProgramador(result.getClassesSmell(), System.getProperty("user.dir") + "\\results\\SMELLS-classes.csv");
 	}

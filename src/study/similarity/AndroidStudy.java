@@ -3,8 +3,8 @@ package study.similarity;
 import java.util.ArrayList;
 
 import org.designroleminer.MetricReport;
-import org.designroleminer.threshold.TechniqueExecutor;
 import org.systemsimilarity.SimilarityManager;
+import org.threshold.TechniqueExecutor;
 
 public class AndroidStudy {
 

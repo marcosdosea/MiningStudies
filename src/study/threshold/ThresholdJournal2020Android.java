@@ -6,16 +6,16 @@ import java.util.Collection;
 import java.util.List;
 
 import org.designroleminer.ClassMetricResult;
-import org.designroleminer.threshold.AlvesTechnique;
-import org.designroleminer.threshold.AnicheTechnique;
-import org.designroleminer.threshold.DoseaDesignRoleTechnique;
-import org.designroleminer.threshold.DoseaReferenceTechnique;
-import org.designroleminer.threshold.TechniqueExecutor;
-import org.designroleminer.threshold.ValeTechnique;
 import org.repodriller.persistence.PersistenceMechanism;
 import org.repodriller.persistence.csv.CSVFile;
 import org.systemsimilarity.SimilarityManager;
 import org.systemsimilarity.SimilarityResult;
+import org.threshold.AlvesTechnique;
+import org.threshold.AnicheTechnique;
+import org.threshold.DoseaDesignRoleTechnique;
+import org.threshold.DoseaReferenceTechnique;
+import org.threshold.TechniqueExecutor;
+import org.threshold.ValeTechnique;
 
 public class ThresholdJournal2020Android {
 
@@ -44,12 +44,15 @@ public class ThresholdJournal2020Android {
 		List<SimilarityResult> listSimilarity = gSimilarity.calculate(projetosReferencia, PASTA_PROJECTS);
 
 		for (String projeto : projetosReferencia) {
-			ArrayList<String> projetosSimilares = gSimilarity.filterSimilarProjects(projeto, listSimilarity,  LEVEL_SIMILARITY);
-			Collection<ClassMetricResult> metricasProjetosSimilares = gLimiares.getMetricsFromProjects(projetosSimilares, PASTA_PROJECTS, "").all();
+			ArrayList<String> projetosSimilares = gSimilarity.filterSimilarProjects(projeto, listSimilarity,
+					LEVEL_SIMILARITY);
+			Collection<ClassMetricResult> metricasProjetosSimilares = gLimiares
+					.getMetricsFromProjects(projetosSimilares, PASTA_PROJECTS, "").all();
 
 			ArrayList<String> projetoAnalisado = new ArrayList<String>();
 			projetoAnalisado.add(projeto);
-			Collection<ClassMetricResult> metricasProjetosAnalisado =  gLimiares.getMetricsFromProjects( projetoAnalisado, PASTA_PROJECTS, "" ).all();
+			Collection<ClassMetricResult> metricasProjetosAnalisado = gLimiares
+					.getMetricsFromProjects(projetoAnalisado, PASTA_PROJECTS, "").all();
 			String nomeProjeto = projeto.substring(projeto.lastIndexOf("\\") + 1);
 			String pastaThresholdsProjeto = PASTA_THRESHOLDS + "\\" + nomeProjeto + "\\";
 			// cria nova pasta
@@ -70,7 +73,6 @@ public class ThresholdJournal2020Android {
 			System.out.println("Gerando Limiares por Dosea Referencia e Design Role...");
 			gLimiares.execute(metricasProjetosSimilares, pastaThresholdsProjeto + "D.csv",
 					new DoseaDesignRoleTechnique(metricasProjetosAnalisado));
-	
 
 			System.out.println("Gerando Limiares por Dosea Referencia...");
 			gLimiares.execute(metricasProjetosSimilares, pastaThresholdsProjeto + "R.csv",

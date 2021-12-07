@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" output="target/classes" path="src">
 		<attributes>
 			<attribute name="optional" value="true"/>
@@ -13,10 +12,16 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry combineaccessrules="false" kind="src" path="/RefactoringMiner"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/SystemSimilarity"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/SmellRafactored"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/designroleminer"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/DesignRoleMiner.jar"/>
+	<classpathentry kind="lib" path="lib/RefactoringMiner.jar"/>
+	<classpathentry kind="lib" path="lib/SmellRefactored.jar"/>
+	<classpathentry kind="lib" path="lib/SystemSimilarity.jar"/>
+	<classpathentry kind="lib" path="lib/ThresholdTool.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

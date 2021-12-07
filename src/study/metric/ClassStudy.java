@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.commons.io.FileUtils;
 import org.designroleminer.visitor.ClassVisitorMetric;
 import org.designroleminer.visitor.MethodVisitorMetric;
 import org.repodriller.RepoDriller;
@@ -21,13 +20,10 @@ public class ClassStudy implements Study {
 	}
 
 	public void execute() {
-		String dir = System.getProperty("java.io.tmpdir");
-		String directory = FileUtils.getTempDirectoryPath();
-		
 		mineAndroidApplications();
-		// mineEclipseApplications();
-		// mineWebApplications();
-		// mineVersions();
+		mineEclipseApplications();
+		mineWebApplications();
+		mineVersions();
 	}
 
 	private void mineWebApplications() {
@@ -115,8 +111,7 @@ public class ClassStudy implements Study {
 				.mine();
 
 		new RepositoryMining().in(GitRepository.singleProject("D:/Projetos/_Android/k-9")).through(Commits.onlyInHead())
-				.process(new ClassVisitorMetric(), new CSVFile("D:/Projetos/_Android/k-9-metrics.csv"))
-				.mine();
+				.process(new ClassVisitorMetric(), new CSVFile("D:/Projetos/_Android/k-9-metrics.csv")).mine();
 	}
 
 	private void mineVersions() {

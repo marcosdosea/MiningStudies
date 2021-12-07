@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 import org.designroleminer.ClassMetricResult;
-import org.designroleminer.threshold.AlvesTechnique;
-import org.designroleminer.threshold.AnicheTechnique;
-import org.designroleminer.threshold.TechniqueExecutor;
-import org.designroleminer.threshold.ValeTechnique;
+import org.threshold.AlvesTechnique;
+import org.threshold.AnicheTechnique;
+import org.threshold.TechniqueExecutor;
+import org.threshold.ValeTechnique;
 
 public class ThresholdStudy {
 

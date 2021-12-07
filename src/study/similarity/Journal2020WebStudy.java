@@ -3,11 +3,11 @@ package study.similarity;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.designroleminer.threshold.TechniqueExecutor;
 import org.repodriller.persistence.PersistenceMechanism;
 import org.repodriller.persistence.csv.CSVFile;
 import org.systemsimilarity.SimilarityManager;
 import org.systemsimilarity.SimilarityResult;
+import org.threshold.TechniqueExecutor;
 
 public class Journal2020WebStudy {
 
