@@ -135,7 +135,7 @@ public class RQ3Study implements Study {
 		activitiTags.put("874bebf5f8189006bc9e33c6e9a417dbfd829f92", "5.14.1");
 
 		new RepositoryMining().in(GitRepository.singleProject("D:/Projetos/_Eclipse/Activiti-Designer"))
-				.through(Commits.list(activitiEclipse)).withThreads(5)
+				.through(Commits.list(activitiEclipse)).withThreads(1)
 				.process(new MethodVisitorMetric(eclipseSelectedDR, "Activiti", activitiTags),
 						new CSVFile("D:/Projetos/_Eclipse/versions-eclipse-Activiti.csv"))
 				.mine();
@@ -153,7 +153,7 @@ public class RQ3Study implements Study {
 		angularJSTags.put("d7589b4da984ff889765d825f4637940115e795e", "1.0.0");
 
 		new RepositoryMining().in(GitRepository.singleProject("D:/Projetos/_Eclipse/angularjs-eclipse"))
-				.through(Commits.list(angularJSEclipse)).withThreads(5)
+				.through(Commits.list(angularJSEclipse)).withThreads(1)
 				.process(new MethodVisitorMetric(eclipseSelectedDR, "AngularJS", angularJSTags),
 						new CSVFile("D:/Projetos/_Eclipse/versions-eclipse-angularjs.csv"))
 				.mine();
@@ -171,7 +171,7 @@ public class RQ3Study implements Study {
 		arduinoTags.put("d14c4e2ba20edcddb10850a3e0ba2cc7d4ef2d34", "2.4");
 
 		new RepositoryMining().in(GitRepository.singleProject("D:/Projetos/_Eclipse/arduino-eclipse-plugin"))
-				.through(Commits.list(arduinoEclipse)).withThreads(5)
+				.through(Commits.list(arduinoEclipse)).withThreads(1)
 				.process(new MethodVisitorMetric(eclipseSelectedDR, "Arduino", arduinoTags),
 						new CSVFile("D:/Projetos/_Eclipse/versions-eclipse-arduino.csv"))
 				.mine();
@@ -189,7 +189,7 @@ public class RQ3Study implements Study {
 		droolsTags.put("d02257a1eb4fe243bd36279540b4465d848d3ad5", "6.3.0.Final");
 
 		new RepositoryMining().in(GitRepository.singleProject("D:/Projetos/_Eclipse/droolsjbpm-tools"))
-				.through(Commits.list(droolsEclipse)).withThreads(5)
+				.through(Commits.list(droolsEclipse)).withThreads(1)
 				.process(new MethodVisitorMetric(eclipseSelectedDR, "droolsJBPM", droolsTags),
 						new CSVFile("D:/Projetos/_Eclipse/versions-eclipse-droolsjbpm.csv"))
 				.mine();
@@ -207,7 +207,7 @@ public class RQ3Study implements Study {
 		sonarlintTags.put("6df2aa1dd63134fe2b26f34da77eaac9505f0786", "2.1.0");
 
 		new RepositoryMining().in(GitRepository.singleProject("D:/Projetos/_Eclipse/sonarlint-eclipse"))
-				.through(Commits.list(sonarlintEclipse)).withThreads(5)
+				.through(Commits.list(sonarlintEclipse)).withThreads(1)
 				.process(new MethodVisitorMetric(eclipseSelectedDR, "Sonarlint", sonarlintTags),
 						new CSVFile("D:/Projetos/_Eclipse/versions-eclipse-sonarlint.csv"))
 				.mine();
@@ -232,7 +232,7 @@ public class RQ3Study implements Study {
 		bitcoinTags.put("b6f23aa1e9cfa8c08c0c3d08278107ccb6a0d912", "4.70");
 
 		new RepositoryMining().in(GitRepository.singleProject("D:/Projetos/_Android/bitcoin-wallet"))
-				.through(Commits.list(bitcoinAndroid)).withThreads(5)
+				.through(Commits.list(bitcoinAndroid)).withThreads(1)
 				.process(new MethodVisitorMetric(androidSelectedDR, "Bitcoin", bitcoinTags),
 						new CSVFile("D:/Projetos/_Android/versions-android-bitcoin.csv"))
 				.mine();
@@ -250,7 +250,7 @@ public class RQ3Study implements Study {
 		exoplayerTags.put("0571557ed4da8e446fe4c676b0acee99fc8e528c", "r.1.5.11");
 
 		new RepositoryMining().in(GitRepository.singleProject("D:/Projetos/_Android/ExoPlayer"))
-				.through(Commits.list(exoplayerAndroid)).withThreads(5)
+				.through(Commits.list(exoplayerAndroid)).withThreads(1)
 				.process(new MethodVisitorMetric(androidSelectedDR, "Exoplayer", exoplayerTags),
 						new CSVFile("D:/Projetos/_Android/versions-android-exoPlayer.csv"))
 				.mine();
@@ -268,7 +268,7 @@ public class RQ3Study implements Study {
 		talonTags.put("211b3b8e4bfffff9dffac4ee5af81a9acbfe71d4", "c-45");
 
 		new RepositoryMining().in(GitRepository.singleProject("D:/Projetos/_Android/Talon-for-Twitter"))
-				.through(Commits.list(talonAndroid)).withThreads(5)
+				.through(Commits.list(talonAndroid)).withThreads(1)
 				.process(new MethodVisitorMetric(androidSelectedDR, "Talon", talonTags),
 						new CSVFile("D:/Projetos/_Android/versions-android-talon.csv"))
 				.mine();
@@ -286,7 +286,7 @@ public class RQ3Study implements Study {
 		smsTags.put("5befe9043b9290877fca4fdb5741c357e555f472", "1.5.8");
 
 		new RepositoryMining().in(GitRepository.singleProject("D:/Projetos/_Android/sms-backup-plus"))
-				.through(Commits.list(smsAndroid)).withThreads(5)
+				.through(Commits.list(smsAndroid)).withThreads(1)
 				.process(new MethodVisitorMetric(androidSelectedDR, "SMSBackup", smsTags),
 						new CSVFile("D:/Projetos/_Android/versions-android-smsbackup.csv"))
 				.mine();
@@ -304,7 +304,7 @@ public class RQ3Study implements Study {
 		k9Tags.put("8925ebdc060883f407e4d721be083f637cce9b09", "5.008");
 
 		new RepositoryMining().in(GitRepository.singleProject("D:/Projetos/_Android/k-9"))
-				.through(Commits.list(k9Android)).withThreads(5)
+				.through(Commits.list(k9Android)).withThreads(1)
 				.process(new MethodVisitorMetric(androidSelectedDR, "K9", k9Tags),
 						new CSVFile("D:/Projetos/_Android/versions-android-k9.csv"))
 				.mine();

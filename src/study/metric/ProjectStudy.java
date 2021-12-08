@@ -57,7 +57,7 @@ public class ProjectStudy implements Study {
 		k9Android.add("272a4bc1cf75b3401f042b849c46b9c46c01a072"); // 5.103 05.12.2014
 
 		new RepositoryMining().in(GitRepository.singleProject("D:/Projetos/_Android/k-9"))
-				.through(Commits.list(k9Android)).withThreads(5)
+				.through(Commits.list(k9Android)).withThreads(1)
 				.process(new ProjectVisitor(), new CSVFile("D:/Projetos/_Android/versions-project-k-9-metrics.csv"))
 				.mine();
 
@@ -68,7 +68,7 @@ public class ProjectStudy implements Study {
 		droolsEclipse.add("d02257a1eb4fe243bd36279540b4465d848d3ad5"); // 6.3.0.Final 15.09.2015
 		droolsEclipse.add("50288c91e6e9070593dc60ea2153bbecb8d5db6c"); // 6.2.0.Final 02.03.2015
 		new RepositoryMining().in(GitRepository.singleProject("D:/Projetos/_Eclipse/droolsjbpm-tools"))
-				.through(Commits.list(droolsEclipse)).withThreads(5).process(new ProjectVisitor(),
+				.through(Commits.list(droolsEclipse)).withThreads(1).process(new ProjectVisitor(),
 						new CSVFile("D:/Projetos/_Eclipse/versions-project-droolsjbpm-tools-metrics.csv"))
 				.mine();
 
@@ -81,7 +81,7 @@ public class ProjectStudy implements Study {
 		openmrsWeb.add("d8b5d007c91e64eb1e82d9d5db10076863570fcd"); // 1.10.0 19.09.2014
 
 		new RepositoryMining().in(GitRepository.singleProject("D:/Projetos/_Web/openmrs-core"))
-				.through(Commits.list(openmrsWeb)).withThreads(5).process(new ProjectVisitor(),
+				.through(Commits.list(openmrsWeb)).withThreads(1).process(new ProjectVisitor(),
 						new CSVFile("D:/Projetos/_Web/versions-project-openmrs-core-metrics.csv"))
 				.mine();
 
@@ -89,86 +89,86 @@ public class ProjectStudy implements Study {
 
 	private void mineWebApplications() {
 		new RepositoryMining().in(GitRepository.singleProject("D:/Projetos/_Web/bigbluebutton"))
-				.through(Commits.onlyInHead()).withThreads(5)
+				.through(Commits.onlyInHead()).withThreads(1)
 				.process(new ProjectVisitor(), new CSVFile("D:/Projetos/_Web/project-bigbluebutton-metrics.csv"))
 				.mine();
 
 		new RepositoryMining().in(GitRepository.singleProject("D:/Projetos/_Web/openmrs-core"))
-				.through(Commits.onlyInHead()).withThreads(5)
+				.through(Commits.onlyInHead()).withThreads(1)
 				.process(new ProjectVisitor(), new CSVFile("D:/Projetos/_Web/project-openmrs-core-metrics.csv")).mine();
 
 		new RepositoryMining().in(GitRepository.singleProject("D:/Projetos/_Web/heritrix3"))
-				.through(Commits.onlyInHead()).withThreads(5)
+				.through(Commits.onlyInHead()).withThreads(1)
 				.process(new ProjectVisitor(), new CSVFile("D:/Projetos/_Web/project-heritrix3-metrics.csv")).mine();
 
 		new RepositoryMining().in(GitRepository.singleProject("D:/Projetos/_Web/qalingo-engine"))
-				.through(Commits.onlyInHead()).withThreads(5)
+				.through(Commits.onlyInHead()).withThreads(1)
 				.process(new ProjectVisitor(), new CSVFile("D:/Projetos/_Web/project-qalingo-engine-metrics.csv"))
 				.mine();
 
 		new RepositoryMining().in(GitRepository.singleProject("D:/Projetos/_Web/libreplan"))
-				.through(Commits.onlyInHead()).withThreads(5)
+				.through(Commits.onlyInHead()).withThreads(1)
 				.process(new ProjectVisitor(), new CSVFile("D:/Projetos/_Web/project-libreplan-metrics.csv")).mine();
 
 		new RepositoryMining().in(GitRepository.singleProject("D:/Projetos/_Web/JDeSurvey"))
-				.through(Commits.onlyInHead()).withThreads(5)
+				.through(Commits.onlyInHead()).withThreads(1)
 				.process(new ProjectVisitor(), new CSVFile("D:/Projetos/_Web/project-JDeSurvey-metrics.csv")).mine();
 
 		new RepositoryMining().in(GitRepository.singleProject("D:/Projetos/_Web/web-budget"))
-				.through(Commits.onlyInHead()).withThreads(5)
+				.through(Commits.onlyInHead()).withThreads(1)
 				.process(new ProjectVisitor(), new CSVFile("D:/Projetos/_Web/project-web-budget-metrics.csv")).mine();
 	}
 
 	private void mineEclipseApplications() {
 		new RepositoryMining().in(GitRepository.singleProject("D:/Projetos/_Eclipse/Activiti-Designer"))
-				.through(Commits.onlyInHead()).withThreads(5).process(new ProjectVisitor(),
+				.through(Commits.onlyInHead()).withThreads(1).process(new ProjectVisitor(),
 						new CSVFile("D:/Projetos/_Eclipse/project-Activiti-Designer-metrics.csv"))
 				.mine();
 
 		new RepositoryMining().in(GitRepository.singleProject("D:/Projetos/_Eclipse/angularjs-eclipse"))
-				.through(Commits.onlyInHead()).withThreads(5).process(new ProjectVisitor(),
+				.through(Commits.onlyInHead()).withThreads(1).process(new ProjectVisitor(),
 						new CSVFile("D:/Projetos/_Eclipse/project-angularjs-eclipse-metrics.csv"))
 				.mine();
 
 		new RepositoryMining().in(GitRepository.singleProject("D:/Projetos/_Eclipse/arduino-eclipse-plugin"))
-				.through(Commits.onlyInHead()).withThreads(5).process(new ProjectVisitor(),
+				.through(Commits.onlyInHead()).withThreads(1).process(new ProjectVisitor(),
 						new CSVFile("D:/Projetos/_Eclipse/project-arduino-eclipse-plugin-metrics.csv"))
 				.mine();
 
 		new RepositoryMining().in(GitRepository.singleProject("D:/Projetos/_Eclipse/droolsjbpm-tools"))
-				.through(Commits.onlyInHead()).withThreads(5)
+				.through(Commits.onlyInHead()).withThreads(1)
 				.process(new ProjectVisitor(), new CSVFile("D:/Projetos/_Eclipse/project-droolsjbpm-tools-metrics.csv"))
 				.mine();
 
 		new RepositoryMining().in(GitRepository.singleProject("D:/Projetos/_Eclipse/sonarlint-eclipse"))
-				.through(Commits.onlyInHead()).withThreads(5).process(new ProjectVisitor(),
+				.through(Commits.onlyInHead()).withThreads(1).process(new ProjectVisitor(),
 						new CSVFile("D:/Projetos/_Eclipse/project-sonarlint-eclipse-metrics.csv"))
 				.mine();
 	}
 
 	private void mineAndroidApplications() {
 		new RepositoryMining().in(GitRepository.singleProject("D:/Projetos/_Android/bitcoin-wallet"))
-				.through(Commits.onlyInHead()).withThreads(5)
+				.through(Commits.onlyInHead()).withThreads(1)
 				.process(new ProjectVisitor(), new CSVFile("D:/Projetos/_Android/project-bitcoin-wallet-metrics.csv"))
 				.mine();
 
 		new RepositoryMining().in(GitRepository.singleProject("D:/Projetos/_Android/ExoPlayer"))
-				.through(Commits.onlyInHead()).withThreads(5)
+				.through(Commits.onlyInHead()).withThreads(1)
 				.process(new ProjectVisitor(), new CSVFile("D:/Projetos/_Android/project-ExoPlayer-metrics.csv"))
 				.mine();
 
 		new RepositoryMining().in(GitRepository.singleProject("D:/Projetos/_Android/Talon-for-Twitter"))
-				.through(Commits.onlyInHead()).withThreads(5).process(new ProjectVisitor(),
+				.through(Commits.onlyInHead()).withThreads(1).process(new ProjectVisitor(),
 						new CSVFile("D:/Projetos/_Android/project-Talon-for-Twitter-metrics.csv"))
 				.mine();
 
 		new RepositoryMining().in(GitRepository.singleProject("D:/Projetos/_Android/sms-backup-plus"))
-				.through(Commits.onlyInHead()).withThreads(5)
+				.through(Commits.onlyInHead()).withThreads(1)
 				.process(new ProjectVisitor(), new CSVFile("D:/Projetos/_Android/project-sms-backup-plus-metrics.csv"))
 				.mine();
 
 		new RepositoryMining().in(GitRepository.singleProject("D:/Projetos/_Android/k-9")).through(Commits.onlyInHead())
-				.withThreads(5)
+				.withThreads(1)
 				.process(new ProjectVisitor(), new CSVFile("D:/Projetos/_Android/project-k-9-metrics.csv")).mine();
 	}
 }

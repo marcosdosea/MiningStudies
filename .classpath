@@ -7,7 +7,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="test"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
@@ -18,11 +18,10 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry kind="src" path="/ContextSmell"/>
-	<classpathentry kind="lib" path="lib/ContextSmell.jar"/>
 	<classpathentry kind="lib" path="lib/DesignRoleMiner.jar"/>
-	<classpathentry kind="lib" path="lib/SmellRefactored.jar"/>
-	<classpathentry kind="lib" path="lib/SystemSimilarity.jar"/>
 	<classpathentry kind="lib" path="lib/ThresholdTool.jar"/>
+	<classpathentry kind="lib" path="lib/SystemSimilarity.jar"/>
+	<classpathentry kind="lib" path="lib/SmellRefactored.jar"/>
+	<classpathentry kind="lib" path="lib/ContextSmell.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
