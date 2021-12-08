@@ -20,7 +20,8 @@ public class JabRefStudy implements Study {
 				.withThreads(5).process(new ClassVisitorDesignRole(), new CSVFile("D:/Projetos/jabref-drs.csv")).mine();
 
 		new RepositoryMining().in(GitRepository.singleProject("D:/Projetos/jabref")).through(Commits.onlyInHead())
-				.withThreads(5).process(new MethodVisitorMetric(), new CSVFile("D:/Projetos/jabref-metrics.csv")).mine();
+				.withThreads(5).process(new MethodVisitorMetric(), new CSVFile("D:/Projetos/jabref-metrics.csv"))
+				.mine();
 	}
 
 }

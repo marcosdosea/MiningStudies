@@ -1,9 +1,9 @@
-package study.refactoring;
+package study.refactoring.android;
 
 import java.util.List;
 
-import org.designroleminer.smelldetector.CarregaSalvaArquivo;
-import org.designroleminer.smelldetector.model.LimiarTecnica;
+import org.contextsmell.CarregaSalvaArquivo;
+import org.contextsmell.LimiarTecnica;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.smellrefactored.SmellRefactoredFirstManager;
